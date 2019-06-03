@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm-doctor &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm-doctor</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/cli/doctor.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm-doctor">
+<h1>npm-doctor<a class="headerlink" href="#npm-doctor" title="永久链接至标题">¶</a></h1>
+<p>Check your environments</p>
+<div class="section" id="synopsis">
+<h2>概要<a class="headerlink" href="#synopsis" title="永久链接至标题">¶</a></h2>
+<dl class="option">
+<dt id="cmdoption-npm-arg-doctor">
+<code class="descname">doctor</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-npm-arg-doctor" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<p>npm doctor</p>
+</div>
+<div class="section" id="description">
+<h2>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>npm doctor runs a set of checks to ensure that your npm installation has what it needs to manage your JavaScript packages. npm is mostly a standalone tool, but it does have some basic requirements that must be met:</p>
+<p>Node.js and git must be executable by npm.
+The primary npm registry, registry.npmjs.com, or another service that uses the registry API, is available.
+The directories that npm uses, node_modules (both locally and globally), exist and can be written by the current user.
+The npm cache exists, and the package tarballs within it aren’t corrupt.
+Without all of these working properly, npm may not work properly. Many issues are often attributable to things that are outside npm’s code base, so npm doctor confirms that the npm installation is in a good state.</p>
+<p>Also, in addition to this, there are also very many issue reports due to using old versions of npm. Since npm is constantly improving, running <a class="reference external" href="mailto:npm&#37;&#52;&#48;latest">npm<span>&#64;</span>latest</a> is better than an old version.</p>
+<p>npm doctor verifies the following items in your environment, and if there are any recommended changes, it will display them.</p>
+<p>npm ping
+By default, npm installs from the primary npm registry, registry.npmjs.org. npm doctor hits a special ping endpoint within the registry. This can also be checked with npm ping. If this check fails, you may be using a proxy that needs to be configured, or may need to talk to your IT staff to get access over HTTPS to registry.npmjs.org.</p>
+<p>This check is done against whichever registry you’ve configured (you can see what that is by running npm config get registry), and if you’re using a private registry that doesn’t support the /whoami endpoint supported by the primary registry, this check may fail.</p>
+<p>npm -v
+While Node.js may come bundled with a particular version of npm, it’s the policy of the CLI team that we recommend all users run <a class="reference external" href="mailto:npm&#37;&#52;&#48;latest">npm<span>&#64;</span>latest</a> if they can. As the CLI is maintained by a small team of contributors, there are only resources for a single line of development, so npm’s own long-term support releases typically only receive critical security and regression fixes. The team believes that the latest tested version of npm is almost always likely to be the most functional and defect-free version of npm.</p>
+<p>node -v
+For most users, in most circumstances, the best version of Node will be the latest long-term support (LTS) release. Those of you who want access to new ECMAscript features or bleeding-edge changes to Node’s standard library may be running a newer version, and some of you may be required to run an older version of Node because of enterprise change control policies. That’s OK! But in general, the npm team recommends that most users run Node.js LTS.</p>
+<p>npm config get registry
+Some of you may be installing from private package registries for your project or company. That’s great! Others of you may be following tutorials or StackOverflow questions in an effort to troubleshoot problems you may be having. Sometimes, this may entail changing the registry you’re pointing at. This part of npm doctor just lets you, and maybe whoever’s helping you with support, know that you’re not using the default registry.</p>
+<p>which git
+While it’s documented in the README, it may not be obvious that npm needs Git installed to do many of the things that it does. Also, in some cases – especially on Windows – you may have Git set up in such a way that it’s not accessible via your PATH so that npm can find it. This check ensures that Git is available.</p>
+<p>Permissions checks
+Your cache must be readable and writable by the user running npm.
+Global package binaries must be writable by the user running npm.
+Your local node_modules path, if you’re running npm doctor with a project directory, must be readable and writable by the user running npm.
+Validate the checksums of cached packages
+When an npm package is published, the publishing process generates a checksum that npm uses at install time to verify that the package didn’t get corrupted in transit. npm doctor uses these checksums to validate the package tarballs in your local cache (you can see where that cache is located with npm config get cache, and see what’s in that cache with npm cache ls – probably more than you were expecting!). In the event that there are corrupt packages in your cache, you should probably run npm cache clean and reset the cache.</p>
+</div>
+<div class="section" id="see-also">
+<h2>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>npm-bugs</p></li>
+<li><p>npm-help</p></li>
+<li><p>npm-ping</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

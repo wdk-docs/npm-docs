@@ -1,0 +1,28 @@
+npm-stars
+============================================================================================
+
+View packages marked as favorites
+
+SYNOPSIS
+-------------------
+
+.. program:: npm
+
+.. option:: stars
+
+npm stars [<user>]
+
+DESCRIPTION
+-------------------
+
+If you have starred a lot of neat things and want to find them again quickly this command lets you do just that.
+
+You may also want to see your friend’s favorite packages, in this case you will most certainly enjoy this command.
+
+SEE ALSO
+-------------------
+
+- npm-star
+- npm-view
+- npm-whoami
+- npm-adduser

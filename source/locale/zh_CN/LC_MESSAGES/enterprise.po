@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the npm-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: npm-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/enterprise/index.rst:2
+msgid "npm Enterprise"
+msgstr "npm 企业版"
+
+#: ../../source/enterprise/index.rst:4
+msgid ""
+"npm Enterprise is your company’s own npm registry, hosted on npm servers."
+" npm Enterprise provides:"
+msgstr "npm Enterprise是您公司自己的npm注册表，托管在npm服务器上。 npm Enterprise提供："
+
+#: ../../source/enterprise/index.rst:6
+msgid "Easy code discovery and sharing within your company"
+msgstr "在您的公司内轻松发现和共享代码"
+
+#: ../../source/enterprise/index.rst:7
+msgid "Secure package deployment"
+msgstr "安全包部署"
+
+#: ../../source/enterprise/index.rst:8
+msgid "Unlimited Orgs and scopes"
+msgstr "无限的组织和范围"
+
+#: ../../source/enterprise/index.rst:9
+msgid "Delegated authentication"
+msgstr "委托身份验证"
+
+#: ../../source/enterprise/index.rst:10
+msgid "Access to the same packages available in the public registry"
+msgstr "访问公共注册表中可用的相同包"
+
+#: ../../source/enterprise/index.rst:11
+msgid ""
+"Audit reports on potential security vulnerabilities in package "
+"dependencies"
+msgstr "审计报告包依赖关系中的潜在安全漏洞"
+
+#: ../../source/enterprise/index.rst:13
+msgid ""
+"These articles apply to npm Enterprise admins. End users of npm "
+"Enterprise should check out the rest of our documentation, particularly "
+"the \"Getting started\" and \"Packages and modules\" sections."
+msgstr "这些文章适用于npm Enterprise管理员。 npm Enterprise的最终用户应该查看我们的其他文档，特别是“入门”和“包和模块”部分。"
+
+#: ../../source/enterprise/index.rst:16
+msgid "Setup and configuration"
+msgstr "设置和配置"
+
+#: ../../source/enterprise/index.rst:25
+msgid "Billing and seat management"
+msgstr "计费和座位管理"
+
+#: ../../source/enterprise/index.rst:34
+msgid "User management"
+msgstr "用户管理"
+
+#: ../../source/enterprise/index.rst:49
+msgid "Migration"
+msgstr "迁移"
+

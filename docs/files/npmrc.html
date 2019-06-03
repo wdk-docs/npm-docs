@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npmrc &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npmrc</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/files/npmrc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npmrc">
+<h1>npmrc<a class="headerlink" href="#npmrc" title="永久链接至标题">¶</a></h1>
+<p>The npm config files
+DESCRIPTION
+npm gets its config settings from the command line, environment variables, and npmrc files.</p>
+<p>The npm config command can be used to update and edit the contents of the user and global npmrc files.</p>
+<p>For a list of available configuration options, see npm-config.</p>
+<p>FILES
+The four relevant files are:</p>
+<p>per-project config file (/path/to/my/project/.npmrc)
+per-user config file (~/.npmrc)
+global config file ($PREFIX/etc/npmrc)
+npm builtin config file (/path/to/npm/npmrc)
+All npm config files are an ini-formatted list of key = value parameters. Environment variables can be replaced using ${VARIABLE_NAME}. For example:</p>
+<p>prefix = ${HOME}/.npm-packages
+Each of these files is loaded, and config options are resolved in priority order. For example, a setting in the userconfig file would override the setting in the globalconfig file.</p>
+<p>Array values are specified by adding “[]” after the key name. For example:</p>
+<p>key[] = “first value”
+key[] = “second value”
+Comments
+Lines in .npmrc files are interpreted as comments when they begin with a ; or # character. .npmrc files are parsed by npm/ini, which specifies this comment syntax.</p>
+<p>For example:</p>
+<p># last modified: 01 Jan 2016
+; Set a new registry for a scoped package
+&#64;myscope:registry=https://mycustomregistry.example.org
+Per-project config file
+When working locally in a project, a .npmrc file in the root of the project (ie, a sibling of node_modules and package.json) will set config values specific to this project.</p>
+<p>Note that this only applies to the root of the project that you’re running npm in. It has no effect when your module is published. For example, you can’t publish a module that forces itself to install globally, or in a different location.</p>
+<p>Additionally, this file is not read in global mode, such as when running npm install -g.</p>
+<p>Per-user config file
+$HOME/.npmrc (or the userconfig param, if set in the environment or on the command line)</p>
+<p>Global config file
+$PREFIX/etc/npmrc (or the globalconfig param, if set above): This file is an ini-file formatted list of key = value parameters. Environment variables can be replaced as above.</p>
+<p>Built-in config file
+path/to/npm/itself/npmrc</p>
+<p>This is an unchangeable “builtin” configuration file that npm keeps consistent across updates. Set fields in here using the ./configure script that comes with npm. This is primarily for distribution maintainers to override default configs in a standard and consistent manner.</p>
+<p>SEE ALSO
+npm-folders
+npm-config
+npm-config
+package.json
+npm</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm-disputes &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm-disputes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/misc/disputes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm-disputes">
+<h1>npm-disputes<a class="headerlink" href="#npm-disputes" title="永久链接至标题">¶</a></h1>
+<p>Handling Module Name Disputes
+This document describes the steps that you should take to resolve module name disputes with other npm publishers. It also describes special steps you should take about names you think infringe your trademarks.</p>
+<p>This document is a clarification of the acceptable behavior outlined in the npm Code of Conduct, and nothing in this document should be interpreted to contradict any aspect of the npm Code of Conduct.</p>
+<p>TL;DR
+Get the author email with npm owner ls &lt;pkgname&gt;
+Email the author, CC <a class="reference external" href="mailto:support&#37;&#52;&#48;npmjs&#46;com">support<span>&#64;</span>npmjs<span>&#46;</span>com</a>
+After a few weeks, if there’s no resolution, we’ll sort it out.
+Don’t squat on package names. Publish code or move out of the way.</p>
+<p>DESCRIPTION
+There sometimes arise cases where a user publishes a module, and then later, some other user wants to use that name. Here are some common ways that happens (each of these is based on actual events.)</p>
+<p>Alice writes a JavaScript module foo, which is not node-specific. Alice doesn’t use node at all. Yusuf wants to use foo in node, so he wraps it in an npm module. Some time later, Alice starts using node, and wants to take over management of her program.
+Yusuf writes an npm module foo, and publishes it. Perhaps much later, Alice finds a bug in foo, and fixes it. She sends a pull request to Yusuf, but Yusuf doesn’t have the time to deal with it, because he has a new job and a new baby and is focused on his new Erlang project, and kind of not involved with node any more. Alice would like to publish a new foo, but can’t, because the name is taken.
+Yusuf writes a 10-line flow-control library, and calls it foo, and publishes it to the npm registry. Being a simple little thing, it never really has to be updated. Alice works for Foo Inc, the makers of the critically acclaimed and widely-marketed foo JavaScript toolkit framework. They publish it to npm as foojs, but people are routinely confused when npm install foo is some different thing.
+Yusuf writes a parser for the widely-known foo file format, because he needs it for work. Then, he gets a new job, and never updates the prototype. Later on, Alice writes a much more complete foo parser, but can’t publish, because Yusuf’s foo is in the way.</p>
+<p>npm owner ls foo. This will tell Alice the email address of the owner (Yusuf).
+Alice emails Yusuf, explaining the situation as respectfully as possible, and what she would like to do with the module name. She adds the npm support staff <a class="reference external" href="mailto:support&#37;&#52;&#48;npmjs&#46;com">support<span>&#64;</span>npmjs<span>&#46;</span>com</a> to the CC list of the email. Mention in the email that Yusuf can run npm owner add alice foo to add Alice as an owner of the foo package.
+After a reasonable amount of time, if Yusuf has not responded, or if Yusuf and Alice can’t come to any sort of resolution, email support <a class="reference external" href="mailto:support&#37;&#52;&#48;npmjs&#46;com">support<span>&#64;</span>npmjs<span>&#46;</span>com</a> and we’ll sort it out. (“Reasonable” is usually at least 4 weeks.)
+REASONING
+In almost every case so far, the parties involved have been able to reach an amicable resolution without any major intervention. Most people really do want to be reasonable, and are probably not even aware that they’re in your way.</p>
+<p>Module ecosystems are most vibrant and powerful when they are as self-directed as possible. If an admin one day deletes something you had worked on, then that is going to make most people quite upset, regardless of the justification. When humans solve their problems by talking to other humans with respect, everyone has the chance to end up feeling good about the interaction.</p>
+<p>EXCEPTIONS
+Some things are not allowed, and will be removed without discussion if they are brought to the attention of the npm registry admins, including but not limited to:</p>
+<p>Malware (that is, a package designed to exploit or harm the machine on which it is installed).
+Violations of copyright or licenses (for example, cloning an MIT-licensed program, and then removing or changing the copyright and license statement).
+Illegal content.
+“Squatting” on a package name that you plan to use, but aren’t actually using. Sorry, I don’t care how great the name is, or how perfect a fit it is for the thing that someday might happen. If someone wants to use it today, and you’re just taking up space with an empty tarball, you’re going to be evicted.
+Putting empty packages in the registry. Packages must have SOME functionality. It can be silly, but it can’t be nothing. (See also: squatting.)
+Doing weird things with the registry, like using it as your own personal application database or otherwise putting non-packagey things into it.
+Other things forbidden by the npm Code of Conduct such as hateful language, pornographic content, or harassment.
+If you see bad behavior like this, please report it to <a class="reference external" href="mailto:abuse&#37;&#52;&#48;npmjs&#46;com">abuse<span>&#64;</span>npmjs<span>&#46;</span>com</a> right away. You are never expected to resolve abusive behavior on your own. We are here to help.</p>
+<p>TRADEMARKS
+If you think another npm publisher is infringing your trademark, such as by using a confusingly similar package name, email <a class="reference external" href="mailto:abuse&#37;&#52;&#48;npmjs&#46;com">abuse<span>&#64;</span>npmjs<span>&#46;</span>com</a> with a link to the package or user account on <a class="reference external" href="https://www.npmjs.com/">https://www.npmjs.com/</a>. Attach a copy of your trademark registration certificate.</p>
+<p>If we see that the package’s publisher is intentionally misleading others by misusing your registered mark without permission, we will transfer the package name to you. Otherwise, we will contact the package publisher and ask them to clear up any confusion with changes to their package’s README file or metadata.</p>
+<p>CHANGES
+This is a living document and may be updated from time to time. Please refer to the git history for this document to view the changes.</p>
+<p>LICENSE
+Copyright (C) npm, Inc., All rights reserved</p>
+<p>This document may be reused under a Creative Commons Attribution-ShareAlike License.</p>
+<p>SEE ALSO
+npm-registry
+npm-owner</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

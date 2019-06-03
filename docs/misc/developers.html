@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm-developers &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm-developers</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/misc/developers.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm-developers">
+<h1>npm-developers<a class="headerlink" href="#npm-developers" title="永久链接至标题">¶</a></h1>
+<p>Developer Guide
+DESCRIPTION
+So, you’ve decided to use npm to develop (and maybe publish/deploy) your project.</p>
+<p>Fantastic!</p>
+<p>There are a few things that you need to do above the simple steps that your users will do to install your program.</p>
+<p>About These Documents
+These are man pages. If you install npm, you should be able to then do man npm-thing to get the documentation on a particular topic, or npm help thing to see the same information.</p>
+<p>What is a package
+A package is:</p>
+<ol class="loweralpha simple">
+<li><p>a folder containing a program described by a package.json file</p></li>
+<li><p>a gzipped tarball containing (a)</p></li>
+<li><p>a url that resolves to (b)</p></li>
+<li><p>a &lt;name&gt;&#64;&lt;version&gt; that is published on the registry with (c)</p></li>
+<li><p>a &lt;name&gt;&#64;&lt;tag&gt; that points to (d)</p></li>
+<li><p>a &lt;name&gt; that has a “latest” tag satisfying (e)</p></li>
+</ol>
+<p>g) a git url that, when cloned, results in (a).
+Even if you never publish your package, you can still get a lot of benefits of using npm if you just want to write a node program (a), and perhaps if you also want to be able to easily install it elsewhere after packing it up into a tarball (b).</p>
+<p>Git urls can be of the form:</p>
+<p>git://github.com/user/project.git#commit-ish
+git+ssh://user&#64;hostname:project.git#commit-ish
+git+http://user&#64;hostname/project/blah.git#commit-ish
+git+https://user&#64;hostname/project/blah.git#commit-ish
+The commit-ish can be any tag, sha, or branch which can be supplied as an argument to git checkout. The default is master.</p>
+<p>The package.json File
+You need to have a package.json file in the root of your project to do much of anything with npm. That is basically the whole interface.</p>
+<p>See package.json for details about what goes in that file. At the very least, you need:</p>
+<p>name: This should be a string that identifies your project. Please do not use the name to specify that it runs on node, or is in JavaScript. You can use the “engines” field to explicitly state the versions of node (or whatever else) that your program requires, and it’s pretty well assumed that it’s JavaScript.</p>
+<p>It does not necessarily need to match your github repository name.</p>
+<p>So, node-foo and bar-js are bad names. foo or bar are better.</p>
+<p>version: A semver-compatible version.</p>
+<p>engines: Specify the versions of node (or whatever else) that your program runs on. The node API changes a lot, and there may be bugs or new functionality that you depend on. Be explicit.</p>
+<p>author: Take some credit.</p>
+<p>scripts: If you have a special compilation or installation script, then you should put it in the scripts object. You should definitely have at least a basic smoke-test command as the “scripts.test” field. See npm-scripts.</p>
+<p>main: If you have a single module that serves as the entry point to your program (like what the “foo” package gives you at require(“foo”)), then you need to specify that in the “main” field.</p>
+<p>directories: This is an object mapping names to folders. The best ones to include are “lib” and “doc”, but if you use “man” to specify a folder full of man pages, they’ll get installed just like these ones.</p>
+<p>You can use npm init in the root of your package in order to get you started with a pretty basic package.json file. See npm-init for more info.</p>
+<p>Keeping files out of your package
+Use a .npmignore file to keep stuff out of your package. If there’s no .npmignore file, but there is a .gitignore file, then npm will ignore the stuff matched by the .gitignore file. If you want to include something that is excluded by your .gitignore file, you can create an empty .npmignore file to override it. Like git, npm looks for .npmignore and .gitignore files in all subdirectories of your package, not only the root directory.</p>
+<p>.npmignore files follow the same pattern rules as .gitignore files:</p>
+<p>Blank lines or lines starting with # are ignored.
+Standard glob patterns work.
+You can end patterns with a forward slash / to specify a directory.
+You can negate a pattern by starting it with an exclamation point !.
+By default, the following paths and files are ignored, so there’s no need to add them to .npmignore explicitly:</p>
+<p>.*.swp
+._*
+.DS_Store
+.git
+.hg
+.npmrc
+.lock-wscript
+.svn
+.wafpickle-*
+config.gypi
+CVS
+npm-debug.log
+Additionally, everything in node_modules is ignored, except for bundled dependencies. npm automatically handles this for you, so don’t bother adding node_modules to .npmignore.</p>
+<p>The following paths and files are never ignored, so adding them to .npmignore is pointless:</p>
+<p>package.json
+README (and its variants)
+CHANGELOG (and its variants)
+LICENSE / LICENCE
+If, given the structure of your project, you find .npmignore to be a maintenance headache, you might instead try populating the files property of package.json, which is an array of file or directory names that should be included in your package. Sometimes a whitelist is easier to manage than a blacklist.</p>
+<p>Testing whether your .npmignore or files config works
+If you want to double check that your package will include only the files you intend it to when published, you can run the npm pack command locally which will generate a tarball in the working directory, the same way it does for publishing.</p>
+<p>Link Packages
+npm link is designed to install a development package and see the changes in real time without having to keep re-installing it. (You do need to either re-link or npm rebuild -g to update compiled packages, of course.)</p>
+<p>More info at npm-link.</p>
+<p>Before Publishing: Make Sure Your Package Installs and Works
+This is important.</p>
+<p>If you can not install it locally, you’ll have problems trying to publish it. Or, worse yet, you’ll be able to publish it, but you’ll be publishing a broken or pointless package. So don’t do that.</p>
+<p>In the root of your package, do this:</p>
+<p>npm install . -g
+That’ll show you that it’s working. If you’d rather just create a symlink package that points to your working directory, then do this:</p>
+<p>npm link
+Use npm ls -g to see if it’s there.</p>
+<p>To test a local install, go into some other folder, and then do:</p>
+<p>cd ../some-other-folder
+npm install ../my-package
+to install it locally into the node_modules folder in that other place.</p>
+<p>Then go into the node-repl, and try using require(“my-thing”) to bring in your module’s main module.</p>
+<p>Create a User Account
+Create a user with the adduser command. It works like this:</p>
+<p>npm adduser
+and then follow the prompts.</p>
+<p>This is documented better in npm-adduser.</p>
+<p>Publish your package
+This part’s easy. In the root of your folder, do this:</p>
+<p>npm publish
+You can give publish a url to a tarball, or a filename of a tarball, or a path to a folder.</p>
+<p>Note that pretty much everything in that folder will be exposed by default. So, if you have secret stuff in there, use a .npmignore file to list out the globs to ignore, or publish from a fresh checkout.</p>
+<p>Brag about it
+Send emails, write blogs, blab in IRC.</p>
+<p>Tell the world how easy it is to install your program!</p>
+<p>SEE ALSO
+npm
+npm-init
+package.json
+npm-scripts
+npm-publish
+npm-adduser
+npm-registry</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

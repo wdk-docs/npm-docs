@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the npm-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: npm-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/orgs/index.rst:2
+msgid "Orgs"
+msgstr "Orgs"
+
+#: ../../source/orgs/index.rst:4
+msgid ""
+"npm Orgs allow teams of contributors to read, write, and publish public "
+"or private scoped packages, as well as unscoped public packages governed "
+"by the Org."
+msgstr "npm Orgs允许贡献者团队读取，编写和发布公共或私有范围包，以及由Org管理的未范围公共包。"
+
+#: ../../source/orgs/index.rst:6
+msgid ""
+"Orgs are free for public packages, and cost $7 per member per month for "
+"private packages. For more information on Orgs pricing, see our pricing "
+"page."
+msgstr "公共包裹免费提供，私人包裹每个会员每月花费7美元。有关Orgs定价的更多信息，请参阅我们的定价页面。"
+
+#: ../../source/orgs/index.rst:9
+msgid "Creating and managing Orgs"
+msgstr "创建和管理Orgs"
+
+#: ../../source/orgs/index.rst:20
+msgid "Paying for your Org"
+msgstr "支付你的组织"
+
+#: ../../source/orgs/index.rst:31
+msgid "Managing Org members"
+msgstr "管理组织成员"
+
+#: ../../source/orgs/index.rst:43
+msgid "Managing teams"
+msgstr "管理团队"
+
+#: ../../source/orgs/index.rst:56
+msgid "Managing Org packages"
+msgstr "管理组织包"
+

@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the npm-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: npm-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/packages-and-modules/index.rst:2
+msgid "Packages and modules"
+msgstr ""
+
+#: ../../source/packages-and-modules/index.rst:5
+msgid "Introduction to packages and modules"
+msgstr ""
+
+#: ../../source/packages-and-modules/index.rst:18
+msgid "Contributing packages to the registry"
+msgstr ""
+
+#: ../../source/packages-and-modules/index.rst:35
+msgid "Updating and managing your published packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/index.rst:50
+msgid "Getting packages from the registry"
+msgstr ""
+
+#: ../../source/packages-and-modules/index.rst:65
+msgid "Securing your code"
+msgstr ""
+

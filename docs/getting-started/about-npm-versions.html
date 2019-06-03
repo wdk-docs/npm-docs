@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>关于npm CLI版本 &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="下载并安装Node.js和npm" href="downloading-and-installing-node-js-and-npm.html" />
+    <link rel="prev" title="删除您的npm用户帐户" href="deleting-your-npm-user-account.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#setting-up-your-npm-user-account">设置您的npm用户帐户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#paying-for-your-npm-user-account">支付您的npm用户帐户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#managing-your-npm-user-account">管理您的npm用户帐户</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#configuring-your-local-environment">配置本地环境</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">关于npm CLI版本</a></li>
+<li class="toctree-l3"><a class="reference internal" href="downloading-and-installing-node-js-and-npm.html">下载并安装Node.js和npm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html">将注册表设置配置为npm Enterprise用户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging-in-to-an-npm-enterprise-registry-from-the-command-line.html">从命令行登录npm Enterprise注册表</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#troubleshooting">故障排除</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">入门</a> &raquo;</li>
+        
+      <li>关于npm CLI版本</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/getting-started/about-npm-versions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="about-npm-cli-versions">
+<h1>关于npm CLI版本<a class="headerlink" href="#about-npm-cli-versions" title="永久链接至标题">¶</a></h1>
+<p>npm命令行界面（CLI）以常规节奏发布。我们建议安装支持您的工作流程的版本：</p>
+<p>latest release: the most recent stable version.
+next release: the most recent unreleased version of npm that is eventually released as the latest version.
+The latest release of npm
+The latest release of npm is the most recent stable version. When you install Node.js, npm is automatically installed. However, npm is released more frequently than Node.js, so to install the latest stable version of npm, on the command line, run:</p>
+<p>npm install <a class="reference external" href="mailto:npm&#37;&#52;&#48;latest">npm<span>&#64;</span>latest</a> -g
+The next release of npm
+Note: The next release of npm may contain features that do not match the features ultimately released in the latest stable version of npm.
+The next release of npm is the most recent unreleased version of npm that is eventually released as the latest version. You may want to update your npm client to the next release to test your packages against it before latest is released.</p>
+<p>要更新到npm的下一个版本，请在命令行上运行:</p>
+<p>npm install npm &#64; next -g注意：根据开发周期，npm install npm &#64; next -g可能会重新安装最新版本的npm。</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="downloading-and-installing-node-js-and-npm.html" class="btn btn-neutral float-right" title="下载并安装Node.js和npm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="deleting-your-npm-user-account.html" class="btn btn-neutral float-left" title="删除您的npm用户帐户" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

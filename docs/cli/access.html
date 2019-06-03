@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm-access &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm-access</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/cli/access.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm-access">
+<h1>npm-access<a class="headerlink" href="#npm-access" title="永久链接至标题">¶</a></h1>
+<div class="section" id="synopsis">
+<h2>概要<a class="headerlink" href="#synopsis" title="永久链接至标题">¶</a></h2>
+<dl class="option">
+<dt id="cmdoption-npm-arg-access">
+<code class="descname">access</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-npm-arg-access" title="永久链接至目标">¶</a></dt>
+<dd><p>Set access level on published packages</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">access</span> <span class="n">public</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="n">npm</span> <span class="n">access</span> <span class="n">restricted</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span><span class="p">]</span>
+
+<span class="n">npm</span> <span class="n">access</span> <span class="n">grant</span> <span class="o">&lt;</span><span class="n">read</span><span class="o">-</span><span class="n">only</span><span class="o">|</span><span class="n">read</span><span class="o">-</span><span class="n">write</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">scope</span><span class="p">:</span><span class="n">team</span><span class="o">&gt;</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="n">npm</span> <span class="n">access</span> <span class="n">revoke</span> <span class="o">&lt;</span><span class="n">scope</span><span class="p">:</span><span class="n">team</span><span class="o">&gt;</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span><span class="p">]</span>
+
+<span class="n">npm</span> <span class="n">access</span> <span class="mi">2</span><span class="n">fa</span><span class="o">-</span><span class="n">required</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="n">npm</span> <span class="n">access</span> <span class="mi">2</span><span class="n">fa</span><span class="o">-</span><span class="ow">not</span><span class="o">-</span><span class="n">required</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span><span class="p">]</span>
+
+<span class="n">npm</span> <span class="n">access</span> <span class="n">ls</span><span class="o">-</span><span class="n">packages</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;|&lt;</span><span class="n">scope</span><span class="o">&gt;|&lt;</span><span class="n">scope</span><span class="p">:</span><span class="n">team</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="n">npm</span> <span class="n">access</span> <span class="n">ls</span><span class="o">-</span><span class="n">collaborators</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;</span><span class="p">]]</span>
+<span class="n">npm</span> <span class="n">access</span> <span class="n">edit</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="description">
+<h2>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>用于在私有包上设置访问控制。</p>
+<p>For all of the subcommands, npm access will perform actions on the packages in the current working directory if no package name is passed to the subcommand.</p>
+<ul class="simple">
+<li><p>public / restricted: Set a package to be either publicly accessible or restricted.</p></li>
+<li><p>grant / revoke: Add or remove the ability of users and teams to have read-only or read-write access to a package.</p></li>
+<li><p>2fa-required / 2fa-not-required: Configure whether a package requires that anyone publishing it have two-factor authentication enabled on their account.</p></li>
+<li><p>ls-packages: Show all of the packages a user or a team is able to access, along with the access level, except for read-only public packages (it won’t print the whole registry listing)</p></li>
+<li><p>ls-collaborators: Show all of the access privileges for a package. Will only show permissions for packages to which you have at least read access. If &lt;user&gt; is passed in, the list is filtered only to teams that user happens to belong to.</p></li>
+<li><p>编辑：使用$ EDITOR一次设置包的访问权限。</p></li>
+</ul>
+</div>
+<div class="section" id="details">
+<h2>细节<a class="headerlink" href="#details" title="永久链接至标题">¶</a></h2>
+<p>npm access always operates directly on the current registry, configurable from the command line using –registry=&lt;registry url&gt;.</p>
+<p>未开发的包裹总是公开的。</p>
+<p>Scoped packages default to restricted, but you can either publish them as public using npm publish –access=public, or set their access as public using npm access public after the initial publish.</p>
+<p>您必须具有设置程序包访问权限：</p>
+<ul class="simple">
+<li><p>您是无范围或范围包的所有者。</p></li>
+<li><p>您是拥有范围的团队的成员。</p></li>
+<li><p>You have been given read-write privileges for a package, either as a member of a team or directly as an owner.</p></li>
+</ul>
+<p>If you have two-factor authentication enabled then you’ll have to pass in an otp with –otp when making access changes.</p>
+<p>If your account is not paid, then attempts to publish scoped packages will fail with an HTTP 402 status code (logically enough), unless you use –access=public.</p>
+<p>Management of teams and team memberships is done with the npm team command.</p>
+</div>
+<div class="section" id="see-also">
+<h2>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>libnpmaccess</p></li>
+<li><p>npm-team</p></li>
+<li><p>npm-publish</p></li>
+<li><p>npm-config</p></li>
+<li><p>npm-registry</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

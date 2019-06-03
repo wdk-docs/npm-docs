@@ -1,0 +1,31 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the npm-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: npm-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/integrations/index.rst:2
+msgid "Integrations"
+msgstr "集成"
+
+#: ../../source/integrations/index.rst:4
+msgid "Integrating npm with third-party tools, such as CI/CD apps."
+msgstr "将npm与第三方工具（如CI / CD应用程序）集成。"
+
+#: ../../source/integrations/index.rst:7
+msgid "Integrating npm with external services"
+msgstr "将npm与外部服务集成"
+

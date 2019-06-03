@@ -1,0 +1,2144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the npm-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: npm-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-02 19:45+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/getting-started/about-npm-versions.rst:2
+msgid "About npm CLI versions"
+msgstr "关于npm CLI版本"
+
+#: ../../source/getting-started/about-npm-versions.rst:4
+msgid ""
+"The npm command line interface (CLI) is released on a regular cadence. We"
+" recommend installing the release that supports your workflow:"
+msgstr "npm命令行界面（CLI）以常规节奏发布。我们建议安装支持您的工作流程的版本："
+
+#: ../../source/getting-started/about-npm-versions.rst:6
+msgid ""
+"latest release: the most recent stable version. next release: the most "
+"recent unreleased version of npm that is eventually released as the "
+"latest version. The latest release of npm The latest release of npm is "
+"the most recent stable version. When you install Node.js, npm is "
+"automatically installed. However, npm is released more frequently than "
+"Node.js, so to install the latest stable version of npm, on the command "
+"line, run:"
+msgstr ""
+
+#: ../../source/getting-started/about-npm-versions.rst:11
+msgid ""
+"npm install npm@latest -g The next release of npm Note: The next release "
+"of npm may contain features that do not match the features ultimately "
+"released in the latest stable version of npm. The next release of npm is "
+"the most recent unreleased version of npm that is eventually released as "
+"the latest version. You may want to update your npm client to the next "
+"release to test your packages against it before latest is released."
+msgstr ""
+
+#: ../../source/getting-started/about-npm-versions.rst:16
+msgid "To update to the next release of npm, on the command line, run:"
+msgstr "要更新到npm的下一个版本，请在命令行上运行:"
+
+#: ../../source/getting-started/about-npm-versions.rst:18
+msgid ""
+"npm install npm@next -g Note: Depending on the development cycle, npm "
+"install npm@next -g may reinstall the latest release of npm."
+msgstr ""
+"npm install npm @ next -g注意：根据开发周期，npm install npm @ next "
+"-g可能会重新安装最新版本的npm。"
+
+#: ../../source/getting-started/about-two-factor-authentication.rst:2
+msgid "About two-factor authentication"
+msgstr "关于双因素身份验证"
+
+#: ../../source/getting-started/about-two-factor-authentication.rst:4
+msgid ""
+"Two-factor authentication (2FA) protects against unauthorized access to "
+"your account by confirming your identity using:"
+msgstr "双因素身份验证（2FA）通过使用确认您的身份来防止未经授权访问您的帐户:"
+
+#: ../../source/getting-started/about-two-factor-authentication.rst:6
+msgid ""
+"something you know (such as your username and password) something you "
+"have (such as a phone or tablet) When you enable 2FA, we will prompt you "
+"for a unique one-time password when you perform certain actions on your "
+"account or on packages to which you have write access, depending on your "
+"2FA configuration."
+msgstr ""
+
+#: ../../source/getting-started/about-two-factor-authentication.rst:10
+msgid ""
+"Note: Two-factor authentication provides the best possible security for "
+"your account against attackers. We strongly recommend enabling 2FA on "
+"your account as soon as possible after you sign up. Two-factor "
+"authentication modes on npm Two-factor authentication on npm can be "
+"enabled for authorization only, or authorization and writes."
+msgstr ""
+
+#: ../../source/getting-started/about-two-factor-authentication.rst:14
+#, fuzzy
+msgid ""
+"Authorization only If you enable 2FA for authorization only, we will "
+"request a one-time password for certain authorized actions."
+msgstr "仅授权§如果仅启用2FA授权，我们将为某些授权操作请求一次性密码。"
+
+#: ../../source/getting-started/about-two-factor-authentication.rst:17
+msgid ""
+"Action  CLI command Log in to npm   npm login Change profile settings "
+"(including your password)       npm profile set Change 2FA modes for your"
+" user account  npm profile enable-2fa auth-only Disable 2FA for your user"
+" account       npm profile disable-2fa Authorization and writes If you "
+"enable 2FA for authorization and writes, we will request a one-time "
+"password for certain authorized actions, as well as write actions."
+msgstr ""
+
+#: ../../source/getting-started/about-two-factor-authentication.rst:25
+msgid ""
+"Action  CLI command Log in to npm   npm login Change profile settings "
+"(including your password)       npm profile set Change 2FA modes for your"
+" user account  npm profile enable-2fa auth-only Disable 2FA for your user"
+" account       npm profile disable-2fa Create tokens   npm token create "
+"Revoke tokens   npm token revoke Publish packages        npm publish "
+"Unpublish packages      npm unpublish Deprecate packages      npm "
+"deprecate Change package visibility       npm access public/restricted "
+"Change user and team package access     npm access grant/revoke Change "
+"package 2FA requirements N/A"
+msgstr ""
+
+#: ../../source/getting-started/changing-your-npm-username.rst:2
+msgid "Changing your npm username"
+msgstr "更改你的npm用户名"
+
+#: ../../source/getting-started/changing-your-npm-username.rst:4
+msgid "To change your npm username, contact npm Support."
+msgstr "要更改您的npm用户名，请联系npm支持。"
+
+#: ../../source/getting-started/common-errors.rst:2
+msgid "Common errors"
+msgstr "常见错误"
+
+#: ../../source/getting-started/common-errors.rst:4
+msgid ""
+"Errors Broken npm installation Random errors No compatible version found "
+"Permissions errors Error: ENOENT, stat "
+"'C:\\Users\\<user>\\AppData\\Roaming\\npm' on Windows 7 No space No git "
+"Running a Vagrant box on Windows fails due to path length issues npm only"
+" uses git: and ssh+git: URLs for GitHub repos, breaking proxies SSL error"
+" SSL-intercepting proxy Not found / Server error Invalid JSON Many ENOENT"
+" / ENOTEMPTY errors in output cb() never called! when using shrinkwrapped"
+" dependencies npm login errors npm hangs on Windows at addRemoteTarball "
+"npm not running the latest version on a Windows machine Broken npm "
+"installation If your npm is broken:"
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:26
+msgid ""
+"On Mac or Linux, reinstall npm. Windows: If you’re on Windows and you "
+"have a broken installation, the easiest thing to do is to reinstall node "
+"from the official installer (see this note about installing the latest "
+"stable version). Random errors Some strange issues can be resolved by "
+"simply running npm cache clean and trying again. If you are having "
+"trouble with npm install, use the -verbose option to see more details. No"
+" compatible version found You have an outdated npm. Please update to the "
+"latest stable npm."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:34
+msgid ""
+"Permissions errors Please see the discussions in “Downloading and "
+"installing Node.js and npm” and “Resolving EACCES permissions errors when"
+" installing packages globally” for ways to avoid and resolve permissions "
+"errors."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:37
+msgid ""
+"Error: ENOENT, stat 'C:\\Users\\<user>\\AppData\\Roaming\\npm' on Windows"
+" 7 The error Error: ENOENT, stat "
+"'C:\\Users\\<user>\\AppData\\Roaming\\npm' on Windows 7 is a consequence "
+"of joyent/node#8141, and is an issue with the Node installer for Windows."
+" The workaround is to ensure that "
+"C:\\Users\\<user>\\AppData\\Roaming\\npm exists and is writable with your"
+" normal user account."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:40
+#, fuzzy
+msgid ""
+"No space npm ERR! Error: ENOSPC, write You are trying to install on a "
+"drive that either has no space, or has no permission to write."
+msgstr ""
+"No space§ npm ERR! Error: ENOSPC, write You are trying to install on a "
+"drive that either has no space, or has no permission to write."
+
+#: ../../source/getting-started/common-errors.rst:44
+msgid ""
+"Free some disk space or Set the tmp folder somewhere with more space: npm"
+" config set tmp /path/to/big/drive/tmp or Build Node yourself and install"
+" it somewhere writable with lots of space. No git npm ERR! not found: git"
+" ENOGIT You need to install git. Or, you may need to add your git "
+"information to your npm profile. You can do this from the command line or"
+" the website. For more information, see “Managing your profile settings”."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:52
+msgid ""
+"Running a Vagrant box on Windows fails due to path length issues "
+"@drmyersii went through what sounds like a lot of painful trial and error"
+" to come up with a working solution involving Windows long paths and some"
+" custom Vagrant configuration:"
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:55
+msgid ""
+"This is the commit that I implemented it in, but I’ll go ahead and post "
+"the main snippet of code here:"
+msgstr ""
+"This is the commit that I implemented it in, but I’ll go ahead and post "
+"the main snippet of code here:"
+
+#: ../../source/getting-started/common-errors.rst:57
+msgid "config.vm.provider \"virtualbox\" do |v|"
+msgstr "config.vm.provider \"virtualbox\" do |v|"
+
+#: ../../source/getting-started/common-errors.rst:58
+msgid ""
+"v.customize [\"sharedfolder\", \"add\", :id, \"--name\", \"www\", \"--"
+"hostpath\", ((\"//?/\" + File.dirname(__FILE__) + "
+"\"/www\").gsub(\"/\",\"\\\\\"))]"
+msgstr ""
+"v.customize [\"sharedfolder\", \"add\", :id, \"--name\", \"www\", \"--"
+"hostpath\", ((\"//?/\" + File.dirname(__FILE__) + "
+"\"/www\").gsub(\"/\",\"\\\\\"))]"
+
+#: ../../source/getting-started/common-errors.rst:59
+msgid "end"
+msgstr "end"
+
+#: ../../source/getting-started/common-errors.rst:61
+msgid ""
+"config.vm.provision :shell, inline: \"mkdir /home/vagrant/www\" "
+"config.vm.provision :shell, inline: \"mount -t vboxsf -o uid=`id -u "
+"vagrant`,gid=`getent group vagrant | cut -d: -f3` > www "
+"/home/vagrant/www\", run: \"always\" In the code above, I am appending "
+"\\\\?\\ to the current directory absolute path. This will actually force "
+"the Windows API to allow an increase in the MAX_PATH variable (normally "
+"capped at 260). Read more about max path. This is happening during the "
+"sharedfolder creation which is intentionally handled by VBoxManage and "
+"not Vagrant’s “synced_folder” method. The last bit is pretty self-"
+"explanatory; we create the new shared folder and then make sure it’s "
+"mounted each time the machine is accessed or touched since Vagrant likes "
+"to reload its mounts/shared folders on each load."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:65
+#, fuzzy
+msgid ""
+"npm only uses git: and ssh+git: URLs for GitHub repos, breaking proxies "
+"@LaurentGoderre fixed this with some Git trickery:"
+msgstr "npm只使用git：和ssh + git：GitHub repos的URL，破坏代理§LaurentGoderre用一些Git技巧修复了这个问题:"
+
+#: ../../source/getting-started/common-errors.rst:68
+msgid ""
+"I fixed this issue for several of my colleagues by running the following "
+"two commands:"
+msgstr "我通过运行以下两个命令为几个同事解决了这个问题:"
+
+#: ../../source/getting-started/common-errors.rst:70
+msgid ""
+"git config --global url.\"https://github.com/\".insteadOf git@github.com:"
+" git config --global url.\"https://\".insteadOf git:// One thing we "
+"noticed is that the .gitconfig used is not always the one expected so if "
+"you are on a machine that modified the home path to a shared drive, you "
+"need to ensure that your .gitconfig is the same on both your shared drive"
+" and in c:\\users\\[your user]\\"
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:74
+msgid ""
+"SSL Error npm ERR! Error: 7684:error:140770FC:SSL "
+"routines:SSL23_GET_SERVER_HELLO:unknown "
+"protocol:openssl\\ssl\\s23_clnt.c:787: You are trying to talk SSL to an "
+"unencrypted endpoint. More often than not, this is due to a proxy "
+"configuration error (see also this helpful, if dated, guide). In this "
+"case, you do not want to disable strict-ssl – you may need to set up a CA"
+" / CA file for use with your proxy, but it’s much better to take the time"
+" to figure that out than disabling SSL protection."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:78
+msgid ""
+"npm ERR! Error: SSL Error: CERT_UNTRUSTED npm ERR! Error: SSL Error: "
+"UNABLE_TO_VERIFY_LEAF_SIGNATURE This problem will happen if you’re "
+"running Node 0.6. Please upgrade to node 0.8 or above. See this post for "
+"details."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:82
+msgid ""
+"You could also try these workarounds: npm config set ca \"\" or npm "
+"config set strict-ssl false"
+msgstr "您还可以尝试以下解决方法：npm config set ca \\“\\”或npm config set strict-ssl false"
+
+#: ../../source/getting-started/common-errors.rst:84
+msgid ""
+"npm ERR! Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN npm no longer "
+"supports its self-signed certificates"
+msgstr "错误的ERR！错误：SSL错误：SELF_SIGNED_CERT_IN_CHAIN npm不再支持其自签名证书"
+
+#: ../../source/getting-started/common-errors.rst:87
+msgid "Either:"
+msgstr "Either:"
+
+#: ../../source/getting-started/common-errors.rst:89
+msgid ""
+"upgrade your version of npm npm install npm -g --ca=\"\" tell your "
+"current version of npm to use known registrars npm config set ca=\"\" If "
+"this does not fix the problem, then you may have an SSL-intercepting "
+"proxy. (For example, "
+"https://github.com/npm/npm/issues/7439#issuecomment-76024878)"
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:93
+#, fuzzy
+msgid ""
+"SSL-intercepting proxy Unsolved. See "
+"https://github.com/npm/npm/issues/9282"
+msgstr "SSL拦截代理§未解决。看到https://github.com/npm/npm/issues/9282"
+
+#: ../../source/getting-started/common-errors.rst:96
+msgid ""
+"Not found / Server error npm http 404 https://registry.npmjs.org/faye-"
+"websocket/-/faye-websocket-0.7.0.tgz npm ERR! fetch failed "
+"https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.7.0.tgz npm "
+"ERR! Error: 404 Not Found npm http 500 "
+"https://registry.npmjs.org/phonegap It’s most likely a temporary npm "
+"registry glitch. Check npm server status and try again later. If the "
+"error persists, perhaps the published package is corrupt. Contact the "
+"package owner and have them publish a new version of the package. Invalid"
+" JSON Error: Invalid JSON npm ERR! SyntaxError: Unexpected token < npm "
+"ERR! registry error parsing json Possible temporary npm registry glitch, "
+"or corrupted local server cache. Run npm cache clean and/or try again "
+"later. This can be caused by corporate proxies that give HTML responses "
+"to package.json requests. Check npm’s proxy configuration. Check that "
+"it’s not a problem with a package you’re trying to install (e.g. invalid "
+"package.json). Many ENOENT / ENOTEMPTY errors in output npm is written to"
+" use resources efficiently on install, and part of this is that it tries "
+"to do as many things concurrently as is practical. Sometimes this results"
+" in race conditions and other synchronization issues. As of npm 2.0.0, a "
+"very large number of these issues were addressed. If you see ENOENT "
+"lstat, ENOENT chmod, ENOTEMPTY unlink, or something similar in your log "
+"output, try updating npm to the latest version. If the problem persists, "
+"look at npm/npm#6043 and see if somebody has already discussed your "
+"issue."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:113
+msgid ""
+"cb() never called! when using shrinkwrapped dependencies Take a look at "
+"issue #5920. We’re working on fixing this one, but it’s a fairly subtle "
+"race condition and it’s taking us a little time. You might try moving "
+"your npm-shrinkwrap.json file out of the way until we have this fixed. "
+"This has been fixed in versions of npm newer than npm@2.1.5, so update to"
+" npm@latest."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:116
+msgid ""
+"npm login errors Sometimes npm login fails for no obvious reason. The "
+"first thing to do is to log in at https://www.npmjs.com/login and check "
+"that your e-mail address on npmjs.com matches the email address you are "
+"giving to npm login."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:119
+msgid ""
+"If that’s not the problem, or if you are seeing the message \"may not mix"
+" password_sha and pbkdf2\", then"
+msgstr ""
+"If that’s not the problem, or if you are seeing the message \"may not mix"
+" password_sha and pbkdf2\", then"
+
+#: ../../source/getting-started/common-errors.rst:121
+msgid ""
+"Log in at https://npmjs.com/ Change password at "
+"https://npmjs.com/password – you can even “change” it to the same "
+"password Clear login-related fields from ~/.npmrc – e.g., by running sed "
+"-ie '/registry.npmjs.org/d' ~/.npmrc npm login and it generally seems to "
+"work."
+msgstr ""
+
+#: ../../source/getting-started/common-errors.rst:127
+msgid ""
+"See https://github.com/npm/npm/issues/6641#issuecomment-72984009 for the "
+"history of this issue."
+msgstr ""
+"See https://github.com/npm/npm/issues/6641#issuecomment-72984009 for the "
+"history of this issue."
+
+#: ../../source/getting-started/common-errors.rst:129
+#, fuzzy
+msgid ""
+"npm hangs on Windows at addRemoteTarball Check if you have two temp "
+"directories set in your .npmrc:"
+msgstr ""
+"npm hangs on Windows at addRemoteTarball§ Check if you have two temp "
+"directories set in your .npmrc:"
+
+#: ../../source/getting-started/common-errors.rst:132
+msgid ""
+"> npm config ls -l Look for lines defining the tmp config variable. If "
+"you find more than one, remove all but one of them."
+msgstr "> npm config ls -l查找定义tmp配置变量的行。如果您找到多个，请删除其中一个。"
+
+#: ../../source/getting-started/common-errors.rst:135
+msgid ""
+"See https://github.com/npm/npm/issues/7590 for more about this unusual "
+"problem."
+msgstr ""
+"See https://github.com/npm/npm/issues/7590 for more about this unusual "
+"problem."
+
+#: ../../source/getting-started/common-errors.rst:137
+#, fuzzy
+msgid ""
+"npm not running the latest version on a Windows machine See the section "
+"about Windows here."
+msgstr "npm没有在Windows机器上运行最新版本§请参阅此处有关Windows的部分。"
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:2
+msgid "Configuring two-factor authentication"
+msgstr "配置双因素身份验证"
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:4
+msgid ""
+"You can enable two-factor authentication (2FA) on your npm user account "
+"to protect against unauthorized access to your account and packages."
+msgstr "您可以在npm用户帐户上启用双因素身份验证（2FA），以防止对您的帐户和软件包进行未经授权的访问。"
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:6
+#, fuzzy
+msgid "Prerequisites Before you enable 2FA on your npm user account, you must:"
+msgstr "先决条件§必须先在npm用户帐户上启用2FA之前:"
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:9
+msgid ""
+"Update your npm client to version 5.5.1 or higher. Install an "
+"authenticator application that can generate one-time passwords (such as "
+"Authy or Google Authenticator) on a mobile device or second computer that"
+" will always be available when you work in your npm account. Note: npm "
+"does not accept SMS (text-to-phone) as a 2FA method. Configuring 2FA on "
+"the web Enabling 2FA on the web Log in to npm with your user account. npm"
+" login dialog with username and password fields left blank In the upper "
+"right corner of the page, click your profile picture, then click Profile "
+"Settings. npm avatar menu with selector over profile settings list item "
+"On the profile settings page, under “Two Factor Authentication”, click "
+"Enable 2FA. enable 2FA button On the 2FA settings page, select the mode "
+"you would like to enable. For more information, see “Two-factor "
+"authentication modes on npm”. authorization and publishing radio button "
+"selected Click Submit. submit button Open your authenticator application "
+"on your phone, and, on the two-step verification page, scan the QR code "
+"with your phone. Enter the code generated by the app, then click Verify. "
+"verify button for 2fa authentication code form On the recovery code page,"
+" copy the recovery codes to your computer or other safe location that is "
+"not your second factor device. We recommend using a password manager to "
+"save your recovery codes. If you are unable to access your phone, you "
+"will need to enter a recovery code when prompted for a one-time password."
+" Click Go back to settings. go back to settings button Removing 2FA on "
+"the web If you have 2FA enabled, you can remove it from your profile "
+"settings page."
+msgstr ""
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:26
+msgid ""
+"Log in to npm with your user account. npm login dialog with username and "
+"password fields left blank In the upper right corner of the page, click "
+"your profile picture, then click Profile Settings. npm avatar menu with "
+"selector over profile settings list item On the profile settings page, "
+"under “Two Factor Authentication”, click Modify 2FA. modify 2fa button On"
+" the 2FA settings page, under “What should we protect?”, select "
+"“Disable”. disable radio button selected Click Submit. submit button "
+"Configuring 2FA from the command line Enabling 2FA from the command line "
+"Note: Settings you configure on the command line will also apply to your "
+"profile settings on the npm website. On the command line, type the npm "
+"profile command along with the option for the 2FA mode you want to "
+"enable: To enable 2FA for authorization and writes, type: npm profile "
+"enable-2fa auth-and-writes To enable 2FA for authorization only, type: "
+"npm profile enable-2fa auth-only To add npm to your authenticator "
+"application, using the device with the app, you can either: scan the QR "
+"code displayed on the command line. type the number displayed below the "
+"QR code. When prompted to add an OTP code from your authenticator, on the"
+" command line, enter a one-time password generated by your authenticator "
+"app. Sending a one-time password from the command line If you have "
+"enabled 2FA auth-and-writes, you will need to send the OTP from the "
+"command line for certain commands to work. To do this, append "
+"--otp=123456 (where 123456 is the code generated by your authenticator) "
+"at the end of the command. Here are a few examples:"
+msgstr ""
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:46
+msgid ""
+"npm publish [<tarball>|<folder>][--tag <tag>] --otp=123456 npm owner add "
+"<user > --otp=123456 npm owner rm <user> --otp=123456 npm dist-tags add "
+"<pkg>@<version> [<tag>] --otp=123456 npm access edit [<package>) "
+"--otp=123456 npm unpublish [<@scope>/]<pkg>[@<version>] --otp=123456 "
+"Removing 2FA from the command line On the command line, type the "
+"following command: npm profile disable-2fa When prompted, enter your npm "
+"password:"
+msgstr ""
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:56
+msgid "> npm password:"
+msgstr "> npm password:"
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:57
+msgid ""
+"When prompted for a one-time password, enter a password from your "
+"authenticator app: >Enter one-time password from your authenticator: "
+"123456 Resolving OTP errors If you are entering what seems to be a valid "
+"OTP but you see an error, be sure that you are using the correct "
+"authenticator account. If you have multiple authenticator accounts, using"
+" an OTP from the wrong account will cause an error."
+msgstr ""
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:62
+msgid ""
+"If you see an error when you enter a valid OTP, check that you are using "
+"the correct authenticator account."
+msgstr ""
+"If you see an error when you enter a valid OTP, check that you are using "
+"the correct authenticator account."
+
+#: ../../source/getting-started/configuring-two-factor-authentication.rst:64
+msgid ""
+"Also, when you reset 2fa after it has been disabled, the authenticator "
+"might create a second account with the same name. Please see the "
+"authenticator documentation to delete the old account."
+msgstr "此外，在禁用后重置2fa时，身份验证器可能会创建具有相同名称的第二个帐户。请参阅身份验证器文档以删除旧帐户。"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:2
+msgid "Configuring your registry settings as an npm Enterprise user"
+msgstr "将注册表设置配置为npm Enterprise用户"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:4
+msgid ""
+"Note: npm Enterprise requires npm 4.4.x or greater. To download the "
+"latest version of npm, on the command line, run [sudo] npm install npm -g"
+" You can configure your npm client to publish to and install from your "
+"private npm Enterprise registry by:"
+msgstr ""
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:7
+msgid ""
+"Setting your company’s npm Enterprise registry as your default registry "
+"(recommended) Using npmrc to managing multiple profiles for different "
+"registries Configuring scopes to point to different registries Setting "
+"your company’s npm Enterprise registry as your default registry The "
+"easiest way to publish to and install from your company’s npm Enterprise "
+"registry is to set it as your default registry."
+msgstr ""
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:13
+msgid ""
+"On the command line, run the following command, replacing “your-registry”"
+" with the name of your company’s npm Enterprise registry:"
+msgstr "在命令行上，运行以下命令，将“your-registry”替换为公司的npm Enterprise注册表的名称："
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:15
+msgid ""
+"npm config set registry https://registry.your-registry.npme.io/ Using "
+"npmrc to managing multiple profiles for different registries If you need "
+"to publish and install packages to and from different registries – for "
+"example, an npm Enterprise registry for work-related code, and the "
+"npmjs.com public registry for open source projects – you can create and "
+"manage a separate npm user profile for each registry using the npmrc "
+"tool."
+msgstr ""
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:19
+#, fuzzy
+msgid ""
+"Overview Install npmrc Create an npm Enterprise profile Create a profile "
+"for the public npm registry Switch profiles with npmrc Install npmrc To "
+"install npmrc, on the command line, run"
+msgstr "概述§安装npmrc创建npm企业配置文件为公共npm注册表创建配置文件使用npmrc创建配置文件安装npmrc§要在命令行上安装npmrc，请运行"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:27
+#, fuzzy
+msgid ""
+"npm i npmrc -g Create an npm Enterprise profile After installing npmrc, "
+"you can create a profile to access your company’s Enterprise registry."
+msgstr ""
+"npm i npmrc -g Create an npm Enterprise profile§ After installing npmrc, "
+"you can create a profile to access your company’s Enterprise registry."
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:31
+msgid ""
+"To create an npm Enterprise profile, on the command line, run npmrc -c "
+"name-of-profile. For example, to create a profile called “work”, run the "
+"following command:"
+msgstr ""
+"要创建npm Enterprise配置文件，请在命令行上运行npmrc -c name-of-"
+"profile。例如，要创建名为“work”的概要文件，请运行以下命令："
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:32
+msgid "npmrc -c work"
+msgstr "npmrc -c work"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:33
+msgid ""
+"To set an npm Enterprise registry for the profile, run the following "
+"command, replacing your-company-registry with the name of your company’s "
+"npm Enterprise registry:"
+msgstr ""
+"要为配置文件设置npm Enterprise注册表，请运行以下命令，将your-company-registry替换为公司的npm "
+"Enterprise注册表的名称："
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:34
+msgid "npm config set registry https://registry.your-company-registry.npme.io/"
+msgstr "npm config set registry https://registry.your-company-registry.npme.io/"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:35
+#, fuzzy
+msgid ""
+"Create a profile for the public npm registry After you have created your "
+"npm Enterprise profile, you can create a second profile for a different "
+"registry, such as the public npm registry."
+msgstr ""
+"为公共npm注册表创建配置文件§创建npm Enterprise配置文件后，可以为其他注册表创建第二个配置文件，例如public npm "
+"registry。"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:38
+msgid ""
+"To create a profile for the public registry, on the command line, run "
+"npmrc -c name-of-profile. For example, to create a profile called “open-"
+"source”, run npmrc -c open-source. To set the public registry for your "
+"open source profile, run the following command:"
+msgstr ""
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:40
+msgid "npm config set registry https://registry.npmjs.com/"
+msgstr "npm config set registry https://registry.npmjs.com/"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:41
+#, fuzzy
+msgid ""
+"Switch profiles with npmrc To switch profiles, on the command line, run "
+"the following command, replacing profile-name with the name of your "
+"profile:"
+msgstr "使用npmrc§切换配置文件要切换配置文件，请在命令行上运行以下命令，将profile-name替换为配置文件的名称:"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:44
+msgid "npmrc profile-name"
+msgstr "npmrc profile-name"
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:45
+msgid ""
+"Configuring scopes to point to different registries You can also map "
+"different scopes to different npm registries. For example, to use the "
+"scope @company-scope from your npm Enterprise registry, while continuing "
+"to install public packages from the public npm registry, run the "
+"following command, replacing @company-scope with the scope, and company-"
+"registry with the name of your company’s npm Enterprise registry:"
+msgstr ""
+
+#: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:48
+msgid ""
+"npm login --scope=@company-scope --registry=https://registry.company-"
+"registry.npme.io/"
+msgstr ""
+"npm login --scope=@company-scope --registry=https://registry.company-"
+"registry.npme.io/"
+
+#: ../../source/getting-started/creating-a-new-npm-user-account.rst:2
+#: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:2
+msgid "Recovering your 2FA-enabled account"
+msgstr "恢复已启用2FA的帐户"
+
+#: ../../source/getting-started/creating-a-new-npm-user-account.rst:4
+#: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:4
+msgid ""
+"Depending on the circumstances, you may be able to recover access to your"
+" 2FA-enabled account."
+msgstr "根据具体情况，您可以恢复对启用了2FA的帐户的访问权限。"
+
+#: ../../source/getting-started/creating-a-new-npm-user-account.rst:6
+#: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:6
+#, fuzzy
+msgid ""
+"Misplaced second factor device If you have misplaced the device that "
+"provided second-factor authentication, you can use the recovery codes "
+"generated when you enabled 2FA to access your account."
+msgstr "错位的第二因素设备§如果您错放了提供第二因素身份验证的设备，则可以使用启用2FA时生成的恢复代码来访问您的帐户。"
+
+#: ../../source/getting-started/creating-a-new-npm-user-account.rst:9
+#: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:9
+msgid ""
+"Locate the recovery codes generated when you enabled 2FA on your account."
+" If you are logged out, on the command line, log in using your npm "
+"username and npm password."
+msgstr "找到您在帐户中启用2FA时生成的恢复代码。如果您已注销，请在命令行上使用您的npm用户名和npm密码登录。"
+
+#: ../../source/getting-started/creating-a-new-npm-user-account.rst:11
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:11
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:17
+#: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:11
+msgid "npm login"
+msgstr "npm login"
+
+#: ../../source/getting-started/creating-a-new-npm-user-account.rst:12
+#: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:12
+msgid ""
+"When prompted for an OTP, enter a recovery code. Once you are logged in, "
+"type npm profile disable-2fa and enter your npm password if prompted. "
+"Enter an unused recovery code when you see this prompt:"
+msgstr ""
+"提示输入OTP时，请输入恢复代码。登录后，键入npm profile disable-"
+"2fa并在出现提示时输入您的npm密码。看到此提示时输入未使用的恢复代码："
+
+#: ../../source/getting-started/creating-a-new-npm-user-account.rst:15
+#: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:15
+msgid ">Enter one-time password from your authenticator:"
+msgstr ">从验证者输入一次性密码:"
+
+#: ../../source/getting-started/creating-a-new-npm-user-account.rst:16
+#: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:16
+msgid ""
+"npm will confirm that two-factor authentication has been disabled. type "
+"npm profile enable-2fa to re-enable 2FA, assign a different device to "
+"your account, and generate new recovery codes. Note: Using the recovery "
+"codes to re-enable 2FA may create a second authenticator account with the"
+" same npm account name. To delete the old authenticator account, follow "
+"the steps for the authenticator. Misplaced recovery codes If you have "
+"misplaced both the device that provided second-factor authentication and "
+"your recovery codes, we may be unable to help you recover your account. "
+"If you have any questions, please contact npm Support."
+msgstr ""
+
+#: ../../source/getting-started/deleting-your-npm-user-account.rst:2
+msgid "Deleting your npm user account"
+msgstr "删除您的npm用户帐户"
+
+#: ../../source/getting-started/deleting-your-npm-user-account.rst:4
+msgid "To delete your npm user account, contact npm Support."
+msgstr "要删除您的npm用户帐户，请联系npm支持。"
+
+#: ../../source/getting-started/downgrading-to-a-free-user-account-plan.rst:2
+msgid "Downgrading to a free user account plan"
+msgstr "降级为免费用户帐户计划"
+
+#: ../../source/getting-started/downgrading-to-a-free-user-account-plan.rst:4
+msgid ""
+"Note: This article only applies to users of the public npm registry. If "
+"you have a paid user account, but no longer need private packages, you "
+"can downgrade your paid Org to a free Org. When you downgrade from a paid"
+" to a free Org, you will lose the ability to install and publish private "
+"packages at the end of your last paid billing cycle. Your private "
+"packages will not be made publicly visible when you downgrade to a free "
+"plan."
+msgstr ""
+
+#: ../../source/getting-started/downgrading-to-a-free-user-account-plan.rst:7
+msgid ""
+"Log in to npm with your user account. npm login dialog with username and "
+"password fields left blank In the upper right corner of the page, click "
+"your profile picture, then click Billing Info. profile dropdown menu with"
+" billing information element selected Under “change plan”, click "
+"Downgrade Plan. downgrade plan button Under “Are you sure?”, click "
+"Downgrade to a free account. downgrade to a free account confirmation "
+"button"
+msgstr ""
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:2
+msgid "Downloading and installing Node.js and npm"
+msgstr "下载并安装Node.js和npm"
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:4
+msgid ""
+"To publish and install packages to and from the public npm registry or "
+"your company’s npm Enterprise registry, you must install Node.js and the "
+"npm command line interface using either a Node version manager or a Node "
+"installer. We strongly recommend using a Node version manager to install "
+"Node.js and npm. We do not recommend using a Node installer, since the "
+"Node installation process installs npm in a directory with local "
+"permissions and can cause permissions errors when you run npm packages "
+"globally."
+msgstr ""
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:6
+msgid ""
+"Note: npm Enterprise requires npm 4.4.x or greater. To download the "
+"latest version of npm, on the command line, run the following command:"
+msgstr ""
+"Note: npm Enterprise requires npm 4.4.x or greater. To download the "
+"latest version of npm, on the command line, run the following command:"
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:8
+msgid ""
+"[sudo] npm install npm -g Overview Checking your version of npm and "
+"Node.js Using a Node version manager to install Node.js and npm Using a "
+"Node installer to install Node.js and npm Checking your version of npm "
+"and Node.js To see if you already have Node.js and npm installed and "
+"check the installed version, run the following commands:"
+msgstr ""
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:16
+msgid ""
+"node -v npm -v Using a Node version manager to install Node.js and npm "
+"Node version managers allow you to install and switch between multiple "
+"versions of Node.js and npm on your system so you can test your "
+"applications on multiple versions of npm to ensure they work for users on"
+" different versions."
+msgstr ""
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:21
+msgid ""
+"OSX or Linux Node version managers nvm n Windows Node version managers "
+"nodist nvm-windows Using a Node installer to install Node.js and npm If "
+"you are unable to use a Node version manager, you can use a Node "
+"installer to install both Node.js and npm on your system."
+msgstr ""
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:30
+msgid ""
+"Node.js installer NodeSource installer. If you use Linux, we recommend "
+"that you use a NodeSource installer. OS X or Windows Node installers If "
+"you’re using OS X or Windows, use one of the installers from the Node.js "
+"download page. Be sure to install the version labeled LTS. Other versions"
+" have not yet been tested with npm."
+msgstr ""
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:35
+#, fuzzy
+msgid ""
+"Linux or other operating systems Node installers If you’re using Linux or"
+" another operating system, use one of the following installers:"
+msgstr ""
+"Linux or other operating systems Node installers§ If you’re using Linux "
+"or another operating system, use one of the following installers:"
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:38
+msgid ""
+"NodeSource installer (recommended) One of the installers on the Node.js "
+"download page Or see this page to install npm for Linux in the way many "
+"Linux developers prefer."
+msgstr ""
+"NodeSource installer (recommended) One of the installers on the Node.js "
+"download page Or see this page to install npm for Linux in the way many "
+"Linux developers prefer."
+
+#: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:42
+#, fuzzy
+msgid ""
+"Less-common operating systems For more information on installing Node.js "
+"on a variety of operating systems, see this page."
+msgstr ""
+"Less-common operating systems§ For more information on installing Node.js"
+" on a variety of operating systems, see this page."
+
+#: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:2
+msgid "Generating and locating npm-debug.log files"
+msgstr "生成和定位npm-debug.log文件"
+
+#: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:4
+msgid ""
+"When a package fails to install or publish, the npm CLI will generate an "
+"npm-debug.log file. This log file can help you (and npm Support) figure "
+"out what went wrong."
+msgstr ""
+"When a package fails to install or publish, the npm CLI will generate an "
+"npm-debug.log file. This log file can help you (and npm Support) figure "
+"out what went wrong."
+
+#: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:6
+msgid ""
+"If you need to generate a npm-debug.log file, you can run one of these "
+"commands."
+msgstr ""
+"If you need to generate a npm-debug.log file, you can run one of these "
+"commands."
+
+#: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:8
+msgid "For installing packages:"
+msgstr "For installing packages:"
+
+#: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:10
+msgid "npm install --timing For publishing packages:"
+msgstr "npm install --timing For publishing packages:"
+
+#: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:13
+msgid ""
+"npm publish --timing You can find the npm-debug.log file in your .npm "
+"directory. To find your .npm directory, use npm config get cache."
+msgstr ""
+"npm publish --timing您可以在.npm目录中找到npm-debug.log文件。要查找.npm目录，请使用npm config "
+"get cache。"
+
+#: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:16
+msgid ""
+"If you use a CI environment, your logs are likely located elsewhere. For "
+"example, in Travis CI, you can find them in the /home/travis/build "
+"directory."
+msgstr ""
+"If you use a CI environment, your logs are likely located elsewhere. For "
+"example, in Travis CI, you can find them in the /home/travis/build "
+"directory."
+
+#: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:18
+msgid ""
+"npm Enterprise users: If you need to contact npm Enterprise Support at "
+"enterprise@npmjs.com, we recommend attaching the entire contents of the "
+"npm-debug.log file or copying the contents into the body of the message, "
+"so that we can more easily diagnose the problem."
+msgstr ""
+
+#: ../../source/getting-started/index.rst:2
+msgid "Getting started"
+msgstr "入门"
+
+#: ../../source/getting-started/index.rst:5
+msgid "Setting up your npm user account"
+msgstr "设置您的npm用户帐户"
+
+#: ../../source/getting-started/index.rst:16
+msgid "Paying for your npm user account"
+msgstr "支付您的npm用户帐户"
+
+#: ../../source/getting-started/index.rst:27
+msgid "Managing your npm user account"
+msgstr "管理您的npm用户帐户"
+
+#: ../../source/getting-started/index.rst:37
+msgid "Configuring your local environment"
+msgstr "配置本地环境"
+
+#: ../../source/getting-started/index.rst:48
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:2
+msgid "Logging in to an npm Enterprise registry from the command line"
+msgstr "从命令行登录npm Enterprise注册表"
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:4
+msgid ""
+"The steps for logging in to your company’s npm Enterprise registry will "
+"depend how you configured your npm registry settings."
+msgstr "登录公司的npm Enterprise注册表的步骤取决于您配置npm注册表设置的方式。"
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:6
+msgid ""
+"Logging in with your default registry set to your company’s npm "
+"Enterprise registry Logging in with npmrc Logging in with a scope "
+"configured to point to an npm Enterprise registry Logging in with your "
+"default registry set to your company’s npm Enterprise registry On the "
+"command line, type the following command:"
+msgstr ""
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:12
+#, fuzzy
+msgid ""
+"When prompted, provide your SSO credentials. Logging in with npmrc On the"
+" command line, switch to your npm Enterprise profile:"
+msgstr ""
+"When prompted, provide your SSO credentials. Logging in with npmrc§ On "
+"the command line, switch to your npm Enterprise profile:"
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:15
+msgid "npmrc work"
+msgstr "npmrc work"
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:16
+msgid "Run the following command:"
+msgstr "运行以下命令:"
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:18
+#, fuzzy
+msgid ""
+"When prompted, provide your SSO credentials. Logging in with a scope "
+"configured to point to an npm Enterprise registry On the command line, "
+"type the following command:"
+msgstr "出现提示时，提供您的SSO凭据。使用配置为指向npm Enterprise注册表的作用域登录§在命令行上，键入以下命令："
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:21
+msgid "npm login --registry=https://registry.company-name.npme.io"
+msgstr "npm login --registry=https://registry.company-name.npme.io"
+
+#: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:22
+msgid "When prompted, provide your SSO credentials."
+msgstr "出现提示时，提供您的SSO凭据。"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:2
+msgid "Managing your profile settings"
+msgstr "管理您的个人资料设置"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:4
+msgid ""
+"You can manage settings for your user account profile from the web or "
+"command line."
+msgstr "您可以从Web或命令行管理用户帐户配置文件的设置。"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:6
+#, fuzzy
+msgid ""
+"Managing user account profile settings from the web From the web, you can"
+" change the following user profile settings:"
+msgstr ""
+"Managing user account profile settings from the web§ From the web, you "
+"can change the following user profile settings:"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:9
+msgid ""
+"Avatar Password Full name GitHub user name Twitter user name Email "
+"address added to package metadata Two-factor authentication status Log in"
+" to npm with your user account. npm login dialog with username and "
+"password fields left blank In the upper right corner of the page, click "
+"your profile picture, then click Profile Settings. npm avatar menu with "
+"selector over profile settings list item Managing user account profile "
+"settings from the command line Note: Your npm client must be version "
+"5.5.1 or higher to change your account settings from the CLI. To update "
+"to the latest version of npm, on the command line, run npm install "
+"npm@latest -g Viewing user account profile settings from the command line"
+" To view your user profile settings from the CLI, on the command line, "
+"run the following command:"
+msgstr ""
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:23
+msgid "npm profile get command line interface profile settings table"
+msgstr "npm profile get command line interface profile settings table"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:26
+#, fuzzy
+msgid ""
+"Updating user account profile settings from the command line From the "
+"CLI, you can change the following properties for your user account:"
+msgstr ""
+"Updating user account profile settings from the command line§ From the "
+"CLI, you can change the following properties for your user account:"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:29
+msgid ""
+"email two-factor auth fullname homepage freenode twitter github password "
+"On the command line, type the following command, replacing property with "
+"the name of the property, and value with the new value:"
+msgstr ""
+"email two-factor auth fullname homepage freenode twitter github password "
+"On the command line, type the following command, replacing property with "
+"the name of the property, and value with the new value:"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:38
+msgid "npm profile set <prop> <value>"
+msgstr "npm profile set <prop> <value>"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:39
+msgid ""
+"When prompted, provide your current password. If you have enabled two-"
+"factor authentication on your account, when prompted, enter a one-time "
+"password. For more details, see the profile command line documentation."
+msgstr ""
+"When prompted, provide your current password. If you have enabled two-"
+"factor authentication on your account, when prompted, enter a one-time "
+"password. For more details, see the profile command line documentation."
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:43
+#, fuzzy
+msgid ""
+"Setting a password from the command line On the command line, type the "
+"following command:"
+msgstr ""
+"Setting a password from the command line§ On the command line, type the "
+"following command:"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:45
+msgid "npm profile set password"
+msgstr "npm profile set password"
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:46
+msgid ""
+"When prompted, provide your current password. When prompted, type a new "
+"password. To protect your account, when you reset your password from the "
+"command line, it must: be longer than 7 characters not contain part of "
+"your username not be on this list of common passwords not be in the "
+"\"Have I Been Pwned\" breach database Configuring two-factor "
+"authentication from the command line Enabling two-factor authentication "
+"on your account helps protect against unauthorized access to your account"
+" and packages."
+msgstr ""
+
+#: ../../source/getting-started/managing-your-profile-settings.rst:56
+msgid ""
+"To enable, configure, and disable two-factor authentication from the "
+"command line, see “Configuring two-factor authentication”."
+msgstr ""
+"To enable, configure, and disable two-factor authentication from the "
+"command line, see “Configuring two-factor authentication”."
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:2
+msgid "Try the latest stable version of node"
+msgstr "尝试最新的稳定版节点"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:4
+msgid ""
+"If you’re experiencing issues while using a version of node which is "
+"unsupported or unstable (odd numbered versions e.g. 0.7.x, 0.9.x, "
+"0.11.x), it’s very possible your issue will be fixed by simply using the "
+"LTS version of node."
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:6
+msgid ""
+"See what version of node you’re running: node -v Updating node on Linux "
+"For some Linux distributions (Debian/Ubuntu and RedHat/CentOS), the "
+"latest node version provided by the distribution may lag behind the "
+"stable version. Here are instructions from NodeSource on getting the "
+"latest node."
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:11
+#, fuzzy
+msgid ""
+"Updating node on Windows Install the latest msi from "
+"https://nodejs.org/en/download"
+msgstr ""
+"Updating node on Windows§ Install the latest msi from "
+"https://nodejs.org/en/download"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:14
+#, fuzzy
+msgid ""
+"Updating node on OSX Install the latest package from "
+"https://nodejs.org/en/download"
+msgstr ""
+"Updating node on OSX§ Install the latest package from "
+"https://nodejs.org/en/download"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:17
+msgid "or if you are using homebrew"
+msgstr "or if you are using homebrew"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:19
+msgid ""
+"brew install node An easy way to stay up-to-date Node.js has lots of "
+"versions, and its development is very active. As a good practice to "
+"manage the various versions, we recommend that you use a version manager "
+"for your Node.js installation. There are many great options, here are a "
+"few:"
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:23
+msgid "NVM nodist n nave nodebrew"
+msgstr "NVM nodist n nave nodebrew"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:2
+msgid "Try the latest stable version of npm"
+msgstr "试试最新稳定版的npm"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:4
+msgid ""
+"See what version of npm you’re running npm -v Upgrading on *nix (OSX, "
+"Linux, etc.) (You may need to prefix these commands with sudo, especially"
+" on Linux, or OS X if you installed Node using its default installer.)"
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:9
+msgid "You can upgrade to the latest version of npm using:"
+msgstr "您可以使用升级到最新版本的npm:"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:11
+msgid "npm install -g npm@latest Or upgrade to the most recent release:"
+msgstr "npm install -g npm @ latest或升级到最新版本:"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:14
+#, fuzzy
+msgid ""
+"npm install -g npm@next Upgrading on Windows Microsoft wrote a small "
+"command line tool to automate the steps below. You can go and download it"
+" here - or stick with the manual path outlined below."
+msgstr ""
+"npm install -g npm @ "
+"next在Windows上升级Microsoft写了一个小命令行工具来自动执行以下步骤。你可以在这里下载它 - 或者坚持使用下面列出的手动路径。"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:18
+msgid "By default, npm is installed alongside node in"
+msgstr "默认情况下，npm与节点一起安装"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:20
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:28
+msgid "C:\\Program Files (x86)\\nodejs"
+msgstr "C:\\Program Files (x86)\\nodejs"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:22
+msgid ""
+"npm’s globally installed packages (including, potentially, npm itself) "
+"are stored separately in a user-specific directory (which is currently"
+msgstr "npm的全局安装包（可能包括npm本身）分别存储在用户特定的目录中（目前是"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:24
+msgid "C:\\Users\\<username>\\AppData\\Roaming\\npm)."
+msgstr "C:\\Users\\<username>\\AppData\\Roaming\\npm)."
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:26
+msgid "Because the installer puts"
+msgstr "因为安装程序放了"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:30
+msgid "before"
+msgstr "before"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:32
+msgid "C:\\Users\\<username>\\AppData\\Roaming\\npm"
+msgstr "C:\\Users\\<username>\\AppData\\Roaming\\npm"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:34
+msgid ""
+"on your PATH, it will always use the version of npm installed with node "
+"instead of the version of npm you installed using npm -g install "
+"npm@<version>."
+msgstr "在你的PATH上，它将始终使用与节点一起安装的npm版本，而不是使用npm -g install npm @ <version>安装的npm版本。"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:36
+msgid "To get around this, you can do one of the following:"
+msgstr "要解决此问题，您可以执行以下操作之一:"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:38
+msgid ""
+"Option 1: edit your Windows installation’s PATH to put %appdata%\\npm "
+"before %ProgramFiles%\\nodejs. Remember that you’ll need to restart "
+"cmd.exe (and potentially restart Windows) when you make changes to PATH "
+"or how npm is installed."
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:40
+msgid ""
+"Option 2: remove both of %ProgramFiles%\\nodejs\\npm "
+"%ProgramFiles%\\nodejs\\npm.cmd Option 3: Navigate to "
+"%ProgramFiles%\\nodejs\\node_modules\\npm and copy the npmrcfile to "
+"another folder or the desktop. Then open cmd.exe and run the following "
+"commands: cd %ProgramFiles%\\nodejs npm install npm@latest If you "
+"installed npm with the node.js installer, after doing one of the previous"
+" steps, do the following."
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:48
+msgid ""
+"Option 1 or 2 Go into %ProgramFiles%\\nodejs\\node_modules\\npm and copy "
+"the file named npmrc in the new npm folder, which should be "
+"%appdata%\\npm\\node_modules\\npm. This will tell the new npm where the "
+"global installed packages are. Option 3 Copy the npmrc file back into "
+"%ProgramFiles%\\nodejs\\node_modules\\npm (See also the point below if "
+"you’re running Windows 7 and don’t have the directory %appdata%\\npm.)"
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:54
+msgid ""
+"A brief note on the built-in Windows configuration The Node installer "
+"installs, directly into the npm folder, a special piece of Windows-"
+"specific configuration that tells npm where to install global packages. "
+"When npm is used to install itself, it is supposed to copy this special "
+"builtin configuration into the new install. There was a bug in some "
+"versions of npm that kept this from working, so you may need to go in and"
+" fix that up by hand. Run the following command to see where npm will "
+"install global packages to verify it is correct."
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:57
+msgid ""
+"npm config get prefix -g If it isn’t set to "
+"<X>:\\Users\\<user>\\AppData\\Roaming\\npm, you can run the below command"
+" to correct it:"
+msgstr ""
+"npm config get prefix -g If it isn’t set to "
+"<X>:\\Users\\<user>\\AppData\\Roaming\\npm, you can run the below command"
+" to correct it:"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:60
+msgid ""
+"npm config set prefix \"${APPDATA}/npm\" -g Incidentally, if you would "
+"prefer that packages not be installed to your roaming profile (because "
+"you have a quota on your shared network, or it makes logging in or out "
+"from a domain sluggish), you can put it in your local app data instead:"
+msgstr ""
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:63
+msgid ""
+"npm config set prefix \"${LOCALAPPDATA}/npm\" -g …as well as copying "
+"%APPDATA%\\npm to %LOCALAPPDATA%\\npm (and updating your %PATH%, of "
+"course)."
+msgstr ""
+"npm config set prefix \\“$ {LOCALAPPDATA} / npm \\” -  g "
+"...以及将％APPDATA％\\ npm复制到％LOCALAPPDATA％\\ npm（当然还要更新％PATH％）。"
+
+#: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:66
+msgid ""
+"Everyone who works on npm knows that this process is complicated and "
+"fraught, and we’re working on making it simpler. Stay tuned."
+msgstr "在npm工作的每个人都知道这个过程很复杂，而且我们正在努力使它变得更简单。敬请关注。"
+
+#: ../../source/getting-started/updating-user-account-billing-settings.rst:2
+msgid "Updating user account billing settings"
+msgstr "更新用户帐户结算设置"
+
+#: ../../source/getting-started/updating-user-account-billing-settings.rst:4
+msgid ""
+"Note: This article only applies to users of the public npm registry. You "
+"can update the credit card used to pay for your paid user account plan. "
+"Updating your credit card will not change your billing cycle date, and "
+"the new credit card will be charged on the next billing cycle."
+msgstr ""
+
+#: ../../source/getting-started/updating-user-account-billing-settings.rst:7
+msgid ""
+"Note: If the credit card used to pay for your paid user account plan "
+"expires, or we are otherwise are unable to charge your card, you have a "
+"grace period of nine days to update the card."
+msgstr ""
+"Note: If the credit card used to pay for your paid user account plan "
+"expires, or we are otherwise are unable to charge your card, you have a "
+"grace period of nine days to update the card."
+
+#: ../../source/getting-started/updating-user-account-billing-settings.rst:9
+msgid ""
+"Updating credit card information Log in to npm with your user account. "
+"npm login dialog with username and password fields left blank In the "
+"upper right corner of the page, click your profile picture, then click "
+"Billing Info. profile dropdown menu with billing information element "
+"selected Under “monthly bill”, click Edit Payment Info. edit payment "
+"information button In the billing information dialog box, type billing "
+"information: Email: the email address used for the billing contact Name: "
+"the name on the credit card used to pay for the paid user account plan "
+"Street, City, ZIP Code, Country: the billing address associated with the "
+"credit card used to pay for the paid user account plan billing "
+"information form fields Click Payment Info. payment information button In"
+" the credit card information dialog box, type credit card information: "
+"Card number MM / YY: the month and year of the card expiration date CVC: "
+"the three-digit code on the credit card credit card information form "
+"fields To save your credit card information for other payments on npm, "
+"select “Remember me”. remember me checkbox Click Update Card. update "
+"credit card button Updating billing receipt email and extra receipt "
+"information You can update the email address used for receipts, and add "
+"extra information to the receipt for your paid user account plan, such as"
+" your business name, VAT identification number, or address of record. "
+"Updated billing information will appear on all receipts immediately."
+msgstr ""
+
+#: ../../source/getting-started/updating-user-account-billing-settings.rst:27
+msgid ""
+"Note: The billing email is used for receipts only and is not required to "
+"match the email address of the person whose card is used to pay for the "
+"paid user account plan."
+msgstr ""
+"Note: The billing email is used for receipts only and is not required to "
+"match the email address of the person whose card is used to pay for the "
+"paid user account plan."
+
+#: ../../source/getting-started/updating-user-account-billing-settings.rst:29
+msgid ""
+"Log in to npm with your user account. npm login dialog with username and "
+"password fields left blank In the upper right corner of the page, click "
+"your profile picture, then click Billing Info. profile dropdown menu with"
+" billing information element selected Under “monthly bill”, click View "
+"Billing History. view billing history button At the bottom of the Billing"
+" History dialog box, click “Receipt Settings”. receipt settings link To "
+"add a business name, VAT number, address of record, or other information "
+"to your receipts, in the “Extra Billing Information” text box, type the "
+"information. extra billing information form To update the email address "
+"used for receipts, beside “Send my receipts”, select the checkbox and "
+"type the email address that should receive billing receipts. send my "
+"receipts checkbox and email field Click Save. save button on extra "
+"receipt information dialog box"
+msgstr ""
+
+#: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:2
+msgid "Upgrading to a paid user account plan"
+msgstr "升级到付费用户帐户计划"
+
+#: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:4
+msgid ""
+"Note: This article only applies to users of the public npm registry. If "
+"you need to install and publish private packages, you can upgrade to a "
+"paid user account plan. Our paid user account plan costs . For more "
+"information, see the “npm account” column on our pricing page."
+msgstr ""
+
+#: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:7
+msgid ""
+"Note: Your paid plan and billing cycle will start when you submit your "
+"credit card information, and you will be charged for the first month "
+"immediately."
+msgstr ""
+"Note: Your paid plan and billing cycle will start when you submit your "
+"credit card information, and you will be charged for the first month "
+"immediately."
+
+#: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:9
+msgid ""
+"Log in to npm with your user account. npm login dialog with username and "
+"password fields left blank In the upper right corner of the page, click "
+"your profile picture, then click Billing Info. profile dropdown menu with"
+" billing information element selected Under “change plan”, click Upgrade "
+"Plan ($7/User). change payment plan button Under “Want to upgrade?”, "
+"click Enable Private Publishing for $7/mo. enable private publishing "
+"button In the billing information dialog box, type billing information: "
+"Email: the email address associated with your credit card Name: the name "
+"on the credit card used to pay for your user account plan Street, City, "
+"ZIP Code, Country: the billing address associated with the credit card "
+"used to pay for the user account plan billing information form fields "
+"Click Payment Info. payment information button In the credit card "
+"information dialog box, type credit card information: Card number MM / "
+"YY: the month and year of the card expiration date CVC: the three-digit "
+"code on the credit card credit card information form fields To save your "
+"credit card information for other payments on npm, select “Remember me”. "
+"remember me checkbox Click Pay $7.00. pay seven dollars button"
+msgstr ""
+
+#: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:2
+msgid "Viewing, downloading, and emailing receipts for your npm user account"
+msgstr "查看，下载和通过电子邮件发送您的npm用户帐户的收据"
+
+#: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:4
+msgid ""
+"Note: This article only applies to users of the public npm registry. You "
+"can view, download, and email receipts for the complete billing history "
+"of your npm user account."
+msgstr "注意：本文仅适用于公共npm注册表的用户。您可以查看，下载和通过电子邮件收据npm用户帐户的完整帐单历史记录。"
+
+#: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:7
+msgid ""
+"Viewing receipts Log in to npm with your user account. npm login dialog "
+"with username and password fields left blank In the upper right corner of"
+" the page, click your profile picture, then click Billing Info. profile "
+"dropdown menu with billing information element selected On the Billing "
+"Information page, under “monthly bill”, click View Billing History. view "
+"billing history button To view a single receipt, find the row of the "
+"receipt you want to view, then, on the right side of the row, click the "
+"view icon. view receipt icon Downloading receipts Log in to npm with your"
+" user account. npm login dialog with username and password fields left "
+"blank In the upper right corner of the page, click your profile picture, "
+"then click Billing Info. profile dropdown menu with billing information "
+"element selected On the Billing Information page, under “monthly bill”, "
+"click View Billing History. view billing history button To download a "
+"single receipt, find the row of the receipt you want to download, then, "
+"on the right side of the row, click the PDF icon. download pdf icon To "
+"download all receipts, next to “Date”, select the checkbox, then click "
+"Download Checked. download checked receipts link Emailing receipts Log in"
+" to npm with your user account. npm login dialog with username and "
+"password fields left blank In the upper right corner of the page, click "
+"your profile picture, then click Billing Info. profile dropdown menu with"
+" billing information element selected On the Billing Information page, "
+"under “monthly bill”, click View Billing History. To download a single "
+"receipt, find the row of the receipt you want to download, then, on the "
+"right side of the row, click the email icon. email receipt icon To email "
+"all receipts, next to “Date”, select the checkbox, then click Email "
+"Checked. email checked receipts link In the Email Receipt dialog box, "
+"fill in the “From”, “To”, and “Message” fields. email receipt form with "
+"from, to, and message fields Click Send."
+msgstr ""
+
+#~ msgid ""
+#~ "latest release: the most recent stable"
+#~ " version. next release: the most "
+#~ "recent unreleased version of npm that"
+#~ " is eventually released as the latest"
+#~ " version. The latest release of npm§"
+#~ " The latest release of npm is "
+#~ "the most recent stable version. When "
+#~ "you install Node.js, npm is "
+#~ "automatically installed. However, npm is "
+#~ "released more frequently than Node.js, "
+#~ "so to install the latest stable "
+#~ "version of npm, on the command "
+#~ "line, run:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "npm install npm@latest -g The next "
+#~ "release of npm§ Note: The next "
+#~ "release of npm may contain features "
+#~ "that do not match the features "
+#~ "ultimately released in the latest stable"
+#~ " version of npm. The next release "
+#~ "of npm is the most recent "
+#~ "unreleased version of npm that is "
+#~ "eventually released as the latest "
+#~ "version. You may want to update "
+#~ "your npm client to the next "
+#~ "release to test your packages against"
+#~ " it before latest is released."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note: Two-factor authentication provides "
+#~ "the best possible security for your "
+#~ "account against attackers. We strongly "
+#~ "recommend enabling 2FA on your account"
+#~ " as soon as possible after you "
+#~ "sign up. Two-factor authentication modes"
+#~ " on npm§ Two-factor authentication on"
+#~ " npm can be enabled for authorization"
+#~ " only, or authorization and writes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Action  CLI command Log in to npm"
+#~ "   npm login Change profile settings "
+#~ "(including your password)       npm profile"
+#~ " set Change 2FA modes for your "
+#~ "user account  npm profile enable-2fa "
+#~ "auth-only Disable 2FA for your "
+#~ "user account       npm profile disable-"
+#~ "2fa Authorization and writes§ If you "
+#~ "enable 2FA for authorization and writes,"
+#~ " we will request a one-time "
+#~ "password for certain authorized actions, "
+#~ "as well as write actions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Errors§ Broken npm installation Random "
+#~ "errors No compatible version found "
+#~ "Permissions errors Error: ENOENT, stat "
+#~ "'C:\\Users\\<user>\\AppData\\Roaming\\npm' on Windows "
+#~ "7 No space No git Running a "
+#~ "Vagrant box on Windows fails due "
+#~ "to path length issues npm only "
+#~ "uses git: and ssh+git: URLs for "
+#~ "GitHub repos, breaking proxies SSL error"
+#~ " SSL-intercepting proxy Not found /"
+#~ " Server error Invalid JSON Many "
+#~ "ENOENT / ENOTEMPTY errors in output "
+#~ "cb() never called! when using "
+#~ "shrinkwrapped dependencies npm login errors"
+#~ " npm hangs on Windows at "
+#~ "addRemoteTarball npm not running the "
+#~ "latest version on a Windows machine "
+#~ "Broken npm installation§ If your npm "
+#~ "is broken:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On Mac or Linux, reinstall npm. "
+#~ "Windows: If you’re on Windows and "
+#~ "you have a broken installation, the "
+#~ "easiest thing to do is to "
+#~ "reinstall node from the official "
+#~ "installer (see this note about "
+#~ "installing the latest stable version). "
+#~ "Random errors§ Some strange issues can"
+#~ " be resolved by simply running npm"
+#~ " cache clean and trying again. If "
+#~ "you are having trouble with npm "
+#~ "install, use the -verbose option to "
+#~ "see more details. No compatible version"
+#~ " found§ You have an outdated npm. "
+#~ "Please update to the latest stable "
+#~ "npm."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Permissions errors§ Please see the "
+#~ "discussions in “Downloading and installing "
+#~ "Node.js and npm” and “Resolving EACCES"
+#~ " permissions errors when installing "
+#~ "packages globally” for ways to avoid "
+#~ "and resolve permissions errors."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Error: ENOENT, stat "
+#~ "'C:\\Users\\<user>\\AppData\\Roaming\\npm' on Windows "
+#~ "7§ The error Error: ENOENT, stat "
+#~ "'C:\\Users\\<user>\\AppData\\Roaming\\npm' on Windows "
+#~ "7 is a consequence of joyent/node#8141,"
+#~ " and is an issue with the Node"
+#~ " installer for Windows. The workaround "
+#~ "is to ensure that "
+#~ "C:\\Users\\<user>\\AppData\\Roaming\\npm exists and "
+#~ "is writable with your normal user "
+#~ "account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Free some disk space or Set the"
+#~ " tmp folder somewhere with more "
+#~ "space: npm config set tmp "
+#~ "/path/to/big/drive/tmp or Build Node yourself"
+#~ " and install it somewhere writable "
+#~ "with lots of space. No git§ npm"
+#~ " ERR! not found: git ENOGIT You "
+#~ "need to install git. Or, you may"
+#~ " need to add your git information "
+#~ "to your npm profile. You can do"
+#~ " this from the command line or "
+#~ "the website. For more information, see"
+#~ " “Managing your profile settings”."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Running a Vagrant box on Windows "
+#~ "fails due to path length issues§ "
+#~ "@drmyersii went through what sounds like"
+#~ " a lot of painful trial and "
+#~ "error to come up with a working"
+#~ " solution involving Windows long paths "
+#~ "and some custom Vagrant configuration:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SSL Error§ npm ERR! Error: "
+#~ "7684:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown"
+#~ " protocol:openssl\\ssl\\s23_clnt.c:787: You are "
+#~ "trying to talk SSL to an "
+#~ "unencrypted endpoint. More often than "
+#~ "not, this is due to a proxy "
+#~ "configuration error (see also this "
+#~ "helpful, if dated, guide). In this "
+#~ "case, you do not want to disable"
+#~ " strict-ssl – you may need to"
+#~ " set up a CA / CA file "
+#~ "for use with your proxy, but it’s"
+#~ " much better to take the time "
+#~ "to figure that out than disabling "
+#~ "SSL protection."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Not found / Server error§ npm http"
+#~ " 404 https://registry.npmjs.org/faye-websocket"
+#~ "/-/faye-websocket-0.7.0.tgz npm ERR! fetch "
+#~ "failed https://registry.npmjs.org/faye-websocket"
+#~ "/-/faye-websocket-0.7.0.tgz npm ERR! Error: "
+#~ "404 Not Found npm http 500 "
+#~ "https://registry.npmjs.org/phonegap It’s most likely"
+#~ " a temporary npm registry glitch. "
+#~ "Check npm server status and try "
+#~ "again later. If the error persists, "
+#~ "perhaps the published package is "
+#~ "corrupt. Contact the package owner and"
+#~ " have them publish a new version "
+#~ "of the package. Invalid JSON§ Error: "
+#~ "Invalid JSON npm ERR! SyntaxError: "
+#~ "Unexpected token < npm ERR! registry "
+#~ "error parsing json Possible temporary "
+#~ "npm registry glitch, or corrupted local"
+#~ " server cache. Run npm cache clean"
+#~ " and/or try again later. This can "
+#~ "be caused by corporate proxies that "
+#~ "give HTML responses to package.json "
+#~ "requests. Check npm’s proxy configuration. "
+#~ "Check that it’s not a problem with"
+#~ " a package you’re trying to install"
+#~ " (e.g. invalid package.json). Many ENOENT"
+#~ " / ENOTEMPTY errors in output§ npm"
+#~ " is written to use resources "
+#~ "efficiently on install, and part of "
+#~ "this is that it tries to do "
+#~ "as many things concurrently as is "
+#~ "practical. Sometimes this results in "
+#~ "race conditions and other synchronization "
+#~ "issues. As of npm 2.0.0, a very"
+#~ " large number of these issues were"
+#~ " addressed. If you see ENOENT lstat,"
+#~ " ENOENT chmod, ENOTEMPTY unlink, or "
+#~ "something similar in your log output,"
+#~ " try updating npm to the latest "
+#~ "version. If the problem persists, look"
+#~ " at npm/npm#6043 and see if somebody"
+#~ " has already discussed your issue."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "cb() never called! when using "
+#~ "shrinkwrapped dependencies§ Take a look "
+#~ "at issue #5920. We’re working on "
+#~ "fixing this one, but it’s a fairly"
+#~ " subtle race condition and it’s "
+#~ "taking us a little time. You might"
+#~ " try moving your npm-shrinkwrap.json "
+#~ "file out of the way until we "
+#~ "have this fixed. This has been "
+#~ "fixed in versions of npm newer "
+#~ "than npm@2.1.5, so update to npm@latest."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "npm login errors§ Sometimes npm login"
+#~ " fails for no obvious reason. The "
+#~ "first thing to do is to log "
+#~ "in at https://www.npmjs.com/login and check"
+#~ " that your e-mail address on "
+#~ "npmjs.com matches the email address you"
+#~ " are giving to npm login."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Update your npm client to version "
+#~ "5.5.1 or higher. Install an "
+#~ "authenticator application that can generate"
+#~ " one-time passwords (such as Authy"
+#~ " or Google Authenticator) on a mobile"
+#~ " device or second computer that will"
+#~ " always be available when you work"
+#~ " in your npm account. Note: npm "
+#~ "does not accept SMS (text-to-"
+#~ "phone) as a 2FA method. Configuring "
+#~ "2FA on the web§ Enabling 2FA on"
+#~ " the web§ Log in to npm with"
+#~ " your user account. npm login dialog"
+#~ " with username and password fields "
+#~ "left blank In the upper right "
+#~ "corner of the page, click your "
+#~ "profile picture, then click Profile "
+#~ "Settings. npm avatar menu with selector"
+#~ " over profile settings list item On"
+#~ " the profile settings page, under "
+#~ "“Two Factor Authentication”, click Enable "
+#~ "2FA. enable 2FA button On the 2FA"
+#~ " settings page, select the mode you"
+#~ " would like to enable. For more "
+#~ "information, see “Two-factor authentication"
+#~ " modes on npm”. authorization and "
+#~ "publishing radio button selected Click "
+#~ "Submit. submit button Open your "
+#~ "authenticator application on your phone, "
+#~ "and, on the two-step verification "
+#~ "page, scan the QR code with your"
+#~ " phone. Enter the code generated by"
+#~ " the app, then click Verify. verify"
+#~ " button for 2fa authentication code "
+#~ "form On the recovery code page, "
+#~ "copy the recovery codes to your "
+#~ "computer or other safe location that "
+#~ "is not your second factor device. "
+#~ "We recommend using a password manager"
+#~ " to save your recovery codes. If "
+#~ "you are unable to access your "
+#~ "phone, you will need to enter a"
+#~ " recovery code when prompted for a"
+#~ " one-time password. Click Go back "
+#~ "to settings. go back to settings "
+#~ "button Removing 2FA on the web§ If"
+#~ " you have 2FA enabled, you can "
+#~ "remove it from your profile settings "
+#~ "page."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Log in to npm with your user "
+#~ "account. npm login dialog with username"
+#~ " and password fields left blank In"
+#~ " the upper right corner of the "
+#~ "page, click your profile picture, then"
+#~ " click Profile Settings. npm avatar "
+#~ "menu with selector over profile settings"
+#~ " list item On the profile settings"
+#~ " page, under “Two Factor Authentication”,"
+#~ " click Modify 2FA. modify 2fa button"
+#~ " On the 2FA settings page, under "
+#~ "“What should we protect?”, select "
+#~ "“Disable”. disable radio button selected "
+#~ "Click Submit. submit button Configuring "
+#~ "2FA from the command line§ Enabling "
+#~ "2FA from the command line§ Note: "
+#~ "Settings you configure on the command"
+#~ " line will also apply to your "
+#~ "profile settings on the npm website. "
+#~ "On the command line, type the npm"
+#~ " profile command along with the "
+#~ "option for the 2FA mode you want"
+#~ " to enable: To enable 2FA for "
+#~ "authorization and writes, type: npm "
+#~ "profile enable-2fa auth-and-writes "
+#~ "To enable 2FA for authorization only,"
+#~ " type: npm profile enable-2fa "
+#~ "auth-only To add npm to your "
+#~ "authenticator application, using the device"
+#~ " with the app, you can either: "
+#~ "scan the QR code displayed on the"
+#~ " command line. type the number "
+#~ "displayed below the QR code. When "
+#~ "prompted to add an OTP code from"
+#~ " your authenticator, on the command "
+#~ "line, enter a one-time password "
+#~ "generated by your authenticator app. "
+#~ "Sending a one-time password from "
+#~ "the command line§ If you have "
+#~ "enabled 2FA auth-and-writes, you "
+#~ "will need to send the OTP from "
+#~ "the command line for certain commands"
+#~ " to work. To do this, append "
+#~ "--otp=123456 (where 123456 is the code"
+#~ " generated by your authenticator) at "
+#~ "the end of the command. Here are"
+#~ " a few examples:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "npm publish [<tarball>|<folder>][--tag <tag>] "
+#~ "--otp=123456 npm owner add <user > "
+#~ "--otp=123456 npm owner rm <user> "
+#~ "--otp=123456 npm dist-tags add "
+#~ "<pkg>@<version> [<tag>] --otp=123456 npm "
+#~ "access edit [<package>) --otp=123456 npm "
+#~ "unpublish [<@scope>/]<pkg>[@<version>] --otp=123456 "
+#~ "Removing 2FA from the command line§ "
+#~ "On the command line, type the "
+#~ "following command: npm profile disable-"
+#~ "2fa When prompted, enter your npm "
+#~ "password:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When prompted for a one-time "
+#~ "password, enter a password from your "
+#~ "authenticator app: >Enter one-time "
+#~ "password from your authenticator: 123456 "
+#~ "Resolving OTP errors§ If you are "
+#~ "entering what seems to be a valid"
+#~ " OTP but you see an error, be"
+#~ " sure that you are using the "
+#~ "correct authenticator account. If you "
+#~ "have multiple authenticator accounts, using"
+#~ " an OTP from the wrong account "
+#~ "will cause an error."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Setting your company’s npm Enterprise "
+#~ "registry as your default registry "
+#~ "(recommended) Using npmrc to managing "
+#~ "multiple profiles for different registries "
+#~ "Configuring scopes to point to different"
+#~ " registries Setting your company’s npm "
+#~ "Enterprise registry as your default "
+#~ "registry§ The easiest way to publish "
+#~ "to and install from your company’s "
+#~ "npm Enterprise registry is to set "
+#~ "it as your default registry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "npm config set registry https://registry"
+#~ ".your-registry.npme.io/ Using npmrc to "
+#~ "managing multiple profiles for different "
+#~ "registries§ If you need to publish "
+#~ "and install packages to and from "
+#~ "different registries – for example, an"
+#~ " npm Enterprise registry for work-"
+#~ "related code, and the npmjs.com public"
+#~ " registry for open source projects –"
+#~ " you can create and manage a "
+#~ "separate npm user profile for each "
+#~ "registry using the npmrc tool."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Configuring scopes to point to different"
+#~ " registries§ You can also map "
+#~ "different scopes to different npm "
+#~ "registries. For example, to use the "
+#~ "scope @company-scope from your npm "
+#~ "Enterprise registry, while continuing to "
+#~ "install public packages from the public"
+#~ " npm registry, run the following "
+#~ "command, replacing @company-scope with "
+#~ "the scope, and company-registry with "
+#~ "the name of your company’s npm "
+#~ "Enterprise registry:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "npm will confirm that two-factor "
+#~ "authentication has been disabled. type "
+#~ "npm profile enable-2fa to re-"
+#~ "enable 2FA, assign a different device"
+#~ " to your account, and generate new"
+#~ " recovery codes. Note: Using the "
+#~ "recovery codes to re-enable 2FA "
+#~ "may create a second authenticator "
+#~ "account with the same npm account "
+#~ "name. To delete the old authenticator"
+#~ " account, follow the steps for the"
+#~ " authenticator. Misplaced recovery codes§ "
+#~ "If you have misplaced both the "
+#~ "device that provided second-factor "
+#~ "authentication and your recovery codes, "
+#~ "we may be unable to help you "
+#~ "recover your account. If you have "
+#~ "any questions, please contact npm "
+#~ "Support."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "[sudo] npm install npm -g Overview§ "
+#~ "Checking your version of npm and "
+#~ "Node.js Using a Node version manager "
+#~ "to install Node.js and npm Using a"
+#~ " Node installer to install Node.js "
+#~ "and npm Checking your version of "
+#~ "npm and Node.js§ To see if you "
+#~ "already have Node.js and npm installed"
+#~ " and check the installed version, run"
+#~ " the following commands:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "node -v npm -v Using a Node "
+#~ "version manager to install Node.js and"
+#~ " npm§ Node version managers allow you"
+#~ " to install and switch between "
+#~ "multiple versions of Node.js and npm "
+#~ "on your system so you can test "
+#~ "your applications on multiple versions "
+#~ "of npm to ensure they work for "
+#~ "users on different versions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OSX or Linux Node version managers§ "
+#~ "nvm n Windows Node version managers§ "
+#~ "nodist nvm-windows Using a Node "
+#~ "installer to install Node.js and npm§"
+#~ " If you are unable to use a "
+#~ "Node version manager, you can use "
+#~ "a Node installer to install both "
+#~ "Node.js and npm on your system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Node.js installer NodeSource installer. If "
+#~ "you use Linux, we recommend that "
+#~ "you use a NodeSource installer. OS "
+#~ "X or Windows Node installers§ If "
+#~ "you’re using OS X or Windows, use"
+#~ " one of the installers from the "
+#~ "Node.js download page. Be sure to "
+#~ "install the version labeled LTS. Other"
+#~ " versions have not yet been tested"
+#~ " with npm."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Logging in with your default registry"
+#~ " set to your company’s npm Enterprise"
+#~ " registry Logging in with npmrc "
+#~ "Logging in with a scope configured "
+#~ "to point to an npm Enterprise "
+#~ "registry Logging in with your default"
+#~ " registry set to your company’s npm"
+#~ " Enterprise registry§ On the command "
+#~ "line, type the following command:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Avatar Password Full name GitHub user"
+#~ " name Twitter user name Email address"
+#~ " added to package metadata Two-factor"
+#~ " authentication status Log in to npm"
+#~ " with your user account. npm login"
+#~ " dialog with username and password "
+#~ "fields left blank In the upper "
+#~ "right corner of the page, click "
+#~ "your profile picture, then click Profile"
+#~ " Settings. npm avatar menu with "
+#~ "selector over profile settings list item"
+#~ " Managing user account profile settings "
+#~ "from the command line§ Note: Your "
+#~ "npm client must be version 5.5.1 "
+#~ "or higher to change your account "
+#~ "settings from the CLI. To update "
+#~ "to the latest version of npm, on"
+#~ " the command line, run npm install"
+#~ " npm@latest -g Viewing user account "
+#~ "profile settings from the command line§"
+#~ " To view your user profile settings"
+#~ " from the CLI, on the command "
+#~ "line, run the following command:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When prompted, provide your current "
+#~ "password. When prompted, type a new "
+#~ "password. To protect your account, when"
+#~ " you reset your password from the "
+#~ "command line, it must: be longer "
+#~ "than 7 characters not contain part "
+#~ "of your username not be on this"
+#~ " list of common passwords not be "
+#~ "in the \"Have I Been Pwned\" "
+#~ "breach database Configuring two-factor "
+#~ "authentication from the command line§ "
+#~ "Enabling two-factor authentication on "
+#~ "your account helps protect against "
+#~ "unauthorized access to your account and"
+#~ " packages."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See what version of node you’re "
+#~ "running:§ node -v Updating node on "
+#~ "Linux§ For some Linux distributions "
+#~ "(Debian/Ubuntu and RedHat/CentOS), the latest"
+#~ " node version provided by the "
+#~ "distribution may lag behind the stable"
+#~ " version. Here are instructions from "
+#~ "NodeSource on getting the latest node."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "brew install node An easy way to"
+#~ " stay up-to-date§ Node.js has "
+#~ "lots of versions, and its development"
+#~ " is very active. As a good "
+#~ "practice to manage the various versions,"
+#~ " we recommend that you use a "
+#~ "version manager for your Node.js "
+#~ "installation. There are many great "
+#~ "options, here are a few:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See what version of npm you’re "
+#~ "running§ npm -v Upgrading on *nix "
+#~ "(OSX, Linux, etc.)§ (You may need "
+#~ "to prefix these commands with sudo, "
+#~ "especially on Linux, or OS X if"
+#~ " you installed Node using its default"
+#~ " installer.)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A brief note on the built-in "
+#~ "Windows configuration§ The Node installer "
+#~ "installs, directly into the npm folder,"
+#~ " a special piece of Windows-specific"
+#~ " configuration that tells npm where "
+#~ "to install global packages. When npm "
+#~ "is used to install itself, it is"
+#~ " supposed to copy this special "
+#~ "builtin configuration into the new "
+#~ "install. There was a bug in some"
+#~ " versions of npm that kept this "
+#~ "from working, so you may need to"
+#~ " go in and fix that up by "
+#~ "hand. Run the following command to "
+#~ "see where npm will install global "
+#~ "packages to verify it is correct."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Updating credit card information§ Log in"
+#~ " to npm with your user account. "
+#~ "npm login dialog with username and "
+#~ "password fields left blank In the "
+#~ "upper right corner of the page, "
+#~ "click your profile picture, then click"
+#~ " Billing Info. profile dropdown menu "
+#~ "with billing information element selected "
+#~ "Under “monthly bill”, click Edit Payment"
+#~ " Info. edit payment information button "
+#~ "In the billing information dialog box,"
+#~ " type billing information: Email: the "
+#~ "email address used for the billing "
+#~ "contact Name: the name on the "
+#~ "credit card used to pay for the"
+#~ " paid user account plan Street, City,"
+#~ " ZIP Code, Country: the billing "
+#~ "address associated with the credit card"
+#~ " used to pay for the paid user"
+#~ " account plan billing information form "
+#~ "fields Click Payment Info. payment "
+#~ "information button In the credit card"
+#~ " information dialog box, type credit "
+#~ "card information: Card number MM / "
+#~ "YY: the month and year of the "
+#~ "card expiration date CVC: the three-"
+#~ "digit code on the credit card "
+#~ "credit card information form fields To"
+#~ " save your credit card information "
+#~ "for other payments on npm, select "
+#~ "“Remember me”. remember me checkbox "
+#~ "Click Update Card. update credit card"
+#~ " button Updating billing receipt email "
+#~ "and extra receipt information§ You can"
+#~ " update the email address used for"
+#~ " receipts, and add extra information "
+#~ "to the receipt for your paid user"
+#~ " account plan, such as your business"
+#~ " name, VAT identification number, or "
+#~ "address of record. Updated billing "
+#~ "information will appear on all receipts"
+#~ " immediately."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Viewing receipts§ Log in to npm "
+#~ "with your user account. npm login "
+#~ "dialog with username and password fields"
+#~ " left blank In the upper right "
+#~ "corner of the page, click your "
+#~ "profile picture, then click Billing "
+#~ "Info. profile dropdown menu with billing"
+#~ " information element selected On the "
+#~ "Billing Information page, under “monthly "
+#~ "bill”, click View Billing History. view"
+#~ " billing history button To view a "
+#~ "single receipt, find the row of "
+#~ "the receipt you want to view, "
+#~ "then, on the right side of the "
+#~ "row, click the view icon. view "
+#~ "receipt icon Downloading receipts§ Log "
+#~ "in to npm with your user account."
+#~ " npm login dialog with username and"
+#~ " password fields left blank In the"
+#~ " upper right corner of the page, "
+#~ "click your profile picture, then click"
+#~ " Billing Info. profile dropdown menu "
+#~ "with billing information element selected "
+#~ "On the Billing Information page, under"
+#~ " “monthly bill”, click View Billing "
+#~ "History. view billing history button To"
+#~ " download a single receipt, find the"
+#~ " row of the receipt you want to"
+#~ " download, then, on the right side"
+#~ " of the row, click the PDF "
+#~ "icon. download pdf icon To download "
+#~ "all receipts, next to “Date”, select "
+#~ "the checkbox, then click Download "
+#~ "Checked. download checked receipts link "
+#~ "Emailing receipts§ Log in to npm "
+#~ "with your user account. npm login "
+#~ "dialog with username and password fields"
+#~ " left blank In the upper right "
+#~ "corner of the page, click your "
+#~ "profile picture, then click Billing "
+#~ "Info. profile dropdown menu with billing"
+#~ " information element selected On the "
+#~ "Billing Information page, under “monthly "
+#~ "bill”, click View Billing History. To"
+#~ " download a single receipt, find the"
+#~ " row of the receipt you want to"
+#~ " download, then, on the right side"
+#~ " of the row, click the email "
+#~ "icon. email receipt icon To email "
+#~ "all receipts, next to “Date”, select "
+#~ "the checkbox, then click Email Checked."
+#~ " email checked receipts link In the"
+#~ " Email Receipt dialog box, fill in"
+#~ " the “From”, “To”, and “Message” "
+#~ "fields. email receipt form with from,"
+#~ " to, and message fields Click Send."
+#~ msgstr ""
+

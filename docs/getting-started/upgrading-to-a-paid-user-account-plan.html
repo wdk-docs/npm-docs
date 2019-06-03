@@ -1,0 +1,242 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>升级到付费用户帐户计划 &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="查看，下载和通过电子邮件发送您的npm用户帐户的收据" href="viewing-downloading-and-emailing-receipts-for-your-user-account.html" />
+    <link rel="prev" title="恢复已启用2FA的帐户" href="recovering-your-2fa-enabled-account.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#setting-up-your-npm-user-account">设置您的npm用户帐户</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#paying-for-your-npm-user-account">支付您的npm用户帐户</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">升级到付费用户帐户计划</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewing-downloading-and-emailing-receipts-for-your-user-account.html">查看，下载和通过电子邮件发送您的npm用户帐户的收据</a></li>
+<li class="toctree-l3"><a class="reference internal" href="updating-user-account-billing-settings.html">更新用户帐户结算设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="downgrading-to-a-free-user-account-plan.html">降级为免费用户帐户计划</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#managing-your-npm-user-account">管理您的npm用户帐户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#configuring-your-local-environment">配置本地环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#troubleshooting">故障排除</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">入门</a> &raquo;</li>
+        
+      <li>升级到付费用户帐户计划</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/getting-started/upgrading-to-a-paid-user-account-plan.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upgrading-to-a-paid-user-account-plan">
+<h1>升级到付费用户帐户计划<a class="headerlink" href="#upgrading-to-a-paid-user-account-plan" title="永久链接至标题">¶</a></h1>
+<p>Note: This article only applies to users of the public npm registry.
+If you need to install and publish private packages, you can upgrade to a paid user account plan. Our paid user account plan costs . For more information, see the “npm account” column on our pricing page.</p>
+<p>Note: Your paid plan and billing cycle will start when you submit your credit card information, and you will be charged for the first month immediately.</p>
+<p>Log in to npm with your user account. npm login dialog with username and password fields left blank
+In the upper right corner of the page, click your profile picture, then click Billing Info. profile dropdown menu with billing information element selected
+Under “change plan”, click Upgrade Plan ($7/User). change payment plan button
+Under “Want to upgrade?”, click Enable Private Publishing for $7/mo. enable private publishing button
+In the billing information dialog box, type billing information:
+Email: the email address associated with your credit card
+Name: the name on the credit card used to pay for your user account plan
+Street, City, ZIP Code, Country: the billing address associated with the credit card used to pay for the user account plan billing information form fields
+Click Payment Info. payment information button
+In the credit card information dialog box, type credit card information:
+Card number
+MM / YY: the month and year of the card expiration date
+CVC: the three-digit code on the credit card credit card information form fields
+To save your credit card information for other payments on npm, select “Remember me”. remember me checkbox
+Click Pay $7.00. pay seven dollars button</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="viewing-downloading-and-emailing-receipts-for-your-user-account.html" class="btn btn-neutral float-right" title="查看，下载和通过电子邮件发送您的npm用户帐户的收据" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="recovering-your-2fa-enabled-account.html" class="btn btn-neutral float-left" title="恢复已启用2FA的帐户" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CLI文档 &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="npm 企业版" href="../enterprise/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CLI文档</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cli-commands">CLI命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-npm">配置 npm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-npm">使用 npm</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>CLI文档</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/cli/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cli-documentation">
+<h1>CLI文档<a class="headerlink" href="#cli-documentation" title="永久链接至标题">¶</a></h1>
+<div class="section" id="cli-commands">
+<h2>CLI命令<a class="headerlink" href="#cli-commands" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="access.html#cmdoption-npm-arg-access"><code class="xref std std-option docutils literal notranslate"><span class="pre">access</span></code></a> 在已发布的包上设置访问级别</p></li>
+<li><p><a class="reference internal" href="adduser.html#cmdoption-npm-arg-adduser"><code class="xref std std-option docutils literal notranslate"><span class="pre">adduser</span></code></a> 添加注册用户帐户</p></li>
+<li><p><a class="reference internal" href="audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">audit</span></code></a> 运行安全审核</p></li>
+<li><p><a class="reference internal" href="bin.html#cmdoption-npm-arg-bin"><code class="xref std std-option docutils literal notranslate"><span class="pre">bin</span></code></a> 显示 npm bin 文件夹</p></li>
+<li><p><a class="reference internal" href="bugs.html#cmdoption-npm-arg-bugs"><code class="xref std std-option docutils literal notranslate"><span class="pre">bugs</span></code></a> 可能是Web浏览器中包的错误</p></li>
+<li><p><a class="reference internal" href="build.html#cmdoption-npm-arg-build"><code class="xref std std-option docutils literal notranslate"><span class="pre">build</span></code></a> 构建一个包</p></li>
+<li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">bundle</span></code> 移除</p></li>
+<li><p><a class="reference internal" href="cache.html#cmdoption-npm-arg-cache"><code class="xref std std-option docutils literal notranslate"><span class="pre">cache</span></code></a> 处理包缓存</p></li>
+<li><p><a class="reference internal" href="ci.html#cmdoption-npm-arg-ci"><code class="xref std std-option docutils literal notranslate"><span class="pre">ci</span></code></a> 安装一个带有干净石板的项目</p></li>
+<li><p><a class="reference internal" href="completion.html#cmdoption-npm-arg-completion"><code class="xref std std-option docutils literal notranslate"><span class="pre">completion</span></code></a> 标签完成为npm</p></li>
+<li><p><a class="reference internal" href="config.html#cmdoption-npm-arg-config"><code class="xref std std-option docutils literal notranslate"><span class="pre">config</span></code></a> 管理npm配置文件</p></li>
+<li><p><a class="reference internal" href="dedupe.html#cmdoption-npm-arg-dedupe"><code class="xref std std-option docutils literal notranslate"><span class="pre">dedupe</span></code></a> 减少重复</p></li>
+<li><p><a class="reference internal" href="deprecate.html#cmdoption-npm-arg-deprecate"><code class="xref std std-option docutils literal notranslate"><span class="pre">deprecate</span></code></a> 弃用包的版本</p></li>
+<li><p><a class="reference internal" href="dist-tag.html#cmdoption-npm-arg-dist-tag"><code class="xref std std-option docutils literal notranslate"><span class="pre">dist-tag</span></code></a> 修改包分发标签</p></li>
+<li><p><a class="reference internal" href="docs.html#cmdoption-npm-arg-docs"><code class="xref std std-option docutils literal notranslate"><span class="pre">docs</span></code></a> 可能是Web浏览器中包的文档</p></li>
+<li><p><a class="reference internal" href="doctor.html#cmdoption-npm-arg-doctor"><code class="xref std std-option docutils literal notranslate"><span class="pre">doctor</span></code></a> 检查您的环境</p></li>
+<li><p><a class="reference internal" href="edit.html#cmdoption-npm-arg-edit"><code class="xref std std-option docutils literal notranslate"><span class="pre">edit</span></code></a> 编辑已安装的包</p></li>
+<li><p><a class="reference internal" href="explore.html#cmdoption-npm-arg-explore"><code class="xref std std-option docutils literal notranslate"><span class="pre">explore</span></code></a> 浏览已安装的软件包</p></li>
+<li><p><a class="reference internal" href="help-search.html#cmdoption-npm-arg-help-search"><code class="xref std std-option docutils literal notranslate"><span class="pre">help-search</span></code></a> 搜索npm帮助文档</p></li>
+<li><p><a class="reference internal" href="help.html#cmdoption-npm-arg-help"><code class="xref std std-option docutils literal notranslate"><span class="pre">help</span></code></a> 在npm获得帮助</p></li>
+<li><p><a class="reference internal" href="hook.html#cmdoption-npm-arg-hook"><code class="xref std std-option docutils literal notranslate"><span class="pre">hook</span></code></a> 管理注册表挂钩</p></li>
+<li><p><a class="reference internal" href="init.html#cmdoption-npm-arg-init"><code class="xref std std-option docutils literal notranslate"><span class="pre">init</span></code></a> 创建一个 package.json 文件</p></li>
+<li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">install-ci-test</span></code> 使用干净的平板安装项目并运行测试</p></li>
+<li><p><a class="reference internal" href="install-test.html#cmdoption-npm-arg-install-test"><code class="xref std std-option docutils literal notranslate"><span class="pre">install-test</span></code></a> 安装软件包并运行测试</p></li>
+<li><p><a class="reference internal" href="install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">install</span></code></a> 安装包</p></li>
+<li><p><a class="reference internal" href="link.html#cmdoption-npm-arg-link"><code class="xref std std-option docutils literal notranslate"><span class="pre">link</span></code></a> 符号链接包文件夹</p></li>
+<li><p><a class="reference internal" href="logout.html#cmdoption-npm-arg-logout"><code class="xref std std-option docutils literal notranslate"><span class="pre">logout</span></code></a> 退出注册</p></li>
+<li><p><a class="reference internal" href="ls.html#cmdoption-npm-arg-ls"><code class="xref std std-option docutils literal notranslate"><span class="pre">ls</span></code></a> 列出已安装的包</p></li>
+<li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span></code> javascript 包管理器</p></li>
+<li><p><a class="reference internal" href="org.html#cmdoption-npm-arg-org"><code class="xref std std-option docutils literal notranslate"><span class="pre">org</span></code></a> 管理组织</p></li>
+<li><p><a class="reference internal" href="outdated.html#cmdoption-npm-arg-outdated"><code class="xref std std-option docutils literal notranslate"><span class="pre">outdated</span></code></a> 检查过时的包</p></li>
+<li><p><a class="reference internal" href="owner.html#cmdoption-npm-arg-owner"><code class="xref std std-option docutils literal notranslate"><span class="pre">owner</span></code></a> 管理包所有者</p></li>
+<li><p><a class="reference internal" href="pack.html#cmdoption-npm-arg-pack"><code class="xref std std-option docutils literal notranslate"><span class="pre">pack</span></code></a> 从包中创建 tarball</p></li>
+<li><p><a class="reference internal" href="ping.html#cmdoption-npm-arg-ping"><code class="xref std std-option docutils literal notranslate"><span class="pre">ping</span></code></a> Ping npm 注册</p></li>
+<li><p><a class="reference internal" href="prefix.html#cmdoption-npm-arg-prefix"><code class="xref std std-option docutils literal notranslate"><span class="pre">prefix</span></code></a> 显示前缀</p></li>
+<li><p><a class="reference internal" href="profile.html#cmdoption-npm-arg-profile"><code class="xref std std-option docutils literal notranslate"><span class="pre">profile</span></code></a> 更改注册配置文件的设置</p></li>
+<li><p><a class="reference internal" href="prune.html#cmdoption-npm-arg-prune"><code class="xref std std-option docutils literal notranslate"><span class="pre">prune</span></code></a> 删除无关的包</p></li>
+<li><p><a class="reference internal" href="publish.html#cmdoption-npm-arg-publish"><code class="xref std std-option docutils literal notranslate"><span class="pre">publish</span></code></a> 发布包</p></li>
+<li><p><a class="reference internal" href="rebuild.html#cmdoption-npm-arg-rebuild"><code class="xref std std-option docutils literal notranslate"><span class="pre">rebuild</span></code></a> 重建包</p></li>
+<li><p><a class="reference internal" href="repo.html#cmdoption-npm-arg-repo"><code class="xref std std-option docutils literal notranslate"><span class="pre">repo</span></code></a> 在浏览器中打开包存储库页面</p></li>
+<li><p><a class="reference internal" href="restart.html#cmdoption-npm-arg-restart"><code class="xref std std-option docutils literal notranslate"><span class="pre">restart</span></code></a> 重启包</p></li>
+<li><p><a class="reference internal" href="root.html#cmdoption-npm-arg-root"><code class="xref std std-option docutils literal notranslate"><span class="pre">root</span></code></a> 显示 npm root</p></li>
+<li><p><a class="reference internal" href="run-script.html#cmdoption-npm-arg-run-script"><code class="xref std std-option docutils literal notranslate"><span class="pre">run-script</span></code></a> 运行任意包脚本</p></li>
+<li><p><a class="reference internal" href="search.html#cmdoption-npm-arg-search"><code class="xref std std-option docutils literal notranslate"><span class="pre">search</span></code></a> 搜索包</p></li>
+<li><p><a class="reference internal" href="shrinkwrap.html#cmdoption-npm-arg-shrinkwrap"><code class="xref std std-option docutils literal notranslate"><span class="pre">shrinkwrap</span></code></a> 锁定发布的依赖版本</p></li>
+<li><p><a class="reference internal" href="star.html#cmdoption-npm-arg-star"><code class="xref std std-option docutils literal notranslate"><span class="pre">star</span></code></a> 标记您喜欢的包裹</p></li>
+<li><p><a class="reference internal" href="stars.html#cmdoption-npm-arg-stars"><code class="xref std std-option docutils literal notranslate"><span class="pre">stars</span></code></a> 查看标记为收藏的包</p></li>
+<li><p><a class="reference internal" href="start.html#cmdoption-npm-arg-start"><code class="xref std std-option docutils literal notranslate"><span class="pre">start</span></code></a> 开始一个包</p></li>
+<li><p><a class="reference internal" href="stop.html#cmdoption-npm-arg-stop"><code class="xref std std-option docutils literal notranslate"><span class="pre">stop</span></code></a> 停止包</p></li>
+<li><p><a class="reference internal" href="team.html#cmdoption-npm-arg-team"><code class="xref std std-option docutils literal notranslate"><span class="pre">team</span></code></a> 管理组织团队和团队成员资格</p></li>
+<li><p><a class="reference internal" href="test.html#cmdoption-npm-arg-test"><code class="xref std std-option docutils literal notranslate"><span class="pre">test</span></code></a> 测试包</p></li>
+<li><p><a class="reference internal" href="token.html#cmdoption-npm-arg-token"><code class="xref std std-option docutils literal notranslate"><span class="pre">token</span></code></a> 管理您的身份验证令牌</p></li>
+<li><p><a class="reference internal" href="uninstall.html#cmdoption-npm-arg-uninstall"><code class="xref std std-option docutils literal notranslate"><span class="pre">uninstall</span></code></a> 删除包</p></li>
+<li><p><a class="reference internal" href="unpublish.html#cmdoption-npm-arg-unpublish"><code class="xref std std-option docutils literal notranslate"><span class="pre">unpublish</span></code></a> 从注册中删除包</p></li>
+<li><p><a class="reference internal" href="update.html#cmdoption-npm-arg-update"><code class="xref std std-option docutils literal notranslate"><span class="pre">update</span></code></a> 更新包</p></li>
+<li><p><a class="reference internal" href="version.html#cmdoption-npm-arg-version"><code class="xref std std-option docutils literal notranslate"><span class="pre">version</span></code></a> Bump 一个包版本</p></li>
+<li><p><a class="reference internal" href="view.html#cmdoption-npm-arg-view"><code class="xref std std-option docutils literal notranslate"><span class="pre">view</span></code></a> 查看注册表信息</p></li>
+<li><p><a class="reference internal" href="whoami.html#cmdoption-npm-arg-whoami"><code class="xref std std-option docutils literal notranslate"><span class="pre">whoami</span></code></a> 显示npm用户名</p></li>
+</ul>
+</div>
+<div class="section" id="configuring-npm">
+<h2>配置 npm<a class="headerlink" href="#configuring-npm" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../files/folders.html"><span class="doc">npm-folders</span></a> npm 使用的文件夹结构</p></li>
+<li><p><a class="reference internal" href="../files/npmrc.html"><span class="doc">npmrc</span></a> npm 配置文件</p></li>
+<li><p><a class="reference internal" href="../files/package-lock.json.html"><span class="doc">npm-package-lock.json</span></a> 清单的表现形式</p></li>
+<li><p><a class="reference internal" href="../files/package-locks.html"><span class="doc">npm-package-locks</span></a> npm lockfiles 的解释</p></li>
+<li><p><a class="reference internal" href="../files/package.json.html"><span class="doc">npm-package.json</span></a> npm package.json 处理的细节</p></li>
+<li><p><a class="reference internal" href="../files/shrinkwrap.json.html"><span class="doc">npm-shrinkwrap.json</span></a> 可发布的锁文件</p></li>
+</ul>
+</div>
+<div class="section" id="using-npm">
+<h2>使用 npm<a class="headerlink" href="#using-npm" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../misc/coding-style.html"><span class="doc">npm-coding-style</span></a> npm 的“搞笑”编码风格</p></li>
+<li><p><a class="reference internal" href="../misc/config.html"><span class="doc">npm-config</span></a> config 您可能想了解 npm 配置</p></li>
+<li><p><a class="reference internal" href="../misc/developers.html"><span class="doc">npm-developers</span></a> 开发者指南</p></li>
+<li><p><a class="reference internal" href="../misc/disputes.html"><span class="doc">npm-disputes</span></a> 处理模块名称争议</p></li>
+<li><p><a class="reference internal" href="../misc/index.html"><span class="doc">npm-index</span></a> 所有 npm 文档的索引</p></li>
+<li><p><a class="reference internal" href="../misc/orgs.html"><span class="doc">npm-orgs</span></a> 与团队和组织合作</p></li>
+<li><p><a class="reference internal" href="../misc/registry.html"><span class="doc">npm-registry</span></a> JavaScript 包注册</p></li>
+<li><p><a class="reference internal" href="../misc/scope.html"><span class="doc">npm-scope</span></a> Scoped 包</p></li>
+<li><p><a class="reference internal" href="../misc/scripts.html"><span class="doc">npm-scripts</span></a> npm如何处理 “scripts” 字段</p></li>
+<li><p><a class="reference internal" href="../misc/removal.html"><span class="doc">npm-removal</span></a> 清洁板岩</p></li>
+<li><p><a class="reference internal" href="../misc/semver.html"><span class="doc">npm-semver</span></a>  npm 的语义版本</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../enterprise/index.html" class="btn btn-neutral float-left" title="npm 企业版" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>从命令行登录npm Enterprise注册表 &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="生成和定位npm-debug.log文件" href="generating-and-locating-npm-debug-log-files.html" />
+    <link rel="prev" title="将注册表设置配置为npm Enterprise用户" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#setting-up-your-npm-user-account">设置您的npm用户帐户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#paying-for-your-npm-user-account">支付您的npm用户帐户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#managing-your-npm-user-account">管理您的npm用户帐户</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#configuring-your-local-environment">配置本地环境</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="about-npm-versions.html">关于npm CLI版本</a></li>
+<li class="toctree-l3"><a class="reference internal" href="downloading-and-installing-node-js-and-npm.html">下载并安装Node.js和npm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html">将注册表设置配置为npm Enterprise用户</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">从命令行登录npm Enterprise注册表</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#troubleshooting">故障排除</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">入门</a> &raquo;</li>
+        
+      <li>从命令行登录npm Enterprise注册表</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="logging-in-to-an-npm-enterprise-registry-from-the-command-line">
+<h1>从命令行登录npm Enterprise注册表<a class="headerlink" href="#logging-in-to-an-npm-enterprise-registry-from-the-command-line" title="永久链接至标题">¶</a></h1>
+<p>登录公司的npm Enterprise注册表的步骤取决于您配置npm注册表设置的方式。</p>
+<p>Logging in with your default registry set to your company’s npm Enterprise registry
+Logging in with npmrc
+Logging in with a scope configured to point to an npm Enterprise registry
+Logging in with your default registry set to your company’s npm Enterprise registry
+On the command line, type the following command:</p>
+<blockquote>
+<div><p>npm login</p>
+</div></blockquote>
+<p>When prompted, provide your SSO credentials.
+Logging in with npmrc
+On the command line, switch to your npm Enterprise profile:</p>
+<blockquote>
+<div><p>npmrc work</p>
+</div></blockquote>
+<dl class="simple">
+<dt>运行以下命令:</dt><dd><p>npm login</p>
+</dd>
+</dl>
+<p>When prompted, provide your SSO credentials.
+Logging in with a scope configured to point to an npm Enterprise registry
+On the command line, type the following command:</p>
+<blockquote>
+<div><p>npm login –registry=https://registry.company-name.npme.io</p>
+</div></blockquote>
+<p>出现提示时，提供您的SSO凭据。</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="generating-and-locating-npm-debug-log-files.html" class="btn btn-neutral float-right" title="生成和定位npm-debug.log文件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" class="btn btn-neutral float-left" title="将注册表设置配置为npm Enterprise用户" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

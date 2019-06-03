@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm-version &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm-version</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/cli/version.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm-version">
+<h1>npm-version<a class="headerlink" href="#npm-version" title="永久链接至标题">¶</a></h1>
+<p>Bump a package version</p>
+<div class="section" id="synopsis">
+<h2>概要<a class="headerlink" href="#synopsis" title="永久链接至标题">¶</a></h2>
+<dl class="option">
+<dt id="cmdoption-npm-arg-version">
+<code class="descname">version</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-npm-arg-version" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<p>npm version [&lt;newversion&gt; | major | minor | patch | premajor | preminor | prepatch | prerelease [–preid=&lt;prerelease-id&gt;] | from-git]</p>
+<p>‘npm [-v | –version]’ to print npm version
+‘npm view &lt;pkg&gt; version’ to view a package’s published version
+‘npm ls’ to inspect current package/dependency versions</p>
+</div>
+<div class="section" id="description">
+<h2>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>Run this in a package directory to bump the version and write the new data back to package.json, package-lock.json, and, if present, npm-shrinkwrap.json.</p>
+<p>The newversion argument should be a valid semver string, a valid second argument to semver.inc (one of patch, minor, major, prepatch, preminor, premajor, prerelease), or from-git. In the second case, the existing version will be incremented by 1 in the specified field. from-git will try to read the latest git tag, and use that as the new npm version.</p>
+<p>If run in a git repo, it will also create a version commit and tag. This behavior is controlled by git-tag-version (see below), and can be disabled on the command line by running npm –no-git-tag-version version. It will fail if the working directory is not clean, unless the -f or –force flag is set.</p>
+<p>If supplied with -m or –message config option, npm will use it as a commit message when creating a version commit. If the message config contains %s then that will be replaced with the resulting version number. For example:</p>
+<p>npm version patch -m “Upgrade to %s for reasons”
+If the sign-git-tag config is set, then the tag will be signed using the -s flag to git. Note that you must have a default GPG key set up in your git config for this to work properly. For example:</p>
+<p>$ npm config set sign-git-tag true
+$ npm version patch</p>
+<p>You need a passphrase to unlock the secret key for
+user: “isaacs (<a class="reference external" href="http://blog.izs.me/">http://blog.izs.me/</a>) &lt;<a class="reference external" href="mailto:i&#37;&#52;&#48;izs&#46;me">i<span>&#64;</span>izs<span>&#46;</span>me</a>&gt;”
+2048-bit RSA key, ID 6C481CF6, created 2010-08-31</p>
+<p>Enter passphrase:
+If preversion, version, or postversion are in the scripts property of the package.json, they will be executed as part of running npm version.</p>
+<p>The exact order of execution is as follows:</p>
+<p>Check to make sure the git working directory is clean before we get started. Your scripts may add files to the commit in future steps. This step is skipped if the –force flag is set.
+Run the preversion script. These scripts have access to the old version in package.json. A typical use would be running your full test suite before deploying. Any files you want added to the commit should be explicitly added using git add.
+Bump version in package.json as requested (patch, minor, major, etc).
+Run the version script. These scripts have access to the new version in package.json (so they can incorporate it into file headers in generated files for example). Again, scripts should explicitly add generated files to the commit using git add.
+Commit and tag.
+Run the postversion script. Use it to clean up the file system or automatically push the commit and/or tag.
+Take the following example:</p>
+<dl class="simple">
+<dt>“scripts”: {</dt><dd><p>“preversion”: “npm test”,
+“version”: “npm run build &amp;&amp; git add -A dist”,
+“postversion”: “git push &amp;&amp; git push –tags &amp;&amp; rm -rf build/temp”</p>
+</dd>
+</dl>
+<p>}
+This runs all your tests, and proceeds only if they pass. Then runs your build script, and adds everything in the dist directory to the commit. After the commit, it pushes the new commit and tag up to the server, and deletes the build/temp directory.</p>
+</div>
+<div class="section" id="configuration">
+<h2>配置<a class="headerlink" href="#configuration" title="永久链接至标题">¶</a></h2>
+<p>allow-same-version
+Default: false
+Type: Boolean
+Prevents throwing an error when npm version is used to set the new version to the same value as the current version.</p>
+<p>git-tag-version
+Default: true
+Type: Boolean
+Commit and tag the version change.</p>
+<p>commit-hooks
+Default: true
+Type: Boolean
+Run git commit hooks when committing the version change.</p>
+<p>sign-git-tag
+Default: false
+Type: Boolean
+Pass the -s flag to git to sign the tag.</p>
+<p>Note that you must have a default GPG key set up in your git config for this to work properly.</p>
+</div>
+<div class="section" id="see-also">
+<h2>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>npm-init</p></li>
+<li><p>npm-run-script</p></li>
+<li><p>npm-scripts</p></li>
+<li><p>package.json</p></li>
+<li><p>semver</p></li>
+<li><p>config</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

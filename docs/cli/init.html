@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm-init &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm-init</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/cli/init.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm-init">
+<h1>npm-init<a class="headerlink" href="#npm-init" title="永久链接至标题">¶</a></h1>
+<p>创建一个 package.json 文件</p>
+<div class="section" id="synopsis">
+<h2>概要<a class="headerlink" href="#synopsis" title="永久链接至标题">¶</a></h2>
+<dl class="option">
+<dt id="cmdoption-npm-arg-init">
+<code class="descname">init</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-npm-arg-init" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<p>npm init [–force|-f|–yes|-y|–scope]
+npm init &lt;&#64;scope&gt; (same as <cite>npx &lt;&#64;scope&gt;/create</cite>)
+npm init [&lt;&#64;scope&gt;/]&lt;name&gt; (same as <cite>npx [&lt;&#64;scope&gt;/]create-&lt;name&gt;</cite>)</p>
+</div>
+<div class="section" id="examples">
+<h2>例子<a class="headerlink" href="#examples" title="永久链接至标题">¶</a></h2>
+<p>使用 create-react-app 创建一个新的基于 React 的项目:</p>
+<p>$ npm init react-app ./my-react-app
+Create a new esm-compatible package using create-esm:</p>
+<p>$ mkdir my-esm-lib &amp;&amp; cd my-esm-lib
+$ npm init esm –yes
+Generate a plain old package.json using legacy init:</p>
+<p>$ mkdir my-npm-pkg &amp;&amp; cd my-npm-pkg
+$ git init
+$ npm init
+Generate it without having it ask any questions:</p>
+<p>$ npm init -y</p>
+</div>
+<div class="section" id="description">
+<h2>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>npm init &lt;initializer&gt; can be used to set up a new or existing npm package.</p>
+<p>initializer in this case is an npm package named create-&lt;initializer&gt;, which will be installed by npx, and then have its main bin executed – presumably creating or updating package.json and running any other initialization-related operations.</p>
+<p>The init command is transformed to a corresponding npx operation as follows:</p>
+<p>npm init foo -&gt; npx create-foo
+npm init &#64;usr/foo -&gt; npx &#64;usr/create-foo
+npm init &#64;usr -&gt; npx &#64;usr/create
+Any additional options will be passed directly to the command, so npm init foo –hello will map to npx create-foo –hello.</p>
+<p>If the initializer is omitted (by just calling npm init), init will fall back to legacy init behavior. It will ask you a bunch of questions, and then write a package.json for you. It will attempt to make reasonable guesses based on existing fields, dependencies, and options selected. It is strictly additive, so it will keep any fields and values that were already set. You can also use -y/–yes to skip the questionnaire altogether. If you pass –scope, it will create a scoped package.</p>
+</div>
+<div class="section" id="see-also">
+<h2>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/isaacs/init-package-json">https://github.com/isaacs/init-package-json</a></p></li>
+<li><p>package.json</p></li>
+<li><p>npm-version</p></li>
+<li><p>npm-scope</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>生成和定位npm-debug.log文件 &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="常见错误" href="common-errors.html" />
+    <link rel="prev" title="从命令行登录npm Enterprise注册表" href="logging-in-to-an-npm-enterprise-registry-from-the-command-line.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#setting-up-your-npm-user-account">设置您的npm用户帐户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#paying-for-your-npm-user-account">支付您的npm用户帐户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#managing-your-npm-user-account">管理您的npm用户帐户</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#configuring-your-local-environment">配置本地环境</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#troubleshooting">故障排除</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">生成和定位npm-debug.log文件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="common-errors.html">常见错误</a></li>
+<li class="toctree-l3"><a class="reference internal" href="try-the-latest-stable-version-of-node.html">尝试最新的稳定版节点</a></li>
+<li class="toctree-l3"><a class="reference internal" href="try-the-latest-stable-version-of-npm.html">试试最新稳定版的npm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">入门</a> &raquo;</li>
+        
+      <li>生成和定位npm-debug.log文件</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/getting-started/generating-and-locating-npm-debug-log-files.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="generating-and-locating-npm-debug-log-files">
+<h1>生成和定位npm-debug.log文件<a class="headerlink" href="#generating-and-locating-npm-debug-log-files" title="永久链接至标题">¶</a></h1>
+<p>When a package fails to install or publish, the npm CLI will generate an npm-debug.log file. This log file can help you (and npm Support) figure out what went wrong.</p>
+<p>If you need to generate a npm-debug.log file, you can run one of these commands.</p>
+<p>For installing packages:</p>
+<p>npm install –timing
+For publishing packages:</p>
+<p>npm publish –timing您可以在.npm目录中找到npm-debug.log文件。要查找.npm目录，请使用npm config get cache。</p>
+<p>If you use a CI environment, your logs are likely located elsewhere. For example, in Travis CI, you can find them in the /home/travis/build directory.</p>
+<p>npm Enterprise users: If you need to contact npm Enterprise Support at <a class="reference external" href="mailto:enterprise&#37;&#52;&#48;npmjs&#46;com">enterprise<span>&#64;</span>npmjs<span>&#46;</span>com</a>, we recommend attaching the entire contents of the npm-debug.log file or copying the contents into the body of the message, so that we can more easily diagnose the problem.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="common-errors.html" class="btn btn-neutral float-right" title="常见错误" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="logging-in-to-an-npm-enterprise-registry-from-the-command-line.html" class="btn btn-neutral float-left" title="从命令行登录npm Enterprise注册表" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

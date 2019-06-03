@@ -1,0 +1,242 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm-scope &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm-scope</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/misc/scope.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm-scope">
+<h1>npm-scope<a class="headerlink" href="#npm-scope" title="永久链接至标题">¶</a></h1>
+<p>Scoped packages
+DESCRIPTION
+All npm packages have a name. Some package names also have a scope. A scope follows the usual rules for package names (URL-safe characters, no leading dots or underscores). When used in package names, scopes are preceded by an &#64; symbol and followed by a slash, e.g.</p>
+<p>&#64;somescope/somepackagename
+Scopes are a way of grouping related packages together, and also affect a few things about the way npm treats the package.</p>
+<p>Each npm user/organization has their own scope, and only you can add packages in your scope. This means you don’t have to worry about someone taking your package name ahead of you. Thus it is also a good way to signal official packages for organizations.</p>
+<p>Scoped packages can be published and installed as of npm&#64;2 and are supported by the primary npm registry. Unscoped packages can depend on scoped packages and vice versa. The npm client is backwards-compatible with unscoped registries, so it can be used to work with scoped and unscoped registries at the same time.</p>
+<p>Installing scoped packages
+Scoped packages are installed to a sub-folder of the regular installation folder, e.g. if your other packages are installed in node_modules/packagename, scoped modules will be installed in <a class="reference external" href="mailto:node_modules/&#37;&#52;&#48;myorg/packagename">node_modules/<span>&#64;</span>myorg/packagename</a>. The scope folder (&#64;myorg) is simply the name of the scope preceded by an &#64; symbol, and can contain any number of scoped packages.</p>
+<p>A scoped package is installed by referencing it by name, preceded by an &#64; symbol, in npm install:</p>
+<p>npm install &#64;myorg/mypackage
+Or in package.json:</p>
+<dl class="simple">
+<dt>“dependencies”: {</dt><dd><p>“&#64;myorg/mypackage”: “^1.3.0”</p>
+</dd>
+</dl>
+<p>}
+Note that if the &#64; symbol is omitted, in either case, npm will instead attempt to install from GitHub; see npm-install.</p>
+<p>Requiring scoped packages
+Because scoped packages are installed into a scope folder, you have to include the name of the scope when requiring them in your code, e.g.</p>
+<p>require(<a class="reference external" href="mailto:'&#37;&#52;&#48;myorg/mypackage">‘<span>&#64;</span>myorg/mypackage</a>’)
+There is nothing special about the way Node treats scope folders. This simply requires the mypackage module in the folder named &#64;myorg.</p>
+<p>Publishing scoped packages
+Scoped packages can be published from the CLI as of npm&#64;2 and can be published to any registry that supports them, including the primary npm registry.</p>
+<p>(As of 2015-04-19, and with npm 2.0 or better, the primary npm registry does support scoped packages.)</p>
+<p>If you wish, you may associate a scope with a registry; see below.</p>
+<p>Publishing public scoped packages to the primary npm registry
+To publish a public scoped package, you must specify –access public with the initial publication. This will publish the package and set access to public as if you had run npm access public after publishing.</p>
+<p>Publishing private scoped packages to the npm registry
+To publish a private scoped package to the npm registry, you must have an npm Private Modules account.</p>
+<p>You can then publish the module with npm publish or npm publish –access restricted, and it will be present in the npm registry, with restricted access. You can then change the access permissions, if desired, with npm access or on the npmjs.com website.</p>
+<p>Associating a scope with a registry
+Scopes can be associated with a separate registry. This allows you to seamlessly use a mix of packages from the primary npm registry and one or more private registries, such as npm Enterprise.</p>
+<p>You can associate a scope with a registry at login, e.g.</p>
+<p>npm login –registry=http://reg.example.com <a class="reference external" href="mailto:--scope=&#37;&#52;&#48;myco">–scope=<span>&#64;</span>myco</a>
+Scopes have a many-to-one relationship with registries: one registry can host multiple scopes, but a scope only ever points to one registry.</p>
+<p>You can also associate a scope with a registry using npm config:</p>
+<p>npm config set &#64;myco:registry <a class="reference external" href="http://reg.example.com">http://reg.example.com</a>
+Once a scope is associated with a registry, any npm install for a package with that scope will request packages from that registry instead. Any npm publish for a package name that contains the scope will be published to that registry instead.</p>
+<p>SEE ALSO
+npm-install
+npm-publish
+npm-access
+npm-registry</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

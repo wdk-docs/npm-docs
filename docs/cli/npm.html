@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/cli/npm.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm">
+<h1>npm<a class="headerlink" href="#npm" title="永久链接至标题">¶</a></h1>
+<p>javascript package manager</p>
+<div class="section" id="synopsis">
+<h2>概要<a class="headerlink" href="#synopsis" title="永久链接至标题">¶</a></h2>
+<p>npm &lt;command&gt; [args]</p>
+</div>
+<div class="section" id="version">
+<h2>VERSION<a class="headerlink" href="#version" title="永久链接至标题">¶</a></h2>
+<p>&#64;VERSION&#64;</p>
+</div>
+<div class="section" id="description">
+<h2>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>npm is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently.</p>
+<p>It is extremely configurable to support a wide variety of use cases. Most commonly, it is used to publish, discover, install, and develop node programs.</p>
+<p>Run npm help to get a list of available commands.</p>
+<p>IMPORTANT
+npm is configured to use npm, Inc.’s public registry at <a class="reference external" href="https://registry.npmjs.org">https://registry.npmjs.org</a> by default. Use of the npm public registry is subject to terms of use available at <a class="reference external" href="https://www.npmjs.com/policies/terms">https://www.npmjs.com/policies/terms</a>.</p>
+<p>You can configure npm to use any compatible registry you like, and even run your own registry. Use of someone else’s registry may be governed by their terms of use.</p>
+<p>INTRODUCTION
+You probably got npm because you want to install stuff.</p>
+<p>Use npm install blerg to install the latest version of “blerg”. Check out npm-install for more info. It can do a lot of stuff.</p>
+<p>Use the npm search command to show everything that’s available. Use npm ls to show everything you’ve installed.</p>
+<p>DEPENDENCIES
+If a package references to another package with a git URL, npm depends on a preinstalled git.</p>
+<p>If one of the packages npm tries to install is a native node module and requires compiling of C++ Code, npm will use node-gyp for that task. For a Unix system, node-gyp needs Python, make and a buildchain like GCC. On Windows, Python and Microsoft Visual Studio C++ are needed. Python 3 is not supported by node-gyp. For more information visit the node-gyp repository and the node-gyp Wiki.</p>
+<p>DIRECTORIES
+See npm-folders to learn about where npm puts stuff.</p>
+<p>In particular, npm has two modes of operation:</p>
+<p>global mode: npm installs packages into the install prefix at prefix/lib/node_modules and bins are installed in prefix/bin.
+local mode: npm installs packages into the current project directory, which defaults to the current working directory. Packages are installed to ./node_modules, and bins are installed to ./node_modules/.bin.
+Local mode is the default. Use -g or –global on any command to operate in global mode instead.</p>
+<p>DEVELOPER USAGE
+If you’re using npm to develop and publish your code, check out the following help topics:</p>
+<p>json: Make a package.json file. See package.json.
+link: For linking your current working code into Node’s path, so that you don’t have to reinstall every time you make a change. Use npm link to do this.
+install: It’s a good idea to install things if you don’t need the symbolic link. Especially, installing other peoples code from the registry is done via npm install
+adduser: Create an account or log in. Credentials are stored in the user config file.
+publish: Use the npm publish command to upload your code to the registry.
+CONFIGURATION
+npm is extremely configurable. It reads its configuration options from 5 places.</p>
+<p>Command line switches: Set a config with –key val. All keys take a value, even if they are booleans (the config parser doesn’t know what the options are at the time of parsing). If no value is provided, then the option is set to boolean true.
+Environment Variables: Set any config by prefixing the name in an environment variable with <a href="#id1"><span class="problematic" id="id2">npm_config_</span></a>. For example, export npm_config_key=val.
+User Configs: The file at $HOME/.npmrc is an ini-formatted list of configs. If present, it is parsed. If the userconfig option is set in the cli or env, then that will be used instead.
+Global Configs: The file found at ../etc/npmrc (from the node executable, by default this resolves to /usr/local/etc/npmrc) will be parsed if it is found. If the globalconfig option is set in the cli, env, or user config, then that file is parsed instead.
+Defaults: npm’s default configuration options are defined in lib/utils/config-defs.js. These must not be changed.
+See npm-config for much much more information.</p>
+</div>
+<div class="section" id="contributions">
+<h2>CONTRIBUTIONS<a class="headerlink" href="#contributions" title="永久链接至标题">¶</a></h2>
+<p>Patches welcome!</p>
+<p>If you would like to contribute, but don’t know what to work on, read the contributing guidelines and check the issues list.</p>
+<p>CONTRIBUTING.md
+Bug tracker
+Support tracker</p>
+</div>
+<div class="section" id="bugs">
+<h2>BUGS<a class="headerlink" href="#bugs" title="永久链接至标题">¶</a></h2>
+<p>When you find issues, please report them:</p>
+<p>web: <a class="reference external" href="https://npm.community/c/bugs">https://npm.community/c/bugs</a>
+Be sure to follow the template and bug reporting guidelines. You can also ask for help in the support forum if you’re unsure if it’s actually a bug or are having trouble coming up with a detailed reproduction to report.</p>
+</div>
+<div class="section" id="author">
+<h2>AUTHOR<a class="headerlink" href="#author" title="永久链接至标题">¶</a></h2>
+<p>Isaac Z. Schlueter :: isaacs :: &#64;izs :: <a class="reference external" href="mailto:i&#37;&#52;&#48;izs&#46;me">i<span>&#64;</span>izs<span>&#46;</span>me</a></p>
+</div>
+<div class="section" id="see-also">
+<h2>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>npm-help</p></li>
+<li><p>README</p></li>
+<li><p>package.json</p></li>
+<li><p>npm-install</p></li>
+<li><p>npm-config</p></li>
+<li><p>npm-config</p></li>
+<li><p>npmrc</p></li>
+<li><p>npm-index</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>npm-outdated &mdash; npm-docs 6.9.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> npm-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">CLI文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">npm-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>npm-outdated</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/cli/outdated.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="npm-outdated">
+<h1>npm-outdated<a class="headerlink" href="#npm-outdated" title="永久链接至标题">¶</a></h1>
+<p>Check for outdated packages</p>
+<div class="section" id="synopsis">
+<h2>概要<a class="headerlink" href="#synopsis" title="永久链接至标题">¶</a></h2>
+<dl class="option">
+<dt id="cmdoption-npm-arg-outdated">
+<code class="descname">outdated</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-npm-arg-outdated" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<p>npm outdated [[&lt;&#64;scope&gt;/]&lt;pkg&gt; …]</p>
+</div>
+<div class="section" id="description">
+<h2>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>This command will check the registry to see if any (or, specific) installed packages are currently outdated.</p>
+<p>In the output:</p>
+<p>wanted is the maximum version of the package that satisfies the semver range specified in package.json. If there’s no available semver range (i.e. you’re running npm outdated –global, or the package isn’t included in package.json), then wanted shows the currently-installed version.
+latest is the version of the package tagged as latest in the registry. Running npm publish with no special configuration will publish the package with a dist-tag of latest. This may or may not be the maximum version of the package, or the most-recently published version of the package, depending on how the package’s developer manages the latest dist-tag.
+location is where in the dependency tree the package is located. Note that npm outdated defaults to a depth of 0, so unless you override that, you’ll always be seeing only top-level dependencies that are outdated.
+package type (when using –long / -l) tells you whether this package is a dependency or a devDependency. Packages not included in package.json are always marked dependencies.
+homepage (when using –long / -l) is the homepage value contained in the package’s package.json
+Red means there’s a newer version matching your semver requirements, so you should update now.
+Yellow indicates that there’s a newer version above your semver requirements (usually new major, or new 0.x minor) so proceed with caution.
+An example
+$ npm outdated
+Package      Current   Wanted   Latest  Location
+glob          5.0.15   5.0.15    6.0.1  test-outdated-output
+nothingness    0.0.3      git      git  test-outdated-output
+npm            3.5.1    3.5.2    3.5.1  test-outdated-output
+local-dev      0.0.3   linked   linked  test-outdated-output
+once           1.3.2    1.3.3    1.3.3  test-outdated-output
+With these dependencies:</p>
+<dl class="simple">
+<dt>{</dt><dd><p>“glob”: “^5.0.15”,
+“nothingness”: “github:othiym23/nothingness#master”,
+“npm”: “^3.5.1”,
+“once”: “^1.3.1”</p>
+</dd>
+</dl>
+<p>}
+A few things to note:</p>
+<p>glob requires ^5, which prevents npm from installing glob&#64;6, which is outside the semver range.
+Git dependencies will always be reinstalled, because of how they’re specified. The installed committish might satisfy the dependency specifier (if it’s something immutable, like a commit SHA), or it might not, so npm outdated and npm update have to fetch Git repos to check. This is why currently doing a reinstall of a Git dependency always forces a new clone and install.
+<a class="reference external" href="mailto:npm&#37;&#52;&#48;3&#46;5&#46;2">npm<span>&#64;</span>3<span>&#46;</span>5<span>&#46;</span>2</a> is marked as “wanted”, but “latest” is <a class="reference external" href="mailto:npm&#37;&#52;&#48;3&#46;5&#46;1">npm<span>&#64;</span>3<span>&#46;</span>5<span>&#46;</span>1</a> because npm uses dist-tags to manage its latest and next release channels. npm update will install the newest version, but npm install npm (with no semver range) will install whatever’s tagged as latest.
+once is just plain out of date. Reinstalling node_modules from scratch or running npm update will bring it up to spec.
+CONFIGURATION
+json
+Default: false
+Type: Boolean
+Show information in JSON format.</p>
+<p>long
+Default: false
+Type: Boolean
+Show extended information.</p>
+<p>parseable
+Default: false
+Type: Boolean
+Show parseable output instead of tree view.</p>
+<p>global
+Default: false
+Type: Boolean
+Check packages in the global install prefix instead of in the current project.</p>
+<p>depth
+Default: 0
+Type: Int
+Max depth for checking dependency tree.</p>
+</div>
+<div class="section" id="see-also">
+<h2>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>npm-update</p></li>
+<li><p>npm-dist-tag</p></li>
+<li><p>npm-registry</p></li>
+<li><p>npm-folders</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
