@@ -1,3 +1,5 @@
+.. _developers:
+
 npm-developers
 ======================================================
 
@@ -141,10 +143,12 @@ Send emails, write blogs, blab in IRC.
 Tell the world how easy it is to install your program!
 
 SEE ALSO
-npm
-npm-init
-package.json
-npm-scripts
-npm-publish
-npm-adduser
-npm-registry
+---------------
+
+- :option:`npm`
+- :option:`npm init`
+- :ref:`package.json`
+- :option:`npm scripts`
+- :option:`npm publish`
+- :option:`npm adduser`
+- :option:`npm registry`

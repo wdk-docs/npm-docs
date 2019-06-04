@@ -1,3 +1,5 @@
+.. _registry:
+
 npm-registry
 ======================================================
 
@@ -48,8 +50,10 @@ Is there a website or something to see package docs and such?
 Yes, head over to https://www.npmjs.com/
 
 SEE ALSO
-npm-config
-npm-config
-npmrc
-npm-developers
-npm-disputes
+--------------
+
+- :option:`npm config`
+- :option:`npm config`
+- :option:`npmrc`
+- :option:`npm developers`
+- :option:`npm disputes`

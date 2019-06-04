@@ -1,8 +1,6 @@
 npm-star
 ============================================================================================
 
-Mark your favorite packages
-
 SYNOPSIS
 -------------------
 
@@ -10,8 +8,12 @@ SYNOPSIS
 
 .. option:: star
 
-npm star [<pkg>...]
-npm unstar [<pkg>...]
+   Mark your favorite packages
+
+   .. code-block:: sh
+
+      npm star [<pkg>...]
+      npm unstar [<pkg>...]
 
 DESCRIPTION
 -------------------
@@ -25,6 +27,6 @@ It’s a boolean thing. Starring repeatedly has no additional effect.
 SEE ALSO
 -------------------
 
-- npm-view
-- npm-whoami
-- npm-adduser
+- :option:`npm view`
+- :option:`npm whoami`
+- :option:`npm adduser`

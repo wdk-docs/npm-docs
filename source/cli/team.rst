@@ -1,8 +1,6 @@
 npm-team
 ============================================================================================
 
-Manage organization teams and team memberships
-
 SYNOPSIS
 -------------------
 
@@ -10,15 +8,19 @@ SYNOPSIS
 
 .. option:: team
 
-npm team create <scope:team>
-npm team destroy <scope:team>
+   Manage organization teams and team memberships
 
-npm team add <scope:team> <user>
-npm team rm <scope:team> <user>
+   .. code-block:: sh
 
-npm team ls <scope>|<scope:team>
+      npm team create <scope:team>
+      npm team destroy <scope:team>
 
-npm team edit <scope:team>
+      npm team add <scope:team> <user>
+      npm team rm <scope:team> <user>
+
+      npm team ls <scope>|<scope:team>
+
+      npm team edit <scope:team>
 
 DESCRIPTION
 -------------------
@@ -49,5 +51,5 @@ To use teams to manage permissions on packages belonging to your organization, u
 SEE ALSO
 -------------------
 
-- npm-access
-- npm-registry
+- :option:`npm access`
+- :ref:`registry`

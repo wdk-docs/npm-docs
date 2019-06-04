@@ -1,8 +1,6 @@
 npm-version
 ============================================================================================
 
-Bump a package version
-
 SYNOPSIS
 -------------------
 
@@ -10,11 +8,15 @@ SYNOPSIS
 
 .. option:: version
 
-npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
+   Bump a package version
 
-'npm [-v | --version]' to print npm version
-'npm view <pkg> version' to view a package's published version
-'npm ls' to inspect current package/dependency versions
+   .. code-block:: sh
+
+      npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
+
+      'npm [-v | --version]' to print npm version
+      'npm view <pkg> version' to view a package's published version
+      'npm ls' to inspect current package/dependency versions
 
 DESCRIPTION
 -------------------
@@ -85,9 +87,9 @@ Note that you must have a default GPG key set up in your git config for this to 
 SEE ALSO
 -------------------
 
-- npm-init
-- npm-run-script
-- npm-scripts
-- package.json
-- semver
-- config
+- :option:`npm init`
+- :option:`npm run-script`
+- :option:`npm scripts`
+- :ref:`package.json`
+- :ref:`semver`
+- :option:`config`

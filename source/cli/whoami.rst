@@ -1,7 +1,6 @@
 npm-whoami
 ============================================================================================
 
-Display npm username
 
 SYNOPSIS
 -------------------
@@ -10,7 +9,11 @@ SYNOPSIS
 
 .. option:: whoami
 
-npm whoami [--registry <registry>]
+   Display npm username
+
+   .. code-block:: sh
+
+      npm whoami [--registry <registry>]
 
 DESCRIPTION
 -------------------
@@ -20,7 +23,7 @@ Print the username config to standard output.
 SEE ALSO
 -------------------
 
-- npm-config
-- npm-config
-- npmrc
-- npm-adduser
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :option:`npm adduser`

@@ -8,13 +8,932 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"POT-Creation-Date: 2019-06-04 22:55+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:2
+msgid "About audit reports"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:4
+msgid "About audit reports Audit reports contain tables of information about security vulnerabilities in your project’s dependencies to help you fix the vulnerability or troubleshoot further."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:7
+msgid "command line audit report vulnerability table"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:9
+msgid "Vulnerability table fields§ Severity Description Package Patched in Dependency of Path More info Severity§ The severity of the vulnerability, determined by the impact and exploitability of the vulnerability in its most common use case."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:20
+msgid "Severity        Recommended action Critical        Address immediately High    Address as quickly as possible Moderate        Address as time allows Low     Address at your discretion Description§ The description of the vulnerability. For example, “Denial of service”."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:28
+msgid "Package§ The name of the package that contains the vulnerability."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:31
+msgid "Patched in§ The semantic version range that describes which versions contain a fix for the vulnerability."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:34
+msgid "Dependency of§ The module that the package with the vulnerability depends on."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:37
+msgid "Path§ The path to the code that contains the vulnerability."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-audit-reports.rst:40
+msgid "More info§ A link to the security report."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-package-readme-files.rst:2
+msgid "About package README files"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-package-readme-files.rst:4
+msgid "To help others find your packages on npm and have a good experience using your code in their projects, we recommend including a README file in your package directory. Your README file may include directions for installing, configuring, and using the code in your package, as well as any other information a user may find helpful. The README file will be shown on the package page."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-package-readme-files.rst:6
+msgid "An npm package README file must be in the root-level directory of the package."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-package-readme-files.rst:8
+msgid "Creating and adding a README.md file to a package§ In a text editor, in your package root directory, create a file called README.md. In the README.md file, add useful information about your package. Save the README.md file. Note: The file extension .md indicates a Markdown file. For more information about Markdown, see the GitHub Guide \"Mastering Markdown\". Updating an existing package README file§ The README file will only be updated on the package page when you publish a new version of your package. To update your README file:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-package-readme-files.rst:16
+msgid "In a text editor, update the contents of the README.md file. Save the README.md file. On the command line, in the package root directory, run the following commands:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-package-readme-files.rst:19
+msgid "npm version patch npm publish"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:2
+msgid "About packages and modules"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:4
+msgid "The npm registry contains packages, many of which are also Node modules, or contain Node modules. Read on to understand how they differ and how they interact."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:6
+msgid "About packages§ A package is a file or directory that is described by a package.json file. A package must contain a package.json file in order to be published to the npm registry. For more information on creating a package.json file, see “Creating a package.json file”."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:9
+msgid "Packages can be unscoped or scoped to a user or Org, and scoped packages can be private or public. For more information, see"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:11
+msgid "“About scopes” “About private packages” “Package scope, access level, and visibility” About package formats§ A package is any of the following:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:17
+msgid "A folder containing a program described by a package.json file."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:18
+msgid "A gzipped tarball containing (a)."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:19
+msgid "A URL that resolves to (b)."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:20
+msgid "A <name>@<version> that is published on the registry with (c)."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:21
+msgid "A <name>@<tag> that points to (d)."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:22
+msgid "A <name> that has a latest tag satisfying (e)."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:23
+msgid "g) A git url that, when cloned, results in (a). npm package git URL formats§ Git URLs used for npm packages can be formatted in the following ways:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:27
+msgid "git://github.com/user/project.git#commit-ish git+ssh://user@hostname:project.git#commit-ish git+http://user@hostname/project/blah.git#commit-ish git+https://user@hostname/project/blah.git#commit-ish The commit-ish can be any tag, sha, or branch that can be supplied as an argument to git checkout. The default commit-ish is master."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:33
+msgid "About modules§ A module is any file or directory in the node_modules directory that can be loaded by the Node.js require() function."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:36
+msgid "To be loaded by the Node.js require() function, a module must be one of the following:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:38
+msgid "A folder with a package.json file containing a \"main\" field. A folder with an index.js file in it. A JavaScript file. Note: Since modules are not required to have a package.json file, not all modules are packages. Only modules that have a package.json file are also packages. In the context of a Node program, the module is also the thing that was loaded from a file. For example, in the following program:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-packages-and-modules.rst:44
+msgid "var req = require('request') we might say that “The variable req refers to the request module”."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:2
+msgid "About package PGP signatures"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:4
+msgid "To increase confidence in the npm public registry, we add our PGP signature to package metadata and publicize our public PGP key on Keybase. Our Keybase account is “npmregistry” and our public PGP key can be found at https://keybase.io/npmregistry/pgp_keys.asc"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:6
+msgid "You can use the package PGP signature and our public PGP key to verify that the same entity who published the key (npm, Inc.) also signed the package you downloaded from the npm public registry. For more information, see “Verifying the PGP signature of a package from the npm public registry”."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:8
+msgid "Tools we use§ openpgpjs§ To generate PGP signatures, we use openpgpjs, a pure JavaScript implementation of OpenPGP. To learn more about openpgpjs, see https://openpgpjs.org/."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:12
+msgid "Keybase§ We use Keybase to publicize our PGP key and give you confidence that the npm registry you install from is the same registry that signs packages."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:15
+msgid "Keybase offers two advantages over the core OpenPGP experience that move us to recommend it to you:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:17
+msgid "The Keybase application and CLI provide an excellent user experience for PGP, which can be intimidating for newcomers. Keybase manages and displays social proofs that the entity that controls a specific PGP key also controls accounts on social media and other places. These proofs help you determine whether you can trust an account. We’ve established proofs on Keybase that we control @npmjs on Twitter, the domain npmjs.com, and the domain npmjs.org. Verifying these proofs won’t tell you who owns those domains, but it does establish that the same entity controls them and the PGP key advertised on Keybase."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:21
+msgid "You can also observe that members of npm’s executive and technical teams are among the people who have chosen to follow “npmregistry” on Keybase—for example, CJ Silverio (ceej), Isaac Schlueter (isaacs), Adam Baldwin (adam_baldwin), and Kat Marchán (zkat)."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-pgp-signatures-for-packages-in-the-public-registry.rst:23
+msgid "If you install Keybase and create an account, you can follow npmregistry yourself and obtain a local copy of the registry’s public key. For more information, and to verify the PGP signature of a specific package version from the npm public registry, see “Verifying the PGP signature for a package from the npm public registry”."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-private-packages.rst:2
+msgid "About private packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-private-packages.rst:4
+msgid "To use private packages, you must be using npm version 2.7.0 or greater. To upgrade, on the command line, run npm install npm@latest -g have a paid user or Org account With npm private packages, you can use the npm registry to host code that is only visible to you and chosen collaborators, allowing you to manage and use private code alongside public code in your projects."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-private-packages.rst:9
+msgid "Private packages always have a scope, and scoped packages are private by default."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-private-packages.rst:11
+msgid "User-scoped private packages can only be accessed by you and collaborators to whom you have granted read or read/write access. For more information, see “Adding collaborators to private packages owned by a user account”. Org-scoped private packages can only be accessed by teams that have been granted read or read/write access. For more information, see “Managing team access to Org packages”. Next steps§ “Creating and publishing private packages” “Using npm packages in your projects” Resources§"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-public-packages.rst:2
+msgid "About public packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-public-packages.rst:4
+msgid "As an npm user or Org member, you can create and publish public packages that anyone can download and use in their own projects."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-public-packages.rst:6
+msgid "Unscoped public packages exist in the global public registry namespace and can be referenced in a package.json file with the package name alone: package-name. Scoped public packages belong to a user or Org and must be preceded by the user or Org name when included as a dependency in a package.json file: @username/package-name @org-name/package-name Next steps§ “Creating and publishing scoped public packages” “Creating and publishing unscoped public packages” “Using npm packages in your projects”"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-scopes.rst:2
+msgid "About scopes"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-scopes.rst:4
+msgid "Note: You must be using npm version 2 or greater to use scopes. To upgrade to the latest version of npm, on the command line, run npm install npm@latest -g When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-scopes.rst:7
+msgid "A scope allows you to create a package with the same name as a package created by another user or Org without conflict."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-scopes.rst:9
+msgid "When listed as a dependent in a package.json file, scoped packages are preceded by their scope name. The scope name is everything between the @ and the slash:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-scopes.rst:11
+msgid "“npm” scope: @npm/package-name “npmcorp” scope: @npmcorp/package-name To create and publish public scoped packages, see “Creating and publishing scoped public packages”."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-scopes.rst:17
+msgid "To create and publish private scoped packages, see “Creating and publishing private packages”."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-scopes.rst:19
+msgid "Scopes and package visibility§ Unscoped packages are always public. Private packages are always scoped. Scoped packages are private by default; you must pass a command-line flag when publishing to make them public. For more information on package scope and visibility, see “Package scope, access level, and visibility”."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:2
+msgid "About semantic versioning"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:4
+msgid "To keep the JavaScript ecosystem healthy, reliable, and secure, every time you make significant updates to an npm package you own, we recommend publishing a new version of the package with an updated version number in the package.json file that follows the semantic versioning spec. Following the semantic versioning spec helps other developers who depend on your code understand the extent of changes in a given version, and adjust their own code if necessary."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:6
+msgid "Note: If you introduce a change that breaks a package dependency, we strongly recommend incrementing the version major number; see below for details. Incrementing semantic versions in published packages§ To help developers who rely on your code, we recommend starting your package version at 1.0.0 and incrementing as follows:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:10
+msgid "Code status     Stage   Rule    Example version First release   New product     Start with 1.0.0        1.0.0 Backward compatible bug fixes   Patch release   Increment the third digit       1.0.1 Backward compatible new features        Minor release   Increment the middle digit and reset last digit to zero 1.1.0 Changes that break backward compatibility       Major release   Increment the first digit and reset middle and last digits to zero      2.0.0 Using semantic versioning to specify update types your package can accept§ You can specify which update types your package can accept from dependencies in your package’s package.json file."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:18
+msgid "For example, to specify acceptable version ranges up to 1.0.4, use the following syntax:"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:20
+msgid "Patch releases: 1.0 or 1.0.x or ~1.0.4 Minor releases: 1 or 1.x or ^1.0.4 Major releases: * or x For more information on semantic versioning syntax, see the npm semver calculator."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:25
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:82
+msgid "Example§"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:28
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:24
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:39
+msgid "\"dependencies\": {"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:28
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:27
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:36
+msgid "\"my_dep\": \"^1.0.0\", \"another_dep\": \"~2.2.0\""
+msgstr ""
+
+#: ../../source/packages-and-modules/about-semantic-versioning.rst:30
+msgid "}, Resources§"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-the-public-npm-registry.rst:2
+msgid "About the public npm registry"
+msgstr ""
+
+#: ../../source/packages-and-modules/about-the-public-npm-registry.rst:4
+msgid "The public npm registry is a database of JavaScript packages, each comprised of software and metadata. Open source developers and developers at companies use the npm registry to contribute packages to the entire community or members of their Orgs, and download packages to use in their own projects."
+msgstr ""
+
+#: ../../source/packages-and-modules/about-the-public-npm-registry.rst:6
+msgid "To get started with the registry, sign up for an npm account and check out the “Getting started” and CLI documentation."
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-collaborators-to-private-packages-owned-by-a-user-account.rst:2
+msgid "Adding collaborators to private packages owned by a user account"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-collaborators-to-private-packages-owned-by-a-user-account.rst:4
+msgid "As an npm user with a paid user account, you can another npm user with a paid account as a collaborator on a private package you own."
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-collaborators-to-private-packages-owned-by-a-user-account.rst:6
+msgid "Note: The user you want to add as a collaborator on your private package must have a paid user account. To sign up for a paid account, they can visit https://https://www.npmjs.com/settings/username/billing, replacing username with their npm username. Granting access to a private user package on the web§ On the npm website, go to the package to which you want to add a collaborator: https://www.npmjs.com/package/<your-package-name> On the package page, under “Collaborators”, click +. Enter the npm username of the collaborator. Click Submit. Granting private package access from the command line interface§ To add a collaborator to a package on the command line, run the following command, replacing <user> with the npm username of your collaborator, and <your-package-name> with the name of the private package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-collaborators-to-private-packages-owned-by-a-user-account.rst:15
+msgid "npm owner add <user> <your-package-name> Granting access to private Org packages§ To grant an npm user access to private Org packages, you must have an Org owner add them to your Org, then add them to a team that has access to the private package. For more information, see “Adding members to your Org”."
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:2
+msgid "Adding dist-tags to packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:4
+msgid "Distribution tags (dist-tags) are human-readable labels that you can use to organize and label different versions of packages you publish. dist-tags supplement semantic versioning. In addition to being more human-readable than semantic version numbering, tags allow publishers to distribute their packages more effectively."
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:6
+msgid "For more information, see the dist-tag CLI documentation."
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:8
+msgid "Note: Since dist-tags share a namespace with semantic versions, avoid dist-tags that conflict with existing version numbers. We recommend avoiding dist-tags that start with a number or the letter \"v\". Publishing a package with a dist-tag§ By default, running npm publish will tag your package with the latest dist-tag. To use another dist-tag, use the --tag flag when publishing."
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:12
+msgid "On the command line, navigate to the root directory of your package. cd /path/to/package Run the following command, replacing <tag> with the tag you want to use:"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:15
+msgid "npm publish --tag <tag>"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:16
+msgid "Example§ To publish a package with the “beta” dist-tag, on the command line, run the following command in the root directory of your package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:19
+msgid "npm publish --tag beta Adding a dist-tag to a specific version of your package§ On the command line, navigate to the root directory of your package."
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:22
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:36
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:57
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:40
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:36
+msgid "cd /path/to/package"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:23
+msgid "Run the following command, replacing <package_name> with the name of your package, <version> with your package version number, and <tag> with the distribution tag:"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:24
+msgid "npm dist-tag add <package-name>@<version> [<tag>]"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:25
+msgid "Example§ To add the “stable” tag to the 1.4.0 version of the “example-package” package, you would run the following command:"
+msgstr ""
+
+#: ../../source/packages-and-modules/adding-dist-tags-to-packages.rst:28
+msgid "npm dist-tag add example-package@1.4.0 stable"
+msgstr ""
+
+#: ../../source/packages-and-modules/auditing-package-dependencies-for-security-vulnerabilities.rst:2
+msgid "audit to your continuous integration process."
+msgstr ""
+
+#: ../../source/packages-and-modules/auditing-package-dependencies-for-security-vulnerabilities.rst:5
+msgid "command line audit report no vulnerabilities found"
+msgstr ""
+
+#: ../../source/packages-and-modules/auditing-package-dependencies-for-security-vulnerabilities.rst:7
+msgid "Turning off npm audit on package installation§ Installing a single package§ To turn off npm audit when installing a single package, use the --no-audit flag:"
+msgstr ""
+
+#: ../../source/packages-and-modules/auditing-package-dependencies-for-security-vulnerabilities.rst:11
+msgid "npm install example-package-name --no-audit"
+msgstr ""
+
+#: ../../source/packages-and-modules/auditing-package-dependencies-for-security-vulnerabilities.rst:13
+msgid "For more information, see the npm-install command."
+msgstr ""
+
+#: ../../source/packages-and-modules/auditing-package-dependencies-for-security-vulnerabilities.rst:15
+msgid "Installing all packages§ To turn off npm audit when installing all packages, set the audit setting to false in your user and global npmrc config files:"
+msgstr ""
+
+#: ../../source/packages-and-modules/auditing-package-dependencies-for-security-vulnerabilities.rst:18
+msgid "npm set audit false"
+msgstr ""
+
+#: ../../source/packages-and-modules/auditing-package-dependencies-for-security-vulnerabilities.rst:20
+msgid "For more information, see the npm-config management command and the npm-config audit setting."
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:2
+msgid "Changing package visibility"
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:4
+msgid "You can change the visibility of a scoped package from the website or command line."
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:6
+msgid "You must be the owner of the user account or Org that owns the package in order to change package visibility."
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:8
+msgid "For more information about package visibility, see “Package scope, access level, and visibility”."
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:10
+msgid "Note: Adding a scope to an unscoped package will not make it private. If you want to make a unscoped package private, contact npm Support. Making a public package private§ Note: Making a package private requires a paid user account or Org. To sign up for a paid user or Org, go to https://www.npmjs.com/settings/account-name/billing, replacing account-name with the name of your npm user account or Org. If you want to restrict access and visibility for a public package you own, you can make the package private. When you make a package private, it will be removed from the website within a few minutes of the change."
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:15
+msgid "Website§ On the npm website, go to the package page. On the package page, click Admin. Under “Package Access”, select “Is Package Private?” Click Update package settings. Command line§ To make a public package private on the command line, run the following command, replacing <package-name> with the name of your package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:23
+msgid "npm access restricted <package-name> For more information, see the npm access documentation."
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:26
+msgid "Making a private package public§ Note: When you make a private package public, the package will be visible to and downloadable by all npm users. Website§ On the npm website, go to the package page. On the package page, click Admin. Under “Package Access”, deselect “Is Package Private?” Click Update package settings. Command line§ To make a private package public on the command line, run the following command, replacing <package-name> with the name of your package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/changing-package-visibility.rst:36
+msgid "npm access public <package-name> For more information, see the npm access CLI documentation."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:2
+msgid "Creating a package.json file"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:4
+msgid "You can add a package.json file to your package to make it easy for others to manage and install. Packages published to the registry must contain a package.json file."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:6
+msgid "A package.json file:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:8
+msgid "lists the packages your project depends on specifies versions of a package that your project can use using semantic versioning rules makes your build reproducible, and therefore easier to share with other developers Note: To make your package easier to find on the npm website, we recommend including a custom description in your package.json file. package.json fields§ Required name and version fields§ A package.json file must contain \"name\" and \"version\" fields."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:16
+msgid "The \"name\" field contains your package’s name, and must be lowercase and one word, and may contain hyphens and underscores."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:18
+msgid "The \"version\" field must be in the form x.x.x and follow the semantic versioning guidelines."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:20
+msgid "Author field§ If you want to include package author information in \"author\" field, use the following format (email and website are both optional):"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:23
+msgid "Your Name <email@example.com> (http://example.com) Example§ {"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:26
+msgid "\"name\": \"my-awesome-package\", \"version\": \"1.0.0\""
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:28
+msgid "} Creating a new package.json file§ You can create a package.json file by running a CLI questionnaire or creating a default package.json file."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:32
+msgid "Running a CLI questionnaire§ To create a package.json file with values that you supply, use the npm init command."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:35
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:56
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:39
+msgid "On the command line, navigate to the root directory of your package."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:37
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:58
+msgid "Run the following command:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:38
+msgid "npm init"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:39
+msgid "Answer the questions in the command line questionnaire. Customizing the package.json questionnaire§ If you expect to create many package.json files, you can customize the questions asked and fields created during the init process so all the package.json files contain a standard set of information."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:43
+msgid "In your home directory, create a file called .npm-init.js. To add custom questions, using a text editor, add questions with the prompt function:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:45
+msgid "module.exports = prompt(\"what's your favorite flavor of ice cream, buddy?\", \"I LIKE THEM ALL\");"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:49
+msgid "To add custom fields, using a text editor, add desired fields to the .npm-init.js file:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:47
+msgid "module.exports = {"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:48
+msgid "customField: 'Example custom field', otherCustomField: 'This example field is really cool'"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:50
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:83
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:29
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:42
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:26
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:41
+msgid "}"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:51
+msgid "To learn more about creating advanced npm init customizations, see the init-package-json GitHub repository."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:53
+msgid "Creating a default package.json file§ To create a default package.json using information extracted from the current directory, use the npm init command with the --yes or -y flag. For a list of default values, see “Default values extracted from the current directory”."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:59
+msgid "npm init --yes"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:61
+msgid "> npm init --yes Wrote to /home/ag_dubs/my_package/package.json:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:81
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:28
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:25
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:40
+msgid "{"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:65
+msgid "\"name\": \"my_package\", \"description\": \"\", \"version\": \"1.0.0\", \"main\": \"index.js\", \"scripts\": {"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:70
+msgid "\"test\": \"echo \\\"Error: no test specified\\\" && exit 1\""
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:71
+msgid "}, \"repository\": {"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:73
+msgid "\"type\": \"git\", \"url\": \"https://github.com/ashleygwilliams/my_package.git\""
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:75
+msgid "}, \"keywords\": [], \"author\": \"\", \"license\": \"ISC\", \"bugs\": {"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:80
+msgid "\"url\": \"https://github.com/ashleygwilliams/my_package/issues\""
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:81
+msgid "}, \"homepage\": \"https://github.com/ashleygwilliams/my_package\""
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:84
+msgid "Default values extracted from the current directory§ name: the current directory name version: always 1.0.0 description: info from the README, or an empty string \"\" main: always index.js scripts: by default creates an empty test script keywords: empty author: empty license: ISC bugs: information from the current directory, if present homepage: information from the current directory, if present Setting config options for the init command§ You can set default config options for the init command. For example, to set the default author email, author name, and license, on the command line, run the following commands:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-a-package-json-file.rst:98
+msgid "> npm set init.author.email \"example-user@example.com\" > npm set init.author.name \"example_user\" > npm set init.license \"MIT\""
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:2
+msgid "Creating and publishing private packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:4
+msgid "To share your code with a limited set of users or teams, you can publish private user-scoped or Org-scoped packages to the npm registry."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:6
+msgid "For more information on scopes and private packages, see “About scopes” and “About private packages”."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:8
+msgid "Note: Before you can publish private user-scoped npm packages, you must sign up for a paid npm user account. Additionally, to publish private Org-scoped packages, you must create an npm user account, then create a paid npm Org. Overview§ Create your package Review package contents for sensitive or unnecessary information Publish your package Creating a private package§ If you are using npmrc to manage accounts on multiple registries, on the command line, switch to the appropriate profile:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:15
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:15
+msgid "npmrc <profile-name>"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:16
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:16
+msgid "On the command line, create a directory for your package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:17
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:17
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:19
+msgid "mkdir my-test-package"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:18
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:18
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:20
+msgid "Navigate to the root directory of your package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:19
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:19
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:21
+msgid "cd my-test-package"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:21
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:21
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:23
+msgid "If you are using git to manage your package code, in the package root directory, run the following commands, replacing git-remote-url with the git remote URL for your package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:21
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:21
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:23
+msgid "git init git remote add origin git://git-remote-url"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:23
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:23
+msgid "In the package root directory, run the npm init command and pass the scope to the scope flag: For an Org-scoped package, replace my-org with the name of your Org:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:25
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:25
+msgid "npm init --scope=@my-org"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:26
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:26
+msgid "For a user-scoped package, replace my-username with your username:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:27
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:27
+msgid "npm init --scope=@my-username"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:28
+msgid "Respond to the prompts to generate a package.json file. For help naming your package, see “Package name guidelines”. Create a README file that explains what your package code is and how to use it. In your preferred text editor, write the code for your package. Reviewing package contents for sensitive or unnecessary information§ Publishing sensitive information to the registry can harm your users, compromise your development infrastructure, be expensive to fix, and put you at risk of legal action. We strongly recommend removing sensitive information, such as private keys, passwords, [personally identifiable information][pii] (PII), and credit card data before publishing your package to the registry. Even if your package is private, sensitive information can be exposed if the package is made public or downloaded to a computer that can be accessed by more users than intended."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:34
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:34
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:32
+msgid "For less sensitive information, such as testing data, use a .npmignore or .gitignore file to prevent publishing to the registry. For more information, see this article."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:36
+msgid "Publishing private packages§ By default, scoped packages are published with private visibility."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:39
+msgid "On the command line, navigate to the root directory of your package. cd /path/to/package To publish your private package to the npm registry, run: npm publish To see your private package page, visit https://npmjs.com/package/package-name, replacing package-name with the name of your package. Private packages will say private below the package name on the npm website. private package page showing private below package name"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-private-packages.rst:46
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:46
+msgid "For more information on the publish command, see the CLI documentation."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:2
+msgid "Creating and publishing scoped public packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:4
+msgid "To share your code publicly in a user or Org namespace, you can publish public user-scoped or Org-scoped packages to the npm registry."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:6
+msgid "For more information on scopes, see “About scopes”."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:8
+msgid "Note: Before you can publish user-scoped npm packages, you must sign up for an npm user account. Additionally, to publish Org-scoped packages, you must create an npm user account, then create an npm Org. Overview§ Create your package Review package contents for sensitive or unnecessary information Publish your package Creating a scoped public package§ If you are using npmrc to manage accounts on multiple registries, on the command line, switch to the appropriate profile:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:28
+msgid "Respond to the prompts to generate a package.json file. For help naming your package, see “Package name guidelines”. Create a README file that explains what your package code is and how to use it. In your preferred text editor, write the code for your package. Reviewing package contents for sensitive or unnecessary information§ Publishing sensitive information to the registry can harm your users, compromise your development infrastructure, be expensive to fix, and put you at risk of legal action. We strongly recommend removing sensitive information, such as private keys, passwords, personally identifiable information (PII), and credit card data before publishing your package to the registry."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:36
+msgid "Publishing scoped public packages§ By default, scoped packages are published with private visibility. To publish a scoped package with public visibility, use npm publish --access public."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:41
+msgid "To publish your scoped public package to the npm registry, run:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:42
+msgid "npm publish --access public"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:43
+msgid "To see your public package page, visit https://npmjs.com/package/package-name, replacing package-name with the name of your package. Public packages will say public below the package name on the npm website. public package page showing public below package name"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-scoped-public-packages.rst:48
+msgid "< Creating and publishing unscoped public packages | Creating and publishing private packages >"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:2
+msgid "Creating and publishing unscoped public packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:4
+msgid "Note: You can only publish unscoped packages to the npm public registry. You cannot publish unscoped packages to an npm Enterprise registry. As an npm user, you can create unscoped packages to use in your own projects and publish them to the npm public registry for others to use in theirs. Unscoped packages are always public and are referred to by the package name only:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:7
+msgid "package-name"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:9
+msgid "For more information on package scope, access, and visibility, see “Package scope, access level, and visibility”."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:11
+msgid "Note: Before you can publish public unscoped npm packages, you must sign up for an npm user account. Overview§ Create your package Review package contents for sensitive or unnecessary information Publish your package Creating an unscoped public package§ Note: You can only publish unscoped packages to the npm public registry. You cannot publish unscoped packages to an npm Enterprise registry. On the command line, create a directory for your package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:25
+msgid "In the package root directory, run the npm init command. Respond to the prompts to generate a package.json file. For help naming your package, see “Package name guidelines”. Create a README file that explains what your package code is and how to use it. In your preferred text editor, write the code for your package. Reviewing package contents for sensitive or unnecessary information§ Publishing sensitive information to the registry can harm your users, compromise your development infrastructure, be expensive to fix, and put you at risk of legal action. We strongly recommend removing sensitive information, such as private keys, passwords, personally identifiable information (PII), and credit card data before publishing your package to the registry."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:34
+msgid "Publishing unscoped public packages§ On the command line, navigate to the root directory of your package."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:37
+msgid "To publish your public package to the npm registry, run:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:38
+msgid "npm publish"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-and-publishing-unscoped-public-packages.rst:39
+msgid "To see your public package page, visit https://npmjs.com/package/package-name, replacing package-name with the name of your package. Public packages will say public below the package name on the npm website. For more information on the publish command, see the CLI documentation."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-node-js-modules.rst:2
+msgid "Creating Node.js modules"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-node-js-modules.rst:4
+msgid "Node.js modules are a type of package that can be published to npm."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-node-js-modules.rst:6
+msgid "Overview§ Create a package.json file Create the file that will be loaded when your module is required by another application Test your module Create a package.json file§ To create a package.json file, on the command line, in the root directory of your Node.js module, run npm init: For scoped modules, run npm init --scope=@scope-name For unscoped modules, run npm init Provide responses for the required fields (name and version), as well as the main field: name: The name of your module. version: The initial module version. We recommend following semantic versioning guidelines and starting with 1.0.0. main: The name of the file that will be loaded when your module is required by another application. The default name is index.js. For more information on package.json files, see “Creating a package.json file”."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-node-js-modules.rst:20
+msgid "Create the file that will be loaded when your module is required by another application§ Once your package.json file is created, create the file that will be loaded when your module is required. The default name for this file is index.js."
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-node-js-modules.rst:23
+msgid "In the file, add a function as a property of the exports object. This will make the function available to other code:"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-node-js-modules.rst:25
+msgid "exports.printMsg = function() {"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-node-js-modules.rst:26
+msgid "console.log(\"This is a message from the demo package\");"
+msgstr ""
+
+#: ../../source/packages-and-modules/creating-node-js-modules.rst:27
+msgid "} Test your module§ Publish your package to npm: For private packages and unscoped packages, use npm publish. For scoped public packages, use npm publish --access public On the command line, create a new test directory outside of your project directory. mkdir test-directory Switch to the new directory: cd /path/to/test-directory In the test directory, install your module: npm install <your-module-name> In the test directory, create a test.js file which requires your module and calls your module as a method. On the command line, run node test.js. The message sent to the console.log should appear. Resources§"
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:2
+msgid "Deprecating and undeprecating packages or package versions"
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:4
+msgid "If you no longer wish to maintain a package, or if you would like to encourage users to update to a new or different version, you can deprecate it. Deprecating a package or version will print a message to the terminal when a user installs it."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:6
+msgid "A deprecation warning or message can say anything. You may wish to include a message encouraging users to update to a specific version, or an alternate, supported package."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:8
+msgid "Note: We strongly recommend deprecating packages or package versions instead of unpublishing them, because unpublishing removes a package from the registry entirely, meaning anyone who relied on it will no longer be able to use it, with no warning. Deprecating an entire package or a single version of a package§ Deprecating an entire package§ Deprecating an entire package will remove it from search results on the npm website, and a deprecation message will also be displayed on the package page."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:13
+msgid "deprecation message saying package no longer supported use at your own risk"
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:15
+msgid "To deprecate an entire package, run the following command, replacing <package-name> with the name of your package, and \"<message>\" with your deprecation message:"
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:17
+msgid "npm deprecate <package-name> \"<message>\" If you have enabled two-factor authentication, add a one-time password to the command, --otp=123456 (where 123456 is the code from your authenticator app)."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:20
+msgid "Deprecating a single version of a package§ When you deprecate a version fo a package, a red message will be displayed on that version’s package page, similar to deprecating an entire package."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:23
+msgid "deprecation message saying version no longer supported upgrade to @latest"
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:25
+msgid "To deprecate a package version, run the following command, replacing <package-name> with the name of your package, <version> with your version number, and \"<message>\" with your deprecation message:"
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:27
+msgid "npm deprecate <package-name>@<version> \"<message>\" The CLI will also accept version ranges for <version>."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:30
+msgid "If you have two-factor auth, add a one-time password to the command, --otp=123456 (where 123456 is the code from your authenticator)."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:32
+msgid "Undeprecating a package or version§ To undeprecate a package, replace \"<message>\" with \"\" (an empty string) in one of the above commands."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:35
+msgid "For example, to undeprecate a package version, run the following command, replacing <package-name> with the name of your package, and <version> with your version number:"
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:37
+msgid "npm deprecate <package-name>@<version> \"\" If you have two-factor auth, add a one-time password to the command, --otp=123456 (where 123456 is the code from your authenticator)."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:40
+msgid "Transferring a deprecated package to npm§ If you are no longer maintaining a package, but other users depend on it, and you’d like to remove it from your user profile, you can transfer it to the @npm user account, which is owned by npm, Inc."
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:43
+msgid "Note: Once you transfer a package to the npm account, you will no longer be able to update it. To transfer a package to the npm user account, run the following two commands in order, replacing <user> with your npm user name, and <package-name> with the package you want to transfer:"
+msgstr ""
+
+#: ../../source/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst:46
+msgid "npm owner add npm <package-name> npm owner rm <user> <package-name> If you have two-factor auth, add a one-time password to the command, --otp=123456 (where 123456 is the code from your authenticator)."
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-globally.rst:2
+msgid "Downloading and installing packages globally"
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-globally.rst:4
+msgid "Tip: If you are using npm 5.2 or higher, we recommend using npx to run packages globally. Installing a package globally allows you to use the code in the package as a set of tools on your local computer."
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-globally.rst:7
+msgid "To download and install packages globally, on the command line, run the following command:"
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-globally.rst:9
+msgid "npm install -g <package_name> If you get an EACCES permissions error, you may need to reinstall npm with a version manager or manually change npm’s default directory. For more information, see “Resolving EACCES permissions errors when installing packages globally”."
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:2
+msgid "Downloading and installing packages locally"
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:4
+msgid "You can install a package locally if you want to depend on the package from your own module, using something like Node.js require. This is npm install’s default behavior."
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:6
+msgid "Installing an unscoped package§ Unscoped packages are always public, which means they can be searched for, downloaded, and installed by anyone. To install a public package, on the command line, run"
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:9
+msgid "npm install <package_name> This will create the node_modules directory in your current directory (if one doesn’t exist yet) and will download the package to that directory."
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:12
+msgid "Note: If there is no package.json file in the local directory, the latest version of the package is installed. If there is a package.json file, npm installs the latest version that satisfies the semver rule declared in package.json. Installed a scoped public package§ Scoped public packages can be downloaded and installed by anyone, as long as the scope name is referenced during installation:"
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:16
+msgid "npm install @scope/package-name Installing a private package§ Private packages can only be downloaded and installed by those who have been granted read access to the package. Since private packages are always scoped, you must reference the scope name during installation:"
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:20
+msgid "npm install @scope/private-package-name Testing package installation§ To confirm that npm install worked correctly, in your module directory, check that a node_modules directory exists and that it contains a directory for the package(s) you installed:"
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:24
+msgid "ls node_modules Installed package version§ If there is a package.json file in the directory in which npm install is run, npm instalsx the latest version of the package that satisfies the semantic versioning rule declared in package.json."
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:28
+msgid "If there is no package.json file, the latest version of the package is installed."
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:30
+msgid "Installing a package with dist-tags§ Like npm publish, npm install <package_name> will use the latest tag by default."
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:33
+msgid "To override this behavior, use npm install <package_name>@<tag>. For example, to install the example-package at the version tagged with beta, you would run the following command:"
+msgstr ""
+
+#: ../../source/packages-and-modules/downloading-and-installing-packages-locally.rst:35
+msgid "npm install example-package@beta Resources§"
+msgstr ""
 
 #: ../../source/packages-and-modules/index.rst:2
 msgid "Packages and modules"
@@ -38,5 +957,564 @@ msgstr ""
 
 #: ../../source/packages-and-modules/index.rst:65
 msgid "Securing your code"
+msgstr ""
+
+#: ../../source/packages-and-modules/package-name-guidelines.rst:2
+msgid "Package name guidelines"
+msgstr ""
+
+#: ../../source/packages-and-modules/package-name-guidelines.rst:4
+msgid "When choosing a name for your package, choose a name that"
+msgstr ""
+
+#: ../../source/packages-and-modules/package-name-guidelines.rst:6
+msgid "is unique is descriptive meets npm policy guidelines. For example, do not give your package an offensive name, and do not use someone else’s trademarked name or violate the npm trademark policy. Additionally, when choosing a name for an unscoped package, also choose a name that"
+msgstr ""
+
+#: ../../source/packages-and-modules/package-name-guidelines.rst:11
+msgid "is not already owned by someone else is not spelled in a similar way to another package name will not confuse others about authorship"
+msgstr ""
+
+#: ../../source/packages-and-modules/package-scope-access-level-and-visibility.rst:2
+msgid "npm package scope, access level, and visibility"
+msgstr ""
+
+#: ../../source/packages-and-modules/package-scope-access-level-and-visibility.rst:4
+msgid "Visibility of npm packages depends on the scope (namespace) in which the package is contained, and the access level (private or public) set for the package."
+msgstr ""
+
+#: ../../source/packages-and-modules/package-scope-access-level-and-visibility.rst:6
+msgid "Note: To create Org-scoped packages, you must first create an Org. For more information, see \"Creating an Org\". Public registry§ Scope   Access level    Can view and download   Can write (publish) Org     Private Members of a team in the Org with read access to the package    Members of a team in the Org with read and write access to the package Org     Public  Everyone        Members of a team in the Org with read and write access to the package User    Private The package owner and users who have been granted read access to the package    The package owner and users who have been granted read and write access to the package User    Public  Everyone        The package owner and users who have been granted read and write access to the package Unscoped        Public  Everyone        The package owner and users who have been granted read and write access to the package Note: Only user accounts can create and manage unscoped packages. Orgs can only manage scoped packages. npm Enterprise§ The following table applies to customers who purchased npm Enterprise after July 26, 2018. Scope   Access level    Can view and download   Can write (publish) Org     Private Logged-in members of the Enterprise registry who belong to a team in the Org with read access to the package    Logged-in members of the Enterprise registry who belong to a team in the Org with read and write access to the package Org     Public  All logged-in members of the Enterprise registry        Logged-in members of the Enterprise registry who belong to a team in the Org with read and write access to the package User    Private The package owner and logged-in members of the Enterprise registry who have been granted read access to the package     The package owner and logged-in members of the Enterprise registry who have been granted read and write access to the package User    Public  All logged-in members of the Enterprise registry        The package owner and logged-in members of the Enterprise registry who have been granted read and write access to the package Unscoped        Public  All users of the Enterprise registry    None (see note below) Note: The unscoped namespace on npm Enterprise is reserved for unscoped packages in the public npm registry. To prevent npm Enterprise users from accidentally publishing proprietary code to the public npm registry, where it would be visible to anyone on the internet, we do not allow publishing unscoped packages to npm Enterprise. < About private packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/reporting-a-vulnerability-in-an-npm-package.rst:2
+msgid "Reporting a vulnerability in an npm package"
+msgstr ""
+
+#: ../../source/packages-and-modules/reporting-a-vulnerability-in-an-npm-package.rst:4
+msgid "Note: Vulnerability reporting is currently only available for packages in the public npm registry. If you find a security vulnerability in an npm package (either yours or someone else’s), you can report it to the npm Security team to help keep the Javascript ecosystem safe."
+msgstr ""
+
+#: ../../source/packages-and-modules/reporting-a-vulnerability-in-an-npm-package.rst:7
+msgid "Disclosure timeline§ Vulnerability is reported npm Security triages vulnerability report npm Security notifies package maintainers npm Security publishes security advisory when package maintainers release a fix If maintainers are unresponsive after 45 days, npm Security makes the advisory public Reporting a vulnerability§ Note: Vulnerability reports are sent to the npm Security team, not the package maintainer. Gather information about the vulnerability. On the package page, click Report a vulnerability. On the vulnerability report page, provide information about yourself and the vulnerability: Name: Your name. Email address: An email address the npm Security team can use to contact you. Package name and version: The name of the package that contains the vulnerability. Package version: The version of the package that contains the vulnerability. Include all affected versions. Description of vulnerability: A brief description of the vulnerability and its effects. Include references, commits, and/or code examples that would help our researchers reproduce and investigate the vulnerability. Click Send Report."
+msgstr ""
+
+#: ../../source/packages-and-modules/requiring-2fa-for-package-publishing-and-settings-modification.rst:2
+msgid "Requiring 2FA for package publishing and settings modification"
+msgstr ""
+
+#: ../../source/packages-and-modules/requiring-2fa-for-package-publishing-and-settings-modification.rst:4
+msgid "To protect your packages, as a package publisher, you can require everyone who has write access to a package to provide a one-time password in addition to their login token when they publish the package to the registry or modify package settings."
+msgstr ""
+
+#: ../../source/packages-and-modules/requiring-2fa-for-package-publishing-and-settings-modification.rst:6
+msgid "To publish or modify a package with the two factor authentication (2FA) setting enabled, a publisher must have 2FA enabled on their user account with “Authorization and Publishing” selected. For more information, see “Configuring two-factor authentication”."
+msgstr ""
+
+#: ../../source/packages-and-modules/requiring-2fa-for-package-publishing-and-settings-modification.rst:8
+msgid "Note: Currently, publishing a package with 2FA enabled on CI is not possible. For more secure CI publishing, enable 2FA on the npm account used for CI, and select \"Authorization\" only, and create a CIDR-restricted token for CI by following the steps in \"Creating and viewing authentication tokens\". Enabling two-factor authentication for package publishing§ Log in to npm with your user account. npm login dialog with username and password fields left blank Navigate to the package on which you want to require a second factor to publish or modify settings. Click Admin. admin tab on package page Under “Package Access”, select “Require Two Factor Authentication to publish or modify settings” require two factor authentication to publish or modify settings checkbox selected Click Update Package Settings. update package settings button Disabling two-factor authentication for package publishing§ Log in to npm with your user account. npm login dialog with username and password fields left blank Navigate to the package on which you want to remove the requirement for a second factor to publish or modify settings. Click Admin. admin tab on package page Under “Package Access”, deselect “Require Two Factor Authentication to publish or modify settings” require two factor authentication to publish or modify settings checkbox deselected Click Update Package Settings. update package settings button"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:2
+msgid "Resolving EACCES permissions errors when installing packages globally"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:4
+msgid "If you see an EACCES error when you try to install a package globally, you can either:"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:6
+msgid "Reinstall npm with a node version manager (recommended), or Manually change npm’s default directory Reinstall npm with a node version manager§ This is the best way to avoid permissions issues. To reinstall npm with a node version manager, follow the steps in “Downloading and installing Node.js and npm”. You do not need to remove your current version of npm or Node.js before installing a node version manager."
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:12
+msgid "Manually change npm’s default directory§ Note: This section does not apply to Microsoft Windows. To minimize the chance of permissions errors, you can configure npm to use a different directory. In this example, you will create and use hidden directory in your home directory."
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:16
+msgid "Back up your computer. On the command line, in your home directory, create a directory for global installations:"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:18
+msgid "mkdir ~/.npm-global"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:19
+msgid "Configure npm to use the new directory path:"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:20
+msgid "npm config set prefix '~/.npm-global'"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:21
+msgid "In your preferred text editor, open or create a ~/.profile file and add this line:"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:22
+msgid "export PATH=~/.npm-global/bin:$PATH"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:23
+msgid "On the command line, update your system variables:"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:24
+msgid "source ~/.profile"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:25
+msgid "To test your new configuration, install a package globally without using sudo:"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:26
+msgid "npm install -g jshint"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:27
+msgid "Instead of steps 2-4, you can use the corresponding ENV variable (e.g. if you don’t want to modify ~/.profile):"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:29
+msgid "NPM_CONFIG_PREFIX=~/.npm-global"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:30
+msgid "npx: an alternative to running global commands"
+msgstr ""
+
+#: ../../source/packages-and-modules/resolving-eacces-permissions-errors-when-installing-packages-globally.rst:32
+msgid "If you are using npm version 5.2 or greater, you may want to consider npx as an alternative way to run global commands, especially if you only need a command occasionally. For more information, see this article about npx."
+msgstr ""
+
+#: ../../source/packages-and-modules/searching-for-and-choosing-packages-to-download.rst:2
+msgid "Searching for and choosing packages to download"
+msgstr ""
+
+#: ../../source/packages-and-modules/searching-for-and-choosing-packages-to-download.rst:4
+msgid "You can use the npm search bar to find packages to use in your projects. npm search uses npms and the npms analyzer; for more information on both, see https://npms.io/about."
+msgstr ""
+
+#: ../../source/packages-and-modules/searching-for-and-choosing-packages-to-download.rst:6
+msgid "Searching for a package§ In the search bar, type a search term and press Enter. As you type, possible choices will appear. search text field containing search query qr code dropdown containing search results for query qr code To list packages ranked according to package search rank criteria, in the left sidebar, under “Sort packages”, click the criterion. For example, to sort packages by popularity, click “Popularity”. In the package search results list, click the name of the package. Package search rank criteria§ Often, there are dozens or even hundreds of packages with similar names and/or similar purposes. To help you decide the best ones to explore, each package has been ranked according to four criteria using the npms analyzer:"
+msgstr ""
+
+#: ../../source/packages-and-modules/searching-for-and-choosing-packages-to-download.rst:13
+msgid "Popularity§ Popularity indicates how many times the package has been downloaded. This is a strong indicator of packages that others have found to be useful."
+msgstr ""
+
+#: ../../source/packages-and-modules/searching-for-and-choosing-packages-to-download.rst:16
+msgid "Quality§ Quality includes considerations such as the presence of a README file, stability, tests, up-to-date dependencies, custom website, and code complexity."
+msgstr ""
+
+#: ../../source/packages-and-modules/searching-for-and-choosing-packages-to-download.rst:19
+msgid "Maintenance§ Maintenance ranks packages according to the attention they are given by developers. More frequently maintained packages are more likely to work well with the current or upcoming versions of the npm CLI, for example."
+msgstr ""
+
+#: ../../source/packages-and-modules/searching-for-and-choosing-packages-to-download.rst:22
+msgid "Optimal§ Optimal combines the other three criteria (popularity, quality, maintenance) into one score in a meaningful way."
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:2
+msgid "Specifying dependencies and devDependencies in a package.json file"
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:4
+msgid "To specify the packages your project depends on, you must list them as \"dependencies\" or \"devDependencies\" in your package’s package.json file. When you (or another user) run npm install, npm will download dependencies and devDependencies that are listed in package.json that meet the semantic version requirements listed for each. To see which versions of a package will be installed, use the semver calculator."
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:6
+msgid "\"dependencies\": Packages required by your application in production. \"devDependencies\": Packages that are only needed for local development and testing. Adding dependencies to a package.json file§ You can add dependencies to a package.json file from the command line or by manually editing the package.json file."
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:11
+msgid "Adding dependencies to a package.json file from the command line§ To add dependencies and devDependencies to a package.json file from the command line, you can install them in the root directory of your package using the --save-prod flag for dependencies (the default behavior of npm install) or the --save-dev flag for devDependencies."
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:14
+msgid "To add an entry to the \"dependencies\" attribute of a package.json file, on the command line, run the following command:"
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:16
+msgid "npm install <package-name> [--save-prod] To add an entry to the \"devDependencies\" attribute of a package.json file, on the command line, run the following command:"
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:19
+msgid "npm install <package-name> --save-dev Manually editing the package.json file§ To add dependencies to a package.json file, in a text editor, add an attribute called \"dependencies\" that references the name and semantic version of each dependency:"
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:24
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:33
+msgid "\"name\": \"my_package\", \"version\": \"1.0.0\", \"dependencies\": {"
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:30
+msgid "} To add devDependencies to a package.json file, in a text editor, add an attribute called \"devDependencies\" that references the name and semantic version of each devDependency:"
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:38
+msgid "}, \"devDependencies\" : {"
+msgstr ""
+
+#: ../../source/packages-and-modules/specifying-dependencies-and-devdependencies-in-a-package-json-file.rst:40
+msgid "\"my_test_framework\": \"^3.1.0\". \"another_dev_dep\": \"1.0.0 - 1.2.0\""
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:2
+msgid "Transferring a package from a user account to an Org"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:4
+msgid "As a package maintainer, you may want to move a package into an Org so that all members or everyone on a specific team, can publish to the package."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:6
+msgid "Note: If your package is private, the new package owner must also have a paid user account It is possible to transfer ownership of scoped packages, however we don't recommend it because it can create some ownership confusion. Transferring packages between a user and an Org works slightly differently than transferring packages between users. There will be an extra step of adding the package to an Org team. The new maintainer or owner will also need to be the Org owner or team admin."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:9
+msgid "Transferring a package from a user account to an Org on the website§ To transfer a package you own or maintain to an Org, follow these steps:"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:12
+msgid "Navigate to the package page for the package you want to transfer, replacing <your-package-name> with the name of your package: https://www.npmjs.com/package/<your-package-name>. On the package Admin tab, under “Maintainers,” enter the npm username of the new maintainer. package page admin tab showing text field to invite maintainers"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:16
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:18
+msgid "Click “Invite.” To remove yourself as a maintainer, under the maintainers list, click the “x” next to your username. package page admin tab listing two maintainers"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:20
+msgid "Note: Once this has been done, the Org owner or team admin who is now a maintainer on the package will need to add the package to an Org team. Transferring a package from a user account to an Org on the command line§ To transfer a package to an Org using the CLI, on the command line, run the npm owner add and rm commands in order, replacing <their-username> with the npm username of the Org owner or team admin, and <your-username> with your npm username, and <package-name> with the package you want to transfer:"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:24
+msgid "npm owner add npm <their-username> <package-name> npm owner rm <your-username> <package-name> If you have two-factor authentication enabled for writes, add a one-time password to the commands, --otp=123456 (where 123456 is the code from your authenticator application)."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-an-org.rst:28
+msgid "npm owner add npm <their-username> <package-name> --otp=123456 npm owner rm <your-username> <package-name> --otp=123456 Note: After this is done, the Org owner or team admin will be able to add the package to a team in their Org, using the access command."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:2
+msgid "Transferring a package from a user account to another user account"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:4
+msgid "As a package owner or maintainer, you can transfer ownership of a package you no longer wish to maintain to another trusted npm user on either the npm website or the command line."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:6
+msgid "Transferring a package from a user to an Org, or an Org to a user works differently than this process."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:8
+msgid "For more information on how npm support handles package name disputes between users, you can refer to npm’s package name dispute policy."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:10
+msgid "Note: If your package is scoped and private, the new package owner must also have a paid user account. It is possible to transfer ownership of user-scoped packages, however we don't recommend it because it can create some ownership confusion. Transferring a package from a user account to another user account on the website§ To transfer a package you own or maintain to another user, follow these steps:"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:14
+msgid "Navigate to the package page for the package you want to transfer, replacing <your-package-name> with the name of your package: https://www.npmjs.com/package/<your-package-name>. On the package Admin tab, under “Maintainers”, enter the npm username of the new maintainer. package page admin tab showing text field to invite maintainers"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:22
+msgid "Transferring a package from a user account to another user account on the command line§ To transfer a package to another npm user using the CLI, run the npm owner add and rm commands in order, replacing <their-username> with the other user’s npm username, <your-username> with your npm username, and <package-name> with the package you want to transfer:"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:25
+msgid "npm owner add npm <their-username> <package-name> npm owner rm <your-username> <package-name> If you have two-factor authentication enabled for writes, add a one-time password to the command, --otp=123456 (where 123456 is the code from your authenticator application)."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-a-user-account-to-another-user-account.rst:29
+msgid "npm owner add npm <their-username> <package-name> --otp=123456 npm owner rm <your-username> <package-name> --otp=123456"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-an-org-to-a-user-account.rst:2
+msgid "Transferring a package from an Org to a user account"
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-an-org-to-a-user-account.rst:4
+msgid "You may also want to move a package out of an Org to a user account. For example, if you no longer want the package to be controlled by an Org, and would like to transfer it to a user."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-an-org-to-a-user-account.rst:6
+msgid "If a package has been added to an Org team, adding a collaborator using the package admin tab or the owner CLI command will result in a team not found error."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-an-org-to-a-user-account.rst:8
+msgid "In this case, you won’t be able to add a collaborator, then remove the package from a team."
+msgstr ""
+
+#: ../../source/packages-and-modules/transferring-a-package-from-an-org-to-a-user-account.rst:10
+msgid "If you need to transfer a package from an Org to a user account, contact npm Support."
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:2
+msgid "Uninstalling packages and dependencies"
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:4
+msgid "If you no longer need to use a package in your code, we recommend uninstalling it and removing it from your project’s dependencies."
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:6
+msgid "Uninstalling local packages§ Removing a local package from your node_modules directory§ To remove a package from your node_modules directory, on the command line, use the uninstall command. Include the scope if the package is scoped."
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:10
+msgid "Unscoped package§ npm uninstall <package_name>"
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:13
+msgid "Scoped package§ npm uninstall <@scope/package_name> Example§ npm uninstall lodash Removing a local package from the package.json dependencies§ To remove a package from the dependencies in package.json, use the --save flag. Include the scope if the package is scoped."
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:20
+msgid "Unscoped package§ npm uninstall --save <package_name> Scoped package§ npm uninstall --save <@scope/package_name> Example§ npm uninstall --save lodash Note: If you installed a package as a \"devDependency\" (i.e. with --save-dev), use --save-dev to uninstall it: npm uninstall --save-dev package_name Confirming local package uninstallation§ To confirm that npm uninstall worked correctly, check that the node_modules directory no longer contains a directory for the uninstalled package(s)."
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:30
+msgid "Unix system (such as OSX): ls node_modules Windows systems: dir node_modules Uninstalling global packages§ To uninstall an unscoped global package, on the command line, use the uninstall command with the -g flag. Include the scope if the package is scoped."
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:35
+msgid "Unscoped package§ npm uninstall -g <package_name> Scoped package§ npm uninstall -g <@scope/package_name> Example§ For example, to uninstall a package called jshint, run:"
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:42
+msgid "npm uninstall -g jshint Resources§ Uninstalling local packages§"
+msgstr ""
+
+#: ../../source/packages-and-modules/uninstalling-packages-and-dependencies.rst:46
+msgid "Uninstalling global packages§"
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:2
+msgid "Unpublishing packages from the registry"
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:4
+msgid "In order to permanently remove a package (or package version) from the npm registry, as a package owner or collaborator, you can unpublish it from the the command line within 72 hours of the initial publish."
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:6
+msgid "If you want to unpublish a package after 72 hours have passed, contact npm Support. For more information about why we don’t allow users to unpublish packages after 72 hours, see our unpublish policy."
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:8
+msgid "Note: If you are using npm Enterprise, you can have an admin contact npm Enterprise Support at enterprise@npmjs.com to increase the unpublishing window for your instance beyond 72 hours. Unpublishing a package using the CLI or by contacting npm support is the only way to remove a package or version from the registry. For example, removing all the collaborators or teams from the package will not unpublish it."
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:11
+msgid "If you are no longer interested in maintaining a package, but want it to remain available for users to install, or if your package has dependents, we’d recommend deprecating it. To learn about how to deprecate a package, see “Deprecating and undeprecating packages or package versions”."
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:13
+msgid "Unpublishing a package permanently removes the package from the registry so it is no longer available for other users to install. Once a package is unpublished, it cannot be republished. If you’ve unpublished a package by mistake, we’d recommend publishing again under a different name, or for unpublished versions, bumping the version number and publishing again."
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:15
+msgid "You might want to unpublish a package because you:"
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:17
+msgid "Published something accidentally. Wanted to test npm. Published content you didn’t intend to be public. Wanted to rename a package. (The only way to rename a package is to re-publish it under a new name) Note: Since various systems rely on package-name@version being unique, you cannot reuse a published version by unpublishing and re-publishing it. If you want to reuse a version number, we recommend publishing a minor version update instead. Unpublishing an entire package§ To unpublish an entire package, run the following command, replacing <package-name> with the name of your package:"
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:25
+msgid "npm unpublish <package-name> -f If you have two-factor authentication enabled for writes, you will need to add a one-time password to the unpublish command, --otp=123456 (where 123456 is the code from your authenticator app)."
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:28
+msgid "Unpublishing a single version of a package§ To unpublish a single version of a package, run the following command, replacing <package-name> with the name of your package, and <version> with your version number:"
+msgstr ""
+
+#: ../../source/packages-and-modules/unpublishing-packages-from-the-registry.rst:31
+msgid "npm unpublish <package-name>@<version> If you have two-factor auth, add a one-time password to the command, --otp=123456 (where 123456 is the code from your authenticator)."
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-packages-downloaded-from-the-registry.rst:2
+msgid "Updating packages downloaded from the registry"
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-packages-downloaded-from-the-registry.rst:4
+msgid "Updating local and global packages you downloaded from the registry helps keep your code and tools stable, usable, and secure."
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-packages-downloaded-from-the-registry.rst:6
+msgid "Updating local packages§ We recommend regularly updating the local packages your project depends on to improve your code as improvements to its dependencies are made."
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-packages-downloaded-from-the-registry.rst:9
+msgid "Navigate to the root directory of your project and ensure it contains a package.json file: cd /path/to/project In your project root directory, run the update command: npm update To test the update, run the outdated command. There should not be any output. npm outdated Updating globally-installed packages§ Note: If you are using npm version 2.6.0 or less, run this script to update all outdated global packages. However, please consider upgrading to the latest version of npm: npm install npm@latest -g Determining which global packages need updating§ To see which global packages need to be updated, on the command line, run:"
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-packages-downloaded-from-the-registry.rst:20
+msgid "npm outdated -g --depth=0 Updating a single global package§ To update a single global package, on the command line, run:"
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-packages-downloaded-from-the-registry.rst:24
+msgid "npm update -g <package_name> Updating all globally-installed packages§ To update all global packages, on the command line, run:"
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-packages-downloaded-from-the-registry.rst:28
+msgid "npm update -g Resources§"
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-packages-downloaded-from-the-registry.rst:31
+msgid "CLI commands§ npm-update npm-outdated"
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-your-published-package-version-number.rst:2
+msgid "Updating your published package version number"
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-your-published-package-version-number.rst:4
+msgid "When you make significant changes to a published package, we recommend updating the version number to communicate the extent of the changes to others who rely on your code."
+msgstr ""
+
+#: ../../source/packages-and-modules/updating-your-published-package-version-number.rst:6
+msgid "Note: If you have linked a git repository to a package, updating the package version number will also add a tag with the updated release number to the linked git repository. To change the version number in package.json, on the command line, in the package root directory, run the following command, replacing <update_type> with one of the semantic versioning release types (patch, major, or minor): npm version <update_type> Run npm publish. Go to your package page (https://npmjs.com/package/<package>) to check that the package version has been updated. For more information on npm version, see the CLI documentation."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-deprecated-packages.rst:2
+msgid "Using deprecated packages"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-deprecated-packages.rst:4
+msgid "If you install a package, and it prints a deprecation message, we recommend following the instructions, if possible."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-deprecated-packages.rst:6
+msgid "That might mean updating to a new version, or updating your package dependencies."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-deprecated-packages.rst:8
+msgid "package page with deprecation message saying package no longer supported contact support@npmjs.com for more info"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-deprecated-packages.rst:10
+msgid "A deprecation message doesn’t always mean the package or version is unusable; it may mean the package is unmaintained and will no longer be updated by the publisher."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:2
+msgid "Using npm packages in your projects"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:4
+msgid "Once you have installed a package in node_modules, you can use it in your code."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:6
+msgid "Using unscoped packages in your projects§ Node.js module§ If you are creating a Node.js module, you can use a package in your module by passing it as an argument to the require function."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:10
+msgid "Example: using lodash in a Node.js module§ For example, to use the lodash package in a Node.js module, in the root directory of the module, create a file named index.js with the following contents:"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:13
+msgid "// index.js var lodash = require('lodash');"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:16
+msgid "var output = lodash.without([1, 2, 3], 1); console.log(output); Run the code using node index.js. It should output [2, 3]."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:20
+msgid "package.json file§ In package.json, list the package under dependencies. You can optionally include a semantic version."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:25
+msgid "\"@package_name\": \"^1.0.0\""
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:27
+msgid "} Using scoped packages in your projects§ To use a scoped package, simply include the scope wherever you use the package name."
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:31
+msgid "Node.js module§ When requiring a scoped package in the index.js file of your Node.js module, you must reference the scope in addition to the package name:"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:34
+msgid "var projectName = require(\"@scope/package-name\") package.json file§ In package.json:"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:40
+msgid "\"@scope/package_name\": \"^1.0.0\""
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:42
+msgid "} Resolving “Cannot find module” errors§ If you have not properly installed a package, you will receive an error when you try to use it in your code. For example, if you reference the lodash package without installing it, you would see the following error:"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:47
+msgid "module.js:340"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:47
+msgid "throw err;"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:48
+msgid "^"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:49
+msgid "Error: Cannot find module 'lodash' To resolve “cannot find module” errors, run the appropriate install command in the same directory as your project’s index.js file:"
+msgstr ""
+
+#: ../../source/packages-and-modules/using-npm-packages-in-your-projects.rst:52
+msgid "For scoped packages, run npm install <@scope/package_name> For unscoped packages, run npm install <package_name>"
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:2
+msgid "Verifying the PGP signature of a package from the npm public registry"
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:4
+msgid "To ensure the integrity of a package version you download from the npm public registry, you can manually verify the PGP signature of the package."
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:6
+msgid "Note: Since fully verifying signatures on Keybase requires rechecking proofs (which requires network activity) and is therefore expensive, we recommend only verifying signatures if it is absolutely necessary -- for example, when verifying a deploy artifact, or when initially storing a package in your cache. Prerequisites§ Install Keybase from https://keybase.io/download Create a Keybase account on https://keybase.io Follow “npmregistry” on Keybase. Download a local copy of the npm public registry’s public PGP key. Verifying npm signatures for the public registry§ Note: The following steps use version 1.4.3 of the light-cycle package as an example. On the command line, fetch the signature for the package version you want and save it in a file:"
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:15
+msgid "$ http GET https://registry.npmjs.org/light-cycle | json \"versions['1.4.3'].dist.npm-signature\" > sig-to-check"
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:16
+msgid "Get the integrity field for that version (example below includes response):"
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:17
+msgid "$ http GET https://registry.npmjs.org/light-cycle | json \"versions['1.4.3'].dist.integrity\""
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:18
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:23
+msgid "Example response:"
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:20
+msgid "sha512-sFcuivsDZ99fY0TbvuRC6CDXB8r/ylafjJAMnbSF0y4EMM1/1DtQo40G2WKz1rBbyiz4SLAc3Wa6yZyC4XSGOQ=="
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:21
+msgid "Construct the string that ties the unique package name and version to the integrity string (example below includes response):"
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:22
+msgid "$ keybase pgp verify --signed-by npmregistry -d sig-to-check -m 'light-cycle@1.4.3:sha512-sFcuivsDZ99fY0TbvuRC6CDXB8r/ylafjJAMnbSF0y4EMM1/1DtQo40G2WKz1rBbyiz4SLAc3Wa6yZyC4XSGOQ=='"
+msgstr ""
+
+#: ../../source/packages-and-modules/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry.rst:25
+msgid "▶ INFO Identifying npmregistry ✔ <tracked> public key fingerprint: 0963 1802 8A2B 58C8 4929 D8E1 3D4D 5B12 0276 566A You last followed npmregistry on 2018-04-10 21:21:57 PDT ✔ <tracked> admin of DNS zone npmjs.com: found TXT entry keybase-site-verification=iK3pjpRBkv-CIJ4PHtWL4TTcFXMpPiwPynatKl3oWO4 ✔ <tracked> \"npmjs\" on twitter: https://twitter.com/npmjs/status/981288548845240320 [cached 2018-04-12 13:18:31 PDT; but got a retryable error (API network error: Get https://twitter.com/npmjs/status/981288548845240320: net/http: request canceled (Client.Timeout exceeded while awaiting headers) (code=170)) this time around] ✔ <tracked> admin of DNS zone npmjs.org: found TXT entry keybase-site-verification=Ls8jN55i6KesjiX91Ck79bUZ17eA-iohmw2jJFM16xc Signature verified. Signed by npmregistry 7 minutes ago (2018-04-13 15:00:37 -0700 PDT). PGP Fingerprint: 096318028a2b58c84929d8e13d4d5b120276566a."
 msgstr ""
 

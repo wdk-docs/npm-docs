@@ -1,8 +1,6 @@
 npm-prefix
 ============================================================================================
 
-Display prefix
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: prefix
 
-npm prefix [-g]
+   Display prefix
+
+   .. code-block:: sh
+
+      npm prefix [-g]
 
 DESCRIPTION
 -------------------
@@ -22,9 +24,9 @@ If -g is specified, this will be the value of the global prefix. See npm-config 
 SEE ALSO
 -------------------
 
-- npm-root
-- npm-bin
-- npm-folders
-- npm-config
-- npm-config
-- npmrc
+- :option:`npm root`
+- :option:`npm bin`
+- :ref:`folders`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

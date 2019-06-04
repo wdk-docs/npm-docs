@@ -63,6 +63,69 @@ CLI commands
 - :option:`view <npm view>` View registry info
 - :option:`whoami <npm whoami>` Display npm username
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   access
+   adduser
+   audit
+   bin
+   bugs
+   build
+   bundle
+   cache
+   ci
+   completion
+   config
+   dedupe
+   deprecate
+   dist-tag
+   docs
+   doctor
+   edit
+   explore
+   help-search
+   help
+   hook
+   init
+   install-ci-test
+   install-test
+   install
+   link
+   logout
+   ls
+   npm
+   org
+   outdated
+   owner
+   pack
+   ping
+   prefix
+   profile
+   prune
+   publish
+   rebuild
+   repo
+   restart
+   root
+   run-script
+   search
+   shrinkwrap
+   star
+   stars
+   start
+   stop
+   team
+   test
+   token
+   uninstall
+   unpublish
+   update
+   version
+   view
+   whoami
+
 Configuring npm
 ------------------------
 
@@ -72,6 +135,7 @@ Configuring npm
 - :doc:`../files/package-locks` An explanation of npm lockfiles
 - :doc:`../files/package.json` Specifics of npm's package.json handling
 - :doc:`../files/shrinkwrap.json` A publishable lockfile
+
 
 Using npm
 ------------------------

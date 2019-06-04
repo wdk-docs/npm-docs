@@ -1,8 +1,6 @@
 npm-search
 ============================================================================================
 
-Search for packages
-
 SYNOPSIS
 -------------------
 
@@ -10,9 +8,13 @@ SYNOPSIS
 
 .. option:: search
 
-npm search [-l|--long] [--json] [--parseable] [--no-description] [search terms ...]
+   Search for packages
 
-aliases: s, se, find
+   .. code-block:: sh
+
+      npm search [-l|--long] [--json] [--parseable] [--no-description] [search terms ...]
+
+   aliases: s, se, find
 
 DESCRIPTION
 -------------------
@@ -73,8 +75,8 @@ Search the specified registry for modules. If you have configured npm to point t
 SEE ALSO
 -------------------
 
-- npm-registry
-- npm-config
-- npm-config
-- npmrc
-- npm-view
+- :ref:`registry`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :option:`npm view`

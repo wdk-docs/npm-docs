@@ -1,8 +1,6 @@
 npm-install-ci-test
 ============================================================================================
 
-Install a project with a clean slate and run tests
-
 SYNOPSIS
 -------------------
 
@@ -10,9 +8,13 @@ SYNOPSIS
 
 .. option:: cit
 
-npm install-ci-test
+   Install a project with a clean slate and run tests
 
-alias: npm cit
+   .. code-block:: sh
+
+      npm install-ci-test
+
+   alias: npm cit
 
 DESCRIPTION
 -------------------
@@ -22,5 +24,5 @@ This command runs an npm ci followed immediately by an npm test.
 SEE ALSO
 -------------------
 
-- npm-ci
-- npm-test
+- :option:`npm ci`
+- :option:`npm test`

@@ -1,8 +1,6 @@
 npm-run-script
 ============================================================================================
 
-Run arbitrary package scripts
-
 SYNOPSIS
 -------------------
 
@@ -10,9 +8,15 @@ SYNOPSIS
 
 .. option:: run-script
 
-npm run-script <command> [--silent] [-- <args>...]
+   Run arbitrary package scripts
 
-alias: npm run
+   .. code-block:: sh
+
+      npm run-script <command> [--silent] [-- <args>...]
+
+.. option:: run
+
+   npm run-script alias
 
 DESCRIPTION
 -------------------
@@ -21,17 +25,26 @@ This runs an arbitrary command from a package’s "scripts" object. If no "comma
 
 As of npm@2.0.0, you can use custom arguments when executing scripts. The special option -- is used by getopt to delimit the end of the options. npm will pass all the arguments after the -- directly to your script:
 
-npm run test -- --grep="pattern"
+.. code-block::
+
+   npm run test -- --grep="pattern"
+
 The arguments will only be passed to the script specified after npm run and not to any pre or post script.
 
 The env script is a special built-in command that can be used to list environment variables that will be available to the script at runtime. If an “env” command is defined in your package, it will take precedence over the built-in.
 
 In addition to the shell’s pre-existing PATH, npm run adds node_modules/.bin to the PATH provided to scripts. Any binaries provided by locally-installed dependencies can be used without the node_modules/.bin prefix. For example, if there is a devDependency on tap in your package, you should write:
 
-"scripts": {"test": "tap test/\*.js"}
+.. code-block::
+
+   "scripts": {"test": "tap test/\*.js"}
+
 instead of
 
-"scripts": {"test": "node_modules/.bin/tap test/\*.js"}
+.. code-block::
+
+   "scripts": {"test": "node_modules/.bin/tap test/\*.js"}
+
 to run your tests.
 
 The actual shell your script is run within is platform dependent. By default, on Unix-like systems it is the /bin/sh command, on Windows it is the cmd.exe. The actual shell referred to by /bin/sh also depends on the system. As of npm@5.1.0 you can customize the shell with the script-shell configuration.
@@ -49,9 +62,9 @@ You can use the --if-present flag to avoid exiting with a non-zero exit code whe
 SEE ALSO
 -------------------
 
-- npm-scripts
-- npm-test
-- npm-start
-- npm-restart
-- npm-stop
-- npm-config
+- :ref:`npm-scripts`
+- :option:`npm test`
+- :option:`npm start`
+- :option:`npm restart`
+- :option:`npm stop`
+- :option:`npm config`

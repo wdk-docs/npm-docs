@@ -1,8 +1,6 @@
 npm-link
 ============================================================================================
 
-Symlink a package folder
-
 SYNOPSIS
 -------------------
 
@@ -10,10 +8,14 @@ SYNOPSIS
 
 .. option:: link
 
-npm link (in package dir)
-npm link [<@scope>/]<pkg>[@<version>]
+   Symlink a package folder
 
-alias: npm ln
+   .. code-block:: sh
+
+      npm link (in package dir)
+      npm link [<@scope>/]<pkg>[@<version>]
+
+   alias: npm ln
 
 DESCRIPTION
 -------------------
@@ -59,10 +61,10 @@ npm link @myorg/privatepackage
 SEE ALSO
 -------------------
 
-- npm-developers
-- package.json
-- npm-install
-- npm-folders
-- npm-config
-- npm-config
-- npmrc
+- :option:`npm developers`
+- :ref:`package.json`
+- :option:`npm install`
+- :ref:`folders`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

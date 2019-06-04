@@ -1,8 +1,6 @@
 npm-stars
 ============================================================================================
 
-View packages marked as favorites
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: stars
 
-npm stars [<user>]
+   View packages marked as favorites
+
+   .. code-block:: sh
+
+      npm stars [<user>]
 
 DESCRIPTION
 -------------------
@@ -22,7 +24,7 @@ You may also want to see your friend’s favorite packages, in this case you wil
 SEE ALSO
 -------------------
 
-- npm-star
-- npm-view
-- npm-whoami
-- npm-adduser
+- :option:`npm star`
+- :option:`npm view`
+- :option:`npm whoami`
+- :option:`npm adduser`

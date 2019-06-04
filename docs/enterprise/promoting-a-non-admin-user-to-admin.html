@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Promoting a non-admin user to admin &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Demoting an admin to a non-admin user" href="demoting-an-admin-to-a-non-admin-user.html" />
+    <link rel="prev" title="About the Enterprise admin user" href="about-the-enterprise-admin-user.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/enterprise/promoting-a-non-admin-user-to-admin.html" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="../getting-started/index.html">入门</a></li>
+    <li><a href="../packages-and-modules/index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="index.html">企业版</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
+  </div>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="demoting-an-admin-to-a-non-admin-user.html" title="Demoting an admin to a non-admin user"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="about-the-enterprise-admin-user.html" title="About the Enterprise admin user"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">npm 企业版</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="about-the-enterprise-admin-user.html"
+                        title="上一章">About the Enterprise admin user</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="demoting-an-admin-to-a-non-admin-user.html"
+                        title="下一章">Demoting an admin to a non-admin user</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/enterprise/promoting-a-non-admin-user-to-admin.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="promoting-a-non-admin-user-to-admin">
+<h1>Promoting a non-admin user to admin<a class="headerlink" href="#promoting-a-non-admin-user-to-admin" title="永久链接至标题">¶</a></h1>
+<p>Note: To keep your Enterprise instance secure, we recommend limiting the number of Enterprise admins on your instance.
+If you need multiple users in your Enterprise instance to be able to take admin actions (e.g. configure SSO, activate and deactivate users, or invite users to the instance), you can promote a non-admin user to admin.</p>
+<p>If you haven’t already, add the user to your instance, either by having them sign in with your SSO provider, or by inviting them to create a username and password on the instance.
+Have an Enterprise admin contact npm Enterprise Support at <a class="reference external" href="mailto:enterprise&#37;&#52;&#48;npmjs&#46;com">enterprise<span>&#64;</span>npmjs<span>&#46;</span>com</a> with the name of the user to be promoted to admin.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="demoting-an-admin-to-a-non-admin-user.html" title="Demoting an admin to a non-admin user"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="about-the-enterprise-admin-user.html" title="About the Enterprise admin user"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >npm 企业版</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
+</html>

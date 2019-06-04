@@ -1,8 +1,6 @@
 npm-help
 ============================================================================================
 
-Get help on npm
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: help
 
-npm help <term> [<terms..>]
+   Get help on npm
+
+   .. code-block:: sh
+
+      npm help <term> [<terms..>]
 
 DESCRIPTION
 -------------------
@@ -32,12 +34,12 @@ Set to "browser" to view html help content in the default web browser.
 SEE ALSO
 -------------------
 
-- npm
-- README
-- npm-folders
-- npm-config
-- npm-config
-- npmrc
-- package.json
-- npm-help-search
-- npm-index
+- :option:`npm`
+- :option:`README`
+- :ref:`folders`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :ref:`package.json`
+- :option:`npm help-search`
+- :option:`npm index`

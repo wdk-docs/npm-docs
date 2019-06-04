@@ -10,9 +10,11 @@ SYNOPSIS
 
 .. option:: init
 
-npm init [--force|-f|--yes|-y|--scope]
-npm init <@scope> (same as `npx <@scope>/create`)
-npm init [<@scope>/]<name> (same as `npx [<@scope>/]create-<name>`)
+.. code-block:: sh
+
+   npm init [--force|-f|--yes|-y|--scope]
+   npm init <@scope> (same as `npx <@scope>/create`)
+   npm init [<@scope>/]<name> (same as `npx [<@scope>/]create-<name>`)
 
 EXAMPLES
 -------------------
@@ -53,6 +55,6 @@ SEE ALSO
 -------------------
 
 - https://github.com/isaacs/init-package-json
-- package.json
-- npm-version
-- npm-scope
+- :ref:`package.json`
+- :option:`npm version`
+- :ref:`scope`

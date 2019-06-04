@@ -1,7 +1,6 @@
 npm-token
 ============================================================================================
 
-Manage your authentication tokens
 
 SYNOPSIS
 -------------------
@@ -10,9 +9,13 @@ SYNOPSIS
 
 .. option:: token
 
-npm token list [--json|--parseable]
-npm token create [--read-only] [--cidr=1.1.1.1/24,2.2.2.2/16]
-npm token revoke <id|token>
+   Manage your authentication tokens
+
+   .. code-block:: sh
+
+      npm token list [--json|--parseable]
+      npm token create [--read-only] [--cidr=1.1.1.1/24,2.2.2.2/16]
+      npm token revoke <id|token>
 
 DESCRIPTION
 -------------------

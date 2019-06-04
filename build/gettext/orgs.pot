@@ -8,13 +8,338 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"POT-Creation-Date: 2019-06-04 22:31+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/orgs/about-org-scopes-and-packages.rst:2
+msgid "About Org scopes and packages"
+msgstr ""
+
+#: ../../source/orgs/about-org-scopes-and-packages.rst:4
+msgid "Every Org is granted an Org scope, a unique namespace for packages owned by the Org that matches the Org name. For example, an Org named “wombat” would have the scope @wombat."
+msgstr ""
+
+#: ../../source/orgs/about-org-scopes-and-packages.rst:6
+msgid "You can use scopes to:"
+msgstr ""
+
+#: ../../source/orgs/about-org-scopes-and-packages.rst:8
+msgid "Maintain a fork of a package: @wombat/request. Avoid name disputes with popular names: @wombat/web. Easily find packages in the same namespace Packages in a scope must follow the same naming guidelines as unscoped packages."
+msgstr ""
+
+#: ../../source/orgs/about-org-scopes-and-packages.rst:13
+msgid "Managing unscoped packages§ While you are granted a scope by default when you create an Org, you can also use Orgs to manage unscoped packages, or packages under a different scope (such as a user scope)."
+msgstr ""
+
+#: ../../source/orgs/about-teams.rst:2
+msgid "About teams"
+msgstr ""
+
+#: ../../source/orgs/about-teams.rst:4
+msgid "Teams are groups of Org members with defined access to a set of packages governed by the Org."
+msgstr ""
+
+#: ../../source/orgs/about-teams.rst:6
+msgid "The Developers team§ The Developers team is automatically created when you create an Org. By default, the Developers team has read/write access to all new packages created under the Org’s scope."
+msgstr ""
+
+#: ../../source/orgs/about-teams.rst:9
+msgid "Members added to the Org, including the Org owner, are automatically added to the Developers team The maintainers field in the package.json of any newly created packages under the Org scope is automatically populated with the members of the current Developers team If you create a new package under your Org’s scope and you do not want members of the Developers team to have read/write access to that package, an owner or admin can remove the Developers team’s access to that package. For more informations, see “Managing team access to Org packages”."
+msgstr ""
+
+#: ../../source/orgs/about-teams.rst:13
+msgid "If an owner adds a new member to an Org and does not want that member to be on the Developers team, an owner can remove them."
+msgstr ""
+
+#: ../../source/orgs/about-teams.rst:15
+msgid "Removing the Developers team§ Note: We strongly recommend not removing the Developers team."
+msgstr ""
+
+#: ../../source/orgs/about-teams.rst:18
+msgid "If an Org owner or admin deletes the Developers team:"
+msgstr ""
+
+#: ../../source/orgs/about-teams.rst:20
+msgid "Newly added members of the Org will not be added to any team. Package access that current members had because they were a member of the Developers team will be removed. npm will attempt to fill the maintainers field in package.json of newly created packages under the Org scope with the members of a team the publishing user belongs to. This behavior is not predictable. Recreating the Developers team§ An Org owner or team admin can recreate the Developers team by creating a new team named “Developers”. The new Developers team will have all the default behavior of the original Developers team. An Org owner or admin will need to add members of the original Developers team to the new Developers team."
+msgstr ""
+
+#: ../../source/orgs/accepting-or-rejecting-an-org-invitation.rst:2
+msgid "Accepting or rejecting an Org invitation"
+msgstr ""
+
+#: ../../source/orgs/accepting-or-rejecting-an-org-invitation.rst:4
+msgid "Accepting an Org invitation§ If you receive an invitation to an Org, you have to accept the invitation over email to be added to the Org."
+msgstr ""
+
+#: ../../source/orgs/accepting-or-rejecting-an-org-invitation.rst:7
+msgid "You have the option to use a different email address than the one that received the invitation to join the Org."
+msgstr ""
+
+#: ../../source/orgs/accepting-or-rejecting-an-org-invitation.rst:9
+msgid "Click the verification link in the Org invitation email. You will be prompted to log into your npm user account. If you don’t have an npm user account, you can sign up for one. signup form Rejecting an Org invitation§ If you are invited to an Org that you do not want to join, you can let the invitation expire. Org invitations expire after one week."
+msgstr ""
+
+#: ../../source/orgs/adding-members-to-your-org.rst:2
+msgid "Adding members to your Org"
+msgstr ""
+
+#: ../../source/orgs/adding-members-to-your-org.rst:4
+msgid "As an Org owner, you can add other npm users to your Org to give them read or read and write access to public and private packages within your Org’s scope, as well as public unscoped packages governed by your Org."
+msgstr ""
+
+#: ../../source/orgs/adding-members-to-your-org.rst:6
+msgid "npm Enterprise users: Make sure new users have been added to your enterprise instance before inviting them to an Org within the instance. When you add a member to your Org, they are sent an email inviting them to the Org."
+msgstr ""
+
+#: ../../source/orgs/adding-members-to-your-org.rst:9
+msgid "Once the new member accepts the invitation, they are:"
+msgstr ""
+
+#: ../../source/orgs/adding-members-to-your-org.rst:11
+msgid "assigned the role of “member” added to the “developers” team If you have a paid Org, you will be billed $7 per month for each new member."
+msgstr ""
+
+#: ../../source/orgs/adding-members-to-your-org.rst:15
+msgid "Inviting members to your Org§ Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Members. members tab Click the Invite Members button. invite members button In the “Username or email” field, type the username or email address of the person you wish to invite. filled in username or email field Click Invite. invite button Revoking an Org invitation§ As an Org owner, if you’ve made a mistake in inviting someone to your Org, you can revoke the Org invitation."
+msgstr ""
+
+#: ../../source/orgs/adding-members-to-your-org.rst:26
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Members. members tab Click the Invite Members button. invite members button Under the “Invitations” field, click the X next to the name of the user invitation you would like to revoke. x button to revoke org invitation"
+msgstr ""
+
+#: ../../source/orgs/adding-org-members-to-teams.rst:2
+msgid "Adding Org members to teams"
+msgstr ""
+
+#: ../../source/orgs/adding-org-members-to-teams.rst:4
+msgid "As an Org owner or team admin, you can add Org members to teams to give them access to a specific set of packages governed by the Org."
+msgstr ""
+
+#: ../../source/orgs/adding-org-members-to-teams.rst:6
+msgid "Note: An npm user must be a member of your Org before you can add them to a team. To add a member to your Org, see “Adding members to your Org”."
+msgstr ""
+
+#: ../../source/orgs/adding-org-members-to-teams.rst:8
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab Beside the team you want to add members to, click Members. members button In the “Username” field, type the npm username of the Org member you would like to add to your team. team member in username field dropdown Click + Add User. add user button Note: Org members are not notified when they are added to a team. We recommend telling the Org member you have added them to a team."
+msgstr ""
+
+#: ../../source/orgs/adding-org-members-to-teams.rst:17
+msgid "Managing teams from the CLI§ If you would like to manage the membership of your team from the command line interface (CLI), you can use:"
+msgstr ""
+
+#: ../../source/orgs/adding-org-members-to-teams.rst:20
+msgid "npm team For more information, see the CLI documentation on teams."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:2
+msgid "Configuring your npm client with your Org settings"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:4
+msgid "As an Org member, you can configure your npm client to:"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:6
+msgid "make a single package or all new packages you create locally use your Org’s scope make a single package or all new packages you create locally have default public visibility Before configuring your npm client, you must install npm."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:10
+msgid "Configuring your npm client to use your Org’s scope§ If you will be publishing packages with your Org’s scope often, you can add your Org’s scope to your global .npmrc configuration file."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:13
+msgid "Setting your Org scope for all new packages§ Note: Setting the Org scope using the steps below will only set the scope for new packages; for existing packages, you will need to update the name field in package.json."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:16
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:43
+msgid "On the command line, type the following command:"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:17
+msgid "npm config set scope <org-name> --global"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:18
+msgid "Press Enter. For packages you do not want to publish with your Org’s scope, you must manually edit the package’s package.json to remove the Org scope from the name field."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:21
+msgid "Setting your Org scope for a single package§ On the command line, navigate to the package directory. cd /path/to/package Type the following command, replacing with the name of your Org:"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:24
+msgid "npm config set scope <org-name>"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:25
+msgid "Press Enter. Changing default package visibility to public§ By default, publishing a scoped package with npm publish will publish the package as private. If you are a member of an Org on the free Org plan, or are on the paid Org plan but want to publish a scoped package as public, you must pass the --access public flag:"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:29
+msgid "npm publish --access public."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:31
+msgid "Setting package visibility to public for a single package§ You can set a single package to pass --access public to every npm publish command that you issue for that package."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:34
+msgid "On the command line, navigate to the package directory. cd /path/to/package Type the following command:"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:36
+msgid "npm config set access public"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:37
+msgid "Press Enter. Setting package visibility to public for all packages§ You can set all packages to pass --access public to every npm publish command that you issue for that package."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:41
+msgid "Warning: Setting packages access to public in your global .npmrc will affect all packages you create, including packages in your personal account scope, as well as packages scoped to your Org."
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:44
+msgid "npm config set access public --global"
+msgstr ""
+
+#: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:45
+msgid "Press Enter."
+msgstr ""
+
+#: ../../source/orgs/converting-your-user-account-to-an-org.rst:2
+msgid "Converting your user account to an Org"
+msgstr ""
+
+#: ../../source/orgs/converting-your-user-account-to-an-org.rst:4
+msgid "If you have an npm user account, you can convert your user account to an Org. When you convert your user account to an Org, we will:"
+msgstr ""
+
+#: ../../source/orgs/converting-your-user-account-to-an-org.rst:6
+msgid "Create a new Org with the name of your user account. Prompt you to create a new npm user account. We recommend choosing a variation of your old user name so collaborators will recognize you. For example, if your old username was “wombat”, your new username might be “wombat-new”. Make your your new npm user account an owner of your new Org. Add your new npm user account to a team called “Developers” in your new Org. Transfer packages owned by your user account to your new Org. Transfer your existing Org and team memberships and contributor access settings to your new user account. Note: Once your old user account has been converted to an Org, you will no longer be able to sign in to npm with your old user account."
+msgstr ""
+
+#: ../../source/orgs/converting-your-user-account-to-an-org.rst:14
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Create an Organization. create an Organization dropdown menu Below the account creation form, click Convert. convert button Review the account conversion steps and click Continue. continue button On the new user account creation page, in the “Username” field, type the name of your new user account, then click Submit. submit button On the plan selection page, select either the “Unlimited private packages” paid plan or the “Unlimited public packages” free plan, then click Buy or Create. create button If you selected a paid Orgs plan, in the payment dialog, provide the email, name, address, and credit card information for the card that will be used to pay for the Org."
+msgstr ""
+
+#: ../../source/orgs/creating-an-org.rst:2
+msgid "Creating an Org"
+msgstr ""
+
+#: ../../source/orgs/creating-an-org.rst:4
+msgid "Any npm user can create an Org to manage contributor access to packages governed by the Org."
+msgstr ""
+
+#: ../../source/orgs/creating-an-org.rst:6
+msgid "Note: You need an npm user account to create an Org. To create a user account, visit the account signup page”."
+msgstr ""
+
+#: ../../source/orgs/creating-an-org.rst:8
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Create an Organization. create an Organization dropdown menu On the Org creation page, in the Name field, type a name for your Org. Your Org name will also be your Org scope. create a new organization name field Under the Name field, choose either the “Unlimited private packages” paid plan or the “Unlimited public packages” free plan and click Buy or Create. buy or create buttons (Optional) On the Org invitation page, type the npm username or email address of a person you would like to add to your Org as a member, then click Invite. invite button Click Continue. continue button"
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:2
+msgid "Creating and publishing an Org scoped package"
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:4
+msgid "As an Org member, you can create and publish public and private packages within the Org’s scope."
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:6
+msgid "Creating an Org scoped package§ On the command line, make a directory with the name of the package you would like to create."
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:8
+msgid "mkdir /path/to/package/directory"
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:9
+msgid "Navigate to the newly-created package directory. To create an Org scoped package, on the command line, type:"
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:11
+msgid "npm init --scope=<your_org_name>"
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:12
+msgid "Press Enter. To verify the package is using your Org scope, in a text editor, open the package’s package.json file and check that the name is @your_org_name/<pkg_name>, replacing your_org_name with the name of your Org. Publishing a private Org scoped package§ By default, npm publish will publish a scoped package as private."
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:17
+msgid "By default, any scoped package is published as private. However, if you have an Org that does not have the Private Packages feature, npm publish will fail unless you pass the access flag."
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:19
+msgid "On the command line, navigate to the package directory. Type npm publish. Press Enter. Private packages will say private below the package name on the npm website."
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:24
+msgid "private package page showing private below package name"
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:26
+msgid "Publishing a public Org scoped package§ To publish an Org scoped package as public, use npm publish --access public."
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:29
+msgid "On the command line, navigate to the package directory. Type npm publish --access public. Press Enter. Public packages will say public below the package name on the npm website."
+msgstr ""
+
+#: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:34
+msgid "public package page showing public below package name"
+msgstr ""
+
+#: ../../source/orgs/creating-teams.rst:2
+msgid "Creating teams"
+msgstr ""
+
+#: ../../source/orgs/creating-teams.rst:4
+msgid "As an Org owner or team admin, you can create teams to manage access to sets of packages governed by your Org."
+msgstr ""
+
+#: ../../source/orgs/creating-teams.rst:6
+msgid "Note: Team names cannot be changed. To \"rename\" a team, you must delete the team and recreate it. Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab In the “Name” and “Description” fields, type a team name and helpful description. Team names must be lower case and cannot contain spaces or punctuation. team name and description fields Click Make it so. make it so button Note: New teams do not have members or package access by default. Once you create a team, add packages and members from the \"Teams\" tab."
+msgstr ""
+
+#: ../../source/orgs/deleting-an-org.rst:2
+msgid "Deleting an Org"
+msgstr ""
+
+#: ../../source/orgs/deleting-an-org.rst:4
+msgid "Orgs cannot be deleted from the website or command line interface."
+msgstr ""
+
+#: ../../source/orgs/deleting-an-org.rst:6
+msgid "Deleting an Org on the public registry§ To delete an Org on the public registry, the Org owner should contact npm Support."
+msgstr ""
+
+#: ../../source/orgs/deleting-an-org.rst:9
+msgid "Deleting an Org in npm Enterprise§ To delete an Org in npm Enterprise, the npm Enterprise admin should contact npm Enterprise Support at enterprise@npmjs.com"
+msgstr ""
+
+#: ../../source/orgs/downgrading-to-a-free-org-plan.rst:2
+msgid "Downgrading to a free Org plan"
+msgstr ""
+
+#: ../../source/orgs/downgrading-to-a-free-org-plan.rst:4
+msgid "Note: This article only applies to users of the public npm registry. If you have a paid Org, but no longer need private packages, as an Org owner, you can downgrade your paid Org to a free Org. When you downgrade from a paid to a free Org, you and your Org members will lose the ability to install and publish private packages at the end of your last paid billing cycle. Your private packages will not be made publicly visible when you downgrade to a free plan."
+msgstr ""
+
+#: ../../source/orgs/downgrading-to-a-free-org-plan.rst:7
+msgid "Note: If you would like to pay for fewer seats, you can remove members from your Org by following the steps in “Removing members from your Org”."
+msgstr ""
+
+#: ../../source/orgs/downgrading-to-a-free-org-plan.rst:9
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of the Org you want to downgrade. example org selected in organizations list On the Org settings page, click Billing. Under “change plan”, click Downgrade Plan. downgrade plan button Under “Are you sure?”, click Downgrade to a free account. downgrade to a free account confirmation button"
+msgstr ""
 
 #: ../../source/orgs/index.rst:2
 msgid "Orgs"
@@ -46,5 +371,181 @@ msgstr ""
 
 #: ../../source/orgs/index.rst:56
 msgid "Managing Org packages"
+msgstr ""
+
+#: ../../source/orgs/managing-org-permissions.rst:2
+msgid "Managing Org permissions"
+msgstr ""
+
+#: ../../source/orgs/managing-org-permissions.rst:4
+msgid "As an Org owner, you can change the role of any member of your Org to add or remove permissions on the Org for that member."
+msgstr ""
+
+#: ../../source/orgs/managing-org-permissions.rst:6
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Members. members tab In the list of Org members, find the member whose role you want to change. In the member row, to select the new role of the Org member, click member, admin, or owner. member role button selected"
+msgstr ""
+
+#: ../../source/orgs/managing-team-access-to-org-packages.rst:2
+msgid "Managing team access to Org packages"
+msgstr ""
+
+#: ../../source/orgs/managing-team-access-to-org-packages.rst:4
+msgid "As an Org owner or team admin, you can add or remove package access to or from teams in your Org."
+msgstr ""
+
+#: ../../source/orgs/managing-team-access-to-org-packages.rst:6
+msgid "Adding package access to a team on the web§ Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab Beside the team to which you want to add package access, click Packages. packages button On the “Add Packages” page, in the “Package” field, type the name of the package and select from the dropdown menu. package name search field and dropdown Click + Add Existing Package. add existing package button Beside the package name, click read or read/write to set the team permissions for the package. package permissions selector with read and write selected Adding package access to a team using the CLI§ As an Org owner or team admin, you can use the the CLI access command to add package access to a team on the command line:"
+msgstr ""
+
+#: ../../source/orgs/managing-team-access-to-org-packages.rst:18
+msgid "npm access grant <read-only|read-write> <org:team> [<package>] For more information, see “npm-access”."
+msgstr ""
+
+#: ../../source/orgs/managing-team-access-to-org-packages.rst:21
+msgid "Removing package access from a team on the web§ Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab Beside the team from which you want to remove package access, click Packages. packages button Beside the name of the package from which you want to remove access, click x. x button Removing package access from a team using the CLI§ As an Org owner or team admin, you can also use the the CLI access command to revoke package access from a team on the command line:"
+msgstr ""
+
+#: ../../source/orgs/managing-team-access-to-org-packages.rst:31
+msgid "npm access revoke <org:team> [<package>] For more information, see “npm-access”."
+msgstr ""
+
+#: ../../source/orgs/managing-team-access-to-org-packages.rst:34
+msgid "Changing package access for a team on the web§ Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab Beside the team from which you want to remove package access, click Packages. packages button Beside the package name, click read or read/write to set the team permissions for the package. package permissions selector with read selected Changing package access for a team from the CLI§ As an Org owner or team admin, you can change package access for a team from the command line:"
+msgstr ""
+
+#: ../../source/orgs/managing-team-access-to-org-packages.rst:44
+msgid "npm access For more information, see the npm-access CLI documentation."
+msgstr ""
+
+#: ../../source/orgs/org-roles-and-permissions.rst:2
+msgid "Org roles and permissions"
+msgstr ""
+
+#: ../../source/orgs/org-roles-and-permissions.rst:4
+msgid "There are three roles in an Org:"
+msgstr ""
+
+#: ../../source/orgs/org-roles-and-permissions.rst:6
+msgid "Owner: Users who manage Org members and billing. Admin: Users who manage team membership and package access. Member: Users who create and publish packages in the Org scope. On the public registry, you cannot remove the last owner from an Org. To delete an Org, contact npm Support."
+msgstr ""
+
+#: ../../source/orgs/org-roles-and-permissions.rst:11
+msgid "npm Enterprise users: If you are using npm Enterprise, deactivating the only owner of an Org will cause that Org to be ownerless. If you have deactivated the last owner of an Org on an npm Enterprise instance, contact npm Enterprise Support at enterprise@npmjs.com Action  Owner   Admin   Member Manage Org billing      X Add members to the Org  X Remove members from the Org     X Rename an Org   X Delete an Org   X Change any Org member’s role    X Create teams    X       X Delete teams    X       X Add any member to any team      X       X Remove any member from any team X       X Manage team package access      X       X Create and publish packages in the Org scope    X       X       X"
+msgstr ""
+
+#: ../../source/orgs/removing-members-from-your-org.rst:2
+msgid "Removing members from your Org"
+msgstr ""
+
+#: ../../source/orgs/removing-members-from-your-org.rst:4
+msgid "As an Org owner, you can remove members from your Org if they are longer collaborating on packages owned or governed by your Org."
+msgstr ""
+
+#: ../../source/orgs/removing-members-from-your-org.rst:6
+msgid "If you remove a member from a paid Org, they will lose access to your Org’s private packages, and the credit card on file for your Org will not be charged for them on the next billing cycle."
+msgstr ""
+
+#: ../../source/orgs/removing-members-from-your-org.rst:8
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Members. members tab In the list of Org members, find the member you want to remove. At the end of the member row, click X. x button Note: Members are not notified when you remove them from your Org."
+msgstr ""
+
+#: ../../source/orgs/removing-org-members-from-teams.rst:2
+msgid "Removing Org members from teams"
+msgstr ""
+
+#: ../../source/orgs/removing-org-members-from-teams.rst:4
+msgid "As an Org owner or team admin, you can remove Org members from teams if they no longer need access to packages accessible to the team."
+msgstr ""
+
+#: ../../source/orgs/removing-org-members-from-teams.rst:6
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab In the list of team members, find the member you want to remove. In the member row, to remove the member from the team, click X. x button Note: Removing a member from a team, even if it is the only team they are a member of, will not remove them from the Org. To remove a member from the Org, see “Removing members from your Org”."
+msgstr ""
+
+#: ../../source/orgs/removing-teams.rst:2
+msgid "Removing teams"
+msgstr ""
+
+#: ../../source/orgs/removing-teams.rst:4
+msgid "As an Org owner or team admin, you can remove teams that no longer need access to a set of packages governed by your Org. Removing the team will not remove the team members or packages from your Organization."
+msgstr ""
+
+#: ../../source/orgs/removing-teams.rst:6
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab Beside the name of the team you want to remove, click X. x button"
+msgstr ""
+
+#: ../../source/orgs/renaming-an-org.rst:2
+msgid "Renaming an Org"
+msgstr ""
+
+#: ../../source/orgs/renaming-an-org.rst:4
+msgid "Orgs cannot be renamed from the website or command line interface."
+msgstr ""
+
+#: ../../source/orgs/renaming-an-org.rst:6
+msgid "To rename an Org, as an Org owner, you must manually migrate your existing Org members, teams, and packages to a new Org, then contact npm Support to have the outdated packages unpublished and the previous Org deleted."
+msgstr ""
+
+#: ../../source/orgs/renaming-an-org.rst:8
+msgid "Create a new Org with the name you want. If your old Org is on a paid plan, you must choose a paid plan for the new Org. Add the members of your old Org to your new Org. In your new Org, create teams to match teams in your old Org. Republish packages to the new Org by updating the package scope in its package.json file to match the new Organization name and running npm publish. In the new Org teams, configure package access to match team package access in your old Org. Contact npm Support to have the outdated packages unpublished and the previous Org deleted."
+msgstr ""
+
+#: ../../source/orgs/updating-org-billing-settings.rst:2
+msgid "Updating Org billing settings"
+msgstr ""
+
+#: ../../source/orgs/updating-org-billing-settings.rst:4
+msgid "Note: This article only applies to users of the public npm registry. As an owner of a paid Org, you can update the credit card used to pay for your Org plan. Updating your credit card will not change your billing cycle date, and the new credit card will be charged on the next billing cycle."
+msgstr ""
+
+#: ../../source/orgs/updating-org-billing-settings.rst:7
+msgid "Note: If the credit card used to pay for your Org plan expires, or we are otherwise are unable to charge your card, you have a grace period of nine days to update the card."
+msgstr ""
+
+#: ../../source/orgs/updating-org-billing-settings.rst:9
+msgid "Updating credit card information§ Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of the Org whose credit card information you want to change. example org selected in organizations list On the Org settings page, click Billing. Under “monthly bill”, click Edit Payment Info. edit payment information button In the billing information dialog box, type billing information: Email: the email address used for the billing contact Name: the name on the credit card used to pay for the Org plan Street, City, ZIP Code, Country: the billing address associated with the credit card used to pay for the Org billing information form fields Click Payment Info. payment information button In the credit card information dialog box, type credit card information: Card number MM / YY: the month and year of the card expiration date CVC: the three-digit code on the credit card credit card information form fields To save the card information to use in other billing areas in npm, select “Remember me”. remember me checkbox Click Update Card. update credit card button Updating billing receipt email and extra receipt information§ As an Org owner, you can update the email address used for receipts, and add extra information to the receipt for your paid Org plan, such as your business name, VAT identification number, or address of record. Updated billing information will appear on all receipts immediately."
+msgstr ""
+
+#: ../../source/orgs/updating-org-billing-settings.rst:29
+msgid "Note: The billing email is used for receipts only and is not required to match the email address of the person whose card is used to pay for the Org."
+msgstr ""
+
+#: ../../source/orgs/updating-org-billing-settings.rst:31
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of the Org whose billing receipt information you want to change. example org selected in organizations list On the Org settings page, click Billing. Under “monthly bill”, click View Billing History. view billing history button At the bottom of the Billing History dialog box, click “Receipt Settings”. receipt settings link To add a business name, VAT number, address of record, or other information to your receipts, in the “Extra Billing Information” text box, type the information. extra billing information form To update the email address used for receipts, beside “Send my receipts”, select the checkbox and type the email address that should receive billing receipts. send my receipts checkbox and email field Click Save. save button on extra receipt information dialog box"
+msgstr ""
+
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:2
+msgid "Upgrading to a paid Org plan"
+msgstr ""
+
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:4
+msgid "Note: This article only applies to users of the public npm registry. As an Org owner, you can upgrade your free Org plan to a paid plan to give Org members the ability to install and publish private packages. For more information about our Org pricing plans, see the “npm Orgs” section of our pricing page."
+msgstr ""
+
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:7
+msgid "If you have an Organization with a private packages plan, your Organization will cost you seven (7) dollars a month per user. The $7 charge is a flat fee for any member of the Organization even if the teams the member belongs do not have access to private packages"
+msgstr ""
+
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:9
+msgid "Newly added members to an Organization are always billed during the next billing cycle. For more information, see “Adding members to your Org”."
+msgstr ""
+
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:11
+msgid "Note: Your paid plan and billing cycle will start when you submit your credit card information, and you will be charged for the first month immediately."
+msgstr ""
+
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:13
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of the Org you want to upgrade. example org selected in organizations list On the Org settings page, click Billing. billing tab Under “change plan”, click Upgrade Plan ($7/User). Under “Want to upgrade?”, click Enable Private Publishing for $7/mo. In the billing information dialog box, type billing information: Email: the email address used for the billing contact Name: the name on the credit card used to pay for the Org plan Street, City, ZIP Code, Country: the billing address associated with the credit card used to pay for the Org billing information form fields Click Payment Info. payment information button In the credit information dialog box, type your credit card number, expiration date, and CVC, and, if you want your credit card information to be saved, select “Remember me”. remember me checkbox Click Pay $monthly-amount. “monthly-amount” will be the number of members in your Org multiplied by $7."
+msgstr ""
+
+#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:2
+msgid "Viewing, downloading, and emailing receipts for your Org"
+msgstr ""
+
+#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:4
+msgid "Note: This article only applies to users of the public npm registry. As an Org owner, you can view, download, and email receipts for the complete billing history of your Org."
+msgstr ""
+
+#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:7
+msgid "Viewing receipts§ Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of the Org whose billing receipts you want to view. example org selected in organizations list On the Org settings page, click Billing. On the Billing Information page, under “monthly bill”, click View Billing History. view billing history button To view a single receipt, find the row of the receipt you want to view, then, on the right side of the row, click the view icon. view icon Downloading receipts§ Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of the Org whose billing receipts you want to download. example org selected in organizations list On the Org settings page, click Billing. On the Billing Information page, under “monthly bill”, click View Billing History. view billing history button To download a single receipt, find the row of the receipt you want to download, then, on the right side of the row, click the PDF icon. download icon To download all receipts, next to “Date”, select the checkbox, then click Download Checked. download checked receipts link Emailing receipts§ Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of the Org whose billing receipts you want to email. example org selected in organizations list On the Org settings page, click Billing. On the Billing Information page, under “monthly bill”, click View Billing History. view billing history button To email a single receipt, find the row of the receipt you want to download, then, on the right side of the row, click the email icon. email icon To email all receipts, next to “Date”, select the checkbox, then click Email Checked. email checked receipts link In the Email Receipt dialog box, fill in the “From”, “To”, and “Message” fields. email receipt form with from, to, and message fields Click Send."
 msgstr ""
 

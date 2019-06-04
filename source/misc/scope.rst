@@ -1,3 +1,5 @@
+.. _scope:
+
 npm-scope
 ======================================================
 
@@ -60,7 +62,9 @@ npm config set @myco:registry http://reg.example.com
 Once a scope is associated with a registry, any npm install for a package with that scope will request packages from that registry instead. Any npm publish for a package name that contains the scope will be published to that registry instead.
 
 SEE ALSO
-npm-install
-npm-publish
-npm-access
-npm-registry
+---------------
+
+- :option:`npm install`
+- :option:`npm publish`
+- :option:`npm access`
+- :option:`npm registry`

@@ -1,7 +1,6 @@
 npm-pack
 ============================================================================================
 
-Create a tarball from a package
 
 SYNOPSIS
 -------------------
@@ -10,7 +9,11 @@ SYNOPSIS
 
 .. option:: pack
 
-npm pack [[<@scope>/]<pkg>...] [--dry-run]
+   Create a tarball from a package
+
+   .. code-block:: sh
+
+      npm pack [[<@scope>/]<pkg>...] [--dry-run]
 
 DESCRIPTION
 -------------------
@@ -26,8 +29,8 @@ The --dry-run argument will do everything that pack usually does without actuall
 SEE ALSO
 -------------------
 
-- npm-cache
-- npm-publish
-- npm-config
-- npm-config
-- npmrc
+- :option:`npm cache`
+- :option:`npm publish`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

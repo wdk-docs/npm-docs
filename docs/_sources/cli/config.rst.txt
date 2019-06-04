@@ -84,8 +84,8 @@ Opens the config file in an editor. Use the --global flag to edit the global con
 SEE ALSO
 -------------------
 
-- npm-folders
-- npm-config
-- package.json
-- npmrc
-- npm
+- :ref:`folders`
+- :option:`npm config`
+- :ref:`package.json`
+- :ref:`npmrc`
+- :option:`npm`

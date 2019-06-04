@@ -1,3 +1,5 @@
+.. _package.json:
+
 npm-package.json
 ============================
 
@@ -539,12 +541,14 @@ If there is a binding.gyp file in the root of your package and you have not defi
 If there is an AUTHORS file in the root of your package, npm will treat each line as a Name <email> (url) format, where email and url are optional. Lines which start with a # or are blank, will be ignored.
 
 SEE ALSO
-semver
-npm-init
-npm-version
-npm-config
-npm-config
-npm-help
-npm-install
-npm-publish
-npm-uninstall
+-------------
+
+- :ref:`semver`
+- :option:`npm init`
+- :option:`npm version`
+- :option:`npm config`
+- :option:`npm config`
+- :option:`npm help`
+- :option:`npm install`
+- :option:`npm publish`
+- :option:`npm uninstall`

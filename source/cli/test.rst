@@ -1,8 +1,6 @@
 npm-test
 ============================================================================================
 
-Test a package
-
 SYNOPSIS
 -------------------
 
@@ -10,9 +8,13 @@ SYNOPSIS
 
 .. option:: test
 
-  npm test [-- <args>]
+   Test a package
 
-  aliases: t, tst
+   .. code-block::
+
+      npm test [-- <args>]
+
+   aliases: t, tst
 
 DESCRIPTION
 -------------------
@@ -22,8 +24,8 @@ This runs a package’s “test” script, if one was provided.
 SEE ALSO
 -------------------
 
-- npm-run-script
-- npm-scripts
-- npm-start
-- npm-restart
-- npm-stop
+- :option:`npm run-script`
+- :ref:`npm-scripts`
+- :option:`npm start`
+- :option:`npm restart`
+- :option:`npm stop`

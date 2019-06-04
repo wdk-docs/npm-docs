@@ -1,8 +1,6 @@
 npm-explore
 ============================================================================================
 
-Browse an installed package
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: explore
 
-npm explore <pkg> [ -- <command>]
+   Browse an installed package
+
+   .. code-block:: sh
+
+      npm explore <pkg> [ -- <command>]
 
 DESCRIPTION
 -------------------
@@ -35,8 +37,8 @@ The shell to run for the npm explore command.
 SEE ALSO
 -------------------
 
-- npm-folders
-- npm-edit
-- npm-rebuild
-- npm-build
-- npm-install
+- :ref:`folders`
+- :option:`npm edit`
+- :option:`npm rebuild`
+- :option:`npm build`
+- :option:`npm install`

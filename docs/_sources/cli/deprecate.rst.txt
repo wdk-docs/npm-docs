@@ -10,7 +10,9 @@ SYNOPSIS
 
 .. option:: deprecate
 
-npm deprecate <pkg>[@<version>] <message>
+.. code-block:: sh
+
+   npm deprecate <pkg>[@<version>] <message>
 
 DESCRIPTION
 -------------------
@@ -26,5 +28,5 @@ To un-deprecate a package, specify an empty string ("") for the message argument
 SEE ALSO
 -------------------
 
-- npm-publish
-- npm-registry
+- :option:`npm publish`
+- :ref:`registry`

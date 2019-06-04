@@ -46,7 +46,7 @@ SEE ALSO
 - :option:`npm docs`
 - :option:`npm view`
 - :option:`npm publish`
-- :option:`npm registry`
+- :ref:`registry`
 - :option:`npm config`
 - :option:`npm config`
 - :doc:`../files/npmrc`

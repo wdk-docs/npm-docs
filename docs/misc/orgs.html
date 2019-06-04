@@ -1,158 +1,144 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>npm-orgs &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>npm-orgs &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" /> 
-</head>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="npm-registry" href="registry.html" />
+    <link rel="prev" title="npm-index" href="index.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/misc/orgs.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="../getting-started/index.html">入门</a></li>
+    <li><a href="../packages-and-modules/index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
+  </div>
 </div>
 
-          
-        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="registry.html" title="npm-registry"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="npm-index"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+          <li class="nav-item nav-item-1"><a href="contents.html" accesskey="U">misc</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">npm-orgs</a><ul>
+<li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
+</ul>
+</li>
 </ul>
 
-            
-          
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="index.html"
+                        title="上一章">npm-index</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="registry.html"
+                        title="下一章">npm-registry</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/misc/orgs.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>npm-orgs</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/misc/orgs.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
             
   <div class="section" id="npm-orgs">
-<h1>npm-orgs<a class="headerlink" href="#npm-orgs" title="永久链接至标题">¶</a></h1>
+<span id="orgs"></span><h1>npm-orgs<a class="headerlink" href="#npm-orgs" title="永久链接至标题">¶</a></h1>
 <p>Working with Teams &amp; Orgs
 DESCRIPTION
 There are three levels of org users:</p>
@@ -187,51 +173,44 @@ npm access ls-packages &lt;org&gt; &lt;user&gt;
 See packages available to a specific team:
 npm access ls-packages &lt;org:team&gt;
 Check which teams are collaborating on a package:
-npm access ls-collaborators &lt;pkg&gt;
-SEE ALSO
-npm-team
-npm-access
-npm-scope</p>
+npm access ls-collaborators &lt;pkg&gt;</p>
+<div class="section" id="see-also">
+<h2>SEE ALSO<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../cli/team.html#cmdoption-npm-arg-team"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">team</span></code></a></p></li>
+<li><p><a class="reference internal" href="../cli/access.html#cmdoption-npm-arg-access"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">access</span></code></a></p></li>
+<li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">scope</span></code></p></li>
+</ul>
+</div>
 </div>
 
 
-           </div>
-           
           </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
         </div>
       </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="registry.html" title="npm-registry"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="npm-index"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+          <li class="nav-item nav-item-1"><a href="contents.html" >misc</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

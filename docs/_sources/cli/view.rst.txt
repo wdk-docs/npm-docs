@@ -1,8 +1,6 @@
 npm-view
 ============================================================================================
 
-View registry info
-
 SYNOPSIS
 -------------------
 
@@ -10,9 +8,13 @@ SYNOPSIS
 
 .. option:: view
 
-npm view [<@scope>/]<name>[@<version>] [<field>[.<subfield>]...]
+   View registry info
 
-aliases: info, show, v
+   .. code-block:: sh
+
+      npm view [<@scope>/]<name>[@<version>] [<field>[.<subfield>]...]
+
+   aliases: info, show, v
 
 DESCRIPTION
 -------------------
@@ -66,9 +68,9 @@ If multiple fields are requested, than each of them are prefixed with the field 
 SEE ALSO
 -------------------
 
-- npm-search
-- npm-registry
-- npm-config
-- npm-config
-- npmrc
-- npm-docs
+- :option:`npm search`
+- :ref:`registry`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :option:`npm docs`

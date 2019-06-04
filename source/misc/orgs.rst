@@ -1,3 +1,5 @@
+.. _orgs:
+
 npm-orgs
 ======================================================
 
@@ -44,7 +46,10 @@ See packages available to a specific team:
 npm access ls-packages <org:team>
 Check which teams are collaborating on a package:
 npm access ls-collaborators <pkg>
+
 SEE ALSO
-npm-team
-npm-access
-npm-scope
+--------------
+
+- :option:`npm team`
+- :option:`npm access`
+- :option:`npm scope`

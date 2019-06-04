@@ -22,9 +22,9 @@ Print the folder where npm will install executables.
 SEE ALSO
 -------------------
 
-- npm-prefix
-- npm-root
-- npm-folders
-- npm-config
-- npm-config
-- npmrc
+- :option:`npm prefix`
+- :option:`npm root`
+- :ref:`folders`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

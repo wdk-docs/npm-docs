@@ -1,8 +1,6 @@
 npm-hook
 ============================================================================================
 
-Manage registry hooks
-
 SYNOPSIS
 -------------------
 
@@ -10,10 +8,14 @@ SYNOPSIS
 
 .. option:: hook
 
-npm hook ls [pkg]
-npm hook add <entity> <url> <secret>
-npm hook update <id> <url> [secret]
-npm hook rm <id>
+   Manage registry hooks
+
+   .. code-block:: sh
+
+      npm hook ls [pkg]
+      npm hook add <entity> <url> <secret>
+      npm hook update <id> <url> [secret]
+      npm hook rm <id>
 
 EXAMPLE
 -------------------

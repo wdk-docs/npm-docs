@@ -1,8 +1,6 @@
 npm-org
 ============================================================================================
 
-Manage orgs
-
 SYNOPSIS
 -------------------
 
@@ -10,9 +8,13 @@ SYNOPSIS
 
 .. option:: org
 
-npm org set <orgname> <username> [developer | admin | owner]
-npm org rm <orgname> <username>
-npm org ls <orgname> [<username>]
+   Manage orgs
+
+   .. code-block:: sh
+
+      npm org set <orgname> <username> [developer | admin | owner]
+      npm org rm <orgname> <username>
+      npm org ls <orgname> [<username>]
 
 EXAMPLE
 -------------------

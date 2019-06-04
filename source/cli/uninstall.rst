@@ -1,8 +1,6 @@
 npm-uninstall
 ============================================================================================
 
-Remove a package
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: uninstall
 
-npm uninstall [<@scope>/]<pkg>[@<version>]... [-S|--save|-D|--save-dev|-O|--save-optional|--no-save]
+   Remove a package
+
+   .. code-block:: sh
+
+      npm uninstall [<@scope>/]<pkg>[@<version>]... [-S|--save|-D|--save-dev|-O|--save-optional|--no-save]
 
 aliases: remove, rm, r, un, unlink
 
@@ -49,9 +51,9 @@ npm uninstall lodash --no-save
 SEE ALSO
 -------------------
 
-- npm-prune
-- npm-install
-- npm-folders
-- npm-config
-- npm-config
-- npmrc
+- :option:`npm prune`
+- :option:`npm install`
+- :ref:`folders`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

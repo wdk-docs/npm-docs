@@ -63,8 +63,8 @@ Management of teams and team memberships is done with the npm team command.
 SEE ALSO
 ------------------------------------
 
-- libnpmaccess
-- npm-team
-- npm-publish
-- npm-config
-- npm-registry
+- :option:`libnpmaccess`
+- :option:`npm team`
+- :option:`npm publish`
+- :option:`npm config`
+- :ref:`registry`

@@ -1,8 +1,6 @@
 npm-rebuild
 ============================================================================================
 
-Rebuild a package
-
 SYNOPSIS
 -------------------
 
@@ -10,9 +8,13 @@ SYNOPSIS
 
 .. option:: rebuild
 
-npm rebuild [[<@scope>/<name>]...]
+   Rebuild a package
 
-alias: npm rb
+   .. code-block:: sh
+
+      npm rebuild [[<@scope>/<name>]...]
+
+   alias: npm rb
 
 DESCRIPTION
 -------------------
@@ -22,5 +24,5 @@ This command runs the npm build command on the matched folders. This is useful w
 SEE ALSO
 -------------------
 
-- npm-build
-- npm-install
+- :option:`npm build`
+- :option:`npm install`

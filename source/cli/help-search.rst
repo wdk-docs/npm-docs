@@ -1,8 +1,6 @@
 npm-help-search
 ============================================================================================
 
-Search npm help documentation
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: help-search
 
-npm help-search <text>
+   Search npm help documentation
+
+   .. code-block:: sh
+
+      npm help-search <text>
 
 DESCRIPTION
 -------------------
@@ -34,5 +36,5 @@ If false, then help-search will just list out the help topics found.
 SEE ALSO
 -------------------
 
-- npm
-- npm-help
+- :option:`npm`
+- :option:`npm help`

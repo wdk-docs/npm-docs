@@ -10,9 +10,11 @@ SYNOPSIS
 
 .. option:: dist-tag
 
-npm dist-tag add <pkg>@<version> [<tag>]
-npm dist-tag rm <pkg> <tag>
-npm dist-tag ls [<pkg>]
+.. code-block:: sh
+
+   npm dist-tag add <pkg>@<version> [<tag>]
+   npm dist-tag rm <pkg> <tag>
+   npm dist-tag ls [<pkg>]
 
 aliases: dist-tags
 
@@ -67,10 +69,10 @@ The simplest way to avoid semver problems with tags is to use tags that do not b
 SEE ALSO
 -------------------
 
-- npm-publish
-- npm-install
-- npm-dedupe
-- npm-registry
-- npm-config
-- npm-config
-- npmrc
+- :option:`npm publish`
+- :option:`npm install`
+- :option:`npm dedupe`
+- :ref:`registry`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

@@ -1,7 +1,6 @@
 npm-shrinkwrap
 ============================================================================================
 
-Lock down dependency versions for publication
 
 SYNOPSIS
 -------------------
@@ -10,7 +9,11 @@ SYNOPSIS
 
 .. option:: shrinkwrap
 
-npm shrinkwrap
+   Lock down dependency versions for publication
+
+   .. code-block:: sh
+
+      npm shrinkwrap
 
 DESCRIPTION
 -------------------
@@ -20,11 +23,11 @@ This command repurposes package-lock.json into a publishable npm-shrinkwrap.json
 SEE ALSO
 -------------------
 
-- npm-install
-- npm-run-script
-- npm-scripts
-- package.json
-- npm-package-locks
-- package-lock.json
-- npm-shrinkwrap.json
-- npm-ls
+- :option:`npm install`
+- :option:`npm run-script`
+- :option:`npm scripts`
+- :ref:`package.json`
+- :option:`npm package-locks`
+- :option:`package-lock.json`
+- :option:`npm shrinkwrap.json`
+- :option:`npm ls`

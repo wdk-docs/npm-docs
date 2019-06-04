@@ -1,8 +1,6 @@
 npm-start
 ============================================================================================
 
-Start a package
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: start
 
-npm start [-- <args>]
+   Start a package
+
+   .. code-block:: sh
+
+      npm start [-- <args>]
 
 DESCRIPTION
 -------------------
@@ -22,8 +24,8 @@ As of npm@2.0.0, you can use custom arguments when executing scripts. Refer to n
 SEE ALSO
 -------------------
 
-- npm-run-script
-- npm-scripts
-- npm-test
-- npm-restart
-- npm-stop
+- :option:`npm run-script`
+- :option:`npm scripts`
+- :option:`npm test`
+- :option:`npm restart`
+- :option:`npm stop`

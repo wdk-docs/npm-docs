@@ -110,6 +110,6 @@ If vulnerabilities were found the exit code will depend on the ``audit-level`` c
 SEE ALSO
 -------------------
 
-- npm-install
-- package-locks
-- config
+- :option:`npm install`
+- :option:`package-locks`
+- :option:`config`

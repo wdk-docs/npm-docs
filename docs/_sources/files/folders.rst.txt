@@ -1,3 +1,5 @@
+.. _folders:
+
 npm-folders
 =======================================
 
@@ -149,11 +151,11 @@ This allows a package maintainer to install all of their dependencies (and dev d
 SEE ALSO
 ------------------
 
-- package.json
-- npm-install
-- npm-pack
-- npm-cache
-- npm-config
-- npmrc
-- npm-config
-- npm-publish
+- :ref:`package.json`
+- :option:`npm install`
+- :option:`npm pack`
+- :option:`npm cache`
+- :option:`npm config`
+- :option:`npmrc`
+- :option:`npm config`
+- :option:`npm publish`

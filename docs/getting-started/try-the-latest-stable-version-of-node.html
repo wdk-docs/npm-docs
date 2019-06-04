@@ -1,242 +1,208 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>尝试最新的稳定版节点 &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>尝试最新的稳定版节点 &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="试试最新稳定版的npm" href="try-the-latest-stable-version-of-npm.html" />
-    <link rel="prev" title="常见错误" href="common-errors.html" /> 
-</head>
+    <link rel="prev" title="常见错误" href="common-errors.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/getting-started/try-the-latest-stable-version-of-node.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="index.html">入门</a></li>
+    <li><a href="../packages-and-modules/index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
+  </div>
 </div>
 
-          
-        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="try-the-latest-stable-version-of-npm.html" title="试试最新稳定版的npm"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="common-errors.html" title="常见错误"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="index.html#setting-up-your-npm-user-account">设置您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#paying-for-your-npm-user-account">支付您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#managing-your-npm-user-account">管理您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#configuring-your-local-environment">配置本地环境</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#troubleshooting">故障排除</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="generating-and-locating-npm-debug-log-files.html">生成和定位npm-debug.log文件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="common-errors.html">常见错误</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">尝试最新的稳定版节点</a></li>
-<li class="toctree-l3"><a class="reference internal" href="try-the-latest-stable-version-of-npm.html">试试最新稳定版的npm</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">入门</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">尝试最新的稳定版节点</a><ul>
+<li><a class="reference internal" href="#updating-node-on-linux">Updating node on Linux</a></li>
+<li><a class="reference internal" href="#updating-node-on-windows">Updating node on Windows</a></li>
+<li><a class="reference internal" href="#updating-node-on-osx">Updating node on OSX</a></li>
+<li><a class="reference internal" href="#an-easy-way-to-stay-up-to-date">An easy way to stay up-to-date</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
-</ul>
 
-            
-          
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="common-errors.html"
+                        title="上一章">常见错误</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="try-the-latest-stable-version-of-npm.html"
+                        title="下一章">试试最新稳定版的npm</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/getting-started/try-the-latest-stable-version-of-node.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="index.html">入门</a> &raquo;</li>
-        
-      <li>尝试最新的稳定版节点</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/getting-started/try-the-latest-stable-version-of-node.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
             
   <div class="section" id="try-the-latest-stable-version-of-node">
 <h1>尝试最新的稳定版节点<a class="headerlink" href="#try-the-latest-stable-version-of-node" title="永久链接至标题">¶</a></h1>
 <p>If you’re experiencing issues while using a version of node which is unsupported or unstable (odd numbered versions e.g. 0.7.x, 0.9.x, 0.11.x), it’s very possible your issue will be fixed by simply using the LTS version of node.</p>
-<p>See what version of node you’re running:
-node -v
-Updating node on Linux
-For some Linux distributions (Debian/Ubuntu and RedHat/CentOS), the latest node version provided by the distribution may lag behind the stable version. Here are instructions from NodeSource on getting the latest node.</p>
-<p>Updating node on Windows
-Install the latest msi from <a class="reference external" href="https://nodejs.org/en/download">https://nodejs.org/en/download</a></p>
-<p>Updating node on OSX
-Install the latest package from <a class="reference external" href="https://nodejs.org/en/download">https://nodejs.org/en/download</a></p>
+<p>See what version of node you’re running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">node</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+<div class="section" id="updating-node-on-linux">
+<h2>Updating node on Linux<a class="headerlink" href="#updating-node-on-linux" title="永久链接至标题">¶</a></h2>
+<p>For some Linux distributions (Debian/Ubuntu and RedHat/CentOS), the latest node version provided by the distribution may lag behind the stable version. Here are instructions from NodeSource on getting the latest node.</p>
+</div>
+<div class="section" id="updating-node-on-windows">
+<h2>Updating node on Windows<a class="headerlink" href="#updating-node-on-windows" title="永久链接至标题">¶</a></h2>
+<p>Install the latest msi from <a class="reference external" href="https://nodejs.org/en/download">https://nodejs.org/en/download</a></p>
+</div>
+<div class="section" id="updating-node-on-osx">
+<h2>Updating node on OSX<a class="headerlink" href="#updating-node-on-osx" title="永久链接至标题">¶</a></h2>
+<p>Install the latest package from <a class="reference external" href="https://nodejs.org/en/download">https://nodejs.org/en/download</a></p>
 <p>or if you are using homebrew</p>
-<p>brew install node
-An easy way to stay up-to-date
-Node.js has lots of versions, and its development is very active. As a good practice to manage the various versions, we recommend that you use a version manager for your Node.js installation. There are many great options, here are a few:</p>
-<p>NVM
-nodist
-n
-nave
-nodebrew</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">node</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="an-easy-way-to-stay-up-to-date">
+<h2>An easy way to stay up-to-date<a class="headerlink" href="#an-easy-way-to-stay-up-to-date" title="永久链接至标题">¶</a></h2>
+<p>Node.js has lots of versions, and its development is very active. As a good practice to manage the various versions, we recommend that you use a version manager for your Node.js installation. There are many great options, here are a few:</p>
+<ul class="simple">
+<li><p>NVM</p></li>
+<li><p>nodist</p></li>
+<li><p>n</p></li>
+<li><p>nave</p></li>
+<li><p>nodebrew</p></li>
+</ul>
+</div>
 </div>
 
 
-           </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="try-the-latest-stable-version-of-npm.html" class="btn btn-neutral float-right" title="试试最新稳定版的npm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="common-errors.html" class="btn btn-neutral float-left" title="常见错误" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
         </div>
       </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="try-the-latest-stable-version-of-npm.html" title="试试最新稳定版的npm"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="common-errors.html" title="常见错误"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+          <li class="nav-item nav-item-1"><a href="index.html" >入门</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

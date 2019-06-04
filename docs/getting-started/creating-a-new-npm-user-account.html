@@ -1,240 +1,223 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>恢复已启用2FA的帐户 &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>在公共注册表上创建新用户帐户 &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="关于双因素身份验证" href="about-two-factor-authentication.html" />
-    <link rel="prev" title="入门" href="index.html" /> 
-</head>
+    <link rel="prev" title="入门" href="index.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/getting-started/creating-a-new-npm-user-account.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#setting-up-your-npm-user-account">设置您的npm用户帐户</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">恢复已启用2FA的帐户</a></li>
-<li class="toctree-l3"><a class="reference internal" href="about-two-factor-authentication.html">关于双因素身份验证</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configuring-two-factor-authentication.html">配置双因素身份验证</a></li>
-<li class="toctree-l3"><a class="reference internal" href="recovering-your-2fa-enabled-account.html">恢复已启用2FA的帐户</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#paying-for-your-npm-user-account">支付您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#managing-your-npm-user-account">管理您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#configuring-your-local-environment">配置本地环境</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#troubleshooting">故障排除</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
-</ul>
-
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="index.html">入门</a> &raquo;</li>
-        
-      <li>恢复已启用2FA的帐户</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/getting-started/creating-a-new-npm-user-account.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="index.html">入门</a></li>
+    <li><a href="../packages-and-modules/index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
   </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="recovering-your-2fa-enabled-account">
-<h1>恢复已启用2FA的帐户<a class="headerlink" href="#recovering-your-2fa-enabled-account" title="永久链接至标题">¶</a></h1>
-<p>根据具体情况，您可以恢复对启用了2FA的帐户的访问权限。</p>
-<p>Misplaced second factor device
-If you have misplaced the device that provided second-factor authentication, you can use the recovery codes generated when you enabled 2FA to access your account.</p>
-<p>找到您在帐户中启用2FA时生成的恢复代码。如果您已注销，请在命令行上使用您的npm用户名和npm密码登录。</p>
-<blockquote>
-<div><p>npm login</p>
-</div></blockquote>
-<p>提示输入OTP时，请输入恢复代码。登录后，键入npm profile disable-2fa并在出现提示时输入您的npm密码。看到此提示时输入未使用的恢复代码：</p>
-<blockquote>
-<div><p>&gt;从验证者输入一次性密码:</p>
-</div></blockquote>
-<p>npm will confirm that two-factor authentication has been disabled.
-type npm profile enable-2fa to re-enable 2FA, assign a different device to your account, and generate new recovery codes.
-Note: Using the recovery codes to re-enable 2FA may create a second authenticator account with the same npm account name. To delete the old authenticator account, follow the steps for the authenticator.
-Misplaced recovery codes
-If you have misplaced both the device that provided second-factor authentication and your recovery codes, we may be unable to help you recover your account. If you have any questions, please contact npm Support.</p>
-</div>
-
-
-           </div>
-           
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="about-two-factor-authentication.html" class="btn btn-neutral float-right" title="关于双因素身份验证" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="index.html" class="btn btn-neutral float-left" title="入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+</div>
 
-</footer>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="about-two-factor-authentication.html" title="关于双因素身份验证"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="入门"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">入门</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">在公共注册表上创建新用户帐户</a><ul>
+<li><a class="reference internal" href="#creating-an-account-on-the-website">在网站上创建一个帐户</a></li>
+<li><a class="reference internal" href="#use-the-npm-login-command-to-test-logging-in-to-your-new-account">使用npm login命令测试登录新帐户的情况。</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="index.html"
+                        title="上一章">入门</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="about-two-factor-authentication.html"
+                        title="下一章">关于双因素身份验证</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/getting-started/creating-a-new-npm-user-account.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
 
-    </section>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="creating-a-new-user-account-on-the-public-registry">
+<h1>在公共注册表上创建新用户帐户<a class="headerlink" href="#creating-a-new-user-account-on-the-public-registry" title="永久链接至标题">¶</a></h1>
+<p>如果您还没有npm用户帐户，则可以创建一个帐户，以便在公共注册表上共享和下载Javascript包。</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>如果您使用的是npm Enterprise注册表，则必须使用SSO凭据登录，而不是创建帐户。有关更多信息，请与您公司的企业管理员联系。</p>
+</div>
+<div class="section" id="creating-an-account-on-the-website">
+<h2>在网站上创建一个帐户<a class="headerlink" href="#creating-an-account-on-the-website" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p>转到npm注册页面。</p></li>
+<li><p>在用户注册表单中，键入以下字段：</p>
+<ul class="simple">
+<li><p>全名</p></li>
+<li><p>公共电子邮件：您的公共电子邮件地址将添加到您的软件包的元数据中，并且任何下载软件包的人都可以看到。我们还会在您更新软件包时向此帐户发送电子邮件，以及不定期的产品更新和信息。</p></li>
+<li><p>用户名：在npmjs.com上发布包或与其他npm用户交互时将显示的用户名。您的用户名必须是小写，并且可以包含连字符和数字。</p></li>
+<li><p>密码：您的密码必须符合我们的密码指南。新帐户注册表单</p></li>
+</ul>
+</li>
+<li><p>To sign up for our email newsletter, select “Sign up for the npm Weekly”. sign up for the npm weekly checkbox selected</p></li>
+<li><p>Select “Agree to the End User License Agreement and the Privacy Policy”. agree to the end user license agreement and privacy policy checkbox selected</p></li>
+<li><p>Click Create An Account. create an account button</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>After signing up for an npm account, you will receive an account verification email. You must verify your email address in order to publish packages to the registry.</p>
+</div>
+<p>Testing your new account with npm login</p>
+</div>
+<div class="section" id="use-the-npm-login-command-to-test-logging-in-to-your-new-account">
+<h2>使用npm login命令测试登录新帐户的情况。<a class="headerlink" href="#use-the-npm-login-command-to-test-logging-in-to-your-new-account" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>如果在使用npm login命令登录时拼错现有帐户用户名，则将创建一个包含拼写错误名称的新帐户。有关意外创建帐户的帮助，请联系npm支持。</p>
+</div>
+<ol class="arabic">
+<li><p>在命令行上，键入以下命令，替换</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm login
+</pre></div>
+</div>
+</li>
+<li><p>When prompted, enter your username, password, and email address.</p></li>
+<li><p>If you have two-factor authentication enabled, when prompted, enter a one-time password.</p></li>
+<li><p>To test that you have successfully logged in, type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">whoami</span>
+</pre></div>
+</div>
+<p>Your npm username should be displayed.</p>
+</li>
+</ol>
+</div>
+</div>
 
-  </div>
-  
 
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="about-two-factor-authentication.html" title="关于双因素身份验证"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="入门"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+          <li class="nav-item nav-item-1"><a href="index.html" >入门</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

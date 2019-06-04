@@ -10,10 +10,12 @@ SYNOPSIS
 
 .. option:: docs
 
-npm docs [<pkgname> [<pkgname> ...]]
-npm docs .
-npm home [<pkgname> [<pkgname> ...]]
-npm home .
+.. code-block:: sh
+
+   npm docs [<pkgname> [<pkgname> ...]]
+   npm docs .
+   npm home [<pkgname> [<pkgname> ...]]
+   npm home .
 
 DESCRIPTION
 -------------------
@@ -36,10 +38,10 @@ The base URL of the npm package registry.
 SEE ALSO
 -------------------
 
-- npm-view
-- npm-publish
-- npm-registry
-- npm-config
-- npm-config
-- npmrc
-- package.json
+- :option:`npm view`
+- :option:`npm publish`
+- :ref:`registry`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :ref:`package.json`

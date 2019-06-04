@@ -1,14 +1,16 @@
 npm
 ============================================================================================
 
-javascript package manager
-
 SYNOPSIS
 -------------------
 
 .. program:: npm
 
-npm <command> [args]
+   javascript package manager
+
+   .. code-block:: sh
+
+      npm <command> [args]
 
 VERSION
 -------------------
@@ -95,11 +97,11 @@ Isaac Z. Schlueter :: isaacs :: @izs :: i@izs.me
 SEE ALSO
 -------------------
 
-- npm-help
-- README
-- package.json
-- npm-install
-- npm-config
-- npm-config
-- npmrc
-- npm-index
+- :option:`npm help`
+- :option:`README`
+- :ref:`package.json`
+- :option:`npm install`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :option:`npm index`

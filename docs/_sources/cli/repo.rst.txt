@@ -1,7 +1,6 @@
 npm-repo
 ============================================================================================
 
-Open package repository page in the browser
 
 SYNOPSIS
 -------------------
@@ -10,7 +9,11 @@ SYNOPSIS
 
 .. option:: repo
 
-npm repo [<pkg>]
+   Open package repository page in the browser
+
+   .. code-block:: sh
+
+      npm repo [<pkg>]
 
 DESCRIPTION
 -------------------
@@ -28,5 +31,5 @@ The browser that is called by the npm repo command to open websites.
 SEE ALSO
 -------------------
 
-- npm-docs
-- npm-config
+- :option:`npm docs`
+- :option:`npm config`

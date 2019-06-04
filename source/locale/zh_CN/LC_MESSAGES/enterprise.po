@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"POT-Creation-Date: 2019-06-04 22:31+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,110 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+
+#: ../../source/enterprise/about-the-enterprise-admin-user.rst:2
+msgid "About the Enterprise admin user"
+msgstr ""
+
+#: ../../source/enterprise/about-the-enterprise-admin-user.rst:4
+msgid ""
+"The Enterprise admin user has the most far-reaching permissions on the "
+"Enterprise instance and can manage instance settings, Orgs, users, and "
+"packages. For a full list of Enterprise admin permissions, see “npm "
+"Enterprise roles and permissions”."
+msgstr ""
+
+#: ../../source/enterprise/configuring-an-authentication-provider.rst:2
+msgid "Configuring an authentication provider"
+msgstr ""
+
+#: ../../source/enterprise/configuring-an-authentication-provider.rst:4
+msgid ""
+"Note: To avoid being locked out of your instance, you must connect your "
+"npm Enterprise admin account to your SSO account immediately after "
+"configuring an authentication provider. If you are locked out of your "
+"instance, contact npm Enterprise Support at enterprise@npmjs.com. As an "
+"Enterprise admin, you can configure your instance to use single sign-on "
+"(SSO) authentication through any external authentication provider that "
+"implements OpendID Connect Core and OpendID Connect Discovery, such as "
+"Auth0, Azure Active Directory, Okta, and Google."
+msgstr ""
+
+#: ../../source/enterprise/configuring-an-authentication-provider.rst:7
+msgid ""
+"Log in to your Enterprise instance using your temporary username and "
+"password. In the upper right corner of the page, click your profile "
+"picture, then click Site Administration. drop-down with site "
+"administration choice Click “settings”. admin panel settings button On "
+"the Settings page, click “Configure Single Sign-On”. configure single "
+"sign on button On the Single Sign-On configuration page, enter your SSO "
+"application settings: Domain: enter the base domain, without the https://"
+" prefix Client ID Client Secret fields for sso settings form Click Save. "
+"sso settings form save button On your SSO provider application website, "
+"enter your npm Enterprise instance callback URL: www.<company-"
+"name>.npme.io/sso/callback. To connect your npm Enterprise admin account "
+"to your SSO account, visit https://<company-name>.npme.io/login/via/1. "
+"Removing users from your authentication provider§ When you remove a user "
+"from your authentication provider, we also recommend deactivating them in"
+" your instance."
+msgstr ""
+
+#: ../../source/enterprise/creating-and-managing-orgs-and-teams.rst:2
+msgid "Creating and managing Orgs and teams"
+msgstr ""
+
+#: ../../source/enterprise/creating-and-managing-orgs-and-teams.rst:4
+msgid "To create and manage Orgs and teams, see our Orgs documentation:"
+msgstr ""
+
+#: ../../source/enterprise/creating-and-managing-orgs-and-teams.rst:6
+msgid ""
+"Creating and managing Orgs Managing Org members Managing teams Managing "
+"Org packages"
+msgstr ""
+
+#: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:2
+msgid "Demoting an admin to a non-admin user"
+msgstr ""
+
+#: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:4
+msgid ""
+"Note: Demoting an admin does not deactivate them. To deactivate a user, "
+"follow the steps in \"Viewing, deactivating, and reactivating users\". If"
+" an admin on your npm Enterprise instance no longer needs to take admin "
+"actions on the instance (e.g. configuring SSO, activating and "
+"deactivating users, or inviting users to the instance), as an Enterprise "
+"instance admin, you can demote the admin to a non-admin user."
+msgstr ""
+
+#: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:7
+msgid ""
+"If you haven’t already, add the user to your instance, either by having "
+"them sign in with your SSO provider, or by inviting them to create a "
+"username and password on the instance. Have an Enterprise admin contact "
+"npm Enterprise Support at enterprise@npmjs.com with the name of the admin"
+" to be demoted to a non-admin user."
+msgstr ""
+
+#: ../../source/enterprise/getting-started-with-npm-enterprise.rst:2
+msgid "Getting started with npm Enterprise"
+msgstr ""
+
+#: ../../source/enterprise/getting-started-with-npm-enterprise.rst:4
+msgid ""
+"As an npm Enterprise admin, once you have created a temporary username "
+"and password from the signup link for your new instance, you should:"
+msgstr ""
+
+#: ../../source/enterprise/getting-started-with-npm-enterprise.rst:6
+msgid ""
+"Log in to your npm Enterprise instance. Configure SSO authentication Link"
+" your account to your SSO provider. Create one or more Orgs. Tell users "
+"to log in to the instance with their SSO credentials. Add users to Orgs "
+"and teams. Have users follow the steps in the “Getting started” and "
+"“Packages and modules” documentation to download Node.js and npm, "
+"configure their npm client, and publish and install packages."
+msgstr ""
 
 #: ../../source/enterprise/index.rst:2
 msgid "npm Enterprise"
@@ -75,4 +179,202 @@ msgstr "用户管理"
 #: ../../source/enterprise/index.rst:49
 msgid "Migration"
 msgstr "迁移"
+
+#: ../../source/enterprise/managing-user-security.rst:2
+msgid "Managing user security"
+msgstr ""
+
+#: ../../source/enterprise/managing-user-security.rst:4
+msgid ""
+"To keep your npm Enterprise instance secure, as an Enterprise instance "
+"admin, you should:"
+msgstr ""
+
+#: ../../source/enterprise/managing-user-security.rst:6
+msgid ""
+"Limit the number of additional Enterprise admins on your instance. "
+"Deactivate users who no longer need access to your npm Enterprise "
+"instance (such as users who have left the company) as quickly as "
+"possible. Users of your npm Enterprise instance should:"
+msgstr ""
+
+#: ../../source/enterprise/managing-user-security.rst:10
+msgid ""
+"Enable 2FA on their Enterprise instance accounts. Use read-only tokens to"
+" delegate access to private packages to other tools in their workflow."
+msgstr ""
+
+#: ../../source/enterprise/migrating-from-an-existing-enterprise-instance.rst:2
+msgid "Migrating from an existing npm Enterprise instance"
+msgstr ""
+
+#: ../../source/enterprise/migrating-from-an-existing-enterprise-instance.rst:4
+msgid ""
+"Note: Using pneumatic-tubes for migration requires Node 8+ npm 5+ (to "
+"install or upgrade, run npm install npm@latest -g) To migrate from a "
+"legacy npm Enterprise installation, use npm’s pneumatic-tubes and follow "
+"the steps under “Importing from Legacy npm Enterprise”."
+msgstr ""
+
+#: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:2
+msgid "Migrating from an Org on the public registry"
+msgstr ""
+
+#: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:4
+msgid ""
+"Note: Using pneumatic-tubes for migration requires Node 8+ npm 5+ (to "
+"install or upgrade, run npm install npm@latest -g) To migrate from an Org"
+" on the public registry, use npm’s pneumatic-tubes and follow the steps "
+"under “Importing from npm Orgs”."
+msgstr ""
+
+#: ../../source/enterprise/npm-enterprise-roles-and-permissions.rst:2
+msgid "npm Enterprise roles and permissions"
+msgstr ""
+
+#: ../../source/enterprise/npm-enterprise-roles-and-permissions.rst:4
+msgid ""
+"Action  Billing manager Admin user      End user Update payment method "
+"and billing info (via npm account manager)        X Purchase additional "
+"seats (via npm account manager)     X View all users of the instance"
+"          X Activate users on the instance          X Deactivate users on"
+" the instance                X Configure an authentication provider"
+"            X View, publish, and install packages from the instance "
+"registry          X       X Create Orgs             X       X Add/remove "
+"users to/from Orgs           X (as Org owner)        X (as Org owner) "
+"Create, delete, and manage teams                X (as an Org owner or "
+"team admin)       X (as an Org owner or team admin) Add/remove packages "
+"to/from Org teams           X (as an Org owner or team admin)       X (as"
+" an Org owner or team admin) Create and publish packages in the Org scope"
+"            X       X"
+msgstr ""
+
+#: ../../source/enterprise/permanently-deleting-a-user.rst:2
+msgid "Permanently deleting a user"
+msgstr ""
+
+#: ../../source/enterprise/permanently-deleting-a-user.rst:4
+msgid ""
+"As an npm Enterprise admin, you can contact npm Enterprise Support at "
+"enterprise@npmjs.com to completely remove a user from your Enterprise "
+"instance if they will never need to access the instance again."
+msgstr ""
+
+#: ../../source/enterprise/permanently-deleting-a-user.rst:6
+msgid ""
+"Note: When permanently deleting a user, you will work with npm support to"
+" make sure any Orgs and packages they own are transferred to other users "
+"on your Enterprise instance."
+msgstr ""
+
+#: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:2
+msgid "Promoting a non-admin user to admin"
+msgstr ""
+
+#: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:4
+msgid ""
+"Note: To keep your Enterprise instance secure, we recommend limiting the "
+"number of Enterprise admins on your instance. If you need multiple users "
+"in your Enterprise instance to be able to take admin actions (e.g. "
+"configure SSO, activate and deactivate users, or invite users to the "
+"instance), you can promote a non-admin user to admin."
+msgstr ""
+
+#: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:7
+msgid ""
+"If you haven’t already, add the user to your instance, either by having "
+"them sign in with your SSO provider, or by inviting them to create a "
+"username and password on the instance. Have an Enterprise admin contact "
+"npm Enterprise Support at enterprise@npmjs.com with the name of the user "
+"to be promoted to admin."
+msgstr ""
+
+#: ../../source/enterprise/purchasing-or-removing-seats.rst:2
+msgid "Purchasing or removing seats"
+msgstr ""
+
+#: ../../source/enterprise/purchasing-or-removing-seats.rst:4
+msgid ""
+"As an npm Enterprise billing manager, you can purchase additional seats "
+"for your instance, or remove seats you no longer need. If you remove "
+"seats, the credit card on file will not be charged for them starting with"
+" the next billing cycle."
+msgstr ""
+
+#: ../../source/enterprise/purchasing-or-removing-seats.rst:6
+msgid ""
+"To purchase or remove seats for your instance, contact your npm account "
+"manager or our Sales team."
+msgstr ""
+
+#: ../../source/enterprise/updating-billing-information.rst:2
+msgid "Updating billing information"
+msgstr ""
+
+#: ../../source/enterprise/updating-billing-information.rst:4
+msgid ""
+"As an npm Enterprise billing manager, you can update the payment method "
+"for your Enterprise instance by contacting your npm account manager or "
+"our Sales team."
+msgstr ""
+
+#: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:2
+msgid "Viewing, deactivating, and reactivating users"
+msgstr ""
+
+#: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:4
+msgid ""
+"As an Enterprise admin, you can view active and inactive users, "
+"deactivate users who no longer need access to your npm Enterprise "
+"instance (such as users who have left your company), and reactivate "
+"inactive users."
+msgstr ""
+
+#: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:6
+msgid ""
+"Viewing users§ As an npm Enterprise admin, you can see a list of all the "
+"current users of your instance, including non-admin end users and other "
+"instance admins."
+msgstr ""
+
+#: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:9
+msgid ""
+"Log in to your Enterprise instance. In the upper right corner of the "
+"page, click your profile picture, then click Site Administration. drop-"
+"down with site administration choice To view a complete list of users, "
+"click the “Manage users” tab. admin panel manage users button "
+"Deactivating users§ As an npm Enterprise admin, you can deactivate users "
+"who no longer need access to your npm Enterprise instance – for example, "
+"users who have left the company or whose responsibilities have changed."
+msgstr ""
+
+#: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:15
+msgid ""
+"Deactivating a user will invalidate their login tokens, but will not "
+"delete Orgs or packages they owned. A deactivated user will remain "
+"visible in the “Manage users” panel and can be reactivated by an admin "
+"user."
+msgstr ""
+
+#: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:17
+msgid ""
+"Log in to your Enterprise instance. In the upper right corner of the "
+"page, click your profile picture, then click Site Administration. drop-"
+"down with site administration choice Locate the user name of the user you"
+" want to deactivate, then next to their name, click “deactivate”. "
+"deactivate user button Reactivating inactive users§ Note: When you "
+"reactivate a user, they will need to re-enable two-factor authentication "
+"on their npm Enterprise instance account. As an npm Enterprise admin, you"
+" can reactivate an inactive user of your instance to allow them to log in"
+" again."
+msgstr ""
+
+#: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:24
+msgid ""
+"Log in to your Enterprise instance. In the upper right corner of the "
+"page, click your profile picture, then click Site Administration. drop-"
+"down with site administration choice Locate the user name of the user you"
+" want to reactivate, then next to their name, click “activate”. activate "
+"user button"
+msgstr ""
 

@@ -1,7 +1,6 @@
 npm-ls
 ============================================================================================
 
-List installed packages
 
 SYNOPSIS
 -------------------
@@ -10,9 +9,13 @@ SYNOPSIS
 
 .. option:: ls
 
-npm ls [[<@scope>/]<pkg> ...]
+   List installed packages
 
-aliases: list, la, ll
+   .. code-block:: sh
+
+      npm ls [[<@scope>/]<pkg> ...]
+
+   aliases: list, la, ll
 
 DESCRIPTION
 -------------------
@@ -83,12 +86,12 @@ Display only dependencies which are linked
 SEE ALSO
 -------------------
 
-- npm-config
-- npm-config
-- npmrc
-- npm-folders
-- npm-install
-- npm-link
-- npm-prune
-- npm-outdated
-- npm-update
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :ref:`folders`
+- :option:`npm install`
+- :option:`npm link`
+- :option:`npm prune`
+- :option:`npm outdated`
+- :option:`npm update`

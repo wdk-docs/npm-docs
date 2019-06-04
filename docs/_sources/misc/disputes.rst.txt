@@ -1,3 +1,5 @@
+.. _disputes:
+
 npm-disputes
 ======================================================
 
@@ -54,5 +56,7 @@ Copyright (C) npm, Inc., All rights reserved
 This document may be reused under a Creative Commons Attribution-ShareAlike License.
 
 SEE ALSO
-npm-registry
-npm-owner
+---------------
+
+- :option:`npm registry`
+- :option:`npm owner`

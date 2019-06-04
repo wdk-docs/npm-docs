@@ -1,250 +1,227 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>从命令行登录npm Enterprise注册表 &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>从命令行登录npm Enterprise注册表 &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="生成和定位npm-debug.log文件" href="generating-and-locating-npm-debug-log-files.html" />
-    <link rel="prev" title="将注册表设置配置为npm Enterprise用户" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" /> 
-</head>
+    <link rel="prev" title="将注册表设置配置为npm Enterprise用户" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="index.html">入门</a></li>
+    <li><a href="../packages-and-modules/index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
+  </div>
 </div>
 
-          
-        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="generating-and-locating-npm-debug-log-files.html" title="生成和定位npm-debug.log文件"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" title="将注册表设置配置为npm Enterprise用户"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="index.html#setting-up-your-npm-user-account">设置您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#paying-for-your-npm-user-account">支付您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#managing-your-npm-user-account">管理您的npm用户帐户</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#configuring-your-local-environment">配置本地环境</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="about-npm-versions.html">关于npm CLI版本</a></li>
-<li class="toctree-l3"><a class="reference internal" href="downloading-and-installing-node-js-and-npm.html">下载并安装Node.js和npm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html">将注册表设置配置为npm Enterprise用户</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">从命令行登录npm Enterprise注册表</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">入门</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">从命令行登录npm Enterprise注册表</a><ul>
+<li><a class="reference internal" href="#logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry">Logging in with your default registry set to your company’s npm Enterprise registry</a></li>
+<li><a class="reference internal" href="#logging-in-with-npmrc">Logging in with npmrc</a></li>
+<li><a class="reference internal" href="#logging-in-with-a-scope-configured-to-point-to-an-npm-enterprise-registry">Logging in with a scope configured to point to an npm Enterprise registry</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#troubleshooting">故障排除</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
 </ul>
 
-            
-          
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html"
+                        title="上一章">将注册表设置配置为npm Enterprise用户</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="generating-and-locating-npm-debug-log-files.html"
+                        title="下一章">生成和定位npm-debug.log文件</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="index.html">入门</a> &raquo;</li>
-        
-      <li>从命令行登录npm Enterprise注册表</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
             
   <div class="section" id="logging-in-to-an-npm-enterprise-registry-from-the-command-line">
 <h1>从命令行登录npm Enterprise注册表<a class="headerlink" href="#logging-in-to-an-npm-enterprise-registry-from-the-command-line" title="永久链接至标题">¶</a></h1>
 <p>登录公司的npm Enterprise注册表的步骤取决于您配置npm注册表设置的方式。</p>
-<p>Logging in with your default registry set to your company’s npm Enterprise registry
-Logging in with npmrc
-Logging in with a scope configured to point to an npm Enterprise registry
-Logging in with your default registry set to your company’s npm Enterprise registry
-On the command line, type the following command:</p>
+<ul class="simple">
+<li><p>Logging in with your default registry set to your company’s npm Enterprise registry</p></li>
+<li><p>Logging in with npmrc</p></li>
+<li><p>Logging in with a scope configured to point to an npm Enterprise registry</p></li>
+</ul>
+<div class="section" id="logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry">
+<h2>Logging in with your default registry set to your company’s npm Enterprise registry<a class="headerlink" href="#logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry" title="永久链接至标题">¶</a></h2>
+<p>On the command line, type the following command:</p>
 <blockquote>
-<div><p>npm login</p>
-</div></blockquote>
-<p>When prompted, provide your SSO credentials.
-Logging in with npmrc
-On the command line, switch to your npm Enterprise profile:</p>
-<blockquote>
-<div><p>npmrc work</p>
-</div></blockquote>
-<dl class="simple">
-<dt>运行以下命令:</dt><dd><p>npm login</p>
-</dd>
-</dl>
-<p>When prompted, provide your SSO credentials.
-Logging in with a scope configured to point to an npm Enterprise registry
-On the command line, type the following command:</p>
-<blockquote>
-<div><p>npm login –registry=https://registry.company-name.npme.io</p>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">login</span>
+</pre></div>
+</div>
 </div></blockquote>
 <p>出现提示时，提供您的SSO凭据。</p>
 </div>
+<div class="section" id="logging-in-with-npmrc">
+<h2>Logging in with npmrc<a class="headerlink" href="#logging-in-with-npmrc" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p>On the command line, switch to your npm Enterprise profile:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npmrc</span> <span class="n">work</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>运行以下命令:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">login</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>出现提示时，提供您的SSO凭据。</p></li>
+</ol>
+</div>
+<div class="section" id="logging-in-with-a-scope-configured-to-point-to-an-npm-enterprise-registry">
+<h2>Logging in with a scope configured to point to an npm Enterprise registry<a class="headerlink" href="#logging-in-with-a-scope-configured-to-point-to-an-npm-enterprise-registry" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p>On the command line, type the following command:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">login</span> <span class="o">--</span><span class="n">registry</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">registry</span><span class="o">.</span><span class="n">company</span><span class="o">-</span><span class="n">name</span><span class="o">.</span><span class="n">npme</span><span class="o">.</span><span class="n">io</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>出现提示时，提供您的SSO凭据。</p></li>
+</ol>
+</div>
+</div>
 
 
-           </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="generating-and-locating-npm-debug-log-files.html" class="btn btn-neutral float-right" title="生成和定位npm-debug.log文件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" class="btn btn-neutral float-left" title="将注册表设置配置为npm Enterprise用户" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
         </div>
       </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="generating-and-locating-npm-debug-log-files.html" title="生成和定位npm-debug.log文件"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" title="将注册表设置配置为npm Enterprise用户"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+          <li class="nav-item nav-item-1"><a href="index.html" >入门</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

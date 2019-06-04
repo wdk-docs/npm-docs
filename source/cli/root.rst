@@ -1,8 +1,6 @@
 npm-root
 ============================================================================================
 
-Display npm root
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: root
 
-npm root [-g]
+   Display npm root
+
+   .. code-block:: sh
+
+      npm root [-g]
 
 DESCRIPTION
 -------------------
@@ -20,9 +22,9 @@ Print the effective node_modules folder to standard out.
 SEE ALSO
 -------------------
 
-- npm-prefix
-- npm-bin
-- npm-folders
-- npm-config
-- npm-config
-- npmrc
+- :option:`npm prefix`
+- :option:`npm bin`
+- :ref:`folders`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

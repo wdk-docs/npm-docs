@@ -8,13 +8,142 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"POT-Creation-Date: 2019-06-04 22:31+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/integrations/about-authentication-tokens.rst:2
+msgid "About authentication tokens"
+msgstr ""
+
+#: ../../source/integrations/about-authentication-tokens.rst:4
+msgid "Note: You must be using npm version 5.5.1 or greater to use authentication tokens. An authentication token is a hexadecimal string that gives you the right to publish and access your modules. Whenever you log in to npm, we generate an authentication token for you."
+msgstr ""
+
+#: ../../source/integrations/about-authentication-tokens.rst:7
+msgid "You can also create an authentication token to give other tools (such as continuous integration testing environments) access to your npm packages. For example, Travis CI provides an environment variable that you can set to an npm token value, which gives Travis CI the ability to run npm as your npm user. When Travis CI runs, it will be able to complete npm tasks as you, including installing private packages you can access."
+msgstr ""
+
+#: ../../source/integrations/about-authentication-tokens.rst:9
+msgid "You can work with tokens from the web or the CLI, whichever is easiest. What you do in each environment will be reflected in the other environment."
+msgstr ""
+
+#: ../../source/integrations/about-authentication-tokens.rst:11
+msgid "npm token commands let you:"
+msgstr ""
+
+#: ../../source/integrations/about-authentication-tokens.rst:13
+msgid "View tokens for easier tracking and management Create new tokens, specifying read-only or full-permission Limit access according to IP address ranges (CIDR) Delete/revoke tokens For more information on creating and viewing authentication tokens on the web and CLI, see “Creating and viewing authentication tokens”."
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:2
+msgid "Creating and viewing authentication tokens"
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:4
+msgid "You can create and view authentication tokens from the website and command line interface (CLI)."
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:6
+msgid "Creating authentication tokens§ Creating tokens on the website§ In the upper right corner of the page, click your profile picture, then click Tokens. profile dropdown menu with tokens link selected Click Create New Token. create new token button Select the access level: Read and Publish: Recommended for continuous deployment and other environments where a deploy artifact is created and published to npm. Read Only: Recommended for continuous integration and other environments where a deploy artifact is not created. token access level radio buttons with read and publish selected Click Create Token. Copy the token from the top of page. Creating tokens with the CLI§ You can create tokens with read and publish permissions, read-only permissions, and CIDR-whitelisted tokens with either read and publish or read-only permissions with the CLI."
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:18
+msgid "Read and publish: The default setting for new tokens, and most permissive token type. Read and publish tokens allow installation, distribution, modification, publishing, and all rights that you have on your account. Read-only: Tokens that allow installation and distribution only, but no publishing or other rights associated with your account. CIDR-whitelisted Tokens that can be used from specified IPv4 address ranges. Specifying a CIDR whitelist for a token allows you to make any user or system using the token to be physically or remotely located within the specified IP address range. To create a new token, on the command line, run: npm token create for a read and publish token npm token create --read-only for a read-only token npm token create --cidr=[list] for a CIDR-restricted read and publish token. For example, npm token create --cidr=192.0.2.0/24 npm token create --read-only --cidr=[list] for a CIDR-restricted read-only token When prompted, enter your password. If you have enabled two-factor authentication, when prompted, enter a one-time password. Copy the token from the token field in the command output. CIDR-restricted token errors§ If the CIDR string you enter is invalid or in an inappropriate format, you will get an error similar to the one below:"
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:32
+msgid "npm ERR! CIDR whitelist contains invalid CIDR entry: X.X.X.X./YY,Z.Z.. . . Make sure you are using a valid IPv4 range and try creating the token again."
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:35
+msgid "Viewing tokens§ Note: You can only view a full token immediately after creation. Viewing tokens on the website§ To view all tokens associated with your account, in the upper right corner of the page, click your profile picture, then click Tokens."
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:40
+msgid "profile dropdown menu with tokens link selected"
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:42
+msgid "Viewing tokens on the CLI§ To view all tokens associated with your account, on the command line, run the following command:"
+msgstr ""
+
+#: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:45
+msgid "npm token list Token attributes§ id: Use the token ID to refer to the token in commands. token: The first digits of the actual token. create: Date the token was created. readonly: If yes, indicates a read-only token. If no, indicates a token with both read and publish permissions. CIDR whitelist: Restricts token use by IP address."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:2
+msgid "Docker and private modules"
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:4
+msgid "To install private npm packages in a Docker container, you will need to use Docker’s build-time variables."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:6
+msgid "Background: runtime variables§ If you had the following Dockerfile:"
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:9
+#: ../../source/integrations/docker-and-private-modules.rst:42
+msgid "FROM risingstack/alpine:3.3-v4.3.1-3.0.1"
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:11
+msgid "COPY package.json package.json RUN npm install"
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:14
+msgid "# Add your source files COPY . . CMD npm start Which will use the RisingStack Alpine Node.JS Docker image, copy the package.json into our container, installs dependencies, copies the source files and runs the start command as specified in the package.json."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:19
+msgid "In order to install private packages, you may think that we could just add a line before we run npm install, using the ENV parameter:"
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:21
+msgid "ENV NPM_TOKEN=00000000-0000-0000-0000-000000000000 However, this doesn’t work as you would expect, because you want the npm install to occur when you run docker build, and in this instance, ENV variables aren’t used, they are set for runtime only."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:24
+msgid "Using build-time variables in Docker§ Instead of run-time variables, you must use a different way of passing environment variables to Docker, available since Docker 1.9: the ARG parameter."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:27
+msgid "Overview§ Create and check in a project-specific .npmrc file Update the Dockerfile Build the Docker image Create and check in a project-specific .npmrc file§ A complete example that will allow you to use --build-arg to pass in your NPM_TOKEN requires adding a .npmrc file to the project."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:34
+msgid "Use a project-specific .npmrc file with a variable for your token to securely authenticate your Docker image with npm."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:36
+msgid "In the root directory of your project, create a custom .npmrc file with the following contents: //registry.npmjs.org/:_authToken=${NPM_TOKEN} Check in the .npmrc file. Update the Dockerfile§ The Dockerfile that takes advantage of this has a few more lines in it than the earlier example that allows us to use the .npmrc file and the ARG parameter:"
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:44
+msgid "ARG NPM_TOKEN COPY .npmrc .npmrc COPY package.json package.json RUN npm install RUN rm -f .npmrc"
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:50
+msgid "# Add your source files COPY . . CMD npm start This adds the expected ARG NPM_TOKEN, but also copies the .npmrc file, and removes it when npm install completes."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:55
+msgid "Build the Docker image§ To build the image using the above Dockerfile and the npm authentication token, you can run the following command. Note the . at the end to give docker build the current directory as an argument."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:58
+msgid "docker build --build-arg NPM_TOKEN=${NPM_TOKEN} . This will build the Docker image with the current NPM_TOKEN environment variable, so you can run npm install inside your container as the current logged-in user."
+msgstr ""
+
+#: ../../source/integrations/docker-and-private-modules.rst:61
+msgid "Note: Even if you delete the .npmrc file, it will be kept in the commit history. To clean your secrets entirely, make sure to squash them."
+msgstr ""
 
 #: ../../source/integrations/index.rst:2
 msgid "Integrations"
@@ -26,5 +155,61 @@ msgstr ""
 
 #: ../../source/integrations/index.rst:7
 msgid "Integrating npm with external services"
+msgstr ""
+
+#: ../../source/integrations/revoking-authentication-tokens.rst:2
+msgid "Revoking authentication tokens"
+msgstr ""
+
+#: ../../source/integrations/revoking-authentication-tokens.rst:4
+msgid "To keep your account and packages secure, we strongly recommend revoking (deleting) tokens you no longer need or that have been compromised. You can revoke any token you have created."
+msgstr ""
+
+#: ../../source/integrations/revoking-authentication-tokens.rst:6
+msgid "Note: While authentication tokens are not derived from your password, changing your password will invalidate all of your tokens. You can also invalidate a single token by logging out on a machine that is logged in with that token. We recommend revoking rather than invalidating tokens. To see a list of your tokens, on the command line, run: npm token list In the tokens table, find and copy the ID of the token you want to delete. On the command line, run the following command, replacing 123456 with the ID of the token you want to delete: npm token delete 123456 npm will report Removed 1 token"
+msgstr ""
+
+#: ../../source/integrations/revoking-authentication-tokens.rst:14
+msgid "To confirm that the token has been removed, run: npm token list Note: You must use the token ID to delete a token, not the truncated version of the token. In some cases, there may be a delay of up to an hour before a token is successfully revoked."
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:2
+msgid "Using private packages in a CI/CD workflow"
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:4
+msgid "You can use authentication tokens to test private npm packages with continuous integration (CI) servers, or deploy them to continuous deployment (CD) servers."
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:6
+msgid "Overview§ Create a new authentication token Set the token as an environment variable on the CI/CD server Create and check in a project-specific .npmrc file Create a new authentication token§ Create a new authentication token that will be used only to access npm packages from a CI/CD server."
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:13
+msgid "Continuous integration§ By default, npm token create will generate a token with both read and write permissions. When generating a token for use in a continuous integration environment, we recommend creating a read-only token:"
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:16
+msgid "npm token create --read-only For more information on creating authentication tokens, including CIDR-whitelisted tokens, see “Creating an authentication token”."
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:19
+msgid "Continuous deployment§ Since continuous deployment environments usually involve the creation of a deploy artifact, the token likely will need read and write permissions, which are granted with the standard token creation command:"
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:22
+msgid "npm token create Note: For increased security, we recommend generated a CIDR-whitelisted token that can only be used from a certain IP address range. You can use a CIDR whitelist with a read and publish token or a read-only token: npm token create --cidr=[list] npm token create --read-only --cidr=[list] Example: npm token create --cidr=192.0.2.0/24 For more information, see \"Creating and viewing authentication tokens\". Set the token as an environment variable on the CI/CD server§ Set your token as an environment variable on the CI/CD server and your development machine. In OSX or Linux, add this line to your ~/.profile, replacing the example token with your own:"
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:27
+msgid "export NPM_TOKEN=\"00000000-0000-0000-0000-000000000000\" and then refresh your environment variables:"
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:30
+msgid "source ~/.profile Create and check in a project-specific .npmrc file§ Use a project-specific .npmrc file with a variable for your token to securely authenticate your CI/CD server with npm."
+msgstr ""
+
+#: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:34
+msgid "In the root directory of your project, create a custom .npmrc file with the following contents: //registry.npmjs.org/:_authToken=${NPM_TOKEN} Check in the .npmrc file."
 msgstr ""
 

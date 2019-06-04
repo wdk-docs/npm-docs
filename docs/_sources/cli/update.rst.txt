@@ -1,7 +1,6 @@
 npm-update
 ============================================================================================
 
-Update a package
 
 SYNOPSIS
 -------------------
@@ -10,9 +9,13 @@ SYNOPSIS
 
 .. option:: update
 
-npm update [-g] [<pkg>...]
+   Update a package
 
-aliases: up, upgrade
+   .. code-block:: sh
+
+      npm update [-g] [<pkg>...]
+
+   aliases: up, upgrade
 
 DESCRIPTION
 -------------------
@@ -98,9 +101,9 @@ NOTE: If a package has been upgraded to a version newer than latest, it will be 
 SEE ALSO
 -------------------
 
-- npm-install
-- npm-outdated
-- npm-shrinkwrap
-- npm-registry
-- npm-folders
-- npm-ls
+- :option:`npm install`
+- :option:`npm outdated`
+- :option:`npm shrinkwrap`
+- :ref:`registry`
+- :ref:`folders`
+- :option:`npm ls`

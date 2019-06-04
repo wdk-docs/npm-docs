@@ -1,8 +1,6 @@
 npm-prune
 ============================================================================================
 
-Remove extraneous packages
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: prune
 
-npm prune [[<@scope>/]<pkg>...] [--production] [--dry-run] [--json]
+   Remove extraneous packages
+
+   .. code-block:: sh
+
+      npm prune [[<@scope>/]<pkg>...] [--production] [--dry-run] [--json]
 
 DESCRIPTION
 -------------------
@@ -32,6 +34,6 @@ If you’ve disabled package-locks then extraneous modules will not be removed a
 SEE ALSO
 ----------------
 
-- npm-uninstall
-- npm-folders
-- npm-ls
+- :option:`npm uninstall`
+- :ref:`folders`
+- :option:`npm ls`

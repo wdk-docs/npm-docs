@@ -1,3 +1,5 @@
+.. _coding-style:
+
 npm-coding-style
 ======================================================
 
@@ -133,5 +135,7 @@ Don’t set things to undefined. Reserve that value to mean “not yet set to an
 Boolean objects are forbidden.
 
 SEE ALSO
-npm-developers
-npm
+--------------
+
+- :option:`npm developers`
+- :option:`npm`

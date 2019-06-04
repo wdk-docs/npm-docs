@@ -1,208 +1,206 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>&lt;no title&gt; &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Creating and viewing authentication tokens &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="revoking-authentication-tokens.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="about-authentication-tokens.html" /> 
-</head>
+    <link rel="next" title="Revoking authentication tokens" href="revoking-authentication-tokens.html" />
+    <link rel="prev" title="About authentication tokens" href="about-authentication-tokens.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/integrations/creating-and-viewing-authentication-tokens.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">About npm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">集成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm Enterprise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI documentation</a></li>
-</ul>
-
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="index.html">集成</a> &raquo;</li>
-        
-      <li>&lt;no title&gt;</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/integrations/creating-and-viewing-authentication-tokens.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="../getting-started/index.html">入门</a></li>
+    <li><a href="../packages-and-modules/index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
   </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  
-
-           </div>
-           
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="revoking-authentication-tokens.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="about-authentication-tokens.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+</div>
 
-</footer>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="revoking-authentication-tokens.html" title="Revoking authentication tokens"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="about-authentication-tokens.html" title="About authentication tokens"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">集成</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="about-authentication-tokens.html"
+                        title="上一章">About authentication tokens</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="revoking-authentication-tokens.html"
+                        title="下一章">Revoking authentication tokens</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/integrations/creating-and-viewing-authentication-tokens.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
 
-    </section>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="creating-and-viewing-authentication-tokens">
+<h1>Creating and viewing authentication tokens<a class="headerlink" href="#creating-and-viewing-authentication-tokens" title="永久链接至标题">¶</a></h1>
+<p>You can create and view authentication tokens from the website and command line interface (CLI).</p>
+<p>Creating authentication tokens§
+Creating tokens on the website§
+In the upper right corner of the page, click your profile picture, then click Tokens. profile dropdown menu with tokens link selected
+Click Create New Token. create new token button
+Select the access level:
+Read and Publish: Recommended for continuous deployment and other environments where a deploy artifact is created and published to npm.
+Read Only: Recommended for continuous integration and other environments where a deploy artifact is not created. token access level radio buttons with read and publish selected
+Click Create Token.
+Copy the token from the top of page.
+Creating tokens with the CLI§
+You can create tokens with read and publish permissions, read-only permissions, and CIDR-whitelisted tokens with either read and publish or read-only permissions with the CLI.</p>
+<p>Read and publish: The default setting for new tokens, and most permissive token type. Read and publish tokens allow installation, distribution, modification, publishing, and all rights that you have on your account.
+Read-only: Tokens that allow installation and distribution only, but no publishing or other rights associated with your account.
+CIDR-whitelisted Tokens that can be used from specified IPv4 address ranges. Specifying a CIDR whitelist for a token allows you to make any user or system using the token to be physically or remotely located within the specified IP address range.
+To create a new token, on the command line, run:
+npm token create for a read and publish token
+npm token create –read-only for a read-only token
+npm token create –cidr=[list] for a CIDR-restricted read and publish token. For example, npm token create –cidr=192.0.2.0/24
+npm token create –read-only –cidr=[list] for a CIDR-restricted read-only token
+When prompted, enter your password.
+If you have enabled two-factor authentication, when prompted, enter a one-time password.
+Copy the token from the token field in the command output.
+CIDR-restricted token errors§
+If the CIDR string you enter is invalid or in an inappropriate format, you will get an error similar to the one below:</p>
+<p>npm ERR! CIDR whitelist contains invalid CIDR entry: X.X.X.X./YY,Z.Z.…
+Make sure you are using a valid IPv4 range and try creating the token again.</p>
+<p>Viewing tokens§
+Note: You can only view a full token immediately after creation.
+Viewing tokens on the website§
+To view all tokens associated with your account, in the upper right corner of the page, click your profile picture, then click Tokens.</p>
+<p>profile dropdown menu with tokens link selected</p>
+<p>Viewing tokens on the CLI§
+To view all tokens associated with your account, on the command line, run the following command:</p>
+<p>npm token list
+Token attributes§
+id: Use the token ID to refer to the token in commands.
+token: The first digits of the actual token.
+create: Date the token was created.
+readonly: If yes, indicates a read-only token. If no, indicates a token with both read and publish permissions.
+CIDR whitelist: Restricts token use by IP address.</p>
+</div>
 
-  </div>
-  
 
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="revoking-authentication-tokens.html" title="Revoking authentication tokens"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="about-authentication-tokens.html" title="About authentication tokens"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+          <li class="nav-item nav-item-1"><a href="index.html" >集成</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

@@ -1,3 +1,5 @@
+.. _npmrc:
+
 npmrc
 ===============
 
@@ -52,8 +54,10 @@ path/to/npm/itself/npmrc
 This is an unchangeable “builtin” configuration file that npm keeps consistent across updates. Set fields in here using the ./configure script that comes with npm. This is primarily for distribution maintainers to override default configs in a standard and consistent manner.
 
 SEE ALSO
-npm-folders
-npm-config
-npm-config
-package.json
-npm
+---------------
+
+- :option:`npm folders`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`package.json`
+- :option:`npm`

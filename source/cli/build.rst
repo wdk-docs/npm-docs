@@ -30,7 +30,7 @@ It should generally be called during installation, but if you need to run it dir
 SEE ALSO
 -------------------
 
-- npm-install
-- npm-link
-- npm-scripts
-- package.json
+- :option:`npm install`
+- :option:`npm link`
+- :option:`npm scripts`
+- :ref:`package.json`

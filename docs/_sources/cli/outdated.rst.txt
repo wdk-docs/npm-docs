@@ -1,8 +1,6 @@
 npm-outdated
 ============================================================================================
 
-Check for outdated packages
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: outdated
 
-npm outdated [[<@scope>/]<pkg> ...]
+   Check for outdated packages
+
+   .. code-block:: sh
+
+      npm outdated [[<@scope>/]<pkg> ...]
 
 DESCRIPTION
 -------------------
@@ -77,7 +79,7 @@ Max depth for checking dependency tree.
 SEE ALSO
 -------------------
 
-- npm-update
-- npm-dist-tag
-- npm-registry
-- npm-folders
+- :option:`npm update`
+- :option:`npm dist-tag`
+- :ref:`registry`
+- :ref:`folders`

@@ -1,8 +1,6 @@
 npm-ping
 ============================================================================================
 
-Ping npm registry
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: ping
 
-npm ping [--registry <registry>]
+   Ping npm registry
+
+   .. code-block:: sh
+
+      npm ping [--registry <registry>]
 
 DESCRIPTION
 -------------------
@@ -25,6 +27,6 @@ Ping error: {*Detail about error}
 SEE ALSO
 -------------------
 
-- npm-config
-- npm-config
-- npmrc
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

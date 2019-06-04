@@ -1,7 +1,6 @@
 npm-restart
 ============================================================================================
 
-Restart a package
 
 SYNOPSIS
 -------------------
@@ -10,7 +9,11 @@ SYNOPSIS
 
 .. option:: restart
 
-npm restart [-- <args>]
+   Restart a package
+
+   .. code-block:: sh
+
+      npm restart [-- <args>]
 
 DESCRIPTION
 -------------------
@@ -39,9 +42,9 @@ This is the behavior as of npm major version 2. A change in this behavior will b
 SEE ALSO
 -------------------
 
-- npm-run-script
-- npm-scripts
-- npm-test
-- npm-start
-- npm-stop
-- npm-restart
+- :option:`npm run-script`
+- :option:`npm scripts`
+- :option:`npm test`
+- :option:`npm start`
+- :option:`npm stop`
+- :option:`npm restart`

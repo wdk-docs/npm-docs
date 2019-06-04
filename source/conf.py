@@ -59,7 +59,13 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx13'
+html_theme_path = ['_themes']
+modindex_common_prefix = ['npm']
+html_static_path = ['_static']
+# html_sidebars = {'index': ['indexsidebar.html', 'searchbox.html']}
+# html_additional_pages = {'index': 'index.html'}
+# html_use_opensearch = 'http://sphinx-doc.org'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

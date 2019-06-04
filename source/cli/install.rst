@@ -1,8 +1,6 @@
 npm-install
 ============================================================================================
 
-Install a package
-
 SYNOPSIS
 -------------------
 
@@ -10,37 +8,53 @@ SYNOPSIS
 
 .. option:: install
 
-npm install (with no args, in package dir)
-npm install [<@scope>/]<name>
-npm install [<@scope>/]<name>@<tag>
-npm install [<@scope>/]<name>@<version>
-npm install [<@scope>/]<name>@<version range>
-npm install <git-host>:<git-user>/<repo-name>
-npm install <git repo url>
-npm install <tarball file>
-npm install <tarball url>
-npm install <folder>
+   Install a package
 
-aliases: npm i, npm add
-common options: [-P|--save-prod|-D|--save-dev|-O|--save-optional] [-E|--save-exact] [-B|--save-bundle] [--no-save] [--dry-run]
+   .. code-block:: sh
+
+      npm install (with no args, in package dir)
+      npm install [<@scope>/]<name>
+      npm install [<@scope>/]<name>@<tag>
+      npm install [<@scope>/]<name>@<version>
+      npm install [<@scope>/]<name>@<version range>
+      npm install <git-host>:<git-user>/<repo-name>
+      npm install <git repo url>
+      npm install <tarball file>
+      npm install <tarball url>
+      npm install <folder>
+
+      common options: [-P|--save-prod|-D|--save-dev|-O|--save-optional] [-E|--save-exact] [-B|--save-bundle] [--no-save] [--dry-run]
+
+.. option:: i
+
+   npm install alias
+
+.. option:: add
+
+   npm install alias
+
 
 DESCRIPTION
 -------------------
 
-This command installs a package, and any packages that it depends on. If the package has a package-lock or shrinkwrap file, the installation of dependencies will be driven by that, with an npm-shrinkwrap.json taking precedence if both files exist. See package-lock.json and npm-shrinkwrap.
+This command installs a package, and any packages that it depends on.
+If the package has a package-lock or shrinkwrap file, the installation of dependencies will be driven by that, with an :ref:`shrinkwrap.json` taking precedence if both files exist.
+See :ref:`package-lock.json` and :option:`npm shrinkwrap`.
 
-A package is:
+A **package** is:
 
-a) a folder containing a program described by a package.json file
-b) a gzipped tarball containing (a)
-c) a url that resolves to (b)
-d) a <name>@<version> that is published on the registry (see npm-registry) with (c)
-e) a <name>@<tag> (see npm-dist-tag) that points to (d)
-f) a <name> that has a “latest” tag satisfying (e)
-g) a <git remote url> that resolves to (a)
+a. a folder containing a program described by a package.json file
+b. a gzipped tarball containing (a)
+c. a url that resolves to (b)
+d. a <name>@<version> that is published on the registry (see npm-registry) with (c)
+e. a <name>@<tag> (see npm-dist-tag) that points to (d)
+f. a <name> that has a “latest” tag satisfying (e)
+g. a <git remote url> that resolves to (a)
+
 Even if you never publish your package, you can still get a lot of benefits of using npm if you just want to write a node program (a), and perhaps if you also want to be able to easily install it elsewhere after packing it up into a tarball (b).
 
 npm install (in package directory, no arguments):
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install the dependencies in the local node_modules folder.
 
@@ -53,10 +67,12 @@ With the --production flag (or when the NODE_ENV environment variable is set to 
 NOTE: The --production flag has no particular meaning when adding a dependency to a project.
 
 npm install <folder>:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install the package in the directory as a symlink in the current project. Its dependencies will be installed before it’s linked. If <folder> sits inside the root of your project, its dependencies may be hoisted to the toplevel node_modules as they would for other types of dependencies.
 
 npm install <tarball file>:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install a package that is sitting on the filesystem. Note: if you just want to link a dev directory into your npm root, you can do this more easily by using npm link.
 
@@ -67,15 +83,19 @@ The package contents should reside in a subfolder inside the tarball (usually it
 The package must contain a package.json file with name and version properties.
 Example:
 
-    npm install ./package.tgz
-npm install <tarball url>:
+.. code-block:: sh
+
+   npm install ./package.tgz
+   npm install <tarball url>:
 
 Fetch the tarball url, and then install it. In order to distinguish between this and other options, the argument must start with “http://” or “https://”
 
 Example:
 
-    npm install https://github.com/indexzero/forever/tarball/v0.5.6
-npm install [<@scope>/]<name>:
+.. code-block::
+
+   npm install https://github.com/indexzero/forever/tarball/v0.5.6
+   npm install [<@scope>/]<name>:
 
 Do a <name>@<tag> install, where <tag> is the “tag” config. (See npm-config. The config’s default value is latest.)
 
@@ -83,22 +103,42 @@ In most cases, this will install the version of the modules tagged as latest on 
 
 Example:
 
-    npm install sax
+.. code-block:: sh
+
+   npm install sax
+
 npm install saves any specified packages into dependencies by default. Additionally, you can control where and how they get saved with some additional flags:
 
--P, --save-prod: Package will appear in your dependencies. This is the default unless -D or -O are present.
+.. option:: -P
+.. option:: --save-prod
 
--D, --save-dev: Package will appear in your devDependencies.
+   Package will appear in your dependencies. This is the default unless -D or -O are present.
 
--O, --save-optional: Package will appear in your optionalDependencies.
+.. option:: -D
+.. option:: --save-dev
 
---no-save: Prevents saving to dependencies.
+   Package will appear in your devDependencies.
+
+.. option:: -O
+.. option:: --save-optional
+
+   Package will appear in your optionalDependencies.
+
+.. option:: --no-save
+
+   Prevents saving to dependencies.
 
 When using any of the above options to save dependencies to your package.json, there are two additional, optional flags:
 
--E, --save-exact: Saved dependencies will be configured with an exact version rather than using npm’s default semver range operator.
+.. option:: -E
+.. option:: --save-exact
 
--B, --save-bundle: Saved dependencies will also be added to your bundleDependencies list.
+   Saved dependencies will be configured with an exact version rather than using npm’s default semver range operator.
+
+.. option:: -B
+.. option:: --save-bundle
+
+   Saved dependencies will also be added to your bundleDependencies list.
 
 Further, if you have an npm-shrinkwrap.json or package-lock.json then it will be updated as well.
 
@@ -108,6 +148,9 @@ Note: if you do not include the @-symbol on your scope name, npm will interpret 
 
 Examples:
 
+.. code-block:: sh
+
+
     npm install sax
     npm install githubname/reponame
     npm install @myorg/privatepackage
@@ -115,25 +158,35 @@ Examples:
     npm install dtrace-provider --save-optional
     npm install readable-stream --save-exact
     npm install ansi-regex --save-bundle
+
 Note: If there is a file or folder named <name> in the current working directory, then it will try to install that, and only try to fetch the package by name if it is not valid.
 
 npm install [<@scope>/]<name>@<tag>:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install the version of the package that is referenced by the specified tag. If the tag does not exist in the registry data for that package, then this will fail.
 
 Example:
 
+.. code-block:: sh
+
     npm install sax@latest
     npm install @myorg/mypackage@latest
+
 npm install [<@scope>/]<name>@<version>:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install the specified version of the package. This will fail if the version has not been published to the registry.
 
 Example:
 
+.. code-block:: sh
+
     npm install sax@0.1.1
     npm install @myorg/privatepackage@1.5.0
+
 npm install [<@scope>/]<name>@<version range>:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install a version of the package matching the specified version range. This will follow the same rules for resolving dependencies described in package.json.
 
@@ -141,9 +194,13 @@ Note that most version ranges must be put in quotes so that your shell will trea
 
 Example:
 
+.. code-block:: sh
+
     npm install sax@">=0.1.0 <0.2.0"
     npm install @myorg/privatepackage@">=0.1.0 <0.2.0"
+
 npm install <git remote url>:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Installs the package from the hosted git provider, cloning it with git. For a full git remote url, only that URL will be attempted.
 
@@ -169,13 +226,19 @@ See the git man page for details.
 
 Examples:
 
+.. code-block:: sh
+
     npm install git+ssh://git@github.com:npm/cli.git#v1.0.27
     npm install git+ssh://git@github.com:npm/cli#semver:^5.0
     npm install git+https://isaacs@github.com/npm/cli.git
     npm install git://github.com/npm/cli.git#v1.0.27
     GIT_SSH_COMMAND='ssh -i ~/.ssh/custom_ident' npm install git+ssh://git@github.com:npm/cli.git
+
 npm install <githubname>/<githubrepo>[#<commit-ish>]:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 npm install github:<githubname>/<githubrepo>[#<commit-ish>]:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install the package at https://github.com/githubname/githubrepo by attempting to clone it using git.
 
@@ -185,9 +248,13 @@ As with regular git dependencies, dependencies and devDependencies will be insta
 
 Examples:
 
+.. code-block:: sh
+
     npm install mygithubuser/myproject
     npm install github:mygithubuser/myproject
+
 npm install gist:[<githubname>/]<gistID>[#<commit-ish>|#semver:<semver>]:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install the package at https://gist.github.com/gistID by attempting to clone it using git. The GitHub username associated with the gist is optional and will not be saved in package.json.
 
@@ -195,7 +262,10 @@ As with regular git dependencies, dependencies and devDependencies will be insta
 
 Example:
 
+.. code-block:: sh
+
     npm install gist:101a11beef
+
 npm install bitbucket:<bitbucketname>/<bitbucketrepo>[#<commit-ish>]:
 
 Install the package at https://bitbucket.org/bitbucketname/bitbucketrepo by attempting to clone it using git.
@@ -206,7 +276,10 @@ As with regular git dependencies, dependencies and devDependencies will be insta
 
 Example:
 
+.. code-block:: sh
+
     npm install bitbucket:mybitbucketuser/myproject
+
 npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:
 
 Install the package at https://gitlab.com/gitlabname/gitlabrepo by attempting to clone it using git.
@@ -217,11 +290,17 @@ As with regular git dependencies, dependencies and devDependencies will be insta
 
 Example:
 
+.. code-block:: sh
+
     npm install gitlab:mygitlabuser/myproject
     npm install gitlab:myusr/myproj#semver:^5.0
+
 You may combine multiple arguments, and even multiple types of arguments. For example:
 
-npm install sax@">=0.1.0 <0.2.0" bench supervisor
+.. code-block:: sh
+
+    npm install sax@">=0.1.0 <0.2.0" bench supervisor
+
 The --tag argument will apply to all of the specified install targets. If a tag with the given name exists, the tagged version is preferred over newer versions.
 
 The --dry-run argument will report in the usual way what the install would have done without actually installing anything.
@@ -258,6 +337,8 @@ The --no-audit argument can be used to disable sending of audit reports to the c
 See npm-config. Many of the configuration params have some effect on installation, since that’s most of what npm does.
 
 ALGORITHM
+--------------
+
 To install a package, npm uses the following algorithm:
 
 load the existing node_modules tree from disk
@@ -292,6 +373,8 @@ Because B’s D@1 will be installed in the top level, C now has to install D@2 p
 See npm-folders for a more detailed description of the specific folder structures that npm creates.
 
 Limitations of npm’s Install Algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 npm will refuse to install any package with an identical name to the current package. This can be overridden with the --force flag, but in most cases can simply be addressed by changing the local package name.
 
 There are some very rare and pathological edge-cases where a cycle can cause npm to try to install a never-ending tree of packages. Here is the simplest case:
@@ -304,18 +387,18 @@ To avoid this situation, npm flat-out refuses to install any name@version that i
 SEE ALSO
 -------------------
 
-- npm-folders
-- npm-update
-- npm-audit
-- npm-link
-- npm-rebuild
-- npm-scripts
-- npm-build
-- npm-config
-- npm-config
-- npmrc
-- npm-registry
-- npm-dist-tag
-- npm-uninstall
-- npm-shrinkwrap
-- package.json
+- :ref:`folders`
+- :option:`npm update`
+- :option:`npm audit`
+- :option:`npm link`
+- :option:`npm rebuild`
+- :option:`npm scripts`
+- :option:`npm build`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :ref:`registry`
+- :option:`npm dist-tag`
+- :option:`npm uninstall`
+- :option:`npm shrinkwrap`
+- :ref:`package.json`

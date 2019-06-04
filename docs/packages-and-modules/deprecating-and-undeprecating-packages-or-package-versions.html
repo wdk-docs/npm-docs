@@ -1,208 +1,216 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>&lt;no title&gt; &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>弃用和取消激活软件包或软件包版本 &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="transferring-a-package-from-a-user-account-to-another-user-account.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="updating-your-published-package-version-number.html" /> 
-</head>
+    <link rel="next" title="将包从用户帐户转移到另一个用户帐户" href="transferring-a-package-from-a-user-account-to-another-user-account.html" />
+    <link rel="prev" title="更新已发布的软件包版本号" href="updating-your-published-package-version-number.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="../getting-started/index.html">入门</a></li>
+    <li><a href="index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
+  </div>
 </div>
 
-          
-        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="transferring-a-package-from-a-user-account-to-another-user-account.html" title="将包从用户帐户转移到另一个用户帐户"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="updating-your-published-package-version-number.html" title="更新已发布的软件包版本号"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">About npm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">包和模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm Enterprise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI documentation</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">包和模块</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">弃用和取消激活软件包或软件包版本</a><ul>
+<li><a class="reference internal" href="#deprecating-an-entire-package-or-a-single-version-of-a-package">Deprecating an entire package or a single version of a package</a></li>
+<li><a class="reference internal" href="#deprecating-an-entire-package">Deprecating an entire package</a></li>
+<li><a class="reference internal" href="#deprecating-a-single-version-of-a-package">Deprecating a single version of a package</a></li>
+<li><a class="reference internal" href="#undeprecating-a-package-or-version">Undeprecating a package or version</a></li>
+<li><a class="reference internal" href="#transferring-a-deprecated-package-to-npm">Transferring a deprecated package to npm</a></li>
+</ul>
+</li>
 </ul>
 
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="index.html">包和模块</a> &raquo;</li>
-        
-      <li>&lt;no title&gt;</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  
-
-           </div>
-           
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="transferring-a-package-from-a-user-account-to-another-user-account.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="updating-your-published-package-version-number.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="updating-your-published-package-version-number.html"
+                        title="上一章">更新已发布的软件包版本号</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="transferring-a-package-from-a-user-account-to-another-user-account.html"
+                        title="下一章">将包从用户帐户转移到另一个用户帐户</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/packages-and-modules/deprecating-and-undeprecating-packages-or-package-versions.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
     </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
 
-    </section>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="deprecating-and-undeprecating-packages-or-package-versions">
+<h1>弃用和取消激活软件包或软件包版本<a class="headerlink" href="#deprecating-and-undeprecating-packages-or-package-versions" title="永久链接至标题">¶</a></h1>
+<p>If you no longer wish to maintain a package, or if you would like to encourage users to update to a new or different version, you can deprecate it. Deprecating a package or version will print a message to the terminal when a user installs it.</p>
+<p>A deprecation warning or message can say anything. You may wish to include a message encouraging users to update to a specific version, or an alternate, supported package.</p>
+<p>Note: We strongly recommend deprecating packages or package versions instead of unpublishing them, because unpublishing removes a package from the registry entirely, meaning anyone who relied on it will no longer be able to use it, with no warning.</p>
+<div class="section" id="deprecating-an-entire-package-or-a-single-version-of-a-package">
+<h2>Deprecating an entire package or a single version of a package<a class="headerlink" href="#deprecating-an-entire-package-or-a-single-version-of-a-package" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="deprecating-an-entire-package">
+<h2>Deprecating an entire package<a class="headerlink" href="#deprecating-an-entire-package" title="永久链接至标题">¶</a></h2>
+<p>Deprecating an entire package will remove it from search results on the npm website, and a deprecation message will also be displayed on the package page.</p>
+<p>deprecation message saying package no longer supported use at your own risk</p>
+<p>To deprecate an entire package, run the following command, replacing &lt;package-name&gt; with the name of your package, and “&lt;message&gt;” with your deprecation message:</p>
+<p>npm deprecate &lt;package-name&gt; “&lt;message&gt;”
+If you have enabled two-factor authentication, add a one-time password to the command, –otp=123456 (where 123456 is the code from your authenticator app).</p>
+</div>
+<div class="section" id="deprecating-a-single-version-of-a-package">
+<h2>Deprecating a single version of a package<a class="headerlink" href="#deprecating-a-single-version-of-a-package" title="永久链接至标题">¶</a></h2>
+<p>When you deprecate a version fo a package, a red message will be displayed on that version’s package page, similar to deprecating an entire package.</p>
+<p>弃用消息说不再支持升级到&#64;latest的版本</p>
+<p>To deprecate a package version, run the following command, replacing &lt;package-name&gt; with the name of your package, &lt;version&gt; with your version number, and “&lt;message&gt;” with your deprecation message:</p>
+<p>npm deprecate &lt;package-name&gt;&#64;&lt;version&gt; “&lt;message&gt;”
+The CLI will also accept version ranges for &lt;version&gt;.</p>
+<p>If you have two-factor auth, add a one-time password to the command, –otp=123456 (where 123456 is the code from your authenticator).</p>
+</div>
+<div class="section" id="undeprecating-a-package-or-version">
+<h2>Undeprecating a package or version<a class="headerlink" href="#undeprecating-a-package-or-version" title="永久链接至标题">¶</a></h2>
+<p>To undeprecate a package, replace “&lt;message&gt;” with “” (an empty string) in one of the above commands.</p>
+<p>For example, to undeprecate a package version, run the following command, replacing &lt;package-name&gt; with the name of your package, and &lt;version&gt; with your version number:</p>
+<p>npm deprecate &lt;package-name&gt;&#64;&lt;version&gt; “”
+If you have two-factor auth, add a one-time password to the command, –otp=123456 (where 123456 is the code from your authenticator).</p>
+</div>
+<div class="section" id="transferring-a-deprecated-package-to-npm">
+<h2>Transferring a deprecated package to npm<a class="headerlink" href="#transferring-a-deprecated-package-to-npm" title="永久链接至标题">¶</a></h2>
+<p>If you are no longer maintaining a package, but other users depend on it, and you’d like to remove it from your user profile, you can transfer it to the &#64;npm user account, which is owned by npm, Inc.</p>
+<p>Note: Once you transfer a package to the npm account, you will no longer be able to update it.
+To transfer a package to the npm user account, run the following two commands in order, replacing &lt;user&gt; with your npm user name, and &lt;package-name&gt; with the package you want to transfer:</p>
+<p>npm owner add npm &lt;package-name&gt;
+npm owner rm &lt;user&gt; &lt;package-name&gt;
+If you have two-factor auth, add a one-time password to the command, –otp=123456 (where 123456 is the code from your authenticator).</p>
+</div>
+</div>
 
-  </div>
-  
 
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="transferring-a-package-from-a-user-account-to-another-user-account.html" title="将包从用户帐户转移到另一个用户帐户"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="updating-your-published-package-version-number.html" title="更新已发布的软件包版本号"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+          <li class="nav-item nav-item-1"><a href="index.html" >包和模块</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

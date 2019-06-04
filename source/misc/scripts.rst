@@ -1,3 +1,5 @@
+.. _scripts:
+
 npm-scripts
 ======================================================
 
@@ -130,8 +132,11 @@ Try not to use scripts to do what npm can do for you. Read through package.json 
 Inspect the env to determine where to put things. For instance, if the npm_config_binroot environment variable is set to /home/user/bin, then don’t try to install executables into /usr/local/bin. The user probably set it up that way for a reason.
 Don’t prefix your script commands with “sudo”. If root permissions are required for some reason, then it’ll fail with that error, and the user will sudo the npm command in question.
 Don’t use install. Use a .gyp file for compilation, and prepublish for anything else. You should almost never have to explicitly set a preinstall or install script. If you are doing this, please consider if there is another option. The only valid use of install or preinstall scripts is for compilation which must be done on the target architecture.
+
 SEE ALSO
-npm-run-script
-package.json
-npm-developers
-npm-install
+--------------
+
+- :option:`npm run-script`
+- :ref:`package.json`
+- :option:`npm developers`
+- :option:`npm install`

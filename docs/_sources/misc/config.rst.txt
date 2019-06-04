@@ -1,3 +1,5 @@
+.. _config:
+
 npm-config
 ======================================================
 
@@ -28,31 +30,32 @@ Default Configs
 Run npm config ls -l to see a set of configuration parameters that are internal to npm, and are defaults if nothing else is specified.
 
 Shorthands and Other CLI Niceties
-The following shorthands are parsed on the command-line:
+The following shorthands are parsed on the command-line::
 
--v: --version
--h, -?, --help, -H: --usage
--s, --silent: --loglevel silent
--q, --quiet: --loglevel warn
--d: --loglevel info
--dd, --verbose: --loglevel verbose
--ddd: --loglevel silly
--g: --global
--C: --prefix
--l: --long
--m: --message
--p, --porcelain: --parseable
--reg: --registry
--f: --force
--desc: --description
--S: --save
--P: --save-prod
--D: --save-dev
--O: --save-optional
--B: --save-bundle
--E: --save-exact
--y: --yes
--n: --yes false
+    -v: --version
+    -h, -?, --help, -H: --usage
+    -s, --silent: --loglevel silent
+    -q, --quiet: --loglevel warn
+    -d: --loglevel info
+    -dd, --verbose: --loglevel verbose
+    -ddd: --loglevel silly
+    -g: --global
+    -C: --prefix
+    -l: --long
+    -m: --message
+    -p, --porcelain: --parseable
+    -reg: --registry
+    -f: --force
+    -desc: --description
+    -S: --save
+    -P: --save-prod
+    -D: --save-dev
+    -O: --save-optional
+    -B: --save-bundle
+    -E: --save-exact
+    -y: --yes
+    -n: --yes false
+
 ll and la commands: ls --long
 If the specified configuration param resolves unambiguously to a known configuration parameter, then it is expanded to that configuration parameter. For example:
 

@@ -1,8 +1,6 @@
 npm-dedupe
 ============================================================================================
 
-Reduce duplication
-
 SYNOPSIS
 -------------------
 
@@ -10,10 +8,14 @@ SYNOPSIS
 
 .. option:: dedupe
 
-npm dedupe
-npm ddp
+   Reduce duplication
 
-aliases: find-dupes, ddp
+   .. code:: sh
+
+      npm dedupe
+      npm ddp
+
+   aliases: find-dupes, ddp
 
 DESCRIPTION
 -------------------
@@ -50,6 +52,6 @@ Note that this operation transforms the dependency tree, but will never result i
 SEE ALSO
 -------------------
 
-- npm-ls
-- npm-update
-- npm-install
+- :option:`npm ls`
+- :option:`npm update`
+- :option:`npm install`

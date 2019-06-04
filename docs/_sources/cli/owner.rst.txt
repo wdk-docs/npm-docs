@@ -1,7 +1,6 @@
 npm-owner
 ============================================================================================
 
-Manage package owners
 
 SYNOPSIS
 -------------------
@@ -10,11 +9,15 @@ SYNOPSIS
 
 .. option:: owner
 
-npm owner add <user> [<@scope>/]<pkg>
-npm owner rm <user> [<@scope>/]<pkg>
-npm owner ls [<@scope>/]<pkg>
+   Manage package owners
 
-aliases: author
+   .. code-block:: sh
+
+      npm owner add <user> [<@scope>/]<pkg>
+      npm owner rm <user> [<@scope>/]<pkg>
+      npm owner ls [<@scope>/]<pkg>
+
+   aliases: author
 
 DESCRIPTION
 -------------------
@@ -31,7 +34,7 @@ If you have two-factor authentication enabled with auth-and-writes then you’ll
 SEE ALSO
 -------------------
 
-- npm-publish
-- npm-registry
-- npm-adduser
-- npm-disputes
+- :option:`npm publish`
+- :ref:`registry`
+- :option:`npm adduser`
+- :option:`npm disputes`

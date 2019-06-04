@@ -1,8 +1,6 @@
 npm-profile
 ============================================================================================
 
-Change settings on your registry profile
-
 SYNOPSIS
 -------------------
 
@@ -10,11 +8,15 @@ SYNOPSIS
 
 .. option:: profile
 
-npm profile get [--json|--parseable] [<property>]
-npm profile set [--json|--parseable] <property> <value>
-npm profile set password
-npm profile enable-2fa [auth-and-writes|auth-only]
-npm profile disable-2fa
+   Change settings on your registry profile
+
+   .. code-block:: sh
+
+      npm profile get [--json|--parseable] [<property>]
+      npm profile set [--json|--parseable] <property> <value>
+      npm profile set password
+      npm profile enable-2fa [auth-and-writes|auth-only]
+      npm profile disable-2fa
 
 DESCRIPTION
 -------------------
@@ -60,4 +62,4 @@ All of the npm profile subcommands accept --json and --parseable and will tailor
 SEE ALSO
 -------------------
 
-- npm-config
+- :option:`npm config`

@@ -1,0 +1,5 @@
+About the Enterprise admin user
+=============================================
+
+The Enterprise admin user has the most far-reaching permissions on the Enterprise instance and can manage instance settings, Orgs, users, and packages. For a full list of Enterprise admin permissions, see “npm Enterprise roles and permissions”.
+

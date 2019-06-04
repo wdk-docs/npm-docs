@@ -1,0 +1,4 @@
+Updating billing information
+==============================================================================
+
+As an npm Enterprise billing manager, you can update the payment method for your Enterprise instance by contacting your npm account manager or our Sales team.

@@ -17,6 +17,12 @@ npm Documentation
    enterprise/index
    cli/index
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   files/index
+   misc/contents
 
 Indices and tables
 ==================

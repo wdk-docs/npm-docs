@@ -1,7 +1,6 @@
 npm-unpublish
 ============================================================================================
 
-Remove a package from the registry
 
 SYNOPSIS
 -------------------
@@ -10,7 +9,11 @@ SYNOPSIS
 
 .. option:: unpublish
 
-npm unpublish [<@scope>/]<pkg>[@<version>]
+   Remove a package from the registry
+
+   .. code-block:: sh
+
+      npm unpublish [<@scope>/]<pkg>[@<version>]
 
 WARNING
 -------------------
@@ -37,8 +40,8 @@ The scope is optional and follows the usual rules for npm-scope.
 SEE ALSO
 -------------------
 
-- npm-deprecate
-- npm-publish
-- npm-registry
-- npm-adduser
-- npm-owner
+- :option:`npm deprecate`
+- :option:`npm publish`
+- :ref:`registry`
+- :option:`npm adduser`
+- :option:`npm owner`

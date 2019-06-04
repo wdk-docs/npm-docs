@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-02 17:11+0800\n"
+"POT-Creation-Date: 2019-06-04 20:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 msgid "npm Documentation"
 msgstr ""
 
-#: ../../source/index.rst:22
+#: ../../source/index.rst:28
 msgid "Indices and tables"
 msgstr ""
 
-#: ../../source/index.rst:24
+#: ../../source/index.rst:30
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../source/index.rst:25
+#: ../../source/index.rst:31
 msgid ":ref:`modindex`"
 msgstr ""
 
-#: ../../source/index.rst:26
+#: ../../source/index.rst:32
 msgid ":ref:`search`"
 msgstr ""
 

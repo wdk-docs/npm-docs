@@ -1,8 +1,6 @@
 npm-publish
 ============================================================================================
 
-Publish a package
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: publish
 
-npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>] [--otp otpcode] [--dry-run]
+   Publish a package
+
+   .. code-block:: sh
+
+      npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>] [--otp otpcode] [--dry-run]
 
 Publishes '.' if no argument supplied
 Sets tag 'latest' if no --tag specified
@@ -43,11 +45,11 @@ Similar to --dry-run see npm-pack, which figures out the files to be included an
 SEE ALSO
 -------------------
 
-- npm-registry
-- npm-scope
-- npm-adduser
-- npm-owner
-- npm-deprecate
-- npm-dist-tag
-- npm-pack
-- npm-profile
+- :ref:`registry`
+- :ref:`scope`
+- :option:`npm adduser`
+- :option:`npm owner`
+- :option:`npm deprecate`
+- :option:`npm dist-tag`
+- :option:`npm pack`
+- :option:`npm profile`

@@ -10,7 +10,9 @@ SYNOPSIS
 
 .. option:: doctor
 
-npm doctor
+.. code-block:: sh
+
+   npm doctor
 
 DESCRIPTION
 -------------------
@@ -54,6 +56,6 @@ When an npm package is published, the publishing process generates a checksum th
 SEE ALSO
 -------------------
 
-- npm-bugs
-- npm-help
-- npm-ping
+- :option:`npm bugs`
+- :option:`npm help`
+- :option:`npm ping`

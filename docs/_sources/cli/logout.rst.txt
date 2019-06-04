@@ -1,8 +1,6 @@
 npm-logout
 ============================================================================================
 
-Log out of the registry
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: logout
 
-npm logout [--registry=<url>] [--scope=<@scope>]
+   Log out of the registry
+
+   .. code-block:: sh
+
+      npm logout [--registry=<url>] [--scope=<@scope>]
 
 DESCRIPTION
 -------------------
@@ -43,9 +45,9 @@ npm logout --scope=@myco
 SEE ALSO
 -------------------
 
-- npm-adduser
-- npm-registry
-- npm-config
-- npm-config
-- npmrc
-- npm-whoami
+- :option:`npm adduser`
+- :ref:`registry`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :option:`npm whoami`

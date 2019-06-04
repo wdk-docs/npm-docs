@@ -1,8 +1,6 @@
 npm-install-test
 ============================================================================================
 
-Install package(s) and run tests
-
 SYNOPSIS
 -------------------
 
@@ -10,17 +8,22 @@ SYNOPSIS
 
 .. option:: install-test
 
-npm install-test (with no args, in package dir)
-npm install-test [<@scope>/]<name>
-npm install-test [<@scope>/]<name>@<tag>
-npm install-test [<@scope>/]<name>@<version>
-npm install-test [<@scope>/]<name>@<version range>
-npm install-test <tarball file>
-npm install-test <tarball url>
-npm install-test <folder>
+   Install package(s) and run tests
 
-alias: npm it
-common options: [--save|--save-dev|--save-optional] [--save-exact] [--dry-run]
+   .. code-block:: sh
+
+      npm install-test (with no args, in package dir)
+      npm install-test [<@scope>/]<name>
+      npm install-test [<@scope>/]<name>@<tag>
+      npm install-test [<@scope>/]<name>@<version>
+      npm install-test [<@scope>/]<name>@<version range>
+      npm install-test <tarball file>
+      npm install-test <tarball url>
+      npm install-test <folder>
+
+   alias: npm it
+
+   common options: [--save|--save-dev|--save-optional] [--save-exact] [--dry-run]
 
 DESCRIPTION
 -------------------
@@ -30,5 +33,5 @@ This command runs an npm install followed immediately by an npm test. It takes e
 SEE ALSO
 -------------------
 
-- npm-install
-- npm-test
+- `npm-install`
+- `npm-test`

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-02 19:45+0800\n"
+"POT-Creation-Date: 2019-06-04 20:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../source/misc/coding-style.rst:2
+#: ../../source/misc/coding-style.rst:4
 msgid "npm-coding-style"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:4
+#: ../../source/misc/coding-style.rst:6
 msgid ""
 "npm's \"funny\" coding style DESCRIPTION npm’s coding style is a bit "
 "unconventional. It is not different for difference’s sake, but rather a "
@@ -29,77 +29,77 @@ msgid ""
 "make bugs more apparent."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:8
+#: ../../source/misc/coding-style.rst:10
 msgid ""
 "If you want to contribute to npm (which is very encouraged), you should "
 "make your code conform to npm’s style."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:10
+#: ../../source/misc/coding-style.rst:12
 msgid ""
 "Note: this concerns npm’s code not the specific packages that you can "
 "download from the npm registry."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:12
+#: ../../source/misc/coding-style.rst:14
 msgid ""
 "Line Length Keep lines shorter than 80 characters. It’s better for lines "
 "to be too short than to be too long. Break up long lists, objects, and "
 "other statements onto multiple lines."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:15
+#: ../../source/misc/coding-style.rst:17
 msgid ""
 "Indentation Two-spaces. Tabs are better, but they look like hell in web "
 "browsers (and on GitHub), and node uses 2 spaces, so that’s that."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:18
+#: ../../source/misc/coding-style.rst:20
 msgid "Configure your editor appropriately."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:20
+#: ../../source/misc/coding-style.rst:22
 msgid ""
 "Curly braces Curly braces belong on the same line as the thing that "
 "necessitates them."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:23 ../../source/misc/coding-style.rst:32
-#: ../../source/misc/coding-style.rst:81
+#: ../../source/misc/coding-style.rst:25 ../../source/misc/coding-style.rst:34
+#: ../../source/misc/coding-style.rst:83
 msgid "Bad:"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:25
+#: ../../source/misc/coding-style.rst:27
 msgid "function () { Good:"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:29
+#: ../../source/misc/coding-style.rst:31
 msgid ""
 "function () { If a block needs to wrap to the next line, use a curly "
 "brace. Don’t use it if it doesn’t."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:34
+#: ../../source/misc/coding-style.rst:36
 msgid "if (foo) { bar() } while (foo)"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:36 ../../source/misc/coding-style.rst:41
+#: ../../source/misc/coding-style.rst:38 ../../source/misc/coding-style.rst:43
 msgid "bar()"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:37
+#: ../../source/misc/coding-style.rst:39
 msgid "Good:"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:39
+#: ../../source/misc/coding-style.rst:41
 msgid "if (foo) bar() while (foo) {"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:42
+#: ../../source/misc/coding-style.rst:44
 msgid "} Semicolons Don’t use them except in four situations:"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:46
+#: ../../source/misc/coding-style.rst:48
 msgid ""
 "for (;;) loops. They’re actually required. null loops like: while "
 "(something) ; (But you’d better have a good reason for doing that.) case "
@@ -109,33 +109,33 @@ msgid ""
 "semicolon usage:"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:52
+#: ../../source/misc/coding-style.rst:54
 msgid ""
 ";(x || y).doSomething() ;[a, b, c].forEach(doSomething) for (var i = 0; i"
 " < 10; i ++) {"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:57
+#: ../../source/misc/coding-style.rst:59
 msgid "switch (state) {"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:56
+#: ../../source/misc/coding-style.rst:58
 msgid ""
 "case 'begin': start(); continue case 'end': finish(); break default: "
 "throw new Error('unknown state')"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:59
+#: ../../source/misc/coding-style.rst:61
 msgid "} end()"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:61
+#: ../../source/misc/coding-style.rst:63
 msgid ""
 "} Note that starting lines with - and + also should be prefixed with a "
 "semicolon, but this is much less common."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:64
+#: ../../source/misc/coding-style.rst:66
 msgid ""
 "Comma First If there is a list of things separated by commas, and it "
 "wraps across multiple lines, put the comma at the start of the next line,"
@@ -143,39 +143,39 @@ msgid ""
 "the list on a line by itself. For example:"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:76
+#: ../../source/misc/coding-style.rst:78
 msgid "var magicWords = [ 'abracadabra'"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:68
+#: ../../source/misc/coding-style.rst:70
 msgid ", 'gesundheit' , 'ventrilo' ]"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:72
+#: ../../source/misc/coding-style.rst:74
 msgid ", spells = { 'fireball'"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:71
+#: ../../source/misc/coding-style.rst:73
 msgid "function () { setOnFire() }"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:72
+#: ../../source/misc/coding-style.rst:74
 msgid ", 'water' : function () { putOut() } }"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:74
+#: ../../source/misc/coding-style.rst:76
 msgid ", a = 1 , b = 'abc' , etc , somethingElse"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:78
+#: ../../source/misc/coding-style.rst:80
 msgid "Quotes Use single quotes for strings except to avoid escaping."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:83
+#: ../../source/misc/coding-style.rst:85
 msgid "var notOk = \"Just double quotes\" Good:"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:86
+#: ../../source/misc/coding-style.rst:88
 msgid ""
 "var ok = 'String contains \"double\" quotes' var alsoOk = \"String "
 "contains 'single' quotes or apostrophe\" Whitespace Put a single space in"
@@ -183,19 +183,19 @@ msgid ""
 "space wherever it makes things more readable."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:91
+#: ../../source/misc/coding-style.rst:93
 msgid ""
 "Don’t leave trailing whitespace at the end of lines. Don’t indent empty "
 "lines. Don’t use more spaces than are helpful."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:93
+#: ../../source/misc/coding-style.rst:95
 msgid ""
 "Functions Use named functions. They make stack traces a lot easier to "
 "read."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:96
+#: ../../source/misc/coding-style.rst:98
 msgid ""
 "Callbacks, Sync/async Style Use the asynchronous/non-blocking versions of"
 " things as much as possible. It might make more sense for npm to use the "
@@ -203,30 +203,30 @@ msgid ""
 "stuff all uses the same callback-passing methodology."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:99
+#: ../../source/misc/coding-style.rst:101
 msgid ""
 "The callback should always be the last argument in the list. Its first "
 "argument is the Error or null."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:101
+#: ../../source/misc/coding-style.rst:103
 msgid ""
 "Be very careful never to ever ever throw anything. It’s worse than "
 "useless. Just send the error message back as the first argument to the "
 "callback."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:103
+#: ../../source/misc/coding-style.rst:105
 msgid ""
 "Errors Always create a new Error object with your message. Don’t just "
 "return a string message to the callback. Stack traces are handy."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:106
+#: ../../source/misc/coding-style.rst:108
 msgid "Logging Logging is done using the npmlog utility."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:109
+#: ../../source/misc/coding-style.rst:111
 msgid ""
 "Please clean up logs when they are no longer helpful. In particular, "
 "logging the same object over and over again is not helpful. Logs should "
@@ -234,79 +234,91 @@ msgid ""
 "occurs."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:111
+#: ../../source/misc/coding-style.rst:113
 msgid "Use appropriate log levels. See npm-config and search for “loglevel”."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:113
+#: ../../source/misc/coding-style.rst:115
 msgid ""
 "Case, naming, etc. Use lowerCamelCase for multiword identifiers when they"
 " refer to objects, functions, methods, properties, or anything not "
 "specified in this section."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:116
+#: ../../source/misc/coding-style.rst:118
 msgid "Use UpperCamelCase for class names (things that you’d pass to “new”)."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:118
+#: ../../source/misc/coding-style.rst:120
 msgid "Use all-lower-hyphen-css-case for multiword filenames and config keys."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:120
+#: ../../source/misc/coding-style.rst:122
 msgid "Use named functions. They make stack traces easier to follow."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:122
+#: ../../source/misc/coding-style.rst:124
 msgid ""
 "Use CAPS_SNAKE_CASE for constants, things that should never change and "
 "are rarely used."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:124
+#: ../../source/misc/coding-style.rst:126
 msgid ""
 "Use a single uppercase letter for function names where the function would"
 " normally be anonymous, but needs to call itself recursively. It makes it"
 " clear that it’s a “throwaway” function."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:126
+#: ../../source/misc/coding-style.rst:128
 msgid ""
 "null, undefined, false, 0 Boolean variables and functions should always "
 "be either true or false. Don’t set it to 0 unless it’s supposed to be a "
 "number."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:129
+#: ../../source/misc/coding-style.rst:131
 msgid "When something is intentionally missing or removed, set it to null."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:131
+#: ../../source/misc/coding-style.rst:133
 msgid ""
 "Don’t set things to undefined. Reserve that value to mean “not yet set to"
 " anything.”"
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:133
+#: ../../source/misc/coding-style.rst:135
 msgid "Boolean objects are forbidden."
 msgstr ""
 
-#: ../../source/misc/coding-style.rst:135
-msgid "SEE ALSO npm-developers npm"
+#: ../../source/misc/coding-style.rst:138 ../../source/misc/developers.rst:146
+#: ../../source/misc/disputes.rst:59 ../../source/misc/orgs.rst:51
+#: ../../source/misc/registry.rst:53 ../../source/misc/removal.rst:35
+#: ../../source/misc/scope.rst:65 ../../source/misc/scripts.rst:137
+msgid "SEE ALSO"
 msgstr ""
 
-#: ../../source/misc/config.rst:2
-msgid "npm-config"
+#: ../../source/misc/coding-style.rst:140 ../../source/misc/registry.rst:58
+#: ../../source/misc/scripts.rst:141
+msgid ":option:`npm developers`"
+msgstr ""
+
+#: ../../source/misc/coding-style.rst:141 ../../source/misc/developers.rst:148
+msgid ":option:`npm`"
 msgstr ""
 
 #: ../../source/misc/config.rst:4
+msgid "npm-config"
+msgstr ""
+
+#: ../../source/misc/config.rst:6
 msgid ""
 "More than you probably want to know about npm configuration DESCRIPTION "
 "npm gets its configuration values from the following sources, sorted by "
 "priority:"
 msgstr ""
 
-#: ../../source/misc/config.rst:8
+#: ../../source/misc/config.rst:10
 msgid ""
 "Command Line Flags Putting --foo bar on the command line sets the foo "
 "configuration parameter to \"bar\". A -- argument tells the cli parser to"
@@ -314,7 +326,7 @@ msgid ""
 "the value to true."
 msgstr ""
 
-#: ../../source/misc/config.rst:11
+#: ../../source/misc/config.rst:13
 msgid ""
 "Example: --flag1 --flag2 will set both configuration parameters to true, "
 "while --flag1 --flag2 bar will set flag1 to true, and flag2 to bar. "
@@ -322,7 +334,7 @@ msgid ""
 " true, and the bar is taken as a command argument."
 msgstr ""
 
-#: ../../source/misc/config.rst:13
+#: ../../source/misc/config.rst:15
 msgid ""
 "Environment Variables Any environment variables that start with "
 "npm_config_ will be interpreted as a configuration parameter. For "
@@ -335,17 +347,17 @@ msgid ""
 "uppercase ones that you might set. For details see this issue."
 msgstr ""
 
-#: ../../source/misc/config.rst:16
+#: ../../source/misc/config.rst:18
 msgid ""
 "Notice that you need to use underscores instead of dashes, so --allow-"
 "same-version would become npm_config_allow_same_version=true."
 msgstr ""
 
-#: ../../source/misc/config.rst:18
+#: ../../source/misc/config.rst:20
 msgid "npmrc Files The four relevant files are:"
 msgstr ""
 
-#: ../../source/misc/config.rst:21
+#: ../../source/misc/config.rst:23
 msgid ""
 "per-project configuration file (/path/to/my/project/.npmrc) per-user "
 "configuration file (defaults to $HOME/.npmrc; configurable via CLI option"
@@ -356,33 +368,27 @@ msgid ""
 " details."
 msgstr ""
 
-#: ../../source/misc/config.rst:27
+#: ../../source/misc/config.rst:29
 msgid ""
 "Default Configs Run npm config ls -l to see a set of configuration "
 "parameters that are internal to npm, and are defaults if nothing else is "
 "specified."
 msgstr ""
 
-#: ../../source/misc/config.rst:30
+#: ../../source/misc/config.rst:32
 msgid ""
 "Shorthands and Other CLI Niceties The following shorthands are parsed on "
-"the command-line:"
-msgstr ""
-
-#: ../../source/misc/config.rst:33
-msgid ""
-"-v: --version -h, -?, --help, -H: --usage -s, --silent: --loglevel silent"
-" -q, --quiet: --loglevel warn -d: --loglevel info -dd, --verbose: "
-"--loglevel verbose -ddd: --loglevel silly -g: --global -C: --prefix -l: "
-"--long -m: --message -p, --porcelain: --parseable -reg: --registry -f: "
-"--force -desc: --description -S: --save -P: --save-prod -D: --save-dev "
-"-O: --save-optional -B: --save-bundle -E: --save-exact -y: --yes -n: "
-"--yes false ll and la commands: ls --long If the specified configuration "
-"param resolves unambiguously to a known configuration parameter, then it "
-"is expanded to that configuration parameter. For example:"
+"the command-line::"
 msgstr ""
 
 #: ../../source/misc/config.rst:59
+msgid ""
+"ll and la commands: ls --long If the specified configuration param "
+"resolves unambiguously to a known configuration parameter, then it is "
+"expanded to that configuration parameter. For example:"
+msgstr ""
+
+#: ../../source/misc/config.rst:62
 msgid ""
 "npm ls --par # same as: npm ls --parseable If multiple single-character "
 "shorthands are strung together, and the resulting combination is "
@@ -390,7 +396,7 @@ msgid ""
 "its various component pieces. For example:"
 msgstr ""
 
-#: ../../source/misc/config.rst:64
+#: ../../source/misc/config.rst:67
 msgid ""
 "npm ls -gpld # same as: npm ls --global --parseable --long --loglevel "
 "info Per-Package Config Settings When running scripts (see npm-scripts) "
@@ -399,23 +405,23 @@ msgid ""
 "package.json has this:"
 msgstr ""
 
-#: ../../source/misc/config.rst:70 ../../source/misc/scripts.rst:79
+#: ../../source/misc/config.rst:73 ../../source/misc/scripts.rst:81
 msgid ""
 "{ \"name\" : \"foo\" , \"config\" : { \"port\" : \"8080\" } , \"scripts\""
 " : { \"start\" : \"node server.js\" } } and the server.js is this:"
 msgstr ""
 
-#: ../../source/misc/config.rst:75 ../../source/misc/scripts.rst:84
+#: ../../source/misc/config.rst:78 ../../source/misc/scripts.rst:86
 msgid ""
 "http.createServer(...).listen(process.env.npm_package_config_port) then "
 "the user could change the behavior by doing:"
 msgstr ""
 
-#: ../../source/misc/config.rst:78
+#: ../../source/misc/config.rst:81
 msgid "npm config set foo:port 80 See package.json for more information."
 msgstr ""
 
-#: ../../source/misc/config.rst:81
+#: ../../source/misc/config.rst:84
 msgid ""
 "Config Settings access Default: restricted Type: Access When publishing "
 "scoped packages, the access level defaults to restricted. If you want "
@@ -424,26 +430,26 @@ msgid ""
 "restricted. Unscoped packages always have an access level of public."
 msgstr ""
 
-#: ../../source/misc/config.rst:87
+#: ../../source/misc/config.rst:90
 msgid ""
 "allow-same-version Default: false Type: Boolean Prevents throwing an "
 "error when npm version is used to set the new version to the same value "
 "as the current version."
 msgstr ""
 
-#: ../../source/misc/config.rst:92
+#: ../../source/misc/config.rst:95
 msgid ""
 "always-auth Default: false Type: Boolean Force npm to always require "
 "authentication when accessing the registry, even for GET requests."
 msgstr ""
 
-#: ../../source/misc/config.rst:97
+#: ../../source/misc/config.rst:100
 msgid ""
 "also Default: null Type: String When “dev” or “development” and running "
 "local npm shrinkwrap, npm outdated, or npm update, is an alias for --dev."
 msgstr ""
 
-#: ../../source/misc/config.rst:102
+#: ../../source/misc/config.rst:105
 msgid ""
 "audit Default: true Type: Boolean When “true” submit audit reports "
 "alongside npm install runs to the default registry and all registries "
@@ -451,20 +457,20 @@ msgid ""
 " what is submitted."
 msgstr ""
 
-#: ../../source/misc/config.rst:107
+#: ../../source/misc/config.rst:110
 msgid ""
 "audit-level Default: \"low\" Type: 'low', 'moderate', 'high', 'critical' "
 "The minimum level of vulnerability for npm audit to exit with a non-zero "
 "exit code."
 msgstr ""
 
-#: ../../source/misc/config.rst:112
+#: ../../source/misc/config.rst:115
 msgid ""
 "auth-type Default: 'legacy' Type: 'legacy', 'sso', 'saml', 'oauth' What "
 "authentication strategy to use with adduser/login."
 msgstr ""
 
-#: ../../source/misc/config.rst:117
+#: ../../source/misc/config.rst:120
 msgid ""
 "before Alias: enjoy-by Default: null Type: Date If passed to npm install,"
 " will rebuild the npm tree such that only versions that were available on"
@@ -473,7 +479,7 @@ msgid ""
 "error."
 msgstr ""
 
-#: ../../source/misc/config.rst:123
+#: ../../source/misc/config.rst:126
 msgid ""
 "If the requested version is a dist-tag and the given tag does not pass "
 "the --before filter, the most recent version less than or equal to that "
@@ -481,27 +487,27 @@ msgid ""
 "though latest is 2.0."
 msgstr ""
 
-#: ../../source/misc/config.rst:125
+#: ../../source/misc/config.rst:128
 msgid ""
 "bin-links Default: true Type: Boolean Tells npm to create symlinks (or "
 ".cmd shims on Windows) for package executables."
 msgstr ""
 
-#: ../../source/misc/config.rst:130
+#: ../../source/misc/config.rst:133
 msgid ""
 "Set to false to have it not do this. This can be used to work around the "
 "fact that some file systems don’t support symlinks, even on ostensibly "
 "Unix systems."
 msgstr ""
 
-#: ../../source/misc/config.rst:132
+#: ../../source/misc/config.rst:135
 msgid ""
 "browser Default: OS X: \"open\", Windows: \"start\", Others: \"xdg-open\""
 " Type: String The browser that is called by the npm docs command to open "
 "websites."
 msgstr ""
 
-#: ../../source/misc/config.rst:137
+#: ../../source/misc/config.rst:140
 msgid ""
 "ca Default: The npm CA certificate Type: String, Array or null The "
 "Certificate Authority signing certificate that is trusted for SSL "
@@ -510,22 +516,22 @@ msgid ""
 "string “\\n”. For example:"
 msgstr ""
 
-#: ../../source/misc/config.rst:142
+#: ../../source/misc/config.rst:145
 msgid ""
 "ca=\"-----BEGIN CERTIFICATE-----\\nXXXX\\nXXXX\\n-----END "
 "CERTIFICATE-----\" Set to null to only allow “known” registrars, or to a "
 "specific CA cert to trust only that specific signing authority."
 msgstr ""
 
-#: ../../source/misc/config.rst:145
+#: ../../source/misc/config.rst:148
 msgid "Multiple CAs can be trusted by specifying an array of certificates:"
 msgstr ""
 
-#: ../../source/misc/config.rst:147
+#: ../../source/misc/config.rst:150
 msgid "ca[]=\"...\" ca[]=\"...\" See also the strict-ssl config."
 msgstr ""
 
-#: ../../source/misc/config.rst:151
+#: ../../source/misc/config.rst:154
 msgid ""
 "cafile Default: null Type: path A path to a file containing one or "
 "multiple Certificate Authority signing certificates. Similar to the ca "
@@ -533,51 +539,51 @@ msgid ""
 "to be stored in a file on disk."
 msgstr ""
 
-#: ../../source/misc/config.rst:156
+#: ../../source/misc/config.rst:159
 msgid ""
 "cache Default: Windows: %AppData%\\npm-cache, Posix: ~/.npm Type: path "
 "The location of npm’s cache directory. See npm-cache"
 msgstr ""
 
-#: ../../source/misc/config.rst:161
+#: ../../source/misc/config.rst:164
 msgid ""
 "cache-lock-stale Default: 60000 (1 minute) Type: Number The number of ms "
 "before cache folder lockfiles are considered stale."
 msgstr ""
 
-#: ../../source/misc/config.rst:166
+#: ../../source/misc/config.rst:169
 msgid ""
 "cache-lock-retries Default: 10 Type: Number Number of times to retry to "
 "acquire a lock on cache folder lockfiles."
 msgstr ""
 
-#: ../../source/misc/config.rst:171
+#: ../../source/misc/config.rst:174
 msgid ""
 "cache-lock-wait Default: 10000 (10 seconds) Type: Number Number of ms to "
 "wait for cache lock files to expire."
 msgstr ""
 
-#: ../../source/misc/config.rst:176
+#: ../../source/misc/config.rst:179
 msgid ""
 "cache-max Default: Infinity Type: Number DEPRECATED: This option has been"
 " deprecated in favor of --prefer-online."
 msgstr ""
 
-#: ../../source/misc/config.rst:181
+#: ../../source/misc/config.rst:184
 msgid "--cache-max=0 is an alias for --prefer-online."
 msgstr ""
 
-#: ../../source/misc/config.rst:183
+#: ../../source/misc/config.rst:186
 msgid ""
 "cache-min Default: 10 Type: Number DEPRECATED: This option has been "
 "deprecated in favor of --prefer-offline."
 msgstr ""
 
-#: ../../source/misc/config.rst:188
+#: ../../source/misc/config.rst:191
 msgid "--cache-min=9999 (or bigger) is an alias for --prefer-offline."
 msgstr ""
 
-#: ../../source/misc/config.rst:190
+#: ../../source/misc/config.rst:193
 msgid ""
 "cert Default: null Type: String A client certificate to pass when "
 "accessing the registry. Values should be in PEM format (Windows calls it "
@@ -585,40 +591,40 @@ msgid ""
 "“\\n”. For example:"
 msgstr ""
 
-#: ../../source/misc/config.rst:195
+#: ../../source/misc/config.rst:198
 msgid ""
 "cert=\"-----BEGIN CERTIFICATE-----\\nXXXX\\nXXXX\\n-----END "
 "CERTIFICATE-----\" It is not the path to a certificate file (and there is"
 " no “certfile” option)."
 msgstr ""
 
-#: ../../source/misc/config.rst:198
+#: ../../source/misc/config.rst:201
 msgid ""
 "cidr Default: null Type: String, Array, null This is a list of CIDR "
 "address to be used when configuring limited access tokens with the npm "
 "token create command."
 msgstr ""
 
-#: ../../source/misc/config.rst:203
+#: ../../source/misc/config.rst:206
 msgid ""
 "color Default: true Type: Boolean or \"always\" If false, never shows "
 "colors. If \"always\" then always shows colors. If true, then only prints"
 " color codes for tty file descriptors."
 msgstr ""
 
-#: ../../source/misc/config.rst:208
+#: ../../source/misc/config.rst:211
 msgid ""
 "This option can also be changed using the environment: colors are "
 "disabled when the environment variable NO_COLOR is set to any value."
 msgstr ""
 
-#: ../../source/misc/config.rst:210
+#: ../../source/misc/config.rst:213
 msgid ""
 "depth Default: Infinity Type: Number The depth to go when recursing "
 "directories for npm ls, npm cache ls, and npm outdated."
 msgstr ""
 
-#: ../../source/misc/config.rst:215
+#: ../../source/misc/config.rst:218
 msgid ""
 "For npm outdated, a setting of Infinity will be treated as 0 since that "
 "gives more useful information. To show the outdated status of all "
@@ -626,17 +632,17 @@ msgid ""
 "--depth 9999"
 msgstr ""
 
-#: ../../source/misc/config.rst:217
+#: ../../source/misc/config.rst:220
 msgid "description Default: true Type: Boolean Show the description in npm search"
 msgstr ""
 
-#: ../../source/misc/config.rst:222
+#: ../../source/misc/config.rst:225
 msgid ""
 "dev Default: false Type: Boolean Install dev-dependencies along with "
 "packages."
 msgstr ""
 
-#: ../../source/misc/config.rst:227
+#: ../../source/misc/config.rst:230
 msgid ""
 "dry-run Default: false Type: Boolean Indicates that you don’t want npm to"
 " make any changes and that it should only report what it would have done."
@@ -646,25 +652,25 @@ msgid ""
 "etc."
 msgstr ""
 
-#: ../../source/misc/config.rst:232
+#: ../../source/misc/config.rst:235
 msgid ""
 "editor Default: EDITOR environment variable if set, or \"vi\" on Posix, "
 "or \"notepad\" on Windows. Type: path The command to run for npm edit or "
 "npm config edit."
 msgstr ""
 
-#: ../../source/misc/config.rst:237
+#: ../../source/misc/config.rst:240
 msgid ""
 "engine-strict Default: false Type: Boolean If set to true, then npm will "
 "stubbornly refuse to install (or even consider installing) any package "
 "that claims to not be compatible with the current Node.js version."
 msgstr ""
 
-#: ../../source/misc/config.rst:242
+#: ../../source/misc/config.rst:245
 msgid "force Default: false Type: Boolean Makes various commands more forceful."
 msgstr ""
 
-#: ../../source/misc/config.rst:247
+#: ../../source/misc/config.rst:250
 msgid ""
 "lifecycle script failure does not block progress. publishing clobbers "
 "previously published versions. skips cache when requesting from the "
@@ -673,44 +679,44 @@ msgid ""
 " when fetching packages from the registry."
 msgstr ""
 
-#: ../../source/misc/config.rst:256
+#: ../../source/misc/config.rst:259
 msgid ""
 "fetch-retry-factor Default: 10 Type: Number The “factor” config for the "
 "retry module to use when fetching packages."
 msgstr ""
 
-#: ../../source/misc/config.rst:261
+#: ../../source/misc/config.rst:264
 msgid ""
 "fetch-retry-mintimeout Default: 10000 (10 seconds) Type: Number The "
 "“minTimeout” config for the retry module to use when fetching packages."
 msgstr ""
 
-#: ../../source/misc/config.rst:266
+#: ../../source/misc/config.rst:269
 msgid ""
 "fetch-retry-maxtimeout Default: 60000 (1 minute) Type: Number The "
 "“maxTimeout” config for the retry module to use when fetching packages."
 msgstr ""
 
-#: ../../source/misc/config.rst:271
+#: ../../source/misc/config.rst:274
 msgid ""
 "git Default: \"git\" Type: String The command to use for git commands. If"
 " git is installed on the computer, but is not in the PATH, then set this "
 "to the full path to the git binary."
 msgstr ""
 
-#: ../../source/misc/config.rst:276
+#: ../../source/misc/config.rst:279
 msgid ""
 "git-tag-version Default: true Type: Boolean Tag the commit when using the"
 " npm version command."
 msgstr ""
 
-#: ../../source/misc/config.rst:281
+#: ../../source/misc/config.rst:284
 msgid ""
 "commit-hooks Default: true Type: Boolean Run git commit hooks when using "
 "the npm version command."
 msgstr ""
 
-#: ../../source/misc/config.rst:286
+#: ../../source/misc/config.rst:289
 msgid ""
 "global Default: false Type: Boolean Operates in “global” mode, so that "
 "packages are installed into the prefix folder instead of the current "
@@ -718,7 +724,7 @@ msgid ""
 "behavior."
 msgstr ""
 
-#: ../../source/misc/config.rst:291
+#: ../../source/misc/config.rst:294
 msgid ""
 "packages are installed into the {prefix}/lib/node_modules folder, instead"
 " of the current working directory. bin files are linked to {prefix}/bin "
@@ -727,7 +733,7 @@ msgid ""
 "options."
 msgstr ""
 
-#: ../../source/misc/config.rst:299
+#: ../../source/misc/config.rst:302
 msgid ""
 "global-style Default: false Type: Boolean Causes npm to install the "
 "package into your local node_modules folder with the same layout it uses "
@@ -737,20 +743,20 @@ msgid ""
 "If used with legacy-bundling, legacy-bundling will be preferred."
 msgstr ""
 
-#: ../../source/misc/config.rst:304
+#: ../../source/misc/config.rst:307
 msgid ""
 "group Default: GID of the current process Type: String or Number The "
 "group to use when running package scripts in global mode as the root "
 "user."
 msgstr ""
 
-#: ../../source/misc/config.rst:309
+#: ../../source/misc/config.rst:312
 msgid ""
 "heading Default: \"npm\" Type: String The string that starts all the "
 "debugging log output."
 msgstr ""
 
-#: ../../source/misc/config.rst:314
+#: ../../source/misc/config.rst:317
 msgid ""
 "https-proxy Default: null Type: url A proxy to use for outgoing https "
 "requests. If the HTTPS_PROXY or https_proxy or HTTP_PROXY or http_proxy "
@@ -758,7 +764,7 @@ msgid ""
 "underlying request library."
 msgstr ""
 
-#: ../../source/misc/config.rst:319
+#: ../../source/misc/config.rst:322
 msgid ""
 "if-present Default: false Type: Boolean If true, npm will not exit with "
 "an error code when run-script is invoked for a script that isn’t defined "
@@ -768,63 +774,63 @@ msgid ""
 "only apply for some builds in an otherwise generic CI setup."
 msgstr ""
 
-#: ../../source/misc/config.rst:324
+#: ../../source/misc/config.rst:327
 msgid ""
 "ignore-prepublish Default: false Type: Boolean If true, npm will not run "
 "prepublish scripts."
 msgstr ""
 
-#: ../../source/misc/config.rst:329
+#: ../../source/misc/config.rst:332
 msgid ""
 "ignore-scripts Default: false Type: Boolean If true, npm does not run "
 "scripts specified in package.json files."
 msgstr ""
 
-#: ../../source/misc/config.rst:334
+#: ../../source/misc/config.rst:337
 msgid ""
 "init-module Default: ~/.npm-init.js Type: path A module that will be "
 "loaded by the npm init command. See the documentation for the init-"
 "package-json module for more information, or npm-init."
 msgstr ""
 
-#: ../../source/misc/config.rst:339
+#: ../../source/misc/config.rst:342
 msgid ""
 "init-author-name Default: “” Type: String The value npm init should use "
 "by default for the package author’s name."
 msgstr ""
 
-#: ../../source/misc/config.rst:344
+#: ../../source/misc/config.rst:347
 msgid ""
 "init-author-email Default: “” Type: String The value npm init should use "
 "by default for the package author’s email."
 msgstr ""
 
-#: ../../source/misc/config.rst:349
+#: ../../source/misc/config.rst:352
 msgid ""
 "init-author-url Default: “” Type: String The value npm init should use by"
 " default for the package author’s homepage."
 msgstr ""
 
-#: ../../source/misc/config.rst:354
+#: ../../source/misc/config.rst:357
 msgid ""
 "init-license Default: “ISC” Type: String The value npm init should use by"
 " default for the package license."
 msgstr ""
 
-#: ../../source/misc/config.rst:359
+#: ../../source/misc/config.rst:362
 msgid ""
 "init-version Default: “1.0.0” Type: semver The value that npm init should"
 " use by default for the package version number, if not already set in "
 "package.json."
 msgstr ""
 
-#: ../../source/misc/config.rst:364
+#: ../../source/misc/config.rst:367
 msgid ""
 "json Default: false Type: Boolean Whether or not to output JSON data, "
 "rather than the normal output."
 msgstr ""
 
-#: ../../source/misc/config.rst:369
+#: ../../source/misc/config.rst:372
 msgid ""
 "This feature is currently experimental, and the output data structures "
 "for many commands is either not implemented in JSON yet, or subject to "
@@ -832,21 +838,21 @@ msgid ""
 "currently valid."
 msgstr ""
 
-#: ../../source/misc/config.rst:371
+#: ../../source/misc/config.rst:374
 msgid ""
 "key Default: null Type: String A client key to pass when accessing the "
 "registry. Values should be in PEM format with newlines replaced by the "
 "string “\\n”. For example:"
 msgstr ""
 
-#: ../../source/misc/config.rst:376
+#: ../../source/misc/config.rst:379
 msgid ""
 "key=\"-----BEGIN PRIVATE KEY-----\\nXXXX\\nXXXX\\n-----END PRIVATE "
 "KEY-----\" It is not the path to a key file (and there is no “keyfile” "
 "option)."
 msgstr ""
 
-#: ../../source/misc/config.rst:379
+#: ../../source/misc/config.rst:382
 msgid ""
 "legacy-bundling Default: false Type: Boolean Causes npm to install the "
 "package such that versions of npm prior to 1.4, such as the one included "
@@ -854,20 +860,20 @@ msgid ""
 "deduping. If used with global-style this option will be preferred."
 msgstr ""
 
-#: ../../source/misc/config.rst:384
+#: ../../source/misc/config.rst:387
 msgid ""
 "link Default: false Type: Boolean If true, then local installs will link "
 "if there is a suitable globally installed package."
 msgstr ""
 
-#: ../../source/misc/config.rst:389
+#: ../../source/misc/config.rst:392
 msgid ""
 "Note that this means that local installs can cause things to be installed"
 " into the global space at the same time. The link is only done if one of "
 "the two conditions are met:"
 msgstr ""
 
-#: ../../source/misc/config.rst:391
+#: ../../source/misc/config.rst:394
 msgid ""
 "The package is not already installed globally, or the globally installed "
 "version is identical to the version that is being installed locally. "
@@ -876,7 +882,7 @@ msgid ""
 "be IPv4 in versions of Node prior to 0.12."
 msgstr ""
 
-#: ../../source/misc/config.rst:398
+#: ../../source/misc/config.rst:401
 msgid ""
 "loglevel Default: “notice” Type: String Values: “silent”, “error”, "
 "“warn”, “notice”, “http”, “timing”, “info”, “verbose”, “silly” What level"
@@ -884,70 +890,70 @@ msgid ""
 "the current working directory."
 msgstr ""
 
-#: ../../source/misc/config.rst:404
+#: ../../source/misc/config.rst:407
 msgid ""
 "Any logs of a higher level than the setting are shown. The default is "
 "“notice”."
 msgstr ""
 
-#: ../../source/misc/config.rst:406
+#: ../../source/misc/config.rst:409
 msgid ""
 "logstream Default: process.stderr Type: Stream This is the stream that is"
 " passed to the npmlog module at run time."
 msgstr ""
 
-#: ../../source/misc/config.rst:411
+#: ../../source/misc/config.rst:414
 msgid ""
 "It cannot be set from the command line, but if you are using npm "
 "programmatically, you may wish to send logs to somewhere other than "
 "stderr."
 msgstr ""
 
-#: ../../source/misc/config.rst:413
+#: ../../source/misc/config.rst:416
 msgid ""
 "If the color config is set to true, then this stream will receive colored"
 " output if it is a TTY."
 msgstr ""
 
-#: ../../source/misc/config.rst:415
+#: ../../source/misc/config.rst:418
 msgid ""
 "logs-max Default: 10 Type: Number The maximum number of log files to "
 "store."
 msgstr ""
 
-#: ../../source/misc/config.rst:420
+#: ../../source/misc/config.rst:423
 msgid ""
 "long Default: false Type: Boolean Show extended information in npm ls and"
 " npm search."
 msgstr ""
 
-#: ../../source/misc/config.rst:425
+#: ../../source/misc/config.rst:428
 msgid ""
 "maxsockets Default: 50 Type: Number The maximum number of connections to "
 "use per origin (protocol/host/port combination). Passed to the http Agent"
 " used to make the request."
 msgstr ""
 
-#: ../../source/misc/config.rst:430
+#: ../../source/misc/config.rst:433
 #, python-format
 msgid ""
 "message Default: “%s” Type: String Commit message which is used by npm "
 "version when creating version commit."
 msgstr ""
 
-#: ../../source/misc/config.rst:435
+#: ../../source/misc/config.rst:438
 #, python-format
 msgid "Any “%s” in the message will be replaced with the version number."
 msgstr ""
 
-#: ../../source/misc/config.rst:437
+#: ../../source/misc/config.rst:440
 msgid ""
 "metrics-registry Default: The value of registry (which defaults to "
 "“https://registry.npmjs.org/”) Type: String The registry you want to send"
 " cli metrics to if send-metrics is true."
 msgstr ""
 
-#: ../../source/misc/config.rst:442
+#: ../../source/misc/config.rst:445
 msgid ""
 "node-options Default: null Type: String Options to pass through to "
 "Node.js via the NODE_OPTIONS environment variable. This does not impact "
@@ -955,141 +961,141 @@ msgid ""
 "called."
 msgstr ""
 
-#: ../../source/misc/config.rst:447
+#: ../../source/misc/config.rst:450
 msgid ""
 "node-version Default: process.version Type: semver or false The node "
 "version to use when checking a package’s engines map."
 msgstr ""
 
-#: ../../source/misc/config.rst:452
+#: ../../source/misc/config.rst:455
 msgid ""
 "noproxy Default: null Type: String or Array A comma-separated string or "
 "an array of domain extensions that a proxy should not be used for."
 msgstr ""
 
-#: ../../source/misc/config.rst:457
+#: ../../source/misc/config.rst:460
 msgid ""
 "offline Default: false Type: Boolean Force offline mode: no network "
 "requests will be done during install. To allow the CLI to fill in missing"
 " cache data, see --prefer-offline."
 msgstr ""
 
-#: ../../source/misc/config.rst:462
+#: ../../source/misc/config.rst:465
 msgid ""
 "onload-script Default: false Type: path A node module to require() when "
 "npm loads. Useful for programmatic usage."
 msgstr ""
 
-#: ../../source/misc/config.rst:467
+#: ../../source/misc/config.rst:470
 msgid ""
 "only Default: null Type: String When “dev” or “development” and running "
 "local npm install without any arguments, only devDependencies (and their "
 "dependencies) are installed."
 msgstr ""
 
-#: ../../source/misc/config.rst:472
+#: ../../source/misc/config.rst:475
 msgid ""
 "When “dev” or “development” and running local npm ls, npm outdated, or "
 "npm update, is an alias for --dev."
 msgstr ""
 
-#: ../../source/misc/config.rst:474
+#: ../../source/misc/config.rst:477
 msgid ""
 "When “prod” or “production” and running local npm install without any "
 "arguments, only non-devDependencies (and their dependencies) are "
 "installed."
 msgstr ""
 
-#: ../../source/misc/config.rst:476
+#: ../../source/misc/config.rst:479
 msgid ""
 "When “prod” or “production” and running local npm ls, npm outdated, or "
 "npm update, is an alias for --production."
 msgstr ""
 
-#: ../../source/misc/config.rst:478
+#: ../../source/misc/config.rst:481
 msgid ""
 "optional Default: true Type: Boolean Attempt to install packages in the "
 "optionalDependencies object. Note that if these packages fail to install,"
 " the overall installation process is not aborted."
 msgstr ""
 
-#: ../../source/misc/config.rst:483
+#: ../../source/misc/config.rst:486
 msgid ""
 "otp Default: null Type: Number This is a one-time password from a two-"
 "factor authenticator. It’s needed when publishing or changing package "
 "permissions with npm access."
 msgstr ""
 
-#: ../../source/misc/config.rst:488
+#: ../../source/misc/config.rst:491
 msgid ""
 "package-lock Default: true Type: Boolean If set to false, then ignore "
 "package-lock.json files when installing. This will also prevent writing "
 "package-lock.json if save is true."
 msgstr ""
 
-#: ../../source/misc/config.rst:493
+#: ../../source/misc/config.rst:496
 msgid ""
 "When package package-locks are disabled, automatic pruning of extraneous "
 "modules will also be disabled. To remove extraneous modules with package-"
 "locks disabled use npm prune."
 msgstr ""
 
-#: ../../source/misc/config.rst:495
+#: ../../source/misc/config.rst:498
 msgid "This option is an alias for --shrinkwrap."
 msgstr ""
 
-#: ../../source/misc/config.rst:497
+#: ../../source/misc/config.rst:500
 msgid ""
 "package-lock-only Default: false Type: Boolean If set to true, it will "
 "update only the package-lock.json, instead of checking node_modules and "
 "downloading dependencies."
 msgstr ""
 
-#: ../../source/misc/config.rst:502
+#: ../../source/misc/config.rst:505
 msgid ""
 "parseable Default: false Type: Boolean Output parseable results from "
 "commands that write to standard output. For npm search, this will be tab-"
 "separated table format."
 msgstr ""
 
-#: ../../source/misc/config.rst:507
+#: ../../source/misc/config.rst:510
 msgid ""
 "prefer-offline Default: false Type: Boolean If true, staleness checks for"
 " cached data will be bypassed, but missing data will be requested from "
 "the server. To force full offline mode, use --offline."
 msgstr ""
 
-#: ../../source/misc/config.rst:512
+#: ../../source/misc/config.rst:515
 msgid "This option is effectively equivalent to --cache-min=9999999."
 msgstr ""
 
-#: ../../source/misc/config.rst:514
+#: ../../source/misc/config.rst:517
 msgid ""
 "prefer-online Default: false Type: Boolean If true, staleness checks for "
 "cached data will be forced, making the CLI look for updates immediately "
 "even for fresh package data."
 msgstr ""
 
-#: ../../source/misc/config.rst:519
+#: ../../source/misc/config.rst:522
 msgid ""
 "prefix Default: see npm-folders Type: path The location to install global"
 " items. If set on the command line, then it forces non-global commands to"
 " run in the specified folder."
 msgstr ""
 
-#: ../../source/misc/config.rst:524
+#: ../../source/misc/config.rst:527
 msgid ""
 "preid Default: “” Type: String The “prerelease identifier” to use as a "
 "prefix for the “prerelease” part of a semver. Like the rc in 1.2.0-rc.8."
 msgstr ""
 
-#: ../../source/misc/config.rst:529
+#: ../../source/misc/config.rst:532
 msgid ""
 "production Default: false Type: Boolean Set to true to run in "
 "“production” mode."
 msgstr ""
 
-#: ../../source/misc/config.rst:534
+#: ../../source/misc/config.rst:537
 msgid ""
 "devDependencies are not installed at the topmost level when running local"
 " npm install without any arguments. Set the NODE_ENV=”production” for "
@@ -1098,71 +1104,71 @@ msgid ""
 "during time intensive operations, if process.stderr is a TTY."
 msgstr ""
 
-#: ../../source/misc/config.rst:541
+#: ../../source/misc/config.rst:544
 msgid "Set to false to suppress the progress bar."
 msgstr ""
 
-#: ../../source/misc/config.rst:543
+#: ../../source/misc/config.rst:546
 msgid ""
 "proxy Default: null Type: url A proxy to use for outgoing http requests. "
 "If the HTTP_PROXY or http_proxy environment variables are set, proxy "
 "settings will be honored by the underlying request library."
 msgstr ""
 
-#: ../../source/misc/config.rst:548
+#: ../../source/misc/config.rst:551
 msgid ""
 "read-only Default: false Type: Boolean This is used to mark a token as "
 "unable to publish when configuring limited access tokens with the npm "
 "token create command."
 msgstr ""
 
-#: ../../source/misc/config.rst:553
+#: ../../source/misc/config.rst:556
 msgid ""
 "rebuild-bundle Default: true Type: Boolean Rebuild bundled dependencies "
 "after installation."
 msgstr ""
 
-#: ../../source/misc/config.rst:558
+#: ../../source/misc/config.rst:561
 msgid ""
 "registry Default: https://registry.npmjs.org/ Type: url The base URL of "
 "the npm package registry."
 msgstr ""
 
-#: ../../source/misc/config.rst:563
+#: ../../source/misc/config.rst:566
 msgid "rollback Default: true Type: Boolean Remove failed installs."
 msgstr ""
 
-#: ../../source/misc/config.rst:568
+#: ../../source/misc/config.rst:571
 msgid ""
 "save Default: true Type: Boolean Save installed packages to a "
 "package.json file as dependencies."
 msgstr ""
 
-#: ../../source/misc/config.rst:573
+#: ../../source/misc/config.rst:576
 msgid ""
 "When used with the npm rm command, it removes it from the dependencies "
 "object."
 msgstr ""
 
-#: ../../source/misc/config.rst:575 ../../source/misc/config.rst:596
-#: ../../source/misc/config.rst:610
+#: ../../source/misc/config.rst:578 ../../source/misc/config.rst:599
+#: ../../source/misc/config.rst:613
 msgid "Only works if there is already a package.json file present."
 msgstr ""
 
-#: ../../source/misc/config.rst:577
+#: ../../source/misc/config.rst:580
 msgid ""
 "save-bundle Default: false Type: Boolean If a package would be saved at "
 "install time by the use of --save, --save-dev, or --save-optional, then "
 "also put it in the bundleDependencies list."
 msgstr ""
 
-#: ../../source/misc/config.rst:582
+#: ../../source/misc/config.rst:585
 msgid ""
 "When used with the npm rm command, it removes it from the "
 "bundledDependencies list."
 msgstr ""
 
-#: ../../source/misc/config.rst:584
+#: ../../source/misc/config.rst:587
 msgid ""
 "save-prod Default: false Type: Boolean Makes sure that a package will be "
 "saved into dependencies specifically. This is useful if a package already"
@@ -1171,19 +1177,19 @@ msgid ""
 " true, and neither --save-dev or --save-optional are true."
 msgstr ""
 
-#: ../../source/misc/config.rst:589
+#: ../../source/misc/config.rst:592
 msgid ""
 "save-dev Default: false Type: Boolean Save installed packages to a "
 "package.json file as devDependencies."
 msgstr ""
 
-#: ../../source/misc/config.rst:594 ../../source/misc/config.rst:608
+#: ../../source/misc/config.rst:597 ../../source/misc/config.rst:611
 msgid ""
 "When used with the npm rm command, it removes it from the devDependencies"
 " object."
 msgstr ""
 
-#: ../../source/misc/config.rst:598
+#: ../../source/misc/config.rst:601
 msgid ""
 "save-exact Default: false Type: Boolean Dependencies saved to "
 "package.json using --save, --save-dev or --save-optional will be "
@@ -1191,19 +1197,19 @@ msgid ""
 "range operator."
 msgstr ""
 
-#: ../../source/misc/config.rst:603
+#: ../../source/misc/config.rst:606
 msgid ""
 "save-optional Default: false Type: Boolean Save installed packages to a "
 "package.json file as optionalDependencies."
 msgstr ""
 
-#: ../../source/misc/config.rst:612
+#: ../../source/misc/config.rst:615
 msgid ""
 "save-prefix Default: ‘^’ Type: String Configure how versions of packages "
 "installed to a package.json file via --save or --save-dev get prefixed."
 msgstr ""
 
-#: ../../source/misc/config.rst:617
+#: ../../source/misc/config.rst:620
 msgid ""
 "For example if a package has version 1.2.3, by default its version is set"
 " to ^1.2.3 which allows minor upgrades for that package, but after npm "
@@ -1211,7 +1217,7 @@ msgid ""
 "patch upgrades."
 msgstr ""
 
-#: ../../source/misc/config.rst:619
+#: ../../source/misc/config.rst:622
 msgid ""
 "scope Default: the scope of the current project, if any, or “” Type: "
 "String Associate an operation with a scope for a scoped registry. Useful "
@@ -1221,13 +1227,13 @@ msgid ""
 "of packages specified according to the pattern @organization/package."
 msgstr ""
 
-#: ../../source/misc/config.rst:624
+#: ../../source/misc/config.rst:627
 msgid ""
 "script-shell Default: null Type: path The shell to use for scripts run "
 "with the npm run command."
 msgstr ""
 
-#: ../../source/misc/config.rst:629
+#: ../../source/misc/config.rst:632
 msgid ""
 "scripts-prepend-node-path Default: “warn-only” Type: Boolean, \"auto\" or"
 " \"warn-only\" If set to true, add the directory in which the current "
@@ -1236,50 +1242,50 @@ msgid ""
 "executable than the one which it is running."
 msgstr ""
 
-#: ../../source/misc/config.rst:634
+#: ../../source/misc/config.rst:637
 msgid "If set to false, never modify PATH with that."
 msgstr ""
 
-#: ../../source/misc/config.rst:636
+#: ../../source/misc/config.rst:639
 msgid ""
 "If set to \"warn-only\", never modify PATH but print a warning if npm "
 "thinks that you may want to run it with true, e.g. because the node "
 "executable in the PATH is not the one npm was invoked with."
 msgstr ""
 
-#: ../../source/misc/config.rst:638
+#: ../../source/misc/config.rst:641
 msgid ""
 "If set to auto, only add that directory to the PATH environment variable "
 "if the node executable with which npm was invoked and the one that is "
 "found first on the PATH are different."
 msgstr ""
 
-#: ../../source/misc/config.rst:640
+#: ../../source/misc/config.rst:643
 msgid ""
 "searchexclude Default: “” Type: String Space-separated options that limit"
 " the results from search."
 msgstr ""
 
-#: ../../source/misc/config.rst:645
+#: ../../source/misc/config.rst:648
 msgid ""
 "searchopts Default: “” Type: String Space-separated options that are "
 "always passed to search."
 msgstr ""
 
-#: ../../source/misc/config.rst:650
+#: ../../source/misc/config.rst:653
 msgid ""
 "searchlimit Default: 20 Type: Number Number of items to limit search "
 "results to. Will not apply at all to legacy searches."
 msgstr ""
 
-#: ../../source/misc/config.rst:655
+#: ../../source/misc/config.rst:658
 msgid ""
 "searchstaleness Default: 900 (15 minutes) Type: Number The age of the "
 "cache, in seconds, before another registry request is made if using "
 "legacy search endpoint."
 msgstr ""
 
-#: ../../source/misc/config.rst:660
+#: ../../source/misc/config.rst:663
 msgid ""
 "send-metrics Default: false Type: Boolean If true, success/failure "
 "metrics will be reported to the registry stored in metrics-registry. "
@@ -1288,78 +1294,78 @@ msgid ""
 "identifying information is included in these requests."
 msgstr ""
 
-#: ../../source/misc/config.rst:665
+#: ../../source/misc/config.rst:668
 msgid ""
 "shell Default: SHELL environment variable, or “bash” on Posix, or “cmd” "
 "on Windows Type: path The shell to run for the npm explore command."
 msgstr ""
 
-#: ../../source/misc/config.rst:670
+#: ../../source/misc/config.rst:673
 msgid ""
 "shrinkwrap Default: true Type: Boolean If set to false, then ignore npm-"
 "shrinkwrap.json files when installing. This will also prevent writing "
 "npm-shrinkwrap.json if save is true."
 msgstr ""
 
-#: ../../source/misc/config.rst:675
+#: ../../source/misc/config.rst:678
 msgid "This option is an alias for --package-lock."
 msgstr ""
 
-#: ../../source/misc/config.rst:677
+#: ../../source/misc/config.rst:680
 msgid ""
 "sign-git-commit Default: false Type: Boolean If set to true, then the npm"
 " version command will commit the new package version using -S to add a "
 "signature."
 msgstr ""
 
-#: ../../source/misc/config.rst:682 ../../source/misc/config.rst:689
+#: ../../source/misc/config.rst:685 ../../source/misc/config.rst:692
 msgid ""
 "Note that git requires you to have set up GPG keys in your git configs "
 "for this to work properly."
 msgstr ""
 
-#: ../../source/misc/config.rst:684
+#: ../../source/misc/config.rst:687
 msgid ""
 "sign-git-tag Default: false Type: Boolean If set to true, then the npm "
 "version command will tag the version using -s to add a signature."
 msgstr ""
 
-#: ../../source/misc/config.rst:691
+#: ../../source/misc/config.rst:694
 msgid ""
 "sso-poll-frequency Default: 500 Type: Number When used with SSO-enabled "
 "auth-types, configures how regularly the registry should be polled while "
 "the user is completing authentication."
 msgstr ""
 
-#: ../../source/misc/config.rst:696
+#: ../../source/misc/config.rst:699
 msgid ""
 "sso-type Default: ‘oauth’ Type: ‘oauth’, ‘saml’, or null If --auth-"
 "type=sso, the type of SSO type to use."
 msgstr ""
 
-#: ../../source/misc/config.rst:701
+#: ../../source/misc/config.rst:704
 msgid ""
 "strict-ssl Default: true Type: Boolean Whether or not to do SSL key "
 "validation when making requests to the registry via https."
 msgstr ""
 
-#: ../../source/misc/config.rst:706
+#: ../../source/misc/config.rst:709
 msgid "See also the ca config."
 msgstr ""
 
-#: ../../source/misc/config.rst:708
+#: ../../source/misc/config.rst:711
 msgid ""
 "tag Default: latest Type: String If you ask npm to install a package and "
 "don’t tell it a specific version, then it will install the specified tag."
 msgstr ""
 
-#: ../../source/misc/config.rst:713
+#: ../../source/misc/config.rst:716
 msgid ""
 "Also the tag that is added to the package@version specified by the npm "
 "tag command, if no explicit tag is given."
 msgstr ""
 
-#: ../../source/misc/config.rst:715
+#: ../../source/misc/config.rst:718
 msgid ""
 "tag-version-prefix Default: \"v\" Type: String If set, alters the prefix "
 "used when tagging a new version when performing a version increment using"
@@ -1367,14 +1373,14 @@ msgid ""
 "string: \"\"."
 msgstr ""
 
-#: ../../source/misc/config.rst:720
+#: ../../source/misc/config.rst:723
 msgid ""
 "Because other tools may rely on the convention that npm version tags look"
 " like v1.0.0, only use this property if it is absolutely necessary. In "
 "particular, use care when overriding this setting for public packages."
 msgstr ""
 
-#: ../../source/misc/config.rst:722
+#: ../../source/misc/config.rst:725
 msgid ""
 "timing Default: false Type: Boolean If true, writes an npm-debug log to "
 "_logs and timing information to _timing.json, both in your cache. "
@@ -1382,14 +1388,14 @@ msgid ""
 " view it with this json command line: json -g < ~/.npm/_timing.json."
 msgstr ""
 
-#: ../../source/misc/config.rst:727
+#: ../../source/misc/config.rst:730
 msgid ""
 "tmp Default: TMPDIR environment variable, or “/tmp” Type: path Where to "
 "store temporary files and folders. All temp files are deleted on success,"
 " but left behind on failure for forensic purposes."
 msgstr ""
 
-#: ../../source/misc/config.rst:732
+#: ../../source/misc/config.rst:735
 msgid ""
 "unicode Default: false on windows, true on mac/unix systems with a "
 "unicode locale Type: Boolean When set to true, npm uses unicode "
@@ -1397,7 +1403,7 @@ msgid ""
 "draw trees."
 msgstr ""
 
-#: ../../source/misc/config.rst:737
+#: ../../source/misc/config.rst:740
 msgid ""
 "unsafe-perm Default: false if running as root, true otherwise Type: "
 "Boolean Set to true to suppress the UID/GID switching when running "
@@ -1405,136 +1411,140 @@ msgid ""
 "root user will fail."
 msgstr ""
 
-#: ../../source/misc/config.rst:742
+#: ../../source/misc/config.rst:745
 msgid ""
 "update-notifier Default: true Type: Boolean Set to false to suppress the "
 "update notification when using an older version of npm than the latest."
 msgstr ""
 
-#: ../../source/misc/config.rst:747
+#: ../../source/misc/config.rst:750
 msgid ""
 "usage Default: false Type: Boolean Set to show short usage output (like "
 "the -H output) instead of complete help when doing npm-help."
 msgstr ""
 
-#: ../../source/misc/config.rst:752
+#: ../../source/misc/config.rst:755
 msgid ""
 "user Default: “nobody” Type: String or Number The UID to set to when "
 "running package scripts as root."
 msgstr ""
 
-#: ../../source/misc/config.rst:757
+#: ../../source/misc/config.rst:760
 msgid ""
 "userconfig Default: ~/.npmrc Type: path The location of user-level "
 "configuration settings."
 msgstr ""
 
-#: ../../source/misc/config.rst:762
+#: ../../source/misc/config.rst:765
 msgid ""
 "umask Default: 022 Type: Octal numeric string in range 0000..0777 "
 "(0..511) The “umask” value to use when setting the file creation mode on "
 "files and folders."
 msgstr ""
 
-#: ../../source/misc/config.rst:767
+#: ../../source/misc/config.rst:770
 msgid ""
 "Folders and executables are given a mode which is 0777 masked against "
 "this value. Other files are given a mode which is 0666 masked against "
 "this value. Thus, the defaults are 0755 and 0644 respectively."
 msgstr ""
 
-#: ../../source/misc/config.rst:769
+#: ../../source/misc/config.rst:772
 msgid ""
 "user-agent Default: node/{process.version} {process.platform} "
 "{process.arch} Type: String Sets a User-Agent to the request header"
 msgstr ""
 
-#: ../../source/misc/config.rst:774
+#: ../../source/misc/config.rst:777
 msgid ""
 "version Default: false Type: boolean If true, output the npm version and "
 "exit successfully."
 msgstr ""
 
-#: ../../source/misc/config.rst:779 ../../source/misc/config.rst:786
+#: ../../source/misc/config.rst:782 ../../source/misc/config.rst:789
 msgid "Only relevant when specified explicitly on the command line."
 msgstr ""
 
-#: ../../source/misc/config.rst:781
+#: ../../source/misc/config.rst:784
 msgid ""
 "versions Default: false Type: boolean If true, output the npm version as "
 "well as node’s process.versions map, and exit successfully."
 msgstr ""
 
-#: ../../source/misc/config.rst:788
+#: ../../source/misc/config.rst:791
 msgid ""
 "viewer Default: “man” on Posix, “browser” on Windows Type: path The "
 "program to use to view help content."
 msgstr ""
 
-#: ../../source/misc/config.rst:793
+#: ../../source/misc/config.rst:796
 msgid "Set to \"browser\" to view html help content in the default web browser."
 msgstr ""
 
-#: ../../source/misc/config.rst:795
+#: ../../source/misc/config.rst:798
 msgid "SEE ALSO npm-config npmrc npm-scripts npm-folders npm"
 msgstr ""
 
-#: ../../source/misc/developers.rst:2
-msgid "npm-developers"
+#: ../../source/misc/contents.rst:2
+msgid "misc"
 msgstr ""
 
 #: ../../source/misc/developers.rst:4
+msgid "npm-developers"
+msgstr ""
+
+#: ../../source/misc/developers.rst:6
 msgid ""
 "Developer Guide DESCRIPTION So, you’ve decided to use npm to develop (and"
 " maybe publish/deploy) your project."
 msgstr ""
 
-#: ../../source/misc/developers.rst:8
+#: ../../source/misc/developers.rst:10
 msgid "Fantastic!"
 msgstr ""
 
-#: ../../source/misc/developers.rst:10
+#: ../../source/misc/developers.rst:12
 msgid ""
 "There are a few things that you need to do above the simple steps that "
 "your users will do to install your program."
 msgstr ""
 
-#: ../../source/misc/developers.rst:12
+#: ../../source/misc/developers.rst:14
 msgid ""
 "About These Documents These are man pages. If you install npm, you should"
 " be able to then do man npm-thing to get the documentation on a "
 "particular topic, or npm help thing to see the same information."
 msgstr ""
 
-#: ../../source/misc/developers.rst:15
+#: ../../source/misc/developers.rst:17
 msgid "What is a package A package is:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:18
+#: ../../source/misc/developers.rst:20
 msgid "a folder containing a program described by a package.json file"
 msgstr ""
 
-#: ../../source/misc/developers.rst:19
+#: ../../source/misc/developers.rst:21
 msgid "a gzipped tarball containing (a)"
 msgstr ""
 
-#: ../../source/misc/developers.rst:20
+#: ../../source/misc/developers.rst:22
 msgid "a url that resolves to (b)"
 msgstr ""
 
-#: ../../source/misc/developers.rst:21
+#: ../../source/misc/developers.rst:23
 msgid "a <name>@<version> that is published on the registry with (c)"
 msgstr ""
 
-#: ../../source/misc/developers.rst:22
+#: ../../source/misc/developers.rst:24
 msgid "a <name>@<tag> that points to (d)"
 msgstr ""
 
-#: ../../source/misc/developers.rst:23
+#: ../../source/misc/developers.rst:25
 msgid "a <name> that has a “latest” tag satisfying (e)"
 msgstr ""
 
-#: ../../source/misc/developers.rst:24
+#: ../../source/misc/developers.rst:26
 msgid ""
 "g) a git url that, when cloned, results in (a). Even if you never publish"
 " your package, you can still get a lot of benefits of using npm if you "
@@ -1543,11 +1553,11 @@ msgid ""
 "(b)."
 msgstr ""
 
-#: ../../source/misc/developers.rst:27
+#: ../../source/misc/developers.rst:29
 msgid "Git urls can be of the form:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:29
+#: ../../source/misc/developers.rst:31
 msgid ""
 "git://github.com/user/project.git#commit-ish "
 "git+ssh://user@hostname:project.git#commit-ish "
@@ -1557,20 +1567,20 @@ msgid ""
 "checkout. The default is master."
 msgstr ""
 
-#: ../../source/misc/developers.rst:35
+#: ../../source/misc/developers.rst:37
 msgid ""
 "The package.json File You need to have a package.json file in the root of"
 " your project to do much of anything with npm. That is basically the "
 "whole interface."
 msgstr ""
 
-#: ../../source/misc/developers.rst:38
+#: ../../source/misc/developers.rst:40
 msgid ""
 "See package.json for details about what goes in that file. At the very "
 "least, you need:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:40
+#: ../../source/misc/developers.rst:42
 msgid ""
 "name: This should be a string that identifies your project. Please do not"
 " use the name to specify that it runs on node, or is in JavaScript. You "
@@ -1579,30 +1589,30 @@ msgid ""
 "that it’s JavaScript."
 msgstr ""
 
-#: ../../source/misc/developers.rst:42
+#: ../../source/misc/developers.rst:44
 msgid "It does not necessarily need to match your github repository name."
 msgstr ""
 
-#: ../../source/misc/developers.rst:44
+#: ../../source/misc/developers.rst:46
 msgid "So, node-foo and bar-js are bad names. foo or bar are better."
 msgstr ""
 
-#: ../../source/misc/developers.rst:46
+#: ../../source/misc/developers.rst:48
 msgid "version: A semver-compatible version."
 msgstr ""
 
-#: ../../source/misc/developers.rst:48
+#: ../../source/misc/developers.rst:50
 msgid ""
 "engines: Specify the versions of node (or whatever else) that your "
 "program runs on. The node API changes a lot, and there may be bugs or new"
 " functionality that you depend on. Be explicit."
 msgstr ""
 
-#: ../../source/misc/developers.rst:50
+#: ../../source/misc/developers.rst:52
 msgid "author: Take some credit."
 msgstr ""
 
-#: ../../source/misc/developers.rst:52
+#: ../../source/misc/developers.rst:54
 msgid ""
 "scripts: If you have a special compilation or installation script, then "
 "you should put it in the scripts object. You should definitely have at "
@@ -1610,28 +1620,28 @@ msgid ""
 "scripts."
 msgstr ""
 
-#: ../../source/misc/developers.rst:54
+#: ../../source/misc/developers.rst:56
 msgid ""
 "main: If you have a single module that serves as the entry point to your "
 "program (like what the “foo” package gives you at require(“foo”)), then "
 "you need to specify that in the “main” field."
 msgstr ""
 
-#: ../../source/misc/developers.rst:56
+#: ../../source/misc/developers.rst:58
 msgid ""
 "directories: This is an object mapping names to folders. The best ones to"
 " include are “lib” and “doc”, but if you use “man” to specify a folder "
 "full of man pages, they’ll get installed just like these ones."
 msgstr ""
 
-#: ../../source/misc/developers.rst:58
+#: ../../source/misc/developers.rst:60
 msgid ""
 "You can use npm init in the root of your package in order to get you "
 "started with a pretty basic package.json file. See npm-init for more "
 "info."
 msgstr ""
 
-#: ../../source/misc/developers.rst:60
+#: ../../source/misc/developers.rst:62
 msgid ""
 "Keeping files out of your package Use a .npmignore file to keep stuff out"
 " of your package. If there’s no .npmignore file, but there is a "
@@ -1642,11 +1652,11 @@ msgid ""
 "subdirectories of your package, not only the root directory."
 msgstr ""
 
-#: ../../source/misc/developers.rst:63
+#: ../../source/misc/developers.rst:65
 msgid ".npmignore files follow the same pattern rules as .gitignore files:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:65
+#: ../../source/misc/developers.rst:67
 msgid ""
 "Blank lines or lines starting with # are ignored. Standard glob patterns "
 "work. You can end patterns with a forward slash / to specify a directory."
@@ -1655,7 +1665,7 @@ msgid ""
 " add them to .npmignore explicitly:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:71
+#: ../../source/misc/developers.rst:73
 msgid ""
 ".*.swp ._* .DS_Store .git .hg .npmrc .lock-wscript .svn .wafpickle-* "
 "config.gypi CVS npm-debug.log Additionally, everything in node_modules is"
@@ -1663,13 +1673,13 @@ msgid ""
 " for you, so don’t bother adding node_modules to .npmignore."
 msgstr ""
 
-#: ../../source/misc/developers.rst:85
+#: ../../source/misc/developers.rst:87
 msgid ""
 "The following paths and files are never ignored, so adding them to "
 ".npmignore is pointless:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:87
+#: ../../source/misc/developers.rst:89
 msgid ""
 "package.json README (and its variants) CHANGELOG (and its variants) "
 "LICENSE / LICENCE If, given the structure of your project, you find "
@@ -1679,7 +1689,7 @@ msgid ""
 "whitelist is easier to manage than a blacklist."
 msgstr ""
 
-#: ../../source/misc/developers.rst:93
+#: ../../source/misc/developers.rst:95
 msgid ""
 "Testing whether your .npmignore or files config works If you want to "
 "double check that your package will include only the files you intend it "
@@ -1688,7 +1698,7 @@ msgid ""
 "publishing."
 msgstr ""
 
-#: ../../source/misc/developers.rst:96
+#: ../../source/misc/developers.rst:98
 msgid ""
 "Link Packages npm link is designed to install a development package and "
 "see the changes in real time without having to keep re-installing it. "
@@ -1696,106 +1706,125 @@ msgid ""
 "packages, of course.)"
 msgstr ""
 
-#: ../../source/misc/developers.rst:99
+#: ../../source/misc/developers.rst:101
 msgid "More info at npm-link."
 msgstr ""
 
-#: ../../source/misc/developers.rst:101
+#: ../../source/misc/developers.rst:103
 msgid ""
 "Before Publishing: Make Sure Your Package Installs and Works This is "
 "important."
 msgstr ""
 
-#: ../../source/misc/developers.rst:104
+#: ../../source/misc/developers.rst:106
 msgid ""
 "If you can not install it locally, you’ll have problems trying to publish"
 " it. Or, worse yet, you’ll be able to publish it, but you’ll be "
 "publishing a broken or pointless package. So don’t do that."
 msgstr ""
 
-#: ../../source/misc/developers.rst:106
+#: ../../source/misc/developers.rst:108
 msgid "In the root of your package, do this:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:108
+#: ../../source/misc/developers.rst:110
 msgid ""
 "npm install . -g That’ll show you that it’s working. If you’d rather just"
 " create a symlink package that points to your working directory, then do "
 "this:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:111
+#: ../../source/misc/developers.rst:113
 msgid "npm link Use npm ls -g to see if it’s there."
 msgstr ""
 
-#: ../../source/misc/developers.rst:114
+#: ../../source/misc/developers.rst:116
 msgid "To test a local install, go into some other folder, and then do:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:116
+#: ../../source/misc/developers.rst:118
 msgid ""
 "cd ../some-other-folder npm install ../my-package to install it locally "
 "into the node_modules folder in that other place."
 msgstr ""
 
-#: ../../source/misc/developers.rst:120
+#: ../../source/misc/developers.rst:122
 msgid ""
 "Then go into the node-repl, and try using require(“my-thing”) to bring in"
 " your module’s main module."
 msgstr ""
 
-#: ../../source/misc/developers.rst:122
+#: ../../source/misc/developers.rst:124
 msgid ""
 "Create a User Account Create a user with the adduser command. It works "
 "like this:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:125
+#: ../../source/misc/developers.rst:127
 msgid "npm adduser and then follow the prompts."
 msgstr ""
 
-#: ../../source/misc/developers.rst:128
+#: ../../source/misc/developers.rst:130
 msgid "This is documented better in npm-adduser."
 msgstr ""
 
-#: ../../source/misc/developers.rst:130
+#: ../../source/misc/developers.rst:132
 msgid ""
 "Publish your package This part’s easy. In the root of your folder, do "
 "this:"
 msgstr ""
 
-#: ../../source/misc/developers.rst:133
+#: ../../source/misc/developers.rst:135
 msgid ""
 "npm publish You can give publish a url to a tarball, or a filename of a "
 "tarball, or a path to a folder."
 msgstr ""
 
-#: ../../source/misc/developers.rst:136
+#: ../../source/misc/developers.rst:138
 msgid ""
 "Note that pretty much everything in that folder will be exposed by "
 "default. So, if you have secret stuff in there, use a .npmignore file to "
 "list out the globs to ignore, or publish from a fresh checkout."
 msgstr ""
 
-#: ../../source/misc/developers.rst:138
+#: ../../source/misc/developers.rst:140
 msgid "Brag about it Send emails, write blogs, blab in IRC."
 msgstr ""
 
-#: ../../source/misc/developers.rst:141
+#: ../../source/misc/developers.rst:143
 msgid "Tell the world how easy it is to install your program!"
 msgstr ""
 
-#: ../../source/misc/developers.rst:143
-msgid ""
-"SEE ALSO npm npm-init package.json npm-scripts npm-publish npm-adduser "
-"npm-registry"
+#: ../../source/misc/developers.rst:149
+msgid ":option:`npm init`"
 msgstr ""
 
-#: ../../source/misc/disputes.rst:2
-msgid "npm-disputes"
+#: ../../source/misc/developers.rst:150 ../../source/misc/scripts.rst:140
+msgid ":ref:`package.json`"
+msgstr ""
+
+#: ../../source/misc/developers.rst:151
+msgid ":option:`npm scripts`"
+msgstr ""
+
+#: ../../source/misc/developers.rst:152 ../../source/misc/scope.rst:68
+msgid ":option:`npm publish`"
+msgstr ""
+
+#: ../../source/misc/developers.rst:153
+msgid ":option:`npm adduser`"
+msgstr ""
+
+#: ../../source/misc/developers.rst:154 ../../source/misc/disputes.rst:61
+#: ../../source/misc/scope.rst:70
+msgid ":option:`npm registry`"
 msgstr ""
 
 #: ../../source/misc/disputes.rst:4
+msgid "npm-disputes"
+msgstr ""
+
+#: ../../source/misc/disputes.rst:6
 msgid ""
 "Handling Module Name Disputes This document describes the steps that you "
 "should take to resolve module name disputes with other npm publishers. It"
@@ -1803,14 +1832,14 @@ msgid ""
 "infringe your trademarks."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:7
+#: ../../source/misc/disputes.rst:9
 msgid ""
 "This document is a clarification of the acceptable behavior outlined in "
 "the npm Code of Conduct, and nothing in this document should be "
 "interpreted to contradict any aspect of the npm Code of Conduct."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:9
+#: ../../source/misc/disputes.rst:11
 msgid ""
 "TL;DR Get the author email with npm owner ls <pkgname> Email the author, "
 "CC support@npmjs.com After a few weeks, if there’s no resolution, we’ll "
@@ -1818,14 +1847,14 @@ msgid ""
 "the way."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:15
+#: ../../source/misc/disputes.rst:17
 msgid ""
 "DESCRIPTION There sometimes arise cases where a user publishes a module, "
 "and then later, some other user wants to use that name. Here are some "
 "common ways that happens (each of these is based on actual events.)"
 msgstr ""
 
-#: ../../source/misc/disputes.rst:18
+#: ../../source/misc/disputes.rst:20
 msgid ""
 "Alice writes a JavaScript module foo, which is not node-specific. Alice "
 "doesn’t use node at all. Yusuf wants to use foo in node, so he wraps it "
@@ -1848,7 +1877,7 @@ msgid ""
 " Yusuf’s foo is in the way."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:23
+#: ../../source/misc/disputes.rst:25
 msgid ""
 "npm owner ls foo. This will tell Alice the email address of the owner "
 "(Yusuf). Alice emails Yusuf, explaining the situation as respectfully as "
@@ -1864,7 +1893,7 @@ msgid ""
 "be reasonable, and are probably not even aware that they’re in your way."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:29
+#: ../../source/misc/disputes.rst:31
 msgid ""
 "Module ecosystems are most vibrant and powerful when they are as self-"
 "directed as possible. If an admin one day deletes something you had "
@@ -1874,14 +1903,14 @@ msgid ""
 " about the interaction."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:31
+#: ../../source/misc/disputes.rst:33
 msgid ""
 "EXCEPTIONS Some things are not allowed, and will be removed without "
 "discussion if they are brought to the attention of the npm registry "
 "admins, including but not limited to:"
 msgstr ""
 
-#: ../../source/misc/disputes.rst:34
+#: ../../source/misc/disputes.rst:36
 msgid ""
 "Malware (that is, a package designed to exploit or harm the machine on "
 "which it is installed). Violations of copyright or licenses (for example,"
@@ -1902,7 +1931,7 @@ msgid ""
 "to help."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:43
+#: ../../source/misc/disputes.rst:45
 msgid ""
 "TRADEMARKS If you think another npm publisher is infringing your "
 "trademark, such as by using a confusingly similar package name, email "
@@ -1911,7 +1940,7 @@ msgid ""
 "certificate."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:46
+#: ../../source/misc/disputes.rst:48
 msgid ""
 "If we see that the package’s publisher is intentionally misleading others"
 " by misusing your registered mark without permission, we will transfer "
@@ -1920,359 +1949,359 @@ msgid ""
 "README file or metadata."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:48
+#: ../../source/misc/disputes.rst:50
 msgid ""
 "CHANGES This is a living document and may be updated from time to time. "
 "Please refer to the git history for this document to view the changes."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:51
+#: ../../source/misc/disputes.rst:53
 msgid "LICENSE Copyright (C) npm, Inc., All rights reserved"
 msgstr ""
 
-#: ../../source/misc/disputes.rst:54
+#: ../../source/misc/disputes.rst:56
 msgid ""
 "This document may be reused under a Creative Commons Attribution-"
 "ShareAlike License."
 msgstr ""
 
-#: ../../source/misc/disputes.rst:56
-msgid "SEE ALSO npm-registry npm-owner"
-msgstr ""
-
-#: ../../source/misc/index.rst:2
-msgid "npm-index"
+#: ../../source/misc/disputes.rst:62
+msgid ":option:`npm owner`"
 msgstr ""
 
 #: ../../source/misc/index.rst:4
+msgid "npm-index"
+msgstr ""
+
+#: ../../source/misc/index.rst:6
 msgid "Index of all npm documentation README(1) a JavaScript package manager"
 msgstr ""
 
-#: ../../source/misc/index.rst:8
+#: ../../source/misc/index.rst:10
 msgid "Command Line Documentation Using npm on the command line"
 msgstr ""
 
-#: ../../source/misc/index.rst:11
+#: ../../source/misc/index.rst:13
 msgid "npm javascript package manager"
 msgstr ""
 
-#: ../../source/misc/index.rst:14
+#: ../../source/misc/index.rst:16
 msgid "npm-access Set access level on published packages"
 msgstr ""
 
-#: ../../source/misc/index.rst:17
+#: ../../source/misc/index.rst:19
 msgid "npm-adduser Add a registry user account"
 msgstr ""
 
-#: ../../source/misc/index.rst:20
+#: ../../source/misc/index.rst:22
 msgid "npm-audit Run a security audit"
 msgstr ""
 
-#: ../../source/misc/index.rst:23
+#: ../../source/misc/index.rst:25
 msgid "npm-bin Display npm bin folder"
 msgstr ""
 
-#: ../../source/misc/index.rst:26
+#: ../../source/misc/index.rst:28
 msgid "npm-bugs Bugs for a package in a web browser maybe"
 msgstr ""
 
-#: ../../source/misc/index.rst:29
+#: ../../source/misc/index.rst:31
 msgid "npm-build Build a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:32
+#: ../../source/misc/index.rst:34
 msgid "npm-bundle REMOVED"
 msgstr ""
 
-#: ../../source/misc/index.rst:35
+#: ../../source/misc/index.rst:37
 msgid "npm-cache Manipulates packages cache"
 msgstr ""
 
-#: ../../source/misc/index.rst:38
+#: ../../source/misc/index.rst:40
 msgid "npm-ci Install a project with a clean slate"
 msgstr ""
 
-#: ../../source/misc/index.rst:41
+#: ../../source/misc/index.rst:43
 msgid "npm-completion Tab Completion for npm"
 msgstr ""
 
-#: ../../source/misc/index.rst:44
+#: ../../source/misc/index.rst:46
 msgid "npm-config Manage the npm configuration files"
 msgstr ""
 
-#: ../../source/misc/index.rst:47
+#: ../../source/misc/index.rst:49
 msgid "npm-dedupe Reduce duplication"
 msgstr ""
 
-#: ../../source/misc/index.rst:50
+#: ../../source/misc/index.rst:52
 msgid "npm-deprecate Deprecate a version of a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:53
+#: ../../source/misc/index.rst:55
 msgid "npm-dist-tag Modify package distribution tags"
 msgstr ""
 
-#: ../../source/misc/index.rst:56
+#: ../../source/misc/index.rst:58
 msgid "npm-docs Docs for a package in a web browser maybe"
 msgstr ""
 
-#: ../../source/misc/index.rst:59
+#: ../../source/misc/index.rst:61
 msgid "npm-doctor Check your environments"
 msgstr ""
 
-#: ../../source/misc/index.rst:62
+#: ../../source/misc/index.rst:64
 msgid "npm-edit Edit an installed package"
 msgstr ""
 
-#: ../../source/misc/index.rst:65
+#: ../../source/misc/index.rst:67
 msgid "npm-explore Browse an installed package"
 msgstr ""
 
-#: ../../source/misc/index.rst:68
+#: ../../source/misc/index.rst:70
 msgid "npm-help-search Search npm help documentation"
 msgstr ""
 
-#: ../../source/misc/index.rst:71
+#: ../../source/misc/index.rst:73
 msgid "npm-help Get help on npm"
 msgstr ""
 
-#: ../../source/misc/index.rst:74
+#: ../../source/misc/index.rst:76
 msgid "npm-hook Manage registry hooks"
 msgstr ""
 
-#: ../../source/misc/index.rst:77
+#: ../../source/misc/index.rst:79
 msgid "npm-init create a package.json file"
 msgstr ""
 
-#: ../../source/misc/index.rst:80
+#: ../../source/misc/index.rst:82
 msgid "npm-install-ci-test Install a project with a clean slate and run tests"
 msgstr ""
 
-#: ../../source/misc/index.rst:83
+#: ../../source/misc/index.rst:85
 msgid "npm-install-test Install package(s) and run tests"
 msgstr ""
 
-#: ../../source/misc/index.rst:86
+#: ../../source/misc/index.rst:88
 msgid "npm-install Install a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:89
+#: ../../source/misc/index.rst:91
 msgid "npm-link Symlink a package folder"
 msgstr ""
 
-#: ../../source/misc/index.rst:92
+#: ../../source/misc/index.rst:94
 msgid "npm-logout Log out of the registry"
 msgstr ""
 
-#: ../../source/misc/index.rst:95
+#: ../../source/misc/index.rst:97
 msgid "npm-ls List installed packages"
 msgstr ""
 
-#: ../../source/misc/index.rst:98
+#: ../../source/misc/index.rst:100
 msgid "npm-org Manage orgs"
 msgstr ""
 
-#: ../../source/misc/index.rst:101
+#: ../../source/misc/index.rst:103
 msgid "npm-outdated Check for outdated packages"
 msgstr ""
 
-#: ../../source/misc/index.rst:104
+#: ../../source/misc/index.rst:106
 msgid "npm-owner Manage package owners"
 msgstr ""
 
-#: ../../source/misc/index.rst:107
+#: ../../source/misc/index.rst:109
 msgid "npm-pack Create a tarball from a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:110
+#: ../../source/misc/index.rst:112
 msgid "npm-ping Ping npm registry"
 msgstr ""
 
-#: ../../source/misc/index.rst:113
+#: ../../source/misc/index.rst:115
 msgid "npm-prefix Display prefix"
 msgstr ""
 
-#: ../../source/misc/index.rst:116
+#: ../../source/misc/index.rst:118
 msgid "npm-profile Change settings on your registry profile"
 msgstr ""
 
-#: ../../source/misc/index.rst:119
+#: ../../source/misc/index.rst:121
 msgid "npm-prune Remove extraneous packages"
 msgstr ""
 
-#: ../../source/misc/index.rst:122
+#: ../../source/misc/index.rst:124
 msgid "npm-publish Publish a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:125
+#: ../../source/misc/index.rst:127
 msgid "npm-rebuild Rebuild a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:128
+#: ../../source/misc/index.rst:130
 msgid "npm-repo Open package repository page in the browser"
 msgstr ""
 
-#: ../../source/misc/index.rst:131
+#: ../../source/misc/index.rst:133
 msgid "npm-restart Restart a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:134
+#: ../../source/misc/index.rst:136
 msgid "npm-root Display npm root"
 msgstr ""
 
-#: ../../source/misc/index.rst:137
+#: ../../source/misc/index.rst:139
 msgid "npm-run-script Run arbitrary package scripts"
 msgstr ""
 
-#: ../../source/misc/index.rst:140
+#: ../../source/misc/index.rst:142
 msgid "npm-search Search for packages"
 msgstr ""
 
-#: ../../source/misc/index.rst:143
+#: ../../source/misc/index.rst:145
 msgid "npm-shrinkwrap Lock down dependency versions for publication"
 msgstr ""
 
-#: ../../source/misc/index.rst:146
+#: ../../source/misc/index.rst:148
 msgid "npm-star Mark your favorite packages"
 msgstr ""
 
-#: ../../source/misc/index.rst:149
+#: ../../source/misc/index.rst:151
 msgid "npm-stars View packages marked as favorites"
 msgstr ""
 
-#: ../../source/misc/index.rst:152
+#: ../../source/misc/index.rst:154
 msgid "npm-start Start a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:155
+#: ../../source/misc/index.rst:157
 msgid "npm-stop Stop a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:158
+#: ../../source/misc/index.rst:160
 msgid "npm-team Manage organization teams and team memberships"
 msgstr ""
 
-#: ../../source/misc/index.rst:161
+#: ../../source/misc/index.rst:163
 msgid "npm-test Test a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:164
+#: ../../source/misc/index.rst:166
 msgid "npm-token Manage your authentication tokens"
 msgstr ""
 
-#: ../../source/misc/index.rst:167
+#: ../../source/misc/index.rst:169
 msgid "npm-uninstall Remove a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:170
+#: ../../source/misc/index.rst:172
 msgid "npm-unpublish Remove a package from the registry"
 msgstr ""
 
-#: ../../source/misc/index.rst:173
+#: ../../source/misc/index.rst:175
 msgid "npm-update Update a package"
 msgstr ""
 
-#: ../../source/misc/index.rst:176
+#: ../../source/misc/index.rst:178
 msgid "npm-version Bump a package version"
 msgstr ""
 
-#: ../../source/misc/index.rst:179
+#: ../../source/misc/index.rst:181
 msgid "npm-view View registry info"
 msgstr ""
 
-#: ../../source/misc/index.rst:182
+#: ../../source/misc/index.rst:184
 msgid "npm-whoami Display npm username"
 msgstr ""
 
-#: ../../source/misc/index.rst:185
+#: ../../source/misc/index.rst:187
 msgid "API Documentation Using npm in your Node programs"
 msgstr ""
 
-#: ../../source/misc/index.rst:188
+#: ../../source/misc/index.rst:190
 msgid "Files File system structures npm uses"
 msgstr ""
 
-#: ../../source/misc/index.rst:191
+#: ../../source/misc/index.rst:193
 msgid "npm-folders Folder Structures Used by npm"
 msgstr ""
 
-#: ../../source/misc/index.rst:194
+#: ../../source/misc/index.rst:196
 msgid "npm-package-locks An explanation of npm lockfiles"
 msgstr ""
 
-#: ../../source/misc/index.rst:197
+#: ../../source/misc/index.rst:199
 msgid "npm-shrinkwrap.json A publishable lockfile"
 msgstr ""
 
-#: ../../source/misc/index.rst:200
+#: ../../source/misc/index.rst:202
 msgid "npmrc The npm config files"
 msgstr ""
 
-#: ../../source/misc/index.rst:203
+#: ../../source/misc/index.rst:205
 msgid "package-lock.json A manifestation of the manifest"
 msgstr ""
 
-#: ../../source/misc/index.rst:206
+#: ../../source/misc/index.rst:208
 msgid "package.json Specifics of npm’s package.json handling"
 msgstr ""
 
-#: ../../source/misc/index.rst:209
+#: ../../source/misc/index.rst:211
 msgid "Misc Various other bits and bobs"
 msgstr ""
 
-#: ../../source/misc/index.rst:212
+#: ../../source/misc/index.rst:214
 msgid "npm-coding-style npm’s “funny” coding style"
 msgstr ""
 
-#: ../../source/misc/index.rst:215
+#: ../../source/misc/index.rst:217
 msgid "npm-config More than you probably want to know about npm configuration"
 msgstr ""
 
-#: ../../source/misc/index.rst:218
+#: ../../source/misc/index.rst:220
 msgid "npm-developers Developer Guide"
 msgstr ""
 
-#: ../../source/misc/index.rst:221
+#: ../../source/misc/index.rst:223
 msgid "npm-disputes Handling Module Name Disputes"
 msgstr ""
 
-#: ../../source/misc/index.rst:224
+#: ../../source/misc/index.rst:226
 msgid "npm-index Index of all npm documentation"
 msgstr ""
 
-#: ../../source/misc/index.rst:227
+#: ../../source/misc/index.rst:229
 msgid "npm-orgs Working with Teams & Orgs"
 msgstr ""
 
-#: ../../source/misc/index.rst:230
+#: ../../source/misc/index.rst:232
 msgid "npm-registry The JavaScript Package Registry"
 msgstr ""
 
-#: ../../source/misc/index.rst:233
+#: ../../source/misc/index.rst:235
 msgid "npm-scope Scoped packages"
 msgstr ""
 
-#: ../../source/misc/index.rst:236
+#: ../../source/misc/index.rst:238
 msgid "npm-scripts How npm handles the “scripts” field"
 msgstr ""
 
-#: ../../source/misc/index.rst:239
+#: ../../source/misc/index.rst:241
 msgid "removing-npm Cleaning the Slate"
 msgstr ""
 
-#: ../../source/misc/index.rst:242
+#: ../../source/misc/index.rst:244
 msgid "semver The semantic versioner for npm"
 msgstr ""
 
-#: ../../source/misc/orgs.rst:2
+#: ../../source/misc/orgs.rst:4
 msgid "npm-orgs"
 msgstr ""
 
-#: ../../source/misc/orgs.rst:4
+#: ../../source/misc/orgs.rst:6
 msgid "Working with Teams & Orgs DESCRIPTION There are three levels of org users:"
 msgstr ""
 
-#: ../../source/misc/orgs.rst:8
+#: ../../source/misc/orgs.rst:10
 msgid ""
 "Super admin, controls billing & adding people to the org. Team admin, "
 "manages team membership & package access. Developer, works on packages "
@@ -2282,24 +2311,24 @@ msgid ""
 "team that all users are automatically added to."
 msgstr ""
 
-#: ../../source/misc/orgs.rst:13
+#: ../../source/misc/orgs.rst:15
 msgid ""
 "The team admin is the person who manages team creation, team membership, "
 "and package access for teams. The team admin grants package access to "
 "teams, not individuals."
 msgstr ""
 
-#: ../../source/misc/orgs.rst:15
+#: ../../source/misc/orgs.rst:17
 msgid ""
 "The developer will be able to access packages based on the teams they are"
 " on. Access is either read-write or read-only."
 msgstr ""
 
-#: ../../source/misc/orgs.rst:17
+#: ../../source/misc/orgs.rst:19
 msgid "There are two main commands:"
 msgstr ""
 
-#: ../../source/misc/orgs.rst:19
+#: ../../source/misc/orgs.rst:21
 msgid ""
 "npm team see npm-team for more details npm access see npm-access for more"
 " details Team Admins create teams Check who you’ve added to your org: npm"
@@ -2309,11 +2338,11 @@ msgid ""
 "change that with the access command."
 msgstr ""
 
-#: ../../source/misc/orgs.rst:26
+#: ../../source/misc/orgs.rst:28
 msgid "Create a new team:"
 msgstr ""
 
-#: ../../source/misc/orgs.rst:28
+#: ../../source/misc/orgs.rst:30
 msgid ""
 "npm team create <org:team> Add members to that team: npm team add "
 "<org:team> <user> Publish a package and adjust package access In package "
@@ -2321,29 +2350,40 @@ msgid ""
 "as usual"
 msgstr ""
 
-#: ../../source/misc/orgs.rst:36
+#: ../../source/misc/orgs.rst:38
 msgid ""
 "Grant access: npm access grant <read-only|read-write> <org:team> "
 "[<package>] Revoke access: npm access revoke <org:team> [<package>] "
 "Monitor your package access See what org packages a team member can "
 "access: npm access ls-packages <org> <user> See packages available to a "
 "specific team: npm access ls-packages <org:team> Check which teams are "
-"collaborating on a package: npm access ls-collaborators <pkg> SEE ALSO "
-"npm-team npm-access npm-scope"
+"collaborating on a package: npm access ls-collaborators <pkg>"
 msgstr ""
 
-#: ../../source/misc/registry.rst:2
-msgid "npm-registry"
+#: ../../source/misc/orgs.rst:53
+msgid ":option:`npm team`"
+msgstr ""
+
+#: ../../source/misc/orgs.rst:54 ../../source/misc/scope.rst:69
+msgid ":option:`npm access`"
+msgstr ""
+
+#: ../../source/misc/orgs.rst:55
+msgid ":option:`npm scope`"
 msgstr ""
 
 #: ../../source/misc/registry.rst:4
+msgid "npm-registry"
+msgstr ""
+
+#: ../../source/misc/registry.rst:6
 msgid ""
 "The JavaScript Package Registry DESCRIPTION To resolve packages by name "
 "and version, npm talks to a registry website that implements the CommonJS"
 " Package Registry specification for reading package info."
 msgstr ""
 
-#: ../../source/misc/registry.rst:8
+#: ../../source/misc/registry.rst:10
 msgid ""
 "npm is configured to use npm, Inc.’s public registry at "
 "https://registry.npmjs.org by default. Use of the npm public registry is "
@@ -2351,28 +2391,28 @@ msgid ""
 "https://www.npmjs.com/policies/terms."
 msgstr ""
 
-#: ../../source/misc/registry.rst:10
+#: ../../source/misc/registry.rst:12
 msgid ""
 "You can configure npm to use any compatible registry you like, and even "
 "run your own registry. Use of someone else’s registry may be governed by "
 "their terms of use."
 msgstr ""
 
-#: ../../source/misc/registry.rst:12
+#: ../../source/misc/registry.rst:14
 msgid ""
 "npm’s package registry implementation supports several write APIs as "
 "well, to allow for publishing packages and managing user account "
 "information."
 msgstr ""
 
-#: ../../source/misc/registry.rst:14
+#: ../../source/misc/registry.rst:16
 msgid ""
 "The npm public registry is powered by a CouchDB database, of which there "
 "is a public mirror at https://skimdb.npmjs.com/registry. The code for the"
 " couchapp is available at https://github.com/npm/npm-registry-couchapp."
 msgstr ""
 
-#: ../../source/misc/registry.rst:16
+#: ../../source/misc/registry.rst:18
 msgid ""
 "The registry URL used is determined by the scope of the package (see npm-"
 "scope). If no scope is specified, the default registry is used, which is "
@@ -2380,17 +2420,17 @@ msgid ""
 "npm-config for more on managing npm’s configuration."
 msgstr ""
 
-#: ../../source/misc/registry.rst:18
+#: ../../source/misc/registry.rst:20
 msgid "Does npm send any information about me back to the registry? Yes."
 msgstr ""
 
-#: ../../source/misc/registry.rst:21
+#: ../../source/misc/registry.rst:23
 msgid ""
 "When making requests of the registry npm adds two headers with "
 "information about your environment:"
 msgstr ""
 
-#: ../../source/misc/registry.rst:23
+#: ../../source/misc/registry.rst:25
 msgid ""
 "Npm-Scope – If your project is scoped, this header will contain its "
 "scope. In the future npm hopes to build registry features that use this "
@@ -2405,17 +2445,17 @@ msgid ""
 "authenticated accounts that may be used in the same requests."
 msgstr ""
 
-#: ../../source/misc/registry.rst:27
+#: ../../source/misc/registry.rst:29
 msgid "Can I run my own private registry? Yes!"
 msgstr ""
 
-#: ../../source/misc/registry.rst:30
+#: ../../source/misc/registry.rst:32
 msgid ""
 "The easiest way is to replicate the couch database, and use the same (or "
 "similar) design doc to implement the APIs."
 msgstr ""
 
-#: ../../source/misc/registry.rst:32
+#: ../../source/misc/registry.rst:34
 msgid ""
 "If you set up continuous replication from the official CouchDB, and then "
 "set your internal CouchDB as the registry config, then you’ll be able to "
@@ -2423,13 +2463,13 @@ msgid ""
 "default will only publish internally."
 msgstr ""
 
-#: ../../source/misc/registry.rst:34
+#: ../../source/misc/registry.rst:36
 msgid ""
 "If you then want to publish a package for the whole world to see, you can"
 " simply override the --registry option for that publish command."
 msgstr ""
 
-#: ../../source/misc/registry.rst:36
+#: ../../source/misc/registry.rst:38
 msgid ""
 "I don’t want my package published in the official registry. It’s private."
 " Set \"private\": true in your package.json to prevent it from being "
@@ -2438,62 +2478,70 @@ msgid ""
 "internal registry."
 msgstr ""
 
-#: ../../source/misc/registry.rst:39
+#: ../../source/misc/registry.rst:41
 msgid "See package.json for more info on what goes in the package.json file."
 msgstr ""
 
-#: ../../source/misc/registry.rst:41
+#: ../../source/misc/registry.rst:43
 msgid ""
 "Will you replicate from my registry into the public one? No. If you want "
 "things to be public, then publish them into the public registry using "
 "npm. What little security there is would be for nought otherwise."
 msgstr ""
 
-#: ../../source/misc/registry.rst:44
+#: ../../source/misc/registry.rst:46
 msgid ""
 "Do I have to use couchdb to build a registry that npm can talk to? No, "
 "but it’s way easier. Basically, yes, you do, or you have to effectively "
 "implement the entire CouchDB API anyway."
 msgstr ""
 
-#: ../../source/misc/registry.rst:47
+#: ../../source/misc/registry.rst:49
 msgid ""
 "Is there a website or something to see package docs and such? Yes, head "
 "over to https://www.npmjs.com/"
 msgstr ""
 
-#: ../../source/misc/registry.rst:50
-msgid "SEE ALSO npm-config npm-config npmrc npm-developers npm-disputes"
+#: ../../source/misc/registry.rst:55 ../../source/misc/registry.rst:56
+msgid ":option:`npm config`"
 msgstr ""
 
-#: ../../source/misc/removal.rst:2
-msgid "npm-removal"
+#: ../../source/misc/registry.rst:57
+msgid ":option:`npmrc`"
+msgstr ""
+
+#: ../../source/misc/registry.rst:59
+msgid ":option:`npm disputes`"
 msgstr ""
 
 #: ../../source/misc/removal.rst:4
+msgid "npm-removal"
+msgstr ""
+
+#: ../../source/misc/removal.rst:6
 msgid "Cleaning the Slate SYNOPSIS So sad to see you go."
 msgstr ""
 
-#: ../../source/misc/removal.rst:8
+#: ../../source/misc/removal.rst:10
 msgid ""
 "sudo npm uninstall npm -g Or, if that fails, get the npm source code, and"
 " do:"
 msgstr ""
 
-#: ../../source/misc/removal.rst:11
+#: ../../source/misc/removal.rst:13
 msgid ""
 "sudo make uninstall More Severe Uninstalling Usually, the above "
 "instructions are sufficient. That will remove npm, but leave behind "
 "anything you’ve installed."
 msgstr ""
 
-#: ../../source/misc/removal.rst:15
+#: ../../source/misc/removal.rst:17
 msgid ""
 "If that doesn’t work, or if you require more drastic measures, continue "
 "reading."
 msgstr ""
 
-#: ../../source/misc/removal.rst:17
+#: ../../source/misc/removal.rst:19
 msgid ""
 "Note that this is only necessary for globally-installed packages. Local "
 "installs are completely contained within a project’s node_modules folder."
@@ -2501,7 +2549,7 @@ msgid ""
 "script is particularly ill-behaved)."
 msgstr ""
 
-#: ../../source/misc/removal.rst:19
+#: ../../source/misc/removal.rst:21
 msgid ""
 "This assumes that you installed node and npm in the default place. If you"
 " configured node with a different --prefix, or installed npm with a "
@@ -2509,11 +2557,11 @@ msgid ""
 "/usr/local with your install prefix."
 msgstr ""
 
-#: ../../source/misc/removal.rst:21
+#: ../../source/misc/removal.rst:23
 msgid "To remove everything npm-related manually:"
 msgstr ""
 
-#: ../../source/misc/removal.rst:23
+#: ../../source/misc/removal.rst:25
 msgid ""
 "rm -rf /usr/local/{lib/node{,/.npm,_modules},bin,share/man}/npm* If you "
 "installed things with npm, then your best bet is to uninstall them with "
@@ -2521,28 +2569,36 @@ msgid ""
 "This can help find any symlinks that are lying around:"
 msgstr ""
 
-#: ../../source/misc/removal.rst:26
+#: ../../source/misc/removal.rst:28
 msgid ""
 "ls -laF /usr/local/{lib/node{,/.npm},bin,share/man} | grep npm Prior to "
 "version 0.3, npm used shim files for executables and node modules. To "
 "track those down, you can do the following:"
 msgstr ""
 
-#: ../../source/misc/removal.rst:29
+#: ../../source/misc/removal.rst:31
 msgid ""
 "find /usr/local/{lib/node,bin} -exec grep -l npm \\{\\} \\; ; (This is "
 "also in the README file.)"
 msgstr ""
 
-#: ../../source/misc/removal.rst:32
-msgid "SEE ALSO README npm-uninstall npm-prune"
+#: ../../source/misc/removal.rst:37
+msgid ":option:`README`"
 msgstr ""
 
-#: ../../source/misc/scope.rst:2
-msgid "npm-scope"
+#: ../../source/misc/removal.rst:38
+msgid ":option:`npm uninstall`"
+msgstr ""
+
+#: ../../source/misc/removal.rst:39
+msgid ":option:`npm prune`"
 msgstr ""
 
 #: ../../source/misc/scope.rst:4
+msgid "npm-scope"
+msgstr ""
+
+#: ../../source/misc/scope.rst:6
 msgid ""
 "Scoped packages DESCRIPTION All npm packages have a name. Some package "
 "names also have a scope. A scope follows the usual rules for package "
@@ -2551,14 +2607,14 @@ msgid ""
 "slash, e.g."
 msgstr ""
 
-#: ../../source/misc/scope.rst:8
+#: ../../source/misc/scope.rst:10
 msgid ""
 "@somescope/somepackagename Scopes are a way of grouping related packages "
 "together, and also affect a few things about the way npm treats the "
 "package."
 msgstr ""
 
-#: ../../source/misc/scope.rst:11
+#: ../../source/misc/scope.rst:13
 msgid ""
 "Each npm user/organization has their own scope, and only you can add "
 "packages in your scope. This means you don’t have to worry about someone "
@@ -2566,7 +2622,7 @@ msgid ""
 "signal official packages for organizations."
 msgstr ""
 
-#: ../../source/misc/scope.rst:13
+#: ../../source/misc/scope.rst:15
 msgid ""
 "Scoped packages can be published and installed as of npm@2 and are "
 "supported by the primary npm registry. Unscoped packages can depend on "
@@ -2575,7 +2631,7 @@ msgid ""
 "unscoped registries at the same time."
 msgstr ""
 
-#: ../../source/misc/scope.rst:15
+#: ../../source/misc/scope.rst:17
 msgid ""
 "Installing scoped packages Scoped packages are installed to a sub-folder "
 "of the regular installation folder, e.g. if your other packages are "
@@ -2585,62 +2641,62 @@ msgid ""
 " of scoped packages."
 msgstr ""
 
-#: ../../source/misc/scope.rst:18
+#: ../../source/misc/scope.rst:20
 msgid ""
 "A scoped package is installed by referencing it by name, preceded by an @"
 " symbol, in npm install:"
 msgstr ""
 
-#: ../../source/misc/scope.rst:20
+#: ../../source/misc/scope.rst:22
 msgid "npm install @myorg/mypackage Or in package.json:"
 msgstr ""
 
-#: ../../source/misc/scope.rst:23
+#: ../../source/misc/scope.rst:25
 msgid "\"dependencies\": {"
 msgstr ""
 
-#: ../../source/misc/scope.rst:24
+#: ../../source/misc/scope.rst:26
 msgid "\"@myorg/mypackage\": \"^1.3.0\""
 msgstr ""
 
-#: ../../source/misc/scope.rst:25
+#: ../../source/misc/scope.rst:27
 msgid ""
 "} Note that if the @ symbol is omitted, in either case, npm will instead "
 "attempt to install from GitHub; see npm-install."
 msgstr ""
 
-#: ../../source/misc/scope.rst:28
+#: ../../source/misc/scope.rst:30
 msgid ""
 "Requiring scoped packages Because scoped packages are installed into a "
 "scope folder, you have to include the name of the scope when requiring "
 "them in your code, e.g."
 msgstr ""
 
-#: ../../source/misc/scope.rst:31
+#: ../../source/misc/scope.rst:33
 msgid ""
 "require('@myorg/mypackage') There is nothing special about the way Node "
 "treats scope folders. This simply requires the mypackage module in the "
 "folder named @myorg."
 msgstr ""
 
-#: ../../source/misc/scope.rst:34
+#: ../../source/misc/scope.rst:36
 msgid ""
 "Publishing scoped packages Scoped packages can be published from the CLI "
 "as of npm@2 and can be published to any registry that supports them, "
 "including the primary npm registry."
 msgstr ""
 
-#: ../../source/misc/scope.rst:37
+#: ../../source/misc/scope.rst:39
 msgid ""
 "(As of 2015-04-19, and with npm 2.0 or better, the primary npm registry "
 "does support scoped packages.)"
 msgstr ""
 
-#: ../../source/misc/scope.rst:39
+#: ../../source/misc/scope.rst:41
 msgid "If you wish, you may associate a scope with a registry; see below."
 msgstr ""
 
-#: ../../source/misc/scope.rst:41
+#: ../../source/misc/scope.rst:43
 msgid ""
 "Publishing public scoped packages to the primary npm registry To publish "
 "a public scoped package, you must specify --access public with the "
@@ -2648,14 +2704,14 @@ msgid ""
 "public as if you had run npm access public after publishing."
 msgstr ""
 
-#: ../../source/misc/scope.rst:44
+#: ../../source/misc/scope.rst:46
 msgid ""
 "Publishing private scoped packages to the npm registry To publish a "
 "private scoped package to the npm registry, you must have an npm Private "
 "Modules account."
 msgstr ""
 
-#: ../../source/misc/scope.rst:47
+#: ../../source/misc/scope.rst:49
 msgid ""
 "You can then publish the module with npm publish or npm publish --access "
 "restricted, and it will be present in the npm registry, with restricted "
@@ -2663,7 +2719,7 @@ msgid ""
 "access or on the npmjs.com website."
 msgstr ""
 
-#: ../../source/misc/scope.rst:49
+#: ../../source/misc/scope.rst:51
 msgid ""
 "Associating a scope with a registry Scopes can be associated with a "
 "separate registry. This allows you to seamlessly use a mix of packages "
@@ -2671,22 +2727,22 @@ msgid ""
 " npm Enterprise."
 msgstr ""
 
-#: ../../source/misc/scope.rst:52
+#: ../../source/misc/scope.rst:54
 msgid "You can associate a scope with a registry at login, e.g."
 msgstr ""
 
-#: ../../source/misc/scope.rst:54
+#: ../../source/misc/scope.rst:56
 msgid ""
 "npm login --registry=http://reg.example.com --scope=@myco Scopes have a "
 "many-to-one relationship with registries: one registry can host multiple "
 "scopes, but a scope only ever points to one registry."
 msgstr ""
 
-#: ../../source/misc/scope.rst:57
+#: ../../source/misc/scope.rst:59
 msgid "You can also associate a scope with a registry using npm config:"
 msgstr ""
 
-#: ../../source/misc/scope.rst:59
+#: ../../source/misc/scope.rst:61
 msgid ""
 "npm config set @myco:registry http://reg.example.com Once a scope is "
 "associated with a registry, any npm install for a package with that scope"
@@ -2695,21 +2751,21 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../source/misc/scope.rst:62
-msgid "SEE ALSO npm-install npm-publish npm-access npm-registry"
-msgstr ""
-
-#: ../../source/misc/scripts.rst:2
-msgid "npm-scripts"
+#: ../../source/misc/scope.rst:67 ../../source/misc/scripts.rst:142
+msgid ":option:`npm install`"
 msgstr ""
 
 #: ../../source/misc/scripts.rst:4
+msgid "npm-scripts"
+msgstr ""
+
+#: ../../source/misc/scripts.rst:6
 msgid ""
 "How npm handles the \"scripts\" field DESCRIPTION npm supports the "
 "“scripts” property of the package.json file, for the following scripts:"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:8
+#: ../../source/misc/scripts.rst:10
 msgid ""
 "prepublish: Run BEFORE the package is packed and published, as well as on"
 " local npm install without any arguments. (See below) prepare: Run both "
@@ -2739,7 +2795,7 @@ msgid ""
 "<pkg> -- npm run <stage>."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:28
+#: ../../source/misc/scripts.rst:30
 msgid ""
 "PREPUBLISH AND PREPARE DEPRECATION NOTE Since npm@1.1.71, the npm CLI has"
 " run the prepublish script for both npm publish and npm install, because "
@@ -2753,13 +2809,13 @@ msgid ""
 "they’re in good shape)."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:32
+#: ../../source/misc/scripts.rst:34
 msgid ""
 "See https://github.com/npm/npm/issues/10074 for a much lengthier "
 "justification, with further reading, for this change."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:34
+#: ../../source/misc/scripts.rst:36
 msgid ""
 "USE CASES If you need to perform operations on your package before it is "
 "used, in a way that is not dependent on the operating system or "
@@ -2767,7 +2823,7 @@ msgid ""
 " tasks such as:"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:37
+#: ../../source/misc/scripts.rst:39
 msgid ""
 "Compiling CoffeeScript source code into JavaScript. Creating minified "
 "versions of JavaScript source code. Fetching remote resources that your "
@@ -2776,7 +2832,7 @@ msgid ""
 "complexity and variability. Additionally, this means that:"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:42
+#: ../../source/misc/scripts.rst:44
 msgid ""
 "You can depend on coffee-script as a devDependency, and thus your users "
 "don’t need to have it installed. You don’t need to include minifiers in "
@@ -2786,49 +2842,49 @@ msgid ""
 "package contents."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:48
+#: ../../source/misc/scripts.rst:50
 msgid "\"start\": \"node server.js\":"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:50
+#: ../../source/misc/scripts.rst:52
 msgid ""
 "If there is a server.js file in the root of your package, then npm will "
 "default the start command to node server.js."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:52
+#: ../../source/misc/scripts.rst:54
 msgid "\"install\": \"node-gyp rebuild\":"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:54
+#: ../../source/misc/scripts.rst:56
 msgid ""
 "If there is a binding.gyp file in the root of your package and you "
 "haven’t defined your own install or preinstall scripts, npm will default "
 "the install command to compile using node-gyp."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:56
+#: ../../source/misc/scripts.rst:58
 msgid ""
 "USER If npm was invoked with root privileges, then it will change the uid"
 " to the user account or uid specified by the user config, which defaults "
 "to nobody. Set the unsafe-perm flag to run scripts with root privileges."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:59
+#: ../../source/misc/scripts.rst:61
 msgid ""
 "ENVIRONMENT Package scripts run in an environment where many pieces of "
 "information are made available regarding the setup of npm and the current"
 " state of the process."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:62
+#: ../../source/misc/scripts.rst:64
 msgid ""
 "path If you depend on modules that define executable scripts, like test "
 "suites, then those executables will be added to the PATH for executing "
 "the scripts. So, if your package.json has this:"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:65
+#: ../../source/misc/scripts.rst:67
 msgid ""
 "{ \"name\" : \"foo\" , \"dependencies\" : { \"bar\" : \"0.1.x\" } , "
 "\"scripts\": { \"start\" : \"bar ./test\" } } then you could run npm "
@@ -2836,7 +2892,7 @@ msgid ""
 "node_modules/.bin directory on npm install."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:70
+#: ../../source/misc/scripts.rst:72
 msgid ""
 "package.json vars The package.json fields are tacked onto the "
 "npm_package_ prefix. So, for instance, if you had {\"name\":\"foo\", "
@@ -2847,21 +2903,21 @@ msgid ""
 "process.env.npm_package_version, and so on for other fields."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:73
+#: ../../source/misc/scripts.rst:75
 msgid ""
 "configuration Configuration parameters are put in the environment with "
 "the npm_config_ prefix. For instance, you can view the effective root "
 "config by checking the npm_config_root environment variable."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:76
+#: ../../source/misc/scripts.rst:78
 msgid ""
 "Special: package.json “config” object The package.json “config” keys are "
 "overwritten in the environment if there is a config param of "
 "<name>[@<version>]:<key>. For example, if the package.json has this:"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:87
+#: ../../source/misc/scripts.rst:89
 msgid ""
 "npm config set foo:port 80 current lifecycle event Lastly, the "
 "npm_lifecycle_event environment variable is set to whichever stage of the"
@@ -2870,30 +2926,30 @@ msgid ""
 "happening."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:91
+#: ../../source/misc/scripts.rst:93
 msgid ""
 "Objects are flattened following this format, so if you had "
 "{\"scripts\":{\"install\":\"foo.js\"}} in your package.json, then you’d "
 "see this in the script:"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:93
+#: ../../source/misc/scripts.rst:95
 msgid ""
 "process.env.npm_package_scripts_install === \"foo.js\" EXAMPLES For "
 "example, if your package.json contains this:"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:100 ../../source/misc/scripts.rst:110
+#: ../../source/misc/scripts.rst:102 ../../source/misc/scripts.rst:112
 msgid "{ \"scripts\" :"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:98
+#: ../../source/misc/scripts.rst:100
 msgid ""
 "{ \"install\" : \"scripts/install.js\" , \"postinstall\" : "
 "\"scripts/install.js\" , \"uninstall\" : \"scripts/uninstall.js\" }"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:102
+#: ../../source/misc/scripts.rst:104
 msgid ""
 "} then scripts/install.js will be called for the install and post-install"
 " stages of the lifecycle, and scripts/uninstall.js will be called when "
@@ -2902,52 +2958,52 @@ msgid ""
 "npm_lifecycle_event environment variable."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:105
+#: ../../source/misc/scripts.rst:107
 msgid "If you want to run a make command, you can do so. This works just fine:"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:108
+#: ../../source/misc/scripts.rst:110
 msgid ""
 "{ \"preinstall\" : \"./configure\" , \"install\" : \"make && make "
 "install\" , \"test\" : \"make test\" }"
 msgstr ""
 
-#: ../../source/misc/scripts.rst:112
+#: ../../source/misc/scripts.rst:114
 msgid "} EXITING Scripts are run by passing the line as a script argument to sh."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:116
+#: ../../source/misc/scripts.rst:118
 msgid ""
 "If the script exits with a code other than 0, then this will abort the "
 "process."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:118
+#: ../../source/misc/scripts.rst:120
 msgid ""
 "Note that these script files don’t have to be nodejs or even javascript "
 "programs. They just have to be some kind of executable file."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:120
+#: ../../source/misc/scripts.rst:122
 msgid ""
 "HOOK SCRIPTS If you want to run a specific script at a specific lifecycle"
 " event for ALL packages, then you can use a hook script."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:123
+#: ../../source/misc/scripts.rst:125
 msgid ""
 "Place an executable file at node_modules/.hooks/{eventname}, and it’ll "
 "get run for all packages when they are going through that point in the "
 "package lifecycle for any packages installed in that root."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:125
+#: ../../source/misc/scripts.rst:127
 msgid ""
 "Hook scripts are run exactly the same way as package.json scripts. That "
 "is, they are in a separate child process, with the env described above."
 msgstr ""
 
-#: ../../source/misc/scripts.rst:127
+#: ../../source/misc/scripts.rst:129
 msgid ""
 "BEST PRACTICES Don’t exit with a non-zero error code unless you really "
 "mean it. Except for uninstall scripts, this will cause the npm action to "
@@ -2968,24 +3024,27 @@ msgid ""
 "preinstall or install script. If you are doing this, please consider if "
 "there is another option. The only valid use of install or preinstall "
 "scripts is for compilation which must be done on the target architecture."
-" SEE ALSO npm-run-script package.json npm-developers npm-install"
 msgstr ""
 
-#: ../../source/misc/semver.rst:2
-msgid "npm-semver"
+#: ../../source/misc/scripts.rst:139
+msgid ":option:`npm run-script`"
 msgstr ""
 
 #: ../../source/misc/semver.rst:4
+msgid "npm-semver"
+msgstr ""
+
+#: ../../source/misc/semver.rst:6
 msgid ""
 "The semantic versioner for npm Install npm install --save semver Usage As"
 " a node module:"
 msgstr ""
 
-#: ../../source/misc/semver.rst:10
+#: ../../source/misc/semver.rst:12
 msgid "const semver = require('semver')"
 msgstr ""
 
-#: ../../source/misc/semver.rst:12
+#: ../../source/misc/semver.rst:14
 msgid ""
 "semver.valid('1.2.3') // '1.2.3' semver.valid('a.b.c') // null "
 "semver.clean('  =v1.2.3   ') // '1.2.3' semver.satisfies('1.2.3', '1.x ||"
@@ -2995,105 +3054,105 @@ msgid ""
 "command-line utility:"
 msgstr ""
 
-#: ../../source/misc/semver.rst:22
+#: ../../source/misc/semver.rst:24
 msgid "$ semver -h"
 msgstr ""
 
-#: ../../source/misc/semver.rst:24
+#: ../../source/misc/semver.rst:26
 msgid ""
 "A JavaScript implementation of the http://semver.org/ specification "
 "Copyright Isaac Z. Schlueter"
 msgstr ""
 
-#: ../../source/misc/semver.rst:27
+#: ../../source/misc/semver.rst:29
 msgid ""
 "Usage: semver [options] <version> [<version> [...]] Prints valid versions"
 " sorted by SemVer precedence"
 msgstr ""
 
-#: ../../source/misc/semver.rst:30
+#: ../../source/misc/semver.rst:32
 msgid "Options: -r --range <range>"
 msgstr ""
 
-#: ../../source/misc/semver.rst:32
+#: ../../source/misc/semver.rst:34
 msgid "Print versions that match the specified range."
 msgstr ""
 
-#: ../../source/misc/semver.rst:38
+#: ../../source/misc/semver.rst:40
 msgid "-i --increment [<level>]"
 msgstr ""
 
-#: ../../source/misc/semver.rst:35
+#: ../../source/misc/semver.rst:37
 msgid ""
 "Increment a version by the specified level.  Level can be one of: major, "
 "minor, patch, premajor, preminor, prepatch, or prerelease.  Default level"
 " is 'patch'. Only one version may be specified."
 msgstr ""
 
-#: ../../source/misc/semver.rst:41
+#: ../../source/misc/semver.rst:43
 msgid ""
 "Identifier to be used to prefix premajor, preminor, prepatch or "
 "prerelease version increments."
 msgstr ""
 
-#: ../../source/misc/semver.rst:45
+#: ../../source/misc/semver.rst:47
 msgid "-l --loose"
 msgstr ""
 
-#: ../../source/misc/semver.rst:45
+#: ../../source/misc/semver.rst:47
 msgid "Interpret versions and ranges loosely"
 msgstr ""
 
-#: ../../source/misc/semver.rst:48
+#: ../../source/misc/semver.rst:50
 msgid "-p --include-prerelease"
 msgstr ""
 
-#: ../../source/misc/semver.rst:48
+#: ../../source/misc/semver.rst:50
 msgid "Always include prerelease versions in range matching"
 msgstr ""
 
-#: ../../source/misc/semver.rst:52
+#: ../../source/misc/semver.rst:54
 msgid "-c --coerce"
 msgstr ""
 
-#: ../../source/misc/semver.rst:51
+#: ../../source/misc/semver.rst:53
 msgid "Coerce a string into SemVer if possible (does not imply --loose)"
 msgstr ""
 
-#: ../../source/misc/semver.rst:54
+#: ../../source/misc/semver.rst:56
 msgid ""
 "Program exits successfully if any valid version satisfies all supplied "
 "ranges, and prints all satisfying versions."
 msgstr ""
 
-#: ../../source/misc/semver.rst:57
+#: ../../source/misc/semver.rst:59
 msgid "If no satisfying versions are found, then exits failure."
 msgstr ""
 
-#: ../../source/misc/semver.rst:59
+#: ../../source/misc/semver.rst:61
 msgid ""
 "Versions are printed in ascending order, so supplying multiple versions "
 "to the utility will just sort them. Versions A “version” is described by "
 "the v2.0.0 specification found at http://semver.org/."
 msgstr ""
 
-#: ../../source/misc/semver.rst:64
+#: ../../source/misc/semver.rst:66
 msgid "A leading \"=\" or \"v\" character is stripped off and ignored."
 msgstr ""
 
-#: ../../source/misc/semver.rst:66
+#: ../../source/misc/semver.rst:68
 msgid ""
 "Ranges A version range is a set of comparators which specify versions "
 "that satisfy the range."
 msgstr ""
 
-#: ../../source/misc/semver.rst:69
+#: ../../source/misc/semver.rst:71
 msgid ""
 "A comparator is composed of an operator and a version. The set of "
 "primitive operators is:"
 msgstr ""
 
-#: ../../source/misc/semver.rst:71
+#: ../../source/misc/semver.rst:73
 msgid ""
 "< Less than <= Less than or equal to > Greater than >= Greater than or "
 "equal to = Equal. If no operator is specified, then equality is assumed, "
@@ -3102,32 +3161,32 @@ msgid ""
 "1.3.9, but not the versions 1.2.6 or 1.1.0."
 msgstr ""
 
-#: ../../source/misc/semver.rst:78
+#: ../../source/misc/semver.rst:80
 msgid ""
 "Comparators can be joined by whitespace to form a comparator set, which "
 "is satisfied by the intersection of all of the comparators it includes."
 msgstr ""
 
-#: ../../source/misc/semver.rst:80
+#: ../../source/misc/semver.rst:82
 msgid ""
 "A range is composed of one or more comparator sets, joined by ||. A "
 "version matches a range if and only if every comparator in at least one "
 "of the ||-separated comparator sets is satisfied by the version."
 msgstr ""
 
-#: ../../source/misc/semver.rst:82
+#: ../../source/misc/semver.rst:84
 msgid ""
 "For example, the range >=1.2.7 <1.3.0 would match the versions 1.2.7, "
 "1.2.8, and 1.2.99, but not the versions 1.2.6, 1.3.0, or 1.1.0."
 msgstr ""
 
-#: ../../source/misc/semver.rst:84
+#: ../../source/misc/semver.rst:86
 msgid ""
 "The range 1.2.7 || >=1.2.9 <2.0.0 would match the versions 1.2.7, 1.2.9, "
 "and 1.4.6, but not the versions 1.2.8 or 2.0.0."
 msgstr ""
 
-#: ../../source/misc/semver.rst:86
+#: ../../source/misc/semver.rst:88
 msgid ""
 "Prerelease Tags If a version has a prerelease tag (for example, "
 "1.2.3-alpha.3) then it will only be allowed to satisfy comparator sets if"
@@ -3135,7 +3194,7 @@ msgid ""
 "has a prerelease tag."
 msgstr ""
 
-#: ../../source/misc/semver.rst:89
+#: ../../source/misc/semver.rst:91
 msgid ""
 "For example, the range >1.2.3-alpha.3 would be allowed to match the "
 "version 1.2.3-alpha.7, but it would not be satisfied by 3.4.5-alpha.9, "
@@ -3146,7 +3205,7 @@ msgid ""
 "than 1.2.3-alpha.7."
 msgstr ""
 
-#: ../../source/misc/semver.rst:91
+#: ../../source/misc/semver.rst:93
 msgid ""
 "The purpose for this behavior is twofold. First, prerelease versions "
 "frequently are updated very quickly, and contain many breaking changes "
@@ -3154,7 +3213,7 @@ msgid ""
 "Therefore, by default, they are excluded from range matching semantics."
 msgstr ""
 
-#: ../../source/misc/semver.rst:93
+#: ../../source/misc/semver.rst:95
 msgid ""
 "Second, a user who has opted into using a prerelease version has clearly "
 "indicated the intent to use that specific set of alpha/beta/rc versions. "
@@ -3164,50 +3223,50 @@ msgid ""
 " prerelease versions."
 msgstr ""
 
-#: ../../source/misc/semver.rst:95
+#: ../../source/misc/semver.rst:97
 msgid ""
 "Prerelease Identifiers The method .inc takes an additional identifier "
 "string argument that will append the value of the string as a prerelease "
 "identifier:"
 msgstr ""
 
-#: ../../source/misc/semver.rst:98
+#: ../../source/misc/semver.rst:100
 msgid ""
 "semver.inc('1.2.3', 'prerelease', 'beta') // '1.2.4-beta.0' command-line "
 "example:"
 msgstr ""
 
-#: ../../source/misc/semver.rst:102
+#: ../../source/misc/semver.rst:104
 msgid ""
 "$ semver 1.2.3 -i prerelease --preid beta 1.2.4-beta.0 Which then can be "
 "used to increment further:"
 msgstr ""
 
-#: ../../source/misc/semver.rst:106
+#: ../../source/misc/semver.rst:108
 msgid ""
 "$ semver 1.2.4-beta.0 -i prerelease 1.2.4-beta.1 Advanced Range Syntax "
 "Advanced range syntax desugars to primitive comparators in deterministic "
 "ways."
 msgstr ""
 
-#: ../../source/misc/semver.rst:111
+#: ../../source/misc/semver.rst:113
 msgid ""
 "Advanced ranges may be combined in the same way as primitive comparators "
 "using white space or ||."
 msgstr ""
 
-#: ../../source/misc/semver.rst:113
+#: ../../source/misc/semver.rst:115
 msgid "Hyphen Ranges X.Y.Z - A.B.C Specifies an inclusive set."
 msgstr ""
 
-#: ../../source/misc/semver.rst:116
+#: ../../source/misc/semver.rst:118
 msgid ""
 "1.2.3 - 2.3.4 := >=1.2.3 <=2.3.4 If a partial version is provided as the "
 "first version in the inclusive range, then the missing pieces are "
 "replaced with zeroes."
 msgstr ""
 
-#: ../../source/misc/semver.rst:119
+#: ../../source/misc/semver.rst:121
 msgid ""
 "1.2 - 2.3.4 := >=1.2.0 <=2.3.4 If a partial version is provided as the "
 "second version in the inclusive range, then all versions that start with "
@@ -3215,25 +3274,25 @@ msgid ""
 "greater than the provided tuple parts."
 msgstr ""
 
-#: ../../source/misc/semver.rst:122
+#: ../../source/misc/semver.rst:124
 msgid ""
 "1.2.3 - 2.3 := >=1.2.3 <2.4.0 1.2.3 - 2 := >=1.2.3 <3.0.0 X-Ranges 1.2.x "
 "1.X 1.2.* * Any of X, x, or * may be used to “stand in” for one of the "
 "numeric values in the [major, minor, patch] tuple."
 msgstr ""
 
-#: ../../source/misc/semver.rst:127
+#: ../../source/misc/semver.rst:129
 msgid ":= >=0.0.0 (Any version satisfies)"
 msgstr ""
 
-#: ../../source/misc/semver.rst:128
+#: ../../source/misc/semver.rst:130
 msgid ""
 "1.x := >=1.0.0 <2.0.0 (Matching major version) 1.2.x := >=1.2.0 <1.3.0 "
 "(Matching major and minor versions) A partial version range is treated as"
 " an X-Range, so the special character is in fact optional."
 msgstr ""
 
-#: ../../source/misc/semver.rst:132
+#: ../../source/misc/semver.rst:134
 msgid ""
 "\"\" (empty string) := * := >=0.0.0 1 := 1.x.x := >=1.0.0 <2.0.0 1.2 := "
 "1.2.x := >=1.2.0 <1.3.0 Tilde Ranges ~1.2.3 ~1.2 ~1 Allows patch-level "
@@ -3241,7 +3300,7 @@ msgid ""
 "level changes if not."
 msgstr ""
 
-#: ../../source/misc/semver.rst:138
+#: ../../source/misc/semver.rst:140
 msgid ""
 "~1.2.3 := >=1.2.3 <1.(2+1).0 := >=1.2.3 <1.3.0 ~1.2 := >=1.2.0 <1.(2+1).0"
 " := >=1.2.0 <1.3.0 (Same as 1.2.x) ~1 := >=1.0.0 <(1+1).0.0 := >=1.0.0 "
@@ -3258,13 +3317,13 @@ msgid ""
 "0.X >=0.1.0, and no updates for versions 0.0.X."
 msgstr ""
 
-#: ../../source/misc/semver.rst:148
+#: ../../source/misc/semver.rst:150
 msgid ""
 "Many authors treat a 0.x version as if the x were the major “breaking-"
 "change” indicator."
 msgstr ""
 
-#: ../../source/misc/semver.rst:150
+#: ../../source/misc/semver.rst:152
 msgid ""
 "Caret ranges are ideal when an author may make breaking changes between "
 "0.2.4 and 0.3.0 releases, which is a common practice. However, it "
@@ -3273,7 +3332,7 @@ msgid ""
 "breaking), according to commonly observed practices."
 msgstr ""
 
-#: ../../source/misc/semver.rst:152
+#: ../../source/misc/semver.rst:154
 msgid ""
 "^1.2.3 := >=1.2.3 <2.0.0 ^0.2.3 := >=0.2.3 <0.3.0 ^0.0.3 := >=0.0.3 "
 "<0.0.4 ^1.2.3-beta.2 := >=1.2.3-beta.2 <2.0.0 Note that prereleases in "
@@ -3287,21 +3346,21 @@ msgid ""
 "that value, even if the major and minor versions are both 0."
 msgstr ""
 
-#: ../../source/misc/semver.rst:159
+#: ../../source/misc/semver.rst:161
 msgid ""
 "^1.2.x := >=1.2.0 <2.0.0 ^0.0.x := >=0.0.0 <0.1.0 ^0.0 := >=0.0.0 <0.1.0 "
 "A missing minor and patch values will desugar to zero, but also allow "
 "flexibility within those values, even if the major version is zero."
 msgstr ""
 
-#: ../../source/misc/semver.rst:164
+#: ../../source/misc/semver.rst:166
 msgid ""
 "^1.x := >=1.0.0 <2.0.0 ^0.x := >=0.0.0 <1.0.0 Range Grammar Putting all "
 "this together, here is a Backus-Naur grammar for ranges, for the benefit "
 "of parser authors:"
 msgstr ""
 
-#: ../../source/misc/semver.rst:169
+#: ../../source/misc/semver.rst:171
 msgid ""
 "range-set  ::= range ( logical-or range ) * logical-or ::= ( ' ' ) * '||'"
 " ( ' ' ) * range      ::= hyphen | simple ( ' ' simple ) * | '' hyphen"
@@ -3316,7 +3375,7 @@ msgid ""
 "are false by default. The options supported are:"
 msgstr ""
 
-#: ../../source/misc/semver.rst:188
+#: ../../source/misc/semver.rst:190
 #, python-format
 msgid ""
 "loose Be more forgiving about not-quite-valid semver strings. (Any "
@@ -3329,7 +3388,7 @@ msgid ""
 "strings that they parse."
 msgstr ""
 
-#: ../../source/misc/semver.rst:192
+#: ../../source/misc/semver.rst:194
 msgid ""
 "valid(v): Return the parsed version, or null if it’s not valid. inc(v, "
 "release): Return the version incremented by the release type (major, "
@@ -3381,26 +3440,165 @@ msgid ""
 "also does not satisfy the range."
 msgstr ""
 
-#: ../../source/misc/semver.rst:225
+#: ../../source/misc/semver.rst:227
 msgid ""
 "If you want to know if a version satisfies or does not satisfy a range, "
 "use the satisfies(version, range) function."
 msgstr ""
 
-#: ../../source/misc/semver.rst:227
-msgid ""
-"Coercion coerce(version): Coerces a string to semver if possible This "
-"aims to provide a very forgiving translation of a non-semver string to "
-"semver. It looks for the first digit in a string, and consumes all "
-"remaining characters which satisfy at least a partial semver (e.g., 1, "
-"1.2, 1.2.3) up to the max permitted length (256 characters). Longer "
-"versions are simply truncated (4.6.3.9.2-alpha2 becomes 4.6.3). All "
-"surrounding text is simply ignored (v3.4 replaces v3.3.1 becomes 3.4.0). "
-"Only text which lacks digits will fail coercion (version one is not "
-"valid). The maximum length for any semver component considered for "
-"coercion is 16 characters; longer components will be ignored "
-"(10000000000000000.4.7.4 becomes 4.7.4). The maximum value for any semver"
-" component is Integer.MAX_SAFE_INTEGER || (2**53 - 1); higher value "
-"components are invalid (9999999999999999.4.7.4 is likely invalid)."
+#: ../../source/misc/semver.rst:230
+msgid "Coercion"
 msgstr ""
+
+#: ../../source/misc/semver.rst:232
+msgid ""
+"coerce(version): Coerces a string to semver if possible This aims to "
+"provide a very forgiving translation of a non-semver string to semver. It"
+" looks for the first digit in a string, and consumes all remaining "
+"characters which satisfy at least a partial semver (e.g., 1, 1.2, 1.2.3) "
+"up to the max permitted length (256 characters). Longer versions are "
+"simply truncated (4.6.3.9.2-alpha2 becomes 4.6.3). All surrounding text "
+"is simply ignored (v3.4 replaces v3.3.1 becomes 3.4.0). Only text which "
+"lacks digits will fail coercion (version one is not valid). The maximum "
+"length for any semver component considered for coercion is 16 characters;"
+" longer components will be ignored (10000000000000000.4.7.4 becomes "
+"4.7.4). The maximum value for any semver component is "
+"Integer.MAX_SAFE_INTEGER || (2**53 - 1); higher value components are "
+"invalid (9999999999999999.4.7.4 is likely invalid)."
+msgstr ""
+
+#~ msgid "SEE ALSO npm-developers npm"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Shorthands and Other CLI Niceties The"
+#~ " following shorthands are parsed on "
+#~ "the command-line:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "-v: --version -h, -?, --help, -H: "
+#~ "--usage -s, --silent: --loglevel silent "
+#~ "-q, --quiet: --loglevel warn -d: "
+#~ "--loglevel info -dd, --verbose: --loglevel "
+#~ "verbose -ddd: --loglevel silly -g: "
+#~ "--global -C: --prefix -l: --long -m: "
+#~ "--message -p, --porcelain: --parseable -reg:"
+#~ " --registry -f: --force -desc: "
+#~ "--description -S: --save -P: --save-prod"
+#~ " -D: --save-dev -O: --save-optional"
+#~ " -B: --save-bundle -E: --save-exact"
+#~ " -y: --yes -n: --yes false ll "
+#~ "and la commands: ls --long If the"
+#~ " specified configuration param resolves "
+#~ "unambiguously to a known configuration "
+#~ "parameter, then it is expanded to "
+#~ "that configuration parameter. For example:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SEE ALSO npm npm-init package.json "
+#~ "npm-scripts npm-publish npm-adduser "
+#~ "npm-registry"
+#~ msgstr ""
+
+#~ msgid "SEE ALSO npm-registry npm-owner"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Grant access: npm access grant <read-"
+#~ "only|read-write> <org:team> [<package>] Revoke"
+#~ " access: npm access revoke <org:team> "
+#~ "[<package>] Monitor your package access "
+#~ "See what org packages a team "
+#~ "member can access: npm access ls-"
+#~ "packages <org> <user> See packages "
+#~ "available to a specific team: npm "
+#~ "access ls-packages <org:team> Check "
+#~ "which teams are collaborating on a "
+#~ "package: npm access ls-collaborators "
+#~ "<pkg> SEE ALSO npm-team npm-access"
+#~ " npm-scope"
+#~ msgstr ""
+
+#~ msgid "SEE ALSO npm-config npm-config npmrc npm-developers npm-disputes"
+#~ msgstr ""
+
+#~ msgid "SEE ALSO README npm-uninstall npm-prune"
+#~ msgstr ""
+
+#~ msgid "SEE ALSO npm-install npm-publish npm-access npm-registry"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "BEST PRACTICES Don’t exit with a "
+#~ "non-zero error code unless you really"
+#~ " mean it. Except for uninstall "
+#~ "scripts, this will cause the npm "
+#~ "action to fail, and potentially be "
+#~ "rolled back. If the failure is "
+#~ "minor or only will prevent some "
+#~ "optional features, then it’s better to"
+#~ " just print a warning and exit "
+#~ "successfully. Try not to use scripts "
+#~ "to do what npm can do for "
+#~ "you. Read through package.json to see"
+#~ " all the things that you can "
+#~ "specify and enable by simply describing"
+#~ " your package appropriately. In general,"
+#~ " this will lead to a more "
+#~ "robust and consistent state. Inspect the"
+#~ " env to determine where to put "
+#~ "things. For instance, if the "
+#~ "npm_config_binroot environment variable is set"
+#~ " to /home/user/bin, then don’t try to"
+#~ " install executables into /usr/local/bin. "
+#~ "The user probably set it up that"
+#~ " way for a reason. Don’t prefix "
+#~ "your script commands with “sudo”. If "
+#~ "root permissions are required for some"
+#~ " reason, then it’ll fail with that"
+#~ " error, and the user will sudo "
+#~ "the npm command in question. Don’t "
+#~ "use install. Use a .gyp file for"
+#~ " compilation, and prepublish for anything"
+#~ " else. You should almost never have"
+#~ " to explicitly set a preinstall or"
+#~ " install script. If you are doing "
+#~ "this, please consider if there is "
+#~ "another option. The only valid use "
+#~ "of install or preinstall scripts is "
+#~ "for compilation which must be done "
+#~ "on the target architecture. SEE ALSO "
+#~ "npm-run-script package.json npm-"
+#~ "developers npm-install"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Coercion coerce(version): Coerces a string "
+#~ "to semver if possible This aims to"
+#~ " provide a very forgiving translation "
+#~ "of a non-semver string to semver."
+#~ " It looks for the first digit "
+#~ "in a string, and consumes all "
+#~ "remaining characters which satisfy at "
+#~ "least a partial semver (e.g., 1, "
+#~ "1.2, 1.2.3) up to the max "
+#~ "permitted length (256 characters). Longer "
+#~ "versions are simply truncated "
+#~ "(4.6.3.9.2-alpha2 becomes 4.6.3). All "
+#~ "surrounding text is simply ignored (v3.4"
+#~ " replaces v3.3.1 becomes 3.4.0). Only "
+#~ "text which lacks digits will fail "
+#~ "coercion (version one is not valid). "
+#~ "The maximum length for any semver "
+#~ "component considered for coercion is 16"
+#~ " characters; longer components will be "
+#~ "ignored (10000000000000000.4.7.4 becomes 4.7.4). "
+#~ "The maximum value for any semver "
+#~ "component is Integer.MAX_SAFE_INTEGER || "
+#~ "(2**53 - 1); higher value components "
+#~ "are invalid (9999999999999999.4.7.4 is likely"
+#~ " invalid)."
+#~ msgstr ""
 

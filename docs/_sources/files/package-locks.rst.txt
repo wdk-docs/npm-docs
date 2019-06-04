@@ -1,3 +1,5 @@
+.. _package-locks:
+
 npm-package-locks
 =========================
 
@@ -37,39 +39,45 @@ and package C:
   "name": "C",
   "version": "0.0.1"
 }
-If these are the only versions of A, B, and C available in the registry, then a normal npm install A will install:
+If these are the only versions of A, B, and C available in the registry,
+then a normal npm install A will install::
 
-A@0.1.0
-`-- B@0.0.1
-    `-- C@0.0.1
-However, if B@0.0.2 is published, then a fresh npm install A will install:
+  A@0.1.0
+  `-- B@0.0.1
+      `-- C@0.0.1
 
-A@0.1.0
-`-- B@0.0.2
-    `-- C@0.0.1
+However, if B@0.0.2 is published, then a fresh npm install A will install::
+
+  A@0.1.0
+  `-- B@0.0.2
+      `-- C@0.0.1
+
 assuming the new version did not modify B’s dependencies. Of course, the new version of B could include a new version of C and any number of new dependencies. If such changes are undesirable, the author of A could specify a dependency on B@0.0.1. However, if A’s author and B’s author are not the same person, there’s no way for A’s author to say that he or she does not want to pull in newly published versions of C when B hasn’t changed at all.
 
 To prevent this potential issue, npm uses package-lock.json or, if present, npm-shrinkwrap.json. These files are called package locks, or lockfiles.
 
 Whenever you run npm install, npm generates or updates your package lock, which will look something like this:
 
-{
-  "name": "A",
-  "version": "0.1.0",
-  ...metadata fields...
-  "dependencies": {
-    "B": {
-      "version": "0.0.1",
-      "resolved": "https://registry.npmjs.org/B/-/B-0.0.1.tgz",
-      "integrity": "sha512-DeAdb33F+"
-      "dependencies": {
-        "C": {
-          "version": "git://github.com/org/C.git#5c380ae319fc4efe9e7f2d9c78b0faa588fd99b4"
+.. code-block:: json
+
+  {
+    "name": "A",
+    "version": "0.1.0",
+    ...metadata fields...
+    "dependencies": {
+      "B": {
+        "version": "0.0.1",
+        "resolved": "https://registry.npmjs.org/B/-/B-0.0.1.tgz",
+        "integrity": "sha512-DeAdb33F+"
+        "dependencies": {
+          "C": {
+            "version": "git://github.com/org/C.git#5c380ae319fc4efe9e7f2d9c78b0faa588fd99b4"
+          }
         }
       }
     }
   }
-}
+
 This file describes an exact, and more importantly reproducible node_modules tree. Once it’s present, any future installation will base its work off this file, instead of recalculating dependency versions off package.json.
 
 The presence of a package lock changes the installation behavior such that:
@@ -80,10 +88,14 @@ The tree is walked and any missing dependencies are installed in the usual fashi
 
 If preshrinkwrap, shrinkwrap or postshrinkwrap are in the scripts property of the package.json, they will be executed in order. preshrinkwrap and shrinkwrap are executed before the shrinkwrap, postshrinkwrap is executed afterwards. These scripts run for both package-lock.json and npm-shrinkwrap.json. For example to run some postprocessing on the generated file:
 
-"scripts": {
-  "postshrinkwrap": "json -I -e \"this.myMetadata = $MY_APP_METADATA\""
-}
+.. code-block::
+
+  "scripts": {
+    "postshrinkwrap": "json -I -e \"this.myMetadata = $MY_APP_METADATA\""
+  }
+
 Using locked packages
+
 Using a locked package is no different than using any package without a package lock: any commands that update node_modules and/or package.json’s dependencies will automatically sync the existing lockfile. This includes npm install, npm rm, npm update, etc. To prevent this update from happening, you can use the --no-save option to prevent saving altogether, or --no-shrinkwrap to allow package.json to be updated while leaving package-lock.json or npm-shrinkwrap.json intact.
 
 It is highly recommended you commit the generated package lock to source control: this will allow anyone else on your team, your deployments, your CI/continuous integration, and anyone else who runs npm install in your package source to get the exact same dependency tree that you were developing on. Additionally, the diffs from these changes are human-readable and will inform you of any changes npm has made to your node_modules, so you can notice if any transitive dependencies were updated, hoisted, etc.
@@ -94,8 +106,10 @@ Occasionally, two separate npm install will create package locks that cause merg
 To make this process seamless on git, consider installing npm-merge-driver, which will teach git how to do this itself without any user interaction. In short: $ npx npm-merge-driver install -g will let you do this, and even works with pre-npm@5.7.0 versions of npm 5, albeit a bit more noisily. Note that if package.json itself conflicts, you will have to resolve that by hand and run npm install manually, even with the merge driver.
 
 SEE ALSO
-https://medium.com/@sdboyer/so-you-want-to-write-a-package-manager-4ae9c17d9527
-package.json
-package-lock.json
-npm-shrinkwrap.json
-npm-shrinkwrap
+----------------
+
+- https://medium.com/@sdboyer/so-you-want-to-write-a-package-manager-4ae9c17d9527
+- :ref:`package.json`
+- :option:`package-lock.json`
+- :option:`npm shrinkwrap.json`
+- :option:`npm shrinkwrap`

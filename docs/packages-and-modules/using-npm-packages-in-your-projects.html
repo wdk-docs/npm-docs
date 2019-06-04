@@ -1,208 +1,247 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>&lt;no title&gt; &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>在项目中使用npm包 &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="using-deprecated-packages.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="updating-packages-downloaded-from-the-registry.html" /> 
-</head>
+    <link rel="next" title="使用已弃用的包" href="using-deprecated-packages.html" />
+    <link rel="prev" title="更新从注册表下载的包" href="updating-packages-downloaded-from-the-registry.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/packages-and-modules/using-npm-packages-in-your-projects.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="../getting-started/index.html">入门</a></li>
+    <li><a href="index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
+  </div>
 </div>
 
-          
-        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="using-deprecated-packages.html" title="使用已弃用的包"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="updating-packages-downloaded-from-the-registry.html" title="更新从注册表下载的包"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">About npm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">包和模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">Integrations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm Enterprise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI documentation</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">包和模块</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">在项目中使用npm包</a><ul>
+<li><a class="reference internal" href="#using-unscoped-packages-in-your-projects">Using unscoped packages in your projects</a></li>
+<li><a class="reference internal" href="#node-js-module">Node.js module</a></li>
+<li><a class="reference internal" href="#example-using-lodash-in-a-node-js-module">Example: using lodash in a Node.js module</a></li>
+<li><a class="reference internal" href="#package-json-file">package.json file</a></li>
+<li><a class="reference internal" href="#using-scoped-packages-in-your-projects">Using scoped packages in your projects</a></li>
+<li><a class="reference internal" href="#id1">Node.js module</a></li>
+<li><a class="reference internal" href="#id2">package.json file</a></li>
+<li><a class="reference internal" href="#resolving-cannot-find-module-errors">Resolving “Cannot find module” errors</a></li>
+</ul>
+</li>
 </ul>
 
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="index.html">包和模块</a> &raquo;</li>
-        
-      <li>&lt;no title&gt;</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/packages-and-modules/using-npm-packages-in-your-projects.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  
-
-           </div>
-           
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="using-deprecated-packages.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="updating-packages-downloaded-from-the-registry.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="updating-packages-downloaded-from-the-registry.html"
+                        title="上一章">更新从注册表下载的包</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="using-deprecated-packages.html"
+                        title="下一章">使用已弃用的包</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/packages-and-modules/using-npm-packages-in-your-projects.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
     </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
 
-    </section>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="using-npm-packages-in-your-projects">
+<h1>在项目中使用npm包<a class="headerlink" href="#using-npm-packages-in-your-projects" title="永久链接至标题">¶</a></h1>
+<p>在node_modules中安装软件包后，可以在代码中使用它。</p>
+<div class="section" id="using-unscoped-packages-in-your-projects">
+<h2>Using unscoped packages in your projects<a class="headerlink" href="#using-unscoped-packages-in-your-projects" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="node-js-module">
+<h2>Node.js module<a class="headerlink" href="#node-js-module" title="永久链接至标题">¶</a></h2>
+<p>If you are creating a Node.js module, you can use a package in your module by passing it as an argument to the require function.</p>
+</div>
+<div class="section" id="example-using-lodash-in-a-node-js-module">
+<h2>Example: using lodash in a Node.js module<a class="headerlink" href="#example-using-lodash-in-a-node-js-module" title="永久链接至标题">¶</a></h2>
+<p>For example, to use the lodash package in a Node.js module, in the root directory of the module, create a file named index.js with the following contents:</p>
+<p>// index.js
+var lodash = require(‘lodash’);</p>
+<p>var output = lodash.without([1, 2, 3], 1);
+console.log(output);
+Run the code using node index.js. It should output [2, 3].</p>
+</div>
+<div class="section" id="package-json-file">
+<h2>package.json file<a class="headerlink" href="#package-json-file" title="永久链接至标题">¶</a></h2>
+<p>In package.json, list the package under dependencies. You can optionally include a semantic version.</p>
+<dl>
+<dt>{</dt><dd><dl class="simple">
+<dt>“dependencies”: {</dt><dd><p>“&#64;package_name”: “^1.0.0”</p>
+</dd>
+</dl>
+<p>}</p>
+</dd>
+</dl>
+<p>}</p>
+</div>
+<div class="section" id="using-scoped-packages-in-your-projects">
+<h2>Using scoped packages in your projects<a class="headerlink" href="#using-scoped-packages-in-your-projects" title="永久链接至标题">¶</a></h2>
+<p>To use a scoped package, simply include the scope wherever you use the package name.</p>
+</div>
+<div class="section" id="id1">
+<h2>Node.js module<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>When requiring a scoped package in the index.js file of your Node.js module, you must reference the scope in addition to the package name:</p>
+<p>var projectName = require(“&#64;scope/package-name”)</p>
+</div>
+<div class="section" id="id2">
+<h2>package.json file<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>In package.json:</p>
+<dl>
+<dt>{</dt><dd><dl class="simple">
+<dt>“dependencies”: {</dt><dd><p>“&#64;scope/package_name”: “^1.0.0”</p>
+</dd>
+</dl>
+<p>}</p>
+</dd>
+</dl>
+<p>}</p>
+</div>
+<div class="section" id="resolving-cannot-find-module-errors">
+<h2>Resolving “Cannot find module” errors<a class="headerlink" href="#resolving-cannot-find-module-errors" title="永久链接至标题">¶</a></h2>
+<p>If you have not properly installed a package, you will receive an error when you try to use it in your code. For example, if you reference the lodash package without installing it, you would see the following error:</p>
+<dl class="simple">
+<dt>module.js:340</dt><dd><dl class="simple">
+<dt>throw err;</dt><dd><p>^</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Error: Cannot find module ‘lodash’
+To resolve “cannot find module” errors, run the appropriate install command in the same directory as your project’s index.js file:</p>
+<p>For scoped packages, run npm install &lt;&#64;scope/package_name&gt;
+For unscoped packages, run npm install &lt;package_name&gt;</p>
+</div>
+</div>
 
-  </div>
-  
 
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="using-deprecated-packages.html" title="使用已弃用的包"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="updating-packages-downloaded-from-the-registry.html" title="更新从注册表下载的包"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+          <li class="nav-item nav-item-1"><a href="index.html" >包和模块</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

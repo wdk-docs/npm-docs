@@ -1,3 +1,5 @@
+.. _shrinkwrap.json:
+
 npm-shrinkwrap.json
 ===================================
 
@@ -12,7 +14,9 @@ Additionally, if both package-lock.json and npm-shrinkwrap.json are present in a
 For full details and description of the npm-shrinkwrap.json file format, refer to the manual page for package-lock.json.
 
 SEE ALSO
-npm-shrinkwrap
-package-lock.json
-package.json
-npm-install
+------------------------
+
+- :option:`npm shrinkwrap`
+- :option:`package-lock.json`
+- :ref:`package.json`
+- :option:`npm install`

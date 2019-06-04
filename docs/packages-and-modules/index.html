@@ -1,251 +1,395 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>包和模块 &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>包和模块 &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="about-the-public-npm-registry.html" />
-    <link rel="prev" title="试试最新稳定版的npm" href="../getting-started/try-the-latest-stable-version-of-npm.html" /> 
-</head>
+    <link rel="next" title="关于公共npm注册表" href="about-the-public-npm-registry.html" />
+    <link rel="prev" title="试试最新稳定版的npm" href="../getting-started/try-the-latest-stable-version-of-npm.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/packages-and-modules/index.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="../getting-started/index.html">入门</a></li>
+    <li><a href="#">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
+  </div>
 </div>
 
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">入门</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">包和模块</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction-to-packages-and-modules">包和模块简介</a><ul class="simple">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="about-the-public-npm-registry.html" title="关于公共npm注册表"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="../getting-started/try-the-latest-stable-version-of-npm.html" title="试试最新稳定版的npm"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
+ 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">包和模块</a><ul>
+<li><a class="reference internal" href="#introduction-to-packages-and-modules">包和模块简介</a></li>
+<li><a class="reference internal" href="#contributing-packages-to-the-registry">将包提供给注册表</a></li>
+<li><a class="reference internal" href="#updating-and-managing-your-published-packages">更新和管理已发布的包</a></li>
+<li><a class="reference internal" href="#getting-packages-from-the-registry">从注册表获取包</a></li>
+<li><a class="reference internal" href="#securing-your-code">保护您的代码</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#contributing-packages-to-the-registry">将包提供给注册表</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#updating-and-managing-your-published-packages">更新和管理已发布的包</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-packages-from-the-registry">从注册表获取包</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#securing-your-code">保护您的代码</a><ul class="simple">
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
 </ul>
 
-            
-          
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="../getting-started/try-the-latest-stable-version-of-npm.html"
+                        title="上一章">试试最新稳定版的npm</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="about-the-public-npm-registry.html"
+                        title="下一章">关于公共npm注册表</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/packages-and-modules/index.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>包和模块</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/packages-and-modules/index.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
             
   <div class="section" id="packages-and-modules">
 <h1>包和模块<a class="headerlink" href="#packages-and-modules" title="永久链接至标题">¶</a></h1>
 <div class="section" id="introduction-to-packages-and-modules">
 <h2>包和模块简介<a class="headerlink" href="#introduction-to-packages-and-modules" title="永久链接至标题">¶</a></h2>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about-the-public-npm-registry.html">关于公共npm注册表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about-packages-and-modules.html">包和模块</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about-packages-and-modules.html#about-packages">About packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-packages-and-modules.html#about-package-formats">About package formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-packages-and-modules.html#npm-package-git-url-formats">npm package git URL formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-packages-and-modules.html#about-modules">About modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about-scopes.html">关于范围</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about-scopes.html#scopes-and-package-visibility">Scopes and package visibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about-public-packages.html">关于公共包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about-public-packages.html#next-steps">Next steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about-private-packages.html">关于私人包裹</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about-private-packages.html#next-steps">Next steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-private-packages.html#resources">Resources</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="contributing-packages-to-the-registry">
 <h2>将包提供给注册表<a class="headerlink" href="#contributing-packages-to-the-registry" title="永久链接至标题">¶</a></h2>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about-package-readme-files.html">关于包README文件</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about-package-readme-files.html#creating-and-adding-a-readme-md-file-to-a-package">Creating and adding a README.md file to a package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-package-readme-files.html#updating-an-existing-package-readme-file">Updating an existing package README file</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating-and-publishing-unscoped-public-packages.html">更新和管理已发布的包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-unscoped-public-packages.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-unscoped-public-packages.html#creating-an-unscoped-public-package">Creating an unscoped public package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-unscoped-public-packages.html#reviewing-package-contents-for-sensitive-or-unnecessary-information">Reviewing package contents for sensitive or unnecessary information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-unscoped-public-packages.html#publishing-unscoped-public-packages">Publishing unscoped public packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating-and-publishing-scoped-public-packages.html">创建和发布范围的公共包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-scoped-public-packages.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-scoped-public-packages.html#creating-a-scoped-public-package">Creating a scoped public package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-scoped-public-packages.html#reviewing-package-contents-for-sensitive-or-unnecessary-information">Reviewing package contents for sensitive or unnecessary information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-scoped-public-packages.html#publishing-scoped-public-packages">Publishing scoped public packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating-and-publishing-private-packages.html">创建和发布私有包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-private-packages.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-private-packages.html#creating-a-private-package">Creating a private package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-private-packages.html#reviewing-package-contents-for-sensitive-or-unnecessary-information">Reviewing package contents for sensitive or unnecessary information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-and-publishing-private-packages.html#publishing-private-packages">Publishing private packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="package-name-guidelines.html">包名称指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about-semantic-versioning.html">关于语义版本控制</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about-semantic-versioning.html#incrementing-semantic-versions-in-published-packages">Incrementing semantic versions in published packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-semantic-versioning.html#using-semantic-versioning-to-specify-update-types-your-package-can-accept">Using semantic versioning to specify update types your package can accept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-semantic-versioning.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-semantic-versioning.html#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adding-dist-tags-to-packages.html">将dist-tags添加到包中</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adding-dist-tags-to-packages.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-dist-tags-to-packages.html#id1">Example</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="updating-and-managing-your-published-packages">
 <h2>更新和管理已发布的包<a class="headerlink" href="#updating-and-managing-your-published-packages" title="永久链接至标题">¶</a></h2>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changing-package-visibility.html">更改包可见性</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changing-package-visibility.html#website">Website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changing-package-visibility.html#making-a-private-package-public">Making a private package public</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adding-collaborators-to-private-packages-owned-by-a-user-account.html">将协作者添加到用户帐户拥有的私有包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adding-collaborators-to-private-packages-owned-by-a-user-account.html#granting-access-to-a-private-user-package-on-the-web">Granting access to a private user package on the web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-collaborators-to-private-packages-owned-by-a-user-account.html#granting-private-package-access-from-the-command-line-interface">Granting private package access from the command line interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-collaborators-to-private-packages-owned-by-a-user-account.html#granting-access-to-private-org-packages">Granting access to private Org packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="updating-your-published-package-version-number.html">更新已发布的软件包版本号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deprecating-and-undeprecating-packages-or-package-versions.html">弃用和取消激活软件包或软件包版本</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deprecating-and-undeprecating-packages-or-package-versions.html#deprecating-an-entire-package-or-a-single-version-of-a-package">Deprecating an entire package or a single version of a package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deprecating-and-undeprecating-packages-or-package-versions.html#deprecating-an-entire-package">Deprecating an entire package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deprecating-and-undeprecating-packages-or-package-versions.html#deprecating-a-single-version-of-a-package">Deprecating a single version of a package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deprecating-and-undeprecating-packages-or-package-versions.html#undeprecating-a-package-or-version">Undeprecating a package or version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deprecating-and-undeprecating-packages-or-package-versions.html#transferring-a-deprecated-package-to-npm">Transferring a deprecated package to npm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transferring-a-package-from-a-user-account-to-another-user-account.html">将包从用户帐户转移到另一个用户帐户</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transferring-a-package-from-a-user-account-to-another-user-account.html#transferring-a-package-from-a-user-account-to-another-user-account-on-the-website">Transferring a package from a user account to another user account on the website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transferring-a-package-from-a-user-account-to-another-user-account.html#transferring-a-package-from-a-user-account-to-another-user-account-on-the-command-line">Transferring a package from a user account to another user account on the command line</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transferring-a-package-from-a-user-account-to-an-org.html">将包从用户帐户转移到组织</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transferring-a-package-from-a-user-account-to-an-org.html#transferring-a-package-from-a-user-account-to-an-org-on-the-website">Transferring a package from a user account to an Org on the website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transferring-a-package-from-a-user-account-to-an-org.html#transferring-a-package-from-a-user-account-to-an-org-on-the-command-line">Transferring a package from a user account to an Org on the command line</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transferring-a-package-from-an-org-to-a-user-account.html">将包从组织转移到用户帐户</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unpublishing-packages-from-the-registry.html">从注册表中取消发布包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unpublishing-packages-from-the-registry.html#unpublishing-an-entire-package">Unpublishing an entire package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unpublishing-packages-from-the-registry.html#unpublishing-a-single-version-of-a-package">Unpublishing a single version of a package</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="getting-packages-from-the-registry">
 <h2>从注册表获取包<a class="headerlink" href="#getting-packages-from-the-registry" title="永久链接至标题">¶</a></h2>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="searching-for-and-choosing-packages-to-download.html">搜索并选择要下载的包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="searching-for-and-choosing-packages-to-download.html#searching-for-a-package">Searching for a package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searching-for-and-choosing-packages-to-download.html#package-search-rank-criteria">Package search rank criteria</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searching-for-and-choosing-packages-to-download.html#popularity">Popularity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searching-for-and-choosing-packages-to-download.html#quality">Quality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searching-for-and-choosing-packages-to-download.html#maintenance">Maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searching-for-and-choosing-packages-to-download.html#optimal">Optimal</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="downloading-and-installing-packages-locally.html">在本地下载和安装包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="downloading-and-installing-packages-locally.html#installing-an-unscoped-package">Installing an unscoped package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloading-and-installing-packages-locally.html#installed-a-scoped-public-package">Installed a scoped public package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloading-and-installing-packages-locally.html#installing-a-private-package">Installing a private package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloading-and-installing-packages-locally.html#installed-package-version">Installed package version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloading-and-installing-packages-locally.html#installing-a-package-with-dist-tags">Installing a package with dist-tags</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="downloading-and-installing-packages-globally.html">全局下载和安装包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolving-eacces-permissions-errors-when-installing-packages-globally.html">全局安装软件包时解决EACCES权限错误</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resolving-eacces-permissions-errors-when-installing-packages-globally.html#reinstall-npm-with-a-node-version-manager">Reinstall npm with a node version manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resolving-eacces-permissions-errors-when-installing-packages-globally.html#manually-change-npms-default-directory">Manually change npm’s default directory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="updating-packages-downloaded-from-the-registry.html">更新从注册表下载的包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="updating-packages-downloaded-from-the-registry.html#updating-local-packages">Updating local packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updating-packages-downloaded-from-the-registry.html#updating-globally-installed-packages">Updating globally-installed packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updating-packages-downloaded-from-the-registry.html#determining-which-global-packages-need-updating">Determining which global packages need updating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updating-packages-downloaded-from-the-registry.html#updating-a-single-global-package">Updating a single global package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updating-packages-downloaded-from-the-registry.html#updating-all-globally-installed-packages">Updating all globally-installed packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updating-packages-downloaded-from-the-registry.html#resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updating-packages-downloaded-from-the-registry.html#cli-commands">CLI commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="using-npm-packages-in-your-projects.html">在项目中使用npm包</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="using-npm-packages-in-your-projects.html#using-unscoped-packages-in-your-projects">Using unscoped packages in your projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-npm-packages-in-your-projects.html#node-js-module">Node.js module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-npm-packages-in-your-projects.html#example-using-lodash-in-a-node-js-module">Example: using lodash in a Node.js module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-npm-packages-in-your-projects.html#package-json-file">package.json file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-npm-packages-in-your-projects.html#using-scoped-packages-in-your-projects">Using scoped packages in your projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-npm-packages-in-your-projects.html#id1">Node.js module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-npm-packages-in-your-projects.html#id2">package.json file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-npm-packages-in-your-projects.html#resolving-cannot-find-module-errors">Resolving “Cannot find module” errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="using-deprecated-packages.html">使用已弃用的包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uninstalling-packages-and-dependencies.html">卸载包和依赖项</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#uninstalling-local-packages">Uninstalling local packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#removing-a-local-package-from-your-node-modules-directory">Removing a local package from your node_modules directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#unscoped-package">Unscoped package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#scoped-package">Scoped package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#id1">Unscoped package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#confirming-local-package-uninstallation">Confirming local package uninstallation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#uninstalling-global-packages">Uninstalling global packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#id2">Unscoped package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#id3">Scoped package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#id4">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#id5">Uninstalling local packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uninstalling-packages-and-dependencies.html#id6">Uninstalling global packages</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="securing-your-code">
 <h2>保护您的代码<a class="headerlink" href="#securing-your-code" title="永久链接至标题">¶</a></h2>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about-audit-reports.html">关于审计报告</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about-audit-reports.html#vulnerability-table-fields">Vulnerability table fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-audit-reports.html#severity">Severity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-audit-reports.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-audit-reports.html#package">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-audit-reports.html#patched-in">Patched in</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-audit-reports.html#dependency-of">Dependency of</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-audit-reports.html#path">Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-audit-reports.html#more-info">More info</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="auditing-package-dependencies-for-security-vulnerabilities.html">审核您的持续集成过程。</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auditing-package-dependencies-for-security-vulnerabilities.html#turning-off-npm-audit-on-package-installation">Turning off npm audit on package installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auditing-package-dependencies-for-security-vulnerabilities.html#installing-a-single-package">Installing a single package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auditing-package-dependencies-for-security-vulnerabilities.html#installing-all-packages">Installing all packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="requiring-2fa-for-package-publishing-and-settings-modification.html">要求2FA进行包发布和设置修改</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="requiring-2fa-for-package-publishing-and-settings-modification.html#enabling-two-factor-authentication-for-package-publishing">Enabling two-factor authentication for package publishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="requiring-2fa-for-package-publishing-and-settings-modification.html#disabling-two-factor-authentication-for-package-publishing">Disabling two-factor authentication for package publishing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reporting-a-vulnerability-in-an-npm-package.html">报告npm包中的漏洞</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reporting-a-vulnerability-in-an-npm-package.html#disclosure-timeline">Disclosure timeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reporting-a-vulnerability-in-an-npm-package.html#reporting-a-vulnerability">Reporting a vulnerability</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 
 
-           </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="about-the-public-npm-registry.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../getting-started/try-the-latest-stable-version-of-npm.html" class="btn btn-neutral float-left" title="试试最新稳定版的npm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
         </div>
       </div>
-
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="about-the-public-npm-registry.html" title="关于公共npm注册表"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="../getting-started/try-the-latest-stable-version-of-npm.html" title="试试最新稳定版的npm"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

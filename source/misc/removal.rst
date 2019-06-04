@@ -1,3 +1,5 @@
+.. _removal:
+
 npm-removal
 ======================================================
 
@@ -30,6 +32,8 @@ find /usr/local/{lib/node,bin} -exec grep -l npm \{\} \; ;
 (This is also in the README file.)
 
 SEE ALSO
-README
-npm-uninstall
-npm-prune
+---------------
+
+- :option:`README`
+- :option:`npm uninstall`
+- :option:`npm prune`

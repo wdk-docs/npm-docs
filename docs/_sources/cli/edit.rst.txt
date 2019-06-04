@@ -10,7 +10,9 @@ SYNOPSIS
 
 .. option:: edit
 
-npm edit <pkg>[/<subpkg>...]
+.. code-block:: sh
+
+   npm edit <pkg>[/<subpkg>...]
 
 DESCRIPTION
 -------------------
@@ -32,9 +34,9 @@ The command to run for npm edit or npm config edit.
 SEE ALSO
 -------------------
 
-- npm-folders
-- npm-explore
-- npm-install
-- npm-config
-- npm-config
-- npmrc
+- :ref:`folders`
+- :option:`npm explore`
+- :option:`npm install`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`

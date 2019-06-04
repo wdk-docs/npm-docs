@@ -75,9 +75,9 @@ What authentication strategy to use with adduser/login. Some npm registries (for
 SEE ALSO
 -----------------
 
-- npm-registry
-- npm-config
-- npm-config
-- npmrc
-- npm-owner
-- npm-whoami
+- :ref:`registry`
+- :option:`npm config`
+- :option:`npm config`
+- :ref:`npmrc`
+- :option:`npm owner`
+- :option:`npm whoami`

@@ -1,256 +1,249 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>下载并安装Node.js和npm &mdash; npm-docs 6.9.1 文档</title>
-  
 
-  
-  
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>下载并安装Node.js和npm &#8212; npm-docs 6.9.1 文档</title>
+    <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
 
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="将注册表设置配置为npm Enterprise用户" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" />
-    <link rel="prev" title="关于npm CLI版本" href="about-npm-versions.html" /> 
-</head>
+    <link rel="prev" title="关于npm CLI版本" href="about-npm-versions.html" />
+<link rel="canonical" href="http://www.sphinx-doc.org/en/master/getting-started/downloading-and-installing-node-js-and-npm.html" />
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../index.html" class="icon icon-home"> npm-docs
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+ 
+<style type="text/css">
+  table.right { float: right; margin-left: 20px; }
+  table.right td { border: 1px solid #ccc; }
+  
+</style>
+<script type="text/javascript">
+  // intelligent scrolling of the sidebar content
+  $(window).scroll(function() {
+    var sb = $('.sphinxsidebarwrapper');
+    var win = $(window);
+    var sbh = sb.height();
+    var offset = $('.sphinxsidebar').position()['top'];
+    var wintop = win.scrollTop();
+    var winbot = wintop + win.innerHeight();
+    var curtop = sb.position()['top'];
+    var curbot = curtop + sbh;
+    // does sidebar fit in window?
+    if (sbh < win.innerHeight()) {
+      // yes: easy case -- always keep at the top
+      sb.css('top', $u.min([$u.max([0, wintop - offset - 10]), $(document).height() - sbh - 200]));
+    } else {
+      // no: only scroll if top/bottom edge of sidebar is at
+      // top/bottom edge of window
+      if (curtop > wintop && curbot > winbot) {
+        sb.css('top', $u.max([wintop - offset - 10, 0]));
+      } else if (curtop < wintop && curbot < winbot) {
+        sb.css('top', $u.min([winbot - sbh - offset - 20, $(document).height() - sbh - 200]));
+      }
+    }
+  });
+</script> 
+  </head><body>
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">主页</a></li>
+    <li><a href="../about-npm.html">关于</a></li>
+    <li><a href="index.html">入门</a></li>
+    <li><a href="../packages-and-modules/index.html">包和模块</a></li>
+    <li><a href="../cli/index.html">指令</a></li>
+    <li><a href="../integrations/index.html">集成</a></li>
+    <li><a href="../orgs/index.html">组织</a></li>
+    <li><a href="../enterprise/index.html">企业版</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <!-- <img src="../_static/wxaheader.png" alt="wxa" /> -->
+      <svg viewBox="0 0 780 250">
+        <path
+          fill="#231F20"
+          d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"
+        ></path>
+      </svg>
+    </a>
+  </div>
 </div>
 
-          
-        </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" title="将注册表设置配置为npm Enterprise用户"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="about-npm-versions.html" title="关于npm CLI版本"
+             accesskey="P">上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../about-npm.html">关于npm</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="index.html#setting-up-your-npm-user-account">设置您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#paying-for-your-npm-user-account">支付您的npm用户帐户</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#managing-your-npm-user-account">管理您的npm用户帐户</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#configuring-your-local-environment">配置本地环境</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="about-npm-versions.html">关于npm CLI版本</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">下载并安装Node.js和npm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html">将注册表设置配置为npm Enterprise用户</a></li>
-<li class="toctree-l3"><a class="reference internal" href="logging-in-to-an-npm-enterprise-registry-from-the-command-line.html">从命令行登录npm Enterprise注册表</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">入门</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">下载并安装Node.js和npm</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#checking-your-version-of-npm-and-node-js">Checking your version of npm and Node.js</a></li>
+<li><a class="reference internal" href="#using-a-node-version-manager-to-install-node-js-and-npm">Using a Node version manager to install Node.js and npm</a><ul>
+<li><a class="reference internal" href="#osx-or-linux-node-version-managers">OSX or Linux Node version managers</a></li>
+<li><a class="reference internal" href="#windows-node-version-managers">Windows Node version managers</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#troubleshooting">故障排除</a></li>
+<li><a class="reference internal" href="#using-a-node-installer-to-install-node-js-and-npm">Using a Node installer to install Node.js and npm</a><ul>
+<li><a class="reference internal" href="#os-x-or-windows-node-installers">OS X or Windows Node installers</a></li>
+<li><a class="reference internal" href="#linux-or-other-operating-systems-node-installers">Linux or other operating systems Node installers</a></li>
+<li><a class="reference internal" href="#less-common-operating-systems">Less-common operating systems</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../packages-and-modules/index.html">包和模块</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integrations/index.html">集成</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../orgs/index.html">Orgs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">npm 企业版</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../cli/index.html">CLI文档</a></li>
+</ul>
+</li>
 </ul>
 
-            
-          
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="about-npm-versions.html"
+                        title="上一章">关于npm CLI版本</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html"
+                        title="下一章">将注册表设置配置为npm Enterprise用户</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/getting-started/downloading-and-installing-node-js-and-npm.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">npm-docs</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="index.html">入门</a> &raquo;</li>
-        
-      <li>下载并安装Node.js和npm</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="../_sources/getting-started/downloading-and-installing-node-js-and-npm.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
             
   <div class="section" id="downloading-and-installing-node-js-and-npm">
 <h1>下载并安装Node.js和npm<a class="headerlink" href="#downloading-and-installing-node-js-and-npm" title="永久链接至标题">¶</a></h1>
 <p>To publish and install packages to and from the public npm registry or your company’s npm Enterprise registry, you must install Node.js and the npm command line interface using either a Node version manager or a Node installer. We strongly recommend using a Node version manager to install Node.js and npm. We do not recommend using a Node installer, since the Node installation process installs npm in a directory with local permissions and can cause permissions errors when you run npm packages globally.</p>
-<p>Note: npm Enterprise requires npm 4.4.x or greater. To download the latest version of npm, on the command line, run the following command:</p>
-<p>[sudo] npm install npm -g
-Overview
-Checking your version of npm and Node.js
-Using a Node version manager to install Node.js and npm
-Using a Node installer to install Node.js and npm
-Checking your version of npm and Node.js
-To see if you already have Node.js and npm installed and check the installed version, run the following commands:</p>
-<p>node -v
-npm -v
-Using a Node version manager to install Node.js and npm
-Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system so you can test your applications on multiple versions of npm to ensure they work for users on different versions.</p>
-<p>OSX or Linux Node version managers
-nvm
-n
-Windows Node version managers
-nodist
-nvm-windows
-Using a Node installer to install Node.js and npm
-If you are unable to use a Node version manager, you can use a Node installer to install both Node.js and npm on your system.</p>
-<p>Node.js installer
-NodeSource installer. If you use Linux, we recommend that you use a NodeSource installer.
-OS X or Windows Node installers
-If you’re using OS X or Windows, use one of the installers from the Node.js download page. Be sure to install the version labeled LTS. Other versions have not yet been tested with npm.</p>
-<p>Linux or other operating systems Node installers
-If you’re using Linux or another operating system, use one of the following installers:</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>npm Enterprise requires npm 4.4.x or greater.
+To download the latest version of npm, on the command line, run the following command:</p>
+<p>[sudo] npm install npm -g</p>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Checking your version of npm and Node.js</p></li>
+<li><p>Using a Node version manager to install Node.js and npm</p></li>
+<li><p>Using a Node installer to install Node.js and npm</p></li>
+</ul>
+</div>
+<div class="section" id="checking-your-version-of-npm-and-node-js">
+<h2>Checking your version of npm and Node.js<a class="headerlink" href="#checking-your-version-of-npm-and-node-js" title="永久链接至标题">¶</a></h2>
+<p>To see if you already have Node.js and npm installed and check the installed version, run the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">node</span> <span class="o">-</span><span class="n">v</span>
+<span class="n">npm</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-a-node-version-manager-to-install-node-js-and-npm">
+<h2>Using a Node version manager to install Node.js and npm<a class="headerlink" href="#using-a-node-version-manager-to-install-node-js-and-npm" title="永久链接至标题">¶</a></h2>
+<p>Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system so you can test your applications on multiple versions of npm to ensure they work for users on different versions.</p>
+<div class="section" id="osx-or-linux-node-version-managers">
+<h3>OSX or Linux Node version managers<a class="headerlink" href="#osx-or-linux-node-version-managers" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>nvm</p></li>
+<li><p>n</p></li>
+</ul>
+</div>
+<div class="section" id="windows-node-version-managers">
+<h3>Windows Node version managers<a class="headerlink" href="#windows-node-version-managers" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>nodist</p></li>
+<li><p>nvm-windows</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="using-a-node-installer-to-install-node-js-and-npm">
+<h2>Using a Node installer to install Node.js and npm<a class="headerlink" href="#using-a-node-installer-to-install-node-js-and-npm" title="永久链接至标题">¶</a></h2>
+<p>If you are unable to use a Node version manager, you can use a Node installer to install both Node.js and npm on your system.</p>
+<ul class="simple">
+<li><p>Node.js installer</p></li>
+<li><p>NodeSource installer. If you use Linux, we recommend that you use a NodeSource installer.</p></li>
+</ul>
+<div class="section" id="os-x-or-windows-node-installers">
+<h3>OS X or Windows Node installers<a class="headerlink" href="#os-x-or-windows-node-installers" title="永久链接至标题">¶</a></h3>
+<p>If you’re using OS X or Windows, use one of the installers from the Node.js download page. Be sure to install the version labeled LTS. Other versions have not yet been tested with npm.</p>
+</div>
+<div class="section" id="linux-or-other-operating-systems-node-installers">
+<h3>Linux or other operating systems Node installers<a class="headerlink" href="#linux-or-other-operating-systems-node-installers" title="永久链接至标题">¶</a></h3>
+<p>If you’re using Linux or another operating system, use one of the following installers:</p>
 <p>NodeSource installer (recommended)
 One of the installers on the Node.js download page
 Or see this page to install npm for Linux in the way many Linux developers prefer.</p>
-<p>Less-common operating systems
-For more information on installing Node.js on a variety of operating systems, see this page.</p>
+</div>
+<div class="section" id="less-common-operating-systems">
+<h3>Less-common operating systems<a class="headerlink" href="#less-common-operating-systems" title="永久链接至标题">¶</a></h3>
+<p>For more information on installing Node.js on a variety of operating systems, see this page.</p>
+</div>
+</div>
 </div>
 
 
-           </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" class="btn btn-neutral float-right" title="将注册表设置配置为npm Enterprise用户" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="about-npm-versions.html" class="btn btn-neutral float-left" title="关于npm CLI版本" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, BandCap
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
         </div>
       </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" title="将注册表设置配置为npm Enterprise用户"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="about-npm-versions.html" title="关于npm CLI版本"
+             >上一页</a> |</li>
+<li><a href="../index.html">主页</a>&#160;|</li>
+<li><a href="../contents.html">文档</a> &#187;</li>
 
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+          <li class="nav-item nav-item-1"><a href="index.html" >入门</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, BandCap.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+    </div>
+  </body>
 </html>

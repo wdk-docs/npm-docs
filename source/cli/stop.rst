@@ -1,8 +1,6 @@
 npm-stop
 ============================================================================================
 
-Stop a package
-
 SYNOPSIS
 -------------------
 
@@ -10,7 +8,11 @@ SYNOPSIS
 
 .. option:: stop
 
-npm stop [-- <args>]
+   Stop a package
+
+   .. code-block:: sh
+
+      npm stop [-- <args>]
 
 DESCRIPTION
 -------------------
@@ -20,8 +22,8 @@ This runs a package’s “stop” script, if one was provided.
 SEE ALSO
 -------------------
 
-- npm-run-script
-- npm-scripts
-- npm-test
-- npm-start
-- npm-restart
+- :option:`npm run-script`
+- :option:`npm scripts`
+- :option:`npm test`
+- :option:`npm start`
+- :option:`npm restart`

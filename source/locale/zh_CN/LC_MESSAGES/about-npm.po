@@ -26,7 +26,7 @@ msgid ""
 "npm is the world’s largest software registry. Open source developers from"
 " every continent use npm to share and borrow packages, and many "
 "organizations use npm to manage private development as well."
-msgstr ""
+msgstr "npm是世界上最大的软件注册机构。来自各大洲的开源开发人员使用npm来共享和借用包，许多组织也使用npm来管理私有开发。"
 
 #: ../../source/about-npm.rst:6
 msgid "Here is a quick introduction to npm:"
@@ -42,19 +42,19 @@ msgid ""
 " to discover packages, set up profiles, and manage other aspects of your "
 "npm experience. For example, you can set up Orgs (organizations) to "
 "manage access to public or private packages."
-msgstr ""
+msgstr "网站命令行界面（CLI）注册表使用网站来发现包，设置配置文件以及管理npm体验的其他方面。例如，您可以设置Orgs（组织）来管理对公共或私有包的访问。"
 
 #: ../../source/about-npm.rst:16
 msgid ""
 "The CLI runs from a terminal, and is how most developers interact with "
 "npm."
-msgstr ""
+msgstr "CLI从终端运行，是大多数开发人员与npm交互的方式。"
 
 #: ../../source/about-npm.rst:18
 msgid ""
 "The registry is a large public database of JavaScript software and the "
 "meta-information surrounding it."
-msgstr ""
+msgstr "注册表是JavaScript软件的大型公共数据库及其周围的元信息。"
 
 #: ../../source/about-npm.rst:21
 msgid "Use npm to . . ."
@@ -71,7 +71,7 @@ msgid ""
 "dependencies. Update applications easily when underlying code is updated."
 " Discover multiple ways to solve the same puzzle. Find other developers "
 "who are working on similar problems and projects."
-msgstr ""
+msgstr "调整应用程序的代码包，或按原样合并包。下载可立即使用的独立工具。无需使用npx下载即可运行包。随时随地与任何npm用户共享代码。将代码限制为特定开发人员。创建组织（组织）以协调包维护，编码和开发人员。使用Orgs组建虚拟团队。管理多个版本的代码和代码依赖项。更新基础代码时，轻松更新应用程序。发现解决同一难题的多种方法。找到其他正在处理类似问题和项目的开发人员。"
 
 #: ../../source/about-npm.rst:36
 msgid "Getting started"
@@ -81,14 +81,14 @@ msgstr "入门"
 msgid ""
 "To get started with npm, you can create an account, which will be "
 "available at http://www.npmjs.com/~yourusername."
-msgstr ""
+msgstr "要开始使用npm，您可以创建一个帐户，该帐户将在 http://www.npmjs.com/~yourusername 上提供。"
 
 #: ../../source/about-npm.rst:40
 msgid ""
 "After you set up an npm account, the next step is to use the command line"
 " interface (CLI) to install npm. We look forward to seeing what you "
 "create!"
-msgstr ""
+msgstr "设置npm帐户后，下一步是使用命令行界面（CLI）安装npm。我们期待看到您创造的东西！"
 
 #: ../../source/about-npm.rst:43
 msgid "Sharing packages and collaborating with others"
@@ -103,7 +103,7 @@ msgid ""
 "sign up for a private instance of npm for your company, called npm "
 "Enterprise, so you can develop packages internally that are not shared "
 "publicly."
-msgstr ""
+msgstr "如果您选择公开分享您的套餐，则无需任何费用。要使用和共享私人套餐，您需要升级您的帐户。要与他人分享，请创建名为npm Orgs的组织，并邀请其他人私下（收费）或公开（免费）与您合作。或者您可以为您的公司注册npm的私有实例，称为npm Enterprise，因此您可以在内部开发不公开共享的包。"
 
 #: ../../source/about-npm.rst:48
 msgid "Learn more"
@@ -114,14 +114,14 @@ msgid ""
 "To learn more about npm as a product, upcoming new features, and "
 "interesting uses of npm, sign up for our newsletter at npm-weekly, and be"
 " sure to follow @npmjs on Twitter."
-msgstr ""
+msgstr "要了解有关npm作为产品，即将推出的新功能以及npm的有趣用途的更多信息，请在npm-weekly注册我们的新闻通讯，并确保在Twitter上关注@npmjs。"
 
 #: ../../source/about-npm.rst:52
 msgid ""
 "For mentoring, tutorials, and learning, visit node school. Consider "
 "attending or hosting a nodeschool event (usually free!) at a site near "
 "you, or use the self-help tools you can find on the site."
-msgstr ""
+msgstr "有关指导，教程和学习，请访问node school。考虑在您附近的站点参加或主持nodeschool活动（通常是免费的！），或使用您可以在网站上找到的自助工具。"
 
 #: ../../source/about-npm.rst:55
 msgid "CLI reference documentation"
@@ -132,5 +132,5 @@ msgid ""
 "While relevant CLI commands are covered throughout this user "
 "documentation, the CLI includes command line help, its own documentation "
 "section, and instant help (man pages)."
-msgstr ""
+msgstr "虽然本用户文档中涵盖了相关的CLI命令，但CLI包括命令行帮助，自己的文档部分和即时帮助（手册页）。"
 

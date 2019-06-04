@@ -64,7 +64,7 @@ The root cache folder.
 SEE ALSO
 -------------------
 
-- :option:`npm folders`
+- :ref:`folders`
 - :config:`npm config`
 - :option:`npm config`
 - :doc:`../files/npmrc`
