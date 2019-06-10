@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="npm-package-lock.json" href="package-lock.json.html" />
-    <link rel="prev" title="npm-folders" href="folders.html" />
+    <link rel="next" title="package-lock.json" href="package-lock.json.html" />
+    <link rel="prev" title="folders" href="folders.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/files/npmrc.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,10 +86,10 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="package-lock.json.html" title="npm-package-lock.json"
+          <a href="package-lock.json.html" title="package-lock.json"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="folders.html" title="npm-folders"
+          <a href="folders.html" title="folders"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -101,6 +102,13 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">npmrc</a><ul>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
+<li><a class="reference internal" href="#files">FILES</a><ul>
+<li><a class="reference internal" href="#comments">Comments</a></li>
+<li><a class="reference internal" href="#per-user-config-file">Per-user config file</a></li>
+<li><a class="reference internal" href="#built-in-config-file">Built-in config file</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
 </ul>
 </li>
@@ -108,10 +116,10 @@
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="folders.html"
-                        title="上一章">npm-folders</a></p>
+                        title="上一章">folders</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="package-lock.json.html"
-                        title="下一章">npm-package-lock.json</a></p>
+                        title="下一章">package-lock.json</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -139,13 +147,16 @@
             
   <div class="section" id="npmrc">
 <span id="id1"></span><h1>npmrc<a class="headerlink" href="#npmrc" title="永久链接至标题">¶</a></h1>
-<p>The npm config files
-DESCRIPTION
-npm gets its config settings from the command line, environment variables, and npmrc files.</p>
+<p>The npm config files</p>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>npm gets its config settings from the command line, environment variables, and npmrc files.</p>
 <p>The npm config command can be used to update and edit the contents of the user and global npmrc files.</p>
 <p>For a list of available configuration options, see npm-config.</p>
-<p>FILES
-The four relevant files are:</p>
+</div>
+<div class="section" id="files">
+<h2>FILES<a class="headerlink" href="#files" title="永久链接至标题">¶</a></h2>
+<p>The four relevant files are:</p>
 <p>per-project config file (/path/to/my/project/.npmrc)
 per-user config file (~/.npmrc)
 global config file ($PREFIX/etc/npmrc)
@@ -155,9 +166,10 @@ All npm config files are an ini-formatted list of key = value parameters. Enviro
 Each of these files is loaded, and config options are resolved in priority order. For example, a setting in the userconfig file would override the setting in the globalconfig file.</p>
 <p>Array values are specified by adding “[]” after the key name. For example:</p>
 <p>key[] = “first value”
-key[] = “second value”
-Comments
-Lines in .npmrc files are interpreted as comments when they begin with a ; or # character. .npmrc files are parsed by npm/ini, which specifies this comment syntax.</p>
+key[] = “second value”</p>
+<div class="section" id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="永久链接至标题">¶</a></h3>
+<p>Lines in .npmrc files are interpreted as comments when they begin with a ; or # character. .npmrc files are parsed by npm/ini, which specifies this comment syntax.</p>
 <p>For example:</p>
 <p># last modified: 01 Jan 2016
 ; Set a new registry for a scoped package
@@ -166,20 +178,26 @@ Per-project config file
 When working locally in a project, a .npmrc file in the root of the project (ie, a sibling of node_modules and package.json) will set config values specific to this project.</p>
 <p>Note that this only applies to the root of the project that you’re running npm in. It has no effect when your module is published. For example, you can’t publish a module that forces itself to install globally, or in a different location.</p>
 <p>Additionally, this file is not read in global mode, such as when running npm install -g.</p>
-<p>Per-user config file
-$HOME/.npmrc (or the userconfig param, if set in the environment or on the command line)</p>
+</div>
+<div class="section" id="per-user-config-file">
+<h3>Per-user config file<a class="headerlink" href="#per-user-config-file" title="永久链接至标题">¶</a></h3>
+<p>$HOME/.npmrc (or the userconfig param, if set in the environment or on the command line)</p>
 <p>Global config file
 $PREFIX/etc/npmrc (or the globalconfig param, if set above): This file is an ini-file formatted list of key = value parameters. Environment variables can be replaced as above.</p>
-<p>Built-in config file
-path/to/npm/itself/npmrc</p>
+</div>
+<div class="section" id="built-in-config-file">
+<h3>Built-in config file<a class="headerlink" href="#built-in-config-file" title="永久链接至标题">¶</a></h3>
+<p>path/to/npm/itself/npmrc</p>
 <p>This is an unchangeable “builtin” configuration file that npm keeps consistent across updates. Set fields in here using the ./configure script that comes with npm. This is primarily for distribution maintainers to override default configs in a standard and consistent manner.</p>
+</div>
+</div>
 <div class="section" id="see-also">
 <h2>SEE ALSO<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">folders</span></code></p></li>
 <li><p><a class="reference internal" href="../cli/config.html#cmdoption-npm-arg-config"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">config</span></code></a></p></li>
 <li><p><a class="reference internal" href="../cli/config.html#cmdoption-npm-arg-config"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">config</span></code></a></p></li>
-<li><p><a class="reference internal" href="package.json.html#package-json"><span class="std std-ref">npm-package.json</span></a></p></li>
+<li><p><a class="reference internal" href="package.json.html#package-json"><span class="std std-ref">package.json</span></a></p></li>
 <li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span></code></p></li>
 </ul>
 </div>
@@ -198,10 +216,10 @@ path/to/npm/itself/npmrc</p>
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="package-lock.json.html" title="npm-package-lock.json"
+          <a href="package-lock.json.html" title="package-lock.json"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="folders.html" title="npm-folders"
+          <a href="folders.html" title="folders"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -211,7 +229,7 @@ path/to/npm/itself/npmrc</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

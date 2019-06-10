@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-shrinkwrap.json &#8212; npm-docs 6.9.1 文档</title>
+    <title>shrinkwrap.json &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="misc" href="../misc/contents.html" />
-    <link rel="prev" title="npm-package.json" href="package.json.html" />
+    <link rel="prev" title="package.json" href="package.json.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/files/shrinkwrap.json.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -88,7 +89,7 @@
           <a href="../misc/contents.html" title="misc"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="package.json.html" title="npm-package.json"
+          <a href="package.json.html" title="package.json"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -100,7 +101,8 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-shrinkwrap.json</a><ul>
+<li><a class="reference internal" href="#">shrinkwrap.json</a><ul>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
 <li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
 </ul>
 </li>
@@ -108,7 +110,7 @@
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="package.json.html"
-                        title="上一章">npm-package.json</a></p>
+                        title="上一章">package.json</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="../misc/contents.html"
                         title="下一章">misc</a></p>
@@ -137,21 +139,24 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="npm-shrinkwrap-json">
-<span id="shrinkwrap-json"></span><h1>npm-shrinkwrap.json<a class="headerlink" href="#npm-shrinkwrap-json" title="永久链接至标题">¶</a></h1>
-<p>A publishable lockfile
-DESCRIPTION
-npm-shrinkwrap.json is a file created by npm-shrinkwrap. It is identical to package-lock.json, with one major caveat: Unlike package-lock.json, npm-shrinkwrap.json may be included when publishing a package.</p>
+  <div class="section" id="shrinkwrap-json">
+<span id="id1"></span><h1>shrinkwrap.json<a class="headerlink" href="#shrinkwrap-json" title="永久链接至标题">¶</a></h1>
+<p>A publishable lockfile</p>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p><a class="reference internal" href="#shrinkwrap-json"><span class="std std-ref">shrinkwrap.json</span></a> is a file created by <code class="xref std std-option docutils literal notranslate"><span class="pre">shrinkwrap</span></code>.
+It is identical to package-lock.json, with one major caveat: Unlike package-lock.json, npm-shrinkwrap.json may be included when publishing a package.</p>
 <p>The recommended use-case for npm-shrinkwrap.json is applications deployed through the publishing process on the registry: for example, daemons and command-line tools intended as global installs or devDependencies. It’s strongly discouraged for library authors to publish this file, since that would prevent end users from having control over transitive dependency updates.</p>
 <p>Additionally, if both package-lock.json and npm-shrinkwrap.json are present in a package root, package-lock.json will be ignored in favor of this file.</p>
 <p>For full details and description of the npm-shrinkwrap.json file format, refer to the manual page for package-lock.json.</p>
+</div>
 <div class="section" id="see-also">
 <h2>SEE ALSO<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../cli/shrinkwrap.html#cmdoption-npm-arg-shrinkwrap"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">shrinkwrap</span></code></a></p></li>
 <li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">package-lock.json</span></code></p></li>
-<li><p><a class="reference internal" href="package.json.html#package-json"><span class="std std-ref">npm-package.json</span></a></p></li>
-<li><p><a class="reference internal" href="../cli/install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
+<li><p><a class="reference internal" href="package.json.html#package-json"><span class="std std-ref">package.json</span></a></p></li>
+<li><p><a class="reference internal" href="../cli/install.html#id10"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
 </ul>
 </div>
 </div>
@@ -172,7 +177,7 @@ npm-shrinkwrap.json is a file created by npm-shrinkwrap. It is identical to pack
           <a href="../misc/contents.html" title="misc"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="package.json.html" title="npm-package.json"
+          <a href="package.json.html" title="package.json"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -182,7 +187,7 @@ npm-shrinkwrap.json is a file created by npm-shrinkwrap. It is identical to pack
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -126,7 +127,10 @@
   <div class="section" id="verifying-the-pgp-signature-of-a-package-from-the-npm-public-registry">
 <h1>从npm公共注册表验证包的PGP签名<a class="headerlink" href="#verifying-the-pgp-signature-of-a-package-from-the-npm-public-registry" title="永久链接至标题">¶</a></h1>
 <p>To ensure the integrity of a package version you download from the npm public registry, you can manually verify the PGP signature of the package.</p>
-<p>Note: Since fully verifying signatures on Keybase requires rechecking proofs (which requires network activity) and is therefore expensive, we recommend only verifying signatures if it is absolutely necessary – for example, when verifying a deploy artifact, or when initially storing a package in your cache.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Since fully verifying signatures on Keybase requires rechecking proofs (which requires network activity) and is therefore expensive, we recommend only verifying signatures if it is absolutely necessary – for example, when verifying a deploy artifact, or when initially storing a package in your cache.</p>
+</div>
 <div class="section" id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="永久链接至标题">¶</a></h2>
 <p>Install Keybase from <a class="reference external" href="https://keybase.io/download">https://keybase.io/download</a>
@@ -136,12 +140,13 @@ Download a local copy of the npm public registry’s public PGP key.</p>
 </div>
 <div class="section" id="verifying-npm-signatures-for-the-public-registry">
 <h2>Verifying npm signatures for the public registry<a class="headerlink" href="#verifying-npm-signatures-for-the-public-registry" title="永久链接至标题">¶</a></h2>
-<p>Note: The following steps use version 1.4.3 of the light-cycle package as an example.
-On the command line, fetch the signature for the package version you want and save it in a file:</p>
-<blockquote>
-<div><p>$ http GET <a class="reference external" href="https://registry.npmjs.org/light-cycle">https://registry.npmjs.org/light-cycle</a> | json “versions[‘1.4.3’].dist.npm-signature” &gt; sig-to-check</p>
-</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>The following steps use version 1.4.3 of the light-cycle package as an example.</p>
+</div>
 <dl class="simple">
+<dt>On the command line, fetch the signature for the package version you want and save it in a file:</dt><dd><p>$ http GET <a class="reference external" href="https://registry.npmjs.org/light-cycle">https://registry.npmjs.org/light-cycle</a> | json “versions[‘1.4.3’].dist.npm-signature” &gt; sig-to-check</p>
+</dd>
 <dt>Get the integrity field for that version (example below includes response):</dt><dd><p>$ http GET <a class="reference external" href="https://registry.npmjs.org/light-cycle">https://registry.npmjs.org/light-cycle</a> | json “versions[‘1.4.3’].dist.integrity”</p>
 </dd>
 </dl>
@@ -186,7 +191,7 @@ PGP Fingerprint: 096318028a2b58c84929d8e13d4d5b120276566a.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

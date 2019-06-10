@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-scripts &#8212; npm-docs 6.9.1 文档</title>
+    <title>npm scripts &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -91,7 +92,7 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-scripts</a><ul>
+<li><a class="reference internal" href="#">npm scripts</a><ul>
 <li><a class="reference internal" href="#description">DESCRIPTION§</a></li>
 <li><a class="reference internal" href="#prepublish-and-prepare">PREPUBLISH AND PREPARE</a><ul>
 <li><a class="reference internal" href="#deprecation-note">DEPRECATION NOTE</a></li>
@@ -142,7 +143,7 @@
           <div class="body" role="main">
             
   <div class="section" id="npm-scripts">
-<span id="id1"></span><h1>npm-scripts<a class="headerlink" href="#npm-scripts" title="永久链接至标题">¶</a></h1>
+<span id="id1"></span><h1>npm scripts<a class="headerlink" href="#npm-scripts" title="永久链接至标题">¶</a></h1>
 <p>How npm handles the “scripts” field</p>
 <div class="section" id="description">
 <h2>DESCRIPTION§<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
@@ -163,7 +164,7 @@ postversion: Run AFTER bumping the package version, and AFTER commit.
 pretest, test, posttest: Run by the npm test command.
 prestop, stop, poststop: Run by the npm stop command.
 prestart, start, poststart: Run by the npm start command.
-prerestart, restart, postrestart: Run by the npm restart command. Note: npm restart will run the stop and start scripts if no restart script is provided.
+prerestart, restart, postrestart: Run by the npm restart command. .. note:: npm restart will run the stop and start scripts if no restart script is provided.
 preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
 Additionally, arbitrary scripts can be executed by running npm run-script &lt;stage&gt;. Pre and post commands with matching names will be run for those as well (e.g. premyscript, myscript, postmyscript). Scripts from dependencies can be run with npm explore &lt;pkg&gt; – npm run &lt;stage&gt;.</p>
 </div>
@@ -281,9 +282,9 @@ Don’t use install. Use a .gyp file for compilation, and prepublish for anythin
 <h1>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="run-script.html#cmdoption-npm-arg-run-script"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run-script</span></code></a></p></li>
-<li><p><a class="reference internal" href="../files/package.json.html"><span class="doc">npm-package.json</span></a></p></li>
-<li><p><a class="reference internal" href="../misc/developers.html"><span class="doc">npm-developers</span></a></p></li>
-<li><p><a class="reference internal" href="install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
+<li><p><a class="reference internal" href="../files/package.json.html"><span class="doc">package.json</span></a></p></li>
+<li><p><a class="reference internal" href="../misc/developers.html"><span class="doc">developers</span></a></p></li>
+<li><p><a class="reference internal" href="install.html#id10"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
 </ul>
 </div>
 
@@ -306,7 +307,7 @@ Don’t use install. Use a .gyp file for compilation, and prepublish for anythin
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -143,15 +144,15 @@
             
   <div class="section" id="about-two-factor-authentication">
 <h1>关于双因素身份验证<a class="headerlink" href="#about-two-factor-authentication" title="永久链接至标题">¶</a></h1>
-<p>双因素身份验证（2FA）通过使用确认您的身份来防止未经授权访问您的帐户:</p>
+<p>双因素身份验证(2FA)通过使用确认您的身份来防止未经授权访问您的帐户:</p>
 <ul class="simple">
-<li><p>something you know (such as your username and password)</p></li>
-<li><p>something you have (such as a phone or tablet)</p></li>
+<li><p>你知道的东西(比如你的用户名和密码)</p></li>
+<li><p>你有的东西(如手机或平板电脑)</p></li>
 </ul>
-<p>When you enable 2FA, we will prompt you for a unique one-time password when you perform certain actions on your account or on packages to which you have write access, depending on your 2FA configuration.</p>
+<p>当您启用2FA时，我们会在您对您的帐户或您具有写入权限的软件包执行某些操作时提示您输入唯一的一次性密码，具体取决于您的2FA配置。</p>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>Two-factor authentication provides the best possible security for your account against attackers. We strongly recommend enabling 2FA on your account as soon as possible after you sign up.</p>
+<p>双因素身份验证可为您的帐户提供最佳的安全保护，以抵御攻击者。我们强烈建议您在注册后尽快在帐户中启用2FA。</p>
 </div>
 <div class="section" id="two-factor-authentication-modes-on-npm">
 <h2>npm上的双因素身份验证模式<a class="headerlink" href="#two-factor-authentication-modes-on-npm" title="永久链接至标题">¶</a></h2>
@@ -171,13 +172,13 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>登录npm</p></td>
-<td><p>npm登录</p></td>
+<td><p>npm login</p></td>
 </tr>
-<tr class="row-odd"><td><p>更改个人资料设置（包括您的密码）</p></td>
-<td><p>npm个人资料集</p></td>
+<tr class="row-odd"><td><p>更改个人资料设置(包括您的密码)</p></td>
+<td><p>npm profile set</p></td>
 </tr>
 <tr class="row-even"><td><p>更改您的用户帐户的2FA模式</p></td>
-<td><p>npm profile仅启用2fa auth</p></td>
+<td><p>npm profile enable-2fa auth-only</p></td>
 </tr>
 <tr class="row-odd"><td><p>为您的用户帐户停用2FA</p></td>
 <td><p>npm profile disable-2fa</p></td>
@@ -187,7 +188,7 @@
 </div>
 <div class="section" id="authorization-and-writes">
 <h3>授权和写作<a class="headerlink" href="#authorization-and-writes" title="永久链接至标题">¶</a></h3>
-<p>If you enable 2FA for authorization and writes, we will request a one-time password for certain authorized actions, as well as write actions.</p>
+<p>如果您启用2FA进行授权和写入，我们将为某些授权操作请求一次性密码，以及写入操作。</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 60%" />
@@ -200,39 +201,39 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>登录npm</p></td>
-<td><p>npm登录</p></td>
+<td><p>npm login</p></td>
 </tr>
-<tr class="row-odd"><td><p>更改个人资料设置（包括您的密码）</p></td>
-<td><p>npm个人资料集</p></td>
+<tr class="row-odd"><td><p>更改个人资料设置(包括您的密码)</p></td>
+<td><p>npm profile set</p></td>
 </tr>
 <tr class="row-even"><td><p>更改您的用户帐户的2FA模式</p></td>
-<td><p>npm profile仅启用2fa auth</p></td>
+<td><p>npm profile enable-2fa auth-only</p></td>
 </tr>
 <tr class="row-odd"><td><p>为您的用户帐户停用2FA</p></td>
 <td><p>npm profile disable-2fa</p></td>
 </tr>
 <tr class="row-even"><td><p>创建令牌</p></td>
-<td><p>npm令牌创建</p></td>
+<td><p>npm token create</p></td>
 </tr>
 <tr class="row-odd"><td><p>撤销令牌</p></td>
-<td><p>npm令牌撤销</p></td>
+<td><p>npm token revoke</p></td>
 </tr>
 <tr class="row-even"><td><p>发布包</p></td>
-<td><p>npm发布</p></td>
+<td><p>npm publish</p></td>
 </tr>
 <tr class="row-odd"><td><p>取消发布包</p></td>
-<td><p>npm取消发布</p></td>
+<td><p>npm unpublish</p></td>
 </tr>
-<tr class="row-even"><td><p>弃用包裹</p></td>
-<td><p>npm弃用</p></td>
+<tr class="row-even"><td><p>弃用包</p></td>
+<td><p>npm deprecate</p></td>
 </tr>
-<tr class="row-odd"><td><p>Change package visibility</p></td>
+<tr class="row-odd"><td><p>更改包可见性</p></td>
 <td><p>npm access public/restricted</p></td>
 </tr>
-<tr class="row-even"><td><p>Change user and team package access</p></td>
+<tr class="row-even"><td><p>更改用户和团队包访问权限</p></td>
 <td><p>npm access grant/revoke</p></td>
 </tr>
-<tr class="row-odd"><td><p>Change package 2FA requirements</p></td>
+<tr class="row-odd"><td><p>更改包2FA要求</p></td>
 <td><p>N/A</p></td>
 </tr>
 </tbody>
@@ -267,7 +268,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

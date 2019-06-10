@@ -3,7 +3,7 @@ Creating an Org
 
 Any npm user can create an Org to manage contributor access to packages governed by the Org.
 
-Note: You need an npm user account to create an Org. To create a user account, visit the account signup page”.
+.. note:: You need an npm user account to create an Org. To create a user account, visit the account signup page”.
 
 Log in to npm with your user account. npm login dialog with username and password fields left blank
 In the upper right corner of the page, click your profile picture, then click Create an Organization. create an Organization dropdown menu

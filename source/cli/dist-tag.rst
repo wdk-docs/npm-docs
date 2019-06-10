@@ -1,4 +1,4 @@
-npm-dist-tag
+npm dist-tag
 ============================================================================================
 
 Modify package distribution tags
@@ -16,7 +16,9 @@ SYNOPSIS
    npm dist-tag rm <pkg> <tag>
    npm dist-tag ls [<pkg>]
 
-aliases: dist-tags
+.. option:: dist-tags
+
+   dist-tag aliases
 
 DESCRIPTION
 -------------------

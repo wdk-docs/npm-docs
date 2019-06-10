@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,16 +102,16 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">将注册表设置配置为npm Enterprise用户</a><ul>
-<li><a class="reference internal" href="#setting-your-companys-npm-enterprise-registry-as-your-default-registry">Setting your company’s npm Enterprise registry as your default registry</a></li>
-<li><a class="reference internal" href="#using-npmrc-to-managing-multiple-profiles-for-different-registries">Using npmrc to managing multiple profiles for different registries</a><ul>
-<li><a class="reference internal" href="#overview">Overview</a></li>
-<li><a class="reference internal" href="#install-npmrc">Install npmrc</a></li>
-<li><a class="reference internal" href="#create-an-npm-enterprise-profile">Create an npm Enterprise profile</a></li>
-<li><a class="reference internal" href="#create-a-profile-for-the-public-npm-registry">Create a profile for the public npm registry</a></li>
-<li><a class="reference internal" href="#switch-profiles-with-npmrc">Switch profiles with npmrc</a></li>
+<li><a class="reference internal" href="#setting-your-companys-npm-enterprise-registry-as-your-default-registry">将您公司的npm Enterprise注册表设置为默认注册表</a></li>
+<li><a class="reference internal" href="#using-npmrc-to-managing-multiple-profiles-for-different-registries">使用npmrc管理不同注册表的多个配置文件</a><ul>
+<li><a class="reference internal" href="#overview">概观</a></li>
+<li><a class="reference internal" href="#install-npmrc">安装npmrc</a></li>
+<li><a class="reference internal" href="#create-an-npm-enterprise-profile">创建npm企业配置文件</a></li>
+<li><a class="reference internal" href="#create-a-profile-for-the-public-npm-registry">为公共npm注册表创建配置文件</a></li>
+<li><a class="reference internal" href="#switch-profiles-with-npmrc">使用npmrc切换配置文件</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#configuring-scopes-to-point-to-different-registries">Configuring scopes to point to different registries</a></li>
+<li><a class="reference internal" href="#configuring-scopes-to-point-to-different-registries">配置范围以指向不同的注册表</a></li>
 </ul>
 </li>
 </ul>
@@ -150,46 +151,46 @@
 <h1>将注册表设置配置为npm Enterprise用户<a class="headerlink" href="#configuring-your-registry-settings-as-an-npm-enterprise-user" title="永久链接至标题">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>npm Enterprise requires npm 4.4.x or greater. To download the latest version of npm, on the command line, run [sudo] npm install npm -g</p>
+<p>npm Enterprise需要npm 4.4.x或更高版本。要在命令行下载最新版本的npm，请运行[sudo] npm install npm -g</p>
 </div>
-<p>You can configure your npm client to publish to and install from your private npm Enterprise registry by:</p>
+<p>您可以将npm客户端配置为通过以下方式发布到私有npm Enterprise注册表并从中进行安装:</p>
 <ul class="simple">
-<li><p>Setting your company’s npm Enterprise registry as your default registry (recommended)</p></li>
-<li><p>Using npmrc to managing multiple profiles for different registries</p></li>
-<li><p>Configuring scopes to point to different registries</p></li>
+<li><p>将您公司的npm Enterprise注册表设置为默认注册表(推荐)</p></li>
+<li><p>使用npmrc管理不同注册表的多个配置文件</p></li>
+<li><p>配置范围以指向不同的注册表</p></li>
 </ul>
 <div class="section" id="setting-your-companys-npm-enterprise-registry-as-your-default-registry">
-<h2>Setting your company’s npm Enterprise registry as your default registry<a class="headerlink" href="#setting-your-companys-npm-enterprise-registry-as-your-default-registry" title="永久链接至标题">¶</a></h2>
-<p>The easiest way to publish to and install from your company’s npm Enterprise registry is to set it as your default registry.</p>
-<p>在命令行上，运行以下命令，将“your-registry”替换为公司的npm Enterprise注册表的名称：</p>
+<h2>将您公司的npm Enterprise注册表设置为默认注册表<a class="headerlink" href="#setting-your-companys-npm-enterprise-registry-as-your-default-registry" title="永久链接至标题">¶</a></h2>
+<p>从公司的npm Enterprise注册表发布和安装的最简单方法是将其设置为默认注册表。</p>
+<p>在命令行上，运行以下命令，将“your-registry”替换为公司的npm Enterprise注册表的名称:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">config</span> <span class="nb">set</span> <span class="n">registry</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">registry</span><span class="o">.</span><span class="n">your</span><span class="o">-</span><span class="n">registry</span><span class="o">.</span><span class="n">npme</span><span class="o">.</span><span class="n">io</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="using-npmrc-to-managing-multiple-profiles-for-different-registries">
-<h2>Using npmrc to managing multiple profiles for different registries<a class="headerlink" href="#using-npmrc-to-managing-multiple-profiles-for-different-registries" title="永久链接至标题">¶</a></h2>
+<h2>使用npmrc管理不同注册表的多个配置文件<a class="headerlink" href="#using-npmrc-to-managing-multiple-profiles-for-different-registries" title="永久链接至标题">¶</a></h2>
 <p>If you need to publish and install packages to and from different registries – for example, an npm Enterprise registry for work-related code, and the npmjs.com public registry for open source projects – you can create and manage a separate npm user profile for each registry using the npmrc tool.</p>
 <div class="section" id="overview">
-<h3>Overview<a class="headerlink" href="#overview" title="永久链接至标题">¶</a></h3>
+<h3>概观<a class="headerlink" href="#overview" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li><p>Install npmrc</p></li>
-<li><p>Create an npm Enterprise profile</p></li>
-<li><p>Create a profile for the public npm registry</p></li>
-<li><p>Switch profiles with npmrc</p></li>
+<li><p>安装npmrc</p></li>
+<li><p>创建npm企业配置文件</p></li>
+<li><p>为公共npm注册表创建配置文件</p></li>
+<li><p>使用npmrc切换配置文件</p></li>
 </ul>
 </div>
 <div class="section" id="install-npmrc">
-<h3>Install npmrc<a class="headerlink" href="#install-npmrc" title="永久链接至标题">¶</a></h3>
-<p>To install npmrc, on the command line, run</p>
+<h3>安装npmrc<a class="headerlink" href="#install-npmrc" title="永久链接至标题">¶</a></h3>
+<p>要在命令行上安装npmrc，请运行</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">i</span> <span class="n">npmrc</span> <span class="o">-</span><span class="n">g</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="create-an-npm-enterprise-profile">
-<h3>Create an npm Enterprise profile<a class="headerlink" href="#create-an-npm-enterprise-profile" title="永久链接至标题">¶</a></h3>
-<p>After installing npmrc, you can create a profile to access your company’s Enterprise registry.</p>
+<h3>创建npm企业配置文件<a class="headerlink" href="#create-an-npm-enterprise-profile" title="永久链接至标题">¶</a></h3>
+<p>安装npmrc后，您可以创建一个配置文件来访问公司的Enterprise注册表。</p>
 <ol class="arabic simple">
-<li><p>要创建npm Enterprise配置文件，请在命令行上运行npmrc -c name-of-profile。例如，要创建名为“work”的概要文件，请运行以下命令：</p></li>
+<li><p>要创建npm Enterprise配置文件，请在命令行上运行npmrc -c name-of-profile。例如，要创建名为“work”的概要文件，请运行以下命令:</p></li>
 </ol>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npmrc</span> <span class="o">-</span><span class="n">c</span> <span class="n">work</span>
@@ -197,7 +198,7 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li><p>要为配置文件设置npm Enterprise注册表，请运行以下命令，将your-company-registry替换为公司的npm Enterprise注册表的名称：</p></li>
+<li><p>要为配置文件设置npm Enterprise注册表，请运行以下命令，将your-company-registry替换为公司的npm Enterprise注册表的名称:</p></li>
 </ol>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">config</span> <span class="nb">set</span> <span class="n">registry</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">registry</span><span class="o">.</span><span class="n">your</span><span class="o">-</span><span class="n">company</span><span class="o">-</span><span class="n">registry</span><span class="o">.</span><span class="n">npme</span><span class="o">.</span><span class="n">io</span><span class="o">/</span>
@@ -206,7 +207,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="create-a-profile-for-the-public-npm-registry">
-<h3>Create a profile for the public npm registry<a class="headerlink" href="#create-a-profile-for-the-public-npm-registry" title="永久链接至标题">¶</a></h3>
+<h3>为公共npm注册表创建配置文件<a class="headerlink" href="#create-a-profile-for-the-public-npm-registry" title="永久链接至标题">¶</a></h3>
 <p>After you have created your npm Enterprise profile, you can create a second profile for a different registry, such as the public npm registry.</p>
 <ol class="arabic simple">
 <li><p>To create a profile for the public registry, on the command line, run npmrc -c name-of-profile. For example, to create a profile called “open-source”, run npmrc -c open-source.</p></li>
@@ -219,7 +220,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="switch-profiles-with-npmrc">
-<h3>Switch profiles with npmrc<a class="headerlink" href="#switch-profiles-with-npmrc" title="永久链接至标题">¶</a></h3>
+<h3>使用npmrc切换配置文件<a class="headerlink" href="#switch-profiles-with-npmrc" title="永久链接至标题">¶</a></h3>
 <p>To switch profiles, on the command line, run the following command, replacing profile-name with the name of your profile:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npmrc</span> <span class="n">profile</span><span class="o">-</span><span class="n">name</span>
 </pre></div>
@@ -227,7 +228,7 @@
 </div>
 </div>
 <div class="section" id="configuring-scopes-to-point-to-different-registries">
-<h2>Configuring scopes to point to different registries<a class="headerlink" href="#configuring-scopes-to-point-to-different-registries" title="永久链接至标题">¶</a></h2>
+<h2>配置范围以指向不同的注册表<a class="headerlink" href="#configuring-scopes-to-point-to-different-registries" title="永久链接至标题">¶</a></h2>
 <p>You can also map different scopes to different npm registries. For example, to use the scope &#64;company-scope from your npm Enterprise registry, while continuing to install public packages from the public npm registry, run the following command, replacing &#64;company-scope with the scope, and company-registry with the name of your company’s npm Enterprise registry:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">login</span> <span class="o">--</span><span class="n">scope</span><span class="o">=</span><span class="nd">@company</span><span class="o">-</span><span class="n">scope</span> <span class="o">--</span><span class="n">registry</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">registry</span><span class="o">.</span><span class="n">company</span><span class="o">-</span><span class="n">registry</span><span class="o">.</span><span class="n">npme</span><span class="o">.</span><span class="n">io</span><span class="o">/</span>
 </pre></div>
@@ -261,7 +262,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

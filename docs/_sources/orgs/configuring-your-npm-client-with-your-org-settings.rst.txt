@@ -11,7 +11,7 @@ Configuring your npm client to use your Org’s scope§
 If you will be publishing packages with your Org’s scope often, you can add your Org’s scope to your global .npmrc configuration file.
 
 Setting your Org scope for all new packages§
-Note: Setting the Org scope using the steps below will only set the scope for new packages; for existing packages, you will need to update the name field in package.json.
+.. note:: Setting the Org scope using the steps below will only set the scope for new packages; for existing packages, you will need to update the name field in package.json.
 
 On the command line, type the following command:
  npm config set scope <org-name> --global

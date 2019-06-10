@@ -63,6 +63,7 @@ html_theme = 'sphinx13'
 html_theme_path = ['_themes']
 modindex_common_prefix = ['npm']
 html_static_path = ['_static']
+html_favicon = '_static/favicon.ico'
 # html_sidebars = {'index': ['indexsidebar.html', 'searchbox.html']}
 # html_additional_pages = {'index': 'index.html'}
 # html_use_opensearch = 'http://sphinx-doc.org'

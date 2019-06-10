@@ -1,6 +1,6 @@
 .. _disputes:
 
-npm-disputes
+disputes
 ======================================================
 
 Handling Module Name Disputes
@@ -15,6 +15,8 @@ After a few weeks, if there’s no resolution, we’ll sort it out.
 Don’t squat on package names. Publish code or move out of the way.
 
 DESCRIPTION
+------------------------------------------------------
+
 There sometimes arise cases where a user publishes a module, and then later, some other user wants to use that name. Here are some common ways that happens (each of these is based on actual events.)
 
 Alice writes a JavaScript module foo, which is not node-specific. Alice doesn’t use node at all. Yusuf wants to use foo in node, so he wraps it in an npm module. Some time later, Alice starts using node, and wants to take over management of her program.
@@ -31,6 +33,8 @@ In almost every case so far, the parties involved have been able to reach an ami
 Module ecosystems are most vibrant and powerful when they are as self-directed as possible. If an admin one day deletes something you had worked on, then that is going to make most people quite upset, regardless of the justification. When humans solve their problems by talking to other humans with respect, everyone has the chance to end up feeling good about the interaction.
 
 EXCEPTIONS
+------------------------------------------------------
+
 Some things are not allowed, and will be removed without discussion if they are brought to the attention of the npm registry admins, including but not limited to:
 
 Malware (that is, a package designed to exploit or harm the machine on which it is installed).
@@ -43,14 +47,20 @@ Other things forbidden by the npm Code of Conduct such as hateful language, porn
 If you see bad behavior like this, please report it to abuse@npmjs.com right away. You are never expected to resolve abusive behavior on your own. We are here to help.
 
 TRADEMARKS
+------------------------------------------------------
+
 If you think another npm publisher is infringing your trademark, such as by using a confusingly similar package name, email abuse@npmjs.com with a link to the package or user account on https://www.npmjs.com/. Attach a copy of your trademark registration certificate.
 
 If we see that the package’s publisher is intentionally misleading others by misusing your registered mark without permission, we will transfer the package name to you. Otherwise, we will contact the package publisher and ask them to clear up any confusion with changes to their package’s README file or metadata.
 
 CHANGES
+------------------------------------------------------
+
 This is a living document and may be updated from time to time. Please refer to the git history for this document to view the changes.
 
 LICENSE
+------------------------------------------------------
+
 Copyright (C) npm, Inc., All rights reserved
 
 This document may be reused under a Creative Commons Attribution-ShareAlike License.

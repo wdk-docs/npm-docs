@@ -9,4 +9,4 @@ In the left sidebar, click the name of your Org. example org selected in organiz
 On the Org settings page, click Teams. teams tab
 In the list of team members, find the member you want to remove.
 In the member row, to remove the member from the team, click X. x button
-Note: Removing a member from a team, even if it is the only team they are a member of, will not remove them from the Org. To remove a member from the Org, see “Removing members from your Org”.
+.. note:: Removing a member from a team, even if it is the only team they are a member of, will not remove them from the Org. To remove a member from the Org, see “Removing members from your Org”.

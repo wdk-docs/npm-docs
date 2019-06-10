@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-shrinkwrap &#8212; npm-docs 6.9.1 文档</title>
+    <title>npm shrinkwrap &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="npm-star" href="star.html" />
-    <link rel="prev" title="npm-search" href="search.html" />
+    <link rel="next" title="npm star" href="star.html" />
+    <link rel="prev" title="npm search" href="search.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/cli/shrinkwrap.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,10 +86,10 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="star.html" title="npm-star"
+          <a href="star.html" title="npm star"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="search.html" title="npm-search"
+          <a href="search.html" title="npm search"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -100,7 +101,7 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-shrinkwrap</a><ul>
+<li><a class="reference internal" href="#">npm shrinkwrap</a><ul>
 <li><a class="reference internal" href="#synopsis">概要</a></li>
 <li><a class="reference internal" href="#description">描述</a></li>
 <li><a class="reference internal" href="#see-also">参阅</a></li>
@@ -110,10 +111,10 @@
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="search.html"
-                        title="上一章">npm-search</a></p>
+                        title="上一章">npm search</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="star.html"
-                        title="下一章">npm-star</a></p>
+                        title="下一章">npm star</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -140,13 +141,13 @@
           <div class="body" role="main">
             
   <div class="section" id="npm-shrinkwrap">
-<h1>npm-shrinkwrap<a class="headerlink" href="#npm-shrinkwrap" title="永久链接至标题">¶</a></h1>
+<h1>npm shrinkwrap<a class="headerlink" href="#npm-shrinkwrap" title="永久链接至标题">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>概要<a class="headerlink" href="#synopsis" title="永久链接至标题">¶</a></h2>
 <dl class="option">
 <dt id="cmdoption-npm-arg-shrinkwrap">
 <code class="descname">shrinkwrap</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-npm-arg-shrinkwrap" title="永久链接至目标">¶</a></dt>
-<dd><p>Lock down dependency versions for publication</p>
+<dd><p>锁定发布的依赖版本</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm shrinkwrap
 </pre></div>
 </div>
@@ -155,19 +156,21 @@
 </div>
 <div class="section" id="description">
 <h2>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
-<p>This command repurposes package-lock.json into a publishable npm-shrinkwrap.json or simply creates a new one. The file created and updated by this command will then take precedence over any other existing or future package-lock.json files. For a detailed explanation of the design and purpose of package locks in npm, see npm-package-locks.</p>
+<p>这个命令将 <a class="reference internal" href="../files/package-lock.json.html#package-lock-json"><span class="std std-ref">package-lock.json</span></a> 重新用于 publishable <a class="reference internal" href="../files/shrinkwrap.json.html#shrinkwrap-json"><span class="std std-ref">shrinkwrap.json</span></a> 或者只是创建一个新的。</p>
+<p>此命令创建和更新的文件将优先于任何其他现有或未来 <a class="reference internal" href="../files/package-lock.json.html#package-lock-json"><span class="std std-ref">package-lock.json</span></a> 文件。</p>
+<p>有关npm中包锁的设计和目的的详细说明，请参阅 <a class="reference internal" href="../files/package-locks.html#package-locks"><span class="std std-ref">package-locks</span></a> 。</p>
 </div>
 <div class="section" id="see-also">
 <h2>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
+<li><p><a class="reference internal" href="install.html#id10"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
 <li><p><a class="reference internal" href="run-script.html#cmdoption-npm-arg-run-script"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run-script</span></code></a></p></li>
-<li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">scripts</span></code></p></li>
-<li><p><a class="reference internal" href="../files/package.json.html#package-json"><span class="std std-ref">npm-package.json</span></a></p></li>
-<li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">package-locks</span></code></p></li>
-<li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">package-lock.json</span></code></p></li>
-<li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">shrinkwrap.json</span></code></p></li>
-<li><p><a class="reference internal" href="ls.html#cmdoption-npm-arg-ls"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">ls</span></code></a></p></li>
+<li><p><a class="reference internal" href="../misc/scripts.html#scripts"><span class="std std-ref">scripts</span></a></p></li>
+<li><p><a class="reference internal" href="../files/package.json.html#package-json"><span class="std std-ref">package.json</span></a></p></li>
+<li><p><a class="reference internal" href="../files/package-locks.html#package-locks"><span class="std std-ref">package-locks</span></a></p></li>
+<li><p><a class="reference internal" href="../files/package-lock.json.html#package-lock-json"><span class="std std-ref">package-lock.json</span></a></p></li>
+<li><p><a class="reference internal" href="../files/shrinkwrap.json.html#shrinkwrap-json"><span class="std std-ref">shrinkwrap.json</span></a></p></li>
+<li><p><a class="reference internal" href="ls.html#id9"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">ls</span></code></a></p></li>
 </ul>
 </div>
 </div>
@@ -185,10 +188,10 @@
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="star.html" title="npm-star"
+          <a href="star.html" title="npm star"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="search.html" title="npm-search"
+          <a href="search.html" title="npm search"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -198,7 +201,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

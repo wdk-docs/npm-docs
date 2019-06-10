@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>About authentication tokens &#8212; npm-docs 6.9.1 文档</title>
+    <title>关于身份验证令牌 &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,10 +13,11 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Creating and viewing authentication tokens" href="creating-and-viewing-authentication-tokens.html" />
+    <link rel="next" title="创建和查看身份验证令牌" href="creating-and-viewing-authentication-tokens.html" />
     <link rel="prev" title="集成" href="index.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/integrations/about-authentication-tokens.html" />
 
@@ -85,7 +86,7 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="creating-and-viewing-authentication-tokens.html" title="Creating and viewing authentication tokens"
+          <a href="creating-and-viewing-authentication-tokens.html" title="创建和查看身份验证令牌"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
           <a href="index.html" title="集成"
@@ -103,7 +104,7 @@
                         title="上一章">集成</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="creating-and-viewing-authentication-tokens.html"
-                        title="下一章">Creating and viewing authentication tokens</a></p>
+                        title="下一章">创建和查看身份验证令牌</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -130,12 +131,15 @@
           <div class="body" role="main">
             
   <div class="section" id="about-authentication-tokens">
-<h1>About authentication tokens<a class="headerlink" href="#about-authentication-tokens" title="永久链接至标题">¶</a></h1>
-<p>Note: You must be using npm version 5.5.1 or greater to use authentication tokens.
-An authentication token is a hexadecimal string that gives you the right to publish and access your modules. Whenever you log in to npm, we generate an authentication token for you.</p>
+<h1>关于身份验证令牌<a class="headerlink" href="#about-authentication-tokens" title="永久链接至标题">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>You must be using npm version 5.5.1 or greater to use authentication tokens.</p>
+</div>
+<p>An authentication token is a hexadecimal string that gives you the right to publish and access your modules. Whenever you log in to npm, we generate an authentication token for you.</p>
 <p>You can also create an authentication token to give other tools (such as continuous integration testing environments) access to your npm packages. For example, Travis CI provides an environment variable that you can set to an npm token value, which gives Travis CI the ability to run npm as your npm user. When Travis CI runs, it will be able to complete npm tasks as you, including installing private packages you can access.</p>
 <p>You can work with tokens from the web or the CLI, whichever is easiest. What you do in each environment will be reflected in the other environment.</p>
-<p>npm token commands let you:</p>
+<p>npm令牌命令让你：</p>
 <p>View tokens for easier tracking and management
 Create new tokens, specifying read-only or full-permission
 Limit access according to IP address ranges (CIDR)
@@ -156,7 +160,7 @@ For more information on creating and viewing authentication tokens on the web an
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="creating-and-viewing-authentication-tokens.html" title="Creating and viewing authentication tokens"
+          <a href="creating-and-viewing-authentication-tokens.html" title="创建和查看身份验证令牌"
              >下一页</a> |</li>
         <li class="right" >
           <a href="index.html" title="集成"
@@ -169,7 +173,7 @@ For more information on creating and viewing authentication tokens on the web an
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

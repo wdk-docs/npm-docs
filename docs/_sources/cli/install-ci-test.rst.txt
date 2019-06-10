@@ -1,4 +1,4 @@
-npm-install-ci-test
+npm install-ci-test
 ============================================================================================
 
 SYNOPSIS
@@ -6,7 +6,7 @@ SYNOPSIS
 
 .. program:: npm
 
-.. option:: cit
+.. option:: install-ci-test
 
    Install a project with a clean slate and run tests
 
@@ -14,7 +14,9 @@ SYNOPSIS
 
       npm install-ci-test
 
-   alias: npm cit
+.. option:: cit
+
+   install-ci-test alias
 
 DESCRIPTION
 -------------------

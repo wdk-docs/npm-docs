@@ -1,10 +1,13 @@
 .. _scripts:
 
-npm-scripts
+scripts
 ======================================================
 
 How npm handles the "scripts" field
+
 DESCRIPTION
+------------------------------------------------------
+
 npm supports the “scripts” property of the package.json file, for the following scripts:
 
 prepublish: Run BEFORE the package is packed and published, as well as on local npm install without any arguments. (See below)
@@ -23,17 +26,23 @@ postversion: Run AFTER bumping the package version, and AFTER commit.
 pretest, test, posttest: Run by the npm test command.
 prestop, stop, poststop: Run by the npm stop command.
 prestart, start, poststart: Run by the npm start command.
-prerestart, restart, postrestart: Run by the npm restart command. Note: npm restart will run the stop and start scripts if no restart script is provided.
+prerestart, restart, postrestart: Run by the npm restart command. .. note:: npm restart will run the stop and start scripts if no restart script is provided.
 preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
 Additionally, arbitrary scripts can be executed by running npm run-script <stage>. Pre and post commands with matching names will be run for those as well (e.g. premyscript, myscript, postmyscript). Scripts from dependencies can be run with npm explore <pkg> -- npm run <stage>.
 
 PREPUBLISH AND PREPARE
+------------------------------------------------------
+
 DEPRECATION NOTE
+------------------------------------------------------
+
 Since npm@1.1.71, the npm CLI has run the prepublish script for both npm publish and npm install, because it’s a convenient way to prepare a package for use (some common use cases are described in the section below). It has also turned out to be, in practice, very confusing. As of npm@4.0.0, a new event has been introduced, prepare, that preserves this existing behavior. A new event, prepublishOnly has been added as a transitional strategy to allow users to avoid the confusing behavior of existing npm versions and only run on npm publish (for instance, running the tests one last time to ensure they’re in good shape).
 
 See https://github.com/npm/npm/issues/10074 for a much lengthier justification, with further reading, for this change.
 
 USE CASES
+------------------------------------------------------
+
 If you need to perform operations on your package before it is used, in a way that is not dependent on the operating system or architecture of the target system, use a prepublish script. This includes tasks such as:
 
 Compiling CoffeeScript source code into JavaScript.
@@ -44,7 +53,10 @@ The advantage of doing these things at prepublish time is that they can be done 
 You can depend on coffee-script as a devDependency, and thus your users don’t need to have it installed.
 You don’t need to include minifiers in your package, reducing the size for your users.
 You don’t need to rely on your users having curl or wget or other system tools on the target machines.
+
 DEFAULT VALUES
+------------------------------------------------------
+
 npm will default some script values based on package contents.
 
 "start": "node server.js":
@@ -56,9 +68,13 @@ If there is a server.js file in the root of your package, then npm will default 
 If there is a binding.gyp file in the root of your package and you haven’t defined your own install or preinstall scripts, npm will default the install command to compile using node-gyp.
 
 USER
+------------------------------------------------------
+
 If npm was invoked with root privileges, then it will change the uid to the user account or uid specified by the user config, which defaults to nobody. Set the unsafe-perm flag to run scripts with root privileges.
 
 ENVIRONMENT
+------------------------------------------------------
+
 Package scripts run in an environment where many pieces of information are made available regarding the setup of npm and the current state of the process.
 
 path
@@ -112,7 +128,10 @@ If you want to run a make command, you can do so. This works just fine:
   , "test" : "make test"
   }
 }
+
 EXITING
+------------------------------------------------------
+
 Scripts are run by passing the line as a script argument to sh.
 
 If the script exits with a code other than 0, then this will abort the process.
@@ -120,6 +139,8 @@ If the script exits with a code other than 0, then this will abort the process.
 Note that these script files don’t have to be nodejs or even javascript programs. They just have to be some kind of executable file.
 
 HOOK SCRIPTS
+------------------------------------------------------
+
 If you want to run a specific script at a specific lifecycle event for ALL packages, then you can use a hook script.
 
 Place an executable file at node_modules/.hooks/{eventname}, and it’ll get run for all packages when they are going through that point in the package lifecycle for any packages installed in that root.
@@ -127,6 +148,8 @@ Place an executable file at node_modules/.hooks/{eventname}, and it’ll get run
 Hook scripts are run exactly the same way as package.json scripts. That is, they are in a separate child process, with the env described above.
 
 BEST PRACTICES
+------------------------------------------------------
+
 Don’t exit with a non-zero error code unless you really mean it. Except for uninstall scripts, this will cause the npm action to fail, and potentially be rolled back. If the failure is minor or only will prevent some optional features, then it’s better to just print a warning and exit successfully.
 Try not to use scripts to do what npm can do for you. Read through package.json to see all the things that you can specify and enable by simply describing your package appropriately. In general, this will lead to a more robust and consistent state.
 Inspect the env to determine where to put things. For instance, if the npm_config_binroot environment variable is set to /home/user/bin, then don’t try to install executables into /usr/local/bin. The user probably set it up that way for a reason.

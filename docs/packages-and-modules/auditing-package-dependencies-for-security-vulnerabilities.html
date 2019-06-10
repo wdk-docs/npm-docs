@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>审核您的持续集成过程。 &#8212; npm-docs 6.9.1 文档</title>
+    <title>审核安全漏洞的程序包依赖性 &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -100,10 +101,30 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">审核您的持续集成过程。</a><ul>
-<li><a class="reference internal" href="#turning-off-npm-audit-on-package-installation">Turning off npm audit on package installation</a></li>
-<li><a class="reference internal" href="#installing-a-single-package">Installing a single package</a></li>
-<li><a class="reference internal" href="#installing-all-packages">Installing all packages</a></li>
+<li><a class="reference internal" href="#">审核安全漏洞的程序包依赖性</a><ul>
+<li><a class="reference internal" href="#about-security-audits">关于安全审核</a></li>
+<li><a class="reference internal" href="#running-a-security-audit-with-npm-audit">使用npm audit运行安全审核</a><ul>
+<li><a class="reference internal" href="#resolving-eauditnopjson-and-eauditnolock-errors">解决EAUDITNOPJSON和EAUDITNOLOCK错误</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#reviewing-and-acting-on-the-security-audit-report">审查并处理安全审计报告</a><ul>
+<li><a class="reference internal" href="#security-vulnerabilities-found-with-suggested-updates">建议更新时发现安全漏洞</a></li>
+<li><a class="reference internal" href="#semver-warnings">SEMVER警告</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#security-vulnerabilities-found-requiring-manual-review">发现安全漏洞需要人工审核</a><ul>
+<li><a class="reference internal" href="#check-for-mitigating-factors">检查缓解因素</a></li>
+<li><a class="reference internal" href="#update-dependent-packages-if-a-fix-exists">如果存在修复，则更新相关包</a></li>
+<li><a class="reference internal" href="#fix-the-vulnerability">修复漏洞</a></li>
+<li><a class="reference internal" href="#open-an-issue-in-the-package-or-dependent-package-issue-tracker">打开包或依赖包问题跟踪器中的问题</a></li>
+<li><a class="reference internal" href="#no-security-vulnerabilities-found">未发现任何安全漏洞</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#turning-off-npm-audit-on-package-installation">关闭软件包安装的npm审核</a><ul>
+<li><a class="reference internal" href="#installing-a-single-package">安装单个包</a></li>
+<li><a class="reference internal" href="#installing-all-packages">安装所有包</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -139,23 +160,140 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="audit-to-your-continuous-integration-process">
-<h1>审核您的持续集成过程。<a class="headerlink" href="#audit-to-your-continuous-integration-process" title="永久链接至标题">¶</a></h1>
-<p>command line audit report no vulnerabilities found</p>
-<div class="section" id="turning-off-npm-audit-on-package-installation">
-<h2>Turning off npm audit on package installation<a class="headerlink" href="#turning-off-npm-audit-on-package-installation" title="永久链接至标题">¶</a></h2>
+  <div class="section" id="auditing-package-dependencies-for-security-vulnerabilities">
+<h1>审核安全漏洞的程序包依赖性<a class="headerlink" href="#auditing-package-dependencies-for-security-vulnerabilities" title="永久链接至标题">¶</a></h1>
+<div class="section" id="about-security-audits">
+<h2>关于安全审核<a class="headerlink" href="#about-security-audits" title="永久链接至标题">¶</a></h2>
+<p>A security audit is an assessment of package dependencies for security vulnerabilities.
+Security audits help you protect your package’s users by enabling you to find and fix known vulnerabilities in dependencies that could cause data loss, service outages, unauthorized access to sensitive information, or other issues.</p>
 </div>
+<div class="section" id="running-a-security-audit-with-npm-audit">
+<h2>使用npm audit运行安全审核<a class="headerlink" href="#running-a-security-audit-with-npm-audit" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>The npm audit command is available in npm&#64;6. To upgrade, run npm install <a class="reference external" href="mailto:npm&#37;&#52;&#48;latest">npm<span>&#64;</span>latest</a> -g.</p>
+</div>
+<p>The <a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> command submits a description of the dependencies configured in your package to your default registry and asks for a report of known vulnerabilities.
+<a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> checks direct dependencies, devDependencies, bundledDependencies, and optionalDependencies, but does not check peerDependencies.</p>
+<p><a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> automatically runs when you install a package with npm install.
+You can also run <a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> manually on your locally installed packages to conduct a security audit of the package and produce a report of dependency vulnerabilities and, if available, suggested patches.</p>
+<ol class="arabic simple">
+<li><p>On the command line, navigate to your package directory by typing cd path/to/your-package-name and pressing Enter.</p></li>
+<li><p>确保您的包包含package.json和package-lock.json文件。</p></li>
+<li><p>Type <a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> and press Enter.</p></li>
+<li><p>Review the audit report and run recommended commands or investigate further if needed.</p></li>
+</ol>
+<div class="section" id="resolving-eauditnopjson-and-eauditnolock-errors">
+<h3>解决EAUDITNOPJSON和EAUDITNOLOCK错误<a class="headerlink" href="#resolving-eauditnopjson-and-eauditnolock-errors" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">audit</span> <span class="n">requires</span> <span class="n">packages</span> <span class="n">to</span> <span class="n">have</span> <span class="n">package</span><span class="o">.</span><span class="n">json</span> <span class="ow">and</span> <span class="n">package</span><span class="o">-</span><span class="n">lock</span><span class="o">.</span><span class="n">json</span> <span class="n">files</span><span class="o">.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>如果出现EAUDITNOPJSON错误，请按照“创建package.json文件”中的步骤创建package.json文件。</p></li>
+<li><p>If you get an EAUDITNOLOCK error, make sure your package has a package.json file, then create the package lock file by running npm i –package-lock-only.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="reviewing-and-acting-on-the-security-audit-report">
+<h2>审查并处理安全审计报告<a class="headerlink" href="#reviewing-and-acting-on-the-security-audit-report" title="永久链接至标题">¶</a></h2>
+<p>Running <a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> will produce a report of security vulnerabilities with the affected package name, vulnerability severity and description, path, and other information, and, if available, commands to apply patches to resolve vulnerabilities.
+For more information on the fields in the audit report, see “About audit reports”</p>
+<div class="section" id="security-vulnerabilities-found-with-suggested-updates">
+<h3>建议更新时发现安全漏洞<a class="headerlink" href="#security-vulnerabilities-found-with-suggested-updates" title="永久链接至标题">¶</a></h3>
+<p>If security vulnerabilities are found and updates are available, you can either:</p>
+<ul class="simple">
+<li><p>Run the <a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> fix subcommand to automatically install compatible updates to vulnerable dependencies.</p></li>
+<li><p>Run the recommended commands individually to install updates to vulnerable dependencies.
+(Some updates may be semver-breaking changes; for more information, see “SEMVER warnings”.)</p></li>
+</ul>
+<div class="figure align-default">
+<img alt="command line vulnerability table with suggested fix" src="https://docs.npmjs.com/assets/images/packages-and-modules/audit-report-vulns-found-patches.png" />
+</div>
+</div>
+<div class="section" id="semver-warnings">
+<h3>SEMVER警告<a class="headerlink" href="#semver-warnings" title="永久链接至标题">¶</a></h3>
+<p>If the recommended action is a potential breaking change (semantic version major change), it will be followed by a SEMVER WARNING that says “SEMVER WARNING: Recommended action is a potentially breaking change”.
+If the package with the vulnerability has changed its API, you may need to make additional changes to your package’s code.</p>
+</div>
+</div>
+<div class="section" id="security-vulnerabilities-found-requiring-manual-review">
+<h2>发现安全漏洞需要人工审核<a class="headerlink" href="#security-vulnerabilities-found-requiring-manual-review" title="永久链接至标题">¶</a></h2>
+<p>If security vulnerabilities are found, but no patches are available, the audit report will provide information about the vulnerability so you can investigate further.</p>
+<div class="figure align-default">
+<img alt="command line audit report requiring manual review" src="https://docs.npmjs.com/assets/images/packages-and-modules/audit-report-vulns-found-manual-review.png" />
+</div>
+<p>要解决此漏洞，您可以</p>
+<ul class="simple">
+<li><p>检查缓解因素</p></li>
+<li><p>如果存在修复，则更新相关包</p></li>
+<li><p>修复漏洞</p></li>
+<li><p>打开包或依赖包问题跟踪器中的问题</p></li>
+</ul>
+<div class="section" id="check-for-mitigating-factors">
+<h3>检查缓解因素<a class="headerlink" href="#check-for-mitigating-factors" title="永久链接至标题">¶</a></h3>
+<p>Review the security advisory in the “More info” field for mitigating factors that may allow you to continue using the package with the vulnerability in limited cases.
+For example, the vulnerability may only exist when the code is used on specific operating systems, or when a specific function is called.</p>
+</div>
+<div class="section" id="update-dependent-packages-if-a-fix-exists">
+<h3>如果存在修复，则更新相关包<a class="headerlink" href="#update-dependent-packages-if-a-fix-exists" title="永久链接至标题">¶</a></h3>
+<p>If a fix exists but packages that depend on the package with the vulnerability have not been updated to include the fixed version, you may want to open a pull or merge request on the dependent package repository to use the fixed version.</p>
+<ol class="arabic simple">
+<li><p>To find the package that must be updated, check the “Path” field for the location of the package with the vulnerability, then check for the package that depends on it.
+For example, if the path to the vulnerability is &#64;package-name &gt; dependent-package &gt; package-with-vulnerability, you will need to update dependent-package.</p></li>
+<li><p>On the npm public registry, find the dependent package and navigate to its repository.
+For more information on finding packages, see “Searching for and choosing packages to download”.</p></li>
+<li><p>In the dependent package repository, open a pull or merge request to update the version of the vulnerable package to a version with a fix.</p></li>
+<li><p>Once the pull or merge request is merged and the package has been updated in the npm public registry, update your copy of the package with npm update.</p></li>
+</ol>
+</div>
+<div class="section" id="fix-the-vulnerability">
+<h3>修复漏洞<a class="headerlink" href="#fix-the-vulnerability" title="永久链接至标题">¶</a></h3>
+<p>If a fix does not exist, you may want to suggest changes that address the vulnerability to the package maintainer in a pull or merge request on the package repository.</p>
+<ol class="arabic simple">
+<li><p>检查“路径”字段以获取漏洞的位置。</p></li>
+<li><p>On the npm public registry, find the package with the vulnerability.
+For more information on finding packages, see “Searching for and choosing packages to download”.</p></li>
+<li><p>In the package repository, open a pull or merge request to make the fix on the package repository.</p></li>
+<li><p>Once the fix is merged and the package has been updated in the npm public registry, update your copy of the package that depends on the package with the fix.</p></li>
+</ol>
+</div>
+<div class="section" id="open-an-issue-in-the-package-or-dependent-package-issue-tracker">
+<h3>打开包或依赖包问题跟踪器中的问题<a class="headerlink" href="#open-an-issue-in-the-package-or-dependent-package-issue-tracker" title="永久链接至标题">¶</a></h3>
+<p>If you do not want to fix the vulnerability or update the dependent package yourself, open an issue in the package or dependent package issue tracker.</p>
+<ol class="arabic simple">
+<li><p>On the npm public registry, find the package with the vulnerability or the dependent package that needs an update.
+For more information on finding packages, see “Searching for and choosing packages to download”.</p></li>
+<li><p>In the package or dependent package issue tracker, open an issue and include information from the audit report, including the vulnerability report from the “More info” field.</p></li>
+</ol>
+</div>
+<div class="section" id="no-security-vulnerabilities-found">
+<h3>未发现任何安全漏洞<a class="headerlink" href="#no-security-vulnerabilities-found" title="永久链接至标题">¶</a></h3>
+<p>If no security vulnerabilities are found, this means that packages with known vulnerabilities were not found in your package dependency tree.
+Since the advisory database can be updated at any time, we recommend regularly running <a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> manually, or adding npm audit to your continuous integration process.</p>
+<div class="figure align-default">
+<img alt="command line audit report no vulnerabilities found" src="https://docs.npmjs.com/assets/images/packages-and-modules/audit-report-no-vulns-found.png" />
+</div>
+</div>
+</div>
+<div class="section" id="turning-off-npm-audit-on-package-installation">
+<h2>关闭软件包安装的npm审核<a class="headerlink" href="#turning-off-npm-audit-on-package-installation" title="永久链接至标题">¶</a></h2>
 <div class="section" id="installing-a-single-package">
-<h2>Installing a single package<a class="headerlink" href="#installing-a-single-package" title="永久链接至标题">¶</a></h2>
-<p>To turn off npm audit when installing a single package, use the –no-audit flag:</p>
-<p>npm install example-package-name –no-audit</p>
-<p>有关更多信息，请参阅npm-install命令。</p>
+<h3>安装单个包<a class="headerlink" href="#installing-a-single-package" title="永久链接至标题">¶</a></h3>
+<p>To turn off <a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> when installing a single package, use the –no-audit flag:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="n">example</span><span class="o">-</span><span class="n">package</span><span class="o">-</span><span class="n">name</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">audit</span>
+</pre></div>
+</div>
+<p>For more information, see the npm-install command.</p>
 </div>
 <div class="section" id="installing-all-packages">
-<h2>Installing all packages<a class="headerlink" href="#installing-all-packages" title="永久链接至标题">¶</a></h2>
-<p>To turn off npm audit when installing all packages, set the audit setting to false in your user and global npmrc config files:</p>
-<p>npm set audit false</p>
-<p>For more information, see the npm-config management command and the npm-config audit setting.</p>
+<h3>安装所有包<a class="headerlink" href="#installing-all-packages" title="永久链接至标题">¶</a></h3>
+<p>To turn off <a class="reference internal" href="../cli/audit.html#cmdoption-npm-arg-audit"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span></code></a> when installing all packages,
+set the audit setting to false in your user and global npmrc config files:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="nb">set</span> <span class="n">audit</span> <span class="n">false</span>
+</pre></div>
+</div>
+<p>有关更多信息，请参阅npm-config管理命令和npm-config审计设置。</p>
+</div>
 </div>
 </div>
 
@@ -185,7 +323,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

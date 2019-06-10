@@ -13,10 +13,11 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="生成和定位npm-debug.log文件" href="generating-and-locating-npm-debug-log-files.html" />
+    <link rel="next" title="Generating and locating npm debug.log files" href="generating-and-locating-npm-debug-log-files.html" />
     <link rel="prev" title="将注册表设置配置为npm Enterprise用户" href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.html" />
 
@@ -85,7 +86,7 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="generating-and-locating-npm-debug-log-files.html" title="生成和定位npm-debug.log文件"
+          <a href="generating-and-locating-npm-debug-log-files.html" title="Generating and locating npm debug.log files"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
           <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" title="将注册表设置配置为npm Enterprise用户"
@@ -101,9 +102,9 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">从命令行登录npm Enterprise注册表</a><ul>
-<li><a class="reference internal" href="#logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry">Logging in with your default registry set to your company’s npm Enterprise registry</a></li>
-<li><a class="reference internal" href="#logging-in-with-npmrc">Logging in with npmrc</a></li>
-<li><a class="reference internal" href="#logging-in-with-a-scope-configured-to-point-to-an-npm-enterprise-registry">Logging in with a scope configured to point to an npm Enterprise registry</a></li>
+<li><a class="reference internal" href="#logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry">使用您的默认注册表集登录到公司的npm Enterprise注册表</a></li>
+<li><a class="reference internal" href="#logging-in-with-npmrc">使用npmrc登录</a></li>
+<li><a class="reference internal" href="#logging-in-with-a-scope-configured-to-point-to-an-npm-enterprise-registry">使用配置为指向npm Enterprise注册表的作用域登录</a></li>
 </ul>
 </li>
 </ul>
@@ -113,7 +114,7 @@
                         title="上一章">将注册表设置配置为npm Enterprise用户</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="generating-and-locating-npm-debug-log-files.html"
-                        title="下一章">生成和定位npm-debug.log文件</a></p>
+                        title="下一章">Generating and locating npm debug.log files</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -143,13 +144,13 @@
 <h1>从命令行登录npm Enterprise注册表<a class="headerlink" href="#logging-in-to-an-npm-enterprise-registry-from-the-command-line" title="永久链接至标题">¶</a></h1>
 <p>登录公司的npm Enterprise注册表的步骤取决于您配置npm注册表设置的方式。</p>
 <ul class="simple">
-<li><p>Logging in with your default registry set to your company’s npm Enterprise registry</p></li>
-<li><p>Logging in with npmrc</p></li>
-<li><p>Logging in with a scope configured to point to an npm Enterprise registry</p></li>
+<li><p>使用您的默认注册表集登录到公司的npm Enterprise注册表</p></li>
+<li><p>使用npmrc登录</p></li>
+<li><p>使用配置为指向npm Enterprise注册表的作用域登录</p></li>
 </ul>
 <div class="section" id="logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry">
-<h2>Logging in with your default registry set to your company’s npm Enterprise registry<a class="headerlink" href="#logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry" title="永久链接至标题">¶</a></h2>
-<p>On the command line, type the following command:</p>
+<h2>使用您的默认注册表集登录到公司的npm Enterprise注册表<a class="headerlink" href="#logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry" title="永久链接至标题">¶</a></h2>
+<p>在命令行上，键入以下命令:</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">login</span>
 </pre></div>
@@ -158,9 +159,9 @@
 <p>出现提示时，提供您的SSO凭据。</p>
 </div>
 <div class="section" id="logging-in-with-npmrc">
-<h2>Logging in with npmrc<a class="headerlink" href="#logging-in-with-npmrc" title="永久链接至标题">¶</a></h2>
+<h2>使用npmrc登录<a class="headerlink" href="#logging-in-with-npmrc" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
-<li><p>On the command line, switch to your npm Enterprise profile:</p></li>
+<li><p>在命令行上，切换到您的npm企业配置文件:</p></li>
 </ol>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npmrc</span> <span class="n">work</span>
@@ -180,9 +181,9 @@
 </ol>
 </div>
 <div class="section" id="logging-in-with-a-scope-configured-to-point-to-an-npm-enterprise-registry">
-<h2>Logging in with a scope configured to point to an npm Enterprise registry<a class="headerlink" href="#logging-in-with-a-scope-configured-to-point-to-an-npm-enterprise-registry" title="永久链接至标题">¶</a></h2>
+<h2>使用配置为指向npm Enterprise注册表的作用域登录<a class="headerlink" href="#logging-in-with-a-scope-configured-to-point-to-an-npm-enterprise-registry" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
-<li><p>On the command line, type the following command:</p></li>
+<li><p>在命令行上，键入以下命令:</p></li>
 </ol>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">login</span> <span class="o">--</span><span class="n">registry</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">registry</span><span class="o">.</span><span class="n">company</span><span class="o">-</span><span class="n">name</span><span class="o">.</span><span class="n">npme</span><span class="o">.</span><span class="n">io</span>
@@ -208,7 +209,7 @@
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="generating-and-locating-npm-debug-log-files.html" title="生成和定位npm-debug.log文件"
+          <a href="generating-and-locating-npm-debug-log-files.html" title="Generating and locating npm debug.log files"
              >下一页</a> |</li>
         <li class="right" >
           <a href="configuring-your-registry-settings-as-an-npm-enterprise-user.html" title="将注册表设置配置为npm Enterprise用户"
@@ -221,7 +222,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

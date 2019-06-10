@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-folders &#8212; npm-docs 6.9.1 文档</title>
+    <title>folders &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -100,19 +101,24 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-folders</a><ul>
-<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
+<li><a class="reference internal" href="#">folders</a><ul>
+<li><a class="reference internal" href="#description">DESCRIPTION</a><ul>
 <li><a class="reference internal" href="#tl-dr">tl;dr</a></li>
-<li><a class="reference internal" href="#prefix-configuration">prefix Configuration</a></li>
+<li><a class="reference internal" href="#prefix">prefix</a></li>
 <li><a class="reference internal" href="#node-modules">Node Modules</a></li>
 <li><a class="reference internal" href="#executables">Executables</a></li>
 <li><a class="reference internal" href="#man-pages">Man Pages</a></li>
 <li><a class="reference internal" href="#cache">Cache</a></li>
 <li><a class="reference internal" href="#temp-files">Temp Files</a></li>
-<li><a class="reference internal" href="#more-information">More Information</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#more-information">More Information</a><ul>
 <li><a class="reference internal" href="#global-installation">Global Installation</a></li>
 <li><a class="reference internal" href="#cycles-conflicts-and-folder-parsimony">Cycles, Conflicts, and Folder Parsimony</a></li>
 <li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#publishing">Publishing</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
 </ul>
 </li>
@@ -149,54 +155,54 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="npm-folders">
-<span id="folders"></span><h1>npm-folders<a class="headerlink" href="#npm-folders" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="folders">
+<span id="id1"></span><h1>folders<a class="headerlink" href="#folders" title="永久链接至标题">¶</a></h1>
 <p>Folder Structures Used by npm</p>
 <div class="section" id="description">
 <h2>DESCRIPTION<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
 <p>npm puts various things on your computer. That’s its job.</p>
 <p>This document will tell you what it puts where.</p>
-</div>
 <div class="section" id="tl-dr">
-<h2>tl;dr<a class="headerlink" href="#tl-dr" title="永久链接至标题">¶</a></h2>
+<h3>tl;dr<a class="headerlink" href="#tl-dr" title="永久链接至标题">¶</a></h3>
 <p>Local install (default): puts stuff in ./node_modules of the current package root.
 Global install (with -g): puts stuff in /usr/local or wherever node is installed.
 Install it locally if you’re going to require() it.
 Install it globally if you’re going to run it on the command line.
 If you need both, then install it in both places, or use npm link.</p>
 </div>
-<div class="section" id="prefix-configuration">
-<h2>prefix Configuration<a class="headerlink" href="#prefix-configuration" title="永久链接至标题">¶</a></h2>
+<div class="section" id="prefix">
+<h3>prefix<a class="headerlink" href="#prefix" title="永久链接至标题">¶</a></h3>
 <p>The prefix config defaults to the location where node is installed. On most systems, this is /usr/local. On Windows, it’s %AppData%npm. On Unix systems, it’s one level up, since node is typically installed at {prefix}/bin/node rather than {prefix}/node.exe.</p>
 <p>When the global flag is set, npm installs things into this prefix. When it is not set, it uses the root of the current package, or the current working directory if not in a package already.</p>
 </div>
 <div class="section" id="node-modules">
-<h2>Node Modules<a class="headerlink" href="#node-modules" title="永久链接至标题">¶</a></h2>
+<h3>Node Modules<a class="headerlink" href="#node-modules" title="永久链接至标题">¶</a></h3>
 <p>Packages are dropped into the node_modules folder under the prefix. When installing locally, this means that you can require(“packagename”) to load its main module, or require(“packagename/lib/path/to/sub/module”) to load other modules.</p>
 <p>Global installs on Unix systems go to {prefix}/lib/node_modules. Global installs on Windows go to {prefix}/node_modules (that is, no lib folder.)</p>
 <p>Scoped packages are installed the same way, except they are grouped together in a sub-folder of the relevant node_modules folder with the name of that scope prefix by the &#64; symbol, e.g. npm install &#64;myorg/package would place the package in <a class="reference external" href="mailto:{prefix}/node_modules/&#37;&#52;&#48;myorg/package">{prefix}/node_modules/<span>&#64;</span>myorg/package</a>. See scope for more details.</p>
 <p>If you wish to require() a package, then install it locally.</p>
 </div>
 <div class="section" id="executables">
-<h2>Executables<a class="headerlink" href="#executables" title="永久链接至标题">¶</a></h2>
+<h3>Executables<a class="headerlink" href="#executables" title="永久链接至标题">¶</a></h3>
 <p>When in global mode, executables are linked into {prefix}/bin on Unix, or directly into {prefix} on Windows.</p>
 <p>When in local mode, executables are linked into ./node_modules/.bin so that they can be made available to scripts run through npm. (For example, so that a test runner will be in the path when you run npm test.)</p>
 </div>
 <div class="section" id="man-pages">
-<h2>Man Pages<a class="headerlink" href="#man-pages" title="永久链接至标题">¶</a></h2>
+<h3>Man Pages<a class="headerlink" href="#man-pages" title="永久链接至标题">¶</a></h3>
 <p>When in global mode, man pages are linked into {prefix}/share/man.</p>
 <p>When in local mode, man pages are not installed.</p>
 <p>Man pages are not installed on Windows systems.</p>
 </div>
 <div class="section" id="cache">
-<h2>Cache<a class="headerlink" href="#cache" title="永久链接至标题">¶</a></h2>
+<h3>Cache<a class="headerlink" href="#cache" title="永久链接至标题">¶</a></h3>
 <p>See npm-cache. Cache files are stored in ~/.npm on Posix, or %AppData%/npm-cache on Windows.</p>
 <p>This is controlled by the cache configuration param.</p>
 </div>
 <div class="section" id="temp-files">
-<h2>Temp Files<a class="headerlink" href="#temp-files" title="永久链接至标题">¶</a></h2>
+<h3>Temp Files<a class="headerlink" href="#temp-files" title="永久链接至标题">¶</a></h3>
 <p>Temporary files are stored by default in the folder specified by the tmp config, which defaults to the TMPDIR, TMP, or TEMP environment variables, or /tmp on Unix and c:windowstemp on Windows.</p>
 <p>Temp files are given a unique folder under this root for each run of the program, and are deleted upon successful exit.</p>
+</div>
 </div>
 <div class="section" id="more-information">
 <h2>More Information<a class="headerlink" href="#more-information" title="永久链接至标题">¶</a></h2>
@@ -205,21 +211,20 @@ If you need both, then install it in both places, or use npm link.</p>
 <p>If no package root is found, then the current folder is used.</p>
 <p>When you run npm install <a class="reference external" href="mailto:foo&#37;&#52;&#48;1&#46;2&#46;3">foo<span>&#64;</span>1<span>&#46;</span>2<span>&#46;</span>3</a>, then the package is loaded into the cache, and then unpacked into ./node_modules/foo. Then, any of foo’s dependencies are similarly unpacked into ./node_modules/foo/node_modules/….</p>
 <p>Any bin files are symlinked to ./node_modules/.bin/, so that they may be found by npm scripts when necessary.</p>
-</div>
 <div class="section" id="global-installation">
-<h2>Global Installation<a class="headerlink" href="#global-installation" title="永久链接至标题">¶</a></h2>
+<h3>Global Installation<a class="headerlink" href="#global-installation" title="永久链接至标题">¶</a></h3>
 <p>If the global configuration is set to true, then npm will install packages “globally”.</p>
 <p>For global installation, packages are installed roughly the same way, but using the folders described above.</p>
 </div>
 <div class="section" id="cycles-conflicts-and-folder-parsimony">
-<h2>Cycles, Conflicts, and Folder Parsimony<a class="headerlink" href="#cycles-conflicts-and-folder-parsimony" title="永久链接至标题">¶</a></h2>
+<h3>Cycles, Conflicts, and Folder Parsimony<a class="headerlink" href="#cycles-conflicts-and-folder-parsimony" title="永久链接至标题">¶</a></h3>
 <p>Cycles are handled using the property of node’s module system that it walks up the directories looking for node_modules folders. So, at every stage, if a package is already installed in an ancestor node_modules folder, then it is not installed at the current location.</p>
 <p>Consider the case above, where foo -&gt; bar -&gt; baz. Imagine if, in addition to that, baz depended on bar, so you’d have: foo -&gt; bar -&gt; baz -&gt; bar -&gt; baz …. However, since the folder structure is: foo/node_modules/bar/node_modules/baz, there’s no need to put another copy of bar into …/baz/node_modules, since when it calls require(“bar”), it will get the copy that is installed in foo/node_modules/bar.</p>
 <p>This shortcut is only used if the exact same version would be installed in multiple nested node_modules folders. It is still possible to have a/node_modules/b/node_modules/a if the two “a” packages are different versions. However, without repeating the exact same package multiple times, an infinite regress will always be prevented.</p>
 <p>Another optimization can be made by installing dependencies at the highest level possible, below the localized “target” folder.</p>
 </div>
 <div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h2>
+<h3>Example<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h3>
 <p>Consider this dependency graph:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>foo
 +-- blerg@1.2.5
@@ -254,15 +259,18 @@ foo
 <p>Underneath bar, the baz -&gt; quux -&gt; bar dependency creates a cycle. However, because bar is already in quux’s ancestry [B], it does not unpack another copy of bar into that folder.</p>
 <p>Underneath foo -&gt; baz [D], quux’s [E] folder tree is empty, because its dependency on bar is satisfied by the parent folder copy installed at [B].</p>
 <p>For a graphical breakdown of what is installed where, use npm ls.</p>
-<p>Publishing
-Upon publishing, npm will look in the node_modules folder. If any of the items there are not in the bundledDependencies array, then they will not be included in the package tarball.</p>
+</div>
+<div class="section" id="publishing">
+<h3>Publishing<a class="headerlink" href="#publishing" title="永久链接至标题">¶</a></h3>
+<p>Upon publishing, npm will look in the node_modules folder. If any of the items there are not in the bundledDependencies array, then they will not be included in the package tarball.</p>
 <p>This allows a package maintainer to install all of their dependencies (and dev dependencies) locally, but only re-publish those items that cannot be found elsewhere. See package.json for more information.</p>
+</div>
 </div>
 <div class="section" id="see-also">
 <h2>SEE ALSO<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="package.json.html#package-json"><span class="std std-ref">npm-package.json</span></a></p></li>
-<li><p><a class="reference internal" href="../cli/install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
+<li><p><a class="reference internal" href="package.json.html#package-json"><span class="std std-ref">package.json</span></a></p></li>
+<li><p><a class="reference internal" href="../cli/install.html#id10"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
 <li><p><a class="reference internal" href="../cli/pack.html#cmdoption-npm-arg-pack"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">pack</span></code></a></p></li>
 <li><p><a class="reference internal" href="../cli/cache.html#cmdoption-npm-arg-cache"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">cache</span></code></a></p></li>
 <li><p><a class="reference internal" href="../cli/config.html#cmdoption-npm-arg-config"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">config</span></code></a></p></li>
@@ -299,7 +307,7 @@ Upon publishing, npm will look in the node_modules folder. If any of the items t
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

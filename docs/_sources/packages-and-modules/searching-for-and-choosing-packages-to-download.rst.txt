@@ -6,9 +6,16 @@ You can use the npm search bar to find packages to use in your projects. npm sea
 Searching for a package
 -------------------------------------------------------
 
-In the search bar, type a search term and press Enter. As you type, possible choices will appear. search text field containing search query qr code dropdown containing search results for query qr code
-To list packages ranked according to package search rank criteria, in the left sidebar, under “Sort packages”, click the criterion. For example, to sort packages by popularity, click “Popularity”.
-In the package search results list, click the name of the package.
+1. In the search bar, type a search term and press Enter. As you type, possible choices will appear.
+
+    .. figure:: https://docs.npmjs.com/assets/images/packages-and-modules/small-search-bar-qr.png
+      :alt: search text field containing search query qr code dropdown containing
+
+    .. figure:: https://docs.npmjs.com/assets/images/packages-and-modules/search-results-qr-scanner-what-is-npm.png
+      :alt: search results for query qr code
+
+2. To list packages ranked according to package search rank criteria, in the left sidebar, under “Sort packages”, click the criterion. For example, to sort packages by popularity, click “Popularity”.
+3. In the package search results list, click the name of the package.
 
 Package search rank criteria
 -------------------------------------------------------

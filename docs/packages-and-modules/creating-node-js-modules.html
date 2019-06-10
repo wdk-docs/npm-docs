@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -92,11 +93,11 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">创建Node.js模块</a><ul>
-<li><a class="reference internal" href="#overview">Overview</a></li>
-<li><a class="reference internal" href="#create-a-package-json-file">Create a package.json file</a></li>
-<li><a class="reference internal" href="#create-the-file-that-will-be-loaded-when-your-module-is-required-by-another-application">Create the file that will be loaded when your module is required by another application</a></li>
+<li><a class="reference internal" href="#overview">概述</a></li>
+<li><a class="reference internal" href="#create-a-package-json-file">创建package.json文件</a></li>
+<li><a class="reference internal" href="#create-the-file-that-will-be-loaded-when-your-module-is-required-by-another-application">创建在另一个应用程序需要模块时将加载的文件</a></li>
 <li><a class="reference internal" href="#test-your-module">Test your module</a></li>
-<li><a class="reference internal" href="#resources">Resources</a></li>
+<li><a class="reference internal" href="#resources">资源</a></li>
 </ul>
 </li>
 </ul>
@@ -130,13 +131,11 @@
 <h1>创建Node.js模块<a class="headerlink" href="#creating-node-js-modules" title="永久链接至标题">¶</a></h1>
 <p>Node.js模块是一种可以发布到npm的包。</p>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="永久链接至标题">¶</a></h2>
-<p>Create a package.json file
-Create the file that will be loaded when your module is required by another application
-Test your module</p>
+<h2>概述<a class="headerlink" href="#overview" title="永久链接至标题">¶</a></h2>
+<p>创建package.json文件创建在另一个应用程序需要模块时将加载的文件测试模块</p>
 </div>
 <div class="section" id="create-a-package-json-file">
-<h2>Create a package.json file<a class="headerlink" href="#create-a-package-json-file" title="永久链接至标题">¶</a></h2>
+<h2>创建package.json文件<a class="headerlink" href="#create-a-package-json-file" title="永久链接至标题">¶</a></h2>
 <p>To create a package.json file, on the command line, in the root directory of your Node.js module, run npm init:
 For scoped modules, run npm init <a class="reference external" href="mailto:--scope=&#37;&#52;&#48;scope-name">–scope=<span>&#64;</span>scope-name</a>
 For unscoped modules, run npm init
@@ -147,9 +146,9 @@ main: The name of the file that will be loaded when your module is required by a
 For more information on package.json files, see “Creating a package.json file”.</p>
 </div>
 <div class="section" id="create-the-file-that-will-be-loaded-when-your-module-is-required-by-another-application">
-<h2>Create the file that will be loaded when your module is required by another application<a class="headerlink" href="#create-the-file-that-will-be-loaded-when-your-module-is-required-by-another-application" title="永久链接至标题">¶</a></h2>
-<p>Once your package.json file is created, create the file that will be loaded when your module is required. The default name for this file is index.js.</p>
-<p>In the file, add a function as a property of the exports object. This will make the function available to other code:</p>
+<h2>创建在另一个应用程序需要模块时将加载的文件<a class="headerlink" href="#create-the-file-that-will-be-loaded-when-your-module-is-required-by-another-application" title="永久链接至标题">¶</a></h2>
+<p>创建package.json文件后，创建在需要模块时将加载的文件。该文件的默认名称是index.js。</p>
+<p>在该文件中，添加一个函数作为exports对象的属性。这将使该功能可用于其他代码:</p>
 <dl class="simple">
 <dt>exports.printMsg = function() {</dt><dd><p>console.log(“This is a message from the demo package”);</p>
 </dd>
@@ -171,7 +170,7 @@ In the test directory, create a test.js file which requires your module and call
 On the command line, run node test.js. The message sent to the console.log should appear.</p>
 </div>
 <div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
+<h2>资源<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
 </div>
 </div>
 
@@ -194,7 +193,7 @@ On the command line, run node test.js. The message sent to the console.log shoul
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

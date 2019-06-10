@@ -1,4 +1,4 @@
-npm-bugs
+npm bugs
 ============================================================================================
 
 SYNOPSIS
@@ -14,7 +14,9 @@ SYNOPSIS
 
       npm bugs [<pkgname>]
 
-   aliases: issues
+.. option:: issues
+
+   bugs aliases
 
 DESCRIPTION
 -------------------

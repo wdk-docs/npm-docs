@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-scope &#8212; npm-docs 6.9.1 文档</title>
+    <title>scope &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="npm-scripts" href="scripts.html" />
-    <link rel="prev" title="npm-registry" href="registry.html" />
+    <link rel="next" title="scripts" href="scripts.html" />
+    <link rel="prev" title="registry" href="registry.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/misc/scope.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,10 +86,10 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="scripts.html" title="npm-scripts"
+          <a href="scripts.html" title="scripts"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="registry.html" title="npm-registry"
+          <a href="registry.html" title="registry"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -100,7 +101,8 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-scope</a><ul>
+<li><a class="reference internal" href="#">scope</a><ul>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
 <li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
 </ul>
 </li>
@@ -108,10 +110,10 @@
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="registry.html"
-                        title="上一章">npm-registry</a></p>
+                        title="上一章">registry</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="scripts.html"
-                        title="下一章">npm-scripts</a></p>
+                        title="下一章">scripts</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -137,11 +139,12 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="npm-scope">
-<span id="scope"></span><h1>npm-scope<a class="headerlink" href="#npm-scope" title="永久链接至标题">¶</a></h1>
-<p>Scoped packages
-DESCRIPTION
-All npm packages have a name. Some package names also have a scope. A scope follows the usual rules for package names (URL-safe characters, no leading dots or underscores). When used in package names, scopes are preceded by an &#64; symbol and followed by a slash, e.g.</p>
+  <div class="section" id="scope">
+<span id="id1"></span><h1>scope<a class="headerlink" href="#scope" title="永久链接至标题">¶</a></h1>
+<p>Scoped packages</p>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>All npm packages have a name. Some package names also have a scope. A scope follows the usual rules for package names (URL-safe characters, no leading dots or underscores). When used in package names, scopes are preceded by an &#64; symbol and followed by a slash, e.g.</p>
 <p>&#64;somescope/somepackagename
 Scopes are a way of grouping related packages together, and also affect a few things about the way npm treats the package.</p>
 <p>Each npm user/organization has their own scope, and only you can add packages in your scope. This means you don’t have to worry about someone taking your package name ahead of you. Thus it is also a good way to signal official packages for organizations.</p>
@@ -178,10 +181,11 @@ Scopes have a many-to-one relationship with registries: one registry can host mu
 <p>You can also associate a scope with a registry using npm config:</p>
 <p>npm config set &#64;myco:registry <a class="reference external" href="http://reg.example.com">http://reg.example.com</a>
 Once a scope is associated with a registry, any npm install for a package with that scope will request packages from that registry instead. Any npm publish for a package name that contains the scope will be published to that registry instead.</p>
+</div>
 <div class="section" id="see-also">
 <h2>SEE ALSO<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="../cli/install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
+<li><p><a class="reference internal" href="../cli/install.html#id10"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
 <li><p><a class="reference internal" href="../cli/publish.html#cmdoption-npm-arg-publish"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">publish</span></code></a></p></li>
 <li><p><a class="reference internal" href="../cli/access.html#cmdoption-npm-arg-access"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">access</span></code></a></p></li>
 <li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">registry</span></code></p></li>
@@ -202,10 +206,10 @@ Once a scope is associated with a registry, any npm install for a package with t
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="scripts.html" title="npm-scripts"
+          <a href="scripts.html" title="scripts"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="registry.html" title="npm-registry"
+          <a href="registry.html" title="registry"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -215,7 +219,7 @@ Once a scope is associated with a registry, any npm install for a package with t
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

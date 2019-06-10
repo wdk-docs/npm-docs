@@ -5,7 +5,7 @@ To protect your packages, as a package publisher, you can require everyone who h
 
 To publish or modify a package with the two factor authentication (2FA) setting enabled, a publisher must have 2FA enabled on their user account with “Authorization and Publishing” selected. For more information, see “Configuring two-factor authentication”.
 
-Note: Currently, publishing a package with 2FA enabled on CI is not possible. For more secure CI publishing, enable 2FA on the npm account used for CI, and select "Authorization" only, and create a CIDR-restricted token for CI by following the steps in "Creating and viewing authentication tokens".
+.. note:: Currently, publishing a package with 2FA enabled on CI is not possible. For more secure CI publishing, enable 2FA on the npm account used for CI, and select "Authorization" only, and create a CIDR-restricted token for CI by following the steps in "Creating and viewing authentication tokens".
 
 Enabling two-factor authentication for package publishing
 --------------------------------------------------------------------------

@@ -1,10 +1,13 @@
 .. _config:
 
-npm-config
+config
 ======================================================
 
 More than you probably want to know about npm configuration
+
 DESCRIPTION
+------------------------------------------------------
+
 npm gets its configuration values from the following sources, sorted by priority:
 
 Command Line Flags
@@ -27,6 +30,8 @@ npm’s built-in configuration file (/path/to/npm/npmrc)
 See npmrc for more details.
 
 Default Configs
+------------------------------------------------------
+
 Run npm config ls -l to see a set of configuration parameters that are internal to npm, and are defaults if nothing else is specified.
 
 Shorthands and Other CLI Niceties

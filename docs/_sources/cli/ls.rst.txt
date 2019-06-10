@@ -1,4 +1,4 @@
-npm-ls
+npm ls
 ============================================================================================
 
 
@@ -7,26 +7,36 @@ SYNOPSIS
 
 .. program:: npm
 
-.. option:: ls
+.. option:: ls [[<@scope>/]<pkg> ...]
 
    List installed packages
 
-   .. code-block:: sh
+.. option:: list
 
-      npm ls [[<@scope>/]<pkg> ...]
+   ls alias
 
-   aliases: list, la, ll
+.. option:: la
+
+   ls alias
+
+.. option:: ll
+
+   ls alias
 
 DESCRIPTION
 -------------------
 
 This command will print to stdout all the versions of packages that are installed, as well as their dependencies, in a tree-structure.
 
-Positional arguments are name@version-range identifiers, which will limit the results to only the paths to the packages named. Note that nested packages will also show the paths to the specified packages. For example, running npm ls promzard in npm’s source tree will show:
+Positional arguments are name@version-range identifiers,
+which will limit the results to only the paths to the packages named.
+Note that nested packages will also show the paths to the specified packages.
+For example, running npm ls promzard in npm’s source tree will show::
 
-npm@@VERSION@ /path/to/npm
-└─┬ init-package-json@0.0.4
-  └── promzard@0.1.5
+  npm@@VERSION@ /path/to/npm
+  └─┬ init-package-json@0.0.4
+    └── promzard@0.1.5
+
 It will print out extraneous, missing, and invalid packages.
 
 If a project specifies git urls for dependencies these are shown in parentheses after the name@version to make it easier for users to recognize potential forks of a project.
@@ -38,50 +48,72 @@ When run as ll or la, it shows extended information by default.
 CONFIGURATION
 -------------------
 
-json
-Default: false
-Type: Boolean
-Show information in JSON format.
+.. option:: ls --json <Boolean>
 
-long
-Default: false
-Type: Boolean
-Show extended information.
+   Show information in JSON format.
 
-parseable
-Default: false
-Type: Boolean
-Show parseable output instead of tree view.
+   :Default: false
+   :Type: Boolean
 
-global
-Default: false
-Type: Boolean
-List packages in the global install prefix instead of in the current project.
 
-depth
-Type: Int
-Max display depth of the dependency tree.
+.. option:: ls --long <Boolean>
 
-prod / production
-Type: Boolean
-Default: false
-Display only the dependency tree for packages in dependencies.
+   Show extended information.
 
-dev / development
-Type: Boolean
-Default: false
-Display only the dependency tree for packages in devDependencies.
+   :Default: false
+   :Type: Boolean
 
-only
-Type: String
-When “dev” or “development”, is an alias to dev.
 
-When “prod” or “production”, is an alias to production.
+.. option:: ls --parseable <Boolean>
 
-link
-Type: Boolean
-Default: false
-Display only dependencies which are linked
+   Show parseable output instead of tree view.
+
+   :Default: false
+   :Type: Boolean
+
+
+.. option:: ls --global <Boolean>
+
+   List packages in the global install prefix instead of in the current project.
+
+   :Default: false
+   :Type: Boolean
+
+.. option:: ls --depth <int>
+
+   Max display depth of the dependency tree.
+
+   :Type: Int
+
+.. option:: ls --prod/production <Boolean>
+
+   Display only the dependency tree for packages in dependencies.
+
+   :Type: Boolean
+   :Default: false
+
+.. option:: ls --dev/development <Boolean>
+
+   Display only the dependency tree for packages in devDependencies.
+
+   :Type: Boolean
+   :Default: false
+
+.. option:: ls --only <String>
+
+   When “dev” or “development”, is an alias to dev.
+
+   When “prod” or “production”, is an alias to production.
+
+   :Type: String
+
+
+.. option:: ls --link <Boolean>
+
+   Display only dependencies which are linked
+
+   :Type: Boolean
+   :Default: false
 
 SEE ALSO
 -------------------

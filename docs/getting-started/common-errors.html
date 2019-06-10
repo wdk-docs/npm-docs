@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="尝试最新的稳定版节点" href="try-the-latest-stable-version-of-node.html" />
-    <link rel="prev" title="生成和定位npm-debug.log文件" href="generating-and-locating-npm-debug-log-files.html" />
+    <link rel="prev" title="Generating and locating npm debug.log files" href="generating-and-locating-npm-debug-log-files.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/getting-started/common-errors.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -88,7 +89,7 @@
           <a href="try-the-latest-stable-version-of-node.html" title="尝试最新的稳定版节点"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="generating-and-locating-npm-debug-log-files.html" title="生成和定位npm-debug.log文件"
+          <a href="generating-and-locating-npm-debug-log-files.html" title="Generating and locating npm debug.log files"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -102,31 +103,31 @@
   <ul>
 <li><a class="reference internal" href="#">常见错误</a><ul>
 <li><a class="reference internal" href="#errors">Errors</a></li>
-<li><a class="reference internal" href="#broken-npm-installation">Broken npm installation</a></li>
-<li><a class="reference internal" href="#random-errors">Random errors</a></li>
-<li><a class="reference internal" href="#no-compatible-version-found">No compatible version found</a></li>
-<li><a class="reference internal" href="#permissions-errors">Permissions errors</a></li>
+<li><a class="reference internal" href="#broken-npm-installation">破了npm安装</a></li>
+<li><a class="reference internal" href="#random-errors">随机错误</a></li>
+<li><a class="reference internal" href="#no-compatible-version-found">找不到兼容版本</a></li>
+<li><a class="reference internal" href="#permissions-errors">权限错误</a></li>
 <li><a class="reference internal" href="#error-enoent-stat-c-users-user-appdataroamingnpm-on-windows-7">Error: ENOENT, stat ‘C:Users&lt;user&gt;AppDataRoamingnpm’ on Windows 7</a></li>
-<li><a class="reference internal" href="#no-space">No space</a></li>
-<li><a class="reference internal" href="#no-git">No git</a></li>
-<li><a class="reference internal" href="#running-a-vagrant-box-on-windows-fails-due-to-path-length-issues">Running a Vagrant box on Windows fails due to path length issues</a></li>
-<li><a class="reference internal" href="#npm-only-uses-git-and-ssh-git-urls-for-github-repos-breaking-proxies">npm only uses git: and ssh+git: URLs for GitHub repos, breaking proxies</a></li>
-<li><a class="reference internal" href="#ssl-error">SSL Error</a></li>
-<li><a class="reference internal" href="#ssl-intercepting-proxy">SSL-intercepting proxy</a></li>
-<li><a class="reference internal" href="#not-found-server-error">Not found / Server error</a></li>
-<li><a class="reference internal" href="#invalid-json">Invalid JSON</a></li>
-<li><a class="reference internal" href="#many-enoent-enotempty-errors-in-output">Many ENOENT / ENOTEMPTY errors in output</a></li>
-<li><a class="reference internal" href="#cb-never-called-when-using-shrinkwrapped-dependencies">cb() never called! when using shrinkwrapped dependencies</a></li>
-<li><a class="reference internal" href="#npm-login-errors">npm login errors</a></li>
-<li><a class="reference internal" href="#npm-hangs-on-windows-at-addremotetarball">npm hangs on Windows at addRemoteTarball</a></li>
-<li><a class="reference internal" href="#npm-not-running-the-latest-version-on-a-windows-machine">npm not running the latest version on a Windows machine</a></li>
+<li><a class="reference internal" href="#no-space">没有空间</a></li>
+<li><a class="reference internal" href="#no-git">没有git</a></li>
+<li><a class="reference internal" href="#running-a-vagrant-box-on-windows-fails-due-to-path-length-issues">由于路径长度问题，在Windows上运行Vagrant框失败</a></li>
+<li><a class="reference internal" href="#npm-only-uses-git-and-ssh-git-urls-for-github-repos-breaking-proxies">npm只使用git:和ssh + git:GitHub repos的URL，破坏代理</a></li>
+<li><a class="reference internal" href="#ssl-error">SSL错误</a></li>
+<li><a class="reference internal" href="#ssl-intercepting-proxy">SSL拦截代理</a></li>
+<li><a class="reference internal" href="#not-found-server-error">找不到/服务器错误</a></li>
+<li><a class="reference internal" href="#invalid-json">无效的JSON</a></li>
+<li><a class="reference internal" href="#many-enoent-enotempty-errors-in-output">输出中存在许多ENOENT / ENOTEMPTY错误</a></li>
+<li><a class="reference internal" href="#cb-never-called-when-using-shrinkwrapped-dependencies">cb()从未调用过！使用shrinkwrapped依赖项时</a></li>
+<li><a class="reference internal" href="#npm-login-errors">npm登录错误</a></li>
+<li><a class="reference internal" href="#npm-hangs-on-windows-at-addremotetarball">npm在Windows上的addRemoteTarball上挂起</a></li>
+<li><a class="reference internal" href="#npm-not-running-the-latest-version-on-a-windows-machine">npm没有在Windows机器上运行最新版本</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="generating-and-locating-npm-debug-log-files.html"
-                        title="上一章">生成和定位npm-debug.log文件</a></p>
+                        title="上一章">Generating and locating npm debug.log files</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="try-the-latest-stable-version-of-node.html"
                         title="下一章">尝试最新的稳定版节点</a></p>
@@ -160,47 +161,47 @@
 <div class="section" id="errors">
 <h2>Errors<a class="headerlink" href="#errors" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li><p>Broken npm installation</p></li>
-<li><p>Random errors</p></li>
-<li><p>No compatible version found</p></li>
-<li><p>Permissions errors</p></li>
+<li><p>破了npm安装</p></li>
+<li><p>随机错误</p></li>
+<li><p>找不到兼容版本</p></li>
+<li><p>权限错误</p></li>
 <li><p>Error: ENOENT, stat ‘C:Users&lt;user&gt;AppDataRoamingnpm’ on Windows 7</p></li>
-<li><p>No space</p></li>
-<li><p>No git</p></li>
-<li><p>Running a Vagrant box on Windows fails due to path length issues</p></li>
-<li><p>npm only uses git: and ssh+git: URLs for GitHub repos, breaking proxies</p></li>
-<li><p>SSL error</p></li>
-<li><p>SSL-intercepting proxy</p></li>
-<li><p>Not found / Server error</p></li>
-<li><p>Invalid JSON</p></li>
-<li><p>Many ENOENT / ENOTEMPTY errors in output</p></li>
-<li><p>cb() never called! when using shrinkwrapped dependencies</p></li>
-<li><p>npm login errors</p></li>
-<li><p>npm hangs on Windows at addRemoteTarball</p></li>
-<li><p>npm not running the latest version on a Windows machine</p></li>
+<li><p>没有空间</p></li>
+<li><p>没有git</p></li>
+<li><p>由于路径长度问题，在Windows上运行Vagrant框失败</p></li>
+<li><p>npm只使用git:和ssh + git:GitHub repos的URL，破坏代理</p></li>
+<li><p>SSL错误</p></li>
+<li><p>SSL拦截代理</p></li>
+<li><p>找不到/服务器错误</p></li>
+<li><p>无效的JSON</p></li>
+<li><p>输出中存在许多ENOENT / ENOTEMPTY错误</p></li>
+<li><p>cb()从未调用过！使用shrinkwrapped依赖项时</p></li>
+<li><p>npm登录错误</p></li>
+<li><p>npm在Windows上的addRemoteTarball上挂起</p></li>
+<li><p>npm没有在Windows机器上运行最新版本</p></li>
 </ul>
 </div>
 <div class="section" id="broken-npm-installation">
-<h2>Broken npm installation<a class="headerlink" href="#broken-npm-installation" title="永久链接至标题">¶</a></h2>
-<p>If your npm is broken:</p>
+<h2>破了npm安装<a class="headerlink" href="#broken-npm-installation" title="永久链接至标题">¶</a></h2>
+<p>如果你的npm坏了:</p>
 <ul class="simple">
-<li><p>On Mac or Linux, reinstall npm.</p></li>
+<li><p>在Mac或Linux上，重新安装npm。</p></li>
 <li><p>Windows: If you’re on Windows and you have a broken installation, the easiest thing to do is to reinstall node from the official installer (see this note about installing the latest stable version).</p></li>
 </ul>
 </div>
 <div class="section" id="random-errors">
-<h2>Random errors<a class="headerlink" href="#random-errors" title="永久链接至标题">¶</a></h2>
+<h2>随机错误<a class="headerlink" href="#random-errors" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li><p>Some strange issues can be resolved by simply running npm cache clean and trying again.</p></li>
-<li><p>If you are having trouble with npm install, use the -verbose option to see more details.</p></li>
+<li><p>只需运行npm cache clean并再次尝试即可解决一些奇怪的问题。</p></li>
+<li><p>如果您在使用npm install时遇到问题，请使用-verbose选项查看更多详细信息。</p></li>
 </ul>
 </div>
 <div class="section" id="no-compatible-version-found">
-<h2>No compatible version found<a class="headerlink" href="#no-compatible-version-found" title="永久链接至标题">¶</a></h2>
-<p>You have an outdated npm. Please update to the latest stable npm.</p>
+<h2>找不到兼容版本<a class="headerlink" href="#no-compatible-version-found" title="永久链接至标题">¶</a></h2>
+<p>你有一个过时的npm。请更新到最新稳定的npm。</p>
 </div>
 <div class="section" id="permissions-errors">
-<h2>Permissions errors<a class="headerlink" href="#permissions-errors" title="永久链接至标题">¶</a></h2>
+<h2>权限错误<a class="headerlink" href="#permissions-errors" title="永久链接至标题">¶</a></h2>
 <p>Please see the discussions in “Downloading and installing Node.js and npm” and “Resolving EACCES permissions errors when installing packages globally” for ways to avoid and resolve permissions errors.</p>
 </div>
 <div class="section" id="error-enoent-stat-c-users-user-appdataroamingnpm-on-windows-7">
@@ -208,19 +209,19 @@
 <p>The error Error: ENOENT, stat ‘C:Users&lt;user&gt;AppDataRoamingnpm’ on Windows 7 is a consequence of joyent/node#8141, and is an issue with the Node installer for Windows. The workaround is to ensure that C:Users&lt;user&gt;AppDataRoamingnpm exists and is writable with your normal user account.</p>
 </div>
 <div class="section" id="no-space">
-<h2>No space<a class="headerlink" href="#no-space" title="永久链接至标题">¶</a></h2>
+<h2>没有空间<a class="headerlink" href="#no-space" title="永久链接至标题">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm ERR! Error: ENOSPC, write
 </pre></div>
 </div>
-<p>You are trying to install on a drive that either has no space, or has no permission to write.</p>
+<p>您正在尝试在没有空间或没有写入权限的驱动器上安装。</p>
 <ul class="simple">
-<li><p>Free some disk space or</p></li>
-<li><p>Set the tmp folder somewhere with more space: npm config set tmp /path/to/big/drive/tmp or</p></li>
-<li><p>Build Node yourself and install it somewhere writable with lots of space.</p></li>
+<li><p>释放一些磁盘空间或</p></li>
+<li><p>在tmp文件夹中设置更多空间:npm config set tmp / path / to / big / drive / tmp or</p></li>
+<li><p>自己构建节点并将其安装在可写空间很大的地方。</p></li>
 </ul>
 </div>
 <div class="section" id="no-git">
-<h2>No git<a class="headerlink" href="#no-git" title="永久链接至标题">¶</a></h2>
+<h2>没有git<a class="headerlink" href="#no-git" title="永久链接至标题">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm ERR! not found: git
 ENOGIT
 </pre></div>
@@ -228,7 +229,7 @@ ENOGIT
 <p>You need to install git. Or, you may need to add your git information to your npm profile. You can do this from the command line or the website. For more information, see “Managing your profile settings”.</p>
 </div>
 <div class="section" id="running-a-vagrant-box-on-windows-fails-due-to-path-length-issues">
-<h2>Running a Vagrant box on Windows fails due to path length issues<a class="headerlink" href="#running-a-vagrant-box-on-windows-fails-due-to-path-length-issues" title="永久链接至标题">¶</a></h2>
+<h2>由于路径长度问题，在Windows上运行Vagrant框失败<a class="headerlink" href="#running-a-vagrant-box-on-windows-fails-due-to-path-length-issues" title="永久链接至标题">¶</a></h2>
 <p>&#64;drmyersii went through what sounds like a lot of painful trial and error to come up with a working solution involving Windows long paths and some custom Vagrant configuration:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>This is the commit that I implemented it in, but I’ll go ahead and post the main snippet of code here::
 
@@ -244,8 +245,8 @@ In the code above, I am appending \\?\ to the current directory absolute path. T
 </div>
 </div>
 <div class="section" id="npm-only-uses-git-and-ssh-git-urls-for-github-repos-breaking-proxies">
-<h2>npm only uses git: and ssh+git: URLs for GitHub repos, breaking proxies<a class="headerlink" href="#npm-only-uses-git-and-ssh-git-urls-for-github-repos-breaking-proxies" title="永久链接至标题">¶</a></h2>
-<p>&#64;LaurentGoderre fixed this with some Git trickery:</p>
+<h2>npm只使用git:和ssh + git:GitHub repos的URL，破坏代理<a class="headerlink" href="#npm-only-uses-git-and-ssh-git-urls-for-github-repos-breaking-proxies" title="永久链接至标题">¶</a></h2>
+<p>&#64;LaurentGoderre 用一些Git技巧修复了这个问题:</p>
 <p>I fixed this issue for several of my colleagues by running the following two commands:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">code</span><span class="o">-</span><span class="n">block</span><span class="p">::</span> <span class="n">sh</span>
 </pre></div>
@@ -257,30 +258,30 @@ git config –global url.”<a class="reference external" href="https://">https:
 <p>One thing we noticed is that the .gitconfig used is not always the one expected so if you are on a machine that modified the home path to a shared drive, you need to ensure that your .gitconfig is the same on both your shared drive and in c:users[your user]</p>
 </div>
 <div class="section" id="ssl-error">
-<h2>SSL Error<a class="headerlink" href="#ssl-error" title="永久链接至标题">¶</a></h2>
+<h2>SSL错误<a class="headerlink" href="#ssl-error" title="永久链接至标题">¶</a></h2>
 <p>npm ERR! Error: 7684:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:opensslssls23_clnt.c:787:
 You are trying to talk SSL to an unencrypted endpoint. More often than not, this is due to a proxy configuration error (see also this helpful, if dated, guide). In this case, you do not want to disable strict-ssl – you may need to set up a CA / CA file for use with your proxy, but it’s much better to take the time to figure that out than disabling SSL protection.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm ERR! Error: SSL Error: CERT_UNTRUSTED
 npm ERR! Error: SSL Error: UNABLE_TO_VERIFY_LEAF_SIGNATURE
 </pre></div>
 </div>
-<p>This problem will happen if you’re running Node 0.6. Please upgrade to node 0.8 or above. See this post for details.</p>
-<p>您还可以尝试以下解决方法：npm config set ca “”或npm config set strict-ssl false</p>
+<p>如果您正在运行Node 0.6，则会发生此问题。请升级到0.8或以上的节点。有关详细信息，请参阅此帖</p>
+<p>您还可以尝试以下解决方法:npm config set ca “”或npm config set strict-ssl false</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm ERR! Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN
 npm no longer supports its self-signed certificates
 </pre></div>
 </div>
-<p>Either:</p>
+<p>或:</p>
 <p>upgrade your version of npm npm install npm -g –ca=””
 tell your current version of npm to use known registrars npm config set ca=””
 If this does not fix the problem, then you may have an SSL-intercepting proxy. (For example, <a class="reference external" href="https://github.com/npm/npm/issues/7439#issuecomment-76024878">https://github.com/npm/npm/issues/7439#issuecomment-76024878</a>)</p>
 </div>
 <div class="section" id="ssl-intercepting-proxy">
-<h2>SSL-intercepting proxy<a class="headerlink" href="#ssl-intercepting-proxy" title="永久链接至标题">¶</a></h2>
+<h2>SSL拦截代理<a class="headerlink" href="#ssl-intercepting-proxy" title="永久链接至标题">¶</a></h2>
 <p>Unsolved. See <a class="reference external" href="https://github.com/npm/npm/issues/9282">https://github.com/npm/npm/issues/9282</a></p>
 </div>
 <div class="section" id="not-found-server-error">
-<h2>Not found / Server error<a class="headerlink" href="#not-found-server-error" title="永久链接至标题">¶</a></h2>
+<h2>找不到/服务器错误<a class="headerlink" href="#not-found-server-error" title="永久链接至标题">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>npm http 404 https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.7.0.tgz
 npm ERR! fetch failed https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.7.0.tgz
 npm ERR! Error: 404 Not Found
@@ -291,7 +292,7 @@ npm http 500 https://registry.npmjs.org/phonegap
 If the error persists, perhaps the published package is corrupt. Contact the package owner and have them publish a new version of the package.</p>
 </div>
 <div class="section" id="invalid-json">
-<h2>Invalid JSON<a class="headerlink" href="#invalid-json" title="永久链接至标题">¶</a></h2>
+<h2>无效的JSON<a class="headerlink" href="#invalid-json" title="永久链接至标题">¶</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Error: Invalid JSON
 npm ERR! SyntaxError: Unexpected token &lt;
 npm ERR! registry error parsing json
@@ -302,38 +303,38 @@ This can be caused by corporate proxies that give HTML responses to package.json
 Check that it’s not a problem with a package you’re trying to install (e.g. invalid package.json).</p>
 </div>
 <div class="section" id="many-enoent-enotempty-errors-in-output">
-<h2>Many ENOENT / ENOTEMPTY errors in output<a class="headerlink" href="#many-enoent-enotempty-errors-in-output" title="永久链接至标题">¶</a></h2>
+<h2>输出中存在许多ENOENT / ENOTEMPTY错误<a class="headerlink" href="#many-enoent-enotempty-errors-in-output" title="永久链接至标题">¶</a></h2>
 <p>npm is written to use resources efficiently on install, and part of this is that it tries to do as many things concurrently as is practical. Sometimes this results in race conditions and other synchronization issues. As of npm 2.0.0, a very large number of these issues were addressed. If you see ENOENT lstat, ENOENT chmod, ENOTEMPTY unlink, or something similar in your log output, try updating npm to the latest version. If the problem persists, look at npm/npm#6043 and see if somebody has already discussed your issue.</p>
 </div>
 <div class="section" id="cb-never-called-when-using-shrinkwrapped-dependencies">
-<h2>cb() never called! when using shrinkwrapped dependencies<a class="headerlink" href="#cb-never-called-when-using-shrinkwrapped-dependencies" title="永久链接至标题">¶</a></h2>
+<h2>cb()从未调用过！使用shrinkwrapped依赖项时<a class="headerlink" href="#cb-never-called-when-using-shrinkwrapped-dependencies" title="永久链接至标题">¶</a></h2>
 <p>Take a look at issue #5920. We’re working on fixing this one, but it’s a fairly subtle race condition and it’s taking us a little time. You might try moving your npm-shrinkwrap.json file out of the way until we have this fixed. This has been fixed in versions of npm newer than <a class="reference external" href="mailto:npm&#37;&#52;&#48;2&#46;1&#46;5">npm<span>&#64;</span>2<span>&#46;</span>1<span>&#46;</span>5</a>, so update to <a class="reference external" href="mailto:npm&#37;&#52;&#48;latest">npm<span>&#64;</span>latest</a>.</p>
 </div>
 <div class="section" id="npm-login-errors">
-<h2>npm login errors<a class="headerlink" href="#npm-login-errors" title="永久链接至标题">¶</a></h2>
+<h2>npm登录错误<a class="headerlink" href="#npm-login-errors" title="永久链接至标题">¶</a></h2>
 <p>Sometimes npm login fails for no obvious reason. The first thing to do is to log in at <a class="reference external" href="https://www.npmjs.com/login">https://www.npmjs.com/login</a> and check that your e-mail address on npmjs.com matches the email address you are giving to npm login.</p>
-<p>If that’s not the problem, or if you are seeing the message “may not mix password_sha and pbkdf2”, then</p>
+<p>如果那不是问题，或者如果您看到消息“可能不会混合password_sha和pbkdf2 ”，那么</p>
 <ol class="arabic simple">
 <li><p>Log in at <a class="reference external" href="https://npmjs.com/">https://npmjs.com/</a></p></li>
-<li><p>Change password at <a class="reference external" href="https://npmjs.com/password">https://npmjs.com/password</a> – you can even “change” it to the same password</p></li>
-<li><p>Clear login-related fields from ~/.npmrc – e.g., by running sed -ie ‘/registry.npmjs.org/d’ ~/.npmrc</p></li>
-<li><p>npm登录</p></li>
+<li><p>通过https://npmjs.com/password更改密码 - 您甚至可以将其“更改”为相同的密码</p></li>
+<li><p>清除〜/ .npmrc中与登录相关的字段 - 例如，通过运行sed -ie’/ registry.npmjs.org/d’〜/ .npmrc</p></li>
+<li><p>npm login</p></li>
 </ol>
-<p>and it generally seems to work.</p>
-<p>See <a class="reference external" href="https://github.com/npm/npm/issues/6641#issuecomment-72984009">https://github.com/npm/npm/issues/6641#issuecomment-72984009</a> for the history of this issue.</p>
+<p>它通常似乎工作。</p>
+<p>有关此问题的历史记录，请参阅https://github.com/npm/npm/issues/6641#issuecomment-72984009。</p>
 </div>
 <div class="section" id="npm-hangs-on-windows-at-addremotetarball">
-<h2>npm hangs on Windows at addRemoteTarball<a class="headerlink" href="#npm-hangs-on-windows-at-addremotetarball" title="永久链接至标题">¶</a></h2>
-<p>Check if you have two temp directories set in your .npmrc:</p>
+<h2>npm在Windows上的addRemoteTarball上挂起<a class="headerlink" href="#npm-hangs-on-windows-at-addremotetarball" title="永久链接至标题">¶</a></h2>
+<p>检查.npmrc中是否设置了两个临时目录:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>&gt; npm config ls -l
 </pre></div>
 </div>
-<p>Look for lines defining the tmp config variable. If you find more than one, remove all but one of them.</p>
-<p>See <a class="reference external" href="https://github.com/npm/npm/issues/7590">https://github.com/npm/npm/issues/7590</a> for more about this unusual problem.</p>
+<p>查找定义tmp配置变量的行。如果您找到多个，请删除其中一个。</p>
+<p>有关此异常问题的更多信息，请参阅https://github.com/npm/npm/issues/7590。</p>
 </div>
 <div class="section" id="npm-not-running-the-latest-version-on-a-windows-machine">
-<h2>npm not running the latest version on a Windows machine<a class="headerlink" href="#npm-not-running-the-latest-version-on-a-windows-machine" title="永久链接至标题">¶</a></h2>
-<p>See the section about Windows here.</p>
+<h2>npm没有在Windows机器上运行最新版本<a class="headerlink" href="#npm-not-running-the-latest-version-on-a-windows-machine" title="永久链接至标题">¶</a></h2>
+<p>请在此处查看有关Windows的部分。</p>
 </div>
 </div>
 
@@ -353,7 +354,7 @@ Check that it’s not a problem with a package you’re trying to install (e.g. 
           <a href="try-the-latest-stable-version-of-node.html" title="尝试最新的稳定版节点"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="generating-and-locating-npm-debug-log-files.html" title="生成和定位npm-debug.log文件"
+          <a href="generating-and-locating-npm-debug-log-files.html" title="Generating and locating npm debug.log files"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -363,7 +364,7 @@ Check that it’s not a problem with a package you’re trying to install (e.g. 
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

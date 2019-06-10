@@ -1,4 +1,4 @@
-npm-view
+npm view
 ============================================================================================
 
 SYNOPSIS
@@ -14,7 +14,17 @@ SYNOPSIS
 
       npm view [<@scope>/]<name>[@<version>] [<field>[.<subfield>]...]
 
-   aliases: info, show, v
+.. option:: info
+
+   view alias
+
+.. option:: show
+
+   view alias
+
+.. option:: v
+
+   view alias
 
 DESCRIPTION
 -------------------

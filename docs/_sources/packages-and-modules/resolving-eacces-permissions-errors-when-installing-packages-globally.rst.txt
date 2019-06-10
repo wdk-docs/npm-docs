@@ -15,7 +15,7 @@ This is the best way to avoid permissions issues. To reinstall npm with a node v
 Manually change npm’s default directory
 -------------------------------------------------------
 
-Note: This section does not apply to Microsoft Windows.
+.. note:: This section does not apply to Microsoft Windows.
 To minimize the chance of permissions errors, you can configure npm to use a different directory. In this example, you will create and use hidden directory in your home directory.
 
 Back up your computer.

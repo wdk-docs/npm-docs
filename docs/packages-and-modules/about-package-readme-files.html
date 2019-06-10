@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="更新和管理已发布的包" href="creating-and-publishing-unscoped-public-packages.html" />
-    <link rel="prev" title="关于私人包裹" href="about-private-packages.html" />
+    <link rel="prev" title="npm包范围，访问级别和可见性" href="package-scope-access-level-and-visibility.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/packages-and-modules/about-package-readme-files.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -88,7 +89,7 @@
           <a href="creating-and-publishing-unscoped-public-packages.html" title="更新和管理已发布的包"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="about-private-packages.html" title="关于私人包裹"
+          <a href="package-scope-access-level-and-visibility.html" title="npm包范围，访问级别和可见性"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -101,15 +102,15 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">关于包README文件</a><ul>
-<li><a class="reference internal" href="#creating-and-adding-a-readme-md-file-to-a-package">Creating and adding a README.md file to a package</a></li>
-<li><a class="reference internal" href="#updating-an-existing-package-readme-file">Updating an existing package README file</a></li>
+<li><a class="reference internal" href="#creating-and-adding-a-readme-md-file-to-a-package">创建README.md文件并将其添加到包中</a></li>
+<li><a class="reference internal" href="#updating-an-existing-package-readme-file">更新现有包README文件</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>上一个主题</h4>
-  <p class="topless"><a href="about-private-packages.html"
-                        title="上一章">关于私人包裹</a></p>
+  <p class="topless"><a href="package-scope-access-level-and-visibility.html"
+                        title="上一章">npm包范围，访问级别和可见性</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="creating-and-publishing-unscoped-public-packages.html"
                         title="下一章">更新和管理已发布的包</a></p>
@@ -140,24 +141,33 @@
             
   <div class="section" id="about-package-readme-files">
 <h1>关于包README文件<a class="headerlink" href="#about-package-readme-files" title="永久链接至标题">¶</a></h1>
-<p>To help others find your packages on npm and have a good experience using your code in their projects, we recommend including a README file in your package directory. Your README file may include directions for installing, configuring, and using the code in your package, as well as any other information a user may find helpful. The README file will be shown on the package page.</p>
-<p>An npm package README file must be in the root-level directory of the package.</p>
+<p>为了帮助其他人在npm上找到你的软件包，并且在项目中使用你的代码有很好的经验，我们建议在你的软件包目录中包含一个README文件。您的README文件可能包含安装，配置和使用软件包中代码的说明，以及用户可能会发现有用的任何其他信息。 README文件将显示在包页面上。</p>
+<p>npm包README文件必须位于包的根级目录中。</p>
 <div class="section" id="creating-and-adding-a-readme-md-file-to-a-package">
-<h2>Creating and adding a README.md file to a package<a class="headerlink" href="#creating-and-adding-a-readme-md-file-to-a-package" title="永久链接至标题">¶</a></h2>
-<p>In a text editor, in your package root directory, create a file called README.md.
-In the README.md file, add useful information about your package.
-Save the README.md file.
-Note: The file extension .md indicates a Markdown file. For more information about Markdown, see the GitHub Guide “Mastering Markdown”.</p>
+<h2>创建README.md文件并将其添加到包中<a class="headerlink" href="#creating-and-adding-a-readme-md-file-to-a-package" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p>在文本编辑器的包根目录中，创建一个名为README.md的文件。</p></li>
+<li><p>在README.md文件中，添加有关包的有用信息。</p></li>
+<li><p>Save the README.md file.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>文件扩展名 .md 表示Markdown文件。有关Markdown的更多信息，请参阅GitHub指南 “Mastering Markdown” 。</p>
+</div>
 </div>
 <div class="section" id="updating-an-existing-package-readme-file">
-<h2>Updating an existing package README file<a class="headerlink" href="#updating-an-existing-package-readme-file" title="永久链接至标题">¶</a></h2>
-<p>The README file will only be updated on the package page when you publish a new version of your package. To update your README file:</p>
-<p>In a text editor, update the contents of the README.md file.
-Save the README.md file.
-On the command line, in the package root directory, run the following commands:</p>
-<blockquote>
-<div><p>npm版本补丁npm发布</p>
-</div></blockquote>
+<h2>更新现有包README文件<a class="headerlink" href="#updating-an-existing-package-readme-file" title="永久链接至标题">¶</a></h2>
+<p>只有在发布新版本的软件包时才会在软件包页面上更新README文件。要更新README文件:</p>
+<ol class="arabic">
+<li><p>在文本编辑器中，更新README.md文件的内容。</p></li>
+<li><p>Save the README.md file.</p></li>
+<li><p>在命令行上的程序包根目录中，运行以下命令:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">version</span> <span class="n">patch</span>
+<span class="n">npm</span> <span class="n">publish</span>
+</pre></div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 
@@ -177,7 +187,7 @@ On the command line, in the package root directory, run the following commands:<
           <a href="creating-and-publishing-unscoped-public-packages.html" title="更新和管理已发布的包"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="about-private-packages.html" title="关于私人包裹"
+          <a href="package-scope-access-level-and-visibility.html" title="npm包范围，访问级别和可见性"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -187,7 +197,7 @@ On the command line, in the package root directory, run the following commands:<
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

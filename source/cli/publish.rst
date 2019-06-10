@@ -1,4 +1,4 @@
-npm-publish
+npm publish
 ============================================================================================
 
 SYNOPSIS
@@ -14,8 +14,8 @@ SYNOPSIS
 
       npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>] [--otp otpcode] [--dry-run]
 
-Publishes '.' if no argument supplied
-Sets tag 'latest' if no --tag specified
+- Publishes '.' if no argument supplied
+- Sets tag 'latest' if no --tag specified
 
 DESCRIPTION
 -------------------

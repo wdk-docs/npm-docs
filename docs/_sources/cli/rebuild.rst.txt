@@ -1,4 +1,4 @@
-npm-rebuild
+npm rebuild
 ============================================================================================
 
 SYNOPSIS
@@ -14,7 +14,9 @@ SYNOPSIS
 
       npm rebuild [[<@scope>/<name>]...]
 
-   alias: npm rb
+.. option:: rb
+
+   rebuild alias
 
 DESCRIPTION
 -------------------

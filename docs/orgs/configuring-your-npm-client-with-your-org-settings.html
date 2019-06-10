@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>Configuring your npm client with your Org settings &#8212; npm-docs 6.9.1 文档</title>
+    <title>使用组织设置配置npm客户端 &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Creating and publishing an Org scoped package" href="creating-and-publishing-an-org-scoped-package.html" />
-    <link rel="prev" title="About Org scopes and packages" href="about-org-scopes-and-packages.html" />
+    <link rel="next" title="创建和发布组织范围包" href="creating-and-publishing-an-org-scoped-package.html" />
+    <link rel="prev" title="关于Org范围和包" href="about-org-scopes-and-packages.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/orgs/configuring-your-npm-client-with-your-org-settings.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,25 +86,25 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="creating-and-publishing-an-org-scoped-package.html" title="Creating and publishing an Org scoped package"
+          <a href="creating-and-publishing-an-org-scoped-package.html" title="创建和发布组织范围包"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="about-org-scopes-and-packages.html" title="About Org scopes and packages"
+          <a href="about-org-scopes-and-packages.html" title="关于Org范围和包"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Orgs</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">组织</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>上一个主题</h4>
   <p class="topless"><a href="about-org-scopes-and-packages.html"
-                        title="上一章">About Org scopes and packages</a></p>
+                        title="上一章">关于Org范围和包</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="creating-and-publishing-an-org-scoped-package.html"
-                        title="下一章">Creating and publishing an Org scoped package</a></p>
+                        title="下一章">创建和发布组织范围包</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -130,17 +131,17 @@
           <div class="body" role="main">
             
   <div class="section" id="configuring-your-npm-client-with-your-org-settings">
-<h1>Configuring your npm client with your Org settings<a class="headerlink" href="#configuring-your-npm-client-with-your-org-settings" title="永久链接至标题">¶</a></h1>
-<p>As an Org member, you can configure your npm client to:</p>
+<h1>使用组织设置配置npm客户端<a class="headerlink" href="#configuring-your-npm-client-with-your-org-settings" title="永久链接至标题">¶</a></h1>
+<p>作为组织成员，您可以将您的npm客户端配置为:</p>
 <p>make a single package or all new packages you create locally use your Org’s scope
 make a single package or all new packages you create locally have default public visibility
 Before configuring your npm client, you must install npm.</p>
 <p>Configuring your npm client to use your Org’s scope§
 If you will be publishing packages with your Org’s scope often, you can add your Org’s scope to your global .npmrc configuration file.</p>
 <p>Setting your Org scope for all new packages§
-Note: Setting the Org scope using the steps below will only set the scope for new packages; for existing packages, you will need to update the name field in package.json.</p>
+.. note:: Setting the Org scope using the steps below will only set the scope for new packages; for existing packages, you will need to update the name field in package.json.</p>
 <dl class="simple">
-<dt>On the command line, type the following command:</dt><dd><p>npm config set scope &lt;org-name&gt; –global</p>
+<dt>在命令行上，键入以下命令:</dt><dd><p>npm config set scope &lt;org-name&gt; –global</p>
 </dd>
 </dl>
 <p>Press Enter.
@@ -160,17 +161,17 @@ You can set a single package to pass –access public to every npm publish comma
 <p>On the command line, navigate to the package directory. cd /path/to/package
 Type the following command:</p>
 <blockquote>
-<div><p>npm config set access public</p>
+<div><p>npm config设置访问公共</p>
 </div></blockquote>
 <p>Press Enter.
 Setting package visibility to public for all packages§
 You can set all packages to pass –access public to every npm publish command that you issue for that package.</p>
 <p>Warning: Setting packages access to public in your global .npmrc will affect all packages you create, including packages in your personal account scope, as well as packages scoped to your Org.</p>
 <dl class="simple">
-<dt>On the command line, type the following command:</dt><dd><p>npm config set access public –global</p>
+<dt>在命令行上，键入以下命令:</dt><dd><p>npm config set access public –global</p>
 </dd>
 </dl>
-<p>Press Enter.</p>
+<p>按Enter键。</p>
 </div>
 
 
@@ -186,20 +187,20 @@ You can set all packages to pass –access public to every npm publish command t
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="creating-and-publishing-an-org-scoped-package.html" title="Creating and publishing an Org scoped package"
+          <a href="creating-and-publishing-an-org-scoped-package.html" title="创建和发布组织范围包"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="about-org-scopes-and-packages.html" title="About Org scopes and packages"
+          <a href="about-org-scopes-and-packages.html" title="关于Org范围和包"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Orgs</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="index.html" >组织</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

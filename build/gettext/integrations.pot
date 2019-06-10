@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-04 22:31+0800\n"
+"POT-Creation-Date: 2019-06-10 15:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,11 @@ msgid "About authentication tokens"
 msgstr ""
 
 #: ../../source/integrations/about-authentication-tokens.rst:4
-msgid "Note: You must be using npm version 5.5.1 or greater to use authentication tokens. An authentication token is a hexadecimal string that gives you the right to publish and access your modules. Whenever you log in to npm, we generate an authentication token for you."
+msgid "You must be using npm version 5.5.1 or greater to use authentication tokens."
+msgstr ""
+
+#: ../../source/integrations/about-authentication-tokens.rst:5
+msgid "An authentication token is a hexadecimal string that gives you the right to publish and access your modules. Whenever you log in to npm, we generate an authentication token for you."
 msgstr ""
 
 #: ../../source/integrations/about-authentication-tokens.rst:7
@@ -61,7 +65,7 @@ msgid "npm ERR! CIDR whitelist contains invalid CIDR entry: X.X.X.X./YY,Z.Z.. . 
 msgstr ""
 
 #: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:35
-msgid "Viewing tokens§ Note: You can only view a full token immediately after creation. Viewing tokens on the website§ To view all tokens associated with your account, in the upper right corner of the page, click your profile picture, then click Tokens."
+msgid "Viewing tokens§ .. note:: You can only view a full token immediately after creation. Viewing tokens on the website§ To view all tokens associated with your account, in the upper right corner of the page, click your profile picture, then click Tokens."
 msgstr ""
 
 #: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:40
@@ -142,7 +146,7 @@ msgid "docker build --build-arg NPM_TOKEN=${NPM_TOKEN} . This will build the Doc
 msgstr ""
 
 #: ../../source/integrations/docker-and-private-modules.rst:61
-msgid "Note: Even if you delete the .npmrc file, it will be kept in the commit history. To clean your secrets entirely, make sure to squash them."
+msgid "Even if you delete the .npmrc file, it will be kept in the commit history. To clean your secrets entirely, make sure to squash them."
 msgstr ""
 
 #: ../../source/integrations/index.rst:2
@@ -166,11 +170,15 @@ msgid "To keep your account and packages secure, we strongly recommend revoking 
 msgstr ""
 
 #: ../../source/integrations/revoking-authentication-tokens.rst:6
-msgid "Note: While authentication tokens are not derived from your password, changing your password will invalidate all of your tokens. You can also invalidate a single token by logging out on a machine that is logged in with that token. We recommend revoking rather than invalidating tokens. To see a list of your tokens, on the command line, run: npm token list In the tokens table, find and copy the ID of the token you want to delete. On the command line, run the following command, replacing 123456 with the ID of the token you want to delete: npm token delete 123456 npm will report Removed 1 token"
+msgid "While authentication tokens are not derived from your password, changing your password will invalidate all of your tokens. You can also invalidate a single token by logging out on a machine that is logged in with that token. We recommend revoking rather than invalidating tokens."
+msgstr ""
+
+#: ../../source/integrations/revoking-authentication-tokens.rst:7
+msgid "To see a list of your tokens, on the command line, run: npm token list In the tokens table, find and copy the ID of the token you want to delete. On the command line, run the following command, replacing 123456 with the ID of the token you want to delete: npm token delete 123456 npm will report Removed 1 token"
 msgstr ""
 
 #: ../../source/integrations/revoking-authentication-tokens.rst:14
-msgid "To confirm that the token has been removed, run: npm token list Note: You must use the token ID to delete a token, not the truncated version of the token. In some cases, there may be a delay of up to an hour before a token is successfully revoked."
+msgid "To confirm that the token has been removed, run: npm token list .. note:: You must use the token ID to delete a token, not the truncated version of the token. In some cases, there may be a delay of up to an hour before a token is successfully revoked."
 msgstr ""
 
 #: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:2
@@ -198,7 +206,7 @@ msgid "Continuous deployment§ Since continuous deployment environments usually 
 msgstr ""
 
 #: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:22
-msgid "npm token create Note: For increased security, we recommend generated a CIDR-whitelisted token that can only be used from a certain IP address range. You can use a CIDR whitelist with a read and publish token or a read-only token: npm token create --cidr=[list] npm token create --read-only --cidr=[list] Example: npm token create --cidr=192.0.2.0/24 For more information, see \"Creating and viewing authentication tokens\". Set the token as an environment variable on the CI/CD server§ Set your token as an environment variable on the CI/CD server and your development machine. In OSX or Linux, add this line to your ~/.profile, replacing the example token with your own:"
+msgid "npm token create .. note:: For increased security, we recommend generated a CIDR-whitelisted token that can only be used from a certain IP address range. You can use a CIDR whitelist with a read and publish token or a read-only token: npm token create --cidr=[list] npm token create --read-only --cidr=[list] Example: npm token create --cidr=192.0.2.0/24 For more information, see \"Creating and viewing authentication tokens\". Set the token as an environment variable on the CI/CD server§ Set your token as an environment variable on the CI/CD server and your development machine. In OSX or Linux, add this line to your ~/.profile, replacing the example token with your own:"
 msgstr ""
 
 #: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:27

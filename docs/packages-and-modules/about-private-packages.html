@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>关于私人包裹 &#8212; npm-docs 6.9.1 文档</title>
+    <title>关于私人包 &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,10 +13,11 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="关于包README文件" href="about-package-readme-files.html" />
+    <link rel="next" title="npm包范围，访问级别和可见性" href="package-scope-access-level-and-visibility.html" />
     <link rel="prev" title="关于公共包" href="about-public-packages.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/packages-and-modules/about-private-packages.html" />
 
@@ -85,7 +86,7 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="about-package-readme-files.html" title="关于包README文件"
+          <a href="package-scope-access-level-and-visibility.html" title="npm包范围，访问级别和可见性"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
           <a href="about-public-packages.html" title="关于公共包"
@@ -100,9 +101,9 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">关于私人包裹</a><ul>
-<li><a class="reference internal" href="#next-steps">Next steps</a></li>
-<li><a class="reference internal" href="#resources">Resources</a></li>
+<li><a class="reference internal" href="#">关于私人包</a><ul>
+<li><a class="reference internal" href="#next-steps">下一步</a></li>
+<li><a class="reference internal" href="#resources">资源</a></li>
 </ul>
 </li>
 </ul>
@@ -111,8 +112,8 @@
   <p class="topless"><a href="about-public-packages.html"
                         title="上一章">关于公共包</a></p>
   <h4>下一个主题</h4>
-  <p class="topless"><a href="about-package-readme-files.html"
-                        title="下一章">关于包README文件</a></p>
+  <p class="topless"><a href="package-scope-access-level-and-visibility.html"
+                        title="下一章">npm包范围，访问级别和可见性</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -139,21 +140,27 @@
           <div class="body" role="main">
             
   <div class="section" id="about-private-packages">
-<h1>关于私人包裹<a class="headerlink" href="#about-private-packages" title="永久链接至标题">¶</a></h1>
-<p>To use private packages, you must
-be using npm version 2.7.0 or greater. To upgrade, on the command line, run npm install <a class="reference external" href="mailto:npm&#37;&#52;&#48;latest">npm<span>&#64;</span>latest</a> -g
-have a paid user or Org account
-With npm private packages, you can use the npm registry to host code that is only visible to you and chosen collaborators, allowing you to manage and use private code alongside public code in your projects.</p>
-<p>Private packages always have a scope, and scoped packages are private by default.</p>
-<p>User-scoped private packages can only be accessed by you and collaborators to whom you have granted read or read/write access. For more information, see “Adding collaborators to private packages owned by a user account”.
-Org-scoped private packages can only be accessed by teams that have been granted read or read/write access. For more information, see “Managing team access to Org packages”.</p>
+<h1>关于私人包<a class="headerlink" href="#about-private-packages" title="永久链接至标题">¶</a></h1>
+<p>To use private packages, you must:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">be</span> <span class="n">using</span> <span class="n">npm</span> <span class="n">version</span> <span class="mf">2.7</span><span class="o">.</span><span class="mi">0</span> <span class="ow">or</span> <span class="n">greater</span><span class="o">.</span> <span class="n">To</span> <span class="n">upgrade</span><span class="p">,</span> <span class="n">on</span> <span class="n">the</span> <span class="n">command</span> <span class="n">line</span><span class="p">,</span> <span class="n">run</span> <span class="n">npm</span> <span class="n">install</span> <span class="n">npm</span><span class="nd">@latest</span> <span class="o">-</span><span class="n">g</span>
+<span class="o">-</span> <span class="n">have</span> <span class="n">a</span> <span class="n">paid</span> <span class="n">user</span> <span class="ow">or</span> <span class="n">Org</span> <span class="n">account</span>
+</pre></div>
+</div>
+<p>With npm private packages, you can use the npm registry to host code that is only visible to you and chosen collaborators, allowing you to manage and use private code alongside public code in your projects.</p>
+<p>私有包始终具有范围，默认情况下范围包是私有的。</p>
+<ul class="simple">
+<li><p><strong>User-scoped private packages</strong> can only be accessed by you and collaborators to whom you have granted read or read/write access. For more information, see <a class="reference internal" href="adding-collaborators-to-private-packages-owned-by-a-user-account.html"><span class="doc">将协作者添加到用户帐户拥有的私有包</span></a>.</p></li>
+<li><p><strong>Org-scoped private packages</strong> can only be accessed by teams that have been granted read or read/write access. For more information, see <span class="xref std std-doc">../org/managing-team-access-to-org-packages</span>.</p></li>
+</ul>
 <div class="section" id="next-steps">
-<h2>Next steps<a class="headerlink" href="#next-steps" title="永久链接至标题">¶</a></h2>
-<p>“Creating and publishing private packages”
-“Using npm packages in your projects”</p>
+<h2>下一步<a class="headerlink" href="#next-steps" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="creating-and-publishing-private-packages.html"><span class="doc">创建和发布私有包</span></a></p></li>
+<li><p><a class="reference internal" href="using-npm-packages-in-your-projects.html"><span class="doc">在项目中使用npm包</span></a></p></li>
+</ul>
 </div>
 <div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
+<h2>资源<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
 </div>
 </div>
 
@@ -170,7 +177,7 @@ Org-scoped private packages can only be accessed by teams that have been granted
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="about-package-readme-files.html" title="关于包README文件"
+          <a href="package-scope-access-level-and-visibility.html" title="npm包范围，访问级别和可见性"
              >下一页</a> |</li>
         <li class="right" >
           <a href="about-public-packages.html" title="关于公共包"
@@ -183,7 +190,7 @@ Org-scoped private packages can only be accessed by teams that have been granted
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

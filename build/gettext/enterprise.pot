@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-04 22:31+0800\n"
+"POT-Creation-Date: 2019-06-10 15:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,11 @@ msgid "Configuring an authentication provider"
 msgstr ""
 
 #: ../../source/enterprise/configuring-an-authentication-provider.rst:4
-msgid "Note: To avoid being locked out of your instance, you must connect your npm Enterprise admin account to your SSO account immediately after configuring an authentication provider. If you are locked out of your instance, contact npm Enterprise Support at enterprise@npmjs.com. As an Enterprise admin, you can configure your instance to use single sign-on (SSO) authentication through any external authentication provider that implements OpendID Connect Core and OpendID Connect Discovery, such as Auth0, Azure Active Directory, Okta, and Google."
+msgid "To avoid being locked out of your instance, you must connect your npm Enterprise admin account to your SSO account immediately after configuring an authentication provider. If you are locked out of your instance, contact npm Enterprise Support at enterprise@npmjs.com."
+msgstr ""
+
+#: ../../source/enterprise/configuring-an-authentication-provider.rst:5
+msgid "As an Enterprise admin, you can configure your instance to use single sign-on (SSO) authentication through any external authentication provider that implements OpendID Connect Core and OpendID Connect Discovery, such as Auth0, Azure Active Directory, Okta, and Google."
 msgstr ""
 
 #: ../../source/enterprise/configuring-an-authentication-provider.rst:7
@@ -53,7 +57,11 @@ msgid "Demoting an admin to a non-admin user"
 msgstr ""
 
 #: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:4
-msgid "Note: Demoting an admin does not deactivate them. To deactivate a user, follow the steps in \"Viewing, deactivating, and reactivating users\". If an admin on your npm Enterprise instance no longer needs to take admin actions on the instance (e.g. configuring SSO, activating and deactivating users, or inviting users to the instance), as an Enterprise instance admin, you can demote the admin to a non-admin user."
+msgid "Demoting an admin does not deactivate them. To deactivate a user, follow the steps in \"Viewing, deactivating, and reactivating users\"."
+msgstr ""
+
+#: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:5
+msgid "If an admin on your npm Enterprise instance no longer needs to take admin actions on the instance (e.g. configuring SSO, activating and deactivating users, or inviting users to the instance), as an Enterprise instance admin, you can demote the admin to a non-admin user."
 msgstr ""
 
 #: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:7
@@ -145,15 +153,20 @@ msgid "Migrating from an existing npm Enterprise instance"
 msgstr ""
 
 #: ../../source/enterprise/migrating-from-an-existing-enterprise-instance.rst:4
-msgid "Note: Using pneumatic-tubes for migration requires Node 8+ npm 5+ (to install or upgrade, run npm install npm@latest -g) To migrate from a legacy npm Enterprise installation, use npm’s pneumatic-tubes and follow the steps under “Importing from Legacy npm Enterprise”."
+#: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:4
+msgid "Using pneumatic-tubes for migration requires"
+msgstr ""
+
+#: ../../source/enterprise/migrating-from-an-existing-enterprise-instance.rst:5
+msgid "Node 8+ npm 5+ (to install or upgrade, run npm install npm@latest -g) To migrate from a legacy npm Enterprise installation, use npm’s pneumatic-tubes and follow the steps under “Importing from Legacy npm Enterprise”."
 msgstr ""
 
 #: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:2
 msgid "Migrating from an Org on the public registry"
 msgstr ""
 
-#: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:4
-msgid "Note: Using pneumatic-tubes for migration requires Node 8+ npm 5+ (to install or upgrade, run npm install npm@latest -g) To migrate from an Org on the public registry, use npm’s pneumatic-tubes and follow the steps under “Importing from npm Orgs”."
+#: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:5
+msgid "Node 8+ npm 5+ (to install or upgrade, run npm install npm@latest -g) To migrate from an Org on the public registry, use npm’s pneumatic-tubes and follow the steps under “Importing from npm Orgs”."
 msgstr ""
 
 #: ../../source/enterprise/npm-enterprise-roles-and-permissions.rst:2
@@ -173,7 +186,7 @@ msgid "As an npm Enterprise admin, you can contact npm Enterprise Support at ent
 msgstr ""
 
 #: ../../source/enterprise/permanently-deleting-a-user.rst:6
-msgid "Note: When permanently deleting a user, you will work with npm support to make sure any Orgs and packages they own are transferred to other users on your Enterprise instance."
+msgid "When permanently deleting a user, you will work with npm support to make sure any Orgs and packages they own are transferred to other users on your Enterprise instance."
 msgstr ""
 
 #: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:2
@@ -181,7 +194,11 @@ msgid "Promoting a non-admin user to admin"
 msgstr ""
 
 #: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:4
-msgid "Note: To keep your Enterprise instance secure, we recommend limiting the number of Enterprise admins on your instance. If you need multiple users in your Enterprise instance to be able to take admin actions (e.g. configure SSO, activate and deactivate users, or invite users to the instance), you can promote a non-admin user to admin."
+msgid "To keep your Enterprise instance secure, we recommend limiting the number of Enterprise admins on your instance."
+msgstr ""
+
+#: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:5
+msgid "If you need multiple users in your Enterprise instance to be able to take admin actions (e.g. configure SSO, activate and deactivate users, or invite users to the instance), you can promote a non-admin user to admin."
 msgstr ""
 
 #: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:7
@@ -229,7 +246,7 @@ msgid "Deactivating a user will invalidate their login tokens, but will not dele
 msgstr ""
 
 #: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:17
-msgid "Log in to your Enterprise instance. In the upper right corner of the page, click your profile picture, then click Site Administration. drop-down with site administration choice Locate the user name of the user you want to deactivate, then next to their name, click “deactivate”. deactivate user button Reactivating inactive users§ Note: When you reactivate a user, they will need to re-enable two-factor authentication on their npm Enterprise instance account. As an npm Enterprise admin, you can reactivate an inactive user of your instance to allow them to log in again."
+msgid "Log in to your Enterprise instance. In the upper right corner of the page, click your profile picture, then click Site Administration. drop-down with site administration choice Locate the user name of the user you want to deactivate, then next to their name, click “deactivate”. deactivate user button Reactivating inactive users§ .. note:: When you reactivate a user, they will need to re-enable two-factor authentication on their npm Enterprise instance account. As an npm Enterprise admin, you can reactivate an inactive user of your instance to allow them to log in again."
 msgstr ""
 
 #: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:24

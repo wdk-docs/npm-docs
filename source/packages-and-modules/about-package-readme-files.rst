@@ -8,17 +8,19 @@ An npm package README file must be in the root-level directory of the package.
 Creating and adding a README.md file to a package
 --------------------------------------------------------------------------
 
-In a text editor, in your package root directory, create a file called README.md.
-In the README.md file, add useful information about your package.
-Save the README.md file.
-Note: The file extension .md indicates a Markdown file. For more information about Markdown, see the GitHub Guide "Mastering Markdown".
+1. In a text editor, in your package root directory, create a file called README.md.
+2. In the README.md file, add useful information about your package.
+3. Save the README.md file.
+
+.. note:: The file extension .md indicates a Markdown file. For more information about Markdown, see the GitHub Guide "Mastering Markdown".
 
 Updating an existing package README file
 --------------------------------------------------------------------------
 The README file will only be updated on the package page when you publish a new version of your package. To update your README file:
 
-In a text editor, update the contents of the README.md file.
-Save the README.md file.
-On the command line, in the package root directory, run the following commands:
-  npm version patch
-  npm publish
+1. In a text editor, update the contents of the README.md file.
+2. Save the README.md file.
+3. On the command line, in the package root directory, run the following commands::
+
+    npm version patch
+    npm publish

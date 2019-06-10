@@ -1,4 +1,4 @@
-npm-uninstall
+npm uninstall
 ============================================================================================
 
 SYNOPSIS
@@ -14,7 +14,25 @@ SYNOPSIS
 
       npm uninstall [<@scope>/]<pkg>[@<version>]... [-S|--save|-D|--save-dev|-O|--save-optional|--no-save]
 
-aliases: remove, rm, r, un, unlink
+.. option:: remove
+
+   uninstall alias
+
+.. option:: rm
+
+   uninstall alias
+
+.. option:: r
+
+   uninstall alias
+
+.. option:: un
+
+   uninstall alias
+
+.. option:: unlink
+
+   uninstall alias
 
 DESCRIPTION
 -------------------

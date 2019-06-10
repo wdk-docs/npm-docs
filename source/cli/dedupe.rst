@@ -1,4 +1,4 @@
-npm-dedupe
+npm dedupe
 ============================================================================================
 
 SYNOPSIS
@@ -15,7 +15,13 @@ SYNOPSIS
       npm dedupe
       npm ddp
 
-   aliases: find-dupes, ddp
+.. option:: find-dupes
+
+   dedupe alias
+
+.. option:: ddp
+
+   dedupe alias
 
 DESCRIPTION
 -------------------

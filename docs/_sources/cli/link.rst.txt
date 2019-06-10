@@ -1,4 +1,4 @@
-npm-link
+npm link
 ============================================================================================
 
 SYNOPSIS
@@ -15,7 +15,9 @@ SYNOPSIS
       npm link (in package dir)
       npm link [<@scope>/]<pkg>[@<version>]
 
-   alias: npm ln
+.. option:: ln
+
+   link alias
 
 DESCRIPTION
 -------------------

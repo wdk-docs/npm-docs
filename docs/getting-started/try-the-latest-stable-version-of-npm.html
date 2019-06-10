@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,10 +102,10 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">试试最新稳定版的npm</a><ul>
-<li><a class="reference internal" href="#see-what-version-of-npm-youre-running">See what version of npm you’re running</a></li>
-<li><a class="reference internal" href="#upgrading-on-nix-osx-linux-etc">Upgrading on *nix (OSX, Linux, etc.)</a></li>
-<li><a class="reference internal" href="#upgrading-on-windows">Upgrading on Windows</a><ul>
-<li><a class="reference internal" href="#a-brief-note-on-the-built-in-windows-configuration">A brief note on the built-in Windows configuration</a></li>
+<li><a class="reference internal" href="#see-what-version-of-npm-youre-running">查看您正在运行的npm版本</a></li>
+<li><a class="reference internal" href="#upgrading-on-nix-osx-linux-etc">在* nix上升级（OSX，Linux等）</a></li>
+<li><a class="reference internal" href="#upgrading-on-windows">在Windows上升级</a><ul>
+<li><a class="reference internal" href="#a-brief-note-on-the-built-in-windows-configuration">有关内置Windows配置的简要说明</a></li>
 </ul>
 </li>
 </ul>
@@ -145,31 +146,31 @@
   <div class="section" id="try-the-latest-stable-version-of-npm">
 <h1>试试最新稳定版的npm<a class="headerlink" href="#try-the-latest-stable-version-of-npm" title="永久链接至标题">¶</a></h1>
 <div class="section" id="see-what-version-of-npm-youre-running">
-<h2>See what version of npm you’re running<a class="headerlink" href="#see-what-version-of-npm-youre-running" title="永久链接至标题">¶</a></h2>
+<h2>查看您正在运行的npm版本<a class="headerlink" href="#see-what-version-of-npm-youre-running" title="永久链接至标题">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="o">-</span><span class="n">v</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="upgrading-on-nix-osx-linux-etc">
-<h2>Upgrading on <a href="#id1"><span class="problematic" id="id2">*</span></a>nix (OSX, Linux, etc.)<a class="headerlink" href="#upgrading-on-nix-osx-linux-etc" title="永久链接至标题">¶</a></h2>
-<p>(You may need to prefix these commands with sudo, especially on Linux, or OS X if you installed Node using its default installer.)</p>
+<h2>在* nix上升级（OSX，Linux等）<a class="headerlink" href="#upgrading-on-nix-osx-linux-etc" title="永久链接至标题">¶</a></h2>
+<p>（您可能需要使用sudo为这些命令添加前缀，尤其是在Linux或OS X上，如果您使用其默认安装程序安装了Node。）</p>
 <p>您可以使用升级到最新版本的npm:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">npm</span><span class="nd">@latest</span>
 </pre></div>
 </div>
-<p>Or upgrade to the most recent release:</p>
+<p>或者升级到最新版本：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">npm</span><span class="nd">@next</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="upgrading-on-windows">
-<h2>Upgrading on Windows<a class="headerlink" href="#upgrading-on-windows" title="永久链接至标题">¶</a></h2>
-<p>Microsoft wrote a small command line tool to automate the steps below. You can go and download it here - or stick with the manual path outlined below.</p>
+<h2>在Windows上升级<a class="headerlink" href="#upgrading-on-windows" title="永久链接至标题">¶</a></h2>
+<p>Microsoft编写了一个小命令行工具来自动执行以下步骤。你可以在这里下载它 - 或者坚持使用下面列出的手动路径。</p>
 <p>默认情况下，npm与节点一起安装</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Program</span> <span class="n">Files</span> <span class="p">(</span><span class="n">x86</span><span class="p">)</span>\<span class="n">nodejs</span>
 </pre></div>
 </div>
-<p>npm的全局安装包（可能包括npm本身）分别存储在用户特定的目录中（目前是</p>
+<p>npm的全局安装包(可能包括npm本身)分别存储在用户特定的目录中(目前是</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span>\<span class="n">AppData</span>\<span class="n">Roaming</span>\<span class="n">npm</span><span class="p">)</span><span class="o">.</span>
 </pre></div>
 </div>
@@ -185,7 +186,7 @@
 <p>要解决此问题，您可以执行以下操作之一:</p>
 <ul>
 <li><p>Option 1: edit your Windows installation’s PATH to put %appdata%npm before %ProgramFiles%nodejs. Remember that you’ll need to restart cmd.exe (and potentially restart Windows) when you make changes to PATH or how npm is installed.</p></li>
-<li><p>Option 2: remove both of</p>
+<li><p>选项2：删除两者</p>
 <ul class="simple">
 <li><p>%ProgramFiles%nodejsnpm</p></li>
 <li><p>%ProgramFiles%nodejsnpm.cmd</p></li>
@@ -213,7 +214,7 @@
 </ul>
 <p>(See also the point below if you’re running Windows 7 and don’t have the directory %appdata%npm.)</p>
 <div class="section" id="a-brief-note-on-the-built-in-windows-configuration">
-<h3>A brief note on the built-in Windows configuration<a class="headerlink" href="#a-brief-note-on-the-built-in-windows-configuration" title="永久链接至标题">¶</a></h3>
+<h3>有关内置Windows配置的简要说明<a class="headerlink" href="#a-brief-note-on-the-built-in-windows-configuration" title="永久链接至标题">¶</a></h3>
 <p>The Node installer installs, directly into the npm folder, a special piece of Windows-specific configuration that tells npm where to install global packages. When npm is used to install itself, it is supposed to copy this special builtin configuration into the new install. There was a bug in some versions of npm that kept this from working, so you may need to go in and fix that up by hand. Run the following command to see where npm will install global packages to verify it is correct.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">config</span> <span class="n">get</span> <span class="n">prefix</span> <span class="o">-</span><span class="n">g</span>
 </pre></div>
@@ -258,7 +259,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

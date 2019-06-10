@@ -1,4 +1,4 @@
-npm-access
+npm access
 ===============
 
 SYNOPSIS
@@ -63,7 +63,7 @@ Management of teams and team memberships is done with the npm team command.
 SEE ALSO
 ------------------------------------
 
-- :option:`libnpmaccess`
+- :ref:`libnpmaccess`
 - :option:`npm team`
 - :option:`npm publish`
 - :option:`npm config`

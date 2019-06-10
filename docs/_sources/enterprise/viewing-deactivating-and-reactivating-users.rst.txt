@@ -18,7 +18,7 @@ Log in to your Enterprise instance.
 In the upper right corner of the page, click your profile picture, then click Site Administration. drop-down with site administration choice
 Locate the user name of the user you want to deactivate, then next to their name, click “deactivate”. deactivate user button
 Reactivating inactive users§
-Note: When you reactivate a user, they will need to re-enable two-factor authentication on their npm Enterprise instance account.
+.. note:: When you reactivate a user, they will need to re-enable two-factor authentication on their npm Enterprise instance account.
 As an npm Enterprise admin, you can reactivate an inactive user of your instance to allow them to log in again.
 
 Log in to your Enterprise instance.

@@ -58,4 +58,4 @@ To build the image using the above Dockerfile and the npm authentication token, 
 docker build --build-arg NPM_TOKEN=${NPM_TOKEN} .
 This will build the Docker image with the current NPM_TOKEN environment variable, so you can run npm install inside your container as the current logged-in user.
 
-Note: Even if you delete the .npmrc file, it will be kept in the commit history. To clean your secrets entirely, make sure to squash them.
+.. note:: Even if you delete the .npmrc file, it will be kept in the commit history. To clean your secrets entirely, make sure to squash them.

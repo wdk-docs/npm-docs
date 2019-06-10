@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -132,12 +133,20 @@
   <div class="section" id="updating-your-published-package-version-number">
 <h1>更新已发布的软件包版本号<a class="headerlink" href="#updating-your-published-package-version-number" title="永久链接至标题">¶</a></h1>
 <p>When you make significant changes to a published package, we recommend updating the version number to communicate the extent of the changes to others who rely on your code.</p>
-<p>Note: If you have linked a git repository to a package, updating the package version number will also add a tag with the updated release number to the linked git repository.
-To change the version number in package.json, on the command line, in the package root directory, run the following command, replacing &lt;update_type&gt; with one of the semantic versioning release types (patch, major, or minor):
-npm version &lt;update_type&gt;
-Run npm publish.
-Go to your package page (<a class="reference external" href="https://npmjs.com/package">https://npmjs.com/package</a>/&lt;package&gt;) to check that the package version has been updated.
-For more information on npm version, see the CLI documentation.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>If you have linked a git repository to a package, updating the package version number will also add a tag with the updated release number to the linked git repository.</p>
+</div>
+<ol class="arabic">
+<li><p>To change the version number in package.json, on the command line, in the package root directory, run the following command, replacing &lt;update_type&gt; with one of the semantic versioning release types (patch, major, or minor):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">version</span> <span class="o">&lt;</span><span class="n">update_type</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Run npm publish.</p></li>
+<li><p>Go to your package page (<a class="reference external" href="https://npmjs.com/package">https://npmjs.com/package</a>/&lt;package&gt;) to check that the package version has been updated.</p></li>
+</ol>
+<p>For more information on <a class="reference internal" href="../cli/version.html#cmdoption-npm-arg-version"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">version</span></code></a>, see the CLI documentation.</p>
 </div>
 
 
@@ -166,7 +175,7 @@ For more information on npm version, see the CLI documentation.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,7 +102,7 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">关于范围</a><ul>
-<li><a class="reference internal" href="#scopes-and-package-visibility">Scopes and package visibility</a></li>
+<li><a class="reference internal" href="#scopes-and-package-visibility">范围和包可见性</a></li>
 </ul>
 </li>
 </ul>
@@ -139,22 +140,35 @@
             
   <div class="section" id="about-scopes">
 <h1>关于范围<a class="headerlink" href="#about-scopes" title="永久链接至标题">¶</a></h1>
-<p>Note: You must be using npm version 2 or greater to use scopes. To upgrade to the latest version of npm, on the command line, run npm install <a class="reference external" href="mailto:npm&#37;&#52;&#48;latest">npm<span>&#64;</span>latest</a> -g
-When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages.</p>
-<p>A scope allows you to create a package with the same name as a package created by another user or Org without conflict.</p>
-<p>When listed as a dependent in a package.json file, scoped packages are preceded by their scope name. The scope name is everything between the &#64; and the slash:</p>
-<p>“npm” scope:
-&#64;npm/package-name
-“npmcorp” scope:
-&#64;npmcorp/package-name
-To create and publish public scoped packages, see “Creating and publishing scoped public packages”.</p>
-<p>To create and publish private scoped packages, see “Creating and publishing private packages”.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>您必须使用npm版本2或更高版本才能使用范围。要在命令行上升级到最新版本的npm，请运行 <strong>npm install npm &#64; latest -g</strong></p>
+</div>
+<p>当您注册npm用户帐户或创建组织时，您将被授予与您的用户或组织名称匹配的范围。您可以将此范围用作相关包的命名空间。</p>
+<p>范围允许您创建与其他用户或组织创建的包具有相同名称的包，而不会发生冲突。</p>
+<p>当在package.json文件中列为依赖项时，作用域包的前面是其作用域名称。范围名称是&#64;和斜杠之间的所有内容:</p>
+<ul>
+<li><p><strong>“npm” scope</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@npm</span><span class="o">/</span><span class="n">package</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>“npmcorp” scope</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@npmcorp</span><span class="o">/</span><span class="n">package</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>要创建和发布公共范围包，请参阅 <a class="reference internal" href="creating-and-publishing-scoped-public-packages.html"><span class="doc">创建和发布范围的公共包</span></a>.</p>
+<p>要创建和发布私有作用域包，请参阅 <a class="reference internal" href="creating-and-publishing-private-packages.html"><span class="doc">创建和发布私有包</span></a>.</p>
 <div class="section" id="scopes-and-package-visibility">
-<h2>Scopes and package visibility<a class="headerlink" href="#scopes-and-package-visibility" title="永久链接至标题">¶</a></h2>
-<p>Unscoped packages are always public.
-Private packages are always scoped.
-Scoped packages are private by default; you must pass a command-line flag when publishing to make them public.
-For more information on package scope and visibility, see “Package scope, access level, and visibility”.</p>
+<h2>范围和包可见性<a class="headerlink" href="#scopes-and-package-visibility" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>未开发的包总是公开的。</p></li>
+<li><p><a class="reference internal" href="about-private-packages.html"><span class="doc">关于私人包</span></a> 总是作用域。</p></li>
+<li><p>默认情况下，范围包是私有的;您必须在发布时传递命令行标志以使其公开。</p></li>
+</ul>
+<p>有关包范围和可见性的更多信息，请参阅 <a class="reference internal" href="package-scope-access-level-and-visibility.html"><span class="doc">npm包范围，访问级别和可见性</span></a>.</p>
 </div>
 </div>
 
@@ -184,7 +198,7 @@ For more information on package scope and visibility, see “Package scope, acce
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

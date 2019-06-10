@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,8 +102,8 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">从注册表中取消发布包</a><ul>
-<li><a class="reference internal" href="#unpublishing-an-entire-package">Unpublishing an entire package</a></li>
-<li><a class="reference internal" href="#unpublishing-a-single-version-of-a-package">Unpublishing a single version of a package</a></li>
+<li><a class="reference internal" href="#unpublishing-an-entire-package">取消发布整个包裹</a></li>
+<li><a class="reference internal" href="#unpublishing-a-single-version-of-a-package">取消发布单个版本的包</a></li>
 </ul>
 </li>
 </ul>
@@ -142,8 +143,11 @@
 <h1>从注册表中取消发布包<a class="headerlink" href="#unpublishing-packages-from-the-registry" title="永久链接至标题">¶</a></h1>
 <p>In order to permanently remove a package (or package version) from the npm registry, as a package owner or collaborator, you can unpublish it from the the command line within 72 hours of the initial publish.</p>
 <p>If you want to unpublish a package after 72 hours have passed, contact npm Support. For more information about why we don’t allow users to unpublish packages after 72 hours, see our unpublish policy.</p>
-<p>Note: If you are using npm Enterprise, you can have an admin contact npm Enterprise Support at <a class="reference external" href="mailto:enterprise&#37;&#52;&#48;npmjs&#46;com">enterprise<span>&#64;</span>npmjs<span>&#46;</span>com</a> to increase the unpublishing window for your instance beyond 72 hours.
-Unpublishing a package using the CLI or by contacting npm support is the only way to remove a package or version from the registry. For example, removing all the collaborators or teams from the package will not unpublish it.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>If you are using npm Enterprise, you can have an admin contact npm Enterprise Support at <a class="reference external" href="mailto:enterprise&#37;&#52;&#48;npmjs&#46;com">enterprise<span>&#64;</span>npmjs<span>&#46;</span>com</a> to increase the unpublishing window for your instance beyond 72 hours.</p>
+</div>
+<p>Unpublishing a package using the CLI or by contacting npm support is the only way to remove a package or version from the registry. For example, removing all the collaborators or teams from the package will not unpublish it.</p>
 <p>If you are no longer interested in maintaining a package, but want it to remain available for users to install, or if your package has dependents, we’d recommend deprecating it. To learn about how to deprecate a package, see “Deprecating and undeprecating packages or package versions”.</p>
 <p>Unpublishing a package permanently removes the package from the registry so it is no longer available for other users to install. Once a package is unpublished, it cannot be republished. If you’ve unpublished a package by mistake, we’d recommend publishing again under a different name, or for unpublished versions, bumping the version number and publishing again.</p>
 <p>您可能想要取消发布包，因为您:</p>
@@ -151,15 +155,15 @@ Unpublishing a package using the CLI or by contacting npm support is the only wa
 Wanted to test npm.
 Published content you didn’t intend to be public.
 Wanted to rename a package. (The only way to rename a package is to re-publish it under a new name)
-Note: Since various systems rely on <a class="reference external" href="mailto:package-name&#37;&#52;&#48;version">package-name<span>&#64;</span>version</a> being unique, you cannot reuse a published version by unpublishing and re-publishing it. If you want to reuse a version number, we recommend publishing a minor version update instead.</p>
+.. note:: Since various systems rely on <a class="reference external" href="mailto:package-name&#37;&#52;&#48;version">package-name<span>&#64;</span>version</a> being unique, you cannot reuse a published version by unpublishing and re-publishing it. If you want to reuse a version number, we recommend publishing a minor version update instead.</p>
 <div class="section" id="unpublishing-an-entire-package">
-<h2>Unpublishing an entire package<a class="headerlink" href="#unpublishing-an-entire-package" title="永久链接至标题">¶</a></h2>
+<h2>取消发布整个包裹<a class="headerlink" href="#unpublishing-an-entire-package" title="永久链接至标题">¶</a></h2>
 <p>To unpublish an entire package, run the following command, replacing &lt;package-name&gt; with the name of your package:</p>
 <p>npm unpublish &lt;package-name&gt; -f
 If you have two-factor authentication enabled for writes, you will need to add a one-time password to the unpublish command, –otp=123456 (where 123456 is the code from your authenticator app).</p>
 </div>
 <div class="section" id="unpublishing-a-single-version-of-a-package">
-<h2>Unpublishing a single version of a package<a class="headerlink" href="#unpublishing-a-single-version-of-a-package" title="永久链接至标题">¶</a></h2>
+<h2>取消发布单个版本的包<a class="headerlink" href="#unpublishing-a-single-version-of-a-package" title="永久链接至标题">¶</a></h2>
 <p>To unpublish a single version of a package, run the following command, replacing &lt;package-name&gt; with the name of your package, and &lt;version&gt; with your version number:</p>
 <p>npm unpublish &lt;package-name&gt;&#64;&lt;version&gt;
 If you have two-factor auth, add a one-time password to the command, –otp=123456 (where 123456 is the code from your authenticator).</p>
@@ -192,7 +196,7 @@ If you have two-factor auth, add a one-time password to the command, –otp=1234
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

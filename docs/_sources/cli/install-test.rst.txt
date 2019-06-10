@@ -1,4 +1,4 @@
-npm-install-test
+npm install-test
 ============================================================================================
 
 SYNOPSIS
@@ -21,7 +21,9 @@ SYNOPSIS
       npm install-test <tarball url>
       npm install-test <folder>
 
-   alias: npm it
+.. option:: it
+
+   install-test alias
 
    common options: [--save|--save-dev|--save-optional] [--save-exact] [--dry-run]
 

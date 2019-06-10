@@ -20,7 +20,7 @@ Continuous deployment§
 Since continuous deployment environments usually involve the creation of a deploy artifact, the token likely will need read and write permissions, which are granted with the standard token creation command:
 
 npm token create
-Note: For increased security, we recommend generated a CIDR-whitelisted token that can only be used from a certain IP address range. You can use a CIDR whitelist with a read and publish token or a read-only token: npm token create --cidr=[list] npm token create --read-only --cidr=[list] Example: npm token create --cidr=192.0.2.0/24 For more information, see "Creating and viewing authentication tokens".
+.. note:: For increased security, we recommend generated a CIDR-whitelisted token that can only be used from a certain IP address range. You can use a CIDR whitelist with a read and publish token or a read-only token: npm token create --cidr=[list] npm token create --read-only --cidr=[list] Example: npm token create --cidr=192.0.2.0/24 For more information, see "Creating and viewing authentication tokens".
 Set the token as an environment variable on the CI/CD server§
 Set your token as an environment variable on the CI/CD server and your development machine. In OSX or Linux, add this line to your ~/.profile, replacing the example token with your own:
 

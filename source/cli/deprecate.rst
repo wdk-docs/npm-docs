@@ -1,4 +1,4 @@
-npm-deprecate
+npm deprecate
 ============================================================================================
 
 Deprecate a version of a package

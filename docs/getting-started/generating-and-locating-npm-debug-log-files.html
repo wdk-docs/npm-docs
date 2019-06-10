@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>生成和定位npm-debug.log文件 &#8212; npm-docs 6.9.1 文档</title>
+    <title>Generating and locating npm debug.log files &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -130,22 +131,22 @@
           <div class="body" role="main">
             
   <div class="section" id="generating-and-locating-npm-debug-log-files">
-<h1>生成和定位npm-debug.log文件<a class="headerlink" href="#generating-and-locating-npm-debug-log-files" title="永久链接至标题">¶</a></h1>
-<p>When a package fails to install or publish, the npm CLI will generate an npm-debug.log file. This log file can help you (and npm Support) figure out what went wrong.</p>
-<p>If you need to generate a npm-debug.log file, you can run one of these commands.</p>
-<p>For installing packages:</p>
+<h1>Generating and locating npm debug.log files<a class="headerlink" href="#generating-and-locating-npm-debug-log-files" title="永久链接至标题">¶</a></h1>
+<p>当程序包无法安装或发布时，npm CLI将生成npm-debug.log文件。这个日志文件可以帮助你(和npm支持)弄清楚出了什么问题。</p>
+<p>如果需要生成npm-debug.log文件，则可以运行其中一个命令。如果需要生成npm-debug.log文件，则可以运行其中一个命令。</p>
+<p>用于安装包:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="o">--</span><span class="n">timing</span>
 </pre></div>
 </div>
-<p>For publishing packages:</p>
+<p>对于发布包:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">publish</span> <span class="o">--</span><span class="n">timing</span>
 </pre></div>
 </div>
-<p>You can find the npm-debug.log file in your .npm directory. To find your .npm directory, use npm config get cache.</p>
-<p>If you use a CI environment, your logs are likely located elsewhere. For example, in Travis CI, you can find them in the /home/travis/build directory.</p>
+<p>您可以在.npm目录中找到npm-debug.log文件。要查找.npm目录，请使用npm config get cache。</p>
+<p>如果您使用 CI 环境，则您的日志可能位于其他位置。例如，在 Travis CI 中，您可以在 /home/travis/build 目录中找到它们。</p>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>npm Enterprise users: If you need to contact npm Enterprise Support at <a class="reference external" href="mailto:enterprise&#37;&#52;&#48;npmjs&#46;com">enterprise<span>&#64;</span>npmjs<span>&#46;</span>com</a>, we recommend attaching the entire contents of the npm-debug.log file or copying the contents into the body of the message, so that we can more easily diagnose the problem.</p>
+<p>npm企业用户:如果您需要通过 <a class="reference external" href="mailto:enterprise&#37;&#52;&#48;npmjs&#46;com">enterprise<span>&#64;</span>npmjs<span>&#46;</span>com</a> 联系npm企业支持，我们建议您附上 npm-debug.log 文件的全部内容或将内容复制到邮件正文中，以便我们更轻松诊断问题。</p>
 </div>
 </div>
 
@@ -175,7 +176,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

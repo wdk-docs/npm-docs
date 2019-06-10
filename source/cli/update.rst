@@ -1,4 +1,4 @@
-npm-update
+npm update
 ============================================================================================
 
 
@@ -15,7 +15,13 @@ SYNOPSIS
 
       npm update [-g] [<pkg>...]
 
-   aliases: up, upgrade
+.. option:: up
+
+   update alias
+
+.. option:: upgrade
+
+   update alias
 
 DESCRIPTION
 -------------------

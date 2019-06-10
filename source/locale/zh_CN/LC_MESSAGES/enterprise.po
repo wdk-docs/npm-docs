@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-04 22:31+0800\n"
+"POT-Creation-Date: 2019-06-10 15:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/enterprise/about-the-enterprise-admin-user.rst:2
 msgid "About the Enterprise admin user"
-msgstr ""
+msgstr "关于企业管理员用户"
 
 #: ../../source/enterprise/about-the-enterprise-admin-user.rst:4
 msgid ""
@@ -31,18 +31,22 @@ msgstr ""
 
 #: ../../source/enterprise/configuring-an-authentication-provider.rst:2
 msgid "Configuring an authentication provider"
-msgstr ""
+msgstr "配置身份验证提供程序"
 
 #: ../../source/enterprise/configuring-an-authentication-provider.rst:4
 msgid ""
-"Note: To avoid being locked out of your instance, you must connect your "
-"npm Enterprise admin account to your SSO account immediately after "
+"To avoid being locked out of your instance, you must connect your npm "
+"Enterprise admin account to your SSO account immediately after "
 "configuring an authentication provider. If you are locked out of your "
-"instance, contact npm Enterprise Support at enterprise@npmjs.com. As an "
-"Enterprise admin, you can configure your instance to use single sign-on "
-"(SSO) authentication through any external authentication provider that "
-"implements OpendID Connect Core and OpendID Connect Discovery, such as "
-"Auth0, Azure Active Directory, Okta, and Google."
+"instance, contact npm Enterprise Support at enterprise@npmjs.com."
+msgstr ""
+
+#: ../../source/enterprise/configuring-an-authentication-provider.rst:5
+msgid ""
+"As an Enterprise admin, you can configure your instance to use single "
+"sign-on (SSO) authentication through any external authentication provider"
+" that implements OpendID Connect Core and OpendID Connect Discovery, such"
+" as Auth0, Azure Active Directory, Okta, and Google."
 msgstr ""
 
 #: ../../source/enterprise/configuring-an-authentication-provider.rst:7
@@ -66,11 +70,11 @@ msgstr ""
 
 #: ../../source/enterprise/creating-and-managing-orgs-and-teams.rst:2
 msgid "Creating and managing Orgs and teams"
-msgstr ""
+msgstr "创建和管理组织和团队"
 
 #: ../../source/enterprise/creating-and-managing-orgs-and-teams.rst:4
 msgid "To create and manage Orgs and teams, see our Orgs documentation:"
-msgstr ""
+msgstr "要创建和管理Orgs和团队，请参阅我们的Orgs文档:"
 
 #: ../../source/enterprise/creating-and-managing-orgs-and-teams.rst:6
 msgid ""
@@ -80,14 +84,18 @@ msgstr ""
 
 #: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:2
 msgid "Demoting an admin to a non-admin user"
-msgstr ""
+msgstr "将管理员降级为非管理员用户"
 
 #: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:4
 msgid ""
-"Note: Demoting an admin does not deactivate them. To deactivate a user, "
-"follow the steps in \"Viewing, deactivating, and reactivating users\". If"
-" an admin on your npm Enterprise instance no longer needs to take admin "
-"actions on the instance (e.g. configuring SSO, activating and "
+"Demoting an admin does not deactivate them. To deactivate a user, follow "
+"the steps in \"Viewing, deactivating, and reactivating users\"."
+msgstr ""
+
+#: ../../source/enterprise/demoting-an-admin-to-a-non-admin-user.rst:5
+msgid ""
+"If an admin on your npm Enterprise instance no longer needs to take admin"
+" actions on the instance (e.g. configuring SSO, activating and "
 "deactivating users, or inviting users to the instance), as an Enterprise "
 "instance admin, you can demote the admin to a non-admin user."
 msgstr ""
@@ -103,7 +111,7 @@ msgstr ""
 
 #: ../../source/enterprise/getting-started-with-npm-enterprise.rst:2
 msgid "Getting started with npm Enterprise"
-msgstr ""
+msgstr "npm Enterprise入门"
 
 #: ../../source/enterprise/getting-started-with-npm-enterprise.rst:4
 msgid ""
@@ -182,7 +190,7 @@ msgstr "迁移"
 
 #: ../../source/enterprise/managing-user-security.rst:2
 msgid "Managing user security"
-msgstr ""
+msgstr "管理用户安全性"
 
 #: ../../source/enterprise/managing-user-security.rst:4
 msgid ""
@@ -206,31 +214,34 @@ msgstr ""
 
 #: ../../source/enterprise/migrating-from-an-existing-enterprise-instance.rst:2
 msgid "Migrating from an existing npm Enterprise instance"
-msgstr ""
+msgstr "从现有的npm Enterprise实例迁移"
 
 #: ../../source/enterprise/migrating-from-an-existing-enterprise-instance.rst:4
+#: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:4
+msgid "Using pneumatic-tubes for migration requires"
+msgstr "使用气动管进行迁移需要"
+
+#: ../../source/enterprise/migrating-from-an-existing-enterprise-instance.rst:5
 msgid ""
-"Note: Using pneumatic-tubes for migration requires Node 8+ npm 5+ (to "
-"install or upgrade, run npm install npm@latest -g) To migrate from a "
-"legacy npm Enterprise installation, use npm’s pneumatic-tubes and follow "
-"the steps under “Importing from Legacy npm Enterprise”."
+"Node 8+ npm 5+ (to install or upgrade, run npm install npm@latest -g) To "
+"migrate from a legacy npm Enterprise installation, use npm’s pneumatic-"
+"tubes and follow the steps under “Importing from Legacy npm Enterprise”."
 msgstr ""
 
 #: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:2
 msgid "Migrating from an Org on the public registry"
-msgstr ""
+msgstr "从公共注册中心的组织迁移"
 
-#: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:4
+#: ../../source/enterprise/migrating-from-an-org-on-the-public-registry.rst:5
 msgid ""
-"Note: Using pneumatic-tubes for migration requires Node 8+ npm 5+ (to "
-"install or upgrade, run npm install npm@latest -g) To migrate from an Org"
-" on the public registry, use npm’s pneumatic-tubes and follow the steps "
-"under “Importing from npm Orgs”."
+"Node 8+ npm 5+ (to install or upgrade, run npm install npm@latest -g) To "
+"migrate from an Org on the public registry, use npm’s pneumatic-tubes and"
+" follow the steps under “Importing from npm Orgs”."
 msgstr ""
 
 #: ../../source/enterprise/npm-enterprise-roles-and-permissions.rst:2
 msgid "npm Enterprise roles and permissions"
-msgstr ""
+msgstr "npm企业角色和权限"
 
 #: ../../source/enterprise/npm-enterprise-roles-and-permissions.rst:4
 msgid ""
@@ -251,7 +262,7 @@ msgstr ""
 
 #: ../../source/enterprise/permanently-deleting-a-user.rst:2
 msgid "Permanently deleting a user"
-msgstr ""
+msgstr "永久删除用户"
 
 #: ../../source/enterprise/permanently-deleting-a-user.rst:4
 msgid ""
@@ -262,22 +273,26 @@ msgstr ""
 
 #: ../../source/enterprise/permanently-deleting-a-user.rst:6
 msgid ""
-"Note: When permanently deleting a user, you will work with npm support to"
-" make sure any Orgs and packages they own are transferred to other users "
-"on your Enterprise instance."
+"When permanently deleting a user, you will work with npm support to make "
+"sure any Orgs and packages they own are transferred to other users on "
+"your Enterprise instance."
 msgstr ""
 
 #: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:2
 msgid "Promoting a non-admin user to admin"
-msgstr ""
+msgstr "将非管理员用户提升为管理员"
 
 #: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:4
 msgid ""
-"Note: To keep your Enterprise instance secure, we recommend limiting the "
-"number of Enterprise admins on your instance. If you need multiple users "
-"in your Enterprise instance to be able to take admin actions (e.g. "
-"configure SSO, activate and deactivate users, or invite users to the "
-"instance), you can promote a non-admin user to admin."
+"To keep your Enterprise instance secure, we recommend limiting the number"
+" of Enterprise admins on your instance."
+msgstr ""
+
+#: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:5
+msgid ""
+"If you need multiple users in your Enterprise instance to be able to take"
+" admin actions (e.g. configure SSO, activate and deactivate users, or "
+"invite users to the instance), you can promote a non-admin user to admin."
 msgstr ""
 
 #: ../../source/enterprise/promoting-a-non-admin-user-to-admin.rst:7
@@ -291,7 +306,7 @@ msgstr ""
 
 #: ../../source/enterprise/purchasing-or-removing-seats.rst:2
 msgid "Purchasing or removing seats"
-msgstr ""
+msgstr "购买或移除座位"
 
 #: ../../source/enterprise/purchasing-or-removing-seats.rst:4
 msgid ""
@@ -309,7 +324,7 @@ msgstr ""
 
 #: ../../source/enterprise/updating-billing-information.rst:2
 msgid "Updating billing information"
-msgstr ""
+msgstr "更新结算信息"
 
 #: ../../source/enterprise/updating-billing-information.rst:4
 msgid ""
@@ -320,7 +335,7 @@ msgstr ""
 
 #: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:2
 msgid "Viewing, deactivating, and reactivating users"
-msgstr ""
+msgstr "查看，停用和重新激活用户"
 
 #: ../../source/enterprise/viewing-deactivating-and-reactivating-users.rst:4
 msgid ""
@@ -362,7 +377,7 @@ msgid ""
 "page, click your profile picture, then click Site Administration. drop-"
 "down with site administration choice Locate the user name of the user you"
 " want to deactivate, then next to their name, click “deactivate”. "
-"deactivate user button Reactivating inactive users§ Note: When you "
+"deactivate user button Reactivating inactive users§ .. note:: When you "
 "reactivate a user, they will need to re-enable two-factor authentication "
 "on their npm Enterprise instance account. As an npm Enterprise admin, you"
 " can reactivate an inactive user of your instance to allow them to log in"
@@ -377,4 +392,81 @@ msgid ""
 " want to reactivate, then next to their name, click “activate”. activate "
 "user button"
 msgstr ""
+
+#~ msgid ""
+#~ ".. note:: To avoid being locked "
+#~ "out of your instance, you must "
+#~ "connect your npm Enterprise admin "
+#~ "account to your SSO account immediately"
+#~ " after configuring an authentication "
+#~ "provider. If you are locked out of"
+#~ " your instance, contact npm Enterprise "
+#~ "Support at enterprise@npmjs.com. As an "
+#~ "Enterprise admin, you can configure your"
+#~ " instance to use single sign-on "
+#~ "(SSO) authentication through any external "
+#~ "authentication provider that implements "
+#~ "OpendID Connect Core and OpendID Connect"
+#~ " Discovery, such as Auth0, Azure "
+#~ "Active Directory, Okta, and Google."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: Demoting an admin does "
+#~ "not deactivate them. To deactivate a "
+#~ "user, follow the steps in \"Viewing, "
+#~ "deactivating, and reactivating users\". If "
+#~ "an admin on your npm Enterprise "
+#~ "instance no longer needs to take "
+#~ "admin actions on the instance (e.g. "
+#~ "configuring SSO, activating and deactivating"
+#~ " users, or inviting users to the "
+#~ "instance), as an Enterprise instance "
+#~ "admin, you can demote the admin to"
+#~ " a non-admin user."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: Using pneumatic-tubes for "
+#~ "migration requires Node 8+ npm 5+ "
+#~ "(to install or upgrade, run npm "
+#~ "install npm@latest -g) To migrate from"
+#~ " a legacy npm Enterprise installation, "
+#~ "use npm’s pneumatic-tubes and follow "
+#~ "the steps under “Importing from Legacy"
+#~ " npm Enterprise”."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: Using pneumatic-tubes for "
+#~ "migration requires Node 8+ npm 5+ "
+#~ "(to install or upgrade, run npm "
+#~ "install npm@latest -g) To migrate from"
+#~ " an Org on the public registry, "
+#~ "use npm’s pneumatic-tubes and follow "
+#~ "the steps under “Importing from npm "
+#~ "Orgs”."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: When permanently deleting a"
+#~ " user, you will work with npm "
+#~ "support to make sure any Orgs and"
+#~ " packages they own are transferred to"
+#~ " other users on your Enterprise "
+#~ "instance."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: To keep your Enterprise "
+#~ "instance secure, we recommend limiting "
+#~ "the number of Enterprise admins on "
+#~ "your instance. If you need multiple "
+#~ "users in your Enterprise instance to "
+#~ "be able to take admin actions "
+#~ "(e.g. configure SSO, activate and "
+#~ "deactivate users, or invite users to "
+#~ "the instance), you can promote a "
+#~ "non-admin user to admin."
+#~ msgstr ""
 

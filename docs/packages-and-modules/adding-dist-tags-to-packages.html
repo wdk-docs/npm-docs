@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,8 +102,8 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">将dist-tags添加到包中</a><ul>
-<li><a class="reference internal" href="#example">Example</a></li>
-<li><a class="reference internal" href="#id1">Example</a></li>
+<li><a class="reference internal" href="#publishing-a-package-with-a-dist-tag">使用dist-tag发布包</a></li>
+<li><a class="reference internal" href="#adding-a-dist-tag-to-a-specific-version-of-your-package">将dist标记添加到特定版本的包中</a></li>
 </ul>
 </li>
 </ul>
@@ -140,35 +141,52 @@
             
   <div class="section" id="adding-dist-tags-to-packages">
 <h1>将dist-tags添加到包中<a class="headerlink" href="#adding-dist-tags-to-packages" title="永久链接至标题">¶</a></h1>
-<p>Distribution tags (dist-tags) are human-readable labels that you can use to organize and label different versions of packages you publish. dist-tags supplement semantic versioning. In addition to being more human-readable than semantic version numbering, tags allow publishers to distribute their packages more effectively.</p>
-<p>For more information, see the dist-tag CLI documentation.</p>
-<p>Note: Since dist-tags share a namespace with semantic versions, avoid dist-tags that conflict with existing version numbers. We recommend avoiding dist-tags that start with a number or the letter “v”.
-Publishing a package with a dist-tag
-——————————————————-</p>
-<p>By default, running npm publish will tag your package with the latest dist-tag. To use another dist-tag, use the –tag flag when publishing.</p>
-<p>On the command line, navigate to the root directory of your package.
-cd /path/to/package
-Run the following command, replacing &lt;tag&gt; with the tag you want to use:</p>
-<blockquote>
-<div><p>npm publish –tag &lt;tag&gt;</p>
-</div></blockquote>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h2>
-<p>To publish a package with the “beta” dist-tag, on the command line, run the following command in the root directory of your package:</p>
-<p>npm publish –tag beta
-Adding a dist-tag to a specific version of your package
-——————————————————-</p>
-<dl class="simple">
-<dt>On the command line, navigate to the root directory of your package.</dt><dd><p>cd /path/to/package</p>
-</dd>
-<dt>Run the following command, replacing &lt;package_name&gt; with the name of your package, &lt;version&gt; with your package version number, and &lt;tag&gt; with the distribution tag:</dt><dd><p>npm dist-tag add &lt;package-name&gt;&#64;&lt;version&gt; [&lt;tag&gt;]</p>
-</dd>
-</dl>
+<p>分发标签（dist-tags）是人类可读的标签，可用于组织和标记您发布的不同版本的软件包。 dist-tags补充 <a class="reference internal" href="about-semantic-versioning.html"><span class="doc">关于语义版本控制</span></a> 。除了比语义版本编号更易于阅读之外，标签还允许发布者更有效地分发其包。</p>
+<p>For more information, see the <a class="reference internal" href="../cli/dist-tag.html#cmdoption-npm-arg-dist-tag"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">dist-tag</span></code></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>由于dist-tags与语义版本共享命名空间，因此请避免与现有版本号冲突的dist-tag。我们建议避免使用以数字或字母 “v” 开头的dist-tag。</p>
 </div>
-<div class="section" id="id1">
-<h2>Example<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<p>To add the “stable” tag to the 1.4.0 version of the “example-package” package, you would run the following command:</p>
-<p>npm dist-tag add <a class="reference external" href="mailto:example-package&#37;&#52;&#48;1&#46;4&#46;0">example-package<span>&#64;</span>1<span>&#46;</span>4<span>&#46;</span>0</a> stable</p>
+<div class="section" id="publishing-a-package-with-a-dist-tag">
+<h2>使用dist-tag发布包<a class="headerlink" href="#publishing-a-package-with-a-dist-tag" title="永久链接至标题">¶</a></h2>
+<p>默认情况下，运行npm publish会使用最新的dist-tag标记您的包。要使用另一个dist-tag，请在发布时使用–tag标志。</p>
+<ol class="arabic simple">
+<li><p>在命令行上，导航到程序包的根目录。</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /path/to/package
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>运行以下命令，将&lt;tag&gt;替换为要使用的标记:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm publish --tag &lt;tag&gt;
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>示例</strong></p>
+<p>要在命令行上发布带有“beta”dist-tag的软件包，请在软件包的根目录中运行以下命令:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm publish --tag beta
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-a-dist-tag-to-a-specific-version-of-your-package">
+<h2>将dist标记添加到特定版本的包中<a class="headerlink" href="#adding-a-dist-tag-to-a-specific-version-of-your-package" title="永久链接至标题">¶</a></h2>
+<p>在命令行上，导航到程序包的根目录。</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /path/to/package
+</pre></div>
+</div>
+<p>运行以下命令，将&lt;package_name&gt;替换为程序包的名称，将&lt;version&gt;替换为程序包版本号，将&lt;tag&gt;替换为分发标记:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm dist-tag add &lt;package-name&gt;@&lt;version&gt; <span class="o">[</span>&lt;tag&gt;<span class="o">]</span>
+</pre></div>
+</div>
+<p><strong>示例</strong></p>
+<p>要将 “stable” 标记添加到 “example-package” 软件包的1.4.0版本，您将运行以下命令:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm dist-tag add example-package@1.4.0 stable
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -198,7 +216,7 @@ Adding a dist-tag to a specific version of your package
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

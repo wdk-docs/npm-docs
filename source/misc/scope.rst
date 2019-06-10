@@ -1,10 +1,13 @@
 .. _scope:
 
-npm-scope
+scope
 ======================================================
 
 Scoped packages
+
 DESCRIPTION
+------------------------------------------------------
+
 All npm packages have a name. Some package names also have a scope. A scope follows the usual rules for package names (URL-safe characters, no leading dots or underscores). When used in package names, scopes are preceded by an @ symbol and followed by a slash, e.g.
 
 @somescope/somepackagename

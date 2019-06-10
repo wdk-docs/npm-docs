@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,10 +102,9 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">关于语义版本控制</a><ul>
-<li><a class="reference internal" href="#incrementing-semantic-versions-in-published-packages">Incrementing semantic versions in published packages</a></li>
-<li><a class="reference internal" href="#using-semantic-versioning-to-specify-update-types-your-package-can-accept">Using semantic versioning to specify update types your package can accept</a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
-<li><a class="reference internal" href="#resources">Resources</a></li>
+<li><a class="reference internal" href="#incrementing-semantic-versions-in-published-packages">增加已发布包中的语义版本</a></li>
+<li><a class="reference internal" href="#using-semantic-versioning-to-specify-update-types-your-package-can-accept">使用语义版本控制来指定包可以接受的更新类型</a></li>
+<li><a class="reference internal" href="#resources">资源</a></li>
 </ul>
 </li>
 </ul>
@@ -142,28 +142,63 @@
             
   <div class="section" id="about-semantic-versioning">
 <h1>关于语义版本控制<a class="headerlink" href="#about-semantic-versioning" title="永久链接至标题">¶</a></h1>
-<p>To keep the JavaScript ecosystem healthy, reliable, and secure, every time you make significant updates to an npm package you own, we recommend publishing a new version of the package with an updated version number in the package.json file that follows the semantic versioning spec. Following the semantic versioning spec helps other developers who depend on your code understand the extent of changes in a given version, and adjust their own code if necessary.</p>
-<p>Note: If you introduce a change that breaks a package dependency, we strongly recommend incrementing the version major number; see below for details.</p>
+<p>为了保持JavaScript生态系统的健康，可靠和安全，每次对您拥有的npm软件包进行重大更新时，我们建议在package.json文件中发布包含语义版本控制的更新版本号的软件包的新版本规范。遵循语义版本规范可以帮助依赖代码的其他开发人员了解给定版本中的更改范围，并在必要时调整自己的代码。</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>如果您引入了一个打破包依赖关系的更改，我们强烈建议您增加版本主编号;详见下文。</p>
+</div>
 <div class="section" id="incrementing-semantic-versions-in-published-packages">
-<h2>Incrementing semantic versions in published packages<a class="headerlink" href="#incrementing-semantic-versions-in-published-packages" title="永久链接至标题">¶</a></h2>
-<p>To help developers who rely on your code, we recommend starting your package version at 1.0.0 and incrementing as follows:</p>
-<p>Code status     Stage   Rule    Example version
-First release   New product     Start with 1.0.0        1.0.0
-Backward compatible bug fixes   Patch release   Increment the third digit       1.0.1
-Backward compatible new features        Minor release   Increment the middle digit and reset last digit to zero 1.1.0
-Changes that break backward compatibility       Major release   Increment the first digit and reset middle and last digits to zero      2.0.0</p>
+<h2>增加已发布包中的语义版本<a class="headerlink" href="#incrementing-semantic-versions-in-published-packages" title="永久链接至标题">¶</a></h2>
+<p>为了帮助依赖代码的开发人员，我们建议您在 <strong>1.0.0</strong> 处启动软件包版本并按如下方式递增:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 10%" />
+<col style="width: 48%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>代码状态</p></th>
+<th class="head"><p>阶段</p></th>
+<th class="head"><p>规则</p></th>
+<th class="head"><p>示例版本</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>首发</p></td>
+<td><p>新产品</p></td>
+<td><p>从1.0.0开始</p></td>
+<td><p>1.0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>向后兼容的错误修复</p></td>
+<td><p>补丁发布</p></td>
+<td><p>增加第三位数</p></td>
+<td><p>1.0.1</p></td>
+</tr>
+<tr class="row-even"><td><p>向后兼容的新功能</p></td>
+<td><p>次要发布</p></td>
+<td><p>增加中间数字并将最后一个数字重置为零</p></td>
+<td><p>1.1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>破坏向后兼容性的更改</p></td>
+<td><p>主要发布</p></td>
+<td><p>增加第一个数字并将中间和最后一个数字重置为零</p></td>
+<td><p>2.0.0</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="using-semantic-versioning-to-specify-update-types-your-package-can-accept">
-<h2>Using semantic versioning to specify update types your package can accept<a class="headerlink" href="#using-semantic-versioning-to-specify-update-types-your-package-can-accept" title="永久链接至标题">¶</a></h2>
-<p>You can specify which update types your package can accept from dependencies in your package’s package.json file.</p>
-<p>For example, to specify acceptable version ranges up to 1.0.4, use the following syntax:</p>
-<p>Patch releases: 1.0 or 1.0.x or ~1.0.4
-Minor releases: 1 or 1.x or ^1.0.4
-Major releases: * or x
-For more information on semantic versioning syntax, see the npm semver calculator.</p>
-</div>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h2>
+<h2>使用语义版本控制来指定包可以接受的更新类型<a class="headerlink" href="#using-semantic-versioning-to-specify-update-types-your-package-can-accept" title="永久链接至标题">¶</a></h2>
+<p>您可以指定程序包可以从程序包的package.json文件中的依赖项接受哪些更新类型。</p>
+<p>例如，要指定最大1.0.4的可接受版本范围，请使用以下语法:</p>
+<ul class="simple">
+<li><p>补丁发布: 1.0 or 1.0.x or ~1.0.4</p></li>
+<li><p>次要版本: 1 or 1.x or ^1.0.4</p></li>
+<li><p>主要版本: * or x</p></li>
+</ul>
+<p>有关语义版本控制语法的更多信息，请参阅npm semver计算器。</p>
+<p><strong>示例</strong></p>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span> <span class="p">{</span>
   <span class="s2">&quot;my_dep&quot;</span><span class="o">:</span> <span class="s2">&quot;^1.0.0&quot;</span><span class="p">,</span>
   <span class="s2">&quot;another_dep&quot;</span><span class="o">:</span> <span class="s2">&quot;~2.2.0&quot;</span>
@@ -172,7 +207,8 @@ For more information on semantic versioning syntax, see the npm semver calculato
 </div>
 </div>
 <div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
+<h2>资源<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
+<p>&lt;iframe width=”300” height=”150” src=”<a class="reference external" href="https://www.youtube.com/embed/kK4Meix58R4">https://www.youtube.com/embed/kK4Meix58R4</a>” frameborder=”0” allow=”accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture” allowfullscreen&gt;&lt;/iframe&gt;</p>
 </div>
 </div>
 
@@ -202,7 +238,7 @@ For more information on semantic versioning syntax, see the npm semver calculato
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

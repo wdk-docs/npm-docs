@@ -4,7 +4,10 @@ npmrc
 ===============
 
 The npm config files
+
 DESCRIPTION
+-------------------
+
 npm gets its config settings from the command line, environment variables, and npmrc files.
 
 The npm config command can be used to update and edit the contents of the user and global npmrc files.
@@ -12,6 +15,8 @@ The npm config command can be used to update and edit the contents of the user a
 For a list of available configuration options, see npm-config.
 
 FILES
+-------------------
+
 The four relevant files are:
 
 per-project config file (/path/to/my/project/.npmrc)
@@ -27,7 +32,10 @@ Array values are specified by adding “[]” after the key name. For example:
 
 key[] = "first value"
 key[] = "second value"
+
 Comments
+~~~~~~~~~~~~~~~~~~~~~~
+
 Lines in .npmrc files are interpreted as comments when they begin with a ; or # character. .npmrc files are parsed by npm/ini, which specifies this comment syntax.
 
 For example:
@@ -43,12 +51,16 @@ Note that this only applies to the root of the project that you’re running npm
 Additionally, this file is not read in global mode, such as when running npm install -g.
 
 Per-user config file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 $HOME/.npmrc (or the userconfig param, if set in the environment or on the command line)
 
 Global config file
 $PREFIX/etc/npmrc (or the globalconfig param, if set above): This file is an ini-file formatted list of key = value parameters. Environment variables can be replaced as above.
 
 Built-in config file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 path/to/npm/itself/npmrc
 
 This is an unchangeable “builtin” configuration file that npm keeps consistent across updates. Set fields in here using the ./configure script that comes with npm. This is primarily for distribution maintainers to override default configs in a standard and consistent manner.

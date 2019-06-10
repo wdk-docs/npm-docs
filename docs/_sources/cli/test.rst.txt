@@ -1,4 +1,4 @@
-npm-test
+npm test
 ============================================================================================
 
 SYNOPSIS
@@ -14,7 +14,13 @@ SYNOPSIS
 
       npm test [-- <args>]
 
-   aliases: t, tst
+.. option:: t
+
+   test alias
+
+.. option:: tst
+
+   test alias
 
 DESCRIPTION
 -------------------

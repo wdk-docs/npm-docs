@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,10 +102,10 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">更新和管理已发布的包</a><ul>
-<li><a class="reference internal" href="#overview">Overview</a></li>
-<li><a class="reference internal" href="#creating-an-unscoped-public-package">Creating an unscoped public package</a></li>
-<li><a class="reference internal" href="#reviewing-package-contents-for-sensitive-or-unnecessary-information">Reviewing package contents for sensitive or unnecessary information</a></li>
-<li><a class="reference internal" href="#publishing-unscoped-public-packages">Publishing unscoped public packages</a></li>
+<li><a class="reference internal" href="#overview">概述</a></li>
+<li><a class="reference internal" href="#creating-an-unscoped-public-package">创建一个没有范围的公共包</a></li>
+<li><a class="reference internal" href="#reviewing-package-contents-for-sensitive-or-unnecessary-information">查看包装内容以获取敏感或不必要的信息</a></li>
+<li><a class="reference internal" href="#publishing-unscoped-public-packages">发布未编写的公共包</a></li>
 </ul>
 </li>
 </ul>
@@ -142,51 +143,75 @@
             
   <div class="section" id="creating-and-publishing-unscoped-public-packages">
 <h1>更新和管理已发布的包<a class="headerlink" href="#creating-and-publishing-unscoped-public-packages" title="永久链接至标题">¶</a></h1>
-<p>Note: You can only publish unscoped packages to the npm public registry. You cannot publish unscoped packages to an npm Enterprise registry.
-As an npm user, you can create unscoped packages to use in your own projects and publish them to the npm public registry for others to use in theirs. Unscoped packages are always public and are referred to by the package name only:</p>
-<p>package-name</p>
-<p>For more information on package scope, access, and visibility, see “Package scope, access level, and visibility”.</p>
-<p>Note: Before you can publish public unscoped npm packages, you must sign up for an npm user account.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>您只能将未编组的包发布到npm公共注册表。您无法将未范围的包发布到npm Enterprise注册表。</p>
+</div>
+<p>作为npm用户，您可以创建未编译的包以在您自己的项目中使用，并将它们发布到npm公共注册表，供其他人在他们的项目中使用。无范围的包始终是公共的，仅由包名称引用:</p>
+<p><strong>package-name</strong></p>
+<p>有关包范围和可见性的更多信息，请参阅 <a class="reference internal" href="package-scope-access-level-and-visibility.html"><span class="doc">npm包范围，访问级别和可见性</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>在发布公开的未绑定的npm包之前，您必须注册npm用户帐户。</p>
+</div>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="永久链接至标题">¶</a></h2>
-<p>Create your package
-Review package contents for sensitive or unnecessary information
-Publish your package</p>
+<h2>概述<a class="headerlink" href="#overview" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p>创建你的包</p></li>
+<li><p>查看包内容以获取敏感或不必要的信息</p></li>
+<li><p>发布您的包</p></li>
+</ol>
 </div>
 <div class="section" id="creating-an-unscoped-public-package">
-<h2>Creating an unscoped public package<a class="headerlink" href="#creating-an-unscoped-public-package" title="永久链接至标题">¶</a></h2>
-<p>Note: You can only publish unscoped packages to the npm public registry. You cannot publish unscoped packages to an npm Enterprise registry.
-On the command line, create a directory for your package:</p>
-<blockquote>
-<div><p>mkdir my-test-package</p>
-</div></blockquote>
-<dl class="simple">
-<dt>Navigate to the root directory of your package:</dt><dd><p>cd my-test-package</p>
-</dd>
-<dt>If you are using git to manage your package code, in the package root directory, run the following commands, replacing git-remote-url with the git remote URL for your package:</dt><dd><p>git init
-git remote add origin git://git-remote-url</p>
-</dd>
-</dl>
-<p>In the package root directory, run the npm init command.
-Respond to the prompts to generate a package.json file. For help naming your package, see “Package name guidelines”.
-Create a README file that explains what your package code is and how to use it.
-In your preferred text editor, write the code for your package.</p>
+<h2>创建一个没有范围的公共包<a class="headerlink" href="#creating-an-unscoped-public-package" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>您只能将未编组的包发布到npm公共注册表。您无法将未范围的包发布到npm Enterprise注册表。</p>
+</div>
+<ol class="arabic">
+<li><p>在命令行上，为包创建一个目录:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">my</span><span class="o">-</span><span class="n">test</span><span class="o">-</span><span class="n">package</span>
+</pre></div>
+</div>
+</li>
+<li><p>导航到包的根目录:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">my</span><span class="o">-</span><span class="n">test</span><span class="o">-</span><span class="n">package</span>
+</pre></div>
+</div>
+</li>
+<li><p>如果您使用git来管理包代码，请在包根目录中运行以下命令，将git-remote-url替换为包的git远程URL:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">init</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">git</span><span class="o">-</span><span class="n">remote</span><span class="o">-</span><span class="n">url</span>
+</pre></div>
+</div>
+</li>
+<li><p>在程序包根目录中，运行 npm init 命令。</p></li>
+<li><p>响应提示生成package.json文件。有关命名包的帮助，请参阅 <a class="reference internal" href="package-name-guidelines.html"><span class="doc">包名称指南</span></a>。</p></li>
+<li><p>创建一个 <a class="reference internal" href="about-package-readme-files.html"><span class="doc">关于包README文件</span></a>，解释你的包代码是什么以及如何使用它。</p></li>
+<li><p>在首选的文本编辑器中，编写包的代码。</p></li>
+</ol>
 </div>
 <div class="section" id="reviewing-package-contents-for-sensitive-or-unnecessary-information">
-<h2>Reviewing package contents for sensitive or unnecessary information<a class="headerlink" href="#reviewing-package-contents-for-sensitive-or-unnecessary-information" title="永久链接至标题">¶</a></h2>
-<p>Publishing sensitive information to the registry can harm your users, compromise your development infrastructure, be expensive to fix, and put you at risk of legal action. We strongly recommend removing sensitive information, such as private keys, passwords, personally identifiable information (PII), and credit card data before publishing your package to the registry.</p>
-<p>For less sensitive information, such as testing data, use a .npmignore or .gitignore file to prevent publishing to the registry. For more information, see this article.</p>
+<h2>查看包装内容以获取敏感或不必要的信息<a class="headerlink" href="#reviewing-package-contents-for-sensitive-or-unnecessary-information" title="永久链接至标题">¶</a></h2>
+<p>将敏感信息发布到注册表可能会损害您的用户，危及您的开发基础架构，修复成本高昂，并使您面临法律诉讼的风险。 <strong>我们强烈建议在将包发布到注册表之前删除敏感信息，例如私钥，密码，</strong> <a class="reference external" href="https://en.wikipedia.org/wiki/Personally_identifiable_information">personally identifiable information</a> （PII）， <strong>和信用卡数据。</strong></p>
+<p>对于不太敏感的信息，例如测试数据，请使用 <strong>.npmignore</strong> 或 <strong>.gitignore</strong> 文件以防止发布到注册表。有关更多信息，请参阅此文章。</p>
 </div>
 <div class="section" id="publishing-unscoped-public-packages">
-<h2>Publishing unscoped public packages<a class="headerlink" href="#publishing-unscoped-public-packages" title="永久链接至标题">¶</a></h2>
-<dl class="simple">
-<dt>On the command line, navigate to the root directory of your package.</dt><dd><p>cd /path/to/package</p>
-</dd>
-<dt>要将公共包发布到npm注册表，请运行:</dt><dd><p>npm publish</p>
-</dd>
-</dl>
-<p>To see your public package page, visit <a class="reference external" href="https://npmjs.com/package/package-name">https://npmjs.com/package/package-name</a>, replacing package-name with the name of your package. Public packages will say public below the package name on the npm website.
-For more information on the publish command, see the CLI documentation.</p>
+<h2>发布未编写的公共包<a class="headerlink" href="#publishing-unscoped-public-packages" title="永久链接至标题">¶</a></h2>
+<ol class="arabic">
+<li><p>在命令行上，导航到包的根目录:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">package</span>
+</pre></div>
+</div>
+</li>
+<li><p>要将公共包发布到npm注册表，请运行:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">publish</span>
+</pre></div>
+</div>
+</li>
+<li><p>要查看您的公共包页面，请访问 <a class="reference external" href="https://npmjs.com/package/package-name">https://npmjs.com/package/package-name</a> ，将package-name替换为您的包名称。公共包将在npm网站上的包名称下面公开。</p></li>
+</ol>
+<p>有关publish命令的更多信息，请参阅 <a class="reference internal" href="../cli/publish.html#cmdoption-npm-arg-publish"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">publish</span></code></a> 。</p>
 </div>
 </div>
 
@@ -216,7 +241,7 @@ For more information on the publish command, see the CLI documentation.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

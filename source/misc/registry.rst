@@ -1,10 +1,13 @@
 .. _registry:
 
-npm-registry
+registry
 ======================================================
 
 The JavaScript Package Registry
+
 DESCRIPTION
+------------------------------------------------------
+
 To resolve packages by name and version, npm talks to a registry website that implements the CommonJS Package Registry specification for reading package info.
 
 npm is configured to use npm, Inc.’s public registry at https://registry.npmjs.org by default. Use of the npm public registry is subject to terms of use available at https://www.npmjs.com/policies/terms.

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-04 20:16+0800\n"
+"POT-Creation-Date: 2019-06-05 19:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../source/cli/access.rst:2
-msgid "npm-access"
+#, fuzzy
+msgid "npm access"
 msgstr "npm-access"
 
 #: ../../source/cli/access.rst:5 ../../source/cli/adduser.rst:5
@@ -58,35 +59,35 @@ msgstr "概要"
 msgid "Set access level on published packages"
 msgstr "access在已发布的包上设置访问级别"
 
-#: ../../source/cli/access.rst:29 ../../source/cli/adduser.rst:20
+#: ../../source/cli/access.rst:29 ../../source/cli/adduser.rst:30
 #: ../../source/cli/audit.rst:76 ../../source/cli/bin.rst:18
-#: ../../source/cli/bugs.rst:20 ../../source/cli/build.rst:20
+#: ../../source/cli/bugs.rst:22 ../../source/cli/build.rst:20
 #: ../../source/cli/bundle.rst:11 ../../source/cli/cache.rst:28
 #: ../../source/cli/ci.rst:48 ../../source/cli/completion.rst:17
-#: ../../source/cli/config.rst:25 ../../source/cli/dedupe.rst:21
-#: ../../source/cli/deprecate.rst:18 ../../source/cli/dist-tag.rst:22
+#: ../../source/cli/config.rst:27 ../../source/cli/dedupe.rst:27
+#: ../../source/cli/deprecate.rst:18 ../../source/cli/dist-tag.rst:24
 #: ../../source/cli/docs.rst:21 ../../source/cli/doctor.rst:18
 #: ../../source/cli/edit.rst:18 ../../source/cli/explore.rst:18
 #: ../../source/cli/help-search.rst:18 ../../source/cli/help.rst:18
 #: ../../source/cli/hook.rst:46 ../../source/cli/init.rst:39
-#: ../../source/cli/install-ci-test.rst:20 ../../source/cli/install-test.rst:29
-#: ../../source/cli/install.rst:38 ../../source/cli/link.rst:21
-#: ../../source/cli/logout.rst:18 ../../source/cli/ls.rst:21
+#: ../../source/cli/install-ci-test.rst:22 ../../source/cli/install-test.rst:31
+#: ../../source/cli/install.rst:38 ../../source/cli/link.rst:23
+#: ../../source/cli/logout.rst:18 ../../source/cli/ls.rst:27
 #: ../../source/cli/npm.rst:21 ../../source/cli/org.rst:42
-#: ../../source/cli/outdated.rst:18 ../../source/cli/owner.rst:23
+#: ../../source/cli/outdated.rst:18 ../../source/cli/owner.rst:25
 #: ../../source/cli/pack.rst:19 ../../source/cli/ping.rst:18
 #: ../../source/cli/prefix.rst:18 ../../source/cli/profile.rst:22
 #: ../../source/cli/prune.rst:18 ../../source/cli/publish.rst:21
-#: ../../source/cli/rebuild.rst:20 ../../source/cli/repo.rst:19
+#: ../../source/cli/rebuild.rst:22 ../../source/cli/repo.rst:19
 #: ../../source/cli/restart.rst:19 ../../source/cli/root.rst:18
-#: ../../source/cli/run-script.rst:22 ../../source/cli/search.rst:20
+#: ../../source/cli/run-script.rst:22 ../../source/cli/search.rst:30
 #: ../../source/cli/shrinkwrap.rst:19 ../../source/cli/star.rst:19
 #: ../../source/cli/stars.rst:18 ../../source/cli/start.rst:18
 #: ../../source/cli/stop.rst:18 ../../source/cli/team.rst:26
-#: ../../source/cli/test.rst:20 ../../source/cli/token.rst:21
-#: ../../source/cli/uninstall.rst:20 ../../source/cli/unpublish.rst:28
-#: ../../source/cli/update.rst:21 ../../source/cli/version.rst:22
-#: ../../source/cli/view.rst:20 ../../source/cli/whoami.rst:19
+#: ../../source/cli/test.rst:26 ../../source/cli/token.rst:21
+#: ../../source/cli/uninstall.rst:38 ../../source/cli/unpublish.rst:28
+#: ../../source/cli/update.rst:27 ../../source/cli/version.rst:22
+#: ../../source/cli/view.rst:30 ../../source/cli/whoami.rst:19
 msgid "DESCRIPTION"
 msgstr "描述"
 
@@ -137,7 +138,7 @@ msgstr ""
 
 #: ../../source/cli/access.rst:40
 msgid "edit: Set the access privileges for a package at once using $EDITOR."
-msgstr "编辑：使用$ EDITOR一次设置包的访问权限。"
+msgstr "编辑:使用$ EDITOR一次设置包的访问权限。"
 
 #: ../../source/cli/access.rst:43 ../../source/cli/cache.rst:37
 #: ../../source/cli/profile.rst:58 ../../source/cli/team.rst:41
@@ -152,7 +153,7 @@ msgstr ""
 
 #: ../../source/cli/access.rst:47
 msgid "Unscoped packages are always public."
-msgstr "未开发的包裹总是公开的。"
+msgstr "未开发的包总是公开的。"
 
 #: ../../source/cli/access.rst:49
 msgid ""
@@ -163,7 +164,7 @@ msgstr ""
 
 #: ../../source/cli/access.rst:51
 msgid "You must have privileges to set the access of a package:"
-msgstr "您必须具有设置程序包访问权限："
+msgstr "您必须具有设置程序包访问权限:"
 
 #: ../../source/cli/access.rst:53
 msgid "You are an owner of an unscoped or scoped package."
@@ -198,41 +199,41 @@ msgid ""
 "command."
 msgstr ""
 
-#: ../../source/cli/access.rst:64 ../../source/cli/adduser.rst:76
+#: ../../source/cli/access.rst:64 ../../source/cli/adduser.rst:86
 #: ../../source/cli/audit.rst:111 ../../source/cli/bin.rst:23
-#: ../../source/cli/bugs.rst:44 ../../source/cli/build.rst:31
+#: ../../source/cli/bugs.rst:46 ../../source/cli/build.rst:31
 #: ../../source/cli/bundle.rst:18 ../../source/cli/cache.rst:65
 #: ../../source/cli/ci.rst:61 ../../source/cli/completion.rst:33
-#: ../../source/cli/config.rst:85 ../../source/cli/dedupe.rst:53
-#: ../../source/cli/deprecate.rst:29 ../../source/cli/dist-tag.rst:70
+#: ../../source/cli/config.rst:87 ../../source/cli/dedupe.rst:59
+#: ../../source/cli/deprecate.rst:29 ../../source/cli/dist-tag.rst:72
 #: ../../source/cli/docs.rst:39 ../../source/cli/doctor.rst:57
 #: ../../source/cli/edit.rst:35 ../../source/cli/explore.rst:38
 #: ../../source/cli/help-search.rst:37 ../../source/cli/help.rst:35
 #: ../../source/cli/hook.rst:63 ../../source/cli/init.rst:55
-#: ../../source/cli/install-ci-test.rst:25 ../../source/cli/install-test.rst:34
-#: ../../source/cli/install.rst:388 ../../source/cli/link.rst:62
-#: ../../source/cli/logout.rst:46 ../../source/cli/ls.rst:87
+#: ../../source/cli/install-ci-test.rst:27 ../../source/cli/install-test.rst:36
+#: ../../source/cli/install.rst:460 ../../source/cli/link.rst:64
+#: ../../source/cli/logout.rst:46 ../../source/cli/ls.rst:119
 #: ../../source/cli/npm.rst:98 ../../source/cli/org.rst:47
-#: ../../source/cli/outdated.rst:80 ../../source/cli/owner.rst:35
+#: ../../source/cli/outdated.rst:80 ../../source/cli/owner.rst:37
 #: ../../source/cli/pack.rst:30 ../../source/cli/ping.rst:28
 #: ../../source/cli/prefix.rst:25 ../../source/cli/profile.rst:63
 #: ../../source/cli/prune.rst:35 ../../source/cli/publish.rst:46
-#: ../../source/cli/rebuild.rst:25 ../../source/cli/repo.rst:32
+#: ../../source/cli/rebuild.rst:27 ../../source/cli/repo.rst:32
 #: ../../source/cli/restart.rst:43 ../../source/cli/root.rst:23
 #: ../../source/cli/run-script.rst:63 ../../source/cli/scripts.rst:174
-#: ../../source/cli/search.rst:76 ../../source/cli/shrinkwrap.rst:24
+#: ../../source/cli/search.rst:86 ../../source/cli/shrinkwrap.rst:28
 #: ../../source/cli/star.rst:28 ../../source/cli/stars.rst:25
 #: ../../source/cli/start.rst:25 ../../source/cli/stop.rst:23
-#: ../../source/cli/team.rst:52 ../../source/cli/test.rst:25
-#: ../../source/cli/uninstall.rst:52 ../../source/cli/unpublish.rst:41
-#: ../../source/cli/update.rst:102 ../../source/cli/version.rst:88
-#: ../../source/cli/view.rst:69 ../../source/cli/whoami.rst:24
+#: ../../source/cli/team.rst:52 ../../source/cli/test.rst:31
+#: ../../source/cli/uninstall.rst:70 ../../source/cli/unpublish.rst:41
+#: ../../source/cli/update.rst:108 ../../source/cli/version.rst:88
+#: ../../source/cli/view.rst:79 ../../source/cli/whoami.rst:24
 msgid "SEE ALSO"
 msgstr "参阅"
 
 #: ../../source/cli/access.rst:66
 #, fuzzy
-msgid ":option:`libnpmaccess`"
+msgid ":ref:`libnpmaccess`"
 msgstr "npm-config"
 
 #: ../../source/cli/access.rst:67
@@ -240,56 +241,57 @@ msgstr "npm-config"
 msgid ":option:`npm team`"
 msgstr "npm-config"
 
-#: ../../source/cli/access.rst:68 ../../source/cli/bugs.rst:48
+#: ../../source/cli/access.rst:68 ../../source/cli/bugs.rst:50
 #: ../../source/cli/cache.rst:72 ../../source/cli/deprecate.rst:31
-#: ../../source/cli/dist-tag.rst:72 ../../source/cli/docs.rst:42
-#: ../../source/cli/owner.rst:37 ../../source/cli/pack.rst:33
+#: ../../source/cli/dist-tag.rst:74 ../../source/cli/docs.rst:42
+#: ../../source/cli/owner.rst:39 ../../source/cli/pack.rst:33
 #: ../../source/cli/unpublish.rst:44
 #, fuzzy
 msgid ":option:`npm publish`"
 msgstr "npm-publish"
 
-#: ../../source/cli/access.rst:69 ../../source/cli/adduser.rst:79
-#: ../../source/cli/adduser.rst:80 ../../source/cli/bin.rst:28
-#: ../../source/cli/bin.rst:29 ../../source/cli/bugs.rst:50
-#: ../../source/cli/bugs.rst:51 ../../source/cli/cache.rst:69
-#: ../../source/cli/config.rst:88 ../../source/cli/dist-tag.rst:76
-#: ../../source/cli/dist-tag.rst:77 ../../source/cli/docs.rst:44
+#: ../../source/cli/access.rst:69 ../../source/cli/adduser.rst:89
+#: ../../source/cli/adduser.rst:90 ../../source/cli/bin.rst:28
+#: ../../source/cli/bin.rst:29 ../../source/cli/bugs.rst:52
+#: ../../source/cli/bugs.rst:53 ../../source/cli/cache.rst:69
+#: ../../source/cli/config.rst:90 ../../source/cli/dist-tag.rst:78
+#: ../../source/cli/dist-tag.rst:79 ../../source/cli/docs.rst:44
 #: ../../source/cli/docs.rst:45 ../../source/cli/edit.rst:40
 #: ../../source/cli/edit.rst:41 ../../source/cli/help.rst:40
-#: ../../source/cli/help.rst:41 ../../source/cli/install.rst:397
-#: ../../source/cli/install.rst:398 ../../source/cli/link.rst:68
-#: ../../source/cli/link.rst:69 ../../source/cli/logout.rst:50
-#: ../../source/cli/logout.rst:51 ../../source/cli/ls.rst:89
-#: ../../source/cli/ls.rst:90 ../../source/cli/npm.rst:104
+#: ../../source/cli/help.rst:41 ../../source/cli/install.rst:469
+#: ../../source/cli/install.rst:470 ../../source/cli/link.rst:70
+#: ../../source/cli/link.rst:71 ../../source/cli/logout.rst:50
+#: ../../source/cli/logout.rst:51 ../../source/cli/ls.rst:121
+#: ../../source/cli/ls.rst:122 ../../source/cli/npm.rst:104
 #: ../../source/cli/npm.rst:105 ../../source/cli/pack.rst:34
 #: ../../source/cli/pack.rst:35 ../../source/cli/ping.rst:30
 #: ../../source/cli/ping.rst:31 ../../source/cli/prefix.rst:30
 #: ../../source/cli/prefix.rst:31 ../../source/cli/profile.rst:65
 #: ../../source/cli/repo.rst:35 ../../source/cli/root.rst:28
 #: ../../source/cli/root.rst:29 ../../source/cli/run-script.rst:70
-#: ../../source/cli/search.rst:79 ../../source/cli/search.rst:80
-#: ../../source/cli/uninstall.rst:57 ../../source/cli/uninstall.rst:58
-#: ../../source/cli/view.rst:73 ../../source/cli/view.rst:74
+#: ../../source/cli/search.rst:89 ../../source/cli/search.rst:90
+#: ../../source/cli/uninstall.rst:75 ../../source/cli/uninstall.rst:76
+#: ../../source/cli/view.rst:83 ../../source/cli/view.rst:84
 #: ../../source/cli/whoami.rst:26 ../../source/cli/whoami.rst:27
 #, fuzzy
 msgid ":option:`npm config`"
 msgstr "npm-config"
 
-#: ../../source/cli/access.rst:70 ../../source/cli/adduser.rst:78
-#: ../../source/cli/bugs.rst:49 ../../source/cli/deprecate.rst:32
-#: ../../source/cli/dist-tag.rst:75 ../../source/cli/docs.rst:43
-#: ../../source/cli/install.rst:400 ../../source/cli/logout.rst:49
-#: ../../source/cli/outdated.rst:84 ../../source/cli/owner.rst:38
-#: ../../source/cli/publish.rst:48 ../../source/cli/search.rst:78
+#: ../../source/cli/access.rst:70 ../../source/cli/adduser.rst:88
+#: ../../source/cli/bugs.rst:51 ../../source/cli/deprecate.rst:32
+#: ../../source/cli/dist-tag.rst:77 ../../source/cli/docs.rst:43
+#: ../../source/cli/install.rst:472 ../../source/cli/logout.rst:49
+#: ../../source/cli/outdated.rst:84 ../../source/cli/owner.rst:40
+#: ../../source/cli/publish.rst:48 ../../source/cli/search.rst:88
 #: ../../source/cli/team.rst:55 ../../source/cli/unpublish.rst:45
-#: ../../source/cli/update.rst:107 ../../source/cli/view.rst:72
+#: ../../source/cli/update.rst:113 ../../source/cli/view.rst:82
 #, fuzzy
 msgid ":ref:`registry`"
 msgstr "注册"
 
 #: ../../source/cli/adduser.rst:2
-msgid "npm-adduser"
+#, fuzzy
+msgid "npm adduser"
 msgstr "npm-adduser"
 
 #: ../../source/cli/adduser.rst:11
@@ -297,26 +299,34 @@ msgstr "npm-adduser"
 msgid "Add a registry user account"
 msgstr "adduser添加注册表用户帐户"
 
-#: ../../source/cli/adduser.rst:22
+#: ../../source/cli/adduser.rst:19 ../../source/cli/adduser.rst:23
+msgid "adduser alias"
+msgstr ""
+
+#: ../../source/cli/adduser.rst:27
+msgid "adduser param"
+msgstr ""
+
+#: ../../source/cli/adduser.rst:32
 msgid ""
 "Create or verify a user named <username> in the specified registry, and "
 "save the credentials to the .npmrc file. If no registry is specified, the"
 " default registry will be used (see npm-config)."
 msgstr ""
 
-#: ../../source/cli/adduser.rst:24
+#: ../../source/cli/adduser.rst:34
 msgid "The username, password, and email are read in from prompts."
 msgstr "用户名，密码和电子邮件将从提示中读入。"
 
-#: ../../source/cli/adduser.rst:26
+#: ../../source/cli/adduser.rst:36
 msgid "To reset your password, go to https://www.npmjs.com/forgot"
 msgstr "要重置密码，请转到https://www.npmjs.com/forgot"
 
-#: ../../source/cli/adduser.rst:28
+#: ../../source/cli/adduser.rst:38
 msgid "To change your email address, go to https://www.npmjs.com/email-edit"
 msgstr "要更改您的电子邮件地址，请转到 https://www.npmjs.com/email-edit"
 
-#: ../../source/cli/adduser.rst:30
+#: ../../source/cli/adduser.rst:40
 msgid ""
 "You may use this command multiple times with the same user account to "
 "authorize on a new machine. When authenticating on a new machine, the "
@@ -324,31 +334,31 @@ msgid ""
 "record."
 msgstr ""
 
-#: ../../source/cli/adduser.rst:32
+#: ../../source/cli/adduser.rst:42
 msgid "npm login is an alias to adduser and behaves exactly the same way."
 msgstr "npm login是adduser的别名，行为方式完全相同。"
 
-#: ../../source/cli/adduser.rst:35 ../../source/cli/bugs.rst:25
+#: ../../source/cli/adduser.rst:45 ../../source/cli/bugs.rst:27
 #: ../../source/cli/cache.rst:55 ../../source/cli/docs.rst:26
 #: ../../source/cli/edit.rst:27 ../../source/cli/explore.rst:30
 #: ../../source/cli/help-search.rst:27 ../../source/cli/help.rst:25
-#: ../../source/cli/logout.rst:27 ../../source/cli/ls.rst:39
-#: ../../source/cli/repo.rst:24 ../../source/cli/search.rst:33
+#: ../../source/cli/logout.rst:27 ../../source/cli/ls.rst:49
+#: ../../source/cli/repo.rst:24 ../../source/cli/search.rst:43
 #: ../../source/cli/version.rst:63
 msgid "CONFIGURATION"
 msgstr "配置"
 
-#: ../../source/cli/adduser.rst:38 ../../source/cli/bugs.rst:36
+#: ../../source/cli/adduser.rst:48 ../../source/cli/bugs.rst:38
 #: ../../source/cli/logout.rst:30
 msgid "registry"
 msgstr "注册"
 
-#: ../../source/cli/adduser.rst:40 ../../source/cli/bugs.rst:38
+#: ../../source/cli/adduser.rst:50 ../../source/cli/bugs.rst:40
 #: ../../source/cli/logout.rst:33
 msgid "Default: https://registry.npmjs.org/"
 msgstr "默认: https://registry.npmjs.org/"
 
-#: ../../source/cli/adduser.rst:42
+#: ../../source/cli/adduser.rst:52
 msgid ""
 "The base URL of the npm package registry. If scope is also specified, "
 "this registry will only be used for packages with that scope. scope "
@@ -356,44 +366,44 @@ msgid ""
 "any. See npm-scope."
 msgstr ""
 
-#: ../../source/cli/adduser.rst:45 ../../source/cli/logout.rst:37
+#: ../../source/cli/adduser.rst:55 ../../source/cli/logout.rst:37
 msgid "scope"
 msgstr "范围"
 
-#: ../../source/cli/adduser.rst:47
+#: ../../source/cli/adduser.rst:57
 msgid "Default: none"
 msgstr "默认: none"
 
-#: ../../source/cli/adduser.rst:49
+#: ../../source/cli/adduser.rst:59
 msgid ""
 "If specified, the user and login credentials given will be associated "
 "with the specified scope. See npm-scope. You can use both at the same "
 "time, e.g."
 msgstr ""
 
-#: ../../source/cli/adduser.rst:51
+#: ../../source/cli/adduser.rst:61
 msgid ""
 "npm adduser --registry=http://myregistry.example.com --scope=@myco This "
 "will set a registry for the given scope and login or create a user for "
 "that registry at the same time."
 msgstr ""
 
-#: ../../source/cli/adduser.rst:55
+#: ../../source/cli/adduser.rst:65
 msgid "always-auth"
 msgstr "always-auth"
 
-#: ../../source/cli/adduser.rst:57
+#: ../../source/cli/adduser.rst:67
 msgid "Default: false"
 msgstr "默认: false"
 
-#: ../../source/cli/adduser.rst:59
+#: ../../source/cli/adduser.rst:69
 msgid ""
 "If specified, save configuration indicating that all requests to the "
 "given registry should include authorization information. Useful for "
 "private registries. Can be used with --registry and / or --scope, e.g."
 msgstr "如果已指定，请保存配置，指示对给定注册表的所有请求都应包含授权信息。对私人注册表有用。可以与--registry和/或--scope一起使用，例如"
 
-#: ../../source/cli/adduser.rst:65
+#: ../../source/cli/adduser.rst:75
 msgid ""
 "This will ensure that all requests to that registry (including for "
 "tarballs) include an authorization header. This setting may be necessary "
@@ -402,58 +412,59 @@ msgid ""
 "for more details on always-auth. Registry-specific configuration of "
 "always-auth takes precedence over any global configuration."
 msgstr ""
-"这将确保对该注册表（包括tarball）的所有请求都包含授权标头。与私有注册表一起使用时，此设置可能是必需的，其中元数据和包tar包存储在具有不同主机名的主机上"
+"这将确保对该注册表(包括tarball)的所有请求都包含授权标头。与私有注册表一起使用时，此设置可能是必需的，其中元数据和包tar包存储在具有不同主机名的主机上"
 "。有关always-auth的更多详细信息，请参阅 npm-config 中的 always-auth 。特定于注册表的always-"
 "auth配置优先于任何全局配置。"
 
-#: ../../source/cli/adduser.rst:68
+#: ../../source/cli/adduser.rst:78
 msgid "auth-type"
 msgstr "auth-type"
 
-#: ../../source/cli/adduser.rst:70
+#: ../../source/cli/adduser.rst:80
 msgid "Default: 'legacy'"
 msgstr "Default: 'legacy'"
 
-#: ../../source/cli/adduser.rst:71
+#: ../../source/cli/adduser.rst:81
 msgid "Type: 'legacy', 'sso', 'saml', 'oauth'"
 msgstr "Type: 'legacy', 'sso', 'saml', 'oauth'"
 
-#: ../../source/cli/adduser.rst:73
+#: ../../source/cli/adduser.rst:83
 msgid ""
 "What authentication strategy to use with adduser/login. Some npm "
 "registries (for example, npmE) might support alternative auth strategies "
 "besides classic username/password entry in legacy npm."
 msgstr ""
 "adduser/login 使用什么身份验证策略。除了传统的 npm "
-"中的经典用户名/密码输入之外，一些npm注册表（例如，npmE）可能支持替代身份验证策略。"
+"中的经典用户名/密码输入之外，一些npm注册表(例如，npmE)可能支持替代身份验证策略。"
 
-#: ../../source/cli/adduser.rst:81 ../../source/cli/bin.rst:30
-#: ../../source/cli/config.rst:90 ../../source/cli/dist-tag.rst:78
+#: ../../source/cli/adduser.rst:91 ../../source/cli/bin.rst:30
+#: ../../source/cli/config.rst:92 ../../source/cli/dist-tag.rst:80
 #: ../../source/cli/docs.rst:46 ../../source/cli/edit.rst:42
-#: ../../source/cli/help.rst:42 ../../source/cli/install.rst:399
-#: ../../source/cli/link.rst:70 ../../source/cli/logout.rst:52
-#: ../../source/cli/ls.rst:91 ../../source/cli/npm.rst:106
+#: ../../source/cli/help.rst:42 ../../source/cli/install.rst:471
+#: ../../source/cli/link.rst:72 ../../source/cli/logout.rst:52
+#: ../../source/cli/ls.rst:123 ../../source/cli/npm.rst:106
 #: ../../source/cli/pack.rst:36 ../../source/cli/ping.rst:32
 #: ../../source/cli/prefix.rst:32 ../../source/cli/root.rst:30
-#: ../../source/cli/search.rst:81 ../../source/cli/uninstall.rst:59
-#: ../../source/cli/view.rst:75 ../../source/cli/whoami.rst:28
+#: ../../source/cli/search.rst:91 ../../source/cli/uninstall.rst:77
+#: ../../source/cli/view.rst:85 ../../source/cli/whoami.rst:28
 msgid ":ref:`npmrc`"
 msgstr ""
 
-#: ../../source/cli/adduser.rst:82 ../../source/cli/publish.rst:51
+#: ../../source/cli/adduser.rst:92 ../../source/cli/publish.rst:51
 #: ../../source/cli/unpublish.rst:47
 #, fuzzy
 msgid ":option:`npm owner`"
 msgstr "npm-publish"
 
-#: ../../source/cli/adduser.rst:83 ../../source/cli/logout.rst:53
+#: ../../source/cli/adduser.rst:93 ../../source/cli/logout.rst:53
 #: ../../source/cli/star.rst:31 ../../source/cli/stars.rst:29
 #, fuzzy
 msgid ":option:`npm whoami`"
 msgstr "npm-config"
 
 #: ../../source/cli/audit.rst:2
-msgid "npm-audit"
+#, fuzzy
+msgid "npm audit"
 msgstr "npm-audit"
 
 #: ../../source/cli/audit.rst:11
@@ -461,7 +472,7 @@ msgid "Run a security audit"
 msgstr "运行安全审核"
 
 #: ../../source/cli/audit.rst:19 ../../source/cli/init.rst:20
-#: ../../source/cli/scripts.rst:125 ../../source/cli/update.rst:36
+#: ../../source/cli/scripts.rst:125 ../../source/cli/update.rst:42
 msgid "EXAMPLES"
 msgstr "例子"
 
@@ -508,13 +519,13 @@ msgid ""
 "Get the detailed audit report in plain text result, separated by tab "
 "characters, allowing for future reuse in scripting or command line post "
 "processing, like for example, selecting some of the columns printed:"
-msgstr "以明文结果获取详细的审计报告，以制表符分隔，以便将来在脚本或命令行后处理中重复使用，例如，选择打印的一些列："
+msgstr "以明文结果获取详细的审计报告，以制表符分隔，以便将来在脚本或命令行后处理中重复使用，例如，选择打印的一些列:"
 
 #: ../../source/cli/audit.rst:69
 msgid ""
 "To parse columns, you can use for example awk, and just print some of "
 "them:"
-msgstr "要解析列，您可以使用例如awk，并只打印其中一些："
+msgstr "要解析列，您可以使用例如awk，并只打印其中一些:"
 
 #: ../../source/cli/audit.rst:78
 msgid ""
@@ -578,7 +589,7 @@ msgid ""
 " in the audit data bundle, some dependencies may have their names (and "
 "sometimes versions) replaced with opaque non-reversible identifiers. It "
 "is done for the following dependency types:"
-msgstr "为了确保审计数据包中不包含潜在的敏感信息，某些依赖项可能会将其名称（有时是版本）替换为不透明的不可逆标识符。它适用于以下依赖类型："
+msgstr "为了确保审计数据包中不包含潜在的敏感信息，某些依赖项可能会将其名称(有时是版本)替换为不透明的不可逆标识符。它适用于以下依赖类型:"
 
 #: ../../source/cli/audit.rst:96
 msgid ""
@@ -586,8 +597,8 @@ msgid ""
 "registry has its name scrubbed. (That is, a scope you did a ``npm login "
 "--scope=@ourscope`` for.)"
 msgstr ""
-"引用为非默认注册配置的作用域的任何模块都会清除其名称。 （也就是说，你做了一个范围 ``npm login --scope=@ourscope``"
-" 。）"
+"引用为非默认注册配置的作用域的任何模块都会清除其名称。 (也就是说，你做了一个范围 ``npm login --scope=@ourscope``"
+" 。)"
 
 #: ../../source/cli/audit.rst:97
 msgid "All git dependencies have their names and specifiers scrubbed."
@@ -628,13 +639,13 @@ msgstr "如果发现漏洞，退出代码将取决于 ``audit-level`` 配置设�
 
 #: ../../source/cli/audit.rst:113 ../../source/cli/build.rst:33
 #: ../../source/cli/bundle.rst:20 ../../source/cli/cache.rst:71
-#: ../../source/cli/ci.rst:63 ../../source/cli/dedupe.rst:57
-#: ../../source/cli/dist-tag.rst:73 ../../source/cli/edit.rst:39
-#: ../../source/cli/explore.rst:44 ../../source/cli/link.rst:66
-#: ../../source/cli/ls.rst:93 ../../source/cli/npm.rst:103
-#: ../../source/cli/rebuild.rst:28 ../../source/cli/scripts.rst:179
-#: ../../source/cli/shrinkwrap.rst:26 ../../source/cli/uninstall.rst:55
-#: ../../source/cli/update.rst:104
+#: ../../source/cli/ci.rst:63 ../../source/cli/dedupe.rst:63
+#: ../../source/cli/dist-tag.rst:75 ../../source/cli/edit.rst:39
+#: ../../source/cli/explore.rst:44 ../../source/cli/link.rst:68
+#: ../../source/cli/ls.rst:125 ../../source/cli/npm.rst:103
+#: ../../source/cli/rebuild.rst:30 ../../source/cli/scripts.rst:179
+#: ../../source/cli/shrinkwrap.rst:30 ../../source/cli/uninstall.rst:73
+#: ../../source/cli/update.rst:110
 #, fuzzy
 msgid ":option:`npm install`"
 msgstr "ping Ping npm registry"
@@ -650,7 +661,8 @@ msgid ":option:`config`"
 msgstr "npm-config"
 
 #: ../../source/cli/bin.rst:2
-msgid "npm-bin"
+#, fuzzy
+msgid "npm bin"
 msgstr "npm-bin"
 
 #: ../../source/cli/bin.rst:11
@@ -672,30 +684,31 @@ msgid ":option:`npm root`"
 msgstr "ping Ping npm registry"
 
 #: ../../source/cli/bin.rst:27 ../../source/cli/cache.rst:67
-#: ../../source/cli/config.rst:87 ../../source/cli/edit.rst:37
+#: ../../source/cli/config.rst:89 ../../source/cli/edit.rst:37
 #: ../../source/cli/explore.rst:40 ../../source/cli/help.rst:39
-#: ../../source/cli/install.rst:390 ../../source/cli/link.rst:67
-#: ../../source/cli/ls.rst:92 ../../source/cli/outdated.rst:85
+#: ../../source/cli/install.rst:462 ../../source/cli/link.rst:69
+#: ../../source/cli/ls.rst:124 ../../source/cli/outdated.rst:85
 #: ../../source/cli/prefix.rst:29 ../../source/cli/prune.rst:38
-#: ../../source/cli/root.rst:27 ../../source/cli/uninstall.rst:56
-#: ../../source/cli/update.rst:108
+#: ../../source/cli/root.rst:27 ../../source/cli/uninstall.rst:74
+#: ../../source/cli/update.rst:114
 #, fuzzy
 msgid ":ref:`folders`"
 msgstr "npm-publish"
 
 #: ../../source/cli/bugs.rst:2
-msgid "npm-bugs"
+#, fuzzy
+msgid "npm bugs"
 msgstr "npm-bugs"
 
 #: ../../source/cli/bugs.rst:11
 msgid "Bugs for a package in a web browser maybe"
 msgstr "可能是Web浏览器中包的错误"
 
-#: ../../source/cli/bugs.rst:17
-msgid "aliases: issues"
-msgstr "别名: issues"
+#: ../../source/cli/bugs.rst:19
+msgid "bugs aliases"
+msgstr ""
 
-#: ../../source/cli/bugs.rst:22
+#: ../../source/cli/bugs.rst:24
 #, fuzzy
 msgid ""
 "This command tries to guess at the likely location of a package’s bug "
@@ -707,21 +720,21 @@ msgstr ""
 "此命令尝试猜测包的错误跟踪器URL的可能位置，然后尝试使用 --browser config param "
 "打开它。如果未提供程序包名称，它将在当前文件夹中搜索package.json并使用name属性。"
 
-#: ../../source/cli/bugs.rst:28
+#: ../../source/cli/bugs.rst:30
 msgid "browser"
 msgstr "browser"
 
-#: ../../source/cli/bugs.rst:30
+#: ../../source/cli/bugs.rst:32
 msgid ""
 "Default: OS X: **\"open\"**, Windows: **\"start\"**, Others: **\"xdg-"
 "open\"**"
 msgstr ""
 
-#: ../../source/cli/bugs.rst:31
+#: ../../source/cli/bugs.rst:33
 msgid "Type: String"
 msgstr ""
 
-#: ../../source/cli/bugs.rst:33
+#: ../../source/cli/bugs.rst:35
 #, fuzzy
 msgid ""
 "The browser that is called by the :option:`npm bugs` command to open "
@@ -730,37 +743,38 @@ msgstr ""
 "Default: OS X: \"open\", Windows: \"start\", Others: \"xdg-open\" Type: "
 "String npm bugs 命令用于打开网站的浏览器。"
 
-#: ../../source/cli/bugs.rst:39
+#: ../../source/cli/bugs.rst:41
 msgid "Type: url"
 msgstr ""
 
-#: ../../source/cli/bugs.rst:41
+#: ../../source/cli/bugs.rst:43
 msgid "The base URL of the npm package registry."
 msgstr ""
 
-#: ../../source/cli/bugs.rst:46 ../../source/cli/repo.rst:34
-#: ../../source/cli/view.rst:76
+#: ../../source/cli/bugs.rst:48 ../../source/cli/repo.rst:34
+#: ../../source/cli/view.rst:86
 msgid ":option:`npm docs`"
 msgstr ""
 
-#: ../../source/cli/bugs.rst:47 ../../source/cli/docs.rst:41
-#: ../../source/cli/search.rst:82 ../../source/cli/star.rst:30
+#: ../../source/cli/bugs.rst:49 ../../source/cli/docs.rst:41
+#: ../../source/cli/search.rst:92 ../../source/cli/star.rst:30
 #: ../../source/cli/stars.rst:28
 msgid ":option:`npm view`"
 msgstr ""
 
-#: ../../source/cli/bugs.rst:52 ../../source/cli/cache.rst:70
+#: ../../source/cli/bugs.rst:54 ../../source/cli/cache.rst:70
 #, fuzzy
 msgid ":doc:`../files/npmrc`"
 msgstr ":doc:`../files/npmrc` npm 配置文件"
 
-#: ../../source/cli/bugs.rst:53 ../../source/cli/scripts.rst:177
+#: ../../source/cli/bugs.rst:55 ../../source/cli/scripts.rst:177
 #, fuzzy
 msgid ":doc:`../files/package.json`"
 msgstr ":doc:`../misc/scope` Scoped 包"
 
 #: ../../source/cli/build.rst:2
-msgid "npm-build"
+#, fuzzy
+msgid "npm build"
 msgstr "npm-build"
 
 #: ../../source/cli/build.rst:11
@@ -782,31 +796,31 @@ msgid ""
 " it directly, run:"
 msgstr ""
 
-#: ../../source/cli/build.rst:34 ../../source/cli/install.rst:393
-#: ../../source/cli/ls.rst:94
+#: ../../source/cli/build.rst:34 ../../source/cli/install.rst:465
+#: ../../source/cli/ls.rst:126
 #, fuzzy
 msgid ":option:`npm link`"
 msgstr "npm-config"
 
-#: ../../source/cli/build.rst:35 ../../source/cli/install.rst:395
-#: ../../source/cli/restart.rst:46 ../../source/cli/shrinkwrap.rst:28
+#: ../../source/cli/build.rst:35 ../../source/cli/restart.rst:46
 #: ../../source/cli/start.rst:28 ../../source/cli/stop.rst:26
 #: ../../source/cli/version.rst:92
 #, fuzzy
 msgid ":option:`npm scripts`"
 msgstr "ping Ping npm registry"
 
-#: ../../source/cli/build.rst:36 ../../source/cli/config.rst:89
+#: ../../source/cli/build.rst:36 ../../source/cli/config.rst:91
 #: ../../source/cli/docs.rst:47 ../../source/cli/help.rst:43
-#: ../../source/cli/init.rst:58 ../../source/cli/install.rst:404
-#: ../../source/cli/link.rst:65 ../../source/cli/npm.rst:102
-#: ../../source/cli/shrinkwrap.rst:29 ../../source/cli/version.rst:93
+#: ../../source/cli/init.rst:58 ../../source/cli/install.rst:476
+#: ../../source/cli/link.rst:67 ../../source/cli/npm.rst:102
+#: ../../source/cli/shrinkwrap.rst:33 ../../source/cli/version.rst:93
 #, fuzzy
 msgid ":ref:`package.json`"
 msgstr "uninstall 删除包"
 
 #: ../../source/cli/bundle.rst:2
-msgid "npm-bundle"
+#, fuzzy
+msgid "npm bundle"
 msgstr "npm-bundle"
 
 #: ../../source/cli/bundle.rst:8
@@ -825,7 +839,8 @@ msgid "Just use npm install now to do what npm bundle used to do."
 msgstr "现在只需使用npm install来执行npm bundle以前的操作。"
 
 #: ../../source/cli/cache.rst:2
-msgid "npm-cache"
+#, fuzzy
+msgid "npm cache"
 msgstr "npm-cache"
 
 #: ../../source/cli/cache.rst:4
@@ -945,7 +960,8 @@ msgid "https://npm.im/pacote"
 msgstr ""
 
 #: ../../source/cli/ci.rst:2
-msgid "npm-ci"
+#, fuzzy
+msgid "npm ci"
 msgstr "npm-ci"
 
 #: ../../source/cli/ci.rst:10
@@ -1027,7 +1043,8 @@ msgid ":option:`npm package locks`"
 msgstr "npm-publish"
 
 #: ../../source/cli/completion.rst:2
-msgid "npm-completion"
+#, fuzzy
+msgid "npm completion"
 msgstr "npm-completion"
 
 #: ../../source/cli/completion.rst:10
@@ -1060,7 +1077,7 @@ msgid ""
 "outputs completions based on the arguments."
 msgstr ""
 
-#: ../../source/cli/completion.rst:35 ../../source/cli/link.rst:64
+#: ../../source/cli/completion.rst:35 ../../source/cli/link.rst:66
 #, fuzzy
 msgid ":option:`npm developers`"
 msgstr "npm-publish"
@@ -1070,7 +1087,8 @@ msgid ":program:`npm`"
 msgstr ""
 
 #: ../../source/cli/config.rst:2
-msgid "npm-config"
+#, fuzzy
+msgid "npm config"
 msgstr "npm-config"
 
 #: ../../source/cli/config.rst:10
@@ -1078,100 +1096,106 @@ msgstr "npm-config"
 msgid "Manage the npm configuration files"
 msgstr "config Manage the npm configuration files"
 
-#: ../../source/cli/config.rst:27
+#: ../../source/cli/config.rst:24
+#, fuzzy
+msgid "config alias"
+msgstr "配置 npm"
+
+#: ../../source/cli/config.rst:29
 msgid ""
 "npm gets its config settings from the command line, environment "
 "variables, :doc:`../files/npmrc` files, and in some cases, the "
 ":doc:`../files/package.json` file."
 msgstr ""
 
-#: ../../source/cli/config.rst:29
+#: ../../source/cli/config.rst:31
 #, fuzzy
 msgid "See :doc:`../files/npmrc` for more information about the npmrc files."
 msgstr "See npmrc for more information about the npmrc files."
 
-#: ../../source/cli/config.rst:31
+#: ../../source/cli/config.rst:33
 #, fuzzy
 msgid ""
 "See :option:`npm config` for a more thorough discussion of the mechanisms"
 " involved."
 msgstr "See npm-config for a more thorough discussion of the mechanisms involved."
 
-#: ../../source/cli/config.rst:33
+#: ../../source/cli/config.rst:35
 msgid ""
 "The :option:`npm config` command can be used to update and edit the "
 "contents of the user and global npmrc files."
 msgstr ""
 
-#: ../../source/cli/config.rst:36
+#: ../../source/cli/config.rst:38
 #, fuzzy
 msgid "Sub-commands"
 msgstr "CLI命令"
 
-#: ../../source/cli/config.rst:38
+#: ../../source/cli/config.rst:40
 msgid "Config supports the following sub-commands:"
 msgstr "Config supports the following sub-commands:"
 
-#: ../../source/cli/config.rst:41
+#: ../../source/cli/config.rst:43
 msgid "set"
 msgstr ""
 
-#: ../../source/cli/config.rst:43
+#: ../../source/cli/config.rst:45
 #, fuzzy
 msgid "npm config set key value Sets the config key to the value."
 msgstr "set npm config set key value Sets the config key to the value."
 
-#: ../../source/cli/config.rst:46
+#: ../../source/cli/config.rst:48
 msgid "If value is omitted, then it sets it to “true”."
 msgstr "If value is omitted, then it sets it to “true”."
 
-#: ../../source/cli/config.rst:49
+#: ../../source/cli/config.rst:51
 msgid "get"
 msgstr ""
 
-#: ../../source/cli/config.rst:55
+#: ../../source/cli/config.rst:57
 #, fuzzy
 msgid "Echo the config value to stdout."
 msgstr "get npm config get key Echo the config value to stdout."
 
-#: ../../source/cli/config.rst:58
+#: ../../source/cli/config.rst:60
 msgid "list"
 msgstr ""
 
-#: ../../source/cli/config.rst:64
+#: ../../source/cli/config.rst:66
 msgid ""
 "Show all the config settings. Use -l to also show defaults. Use --json to"
 " show the settings in json format."
 msgstr ""
 
-#: ../../source/cli/config.rst:67
+#: ../../source/cli/config.rst:69
 msgid "delete"
 msgstr ""
 
-#: ../../source/cli/config.rst:73
+#: ../../source/cli/config.rst:75
 #, fuzzy
 msgid "Deletes the key from all configuration files."
 msgstr "delete npm config delete key Deletes the key from all configuration files."
 
-#: ../../source/cli/config.rst:76
+#: ../../source/cli/config.rst:78
 #, fuzzy
 msgid "edit"
 msgstr "npm-edit"
 
-#: ../../source/cli/config.rst:82
+#: ../../source/cli/config.rst:84
 msgid ""
 "Opens the config file in an editor. Use the --global flag to edit the "
 "global config."
 msgstr ""
 
-#: ../../source/cli/config.rst:91 ../../source/cli/help-search.rst:39
+#: ../../source/cli/config.rst:93 ../../source/cli/help-search.rst:39
 #: ../../source/cli/help.rst:37
 #, fuzzy
 msgid ":option:`npm`"
 msgstr "npm-config"
 
 #: ../../source/cli/dedupe.rst:2
-msgid "npm-dedupe"
+#, fuzzy
+msgid "npm dedupe"
 msgstr "npm-dedupe"
 
 #: ../../source/cli/dedupe.rst:11
@@ -1179,73 +1203,74 @@ msgstr "npm-dedupe"
 msgid "Reduce duplication"
 msgstr "dedupe Reduce duplication"
 
-#: ../../source/cli/dedupe.rst:18
-msgid "aliases: find-dupes, ddp"
-msgstr "aliases: find-dupes, ddp"
+#: ../../source/cli/dedupe.rst:20 ../../source/cli/dedupe.rst:24
+msgid "dedupe alias"
+msgstr ""
 
-#: ../../source/cli/dedupe.rst:23
+#: ../../source/cli/dedupe.rst:29
 msgid ""
 "Searches the local package tree and attempts to simplify the overall "
 "structure by moving dependencies further up the tree, where they can be "
 "more effectively shared by multiple dependent packages."
 msgstr ""
 
-#: ../../source/cli/dedupe.rst:25
+#: ../../source/cli/dedupe.rst:31
 msgid "For example, consider this dependency graph::"
 msgstr "For example, consider this dependency graph::"
 
-#: ../../source/cli/dedupe.rst:33
+#: ../../source/cli/dedupe.rst:39
 msgid "In this case, npm-dedupe will transform the tree to::"
 msgstr "In this case, npm-dedupe will transform the tree to::"
 
-#: ../../source/cli/dedupe.rst:40
+#: ../../source/cli/dedupe.rst:46
 msgid ""
 "Because of the hierarchical nature of node’s module lookup, b and d will "
 "both get their dependency met by the single c package at the root level "
 "of the tree."
 msgstr ""
 
-#: ../../source/cli/dedupe.rst:42
+#: ../../source/cli/dedupe.rst:48
 msgid ""
 "The deduplication algorithm walks the tree, moving each dependency as far"
 " up in the tree as possible, even if duplicates are not found. This will "
 "result in both a flat and deduplicated tree."
 msgstr ""
 
-#: ../../source/cli/dedupe.rst:44
+#: ../../source/cli/dedupe.rst:50
 msgid ""
 "If a suitable version exists at the target location in the tree already, "
 "then it will be left untouched, but the other duplicates will be deleted."
 msgstr ""
 
-#: ../../source/cli/dedupe.rst:46
+#: ../../source/cli/dedupe.rst:52
 msgid "Arguments are ignored. Dedupe always acts on the entire tree."
 msgstr "Arguments are ignored. Dedupe always acts on the entire tree."
 
-#: ../../source/cli/dedupe.rst:48
+#: ../../source/cli/dedupe.rst:54
 msgid "Modules"
 msgstr "Modules"
 
-#: ../../source/cli/dedupe.rst:50
+#: ../../source/cli/dedupe.rst:56
 msgid ""
 "Note that this operation transforms the dependency tree, but will never "
 "result in new modules being installed."
 msgstr ""
 
-#: ../../source/cli/dedupe.rst:55 ../../source/cli/prune.rst:39
-#: ../../source/cli/shrinkwrap.rst:33 ../../source/cli/update.rst:109
+#: ../../source/cli/dedupe.rst:61 ../../source/cli/prune.rst:39
+#: ../../source/cli/shrinkwrap.rst:37 ../../source/cli/update.rst:115
 #, fuzzy
 msgid ":option:`npm ls`"
 msgstr "npm-publish"
 
-#: ../../source/cli/dedupe.rst:56 ../../source/cli/install.rst:391
-#: ../../source/cli/ls.rst:97 ../../source/cli/outdated.rst:82
+#: ../../source/cli/dedupe.rst:62 ../../source/cli/install.rst:463
+#: ../../source/cli/ls.rst:129 ../../source/cli/outdated.rst:82
 #, fuzzy
 msgid ":option:`npm update`"
 msgstr "npm-config"
 
 #: ../../source/cli/deprecate.rst:2
-msgid "npm-deprecate"
+#, fuzzy
+msgid "npm deprecate"
 msgstr "npm-deprecate"
 
 #: ../../source/cli/deprecate.rst:4
@@ -1280,7 +1305,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/dist-tag.rst:2
-msgid "npm-dist-tag"
+#, fuzzy
+msgid "npm dist-tag"
 msgstr "npm-dist-tag"
 
 #: ../../source/cli/dist-tag.rst:4
@@ -1288,15 +1314,16 @@ msgstr "npm-dist-tag"
 msgid "Modify package distribution tags"
 msgstr "dist-tag Modify package distribution tags"
 
-#: ../../source/cli/dist-tag.rst:19
-msgid "aliases: dist-tags"
-msgstr "aliases: dist-tags"
+#: ../../source/cli/dist-tag.rst:21
+#, fuzzy
+msgid "dist-tag aliases"
+msgstr "npm install sax"
 
-#: ../../source/cli/dist-tag.rst:23
+#: ../../source/cli/dist-tag.rst:25
 msgid "Add, remove, and enumerate distribution tags on a package:"
 msgstr "Add, remove, and enumerate distribution tags on a package:"
 
-#: ../../source/cli/dist-tag.rst:25
+#: ../../source/cli/dist-tag.rst:27
 msgid ""
 "add: Tags the specified version of the package with the specified tag, or"
 " the --tag config if not specified. If you have two-factor authentication"
@@ -1304,64 +1331,64 @@ msgid ""
 "the command line with --otp <one-time password>."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:27
+#: ../../source/cli/dist-tag.rst:29
 msgid "rm: Clear a tag that is no longer in use from the package."
 msgstr "rm: Clear a tag that is no longer in use from the package."
 
-#: ../../source/cli/dist-tag.rst:29
+#: ../../source/cli/dist-tag.rst:31
 msgid ""
 "ls: Show all of the dist-tags for a package, defaulting to the package in"
 " the current prefix."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:31
+#: ../../source/cli/dist-tag.rst:33
 msgid "This is the default action if none is specified."
 msgstr "This is the default action if none is specified."
 
-#: ../../source/cli/dist-tag.rst:33
+#: ../../source/cli/dist-tag.rst:35
 msgid ""
 "A tag can be used when installing packages as a reference to a version "
 "instead of using a specific version number:"
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:35
+#: ../../source/cli/dist-tag.rst:37
 msgid ""
 "npm install <name>@<tag> When installing dependencies, a preferred tagged"
 " version may be specified:"
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:38
+#: ../../source/cli/dist-tag.rst:40
 msgid "npm install --tag <tag> This also applies to npm dedupe."
 msgstr "npm install --tag <tag> This also applies to npm dedupe."
 
-#: ../../source/cli/dist-tag.rst:41
+#: ../../source/cli/dist-tag.rst:43
 msgid ""
 "Publishing a package sets the latest tag to the published version unless "
 "the --tag option is used. For example, npm publish --tag=beta."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:43
+#: ../../source/cli/dist-tag.rst:45
 msgid ""
 "By default, npm install <pkg> (without any @<version> or @<tag> "
 "specifier) installs the latest tag."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:46
+#: ../../source/cli/dist-tag.rst:48
 msgid "PURPOSE"
 msgstr "PURPOSE"
 
-#: ../../source/cli/dist-tag.rst:48
+#: ../../source/cli/dist-tag.rst:50
 msgid "Tags can be used to provide an alias instead of version numbers."
 msgstr "Tags can be used to provide an alias instead of version numbers."
 
-#: ../../source/cli/dist-tag.rst:50
+#: ../../source/cli/dist-tag.rst:52
 msgid ""
 "For example, a project might choose to have multiple streams of "
 "development and use a different tag for each stream, e.g., stable, beta, "
 "dev, canary."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:52
+#: ../../source/cli/dist-tag.rst:54
 msgid ""
 "By default, the latest tag is used by npm to identify the current version"
 " of a package, and npm install <pkg> (without any @<version> or @<tag> "
@@ -1370,53 +1397,54 @@ msgid ""
 "versions such as prereleases."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:54
+#: ../../source/cli/dist-tag.rst:56
 msgid "The next tag is used by some projects to identify the upcoming version."
 msgstr "The next tag is used by some projects to identify the upcoming version."
 
-#: ../../source/cli/dist-tag.rst:56
+#: ../../source/cli/dist-tag.rst:58
 msgid ""
 "By default, other than latest, no tag has any special significance to npm"
 " itself."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:59
+#: ../../source/cli/dist-tag.rst:61
 msgid "CAVEATS"
 msgstr "CAVEATS"
 
-#: ../../source/cli/dist-tag.rst:61
+#: ../../source/cli/dist-tag.rst:63
 msgid ""
 "This command used to be known as npm tag, which only created new tags, "
 "and so had a different syntax."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:63
+#: ../../source/cli/dist-tag.rst:65
 msgid ""
 "Tags must share a namespace with version numbers, because they are "
 "specified in the same slot: npm install <pkg>@<version> vs npm install "
 "<pkg>@<tag>."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:65
+#: ../../source/cli/dist-tag.rst:67
 msgid ""
 "Tags that can be interpreted as valid semver ranges will be rejected. For"
 " example, v1.4 cannot be used as a tag, because it is interpreted by "
 "semver as >=1.4.0 <1.5.0. See https://github.com/npm/npm/issues/6082."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:67
+#: ../../source/cli/dist-tag.rst:69
 msgid ""
 "The simplest way to avoid semver problems with tags is to use tags that "
 "do not begin with a number or the letter v."
 msgstr ""
 
-#: ../../source/cli/dist-tag.rst:74
+#: ../../source/cli/dist-tag.rst:76
 #, fuzzy
 msgid ":option:`npm dedupe`"
 msgstr "npm-publish"
 
 #: ../../source/cli/docs.rst:2
-msgid "npm-docs"
+#, fuzzy
+msgid "npm docs"
 msgstr "npm-docs"
 
 #: ../../source/cli/docs.rst:4
@@ -1447,7 +1475,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/doctor.rst:2
-msgid "npm-doctor"
+#, fuzzy
+msgid "npm doctor"
 msgstr "npm-doctor"
 
 #: ../../source/cli/doctor.rst:4
@@ -1582,7 +1611,8 @@ msgid ":option:`npm ping`"
 msgstr "npm-config"
 
 #: ../../source/cli/edit.rst:2
-msgid "npm-edit"
+#, fuzzy
+msgid "npm edit"
 msgstr "npm-edit"
 
 #: ../../source/cli/edit.rst:4
@@ -1623,7 +1653,8 @@ msgid ":option:`npm explore`"
 msgstr "npm-publish"
 
 #: ../../source/cli/explore.rst:2
-msgid "npm-explore"
+#, fuzzy
+msgid "npm explore"
 msgstr "npm-explore"
 
 #: ../../source/cli/explore.rst:11
@@ -1665,19 +1696,20 @@ msgstr ""
 msgid ":option:`npm edit`"
 msgstr "ping Ping npm registry"
 
-#: ../../source/cli/explore.rst:42 ../../source/cli/install.rst:394
+#: ../../source/cli/explore.rst:42 ../../source/cli/install.rst:466
 #, fuzzy
 msgid ":option:`npm rebuild`"
 msgstr "ping Ping npm registry"
 
-#: ../../source/cli/explore.rst:43 ../../source/cli/install.rst:396
-#: ../../source/cli/rebuild.rst:27
+#: ../../source/cli/explore.rst:43 ../../source/cli/install.rst:468
+#: ../../source/cli/rebuild.rst:29
 #, fuzzy
 msgid ":option:`npm build`"
 msgstr "npm-publish"
 
 #: ../../source/cli/help.rst:2
-msgid "npm-help"
+#, fuzzy
+msgid "npm help"
 msgstr "npm-help"
 
 #: ../../source/cli/help.rst:11
@@ -1723,7 +1755,8 @@ msgid ":option:`npm index`"
 msgstr "ping Ping npm registry"
 
 #: ../../source/cli/help-search.rst:2
-msgid "npm-help-search"
+#, fuzzy
+msgid "npm help-search"
 msgstr "npm-help-search"
 
 #: ../../source/cli/help-search.rst:11
@@ -1760,7 +1793,8 @@ msgid "If false, then help-search will just list out the help topics found."
 msgstr "If false, then help-search will just list out the help topics found."
 
 #: ../../source/cli/hook.rst:2
-msgid "npm-hook"
+#, fuzzy
+msgid "npm hook"
 msgstr "npm-hook"
 
 #: ../../source/cli/hook.rst:11
@@ -2042,7 +2076,7 @@ msgstr ":option:`shrinkwrap <npm shrinkwrap>` 锁定发布的依赖版本"
 
 #: ../../source/cli/index.rst:52
 msgid ":option:`star <npm star>` Mark your favorite packages"
-msgstr ":option:`star <npm star>` 标记您喜欢的包裹"
+msgstr ":option:`star <npm star>` 标记您喜欢的包"
 
 #: ../../source/cli/index.rst:53
 msgid ":option:`stars <npm stars>` View packages marked as favorites"
@@ -2171,7 +2205,8 @@ msgid ":doc:`../misc/semver` The semantic versioner for npm"
 msgstr ":doc:`../misc/semver`  npm 的语义版本"
 
 #: ../../source/cli/init.rst:2
-msgid "npm-init"
+#, fuzzy
+msgid "npm init"
 msgstr "npm-init"
 
 #: ../../source/cli/init.rst:4
@@ -2257,63 +2292,73 @@ msgid ":ref:`scope`"
 msgstr ""
 
 #: ../../source/cli/install.rst:2
-msgid "npm-install"
+#, fuzzy
+msgid "npm install"
 msgstr "npm-install"
 
 #: ../../source/cli/install.rst:11
-#, fuzzy
 msgid "Install a package"
 msgstr "安装包"
 
-#: ../../source/cli/install.rst:30 ../../source/cli/install.rst:34
-#, fuzzy
-msgid "npm install alias"
-msgstr "npm install sax"
-
-#: ../../source/cli/install.rst:40
+#: ../../source/cli/install.rst:26
 msgid ""
-"This command installs a package, and any packages that it depends on. If "
-"the package has a package-lock or shrinkwrap file, the installation of "
-"dependencies will be driven by that, with an :ref:`shrinkwrap.json` "
-"taking precedence if both files exist. See :ref:`package-lock.json` and "
-":option:`npm shrinkwrap`."
+"common options: [-P|--save-prod|-D|--save-dev|-O|--save-optional] [-E"
+"|--save-exact] [-B|--save-bundle] [--no-save] [--dry-run]"
 msgstr ""
 
-#: ../../source/cli/install.rst:44
+#: ../../source/cli/install.rst:30 ../../source/cli/install.rst:34
+msgid "npm install alias"
+msgstr "npm install 别号"
+
+#: ../../source/cli/install.rst:40
 #, fuzzy
+msgid ""
+"This command installs a package, and any packages that it depends on. If "
+"the package has a :ref:`package-locks` or :ref:`shrinkwrap` file, the "
+"installation of dependencies will be driven by that, with an "
+":ref:`shrinkwrap.json` taking precedence if both files exist. See :ref"
+":`package-lock.json` and :option:`npm shrinkwrap`."
+msgstr ""
+"此命令将安装程序包及其依赖的任何程序包。如果软件包有一个package-"
+"lock或shrinkwrap文件，依赖项的安装将由它驱动，如果两个文件都存在，则 :ref:`shrinkwrap.json` 优先。请参阅 "
+":ref:`package-lock.json` 和 :option:`npm shrinkwrap` 。"
+
+#: ../../source/cli/install.rst:44
 msgid "A **package** is:"
-msgstr "A package is:"
+msgstr "**包** 是:"
 
 #: ../../source/cli/install.rst:46
-msgid "a folder containing a program described by a package.json file"
-msgstr "a folder containing a program described by a package.json file"
+#, fuzzy
+msgid "a folder containing a program described by a :ref:`package.json` file"
+msgstr "包含package.json文件描述的程序的文件夹"
 
 #: ../../source/cli/install.rst:47
 msgid "a gzipped tarball containing (a)"
-msgstr "a gzipped tarball containing (a)"
+msgstr "包含(a)的压缩的tarball"
 
 #: ../../source/cli/install.rst:48
 msgid "a url that resolves to (b)"
-msgstr "a url that resolves to (b)"
+msgstr "一个解析为(b)的网址"
 
 #: ../../source/cli/install.rst:49
+#, fuzzy
 msgid ""
-"a <name>@<version> that is published on the registry (see npm-registry) "
-"with (c)"
-msgstr ""
+"a <name>@<version> that is published on the registry (see "
+":ref:`registry`) with (c)"
+msgstr "在注册表上发布的 <name>@<version> (参见npm-registry)(c)"
 
 #: ../../source/cli/install.rst:50
-msgid "a <name>@<tag> (see npm-dist-tag) that points to (d)"
-msgstr "a <name>@<tag> (see npm-dist-tag) that points to (d)"
+#, fuzzy
+msgid "a <name>@<tag> (see :ref:`dist-tag`) that points to (d)"
+msgstr "<name>@<tag> (参见npm-dist-tag)指向(d)"
 
 #: ../../source/cli/install.rst:51
 msgid "a <name> that has a “latest” tag satisfying (e)"
-msgstr "a <name> that has a “latest” tag satisfying (e)"
+msgstr "满足(e)的 “最新” 标签的 <name>"
 
 #: ../../source/cli/install.rst:52
-#, fuzzy
 msgid "a <git remote url> that resolves to (a)"
-msgstr "a url that resolves to (b)"
+msgstr "一个 <git remote url> ，解析为(a)"
 
 #: ../../source/cli/install.rst:54
 msgid ""
@@ -2322,580 +2367,597 @@ msgid ""
 "perhaps if you also want to be able to easily install it elsewhere after "
 "packing it up into a tarball (b)."
 msgstr ""
+"即使您从未发布过您的软件包，如果您只想编写一个节点程序(a)，或者如果您还希望能够在打包之后轻松地将其安装在其他地方，那么使用npm仍然可以获得很多好处。进入"
+" tarball(b)。"
 
-#: ../../source/cli/install.rst:57
-msgid "npm install (in package directory, no arguments):"
-msgstr "npm install (in package directory, no arguments):"
-
-#: ../../source/cli/install.rst:59
+#: ../../source/cli/install.rst:60
 msgid "Install the dependencies in the local node_modules folder."
-msgstr "Install the dependencies in the local node_modules folder."
+msgstr "在本地 node_modules 文件夹中安装依赖项。"
 
-#: ../../source/cli/install.rst:61
+#: ../../source/cli/install.rst:62
+#, fuzzy
 msgid ""
-"In global mode (ie, with -g or --global appended to the command), it "
-"installs the current package context (ie, the current working directory) "
-"as a global package."
-msgstr ""
-
-#: ../../source/cli/install.rst:63
-msgid ""
-"By default, npm install will install all modules listed as dependencies "
-"in package.json."
-msgstr ""
+"In global mode (ie, with :option:`-g` or :option:`--global` appended to "
+"the command), it installs the current package context (ie, the current "
+"working directory) as a global package."
+msgstr "在全局模式下(即，在命令后附加 -g 或 --global)，它将当前包上下文(即当前工作目录)安装为全局包。"
 
 #: ../../source/cli/install.rst:65
 msgid ""
-"With the --production flag (or when the NODE_ENV environment variable is "
-"set to production), npm will not install modules listed in "
-"devDependencies."
-msgstr ""
+"By default, npm install will install all modules listed as dependencies "
+"in package.json."
+msgstr "默认情况下，npm install将在package.json中安装列为依赖项的所有模块。"
 
 #: ../../source/cli/install.rst:67
+#, fuzzy
 msgid ""
-"NOTE: The --production flag has no particular meaning when adding a "
-"dependency to a project."
+"With the :option:`--production` flag (or when the NODE_ENV environment "
+"variable is set to production), npm will not install modules listed in "
+"devDependencies."
 msgstr ""
+"使用--"
+"production标志(或当NODE_ENV环境变量设置为production时)，npm将不会安装devDependencies中列出的模块。"
 
 #: ../../source/cli/install.rst:70
-msgid "npm install <folder>:"
-msgstr "npm install <folder>:"
-
-#: ../../source/cli/install.rst:72
+#, fuzzy
 msgid ""
-"Install the package in the directory as a symlink in the current project."
-" Its dependencies will be installed before it’s linked. If <folder> sits "
-"inside the root of your project, its dependencies may be hoisted to the "
-"toplevel node_modules as they would for other types of dependencies."
-msgstr ""
+"The :option:`--production` flag has no particular meaning when adding a "
+"dependency to a project."
+msgstr "将依赖项添加到项目时， -  production标志没有特别的意义。"
+
+#: ../../source/cli/install.rst:74
+msgid "Install the package in the directory as a symlink in the current project."
+msgstr "将包作为当前项目中的符号链接安装在目录中。"
 
 #: ../../source/cli/install.rst:75
-msgid "npm install <tarball file>:"
-msgstr "npm install <tarball file>:"
+msgid "Its dependencies will be installed before it’s linked."
+msgstr "它的依赖项将在链接之前安装。"
+
+#: ../../source/cli/install.rst:76
+msgid "If <folder> sits inside the root of your project,"
+msgstr "如果<folder>位于项目的根目录中，"
 
 #: ../../source/cli/install.rst:77
 msgid ""
-"Install a package that is sitting on the filesystem. Note: if you just "
-"want to link a dev directory into your npm root, you can do this more "
-"easily by using npm link."
-msgstr ""
-
-#: ../../source/cli/install.rst:79
-msgid "Tarball requirements:"
-msgstr "Tarball requirements:"
+"its dependencies may be hoisted to the toplevel node_modules as they "
+"would for other types of dependencies."
+msgstr "它的依赖关系可以像其他类型的依赖关系一样被提升到顶层node_modules。"
 
 #: ../../source/cli/install.rst:81
+msgid "Install a package that is sitting on the filesystem."
+msgstr "安装位于文件系统上的软件包。"
+
+#: ../../source/cli/install.rst:83
 msgid ""
-"The filename must use .tar, .tar.gz, or .tgz as the extension. The "
-"package contents should reside in a subfolder inside the tarball (usually"
-" it is called package/). npm strips one directory layer when installing "
-"the package (an equivalent of tar x --strip-components=1 is run). The "
-"package must contain a package.json file with name and version "
-"properties. Example:"
+"if you just want to link a dev directory into your npm root, you can do "
+"this more easily by using npm link."
+msgstr "如果您只想将dev目录链接到npm根目录，则可以使用npm链接更轻松地完成此操作。"
+
+#: ../../source/cli/install.rst:85
+msgid "Tarball requirements:"
+msgstr "Tarball要求:"
+
+#: ../../source/cli/install.rst:87
+msgid "The filename must use .tar, .tar.gz, or .tgz as the extension."
+msgstr "文件名必须使用.tar，.tar.gz或.tgz作为扩展名。"
+
+#: ../../source/cli/install.rst:88
+msgid ""
+"The package contents should reside in a subfolder inside the tarball "
+"(usually it is called package/). npm strips one directory layer when "
+"installing the package (an equivalent of ``tar x --strip-components=1`` "
+"is run)."
 msgstr ""
 
-#: ../../source/cli/install.rst:91
+#: ../../source/cli/install.rst:89
 msgid ""
-"Fetch the tarball url, and then install it. In order to distinguish "
-"between this and other options, the argument must start with “http://” or"
-" “https://”"
+"The package must contain a package.json file with name and version "
+"properties."
 msgstr ""
 
-#: ../../source/cli/install.rst:93 ../../source/cli/install.rst:104
-#: ../../source/cli/install.rst:169 ../../source/cli/install.rst:181
-#: ../../source/cli/install.rst:195 ../../source/cli/install.rst:263
-#: ../../source/cli/install.rst:277 ../../source/cli/install.rst:291
-#: ../../source/cli/uninstall.rst:24
-msgid "Example:"
+#: ../../source/cli/install.rst
+#, fuzzy
+msgid "Example"
 msgstr "Example:"
 
-#: ../../source/cli/install.rst:100
+#: ../../source/cli/install.rst:98
 msgid ""
-"Do a <name>@<tag> install, where <tag> is the “tag” config. (See npm-"
-"config. The config’s default value is latest.)"
+"Fetch the tarball url, and then install it. In order to distinguish "
+"between this and other options, the argument must start with *http://* or"
+" *https://*"
 msgstr ""
 
-#: ../../source/cli/install.rst:102
+#: ../../source/cli/install.rst:107
+msgid ""
+"Do a <name>@<tag> install, where <tag> is the “tag” config. (See "
+":option:`config`. The config’s default value is latest.)"
+msgstr ""
+
+#: ../../source/cli/install.rst:109
 msgid ""
 "In most cases, this will install the version of the modules tagged as "
 "latest on the npm registry."
 msgstr ""
 
-#: ../../source/cli/install.rst:110
+#: ../../source/cli/install.rst:117
 msgid ""
 "npm install saves any specified packages into dependencies by default. "
 "Additionally, you can control where and how they get saved with some "
 "additional flags:"
 msgstr ""
 
-#: ../../source/cli/install.rst:115
+#: ../../source/cli/install.rst:123
 msgid ""
-"Package will appear in your dependencies. This is the default unless -D "
-"or -O are present."
+"Package will appear in your dependencies. This is the default unless "
+":option:`-D` or :option:`-O` are present."
 msgstr ""
 
-#: ../../source/cli/install.rst:120
+#: ../../source/cli/install.rst:128
 #, fuzzy
 msgid "Package will appear in your devDependencies."
 msgstr "-D, --save-dev: Package will appear in your devDependencies."
 
-#: ../../source/cli/install.rst:125
+#: ../../source/cli/install.rst:133
 #, fuzzy
 msgid "Package will appear in your optionalDependencies."
 msgstr "-O, --save-optional: Package will appear in your optionalDependencies."
 
-#: ../../source/cli/install.rst:129
+#: ../../source/cli/install.rst:137
 #, fuzzy
 msgid "Prevents saving to dependencies."
 msgstr "--no-save: Prevents saving to dependencies."
 
-#: ../../source/cli/install.rst:131
+#: ../../source/cli/install.rst:139
 msgid ""
 "When using any of the above options to save dependencies to your "
-"package.json, there are two additional, optional flags:"
+":ref:`package.json`, there are two additional, optional flags:"
 msgstr ""
 
-#: ../../source/cli/install.rst:136
+#: ../../source/cli/install.rst:145
 msgid ""
 "Saved dependencies will be configured with an exact version rather than "
 "using npm’s default semver range operator."
 msgstr ""
 
-#: ../../source/cli/install.rst:141
+#: ../../source/cli/install.rst:150
 msgid "Saved dependencies will also be added to your bundleDependencies list."
 msgstr ""
 
-#: ../../source/cli/install.rst:143
+#: ../../source/cli/install.rst:152
 msgid ""
-"Further, if you have an npm-shrinkwrap.json or package-lock.json then it "
-"will be updated as well."
+"Further, if you have an :ref:`shrinkwrap.json` or :ref:`package-"
+"lock.json` then it will be updated as well."
 msgstr ""
 
-#: ../../source/cli/install.rst:145
+#: ../../source/cli/install.rst:154
 msgid ""
-"<scope> is optional. The package will be downloaded from the registry "
-"associated with the specified scope. If no registry is associated with "
-"the given scope the default registry is assumed. See npm-scope."
+"`<scope>` is optional. The package will be downloaded from the registry "
+"associated with the specified scope."
 msgstr ""
 
-#: ../../source/cli/install.rst:147
+#: ../../source/cli/install.rst:156
 msgid ""
-"Note: if you do not include the @-symbol on your scope name, npm will "
+"If no registry is associated with the given scope the default registry is"
+" assumed. See :ref:`scope`."
+msgstr ""
+
+#: ../../source/cli/install.rst:159
+msgid ""
+"if you do not include the ``@-symbol`` on your scope name, npm will "
 "interpret this as a GitHub repository instead, see below. Scopes names "
 "must also be followed by a slash."
 msgstr ""
 
-#: ../../source/cli/install.rst:149 ../../source/cli/install.rst:227
-#: ../../source/cli/install.rst:249 ../../source/cli/uninstall.rst:43
-msgid "Examples:"
+#: ../../source/cli/install.rst
+#, fuzzy
+msgid "Examples"
 msgstr "Examples:"
 
-#: ../../source/cli/install.rst:162
+#: ../../source/cli/install.rst:176
 msgid ""
-"Note: If there is a file or folder named <name> in the current working "
+"If there is a file or folder named ``<name>`` in the current working "
 "directory, then it will try to install that, and only try to fetch the "
 "package by name if it is not valid."
 msgstr ""
 
-#: ../../source/cli/install.rst:165
-msgid "npm install [<@scope>/]<name>@<tag>:"
-msgstr "npm install [<@scope>/]<name>@<tag>:"
-
-#: ../../source/cli/install.rst:167
+#: ../../source/cli/install.rst:181
 msgid ""
 "Install the version of the package that is referenced by the specified "
-"tag. If the tag does not exist in the registry data for that package, "
-"then this will fail."
+"tag."
 msgstr ""
 
-#: ../../source/cli/install.rst:177
-msgid "npm install [<@scope>/]<name>@<version>:"
-msgstr "npm install [<@scope>/]<name>@<version>:"
-
-#: ../../source/cli/install.rst:179
+#: ../../source/cli/install.rst:182
 msgid ""
-"Install the specified version of the package. This will fail if the "
-"version has not been published to the registry."
+"If the tag does not exist in the registry data for that package, then "
+"this will fail."
 msgstr ""
 
-#: ../../source/cli/install.rst:189
-msgid "npm install [<@scope>/]<name>@<version range>:"
-msgstr "npm install [<@scope>/]<name>@<version range>:"
+#: ../../source/cli/install.rst:193
+#, fuzzy
+msgid "Install the specified version of the package."
+msgstr "deprecate Deprecate a version of a package"
 
-#: ../../source/cli/install.rst:191
+#: ../../source/cli/install.rst:194
+msgid "This will fail if the version has not been published to the registry."
+msgstr ""
+
+#: ../../source/cli/install.rst:205
+msgid "Install a version of the package matching the specified version range."
+msgstr ""
+
+#: ../../source/cli/install.rst:206
 msgid ""
-"Install a version of the package matching the specified version range. "
 "This will follow the same rules for resolving dependencies described in "
 "package.json."
 msgstr ""
 
-#: ../../source/cli/install.rst:193
+#: ../../source/cli/install.rst:208
 msgid ""
 "Note that most version ranges must be put in quotes so that your shell "
 "will treat it as a single argument."
 msgstr ""
 
-#: ../../source/cli/install.rst:203
-msgid "npm install <git remote url>:"
-msgstr "npm install <git remote url>:"
-
-#: ../../source/cli/install.rst:205
+#: ../../source/cli/install.rst:219
 msgid ""
 "Installs the package from the hosted git provider, cloning it with git. "
 "For a full git remote url, only that URL will be attempted."
 msgstr ""
 
-#: ../../source/cli/install.rst:207
+#: ../../source/cli/install.rst:227
+#, fuzzy
 msgid ""
-"<protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path"
-">[#<commit-ish> | #semver:<semver>]"
-msgstr ""
-
-#: ../../source/cli/install.rst:208
-msgid "<protocol> is one of git, git+ssh, git+http, git+https, or git+file."
+"``<protocol>`` is one of *git*, *git+ssh*, *git+http*, *git+https*, or "
+"*git+file*."
 msgstr "<protocol> is one of git, git+ssh, git+http, git+https, or git+file."
 
-#: ../../source/cli/install.rst:210
+#: ../../source/cli/install.rst:229
 msgid ""
-"If #<commit-ish> is provided, it will be used to clone exactly that "
-"commit. If the commit-ish has the format #semver:<semver>, <semver> can "
-"be any valid semver range or exact version, and npm will look for any "
-"tags or refs matching that range in the remote repository, much as it "
-"would for a registry dependency. If neither #<commit-ish> or "
-"#semver:<semver> is specified, then the default branch of the repository "
-"is used."
+"If ``#<commit-ish>`` is provided, it will be used to clone exactly that "
+"commit."
 msgstr ""
 
-#: ../../source/cli/install.rst:212
+#: ../../source/cli/install.rst:231
+msgid ""
+"If the commit-ish has the format ``#semver:<semver>``, ``<semver>`` can "
+"be any valid semver range or exact version, and npm will look for any "
+"tags or refs matching that range in the remote repository, much as it "
+"would for a registry dependency."
+msgstr ""
+
+#: ../../source/cli/install.rst:233
+msgid ""
+"If neither ``#<commit-ish>`` or ``#semver:<semver>`` is specified, then "
+"the default branch of the repository is used."
+msgstr ""
+
+#: ../../source/cli/install.rst:235
 msgid ""
 "If the repository makes use of submodules, those submodules will be "
 "cloned as well."
 msgstr ""
 
-#: ../../source/cli/install.rst:214
+#: ../../source/cli/install.rst:237
 msgid ""
 "If the package being installed contains a prepare script, its "
 "dependencies and devDependencies will be installed, and the prepare "
 "script will be run, before the package is packaged and installed."
 msgstr ""
 
-#: ../../source/cli/install.rst:216
+#: ../../source/cli/install.rst:239
 msgid ""
 "The following git environment variables are recognized by npm and will be"
 " added to the environment when running git:"
 msgstr ""
 
-#: ../../source/cli/install.rst:218
-msgid ""
-"GIT_ASKPASS GIT_EXEC_PATH GIT_PROXY_COMMAND GIT_SSH GIT_SSH_COMMAND "
-"GIT_SSL_CAINFO GIT_SSL_NO_VERIFY See the git man page for details."
+#: ../../source/cli/install.rst:241
+msgid "GIT_ASKPASS"
 msgstr ""
 
-#: ../../source/cli/install.rst:238
-#, fuzzy
-msgid "npm install <githubname>/<githubrepo>[#<commit-ish>]:"
-msgstr "npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:"
-
-#: ../../source/cli/install.rst:241
-#, fuzzy
-msgid "npm install github:<githubname>/<githubrepo>[#<commit-ish>]:"
-msgstr "npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:"
+#: ../../source/cli/install.rst:242
+msgid "GIT_EXEC_PATH"
+msgstr ""
 
 #: ../../source/cli/install.rst:243
+msgid "GIT_PROXY_COMMAND"
+msgstr ""
+
+#: ../../source/cli/install.rst:244
+msgid "GIT_SSH"
+msgstr ""
+
+#: ../../source/cli/install.rst:245
+msgid "GIT_SSH_COMMAND"
+msgstr ""
+
+#: ../../source/cli/install.rst:246
+msgid "GIT_SSL_CAINFO"
+msgstr ""
+
+#: ../../source/cli/install.rst:247
+msgid "GIT_SSL_NO_VERIFY"
+msgstr ""
+
+#: ../../source/cli/install.rst:249
+msgid "See the git man page for details."
+msgstr ""
+
+#: ../../source/cli/install.rst:265
 msgid ""
 "Install the package at https://github.com/githubname/githubrepo by "
 "attempting to clone it using git."
 msgstr ""
 
-#: ../../source/cli/install.rst:245 ../../source/cli/install.rst:273
-#: ../../source/cli/install.rst:287
+#: ../../source/cli/install.rst:267
 msgid ""
-"If #<commit-ish> is provided, it will be used to clone exactly that "
-"commit. If the commit-ish has the format #semver:<semver>, <semver> can "
-"be any valid semver range or exact version, and npm will look for any "
-"tags or refs matching that range in the remote repository, much as it "
-"would for a registry dependency. If neither #<commit-ish> or "
-"#semver:<semver> is specified, then master is used."
+"If ``#<commit-ish>`` is provided, it will be used to clone exactly that "
+"commit. If the commit-ish has the format #semver:<semver>, ``<semver>`` "
+"can be any valid semver range or exact version, and npm will look for any"
+" tags or refs matching that range in the remote repository, much as it "
+"would for a registry dependency. If neither ``#<commit-ish>`` or "
+"``#semver:<semver>`` is specified, then master is used."
 msgstr ""
 
-#: ../../source/cli/install.rst:247 ../../source/cli/install.rst:261
-#: ../../source/cli/install.rst:275 ../../source/cli/install.rst:289
+#: ../../source/cli/install.rst:269 ../../source/cli/install.rst:282
+#: ../../source/cli/install.rst:296 ../../source/cli/install.rst:310
 msgid ""
 "As with regular git dependencies, dependencies and devDependencies will "
 "be installed if the package has a prepare script, before the package is "
 "done installing."
 msgstr ""
 
-#: ../../source/cli/install.rst:257
-msgid "npm install gist:[<githubname>/]<gistID>[#<commit-ish>|#semver:<semver>]:"
-msgstr "npm install gist:[<githubname>/]<gistID>[#<commit-ish>|#semver:<semver>]:"
-
-#: ../../source/cli/install.rst:259
+#: ../../source/cli/install.rst:280
 msgid ""
 "Install the package at https://gist.github.com/gistID by attempting to "
 "clone it using git. The GitHub username associated with the gist is "
 "optional and will not be saved in package.json."
 msgstr ""
 
-#: ../../source/cli/install.rst:269
-msgid "npm install bitbucket:<bitbucketname>/<bitbucketrepo>[#<commit-ish>]:"
-msgstr "npm install bitbucket:<bitbucketname>/<bitbucketrepo>[#<commit-ish>]:"
-
-#: ../../source/cli/install.rst:271
+#: ../../source/cli/install.rst:292
 msgid ""
 "Install the package at https://bitbucket.org/bitbucketname/bitbucketrepo "
 "by attempting to clone it using git."
 msgstr ""
 
-#: ../../source/cli/install.rst:283
-msgid "npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:"
-msgstr "npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:"
+#: ../../source/cli/install.rst:294 ../../source/cli/install.rst:308
+msgid ""
+"If ``#<commit-ish>`` is provided, it will be used to clone exactly that "
+"commit. If the commit-ish has the format ``#semver:<semver>``, "
+"``<semver>`` can be any valid semver range or exact version, and npm will"
+" look for any tags or refs matching that range in the remote repository, "
+"much as it would for a registry dependency. If neither ``#<commit-ish>`` "
+"or ``#semver:<semver>`` is specified, then master is used."
+msgstr ""
 
-#: ../../source/cli/install.rst:285
+#: ../../source/cli/install.rst:306
 msgid ""
 "Install the package at https://gitlab.com/gitlabname/gitlabrepo by "
 "attempting to clone it using git."
 msgstr ""
 
-#: ../../source/cli/install.rst:298
-msgid ""
-"You may combine multiple arguments, and even multiple types of arguments."
-" For example:"
+#: ../../source/cli/install.rst:319
+msgid "You may combine multiple arguments, and even multiple types of arguments."
 msgstr ""
 
-#: ../../source/cli/install.rst:304
+#: ../../source/cli/install.rst:321 ../../source/cli/link.rst:39
+msgid "For example:"
+msgstr "For example:"
+
+#: ../../source/cli/install.rst:329
 msgid ""
-"The --tag argument will apply to all of the specified install targets. If"
-" a tag with the given name exists, the tagged version is preferred over "
-"newer versions."
+"The argument will apply to all of the specified install targets. If a tag"
+" with the given name exists, the tagged version is preferred over newer "
+"versions."
 msgstr ""
 
-#: ../../source/cli/install.rst:306
+#: ../../source/cli/install.rst:334
 msgid ""
-"The --dry-run argument will report in the usual way what the install "
-"would have done without actually installing anything."
+"The argument will report in the usual way what the install would have "
+"done without actually installing anything."
 msgstr ""
 
-#: ../../source/cli/install.rst:308
+#: ../../source/cli/install.rst:338
 msgid ""
-"The --package-lock-only argument will only update the package-lock.json, "
-"instead of checking node_modules and downloading dependencies."
+"The argument will only update the :ref:`package-lock.json`, instead of "
+"checking node_modules and downloading dependencies."
 msgstr ""
 
-#: ../../source/cli/install.rst:310
+#: ../../source/cli/install.rst:343
 msgid ""
-"The -f or --force argument will force npm to fetch remote resources even "
-"if a local copy exists on disk."
+"The argument will force npm to fetch remote resources even if a local "
+"copy exists on disk."
 msgstr ""
 
-#: ../../source/cli/install.rst:312
+#: ../../source/cli/install.rst:352
 msgid ""
-"npm install sax --force The -g or --global argument will cause npm to "
-"install the package globally rather than locally. See npm-folders."
+"The -g or --global argument will cause npm to install the package "
+"globally rather than locally. See :ref:`folders`."
 msgstr ""
 
-#: ../../source/cli/install.rst:315
+#: ../../source/cli/install.rst:356
 msgid ""
-"The --global-style argument will cause npm to install the package into "
-"your local node_modules folder with the same layout it uses with the "
-"global node_modules folder. Only your direct dependencies will show in "
+"The argument will cause npm to install the package into your local "
+"node_modules folder with the same layout it uses with the global "
+"node_modules folder. Only your direct dependencies will show in "
 "node_modules and everything they depend on will be flattened in their "
 "node_modules folders. This obviously will eliminate some deduping."
 msgstr ""
 
-#: ../../source/cli/install.rst:317
+#: ../../source/cli/install.rst:362
 msgid ""
-"The --ignore-scripts argument will cause npm to not execute any scripts "
-"defined in the package.json. See npm-scripts."
+"The argument will cause npm to not execute any scripts defined in the "
+"package.json. See :ref:`scripts`."
 msgstr ""
 
-#: ../../source/cli/install.rst:319
+#: ../../source/cli/install.rst:366
 msgid ""
-"The --legacy-bundling argument will cause npm to install the package such"
-" that versions of npm prior to 1.4, such as the one included with node "
-"0.8, can install the package. This eliminates all automatic deduping."
+"The argument will cause npm to install the package such that versions of "
+"npm prior to 1.4, such as the one included with node 0.8, can install the"
+" package. This eliminates all automatic deduping."
 msgstr ""
 
-#: ../../source/cli/install.rst:321
+#: ../../source/cli/install.rst:370
 msgid ""
-"The --link argument will cause npm to link global installs into the local"
-" space in some cases."
+"The argument will cause npm to link global installs into the local space "
+"in some cases."
 msgstr ""
 
-#: ../../source/cli/install.rst:323
+#: ../../source/cli/install.rst:374
 msgid ""
-"The --no-bin-links argument will prevent npm from creating symlinks for "
-"any binaries the package might contain."
-msgstr ""
-
-#: ../../source/cli/install.rst:325
-msgid ""
-"The --no-optional argument will prevent optional dependencies from being "
-"installed."
-msgstr ""
-
-#: ../../source/cli/install.rst:327
-msgid ""
-"The --no-shrinkwrap argument, which will ignore an available package lock"
-" or shrinkwrap file and use the package.json instead."
-msgstr ""
-
-#: ../../source/cli/install.rst:329
-msgid ""
-"The --no-package-lock argument will prevent npm from creating a package-"
-"lock.json file. When running with package-lock’s disabled npm will not "
-"automatically prune your node modules when installing."
-msgstr ""
-
-#: ../../source/cli/install.rst:331
-msgid ""
-"The --nodedir=/path/to/node/source argument will allow npm to find the "
-"node source code so that npm can compile native modules."
-msgstr ""
-
-#: ../../source/cli/install.rst:333
-msgid ""
-"The --only={prod[uction]|dev[elopment]} argument will cause either only "
-"devDependencies or only non-devDependencies to be installed regardless of"
-" the NODE_ENV."
-msgstr ""
-
-#: ../../source/cli/install.rst:335
-msgid ""
-"The --no-audit argument can be used to disable sending of audit reports "
-"to the configured registries. See npm-audit for details on what is sent."
-msgstr ""
-
-#: ../../source/cli/install.rst:337
-msgid ""
-"See npm-config. Many of the configuration params have some effect on "
-"installation, since that’s most of what npm does."
-msgstr ""
-
-#: ../../source/cli/install.rst:340
-msgid "ALGORITHM"
-msgstr ""
-
-#: ../../source/cli/install.rst:342
-#, fuzzy
-msgid "To install a package, npm uses the following algorithm:"
-msgstr "ALGORITHM To install a package, npm uses the following algorithm:"
-
-#: ../../source/cli/install.rst:344
-msgid ""
-"load the existing node_modules tree from disk clone the tree fetch the "
-"package.json and assorted metadata and add it to the clone walk the clone"
-" and add any missing dependencies"
-msgstr ""
-
-#: ../../source/cli/install.rst:348
-msgid ""
-"dependencies will be added as close to the top as is possible without "
-"breaking any other modules"
-msgstr ""
-
-#: ../../source/cli/install.rst:350
-msgid ""
-"compare the original tree with the cloned tree and make a list of actions"
-" to take to convert one to the other execute all of the actions, deepest "
-"first"
-msgstr ""
-
-#: ../../source/cli/install.rst:353
-msgid "kinds of actions are install, update, remove and move"
-msgstr "kinds of actions are install, update, remove and move"
-
-#: ../../source/cli/install.rst:354
-msgid ""
-"For this package{dep} structure: A{B,C}, B{C}, C{D}, this algorithm "
-"produces::"
-msgstr ""
-
-#: ../../source/cli/install.rst:361
-msgid ""
-"That is, the dependency from B to C is satisfied by the fact that A "
-"already caused C to be installed at a higher level. D is still installed "
-"at the top level because nothing conflicts with it."
-msgstr ""
-
-#: ../../source/cli/install.rst:363
-msgid "For A{B,C}, B{C,D@1}, C{D@2}, this algorithm produces::"
-msgstr "For A{B,C}, B{C,D@1}, C{D@2}, this algorithm produces::"
-
-#: ../../source/cli/install.rst:371
-msgid ""
-"Because B’s D@1 will be installed in the top level, C now has to install "
-"D@2 privately for itself. This algorithm is deterministic, but different "
-"trees may be produced if two dependencies are requested for installation "
-"in a different order."
-msgstr ""
-
-#: ../../source/cli/install.rst:373
-msgid ""
-"See npm-folders for a more detailed description of the specific folder "
-"structures that npm creates."
-msgstr ""
-
-#: ../../source/cli/install.rst:376
-msgid "Limitations of npm’s Install Algorithm"
+"The argument will prevent npm from creating symlinks for any binaries the"
+" package might contain."
 msgstr ""
 
 #: ../../source/cli/install.rst:378
-msgid ""
-"npm will refuse to install any package with an identical name to the "
-"current package. This can be overridden with the --force flag, but in "
-"most cases can simply be addressed by changing the local package name."
-msgstr ""
-
-#: ../../source/cli/install.rst:380
-msgid ""
-"There are some very rare and pathological edge-cases where a cycle can "
-"cause npm to try to install a never-ending tree of packages. Here is the "
-"simplest case:"
+msgid "The argument will prevent optional dependencies from being installed."
 msgstr ""
 
 #: ../../source/cli/install.rst:382
 msgid ""
-"A -> B -> A' -> B' -> A -> B -> A' -> B' -> A -> ... where A is some "
-"version of a package, and A' is a different version of the same package. "
-"Because B depends on a different version of A than the one that is "
-"already in the tree, it must install a separate copy. The same is true of"
-" A', which must install B'. Because B' depends on the original version of"
-" A, which has been overridden, the cycle falls into infinite regress."
+"The argument, which will ignore an available package lock or shrinkwrap "
+"file and use the package.json instead."
 msgstr ""
 
-#: ../../source/cli/install.rst:385
+#: ../../source/cli/install.rst:386
 msgid ""
-"To avoid this situation, npm flat-out refuses to install any name@version"
-" that is already present anywhere in the tree of package folder "
-"ancestors. A more correct, but more complex, solution would be to symlink"
-" the existing version into the new location. If this ever affects a real "
-"use-case, it will be investigated."
+"The argument will prevent npm from creating a :ref:`package-lock.json` "
+"file. When running with package-lock’s disabled npm will not "
+"automatically prune your node modules when installing."
 msgstr ""
 
-#: ../../source/cli/install.rst:392
+#: ../../source/cli/install.rst:390
+msgid ""
+"The argument will allow npm to find the node source code so that npm can "
+"compile native modules."
+msgstr ""
+
+#: ../../source/cli/install.rst:394
+msgid ""
+"The argument will cause either only devDependencies or only *non-"
+"devDependencies* to be installed regardless of the NODE_ENV."
+msgstr ""
+
+#: ../../source/cli/install.rst:398
+msgid ""
+"The --no-audit argument can be used to disable sending of audit reports "
+"to the configured registries. See :ref:`audit` for details on what is "
+"sent."
+msgstr ""
+
+#: ../../source/cli/install.rst:400
+msgid ""
+"See :ref:`config`. Many of the configuration params have some effect on "
+"installation, since that’s most of what npm does."
+msgstr ""
+
+#: ../../source/cli/install.rst:403
+msgid "ALGORITHM"
+msgstr "算法"
+
+#: ../../source/cli/install.rst:405
+msgid "To install a package, npm uses the following algorithm::"
+msgstr "要安装软件包，npm使用以下算法::"
+
+#: ../../source/cli/install.rst:418
+msgid ""
+"For this package{dep} structure: A{B,C}, B{C}, C{D}, this algorithm "
+"produces::"
+msgstr "对于此包{dep}结构:A {B，C}，B {C}，C {D}，此算法生成::"
+
+#: ../../source/cli/install.rst:425
+msgid ""
+"That is, the dependency from B to C is satisfied by the fact that A "
+"already caused C to be installed at a higher level. D is still installed "
+"at the top level because nothing conflicts with it."
+msgstr "也就是说，A已经导致C安装在更高级别的事实满足了从B到C的依赖性。 D仍然安装在顶层，因为没有任何冲突。"
+
+#: ../../source/cli/install.rst:427
+msgid "For A{B,C}, B{C,D@1}, C{D@2}, this algorithm produces::"
+msgstr "对于A {B，C}，B {C，D @ 1}，C {D @ 2}，该算法产生::"
+
+#: ../../source/cli/install.rst:435
+#, fuzzy
+msgid ""
+"Because B’s D@1 will be installed in the top level, C now has to install "
+"``D@2`` privately for itself. This algorithm is deterministic, but "
+"different trees may be produced if two dependencies are requested for "
+"installation in a different order."
+msgstr "因为B的D @ 1将安装在顶层，所以C现在必须私下安装D @ 2。该算法是确定性的，但是如果请求以不同顺序安装两个依赖性，则可以产生不同的树。"
+
+#: ../../source/cli/install.rst:437
+#, fuzzy
+msgid ""
+"See :ref:`folders` for a more detailed description of the specific folder"
+" structures that npm creates."
+msgstr "有关npm创建的特定文件夹结构的更详细说明，请参阅npm-folders。"
+
+#: ../../source/cli/install.rst:440
+msgid "Limitations of npm’s Install Algorithm"
+msgstr "npm安装算法的局限性"
+
+#: ../../source/cli/install.rst:442
+#, fuzzy
+msgid ""
+"npm will refuse to install any package with an identical name to the "
+"current package. This can be overridden with the :option:`--force` flag, "
+"but in most cases can simply be addressed by changing the local package "
+"name."
+msgstr "npm将拒绝安装任何与当前包名称相同的包。这可以使用--force标志覆盖，但在大多数情况下可以通过更改本地包名称来解决。"
+
+#: ../../source/cli/install.rst:444
+msgid ""
+"There are some very rare and pathological edge-cases where a cycle can "
+"cause npm to try to install a never-ending tree of packages. Here is the "
+"simplest case::"
+msgstr ""
+
+#: ../../source/cli/install.rst:449
+msgid ""
+"where A is some version of a package, and A' is a different version of "
+"the same package. Because B depends on a different version of A than the "
+"one that is already in the tree, it must install a separate copy. The "
+"same is true of A', which must install B'. Because B' depends on the "
+"original version of A, which has been overridden, the cycle falls into "
+"infinite regress."
+msgstr ""
+
+#: ../../source/cli/install.rst:455
+msgid ""
+"To avoid this situation, ``npm flat-out`` refuses to install any "
+"``name@version`` that is already present anywhere in the tree of package "
+"folder ancestors. A more correct, but more complex, solution would be to "
+"symlink the existing version into the new location. If this ever affects "
+"a real use-case, it will be investigated."
+msgstr ""
+
+#: ../../source/cli/install.rst:464
 #, fuzzy
 msgid ":option:`npm audit`"
 msgstr "npm-config"
 
-#: ../../source/cli/install.rst:401 ../../source/cli/outdated.rst:83
+#: ../../source/cli/install.rst:467 ../../source/cli/shrinkwrap.rst:32
+#, fuzzy
+msgid ":ref:`scripts`"
+msgstr "npm-run-script"
+
+#: ../../source/cli/install.rst:473 ../../source/cli/outdated.rst:83
 #: ../../source/cli/publish.rst:53
 #, fuzzy
 msgid ":option:`npm dist-tag`"
 msgstr "ping Ping npm registry"
 
-#: ../../source/cli/install.rst:402 ../../source/cli/prune.rst:37
+#: ../../source/cli/install.rst:474 ../../source/cli/prune.rst:37
 #, fuzzy
 msgid ":option:`npm uninstall`"
 msgstr "ping Ping npm registry"
 
-#: ../../source/cli/install.rst:403 ../../source/cli/update.rst:106
+#: ../../source/cli/install.rst:475 ../../source/cli/update.rst:112
 #, fuzzy
 msgid ":option:`npm shrinkwrap`"
 msgstr "ping Ping npm registry"
 
 #: ../../source/cli/install-ci-test.rst:2
-msgid "npm-install-ci-test"
+#, fuzzy
+msgid "npm install-ci-test"
 msgstr "npm-install-ci-test"
 
 #: ../../source/cli/install-ci-test.rst:11
@@ -2903,20 +2965,21 @@ msgstr "npm-install-ci-test"
 msgid "Install a project with a clean slate and run tests"
 msgstr "使用干净的平板安装项目并运行测试"
 
-#: ../../source/cli/install-ci-test.rst:17
-msgid "alias: npm cit"
-msgstr "alias: npm cit"
+#: ../../source/cli/install-ci-test.rst:19
+#, fuzzy
+msgid "install-ci-test alias"
+msgstr "npm-install-ci-test"
 
-#: ../../source/cli/install-ci-test.rst:22
+#: ../../source/cli/install-ci-test.rst:24
 msgid "This command runs an npm ci followed immediately by an npm test."
 msgstr "This command runs an npm ci followed immediately by an npm test."
 
-#: ../../source/cli/install-ci-test.rst:27
+#: ../../source/cli/install-ci-test.rst:29
 #, fuzzy
 msgid ":option:`npm ci`"
 msgstr "npm-config"
 
-#: ../../source/cli/install-ci-test.rst:28 ../../source/cli/restart.rst:47
+#: ../../source/cli/install-ci-test.rst:30 ../../source/cli/restart.rst:47
 #: ../../source/cli/run-script.rst:66 ../../source/cli/start.rst:29
 #: ../../source/cli/stop.rst:27
 #, fuzzy
@@ -2924,7 +2987,8 @@ msgid ":option:`npm test`"
 msgstr "ping Ping npm registry"
 
 #: ../../source/cli/install-test.rst:2
-msgid "npm-install-test"
+#, fuzzy
+msgid "npm install-test"
 msgstr "npm-install-test"
 
 #: ../../source/cli/install-test.rst:11
@@ -2932,35 +2996,36 @@ msgstr "npm-install-test"
 msgid "Install package(s) and run tests"
 msgstr "install-test Install package(s) and run tests"
 
-#: ../../source/cli/install-test.rst:24
-#, fuzzy
-msgid "alias: npm it"
-msgstr "alias: npm cit"
-
 #: ../../source/cli/install-test.rst:26
+#, fuzzy
+msgid "install-test alias"
+msgstr "npm install sax"
+
+#: ../../source/cli/install-test.rst:28
 msgid ""
 "common options: [--save|--save-dev|--save-optional] [--save-exact] "
 "[--dry-run]"
 msgstr ""
 
-#: ../../source/cli/install-test.rst:31
+#: ../../source/cli/install-test.rst:33
 msgid ""
 "This command runs an npm install followed immediately by an npm test. It "
 "takes exactly the same arguments as npm install."
 msgstr ""
 
-#: ../../source/cli/install-test.rst:36
+#: ../../source/cli/install-test.rst:38
 #, fuzzy
 msgid "`npm-install`"
 msgstr "npm-install"
 
-#: ../../source/cli/install-test.rst:37
+#: ../../source/cli/install-test.rst:39
 #, fuzzy
 msgid "`npm-test`"
 msgstr "npm-test"
 
 #: ../../source/cli/link.rst:2
-msgid "npm-link"
+#, fuzzy
+msgid "npm link"
 msgstr "npm-link"
 
 #: ../../source/cli/link.rst:11
@@ -2968,15 +3033,15 @@ msgstr "npm-link"
 msgid "Symlink a package folder"
 msgstr "link Symlink a package folder"
 
-#: ../../source/cli/link.rst:18
-msgid "alias: npm ln"
-msgstr "alias: npm ln"
+#: ../../source/cli/link.rst:20
+msgid "link alias"
+msgstr ""
 
-#: ../../source/cli/link.rst:23
+#: ../../source/cli/link.rst:25
 msgid "Package linking is a two-step process."
 msgstr "Package linking is a two-step process."
 
-#: ../../source/cli/link.rst:25
+#: ../../source/cli/link.rst:27
 msgid ""
 "First, npm link in a package folder will create a symlink in the global "
 "folder {prefix}/lib/node_modules/<package> that links to the package "
@@ -2985,42 +3050,38 @@ msgid ""
 "{prefix}/bin/{name}."
 msgstr ""
 
-#: ../../source/cli/link.rst:27
+#: ../../source/cli/link.rst:29
 msgid ""
 "Next, in some other location, npm link package-name will create a "
 "symbolic link from globally-installed package-name to node_modules/ of "
 "the current folder."
 msgstr ""
 
-#: ../../source/cli/link.rst:29
+#: ../../source/cli/link.rst:31
 msgid ""
 "Note that package-name is taken from package.json, not from directory "
 "name."
 msgstr ""
 
-#: ../../source/cli/link.rst:31
+#: ../../source/cli/link.rst:33
 msgid ""
 "The package name can be optionally prefixed with a scope. See npm-scope. "
 "The scope must be preceded by an @-symbol and followed by a slash."
 msgstr ""
 
-#: ../../source/cli/link.rst:33
+#: ../../source/cli/link.rst:35
 msgid ""
 "When creating tarballs for npm publish, the linked packages are "
 "“snapshotted” to their current state by resolving the symbolic links."
 msgstr ""
 
-#: ../../source/cli/link.rst:35
+#: ../../source/cli/link.rst:37
 msgid ""
 "This is handy for installing your own stuff, so that you can work on it "
 "and test it iteratively without having to continually rebuild."
 msgstr ""
 
-#: ../../source/cli/link.rst:37
-msgid "For example:"
-msgstr "For example:"
-
-#: ../../source/cli/link.rst:39
+#: ../../source/cli/link.rst:41
 msgid ""
 "cd ~/projects/node-redis    # go into the package directory npm link"
 "                    # creates global link cd ~/projects/node-bloggy   # "
@@ -3031,44 +3092,45 @@ msgid ""
 "package."
 msgstr ""
 
-#: ../../source/cli/link.rst:45
+#: ../../source/cli/link.rst:47
 msgid ""
 "You may also shortcut the two steps in one. For example, to do the above "
 "use-case in a shorter way:"
 msgstr ""
 
-#: ../../source/cli/link.rst:47
+#: ../../source/cli/link.rst:49
 msgid ""
 "cd ~/projects/node-bloggy  # go into the dir of your main project npm "
 "link ../node-redis     # link the dir of your dependency The second line "
 "is the equivalent of doing:"
 msgstr ""
 
-#: ../../source/cli/link.rst:51
+#: ../../source/cli/link.rst:53
 msgid ""
 "(cd ../node-redis; npm link) npm link redis That is, it first creates a "
 "global link, and then links the global installation target into your "
 "project’s node_modules folder."
 msgstr ""
 
-#: ../../source/cli/link.rst:55
+#: ../../source/cli/link.rst:57
 msgid ""
 "Note that in this case, you are referring to the directory name, node-"
 "redis, rather than the package name redis."
 msgstr ""
 
-#: ../../source/cli/link.rst:57
+#: ../../source/cli/link.rst:59
 msgid ""
 "If your linked package is scoped (see npm-scope) your link command must "
 "include that scope, e.g."
 msgstr ""
 
-#: ../../source/cli/link.rst:59
+#: ../../source/cli/link.rst:61
 msgid "npm link @myorg/privatepackage"
 msgstr "npm link @myorg/privatepackage"
 
 #: ../../source/cli/logout.rst:2
-msgid "npm-logout"
+#, fuzzy
+msgid "npm logout"
 msgstr "npm-logout"
 
 #: ../../source/cli/logout.rst:11
@@ -3116,7 +3178,7 @@ msgstr ""
 msgid "npm logout --scope=@myco"
 msgstr "npm logout --scope=@myco"
 
-#: ../../source/cli/logout.rst:48 ../../source/cli/owner.rst:39
+#: ../../source/cli/logout.rst:48 ../../source/cli/owner.rst:41
 #: ../../source/cli/publish.rst:50 ../../source/cli/star.rst:32
 #: ../../source/cli/stars.rst:30 ../../source/cli/unpublish.rst:46
 #: ../../source/cli/whoami.rst:29
@@ -3125,7 +3187,8 @@ msgid ":option:`npm adduser`"
 msgstr "npm-publish"
 
 #: ../../source/cli/ls.rst:2
-msgid "npm-ls"
+#, fuzzy
+msgid "npm ls"
 msgstr "npm-ls"
 
 #: ../../source/cli/ls.rst:12
@@ -3133,109 +3196,129 @@ msgstr "npm-ls"
 msgid "List installed packages"
 msgstr "ls List installed packages"
 
-#: ../../source/cli/ls.rst:18
-msgid "aliases: list, la, ll"
-msgstr "aliases: list, la, ll"
+#: ../../source/cli/ls.rst:16 ../../source/cli/ls.rst:20
+#: ../../source/cli/ls.rst:24
+msgid "ls alias"
+msgstr ""
 
-#: ../../source/cli/ls.rst:23
+#: ../../source/cli/ls.rst:29
 msgid ""
 "This command will print to stdout all the versions of packages that are "
 "installed, as well as their dependencies, in a tree-structure."
 msgstr ""
 
-#: ../../source/cli/ls.rst:25
+#: ../../source/cli/ls.rst:31
 msgid ""
 "Positional arguments are name@version-range identifiers, which will limit"
 " the results to only the paths to the packages named. Note that nested "
 "packages will also show the paths to the specified packages. For example,"
-" running npm ls promzard in npm’s source tree will show:"
+" running npm ls promzard in npm’s source tree will show::"
 msgstr ""
 
-#: ../../source/cli/ls.rst:27
-msgid "npm@@VERSION@ /path/to/npm └─┬ init-package-json@0.0.4"
-msgstr "npm@@VERSION@ /path/to/npm └─┬ init-package-json@0.0.4"
-
-#: ../../source/cli/ls.rst:29
-msgid "└── promzard@0.1.5"
-msgstr "└── promzard@0.1.5"
-
-#: ../../source/cli/ls.rst:30
+#: ../../source/cli/ls.rst:40
 msgid "It will print out extraneous, missing, and invalid packages."
 msgstr "It will print out extraneous, missing, and invalid packages."
 
-#: ../../source/cli/ls.rst:32
+#: ../../source/cli/ls.rst:42
 msgid ""
 "If a project specifies git urls for dependencies these are shown in "
 "parentheses after the name@version to make it easier for users to "
 "recognize potential forks of a project."
 msgstr ""
 
-#: ../../source/cli/ls.rst:34
+#: ../../source/cli/ls.rst:44
 msgid ""
 "The tree shown is the logical dependency tree, based on package "
 "dependencies, not the physical layout of your node_modules folder."
 msgstr ""
 
-#: ../../source/cli/ls.rst:36
+#: ../../source/cli/ls.rst:46
 msgid "When run as ll or la, it shows extended information by default."
 msgstr "When run as ll or la, it shows extended information by default."
 
-#: ../../source/cli/ls.rst:41
-msgid "json Default: false Type: Boolean Show information in JSON format."
-msgstr "json Default: false Type: Boolean Show information in JSON format."
-
-#: ../../source/cli/ls.rst:46 ../../source/cli/outdated.rst:59
-msgid "long Default: false Type: Boolean Show extended information."
-msgstr "long Default: false Type: Boolean Show extended information."
-
-#: ../../source/cli/ls.rst:51 ../../source/cli/outdated.rst:64
-msgid ""
-"parseable Default: false Type: Boolean Show parseable output instead of "
-"tree view."
+#: ../../source/cli/ls.rst:53
+msgid "Show information in JSON format."
 msgstr ""
 
-#: ../../source/cli/ls.rst:56
-msgid ""
-"global Default: false Type: Boolean List packages in the global install "
-"prefix instead of in the current project."
+#: ../../source/cli/ls.rst
+#, fuzzy
+msgid "Default"
+msgstr "默认: none"
+
+#: ../../source/cli/ls.rst:55 ../../source/cli/ls.rst:63
+#: ../../source/cli/ls.rst:71 ../../source/cli/ls.rst:79
+#: ../../source/cli/ls.rst:93 ../../source/cli/ls.rst:100
+#: ../../source/cli/ls.rst:116 ../../source/cli/token.rst:52
+msgid "false"
+msgstr ""
+
+#: ../../source/cli/ls.rst
+#, fuzzy
+msgid "Type"
+msgstr "auth-type"
+
+#: ../../source/cli/ls.rst:56 ../../source/cli/ls.rst:64
+#: ../../source/cli/ls.rst:72 ../../source/cli/ls.rst:80
+#: ../../source/cli/ls.rst:92 ../../source/cli/ls.rst:99
+#: ../../source/cli/ls.rst:115
+msgid "Boolean"
 msgstr ""
 
 #: ../../source/cli/ls.rst:61
-msgid "depth Type: Int Max display depth of the dependency tree."
+#, fuzzy
+msgid "Show extended information."
+msgstr "long Default: false Type: Boolean Show extended information."
+
+#: ../../source/cli/ls.rst:69
+msgid "Show parseable output instead of tree view."
+msgstr ""
+
+#: ../../source/cli/ls.rst:77
+msgid ""
+"List packages in the global install prefix instead of in the current "
+"project."
+msgstr ""
+
+#: ../../source/cli/ls.rst:84
+#, fuzzy
+msgid "Max display depth of the dependency tree."
 msgstr "depth Type: Int Max display depth of the dependency tree."
 
-#: ../../source/cli/ls.rst:65
-msgid ""
-"prod / production Type: Boolean Default: false Display only the "
-"dependency tree for packages in dependencies."
+#: ../../source/cli/ls.rst:86
+msgid "Int"
 msgstr ""
 
-#: ../../source/cli/ls.rst:70
-msgid ""
-"dev / development Type: Boolean Default: false Display only the "
-"dependency tree for packages in devDependencies."
+#: ../../source/cli/ls.rst:90
+msgid "Display only the dependency tree for packages in dependencies."
 msgstr ""
 
-#: ../../source/cli/ls.rst:75
-msgid "only Type: String When “dev” or “development”, is an alias to dev."
+#: ../../source/cli/ls.rst:97
+msgid "Display only the dependency tree for packages in devDependencies."
+msgstr ""
+
+#: ../../source/cli/ls.rst:104
+#, fuzzy
+msgid "When “dev” or “development”, is an alias to dev."
 msgstr "only Type: String When “dev” or “development”, is an alias to dev."
 
-#: ../../source/cli/ls.rst:79
+#: ../../source/cli/ls.rst:106
 msgid "When “prod” or “production”, is an alias to production."
 msgstr "When “prod” or “production”, is an alias to production."
 
-#: ../../source/cli/ls.rst:81
-msgid ""
-"link Type: Boolean Default: false Display only dependencies which are "
-"linked"
+#: ../../source/cli/ls.rst:108
+msgid "String"
 msgstr ""
 
-#: ../../source/cli/ls.rst:95 ../../source/cli/uninstall.rst:54
+#: ../../source/cli/ls.rst:113
+msgid "Display only dependencies which are linked"
+msgstr ""
+
+#: ../../source/cli/ls.rst:127 ../../source/cli/uninstall.rst:72
 #, fuzzy
 msgid ":option:`npm prune`"
 msgstr "npm-config"
 
-#: ../../source/cli/ls.rst:96 ../../source/cli/update.rst:105
+#: ../../source/cli/ls.rst:128 ../../source/cli/update.rst:111
 #, fuzzy
 msgid ":option:`npm outdated`"
 msgstr "npm-publish"
@@ -3417,7 +3500,8 @@ msgid "Isaac Z. Schlueter :: isaacs :: @izs :: i@izs.me"
 msgstr "Isaac Z. Schlueter :: isaacs :: @izs :: i@izs.me"
 
 #: ../../source/cli/org.rst:2
-msgid "npm-org"
+#, fuzzy
+msgid "npm org"
 msgstr "npm-org"
 
 #: ../../source/cli/org.rst:11
@@ -3468,7 +3552,8 @@ msgid "Documentation on npm Orgs"
 msgstr "CLI文档"
 
 #: ../../source/cli/outdated.rst:2
-msgid "npm-outdated"
+#, fuzzy
+msgid "npm outdated"
 msgstr "npm-outdated"
 
 #: ../../source/cli/outdated.rst:11
@@ -3548,6 +3633,16 @@ msgid ""
 " JSON format."
 msgstr ""
 
+#: ../../source/cli/outdated.rst:59
+msgid "long Default: false Type: Boolean Show extended information."
+msgstr "long Default: false Type: Boolean Show extended information."
+
+#: ../../source/cli/outdated.rst:64
+msgid ""
+"parseable Default: false Type: Boolean Show parseable output instead of "
+"tree view."
+msgstr ""
+
 #: ../../source/cli/outdated.rst:69
 msgid ""
 "global Default: false Type: Boolean Check packages in the global install "
@@ -3559,7 +3654,8 @@ msgid "depth Default: 0 Type: Int Max depth for checking dependency tree."
 msgstr "depth Default: 0 Type: Int Max depth for checking dependency tree."
 
 #: ../../source/cli/owner.rst:2
-msgid "npm-owner"
+#, fuzzy
+msgid "npm owner"
 msgstr "npm-owner"
 
 #: ../../source/cli/owner.rst:12
@@ -3567,15 +3663,15 @@ msgstr "npm-owner"
 msgid "Manage package owners"
 msgstr "owner Manage package owners"
 
-#: ../../source/cli/owner.rst:20
-msgid "aliases: author"
-msgstr "aliases: author"
+#: ../../source/cli/owner.rst:22
+msgid "owner alias"
+msgstr ""
 
-#: ../../source/cli/owner.rst:25
+#: ../../source/cli/owner.rst:27
 msgid "Manage ownership of published packages."
 msgstr "Manage ownership of published packages."
 
-#: ../../source/cli/owner.rst:27
+#: ../../source/cli/owner.rst:29
 msgid ""
 "ls: List all the users who have access to modify a package and push new "
 "versions. Handy when you need to know who to bug for help. add: Add a new"
@@ -3587,20 +3683,21 @@ msgid ""
 "access levels, but that is not implemented at this time."
 msgstr ""
 
-#: ../../source/cli/owner.rst:32
+#: ../../source/cli/owner.rst:34
 msgid ""
 "If you have two-factor authentication enabled with auth-and-writes then "
 "you’ll need to include an otp on the command line when changing ownership"
 " with --otp."
 msgstr ""
 
-#: ../../source/cli/owner.rst:40
+#: ../../source/cli/owner.rst:42
 #, fuzzy
 msgid ":option:`npm disputes`"
 msgstr "npm-publish"
 
 #: ../../source/cli/pack.rst:2
-msgid "npm-pack"
+#, fuzzy
+msgid "npm pack"
 msgstr "npm-pack"
 
 #: ../../source/cli/pack.rst:12
@@ -3640,7 +3737,8 @@ msgid ":option:`npm cache`"
 msgstr "npm-config"
 
 #: ../../source/cli/ping.rst:2
-msgid "npm-ping"
+#, fuzzy
+msgid "npm ping"
 msgstr "npm-ping"
 
 #: ../../source/cli/ping.rst:11
@@ -3663,7 +3761,8 @@ msgid "Ping error: {*Detail about error}"
 msgstr "Ping error: {*Detail about error}"
 
 #: ../../source/cli/prefix.rst:2
-msgid "npm-prefix"
+#, fuzzy
+msgid "npm prefix"
 msgstr "npm-prefix"
 
 #: ../../source/cli/prefix.rst:11
@@ -3690,7 +3789,8 @@ msgid ":option:`npm bin`"
 msgstr "npm-publish"
 
 #: ../../source/cli/profile.rst:2
-msgid "npm-profile"
+#, fuzzy
+msgid "npm profile"
 msgstr "npm-profile"
 
 #: ../../source/cli/profile.rst:11
@@ -3761,7 +3861,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/prune.rst:2
-msgid "npm-prune"
+#, fuzzy
+msgid "npm prune"
 msgstr "npm-prune"
 
 #: ../../source/cli/prune.rst:11
@@ -3815,7 +3916,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/publish.rst:2
-msgid "npm-publish"
+#, fuzzy
+msgid "npm publish"
 msgstr "npm-publish"
 
 #: ../../source/cli/publish.rst:11
@@ -3824,9 +3926,11 @@ msgid "Publish a package"
 msgstr "publish Publish a package"
 
 #: ../../source/cli/publish.rst:17
-msgid ""
-"Publishes '.' if no argument supplied Sets tag 'latest' if no --tag "
-"specified"
+msgid "Publishes '.' if no argument supplied"
+msgstr ""
+
+#: ../../source/cli/publish.rst:18
+msgid "Sets tag 'latest' if no --tag specified"
 msgstr ""
 
 #: ../../source/cli/publish.rst:23
@@ -3916,7 +4020,8 @@ msgid ":option:`npm profile`"
 msgstr "npm-config"
 
 #: ../../source/cli/rebuild.rst:2
-msgid "npm-rebuild"
+#, fuzzy
+msgid "npm rebuild"
 msgstr "npm-rebuild"
 
 #: ../../source/cli/rebuild.rst:11
@@ -3924,11 +4029,12 @@ msgstr "npm-rebuild"
 msgid "Rebuild a package"
 msgstr "rebuild Rebuild a package"
 
-#: ../../source/cli/rebuild.rst:17
-msgid "alias: npm rb"
-msgstr "alias: npm rb"
+#: ../../source/cli/rebuild.rst:19
+#, fuzzy
+msgid "rebuild alias"
+msgstr "rebuild Rebuild a package"
 
-#: ../../source/cli/rebuild.rst:22
+#: ../../source/cli/rebuild.rst:24
 msgid ""
 "This command runs the npm build command on the matched folders. This is "
 "useful when you install a new version of node, and must recompile all "
@@ -3936,7 +4042,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/repo.rst:2
-msgid "npm-repo"
+#, fuzzy
+msgid "npm repo"
 msgstr "npm-repo"
 
 #: ../../source/cli/repo.rst:12
@@ -3960,7 +4067,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/restart.rst:2
-msgid "npm-restart"
+#, fuzzy
+msgid "npm restart"
 msgstr "npm-restart"
 
 #: ../../source/cli/restart.rst:12
@@ -4002,34 +4110,35 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/restart.rst:45 ../../source/cli/scripts.rst:176
-#: ../../source/cli/shrinkwrap.rst:27 ../../source/cli/start.rst:27
-#: ../../source/cli/stop.rst:25 ../../source/cli/test.rst:27
+#: ../../source/cli/shrinkwrap.rst:31 ../../source/cli/start.rst:27
+#: ../../source/cli/stop.rst:25 ../../source/cli/test.rst:33
 #: ../../source/cli/version.rst:91
 #, fuzzy
 msgid ":option:`npm run-script`"
 msgstr "ping Ping npm registry"
 
 #: ../../source/cli/restart.rst:48 ../../source/cli/run-script.rst:67
-#: ../../source/cli/stop.rst:28 ../../source/cli/test.rst:29
+#: ../../source/cli/stop.rst:28 ../../source/cli/test.rst:35
 #, fuzzy
 msgid ":option:`npm start`"
 msgstr "ping Ping npm registry"
 
 #: ../../source/cli/restart.rst:49 ../../source/cli/run-script.rst:69
-#: ../../source/cli/start.rst:31 ../../source/cli/test.rst:31
+#: ../../source/cli/start.rst:31 ../../source/cli/test.rst:37
 #, fuzzy
 msgid ":option:`npm stop`"
 msgstr "npm-config"
 
 #: ../../source/cli/restart.rst:50 ../../source/cli/run-script.rst:68
 #: ../../source/cli/start.rst:30 ../../source/cli/stop.rst:29
-#: ../../source/cli/test.rst:30
+#: ../../source/cli/test.rst:36
 #, fuzzy
 msgid ":option:`npm restart`"
 msgstr "ping Ping npm registry"
 
 #: ../../source/cli/root.rst:2
-msgid "npm-root"
+#, fuzzy
+msgid "npm root"
 msgstr "npm-root"
 
 #: ../../source/cli/root.rst:11
@@ -4042,7 +4151,8 @@ msgid "Print the effective node_modules folder to standard out."
 msgstr "Print the effective node_modules folder to standard out."
 
 #: ../../source/cli/run-script.rst:2
-msgid "npm-run-script"
+#, fuzzy
+msgid "npm run-script"
 msgstr "npm-run-script"
 
 #: ../../source/cli/run-script.rst:11
@@ -4149,14 +4259,14 @@ msgid ""
 "undefined scripts without breaking the execution chain."
 msgstr ""
 
-#: ../../source/cli/run-script.rst:65 ../../source/cli/test.rst:28
+#: ../../source/cli/run-script.rst:65 ../../source/cli/test.rst:34
 #, fuzzy
 msgid ":ref:`npm-scripts`"
 msgstr "npm-run-script"
 
 #: ../../source/cli/scripts.rst:4
 #, fuzzy
-msgid "npm-scripts"
+msgid "npm scripts"
 msgstr "npm-run-script"
 
 #: ../../source/cli/scripts.rst:6
@@ -4194,7 +4304,7 @@ msgid ""
 "bumping the package version, and AFTER commit. pretest, test, posttest: "
 "Run by the npm test command. prestop, stop, poststop: Run by the npm stop"
 " command. prestart, start, poststart: Run by the npm start command. "
-"prerestart, restart, postrestart: Run by the npm restart command. Note: "
+"prerestart, restart, postrestart: Run by the npm restart command. .. note:: "
 "npm restart will run the stop and start scripts if no restart script is "
 "provided. preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm "
 "shrinkwrap command. Additionally, arbitrary scripts can be executed by "
@@ -4530,7 +4640,8 @@ msgid ":doc:`../misc/developers`"
 msgstr ":doc:`../misc/developers` 开发者指南"
 
 #: ../../source/cli/search.rst:2
-msgid "npm-search"
+#, fuzzy
+msgid "npm search"
 msgstr "npm-search"
 
 #: ../../source/cli/search.rst:11
@@ -4538,11 +4649,12 @@ msgstr "npm-search"
 msgid "Search for packages"
 msgstr "search Search for packages"
 
-#: ../../source/cli/search.rst:17
-msgid "aliases: s, se, find"
-msgstr "aliases: s, se, find"
+#: ../../source/cli/search.rst:19 ../../source/cli/search.rst:23
+#: ../../source/cli/search.rst:27
+msgid "search alias"
+msgstr ""
 
-#: ../../source/cli/search.rst:22
+#: ../../source/cli/search.rst:32
 msgid ""
 "Search the registry for packages matching the search terms. npm search "
 "performs a linear, incremental, lexically-ordered search through package "
@@ -4550,7 +4662,7 @@ msgid ""
 "further highlight the matches in the results."
 msgstr ""
 
-#: ../../source/cli/search.rst:24
+#: ../../source/cli/search.rst:34
 msgid ""
 "Additionally, using the --searchopts and --searchexclude options paired "
 "with more search terms will respectively include and exclude further "
@@ -4560,13 +4672,13 @@ msgid ""
 "these can be added to .npmrc for default search filtering behavior."
 msgstr ""
 
-#: ../../source/cli/search.rst:26
+#: ../../source/cli/search.rst:36
 msgid ""
 "Search also allows targeting of maintainers in search results, by "
 "prefixing their npm username with =."
 msgstr ""
 
-#: ../../source/cli/search.rst:28
+#: ../../source/cli/search.rst:38
 msgid ""
 "If a term starts with /, then it’s interpreted as a regular expression "
 "and supports standard JavaScript RegExp syntax. A trailing / will be "
@@ -4574,28 +4686,28 @@ msgid ""
 "be escaped or quoted in most shells.)"
 msgstr ""
 
-#: ../../source/cli/search.rst:30
+#: ../../source/cli/search.rst:40
 msgid "A Note on caching"
 msgstr "A Note on caching"
 
-#: ../../source/cli/search.rst:35
+#: ../../source/cli/search.rst:45
 msgid ""
 "description Default: true Type: Boolean Used as --no-description, "
 "disables search matching in package descriptions and suppresses display "
 "of that field in results."
 msgstr ""
 
-#: ../../source/cli/search.rst:40
+#: ../../source/cli/search.rst:50
 msgid "json Default: false Type: Boolean Output search results as a JSON array."
 msgstr "json Default: false Type: Boolean Output search results as a JSON array."
 
-#: ../../source/cli/search.rst:45
+#: ../../source/cli/search.rst:55
 msgid ""
 "parseable Default: false Type: Boolean Output search results as lines "
 "with tab-separated columns."
 msgstr ""
 
-#: ../../source/cli/search.rst:50
+#: ../../source/cli/search.rst:60
 msgid ""
 "long Default: false Type: Boolean Display full package descriptions and "
 "other long text across multiple lines. When disabled (default) search "
@@ -4603,25 +4715,25 @@ msgid ""
 "extremely long names will fall on multiple lines."
 msgstr ""
 
-#: ../../source/cli/search.rst:55
+#: ../../source/cli/search.rst:65
 msgid ""
 "searchopts Default: “” Type: String Space-separated options that are "
 "always passed to search."
 msgstr ""
 
-#: ../../source/cli/search.rst:60
+#: ../../source/cli/search.rst:70
 msgid ""
 "searchexclude Default: “” Type: String Space-separated options that limit"
 " the results from search."
 msgstr ""
 
-#: ../../source/cli/search.rst:65
+#: ../../source/cli/search.rst:75
 msgid ""
 "searchstaleness Default: 900 (15 minutes) Type: Number The age of the "
 "cache, in seconds, before another registry request is made."
 msgstr ""
 
-#: ../../source/cli/search.rst:70
+#: ../../source/cli/search.rst:80
 msgid ""
 "registry Default: https://registry.npmjs.org/ Type: url Search the "
 "specified registry for modules. If you have configured npm to point to a "
@@ -4632,52 +4744,62 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/shrinkwrap.rst:2
-msgid "npm-shrinkwrap"
+#, fuzzy
+msgid "npm shrinkwrap"
 msgstr "npm-shrinkwrap"
 
 #: ../../source/cli/shrinkwrap.rst:12
-#, fuzzy
 msgid "Lock down dependency versions for publication"
-msgstr "shrinkwrap Lock down dependency versions for publication"
+msgstr "锁定发布的依赖版本"
 
 #: ../../source/cli/shrinkwrap.rst:21
 msgid ""
-"This command repurposes package-lock.json into a publishable npm-"
-"shrinkwrap.json or simply creates a new one. The file created and updated"
-" by this command will then take precedence over any other existing or "
-"future package-lock.json files. For a detailed explanation of the design "
-"and purpose of package locks in npm, see npm-package-locks."
+"This command repurposes :ref:`package-lock.json` into a publishable "
+":ref:`shrinkwrap.json` or simply creates a new one."
+msgstr ""
+"这个命令将 :ref:`package-lock.json` 重新用于 publishable :ref:`shrinkwrap.json` "
+"或者只是创建一个新的。"
+
+#: ../../source/cli/shrinkwrap.rst:23
+msgid ""
+"The file created and updated by this command will then take precedence "
+"over any other existing or future :ref:`package-lock.json` files."
+msgstr "此命令创建和更新的文件将优先于任何其他现有或未来 :ref:`package-lock.json` 文件。"
+
+#: ../../source/cli/shrinkwrap.rst:25
+msgid ""
+"For a detailed explanation of the design and purpose of package locks in "
+"npm, see :ref:`package-locks`."
+msgstr "有关npm中包锁的设计和目的的详细说明，请参阅 :ref:`package-locks` 。"
+
+#: ../../source/cli/shrinkwrap.rst:34
+msgid ":ref:`package-locks`"
 msgstr ""
 
-#: ../../source/cli/shrinkwrap.rst:30
-#, fuzzy
-msgid ":option:`npm package-locks`"
-msgstr "npm-publish"
+#: ../../source/cli/shrinkwrap.rst:35
+msgid ":ref:`package-lock.json`"
+msgstr ""
 
-#: ../../source/cli/shrinkwrap.rst:31
-#, fuzzy
-msgid ":option:`package-lock.json`"
-msgstr "npm-publish"
-
-#: ../../source/cli/shrinkwrap.rst:32
-#, fuzzy
-msgid ":option:`npm shrinkwrap.json`"
-msgstr "npm-shrinkwrap"
+#: ../../source/cli/shrinkwrap.rst:36
+msgid ":ref:`shrinkwrap.json`"
+msgstr ""
 
 #: ../../source/cli/star.rst:2
-msgid "npm-star"
+#, fuzzy
+msgid "npm star"
 msgstr "npm-star"
 
 #: ../../source/cli/star.rst:11
-#, fuzzy
 msgid "Mark your favorite packages"
-msgstr "star Mark your favorite packages"
+msgstr "标记您喜欢的包"
 
 #: ../../source/cli/star.rst:21
 msgid ""
 "“Starring” a package means that you have some interest in it. It’s a "
 "vaguely positive way to show that you care."
 msgstr ""
+"“Starring” a package means that you have some interest in it. It’s a "
+"vaguely positive way to show that you care."
 
 #: ../../source/cli/star.rst:23
 msgid "“Unstarring” is the same thing, but in reverse."
@@ -4688,7 +4810,8 @@ msgid "It’s a boolean thing. Starring repeatedly has no additional effect."
 msgstr "It’s a boolean thing. Starring repeatedly has no additional effect."
 
 #: ../../source/cli/stars.rst:2
-msgid "npm-stars"
+#, fuzzy
+msgid "npm stars"
 msgstr "npm-stars"
 
 #: ../../source/cli/stars.rst:11
@@ -4714,7 +4837,8 @@ msgid ":option:`npm star`"
 msgstr "ping Ping npm registry"
 
 #: ../../source/cli/start.rst:2
-msgid "npm-start"
+#, fuzzy
+msgid "npm start"
 msgstr "npm-start"
 
 #: ../../source/cli/start.rst:11
@@ -4736,7 +4860,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/stop.rst:2
-msgid "npm-stop"
+#, fuzzy
+msgid "npm stop"
 msgstr "npm-stop"
 
 #: ../../source/cli/stop.rst:11
@@ -4749,7 +4874,8 @@ msgid "This runs a package’s “stop” script, if one was provided."
 msgstr "This runs a package’s “stop” script, if one was provided."
 
 #: ../../source/cli/team.rst:2
-msgid "npm-team"
+#, fuzzy
+msgid "npm team"
 msgstr "npm-team"
 
 #: ../../source/cli/team.rst:11
@@ -4824,7 +4950,8 @@ msgid ":option:`npm access`"
 msgstr "npm-config"
 
 #: ../../source/cli/test.rst:2
-msgid "npm-test"
+#, fuzzy
+msgid "npm test"
 msgstr "npm-test"
 
 #: ../../source/cli/test.rst:11
@@ -4832,17 +4959,17 @@ msgstr "npm-test"
 msgid "Test a package"
 msgstr "test Test a package"
 
-#: ../../source/cli/test.rst:17
-#, fuzzy
-msgid "aliases: t, tst"
-msgstr "aliases: s, se, find"
+#: ../../source/cli/test.rst:19 ../../source/cli/test.rst:23
+msgid "test alias"
+msgstr ""
 
-#: ../../source/cli/test.rst:22
+#: ../../source/cli/test.rst:28
 msgid "This runs a package’s “test” script, if one was provided."
 msgstr "This runs a package’s “test” script, if one was provided."
 
 #: ../../source/cli/token.rst:2
-msgid "npm-token"
+#, fuzzy
+msgid "npm token"
 msgstr "npm-token"
 
 #: ../../source/cli/token.rst:12
@@ -4886,10 +5013,6 @@ msgstr ""
 msgid "readonly"
 msgstr ""
 
-#: ../../source/cli/token.rst:52
-msgid "false"
-msgstr ""
-
 #: ../../source/cli/token.rst:54
 msgid "created"
 msgstr ""
@@ -4908,7 +5031,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/uninstall.rst:2
-msgid "npm-uninstall"
+#, fuzzy
+msgid "npm uninstall"
 msgstr "npm-uninstall"
 
 #: ../../source/cli/uninstall.rst:11
@@ -4916,57 +5040,68 @@ msgstr "npm-uninstall"
 msgid "Remove a package"
 msgstr "uninstall Remove a package"
 
-#: ../../source/cli/uninstall.rst:17
-msgid "aliases: remove, rm, r, un, unlink"
-msgstr "aliases: remove, rm, r, un, unlink"
+#: ../../source/cli/uninstall.rst:19 ../../source/cli/uninstall.rst:23
+#: ../../source/cli/uninstall.rst:27 ../../source/cli/uninstall.rst:31
+#: ../../source/cli/uninstall.rst:35
+#, fuzzy
+msgid "uninstall alias"
+msgstr "npm install sax"
 
-#: ../../source/cli/uninstall.rst:22
+#: ../../source/cli/uninstall.rst:40
 msgid ""
 "This uninstalls a package, completely removing everything npm installed "
 "on its behalf."
 msgstr ""
 
-#: ../../source/cli/uninstall.rst:26
+#: ../../source/cli/uninstall.rst:42
+msgid "Example:"
+msgstr "Example:"
+
+#: ../../source/cli/uninstall.rst:44
 msgid ""
 "npm uninstall sax In global mode (ie, with -g or --global appended to the"
 " command), it uninstalls the current package context as a global package."
 msgstr ""
 
-#: ../../source/cli/uninstall.rst:29
+#: ../../source/cli/uninstall.rst:47
 msgid ""
 "npm uninstall takes 3 exclusive, optional flags which save or update the "
 "package version in your main package.json:"
 msgstr ""
 
-#: ../../source/cli/uninstall.rst:31
+#: ../../source/cli/uninstall.rst:49
 msgid "-S, --save: Package will be removed from your dependencies."
 msgstr "-S, --save: Package will be removed from your dependencies."
 
-#: ../../source/cli/uninstall.rst:33
+#: ../../source/cli/uninstall.rst:51
 msgid "-D, --save-dev: Package will be removed from your devDependencies."
 msgstr "-D, --save-dev: Package will be removed from your devDependencies."
 
-#: ../../source/cli/uninstall.rst:35
+#: ../../source/cli/uninstall.rst:53
 msgid ""
 "-O, --save-optional: Package will be removed from your "
 "optionalDependencies."
 msgstr ""
 
-#: ../../source/cli/uninstall.rst:37
+#: ../../source/cli/uninstall.rst:55
 msgid "--no-save: Package will not be removed from your package.json file."
 msgstr "--no-save: Package will not be removed from your package.json file."
 
-#: ../../source/cli/uninstall.rst:39
+#: ../../source/cli/uninstall.rst:57
 msgid ""
 "Further, if you have an npm-shrinkwrap.json then it will be updated as "
 "well."
 msgstr ""
 
-#: ../../source/cli/uninstall.rst:41
+#: ../../source/cli/uninstall.rst:59
 msgid "Scope is optional and follows the usual rules for npm-scope."
 msgstr "Scope is optional and follows the usual rules for npm-scope."
 
-#: ../../source/cli/uninstall.rst:45
+#: ../../source/cli/uninstall.rst:61
+msgid "Examples:"
+msgstr "Examples:"
+
+#: ../../source/cli/uninstall.rst:63
 msgid ""
 "npm uninstall sax --save npm uninstall @myorg/privatepackage --save npm "
 "uninstall node-tap --save-dev npm uninstall dtrace-provider --save-"
@@ -4974,7 +5109,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/cli/unpublish.rst:2
-msgid "npm-unpublish"
+#, fuzzy
+msgid "npm unpublish"
 msgstr "npm-unpublish"
 
 #: ../../source/cli/unpublish.rst:12
@@ -5036,7 +5172,8 @@ msgid "The scope is optional and follows the usual rules for npm-scope."
 msgstr "The scope is optional and follows the usual rules for npm-scope."
 
 #: ../../source/cli/update.rst:2
-msgid "npm-update"
+#, fuzzy
+msgid "npm update"
 msgstr "npm-update"
 
 #: ../../source/cli/update.rst:12
@@ -5044,99 +5181,99 @@ msgstr "npm-update"
 msgid "Update a package"
 msgstr "update Update a package"
 
-#: ../../source/cli/update.rst:18
-msgid "aliases: up, upgrade"
-msgstr "aliases: up, upgrade"
+#: ../../source/cli/update.rst:20 ../../source/cli/update.rst:24
+msgid "update alias"
+msgstr ""
 
-#: ../../source/cli/update.rst:23
+#: ../../source/cli/update.rst:29
 msgid ""
 "This command will update all the packages listed to the latest version "
 "(specified by the tag config), respecting semver."
 msgstr ""
 
-#: ../../source/cli/update.rst:25
+#: ../../source/cli/update.rst:31
 msgid ""
 "It will also install missing packages. As with all commands that install "
 "packages, the --dev flag will cause devDependencies to be processed as "
 "well."
 msgstr ""
 
-#: ../../source/cli/update.rst:27
+#: ../../source/cli/update.rst:33
 msgid ""
 "If the -g flag is specified, this command will update globally installed "
 "packages."
 msgstr ""
 
-#: ../../source/cli/update.rst:29
+#: ../../source/cli/update.rst:35
 msgid ""
 "If no package name is specified, all packages in the specified location "
 "(global or local) will be updated."
 msgstr ""
 
-#: ../../source/cli/update.rst:31
+#: ../../source/cli/update.rst:37
 msgid ""
 "As of npm@2.6.1, the npm update will only inspect top-level packages. "
 "Prior versions of npm would also recursively inspect all dependencies. To"
 " get the old behavior, use npm --depth 9999 update."
 msgstr ""
 
-#: ../../source/cli/update.rst:33
+#: ../../source/cli/update.rst:39
 msgid ""
 "As of npm@5.0.0, the npm update will change package.json to save the new "
 "version as the minimum required dependency. To get the old behavior, use "
 "npm update --no-save."
 msgstr ""
 
-#: ../../source/cli/update.rst:38
+#: ../../source/cli/update.rst:44
 msgid ""
 "IMPORTANT VERSION NOTE: these examples assume npm@2.6.1 or later. For "
 "older versions of npm, you must specify --depth 0 to get the behavior "
 "described below."
 msgstr ""
 
-#: ../../source/cli/update.rst:40
+#: ../../source/cli/update.rst:46
 msgid ""
 "For the examples below, assume that the current package is app and it "
 "depends on dependencies, dep1 (dep2, .. etc.). The published versions of "
 "dep1 are:"
 msgstr ""
 
-#: ../../source/cli/update.rst:60
+#: ../../source/cli/update.rst:66
 msgid "Caret Dependencies"
 msgstr "Caret Dependencies"
 
-#: ../../source/cli/update.rst:62
+#: ../../source/cli/update.rst:68
 msgid "If app’s package.json contains:"
 msgstr "If app’s package.json contains:"
 
-#: ../../source/cli/update.rst:64 ../../source/cli/update.rst:74
-#: ../../source/cli/update.rst:82 ../../source/cli/update.rst:89
+#: ../../source/cli/update.rst:70 ../../source/cli/update.rst:80
+#: ../../source/cli/update.rst:88 ../../source/cli/update.rst:95
 msgid "\"dependencies\": {"
 msgstr "\"dependencies\": {"
 
-#: ../../source/cli/update.rst:65
+#: ../../source/cli/update.rst:71
 msgid "\"dep1\": \"^1.1.1\""
 msgstr "\"dep1\": \"^1.1.1\""
 
-#: ../../source/cli/update.rst:66
+#: ../../source/cli/update.rst:72
 msgid ""
 "} Then npm update will install dep1@1.2.2, because 1.2.2 is latest and "
 "1.2.2 satisfies ^1.1.1."
 msgstr ""
 
-#: ../../source/cli/update.rst:70
+#: ../../source/cli/update.rst:76
 msgid "Tilde Dependencies"
 msgstr "Tilde Dependencies"
 
-#: ../../source/cli/update.rst:72
+#: ../../source/cli/update.rst:78
 msgid "However, if app’s package.json contains:"
 msgstr "However, if app’s package.json contains:"
 
-#: ../../source/cli/update.rst:75
+#: ../../source/cli/update.rst:81
 msgid "\"dep1\": \"~1.1.1\""
 msgstr "\"dep1\": \"~1.1.1\""
 
-#: ../../source/cli/update.rst:76
+#: ../../source/cli/update.rst:82
 msgid ""
 "} In this case, running npm update will install dep1@1.1.2. Even though "
 "the latest tag points to 1.2.2, this version does not satisfy ~1.1.1, "
@@ -5144,56 +5281,57 @@ msgid ""
 "that satisfies ~1.1.1 is used, which is 1.1.2."
 msgstr ""
 
-#: ../../source/cli/update.rst:79
+#: ../../source/cli/update.rst:85
 msgid ""
 "Caret Dependencies below 1.0.0 Suppose app has a caret dependency on a "
 "version below 1.0.0, for example:"
 msgstr ""
 
-#: ../../source/cli/update.rst:83
+#: ../../source/cli/update.rst:89
 msgid "\"dep1\": \"^0.2.0\""
 msgstr "\"dep1\": \"^0.2.0\""
 
-#: ../../source/cli/update.rst:84
+#: ../../source/cli/update.rst:90
 msgid ""
 "} npm update will install dep1@0.2.0, because there are no other versions"
 " which satisfy ^0.2.0."
 msgstr ""
 
-#: ../../source/cli/update.rst:87
+#: ../../source/cli/update.rst:93
 msgid "If the dependence were on ^0.4.0:"
 msgstr "If the dependence were on ^0.4.0:"
 
-#: ../../source/cli/update.rst:90
+#: ../../source/cli/update.rst:96
 msgid "\"dep1\": \"^0.4.0\""
 msgstr "\"dep1\": \"^0.4.0\""
 
-#: ../../source/cli/update.rst:91
+#: ../../source/cli/update.rst:97
 msgid ""
 "} Then npm update will install dep1@0.4.1, because that is the highest-"
 "sorting version that satisfies ^0.4.0 (>= 0.4.0 <0.5.0)"
 msgstr ""
 
-#: ../../source/cli/update.rst:95
+#: ../../source/cli/update.rst:101
 #, fuzzy
 msgid "Updating Globally-Installed Packages"
 msgstr "edit Edit an installed package"
 
-#: ../../source/cli/update.rst:97
+#: ../../source/cli/update.rst:103
 msgid ""
 "npm update -g will apply the update action to each globally installed "
 "package that is outdated – that is, has a version that is different from "
 "latest."
 msgstr ""
 
-#: ../../source/cli/update.rst:99
+#: ../../source/cli/update.rst:105
 msgid ""
 "NOTE: If a package has been upgraded to a version newer than latest, it "
 "will be downgraded."
 msgstr ""
 
 #: ../../source/cli/version.rst:2
-msgid "npm-version"
+#, fuzzy
+msgid "npm version"
 msgstr "npm-version"
 
 #: ../../source/cli/version.rst:11
@@ -5343,7 +5481,8 @@ msgid ":ref:`semver`"
 msgstr ""
 
 #: ../../source/cli/view.rst:2
-msgid "npm-view"
+#, fuzzy
+msgid "npm view"
 msgstr "npm-view"
 
 #: ../../source/cli/view.rst:11
@@ -5351,48 +5490,49 @@ msgstr "npm-view"
 msgid "View registry info"
 msgstr "view View registry info"
 
-#: ../../source/cli/view.rst:17
-msgid "aliases: info, show, v"
-msgstr "aliases: info, show, v"
+#: ../../source/cli/view.rst:19 ../../source/cli/view.rst:23
+#: ../../source/cli/view.rst:27
+msgid "view alias"
+msgstr ""
 
-#: ../../source/cli/view.rst:22
+#: ../../source/cli/view.rst:32
 msgid ""
 "This command shows data about a package and prints it to the stream "
 "referenced by the outfd config, which defaults to stdout."
 msgstr ""
 
-#: ../../source/cli/view.rst:24
+#: ../../source/cli/view.rst:34
 msgid ""
 "To show the package registry entry for the connect package, you can do "
 "this:"
 msgstr ""
 
-#: ../../source/cli/view.rst:26
+#: ../../source/cli/view.rst:36
 msgid "npm view connect The default version is “latest” if unspecified."
 msgstr "npm view connect The default version is “latest” if unspecified."
 
-#: ../../source/cli/view.rst:29
+#: ../../source/cli/view.rst:39
 msgid ""
 "Field names can be specified after the package descriptor. For example, "
 "to show the dependencies of the ronn package at version 0.3.5, you could "
 "do the following:"
 msgstr ""
 
-#: ../../source/cli/view.rst:31
+#: ../../source/cli/view.rst:41
 msgid ""
 "npm view ronn@0.3.5 dependencies You can view child fields by separating "
 "them with a period. To view the git repository URL for the latest version"
 " of npm, you could do this:"
 msgstr ""
 
-#: ../../source/cli/view.rst:34
+#: ../../source/cli/view.rst:44
 msgid ""
 "npm view npm repository.url This makes it easy to view information about "
 "a dependency with a bit of shell scripting. For example, to view all the "
 "data about the version of opts that ronn depends on, you can do this:"
 msgstr ""
 
-#: ../../source/cli/view.rst:37
+#: ../../source/cli/view.rst:47
 msgid ""
 "npm view opts@$(npm view ronn dependencies.opts) For fields that are "
 "arrays, requesting a non-numeric field will return all of the values from"
@@ -5400,7 +5540,7 @@ msgid ""
 "for the “express” project, you can do this:"
 msgstr ""
 
-#: ../../source/cli/view.rst:40
+#: ../../source/cli/view.rst:50
 msgid ""
 "npm view express contributors.email You may also use numeric indices in "
 "square braces to specifically select an item in an array field. To just "
@@ -5408,14 +5548,14 @@ msgid ""
 "this:"
 msgstr ""
 
-#: ../../source/cli/view.rst:43
+#: ../../source/cli/view.rst:53
 msgid ""
 "npm view express contributors[0].email Multiple fields may be specified, "
 "and will be printed one after another. For example, to get all the "
 "contributor names and email addresses, you can do this:"
 msgstr ""
 
-#: ../../source/cli/view.rst:46
+#: ../../source/cli/view.rst:56
 msgid ""
 "npm view express contributors.name contributors.email “Person” fields are"
 " shown as a string if they would be shown as an object. So, for example, "
@@ -5423,28 +5563,28 @@ msgid ""
 "format. (See package.json for more on this.)"
 msgstr ""
 
-#: ../../source/cli/view.rst:49
+#: ../../source/cli/view.rst:59
 msgid ""
 "npm view npm contributors If a version range is provided, then data will "
 "be printed for every matching version of the package. This will show "
 "which version of jsdom was required by each matching version of yui3:"
 msgstr ""
 
-#: ../../source/cli/view.rst:52
+#: ../../source/cli/view.rst:62
 msgid ""
 "npm view yui3@'>0.5.4' dependencies.jsdom To show the connect package "
 "version history, you can do this:"
 msgstr ""
 
-#: ../../source/cli/view.rst:55
+#: ../../source/cli/view.rst:65
 msgid "npm view connect versions"
 msgstr "npm view connect versions"
 
-#: ../../source/cli/view.rst:58
+#: ../../source/cli/view.rst:68
 msgid "OUTPUT"
 msgstr "OUTPUT"
 
-#: ../../source/cli/view.rst:60
+#: ../../source/cli/view.rst:70
 msgid ""
 "If only a single string field for a single version is output, then it "
 "will not be colorized or quoted, so as to enable piping the output to "
@@ -5452,29 +5592,30 @@ msgid ""
 "JavaScript object literal."
 msgstr ""
 
-#: ../../source/cli/view.rst:62
+#: ../../source/cli/view.rst:72
 msgid "If the –json flag is given, the outputted fields will be JSON."
 msgstr "If the –json flag is given, the outputted fields will be JSON."
 
-#: ../../source/cli/view.rst:64
+#: ../../source/cli/view.rst:74
 msgid ""
 "If the version range matches multiple versions, than each printed value "
 "will be prefixed with the version it applies to."
 msgstr ""
 
-#: ../../source/cli/view.rst:66
+#: ../../source/cli/view.rst:76
 msgid ""
 "If multiple fields are requested, than each of them are prefixed with the"
 " field name."
 msgstr ""
 
-#: ../../source/cli/view.rst:71
+#: ../../source/cli/view.rst:81
 #, fuzzy
 msgid ":option:`npm search`"
 msgstr "npm-config"
 
 #: ../../source/cli/whoami.rst:2
-msgid "npm-whoami"
+#, fuzzy
+msgid "npm whoami"
 msgstr "npm-whoami"
 
 #: ../../source/cli/whoami.rst:12
@@ -6156,7 +6297,7 @@ msgstr "Print the username config to standard output."
 #~ msgstr "npm test [-- <args>]"
 
 #~ msgid "aliases: t, tst"
-#~ msgstr "aliases: t, tst"
+#~ msgstr "aliases: s, se, find"
 
 #~ msgid "npm-run-script npm-scripts npm-start npm-restart npm-stop"
 #~ msgstr "npm-run-script npm-scripts npm-start npm-restart npm-stop"
@@ -6494,4 +6635,554 @@ msgstr "Print the username config to standard output."
 
 #~ msgid "semver"
 #~ msgstr ""
+
+#~ msgid "aliases: issues"
+#~ msgstr "别名: issues"
+
+#~ msgid "aliases: find-dupes, ddp"
+#~ msgstr "aliases: find-dupes, ddp"
+
+#~ msgid "aliases: dist-tags"
+#~ msgstr "aliases: dist-tags"
+
+#~ msgid "npm install (in package directory, no arguments):"
+#~ msgstr "npm install (in package directory, no arguments):"
+
+#~ msgid ""
+#~ "NOTE: The --production flag has no "
+#~ "particular meaning when adding a "
+#~ "dependency to a project."
+#~ msgstr ""
+
+#~ msgid "npm install <folder>:"
+#~ msgstr "npm install <folder>:"
+
+#~ msgid ""
+#~ "Install the package in the directory "
+#~ "as a symlink in the current "
+#~ "project. Its dependencies will be "
+#~ "installed before it’s linked. If "
+#~ "<folder> sits inside the root of "
+#~ "your project, its dependencies may be"
+#~ " hoisted to the toplevel node_modules "
+#~ "as they would for other types of"
+#~ " dependencies."
+#~ msgstr ""
+
+#~ msgid "npm install <tarball file>:"
+#~ msgstr "npm install <tarball file>:"
+
+#~ msgid ""
+#~ "Install a package that is sitting "
+#~ "on the filesystem. .. note:: if you "
+#~ "just want to link a dev directory"
+#~ " into your npm root, you can do"
+#~ " this more easily by using npm "
+#~ "link."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The filename must use .tar, .tar.gz, "
+#~ "or .tgz as the extension. The "
+#~ "package contents should reside in a "
+#~ "subfolder inside the tarball (usually it"
+#~ " is called package/). npm strips one"
+#~ " directory layer when installing the "
+#~ "package (an equivalent of tar x "
+#~ "--strip-components=1 is run). The package"
+#~ " must contain a package.json file "
+#~ "with name and version properties. "
+#~ "Example:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: if you do not include the"
+#~ " @-symbol on your scope name, npm "
+#~ "will interpret this as a GitHub "
+#~ "repository instead, see below. Scopes "
+#~ "names must also be followed by a"
+#~ " slash."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: If there is a file or "
+#~ "folder named <name> in the current "
+#~ "working directory, then it will try "
+#~ "to install that, and only try to"
+#~ " fetch the package by name if "
+#~ "it is not valid."
+#~ msgstr ""
+
+#~ msgid "npm install [<@scope>/]<name>@<tag>:"
+#~ msgstr "npm install [<@scope>/]<name>@<tag>:"
+
+#~ msgid ""
+#~ "Install the version of the package "
+#~ "that is referenced by the specified "
+#~ "tag. If the tag does not exist "
+#~ "in the registry data for that "
+#~ "package, then this will fail."
+#~ msgstr ""
+
+#~ msgid "npm install [<@scope>/]<name>@<version>:"
+#~ msgstr "npm install [<@scope>/]<name>@<version>:"
+
+#~ msgid ""
+#~ "Install the specified version of the "
+#~ "package. This will fail if the "
+#~ "version has not been published to "
+#~ "the registry."
+#~ msgstr ""
+
+#~ msgid "npm install [<@scope>/]<name>@<version range>:"
+#~ msgstr "npm install [<@scope>/]<name>@<version range>:"
+
+#~ msgid ""
+#~ "Install a version of the package "
+#~ "matching the specified version range. "
+#~ "This will follow the same rules "
+#~ "for resolving dependencies described in "
+#~ "package.json."
+#~ msgstr ""
+
+#~ msgid "npm install <git remote url>:"
+#~ msgstr "npm install <git remote url>:"
+
+#~ msgid ""
+#~ "GIT_ASKPASS GIT_EXEC_PATH GIT_PROXY_COMMAND GIT_SSH"
+#~ " GIT_SSH_COMMAND GIT_SSL_CAINFO GIT_SSL_NO_VERIFY "
+#~ "See the git man page for details."
+#~ msgstr ""
+
+#~ msgid "npm install <githubname>/<githubrepo>[#<commit-ish>]:"
+#~ msgstr "npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:"
+
+#~ msgid "npm install github:<githubname>/<githubrepo>[#<commit-ish>]:"
+#~ msgstr "npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:"
+
+#~ msgid ""
+#~ "npm install gist:[<githubname>/]<gistID>[#<commit-"
+#~ "ish>|#semver:<semver>]:"
+#~ msgstr ""
+#~ "npm install gist:[<githubname>/]<gistID>[#<commit-"
+#~ "ish>|#semver:<semver>]:"
+
+#~ msgid "npm install bitbucket:<bitbucketname>/<bitbucketrepo>[#<commit-ish>]:"
+#~ msgstr "npm install bitbucket:<bitbucketname>/<bitbucketrepo>[#<commit-ish>]:"
+
+#~ msgid "npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:"
+#~ msgstr "npm install gitlab:<gitlabname>/<gitlabrepo>[#<commit-ish>]:"
+
+#~ msgid ""
+#~ "npm install sax --force The -g or"
+#~ " --global argument will cause npm to"
+#~ " install the package globally rather "
+#~ "than locally. See npm-folders."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See npm-config. Many of the "
+#~ "configuration params have some effect on"
+#~ " installation, since that’s most of "
+#~ "what npm does."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "load the existing node_modules tree from"
+#~ " disk clone the tree fetch the "
+#~ "package.json and assorted metadata and "
+#~ "add it to the clone walk the "
+#~ "clone and add any missing dependencies"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "dependencies will be added as close "
+#~ "to the top as is possible without"
+#~ " breaking any other modules"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "compare the original tree with the "
+#~ "cloned tree and make a list of "
+#~ "actions to take to convert one to"
+#~ " the other execute all of the "
+#~ "actions, deepest first"
+#~ msgstr ""
+
+#~ msgid "kinds of actions are install, update, remove and move"
+#~ msgstr "kinds of actions are install, update, remove and move"
+
+#~ msgid ""
+#~ "There are some very rare and "
+#~ "pathological edge-cases where a cycle"
+#~ " can cause npm to try to "
+#~ "install a never-ending tree of "
+#~ "packages. Here is the simplest case:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A -> B -> A' -> B' -> "
+#~ "A -> B -> A' -> B' -> "
+#~ "A -> ... where A is some "
+#~ "version of a package, and A' is"
+#~ " a different version of the same "
+#~ "package. Because B depends on a "
+#~ "different version of A than the "
+#~ "one that is already in the tree,"
+#~ " it must install a separate copy. "
+#~ "The same is true of A', which "
+#~ "must install B'. Because B' depends "
+#~ "on the original version of A, "
+#~ "which has been overridden, the cycle "
+#~ "falls into infinite regress."
+#~ msgstr ""
+
+#~ msgid "alias: npm cit"
+#~ msgstr "alias: npm cit"
+
+#~ msgid "alias: npm it"
+#~ msgstr "alias: npm cit"
+
+#~ msgid "alias: npm ln"
+#~ msgstr "alias: npm ln"
+
+#~ msgid "aliases: list, la, ll"
+#~ msgstr "aliases: list, la, ll"
+
+#~ msgid ""
+#~ "Positional arguments are name@version-range"
+#~ " identifiers, which will limit the "
+#~ "results to only the paths to the"
+#~ " packages named. Note that nested "
+#~ "packages will also show the paths "
+#~ "to the specified packages. For example,"
+#~ " running npm ls promzard in npm’s "
+#~ "source tree will show:"
+#~ msgstr ""
+
+#~ msgid "npm@@VERSION@ /path/to/npm └─┬ init-package-json@0.0.4"
+#~ msgstr "npm@@VERSION@ /path/to/npm └─┬ init-package-json@0.0.4"
+
+#~ msgid "└── promzard@0.1.5"
+#~ msgstr "└── promzard@0.1.5"
+
+#~ msgid "json Default: false Type: Boolean Show information in JSON format."
+#~ msgstr "json Default: false Type: Boolean Show information in JSON format."
+
+#~ msgid ""
+#~ "global Default: false Type: Boolean List"
+#~ " packages in the global install "
+#~ "prefix instead of in the current "
+#~ "project."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "prod / production Type: Boolean Default:"
+#~ " false Display only the dependency "
+#~ "tree for packages in dependencies."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "dev / development Type: Boolean Default:"
+#~ " false Display only the dependency "
+#~ "tree for packages in devDependencies."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "link Type: Boolean Default: false "
+#~ "Display only dependencies which are "
+#~ "linked"
+#~ msgstr ""
+
+#~ msgid "aliases: author"
+#~ msgstr "aliases: author"
+
+#~ msgid ""
+#~ "Publishes '.' if no argument supplied"
+#~ " Sets tag 'latest' if no --tag "
+#~ "specified"
+#~ msgstr ""
+
+#~ msgid "alias: npm rb"
+#~ msgstr "alias: npm rb"
+
+#~ msgid "aliases: s, se, find"
+#~ msgstr "aliases: s, se, find"
+
+#~ msgid "aliases: remove, rm, r, un, unlink"
+#~ msgstr "aliases: remove, rm, r, un, unlink"
+
+#~ msgid "aliases: up, upgrade"
+#~ msgstr "aliases: up, upgrade"
+
+#~ msgid "aliases: info, show, v"
+#~ msgstr "aliases: info, show, v"
+
+#~ msgid ""
+#~ "This command repurposes package-lock.json "
+#~ "into a publishable npm-shrinkwrap.json "
+#~ "or simply creates a new one. The"
+#~ " file created and updated by this "
+#~ "command will then take precedence over"
+#~ " any other existing or future "
+#~ "package-lock.json files. For a detailed "
+#~ "explanation of the design and purpose"
+#~ " of package locks in npm, see "
+#~ "npm-package-locks."
+#~ msgstr ""
+#~ "此命令将package-lock.json重新发布到可发布的npm-"
+#~ "shrinkwrap.json中，或者只是创建一个新的。此命令创建和更新的文件将优先于任何其他现有或未来的package-"
+#~ "lock.json文件。有关npm中包锁的设计和目的的详细说明，请参阅npm-package-locks。"
+
+#~ msgid ":option:`npm package-locks`"
+#~ msgstr ""
+
+#~ msgid ":option:`package-lock.json`"
+#~ msgstr ""
+
+#~ msgid ":option:`npm shrinkwrap.json`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The package contents should reside in"
+#~ " a subfolder inside the tarball "
+#~ "(usually it is called package/). npm "
+#~ "strips one directory layer when "
+#~ "installing the package (an equivalent of"
+#~ " tar x --strip-components=1 is run)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Fetch the tarball url, and then "
+#~ "install it. In order to distinguish "
+#~ "between this and other options, the "
+#~ "argument must start with “http://” or"
+#~ " “https://”"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Do a <name>@<tag> install, where <tag>"
+#~ " is the “tag” config. (See npm-"
+#~ "config. The config’s default value is"
+#~ " latest.)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Package will appear in your "
+#~ "dependencies. This is the default unless"
+#~ " -D or -O are present."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When using any of the above "
+#~ "options to save dependencies to your "
+#~ "package.json, there are two additional, "
+#~ "optional flags:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Further, if you have an npm-"
+#~ "shrinkwrap.json or package-lock.json then "
+#~ "it will be updated as well."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<scope> is optional. The package will"
+#~ " be downloaded from the registry "
+#~ "associated with the specified scope. If"
+#~ " no registry is associated with the"
+#~ " given scope the default registry is"
+#~ " assumed. See npm-scope."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "if you do not include the @-symbol"
+#~ " on your scope name, npm will "
+#~ "interpret this as a GitHub repository"
+#~ " instead, see below. Scopes names "
+#~ "must also be followed by a slash."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If there is a file or folder "
+#~ "named <name> in the current working "
+#~ "directory, then it will try to "
+#~ "install that, and only try to "
+#~ "fetch the package by name if it"
+#~ " is not valid."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path"
+#~ ">[#<commit-ish> | #semver:<semver>]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If #<commit-ish> is provided, it "
+#~ "will be used to clone exactly that"
+#~ " commit. If the commit-ish has "
+#~ "the format #semver:<semver>, <semver> can "
+#~ "be any valid semver range or exact"
+#~ " version, and npm will look for "
+#~ "any tags or refs matching that "
+#~ "range in the remote repository, much "
+#~ "as it would for a registry "
+#~ "dependency. If neither #<commit-ish> or"
+#~ " #semver:<semver> is specified, then the"
+#~ " default branch of the repository is"
+#~ " used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If #<commit-ish> is provided, it "
+#~ "will be used to clone exactly that"
+#~ " commit. If the commit-ish has "
+#~ "the format #semver:<semver>, <semver> can "
+#~ "be any valid semver range or exact"
+#~ " version, and npm will look for "
+#~ "any tags or refs matching that "
+#~ "range in the remote repository, much "
+#~ "as it would for a registry "
+#~ "dependency. If neither #<commit-ish> or"
+#~ " #semver:<semver> is specified, then master"
+#~ " is used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You may combine multiple arguments, and"
+#~ " even multiple types of arguments. "
+#~ "For example:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --tag argument will apply to "
+#~ "all of the specified install targets."
+#~ " If a tag with the given name"
+#~ " exists, the tagged version is "
+#~ "preferred over newer versions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --dry-run argument will report "
+#~ "in the usual way what the install"
+#~ " would have done without actually "
+#~ "installing anything."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --package-lock-only argument will"
+#~ " only update the package-lock.json, "
+#~ "instead of checking node_modules and "
+#~ "downloading dependencies."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The -f or --force argument will "
+#~ "force npm to fetch remote resources "
+#~ "even if a local copy exists on "
+#~ "disk."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --global-style argument will cause"
+#~ " npm to install the package into "
+#~ "your local node_modules folder with the"
+#~ " same layout it uses with the "
+#~ "global node_modules folder. Only your "
+#~ "direct dependencies will show in "
+#~ "node_modules and everything they depend "
+#~ "on will be flattened in their "
+#~ "node_modules folders. This obviously will "
+#~ "eliminate some deduping."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --ignore-scripts argument will cause"
+#~ " npm to not execute any scripts "
+#~ "defined in the package.json. See npm-"
+#~ "scripts."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --legacy-bundling argument will "
+#~ "cause npm to install the package "
+#~ "such that versions of npm prior to"
+#~ " 1.4, such as the one included "
+#~ "with node 0.8, can install the "
+#~ "package. This eliminates all automatic "
+#~ "deduping."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --link argument will cause npm "
+#~ "to link global installs into the "
+#~ "local space in some cases."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --no-bin-links argument will "
+#~ "prevent npm from creating symlinks for"
+#~ " any binaries the package might "
+#~ "contain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --no-optional argument will prevent"
+#~ " optional dependencies from being "
+#~ "installed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --no-shrinkwrap argument, which will"
+#~ " ignore an available package lock or"
+#~ " shrinkwrap file and use the "
+#~ "package.json instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --no-package-lock argument will "
+#~ "prevent npm from creating a package-"
+#~ "lock.json file. When running with "
+#~ "package-lock’s disabled npm will not "
+#~ "automatically prune your node modules "
+#~ "when installing."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --nodedir=/path/to/node/source argument will "
+#~ "allow npm to find the node source"
+#~ " code so that npm can compile "
+#~ "native modules."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --only={prod[uction]|dev[elopment]} argument "
+#~ "will cause either only devDependencies "
+#~ "or only non-devDependencies to be "
+#~ "installed regardless of the NODE_ENV."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The --no-audit argument can be "
+#~ "used to disable sending of audit "
+#~ "reports to the configured registries. "
+#~ "See npm-audit for details on what"
+#~ " is sent."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To avoid this situation, npm flat-"
+#~ "out refuses to install any name@version"
+#~ " that is already present anywhere in"
+#~ " the tree of package folder "
+#~ "ancestors. A more correct, but more "
+#~ "complex, solution would be to symlink"
+#~ " the existing version into the new"
+#~ " location. If this ever affects a "
+#~ "real use-case, it will be "
+#~ "investigated."
+#~ msgstr ""
+
+#~ msgid "npm-version"
+#~ msgstr "npm-version"
 

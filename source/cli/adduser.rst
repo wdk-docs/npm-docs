@@ -1,4 +1,4 @@
-npm-adduser
+npm adduser
 ==============================
 
 SYNOPSIS
@@ -14,7 +14,17 @@ SYNOPSIS
 
       npm adduser [--registry=url] [--scope=@orgname] [--always-auth] [--auth-type=legacy]
 
-      aliases: login, add-user
+.. option:: login
+
+   adduser alias
+
+.. option:: add-user
+
+   adduser alias
+
+.. option:: --registry
+
+   adduser param
 
 DESCRIPTION
 ----------------------------------------

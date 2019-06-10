@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-04 22:31+0800\n"
+"POT-Creation-Date: 2019-06-10 15:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,14 +19,19 @@ msgstr ""
 
 #: ../../source/integrations/about-authentication-tokens.rst:2
 msgid "About authentication tokens"
-msgstr ""
+msgstr "关于身份验证令牌"
 
 #: ../../source/integrations/about-authentication-tokens.rst:4
 msgid ""
-"Note: You must be using npm version 5.5.1 or greater to use "
-"authentication tokens. An authentication token is a hexadecimal string "
-"that gives you the right to publish and access your modules. Whenever you"
-" log in to npm, we generate an authentication token for you."
+"You must be using npm version 5.5.1 or greater to use authentication "
+"tokens."
+msgstr ""
+
+#: ../../source/integrations/about-authentication-tokens.rst:5
+msgid ""
+"An authentication token is a hexadecimal string that gives you the right "
+"to publish and access your modules. Whenever you log in to npm, we "
+"generate an authentication token for you."
 msgstr ""
 
 #: ../../source/integrations/about-authentication-tokens.rst:7
@@ -48,7 +53,7 @@ msgstr ""
 
 #: ../../source/integrations/about-authentication-tokens.rst:11
 msgid "npm token commands let you:"
-msgstr ""
+msgstr "npm令牌命令让你："
 
 #: ../../source/integrations/about-authentication-tokens.rst:13
 msgid ""
@@ -61,7 +66,7 @@ msgstr ""
 
 #: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:2
 msgid "Creating and viewing authentication tokens"
-msgstr ""
+msgstr "创建和查看身份验证令牌"
 
 #: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:4
 msgid ""
@@ -116,15 +121,15 @@ msgstr ""
 
 #: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:35
 msgid ""
-"Viewing tokens§ Note: You can only view a full token immediately after "
-"creation. Viewing tokens on the website§ To view all tokens associated "
-"with your account, in the upper right corner of the page, click your "
-"profile picture, then click Tokens."
+"Viewing tokens§ .. note:: You can only view a full token immediately "
+"after creation. Viewing tokens on the website§ To view all tokens "
+"associated with your account, in the upper right corner of the page, "
+"click your profile picture, then click Tokens."
 msgstr ""
 
 #: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:40
 msgid "profile dropdown menu with tokens link selected"
-msgstr ""
+msgstr "选择了令牌链接的配置文件下拉菜单"
 
 #: ../../source/integrations/creating-and-viewing-authentication-tokens.rst:42
 msgid ""
@@ -143,7 +148,7 @@ msgstr ""
 
 #: ../../source/integrations/docker-and-private-modules.rst:2
 msgid "Docker and private modules"
-msgstr ""
+msgstr "Docker和私有模块"
 
 #: ../../source/integrations/docker-and-private-modules.rst:4
 msgid ""
@@ -153,16 +158,16 @@ msgstr ""
 
 #: ../../source/integrations/docker-and-private-modules.rst:6
 msgid "Background: runtime variables§ If you had the following Dockerfile:"
-msgstr ""
+msgstr "Background: runtime variables§ If you had the following Dockerfile:"
 
 #: ../../source/integrations/docker-and-private-modules.rst:9
 #: ../../source/integrations/docker-and-private-modules.rst:42
 msgid "FROM risingstack/alpine:3.3-v4.3.1-3.0.1"
-msgstr ""
+msgstr "从升级堆栈/高山：3.3-v4.3.1-3.0.1"
 
 #: ../../source/integrations/docker-and-private-modules.rst:11
 msgid "COPY package.json package.json RUN npm install"
-msgstr ""
+msgstr "使用package.json package.json安装npm"
 
 #: ../../source/integrations/docker-and-private-modules.rst:14
 msgid ""
@@ -246,7 +251,7 @@ msgstr ""
 
 #: ../../source/integrations/docker-and-private-modules.rst:61
 msgid ""
-"Note: Even if you delete the .npmrc file, it will be kept in the commit "
+"Even if you delete the .npmrc file, it will be kept in the commit "
 "history. To clean your secrets entirely, make sure to squash them."
 msgstr ""
 
@@ -256,7 +261,7 @@ msgstr "集成"
 
 #: ../../source/integrations/index.rst:4
 msgid "Integrating npm with third-party tools, such as CI/CD apps."
-msgstr "将npm与第三方工具（如CI / CD应用程序）集成。"
+msgstr "将npm与第三方工具（如 CI/CD 应用程序）集成。"
 
 #: ../../source/integrations/index.rst:7
 msgid "Integrating npm with external services"
@@ -264,7 +269,7 @@ msgstr "将npm与外部服务集成"
 
 #: ../../source/integrations/revoking-authentication-tokens.rst:2
 msgid "Revoking authentication tokens"
-msgstr ""
+msgstr "撤消身份验证令牌"
 
 #: ../../source/integrations/revoking-authentication-tokens.rst:4
 msgid ""
@@ -275,10 +280,14 @@ msgstr ""
 
 #: ../../source/integrations/revoking-authentication-tokens.rst:6
 msgid ""
-"Note: While authentication tokens are not derived from your password, "
-"changing your password will invalidate all of your tokens. You can also "
-"invalidate a single token by logging out on a machine that is logged in "
-"with that token. We recommend revoking rather than invalidating tokens. "
+"While authentication tokens are not derived from your password, changing "
+"your password will invalidate all of your tokens. You can also invalidate"
+" a single token by logging out on a machine that is logged in with that "
+"token. We recommend revoking rather than invalidating tokens."
+msgstr ""
+
+#: ../../source/integrations/revoking-authentication-tokens.rst:7
+msgid ""
 "To see a list of your tokens, on the command line, run: npm token list In"
 " the tokens table, find and copy the ID of the token you want to delete. "
 "On the command line, run the following command, replacing 123456 with the"
@@ -288,15 +297,15 @@ msgstr ""
 
 #: ../../source/integrations/revoking-authentication-tokens.rst:14
 msgid ""
-"To confirm that the token has been removed, run: npm token list Note: You"
-" must use the token ID to delete a token, not the truncated version of "
-"the token. In some cases, there may be a delay of up to an hour before a "
-"token is successfully revoked."
+"To confirm that the token has been removed, run: npm token list .. note::"
+" You must use the token ID to delete a token, not the truncated version "
+"of the token. In some cases, there may be a delay of up to an hour before"
+" a token is successfully revoked."
 msgstr ""
 
 #: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:2
 msgid "Using private packages in a CI/CD workflow"
-msgstr ""
+msgstr "在CI / CD工作流程中使用私有包"
 
 #: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:4
 msgid ""
@@ -339,9 +348,9 @@ msgstr ""
 
 #: ../../source/integrations/using-private-packages-in-a-ci-cd-workflow.rst:22
 msgid ""
-"npm token create Note: For increased security, we recommend generated a "
-"CIDR-whitelisted token that can only be used from a certain IP address "
-"range. You can use a CIDR whitelist with a read and publish token or a "
+"npm token create .. note:: For increased security, we recommend generated"
+" a CIDR-whitelisted token that can only be used from a certain IP address"
+" range. You can use a CIDR whitelist with a read and publish token or a "
 "read-only token: npm token create --cidr=[list] npm token create --read-"
 "only --cidr=[list] Example: npm token create --cidr=192.0.2.0/24 For more"
 " information, see \"Creating and viewing authentication tokens\". Set the"
@@ -370,4 +379,44 @@ msgid ""
 "the following contents: //registry.npmjs.org/:_authToken=${NPM_TOKEN} "
 "Check in the .npmrc file."
 msgstr ""
+
+#~ msgid ""
+#~ ".. note:: You must be using npm"
+#~ " version 5.5.1 or greater to use "
+#~ "authentication tokens. An authentication token"
+#~ " is a hexadecimal string that gives"
+#~ " you the right to publish and "
+#~ "access your modules. Whenever you log"
+#~ " in to npm, we generate an "
+#~ "authentication token for you."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: Even if you delete the"
+#~ " .npmrc file, it will be kept "
+#~ "in the commit history. To clean "
+#~ "your secrets entirely, make sure to "
+#~ "squash them."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: While authentication tokens "
+#~ "are not derived from your password, "
+#~ "changing your password will invalidate "
+#~ "all of your tokens. You can also"
+#~ " invalidate a single token by logging"
+#~ " out on a machine that is "
+#~ "logged in with that token. We "
+#~ "recommend revoking rather than invalidating"
+#~ " tokens. To see a list of your"
+#~ " tokens, on the command line, run:"
+#~ " npm token list In the tokens "
+#~ "table, find and copy the ID of "
+#~ "the token you want to delete. On"
+#~ " the command line, run the following"
+#~ " command, replacing 123456 with the "
+#~ "ID of the token you want to "
+#~ "delete: npm token delete 123456 npm "
+#~ "will report Removed 1 token"
+#~ msgstr ""
 

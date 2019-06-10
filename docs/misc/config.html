@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-config &#8212; npm-docs 6.9.1 文档</title>
+    <title>config &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="npm-developers" href="developers.html" />
-    <link rel="prev" title="npm-coding-style" href="coding-style.html" />
+    <link rel="next" title="developers" href="developers.html" />
+    <link rel="prev" title="coding-style" href="coding-style.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/misc/config.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,10 +86,10 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="developers.html" title="npm-developers"
+          <a href="developers.html" title="developers"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="coding-style.html" title="npm-coding-style"
+          <a href="coding-style.html" title="coding-style"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -98,12 +99,21 @@
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">config</a><ul>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
+<li><a class="reference internal" href="#default-configs">Default Configs</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>上一个主题</h4>
   <p class="topless"><a href="coding-style.html"
-                        title="上一章">npm-coding-style</a></p>
+                        title="上一章">coding-style</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="developers.html"
-                        title="下一章">npm-developers</a></p>
+                        title="下一章">developers</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -129,16 +139,17 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="npm-config">
-<span id="config"></span><h1>npm-config<a class="headerlink" href="#npm-config" title="永久链接至标题">¶</a></h1>
-<p>More than you probably want to know about npm configuration
-DESCRIPTION
-npm gets its configuration values from the following sources, sorted by priority:</p>
+  <div class="section" id="config">
+<span id="id1"></span><h1>config<a class="headerlink" href="#config" title="永久链接至标题">¶</a></h1>
+<p>More than you probably want to know about npm configuration</p>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>npm gets its configuration values from the following sources, sorted by priority:</p>
 <p>Command Line Flags
 Putting –foo bar on the command line sets the foo configuration parameter to “bar”. A – argument tells the cli parser to stop reading flags. Using –flag without specifying any value will set the value to true.</p>
 <p>Example: –flag1 –flag2 will set both configuration parameters to true, while –flag1 –flag2 bar will set flag1 to true, and flag2 to bar. Finally, –flag1 –flag2 – bar will set both configuration parameters to true, and the bar is taken as a command argument.</p>
 <p>Environment Variables
-Any environment variables that start with <a href="#id1"><span class="problematic" id="id2">npm_config_</span></a> will be interpreted as a configuration parameter. For example, putting npm_config_foo=bar in your environment will set the foo configuration parameter to bar. Any environment configurations that are not given a value will be given the value of true. Config values are case-insensitive, so NPM_CONFIG_FOO=bar will work the same. However, please note that inside npm-scripts npm will set its own environment variables and Node will prefer those lowercase versions over any uppercase ones that you might set. For details see this issue.</p>
+Any environment variables that start with <a href="#id2"><span class="problematic" id="id3">npm_config_</span></a> will be interpreted as a configuration parameter. For example, putting npm_config_foo=bar in your environment will set the foo configuration parameter to bar. Any environment configurations that are not given a value will be given the value of true. Config values are case-insensitive, so NPM_CONFIG_FOO=bar will work the same. However, please note that inside npm-scripts npm will set its own environment variables and Node will prefer those lowercase versions over any uppercase ones that you might set. For details see this issue.</p>
 <p>Notice that you need to use underscores instead of dashes, so –allow-same-version would become npm_config_allow_same_version=true.</p>
 <p>npmrc Files
 The four relevant files are:</p>
@@ -147,8 +158,10 @@ per-user configuration file (defaults to $HOME/.npmrc; configurable via CLI opti
 global configuration file (defaults to $PREFIX/etc/npmrc; configurable via CLI option –globalconfig or environment variable $NPM_CONFIG_GLOBALCONFIG)
 npm’s built-in configuration file (/path/to/npm/npmrc)
 See npmrc for more details.</p>
-<p>Default Configs
-Run npm config ls -l to see a set of configuration parameters that are internal to npm, and are defaults if nothing else is specified.</p>
+</div>
+<div class="section" id="default-configs">
+<h2>Default Configs<a class="headerlink" href="#default-configs" title="永久链接至标题">¶</a></h2>
+<p>Run npm config ls -l to see a set of configuration parameters that are internal to npm, and are defaults if nothing else is specified.</p>
 <p>Shorthands and Other CLI Niceties
 The following shorthands are parsed on the command-line:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>-v: --version
@@ -750,6 +763,7 @@ npm-scripts
 npm-folders
 npm</p>
 </div>
+</div>
 
 
           </div>
@@ -764,10 +778,10 @@ npm</p>
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="developers.html" title="npm-developers"
+          <a href="developers.html" title="developers"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="coding-style.html" title="npm-coding-style"
+          <a href="coding-style.html" title="coding-style"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -777,7 +791,7 @@ npm</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

@@ -1,4 +1,4 @@
-npm-search
+npm search
 ============================================================================================
 
 SYNOPSIS
@@ -14,7 +14,17 @@ SYNOPSIS
 
       npm search [-l|--long] [--json] [--parseable] [--no-description] [search terms ...]
 
-   aliases: s, se, find
+.. option:: s
+
+   search alias
+
+.. option:: se
+
+   search alias
+
+.. option:: find
+
+   search alias
 
 DESCRIPTION
 -------------------

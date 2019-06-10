@@ -9,7 +9,7 @@ Make your your new npm user account an owner of your new Org.
 Add your new npm user account to a team called “Developers” in your new Org.
 Transfer packages owned by your user account to your new Org.
 Transfer your existing Org and team memberships and contributor access settings to your new user account.
-Note: Once your old user account has been converted to an Org, you will no longer be able to sign in to npm with your old user account.
+.. note:: Once your old user account has been converted to an Org, you will no longer be able to sign in to npm with your old user account.
 
 Log in to npm with your user account. npm login dialog with username and password fields left blank
 In the upper right corner of the page, click your profile picture, then click Create an Organization. create an Organization dropdown menu

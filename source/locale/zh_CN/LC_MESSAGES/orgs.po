@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-04 22:31+0800\n"
+"POT-Creation-Date: 2019-06-10 15:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/orgs/about-org-scopes-and-packages.rst:2
 msgid "About Org scopes and packages"
-msgstr ""
+msgstr "关于Org范围和包"
 
 #: ../../source/orgs/about-org-scopes-and-packages.rst:4
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../source/orgs/about-org-scopes-and-packages.rst:6
 msgid "You can use scopes to:"
-msgstr ""
+msgstr "您可以使用范围:"
 
 #: ../../source/orgs/about-org-scopes-and-packages.rst:8
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../source/orgs/about-teams.rst:2
 msgid "About teams"
-msgstr ""
+msgstr "关于团队"
 
 #: ../../source/orgs/about-teams.rst:4
 msgid ""
@@ -84,13 +84,13 @@ msgstr ""
 
 #: ../../source/orgs/about-teams.rst:15
 msgid ""
-"Removing the Developers team§ Note: We strongly recommend not removing "
-"the Developers team."
+"Removing the Developers team§ .. note:: We strongly recommend not "
+"removing the Developers team."
 msgstr ""
 
 #: ../../source/orgs/about-teams.rst:18
 msgid "If an Org owner or admin deletes the Developers team:"
-msgstr ""
+msgstr "如果组织所有者或管理员删除开发人员团队:"
 
 #: ../../source/orgs/about-teams.rst:20
 msgid ""
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../source/orgs/accepting-or-rejecting-an-org-invitation.rst:2
 msgid "Accepting or rejecting an Org invitation"
-msgstr ""
+msgstr "如果组织所有者或管理员删除了开发人员团队"
 
 #: ../../source/orgs/accepting-or-rejecting-an-org-invitation.rst:4
 msgid ""
@@ -132,9 +132,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/orgs/adding-members-to-your-org.rst:2
-#, fuzzy
 msgid "Adding members to your Org"
-msgstr "支付你的组织"
+msgstr "将成员添加到您的组织"
 
 #: ../../source/orgs/adding-members-to-your-org.rst:4
 msgid ""
@@ -153,7 +152,7 @@ msgstr ""
 
 #: ../../source/orgs/adding-members-to-your-org.rst:9
 msgid "Once the new member accepts the invitation, they are:"
-msgstr ""
+msgstr "一旦新成员接受邀请，他们就是:"
 
 #: ../../source/orgs/adding-members-to-your-org.rst:11
 msgid ""
@@ -191,9 +190,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/orgs/adding-org-members-to-teams.rst:2
-#, fuzzy
 msgid "Adding Org members to teams"
-msgstr "管理组织成员"
+msgstr "将组织成员添加到团队中"
 
 #: ../../source/orgs/adding-org-members-to-teams.rst:4
 msgid ""
@@ -203,8 +201,8 @@ msgstr ""
 
 #: ../../source/orgs/adding-org-members-to-teams.rst:6
 msgid ""
-"Note: An npm user must be a member of your Org before you can add them to"
-" a team. To add a member to your Org, see “Adding members to your Org”."
+"An npm user must be a member of your Org before you can add them to a "
+"team. To add a member to your Org, see “Adding members to your Org”."
 msgstr ""
 
 #: ../../source/orgs/adding-org-members-to-teams.rst:8
@@ -218,7 +216,7 @@ msgid ""
 "members to, click Members. members button In the “Username” field, type "
 "the npm username of the Org member you would like to add to your team. "
 "team member in username field dropdown Click + Add User. add user button "
-"Note: Org members are not notified when they are added to a team. We "
+".. note:: Org members are not notified when they are added to a team. We "
 "recommend telling the Org member you have added them to a team."
 msgstr ""
 
@@ -230,15 +228,15 @@ msgstr ""
 
 #: ../../source/orgs/adding-org-members-to-teams.rst:20
 msgid "npm team For more information, see the CLI documentation on teams."
-msgstr ""
+msgstr "npm团队有关更多信息，请参阅团队的CLI文档。"
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:2
 msgid "Configuring your npm client with your Org settings"
-msgstr ""
+msgstr "使用组织设置配置npm客户端"
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:4
 msgid "As an Org member, you can configure your npm client to:"
-msgstr ""
+msgstr "作为组织成员，您可以将您的npm客户端配置为:"
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:6
 msgid ""
@@ -257,20 +255,20 @@ msgstr ""
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:13
 msgid ""
-"Setting your Org scope for all new packages§ Note: Setting the Org scope "
-"using the steps below will only set the scope for new packages; for "
-"existing packages, you will need to update the name field in "
+"Setting your Org scope for all new packages§ .. note:: Setting the Org "
+"scope using the steps below will only set the scope for new packages; for"
+" existing packages, you will need to update the name field in "
 "package.json."
 msgstr ""
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:16
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:43
 msgid "On the command line, type the following command:"
-msgstr ""
+msgstr "在命令行上，键入以下命令:"
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:17
 msgid "npm config set scope <org-name> --global"
-msgstr ""
+msgstr "npm config set scope <org-name> --global"
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:18
 msgid ""
@@ -288,7 +286,7 @@ msgstr ""
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:24
 msgid "npm config set scope <org-name>"
-msgstr ""
+msgstr "npm config set scope <org-name>"
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:25
 msgid ""
@@ -301,7 +299,7 @@ msgstr ""
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:29
 msgid "npm publish --access public."
-msgstr ""
+msgstr "npm publish --access public."
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:31
 msgid ""
@@ -318,7 +316,7 @@ msgstr ""
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:36
 msgid "npm config set access public"
-msgstr ""
+msgstr "npm config设置访问公共"
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:37
 msgid ""
@@ -336,15 +334,15 @@ msgstr ""
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:44
 msgid "npm config set access public --global"
-msgstr ""
+msgstr "npm config set access public --global"
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:45
 msgid "Press Enter."
-msgstr ""
+msgstr "按Enter键。"
 
 #: ../../source/orgs/converting-your-user-account-to-an-org.rst:2
 msgid "Converting your user account to an Org"
-msgstr ""
+msgstr "将您的用户帐户转换为组织"
 
 #: ../../source/orgs/converting-your-user-account-to-an-org.rst:4
 msgid ""
@@ -362,9 +360,9 @@ msgid ""
 "user account to a team called “Developers” in your new Org. Transfer "
 "packages owned by your user account to your new Org. Transfer your "
 "existing Org and team memberships and contributor access settings to your"
-" new user account. Note: Once your old user account has been converted to"
-" an Org, you will no longer be able to sign in to npm with your old user "
-"account."
+" new user account. .. note:: Once your old user account has been "
+"converted to an Org, you will no longer be able to sign in to npm with "
+"your old user account."
 msgstr ""
 
 #: ../../source/orgs/converting-your-user-account-to-an-org.rst:14
@@ -385,9 +383,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/orgs/creating-an-org.rst:2
-#, fuzzy
 msgid "Creating an Org"
-msgstr "创建和管理Orgs"
+msgstr "创建组织"
 
 #: ../../source/orgs/creating-an-org.rst:4
 msgid ""
@@ -397,8 +394,8 @@ msgstr ""
 
 #: ../../source/orgs/creating-an-org.rst:6
 msgid ""
-"Note: You need an npm user account to create an Org. To create a user "
-"account, visit the account signup page”."
+"You need an npm user account to create an Org. To create a user account, "
+"visit the account signup page”."
 msgstr ""
 
 #: ../../source/orgs/creating-an-org.rst:8
@@ -418,7 +415,7 @@ msgstr ""
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:2
 msgid "Creating and publishing an Org scoped package"
-msgstr ""
+msgstr "创建和发布组织范围包"
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:4
 msgid ""
@@ -434,7 +431,7 @@ msgstr ""
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:8
 msgid "mkdir /path/to/package/directory"
-msgstr ""
+msgstr "mkdir /path/to/package/directory"
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:9
 msgid ""
@@ -444,7 +441,7 @@ msgstr ""
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:11
 msgid "npm init --scope=<your_org_name>"
-msgstr ""
+msgstr "npm init --scope=<your_org_name>"
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:12
 msgid ""
@@ -471,7 +468,7 @@ msgstr ""
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:24
 msgid "private package page showing private below package name"
-msgstr ""
+msgstr "private package page showing private below package name"
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:26
 msgid ""
@@ -488,10 +485,9 @@ msgstr ""
 
 #: ../../source/orgs/creating-and-publishing-an-org-scoped-package.rst:34
 msgid "public package page showing public below package name"
-msgstr ""
+msgstr "显示公共包装名称下方的公共包装页面"
 
 #: ../../source/orgs/creating-teams.rst:2
-#, fuzzy
 msgid "Creating teams"
 msgstr "管理团队"
 
@@ -503,28 +499,32 @@ msgstr ""
 
 #: ../../source/orgs/creating-teams.rst:6
 msgid ""
-"Note: Team names cannot be changed. To \"rename\" a team, you must delete"
-" the team and recreate it. Log in to npm with your user account. npm "
-"login dialog with username and password fields left blank In the upper "
-"right corner of the page, click your profile picture, then click Profile "
-"Settings. npm avatar menu with selector over profile settings list item "
-"In the left sidebar, click the name of your Org. example org selected in "
-"organizations list On the Org settings page, click Teams. teams tab In "
-"the “Name” and “Description” fields, type a team name and helpful "
-"description. Team names must be lower case and cannot contain spaces or "
-"punctuation. team name and description fields Click Make it so. make it "
-"so button Note: New teams do not have members or package access by "
-"default. Once you create a team, add packages and members from the "
-"\"Teams\" tab."
+"Team names cannot be changed. To \"rename\" a team, you must delete the "
+"team and recreate it."
+msgstr ""
+
+#: ../../source/orgs/creating-teams.rst:7
+msgid ""
+"Log in to npm with your user account. npm login dialog with username and "
+"password fields left blank In the upper right corner of the page, click "
+"your profile picture, then click Profile Settings. npm avatar menu with "
+"selector over profile settings list item In the left sidebar, click the "
+"name of your Org. example org selected in organizations list On the Org "
+"settings page, click Teams. teams tab In the “Name” and “Description” "
+"fields, type a team name and helpful description. Team names must be "
+"lower case and cannot contain spaces or punctuation. team name and "
+"description fields Click Make it so. make it so button .. note:: New "
+"teams do not have members or package access by default. Once you create a"
+" team, add packages and members from the \"Teams\" tab."
 msgstr ""
 
 #: ../../source/orgs/deleting-an-org.rst:2
 msgid "Deleting an Org"
-msgstr ""
+msgstr "删除组织"
 
 #: ../../source/orgs/deleting-an-org.rst:4
 msgid "Orgs cannot be deleted from the website or command line interface."
-msgstr ""
+msgstr "Orgs cannot be deleted from the website or command line interface."
 
 #: ../../source/orgs/deleting-an-org.rst:6
 msgid ""
@@ -541,12 +541,18 @@ msgstr ""
 
 #: ../../source/orgs/downgrading-to-a-free-org-plan.rst:2
 msgid "Downgrading to a free Org plan"
-msgstr ""
+msgstr "降级为免费的组织计划"
 
 #: ../../source/orgs/downgrading-to-a-free-org-plan.rst:4
+#: ../../source/orgs/updating-org-billing-settings.rst:4
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:4
+#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:4
+msgid "This article only applies to users of the public npm registry."
+msgstr "This article only applies to users of the public npm registry."
+
+#: ../../source/orgs/downgrading-to-a-free-org-plan.rst:5
 msgid ""
-"Note: This article only applies to users of the public npm registry. If "
-"you have a paid Org, but no longer need private packages, as an Org "
+"If you have a paid Org, but no longer need private packages, as an Org "
 "owner, you can downgrade your paid Org to a free Org. When you downgrade "
 "from a paid to a free Org, you and your Org members will lose the ability"
 " to install and publish private packages at the end of your last paid "
@@ -556,8 +562,8 @@ msgstr ""
 
 #: ../../source/orgs/downgrading-to-a-free-org-plan.rst:7
 msgid ""
-"Note: If you would like to pay for fewer seats, you can remove members "
-"from your Org by following the steps in “Removing members from your Org”."
+"If you would like to pay for fewer seats, you can remove members from "
+"your Org by following the steps in “Removing members from your Org”."
 msgstr ""
 
 #: ../../source/orgs/downgrading-to-a-free-org-plan.rst:9
@@ -575,25 +581,25 @@ msgstr ""
 
 #: ../../source/orgs/index.rst:2
 msgid "Orgs"
-msgstr "Orgs"
+msgstr "组织"
 
 #: ../../source/orgs/index.rst:4
 msgid ""
 "npm Orgs allow teams of contributors to read, write, and publish public "
 "or private scoped packages, as well as unscoped public packages governed "
 "by the Org."
-msgstr "npm Orgs允许贡献者团队读取，编写和发布公共或私有范围包，以及由Org管理的未范围公共包。"
+msgstr "npm 组织允许贡献者团队读取，编写和发布公共或私有范围包，以及由组织管理的未范围公共包。"
 
 #: ../../source/orgs/index.rst:6
 msgid ""
 "Orgs are free for public packages, and cost $7 per member per month for "
 "private packages. For more information on Orgs pricing, see our pricing "
 "page."
-msgstr "公共包裹免费提供，私人包裹每个会员每月花费7美元。有关Orgs定价的更多信息，请参阅我们的定价页面。"
+msgstr "公共包免费提供，私人包每个会员每月花费7美元。有关组织定价的更多信息，请参阅我们的定价页面。"
 
 #: ../../source/orgs/index.rst:9
 msgid "Creating and managing Orgs"
-msgstr "创建和管理Orgs"
+msgstr "创建和管理组织"
 
 #: ../../source/orgs/index.rst:20
 msgid "Paying for your Org"
@@ -612,9 +618,8 @@ msgid "Managing Org packages"
 msgstr "管理组织包"
 
 #: ../../source/orgs/managing-org-permissions.rst:2
-#, fuzzy
 msgid "Managing Org permissions"
-msgstr "管理组织成员"
+msgstr "管理组织权限"
 
 #: ../../source/orgs/managing-org-permissions.rst:4
 msgid ""
@@ -636,15 +641,14 @@ msgid ""
 msgstr ""
 
 #: ../../source/orgs/managing-team-access-to-org-packages.rst:2
-#, fuzzy
 msgid "Managing team access to Org packages"
-msgstr "管理组织包"
+msgstr "管理团队对组织包的访问权限"
 
 #: ../../source/orgs/managing-team-access-to-org-packages.rst:4
 msgid ""
 "As an Org owner or team admin, you can add or remove package access to or"
 " from teams in your Org."
-msgstr ""
+msgstr "作为组织所有者或团队管理员，您可以在组织中添加或删除组中的组访问权限。"
 
 #: ../../source/orgs/managing-team-access-to-org-packages.rst:6
 msgid ""
@@ -712,15 +716,15 @@ msgstr ""
 
 #: ../../source/orgs/managing-team-access-to-org-packages.rst:44
 msgid "npm access For more information, see the npm-access CLI documentation."
-msgstr ""
+msgstr "npm access有关更多信息，请参阅npm-access CLI文档。"
 
 #: ../../source/orgs/org-roles-and-permissions.rst:2
 msgid "Org roles and permissions"
-msgstr ""
+msgstr "组织角色和权限"
 
 #: ../../source/orgs/org-roles-and-permissions.rst:4
 msgid "There are three roles in an Org:"
-msgstr ""
+msgstr "组织中有三个角色:"
 
 #: ../../source/orgs/org-roles-and-permissions.rst:6
 msgid ""
@@ -746,7 +750,7 @@ msgstr ""
 
 #: ../../source/orgs/removing-members-from-your-org.rst:2
 msgid "Removing members from your Org"
-msgstr ""
+msgstr "从您的组织中删除成员"
 
 #: ../../source/orgs/removing-members-from-your-org.rst:4
 msgid ""
@@ -770,13 +774,13 @@ msgid ""
 "name of your Org. example org selected in organizations list On the Org "
 "settings page, click Members. members tab In the list of Org members, "
 "find the member you want to remove. At the end of the member row, click "
-"X. x button Note: Members are not notified when you remove them from your"
-" Org."
+"X. x button .. note:: Members are not notified when you remove them from "
+"your Org."
 msgstr ""
 
 #: ../../source/orgs/removing-org-members-from-teams.rst:2
 msgid "Removing Org members from teams"
-msgstr ""
+msgstr "从团队中删除组织成员"
 
 #: ../../source/orgs/removing-org-members-from-teams.rst:4
 msgid ""
@@ -793,16 +797,15 @@ msgid ""
 "name of your Org. example org selected in organizations list On the Org "
 "settings page, click Teams. teams tab In the list of team members, find "
 "the member you want to remove. In the member row, to remove the member "
-"from the team, click X. x button Note: Removing a member from a team, "
-"even if it is the only team they are a member of, will not remove them "
+"from the team, click X. x button .. note:: Removing a member from a team,"
+" even if it is the only team they are a member of, will not remove them "
 "from the Org. To remove a member from the Org, see “Removing members from"
 " your Org”."
 msgstr ""
 
 #: ../../source/orgs/removing-teams.rst:2
-#, fuzzy
 msgid "Removing teams"
-msgstr "管理团队"
+msgstr "删除团队"
 
 #: ../../source/orgs/removing-teams.rst:4
 msgid ""
@@ -824,11 +827,11 @@ msgstr ""
 
 #: ../../source/orgs/renaming-an-org.rst:2
 msgid "Renaming an Org"
-msgstr ""
+msgstr "重命名组织"
 
 #: ../../source/orgs/renaming-an-org.rst:4
 msgid "Orgs cannot be renamed from the website or command line interface."
-msgstr ""
+msgstr "无法从网站或命令行界面重命名组织。"
 
 #: ../../source/orgs/renaming-an-org.rst:6
 msgid ""
@@ -852,22 +855,21 @@ msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:2
 msgid "Updating Org billing settings"
-msgstr ""
+msgstr "更新组织结算设置"
 
-#: ../../source/orgs/updating-org-billing-settings.rst:4
+#: ../../source/orgs/updating-org-billing-settings.rst:5
 msgid ""
-"Note: This article only applies to users of the public npm registry. As "
-"an owner of a paid Org, you can update the credit card used to pay for "
-"your Org plan. Updating your credit card will not change your billing "
+"As an owner of a paid Org, you can update the credit card used to pay for"
+" your Org plan. Updating your credit card will not change your billing "
 "cycle date, and the new credit card will be charged on the next billing "
 "cycle."
 msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:7
 msgid ""
-"Note: If the credit card used to pay for your Org plan expires, or we are"
-" otherwise are unable to charge your card, you have a grace period of "
-"nine days to update the card."
+"If the credit card used to pay for your Org plan expires, or we are "
+"otherwise are unable to charge your card, you have a grace period of nine"
+" days to update the card."
 msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:9
@@ -900,9 +902,8 @@ msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:29
 msgid ""
-"Note: The billing email is used for receipts only and is not required to "
-"match the email address of the person whose card is used to pay for the "
-"Org."
+"The billing email is used for receipts only and is not required to match "
+"the email address of the person whose card is used to pay for the Org."
 msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:31
@@ -927,15 +928,14 @@ msgstr ""
 
 #: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:2
 msgid "Upgrading to a paid Org plan"
-msgstr ""
+msgstr "升级到付费组织计划"
 
-#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:4
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:5
 msgid ""
-"Note: This article only applies to users of the public npm registry. As "
-"an Org owner, you can upgrade your free Org plan to a paid plan to give "
-"Org members the ability to install and publish private packages. For more"
-" information about our Org pricing plans, see the “npm Orgs” section of "
-"our pricing page."
+"As an Org owner, you can upgrade your free Org plan to a paid plan to "
+"give Org members the ability to install and publish private packages. For"
+" more information about our Org pricing plans, see the “npm Orgs” section"
+" of our pricing page."
 msgstr ""
 
 #: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:7
@@ -954,8 +954,8 @@ msgstr ""
 
 #: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:11
 msgid ""
-"Note: Your paid plan and billing cycle will start when you submit your "
-"credit card information, and you will be charged for the first month "
+"Your paid plan and billing cycle will start when you submit your credit "
+"card information, and you will be charged for the first month "
 "immediately."
 msgstr ""
 
@@ -983,13 +983,12 @@ msgstr ""
 
 #: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:2
 msgid "Viewing, downloading, and emailing receipts for your Org"
-msgstr ""
+msgstr "查看，下载和通过电子邮件发送组织的收据"
 
-#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:4
+#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:5
 msgid ""
-"Note: This article only applies to users of the public npm registry. As "
-"an Org owner, you can view, download, and email receipts for the complete"
-" billing history of your Org."
+"As an Org owner, you can view, download, and email receipts for the "
+"complete billing history of your Org."
 msgstr ""
 
 #: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:7
@@ -1031,4 +1030,133 @@ msgid ""
 "and “Message” fields. email receipt form with from, to, and message "
 "fields Click Send."
 msgstr ""
+
+#~ msgid ""
+#~ ".. note:: An npm user must be "
+#~ "a member of your Org before you"
+#~ " can add them to a team. To "
+#~ "add a member to your Org, see "
+#~ "“Adding members to your Org”."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: You need an npm user "
+#~ "account to create an Org. To "
+#~ "create a user account, visit the "
+#~ "account signup page”."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: Team names cannot be "
+#~ "changed. To \"rename\" a team, you "
+#~ "must delete the team and recreate "
+#~ "it. Log in to npm with your "
+#~ "user account. npm login dialog with "
+#~ "username and password fields left blank"
+#~ " In the upper right corner of "
+#~ "the page, click your profile picture,"
+#~ " then click Profile Settings. npm "
+#~ "avatar menu with selector over profile"
+#~ " settings list item In the left "
+#~ "sidebar, click the name of your "
+#~ "Org. example org selected in "
+#~ "organizations list On the Org settings"
+#~ " page, click Teams. teams tab In "
+#~ "the “Name” and “Description” fields, "
+#~ "type a team name and helpful "
+#~ "description. Team names must be lower"
+#~ " case and cannot contain spaces or"
+#~ " punctuation. team name and description "
+#~ "fields Click Make it so. make it"
+#~ " so button .. note:: New teams "
+#~ "do not have members or package "
+#~ "access by default. Once you create "
+#~ "a team, add packages and members "
+#~ "from the \"Teams\" tab."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: This article only applies "
+#~ "to users of the public npm "
+#~ "registry. If you have a paid Org,"
+#~ " but no longer need private packages,"
+#~ " as an Org owner, you can "
+#~ "downgrade your paid Org to a free"
+#~ " Org. When you downgrade from a "
+#~ "paid to a free Org, you and "
+#~ "your Org members will lose the "
+#~ "ability to install and publish private"
+#~ " packages at the end of your "
+#~ "last paid billing cycle. Your private"
+#~ " packages will not be made publicly"
+#~ " visible when you downgrade to a "
+#~ "free plan."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: If you would like to "
+#~ "pay for fewer seats, you can "
+#~ "remove members from your Org by "
+#~ "following the steps in “Removing members"
+#~ " from your Org”."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: This article only applies "
+#~ "to users of the public npm "
+#~ "registry. As an owner of a paid"
+#~ " Org, you can update the credit "
+#~ "card used to pay for your Org "
+#~ "plan. Updating your credit card will "
+#~ "not change your billing cycle date, "
+#~ "and the new credit card will be"
+#~ " charged on the next billing cycle."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: If the credit card used"
+#~ " to pay for your Org plan "
+#~ "expires, or we are otherwise are "
+#~ "unable to charge your card, you "
+#~ "have a grace period of nine days"
+#~ " to update the card."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: The billing email is "
+#~ "used for receipts only and is not"
+#~ " required to match the email address"
+#~ " of the person whose card is "
+#~ "used to pay for the Org."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: This article only applies "
+#~ "to users of the public npm "
+#~ "registry. As an Org owner, you can"
+#~ " upgrade your free Org plan to "
+#~ "a paid plan to give Org members"
+#~ " the ability to install and publish"
+#~ " private packages. For more information "
+#~ "about our Org pricing plans, see "
+#~ "the “npm Orgs” section of our "
+#~ "pricing page."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: Your paid plan and "
+#~ "billing cycle will start when you "
+#~ "submit your credit card information, and"
+#~ " you will be charged for the "
+#~ "first month immediately."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ".. note:: This article only applies "
+#~ "to users of the public npm "
+#~ "registry. As an Org owner, you can"
+#~ " view, download, and email receipts "
+#~ "for the complete billing history of "
+#~ "your Org."
+#~ msgstr ""
 

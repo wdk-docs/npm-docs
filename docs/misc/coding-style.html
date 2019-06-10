@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-coding-style &#8212; npm-docs 6.9.1 文档</title>
+    <title>coding-style &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,10 +13,11 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="npm-config" href="config.html" />
+    <link rel="next" title="config" href="config.html" />
     <link rel="prev" title="misc" href="contents.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/misc/coding-style.html" />
 
@@ -85,7 +86,7 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="config.html" title="npm-config"
+          <a href="config.html" title="config"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
           <a href="contents.html" title="misc"
@@ -100,7 +101,9 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-coding-style</a><ul>
+<li><a class="reference internal" href="#">coding-style</a><ul>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
+<li><a class="reference internal" href="#comma-first">Comma First</a></li>
 <li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
 </ul>
 </li>
@@ -111,7 +114,7 @@
                         title="上一章">misc</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="config.html"
-                        title="下一章">npm-config</a></p>
+                        title="下一章">config</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -137,13 +140,17 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="npm-coding-style">
-<span id="coding-style"></span><h1>npm-coding-style<a class="headerlink" href="#npm-coding-style" title="永久链接至标题">¶</a></h1>
-<p>npm’s “funny” coding style
-DESCRIPTION
-npm’s coding style is a bit unconventional. It is not different for difference’s sake, but rather a carefully crafted style that is designed to reduce visual clutter and make bugs more apparent.</p>
+  <div class="section" id="coding-style">
+<span id="id1"></span><h1>coding-style<a class="headerlink" href="#coding-style" title="永久链接至标题">¶</a></h1>
+<p>npm’s “funny” coding style</p>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>npm’s coding style is a bit unconventional. It is not different for difference’s sake, but rather a carefully crafted style that is designed to reduce visual clutter and make bugs more apparent.</p>
 <p>If you want to contribute to npm (which is very encouraged), you should make your code conform to npm’s style.</p>
-<p>Note: this concerns npm’s code not the specific packages that you can download from the npm registry.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>this concerns npm’s code not the specific packages that you can download from the npm registry.</p>
+</div>
 <p>Line Length
 Keep lines shorter than 80 characters. It’s better for lines to be too short than to be too long. Break up long lists, objects, and other statements onto multiple lines.</p>
 <p>Indentation
@@ -192,8 +199,10 @@ end()</p>
 </div></blockquote>
 <p>}
 Note that starting lines with - and + also should be prefixed with a semicolon, but this is much less common.</p>
-<p>Comma First
-If there is a list of things separated by commas, and it wraps across multiple lines, put the comma at the start of the next line, directly below the token that starts the list. Put the final token in the list on a line by itself. For example:</p>
+</div>
+<div class="section" id="comma-first">
+<h2>Comma First<a class="headerlink" href="#comma-first" title="永久链接至标题">¶</a></h2>
+<p>If there is a list of things separated by commas, and it wraps across multiple lines, put the comma at the start of the next line, directly below the token that starts the list. Put the final token in the list on a line by itself. For example:</p>
 <dl>
 <dt>var magicWords = [ ‘abracadabra’</dt><dd><blockquote>
 <div><p>, ‘gesundheit’
@@ -245,6 +254,7 @@ Boolean variables and functions should always be either true or false. Don’t s
 <p>When something is intentionally missing or removed, set it to null.</p>
 <p>Don’t set things to undefined. Reserve that value to mean “not yet set to anything.”</p>
 <p>Boolean objects are forbidden.</p>
+</div>
 <div class="section" id="see-also">
 <h2>SEE ALSO<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
@@ -267,7 +277,7 @@ Boolean variables and functions should always be either true or false. Don’t s
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="config.html" title="npm-config"
+          <a href="config.html" title="config"
              >下一页</a> |</li>
         <li class="right" >
           <a href="contents.html" title="misc"
@@ -280,7 +290,7 @@ Boolean variables and functions should always be either true or false. Don’t s
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

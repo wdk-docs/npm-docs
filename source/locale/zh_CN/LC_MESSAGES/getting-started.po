@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-04 22:31+0800\n"
+"POT-Creation-Date: 2019-06-05 19:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,22 +25,21 @@ msgstr "关于npm CLI版本"
 msgid ""
 "The npm command line interface (CLI) is released on a regular cadence. We"
 " recommend installing the release that supports your workflow:"
-msgstr "npm命令行界面（CLI）以常规节奏发布。我们建议安装支持您的工作流程的版本："
+msgstr "npm命令行界面(CLI)以常规节奏发布。我们建议安装支持您的工作流程的版本:"
 
 #: ../../source/getting-started/about-npm-versions.rst:7
 msgid "latest release: the most recent stable version."
-msgstr ""
+msgstr "最新发布:最新的稳定版本。"
 
 #: ../../source/getting-started/about-npm-versions.rst:8
 msgid ""
 "next release: the most recent unreleased version of npm that is "
 "eventually released as the latest version."
-msgstr ""
+msgstr "下一个版本:最新发布的npm版本，最终作为最新版本发布。"
 
 #: ../../source/getting-started/about-npm-versions.rst:11
-#, fuzzy
 msgid "The latest release of npm"
-msgstr "试试最新稳定版的npm"
+msgstr "npm的最新版本"
 
 #: ../../source/getting-started/about-npm-versions.rst:13
 msgid ""
@@ -48,17 +47,17 @@ msgid ""
 "install Node.js, npm is automatically installed. However, npm is released"
 " more frequently than Node.js, so to install the latest stable version of"
 " npm, on the command line, run:"
-msgstr ""
+msgstr "npm的最新版本是最新的稳定版本。安装Node.js时，会自动安装npm。但是，npm比Node.js更频繁地发布，因此要在命令行上安装最新的稳定版npm，请运行:"
 
 #: ../../source/getting-started/about-npm-versions.rst:23
 msgid "The next release of npm"
-msgstr ""
+msgstr "npm的下一个版本"
 
 #: ../../source/getting-started/about-npm-versions.rst:25
 msgid ""
 "The next release of npm may contain features that do not match the "
 "features ultimately released in the latest stable version of npm."
-msgstr ""
+msgstr "npm的下一个版本可能包含与最新稳定版npm中最终发布的功能不匹配的功能。"
 
 #: ../../source/getting-started/about-npm-versions.rst:27
 msgid ""
@@ -66,20 +65,17 @@ msgid ""
 " is eventually released as the latest version. You may want to update "
 "your npm client to the next release to test your packages against it "
 "before latest is released."
-msgstr ""
+msgstr "npm的下一个版本是npm的最新未发布版本，最终作为最新版本发布。您可能希望将npm客户端更新到下一个版本，以便在最新版本发布之前针对它测试您的软件包。"
 
 #: ../../source/getting-started/about-npm-versions.rst:29
 msgid "To update to the next release of npm, on the command line, run:"
 msgstr "要更新到npm的下一个版本，请在命令行上运行:"
 
 #: ../../source/getting-started/about-npm-versions.rst:35
-#, fuzzy
 msgid ""
 "Depending on the development cycle, npm install npm@next -g may reinstall"
 " the latest release of npm."
-msgstr ""
-"npm install npm @ next -g注意：根据开发周期，npm install npm @ next "
-"-g可能会重新安装最新版本的npm。"
+msgstr "根据开发周期，npm install npm@next -g 可能会重新安装最新版本的npm。"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:2
 msgid "About two-factor authentication"
@@ -89,29 +85,29 @@ msgstr "关于双因素身份验证"
 msgid ""
 "Two-factor authentication (2FA) protects against unauthorized access to "
 "your account by confirming your identity using:"
-msgstr "双因素身份验证（2FA）通过使用确认您的身份来防止未经授权访问您的帐户:"
+msgstr "双因素身份验证(2FA)通过使用确认您的身份来防止未经授权访问您的帐户:"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:6
 msgid "something you know (such as your username and password)"
-msgstr ""
+msgstr "你知道的东西(比如你的用户名和密码)"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:7
 msgid "something you have (such as a phone or tablet)"
-msgstr ""
+msgstr "你有的东西(如手机或平板电脑)"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:9
 msgid ""
 "When you enable 2FA, we will prompt you for a unique one-time password "
 "when you perform certain actions on your account or on packages to which "
 "you have write access, depending on your 2FA configuration."
-msgstr ""
+msgstr "当您启用2FA时，我们会在您对您的帐户或您具有写入权限的软件包执行某些操作时提示您输入唯一的一次性密码，具体取决于您的2FA配置。"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:11
 msgid ""
 "Two-factor authentication provides the best possible security for your "
 "account against attackers. We strongly recommend enabling 2FA on your "
 "account as soon as possible after you sign up."
-msgstr ""
+msgstr "双因素身份验证可为您的帐户提供最佳的安全保护，以抵御攻击者。我们强烈建议您在注册后尽快在帐户中启用2FA。"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:14
 msgid "Two-factor authentication modes on npm"
@@ -152,17 +148,17 @@ msgstr "登录npm"
 #: ../../source/getting-started/about-two-factor-authentication.rst:43
 #: ../../source/getting-started/common-errors.rst:185
 msgid "npm login"
-msgstr "npm登录"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:28
 #: ../../source/getting-started/about-two-factor-authentication.rst:45
 msgid "Change profile settings (including your password)"
-msgstr "更改个人资料设置（包括您的密码）"
+msgstr "更改个人资料设置(包括您的密码)"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:28
 #: ../../source/getting-started/about-two-factor-authentication.rst:45
 msgid "npm profile set"
-msgstr "npm个人资料集"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:30
 #: ../../source/getting-started/about-two-factor-authentication.rst:47
@@ -172,7 +168,7 @@ msgstr "更改您的用户帐户的2FA模式"
 #: ../../source/getting-started/about-two-factor-authentication.rst:30
 #: ../../source/getting-started/about-two-factor-authentication.rst:47
 msgid "npm profile enable-2fa auth-only"
-msgstr "npm profile仅启用2fa auth"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:32
 #: ../../source/getting-started/about-two-factor-authentication.rst:49
@@ -182,18 +178,17 @@ msgstr "为您的用户帐户停用2FA"
 #: ../../source/getting-started/about-two-factor-authentication.rst:32
 #: ../../source/getting-started/about-two-factor-authentication.rst:49
 msgid "npm profile disable-2fa"
-msgstr "npm profile disable-2fa"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:36
 msgid "Authorization and writes"
 msgstr "授权和写作"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:38
-#, fuzzy
 msgid ""
 "If you enable 2FA for authorization and writes, we will request a one-"
 "time password for certain authorized actions, as well as write actions."
-msgstr "仅授权§如果仅启用2FA授权，我们将为某些授权操作请求一次性密码。"
+msgstr "如果您启用2FA进行授权和写入，我们将为某些授权操作请求一次性密码，以及写入操作。"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:51
 msgid "Create tokens"
@@ -201,7 +196,7 @@ msgstr "创建令牌"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:51
 msgid "npm token create"
-msgstr "npm令牌创建"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:53
 msgid "Revoke tokens"
@@ -209,7 +204,7 @@ msgstr "撤销令牌"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:53
 msgid "npm token revoke"
-msgstr "npm令牌撤销"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:55
 msgid "Publish packages"
@@ -217,7 +212,7 @@ msgstr "发布包"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:55
 msgid "npm publish"
-msgstr "npm发布"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:57
 msgid "Unpublish packages"
@@ -225,19 +220,19 @@ msgstr "取消发布包"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:57
 msgid "npm unpublish"
-msgstr "npm取消发布"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:59
 msgid "Deprecate packages"
-msgstr "弃用包裹"
+msgstr "弃用包"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:59
 msgid "npm deprecate"
-msgstr "npm弃用"
+msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:61
 msgid "Change package visibility"
-msgstr ""
+msgstr "更改包可见性"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:61
 msgid "npm access public/restricted"
@@ -245,7 +240,7 @@ msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:63
 msgid "Change user and team package access"
-msgstr ""
+msgstr "更改用户和团队包访问权限"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:63
 msgid "npm access grant/revoke"
@@ -253,11 +248,11 @@ msgstr ""
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:65
 msgid "Change package 2FA requirements"
-msgstr ""
+msgstr "更改包2FA要求"
 
 #: ../../source/getting-started/about-two-factor-authentication.rst:65
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: ../../source/getting-started/changing-your-npm-username.rst:2
 msgid "Changing your npm username"
@@ -272,31 +267,28 @@ msgid "Common errors"
 msgstr "常见错误"
 
 #: ../../source/getting-started/common-errors.rst:5
-#, fuzzy
 msgid "Errors"
-msgstr "常见错误"
+msgstr "Errors"
 
 #: ../../source/getting-started/common-errors.rst:7
 #: ../../source/getting-started/common-errors.rst:27
 msgid "Broken npm installation"
-msgstr ""
+msgstr "破了npm安装"
 
 #: ../../source/getting-started/common-errors.rst:8
 #: ../../source/getting-started/common-errors.rst:35
-#, fuzzy
 msgid "Random errors"
-msgstr "常见错误"
+msgstr "随机错误"
 
 #: ../../source/getting-started/common-errors.rst:9
 #: ../../source/getting-started/common-errors.rst:41
 msgid "No compatible version found"
-msgstr ""
+msgstr "找不到兼容版本"
 
 #: ../../source/getting-started/common-errors.rst:10
 #: ../../source/getting-started/common-errors.rst:46
-#, fuzzy
 msgid "Permissions errors"
-msgstr "常见错误"
+msgstr "权限错误"
 
 #: ../../source/getting-started/common-errors.rst:11
 #: ../../source/getting-started/common-errors.rst:51
@@ -304,81 +296,80 @@ msgid ""
 "Error: ENOENT, stat 'C:\\Users\\<user>\\AppData\\Roaming\\npm' on Windows"
 " 7"
 msgstr ""
+"Error: ENOENT, stat 'C:\\Users\\<user>\\AppData\\Roaming\\npm' on Windows"
+" 7"
 
 #: ../../source/getting-started/common-errors.rst:12
 #: ../../source/getting-started/common-errors.rst:56
 msgid "No space"
-msgstr ""
+msgstr "没有空间"
 
 #: ../../source/getting-started/common-errors.rst:13
 #: ../../source/getting-started/common-errors.rst:69
 msgid "No git"
-msgstr ""
+msgstr "没有git"
 
 #: ../../source/getting-started/common-errors.rst:14
 #: ../../source/getting-started/common-errors.rst:79
 msgid "Running a Vagrant box on Windows fails due to path length issues"
-msgstr ""
+msgstr "由于路径长度问题，在Windows上运行Vagrant框失败"
 
 #: ../../source/getting-started/common-errors.rst:15
 #: ../../source/getting-started/common-errors.rst:95
-#, fuzzy
 msgid "npm only uses git: and ssh+git: URLs for GitHub repos, breaking proxies"
-msgstr "npm只使用git：和ssh + git：GitHub repos的URL，破坏代理§LaurentGoderre用一些Git技巧修复了这个问题:"
+msgstr "npm只使用git:和ssh + git:GitHub repos的URL，破坏代理"
 
 #: ../../source/getting-started/common-errors.rst:16
 msgid "SSL error"
-msgstr ""
+msgstr "SSL错误"
 
 #: ../../source/getting-started/common-errors.rst:17
 #: ../../source/getting-started/common-errors.rst:135
 msgid "SSL-intercepting proxy"
-msgstr ""
+msgstr "SSL拦截代理"
 
 #: ../../source/getting-started/common-errors.rst:18
 #: ../../source/getting-started/common-errors.rst:140
 msgid "Not found / Server error"
-msgstr ""
+msgstr "找不到/服务器错误"
 
 #: ../../source/getting-started/common-errors.rst:19
 #: ../../source/getting-started/common-errors.rst:153
 msgid "Invalid JSON"
-msgstr ""
+msgstr "无效的JSON"
 
 #: ../../source/getting-started/common-errors.rst:20
 #: ../../source/getting-started/common-errors.rst:166
 msgid "Many ENOENT / ENOTEMPTY errors in output"
-msgstr ""
+msgstr "输出中存在许多ENOENT / ENOTEMPTY错误"
 
 #: ../../source/getting-started/common-errors.rst:21
 #: ../../source/getting-started/common-errors.rst:171
 msgid "cb() never called! when using shrinkwrapped dependencies"
-msgstr ""
+msgstr "cb()从未调用过！使用shrinkwrapped依赖项时"
 
 #: ../../source/getting-started/common-errors.rst:22
 #: ../../source/getting-started/common-errors.rst:176
-#, fuzzy
 msgid "npm login errors"
-msgstr "npm login"
+msgstr "npm登录错误"
 
 #: ../../source/getting-started/common-errors.rst:23
 #: ../../source/getting-started/common-errors.rst:192
 msgid "npm hangs on Windows at addRemoteTarball"
-msgstr ""
+msgstr "npm在Windows上的addRemoteTarball上挂起"
 
 #: ../../source/getting-started/common-errors.rst:24
 #: ../../source/getting-started/common-errors.rst:206
-#, fuzzy
 msgid "npm not running the latest version on a Windows machine"
-msgstr "npm没有在Windows机器上运行最新版本§请参阅此处有关Windows的部分。"
+msgstr "npm没有在Windows机器上运行最新版本"
 
 #: ../../source/getting-started/common-errors.rst:29
 msgid "If your npm is broken:"
-msgstr ""
+msgstr "如果你的npm坏了:"
 
 #: ../../source/getting-started/common-errors.rst:31
 msgid "On Mac or Linux, reinstall npm."
-msgstr ""
+msgstr "在Mac或Linux上，重新安装npm。"
 
 #: ../../source/getting-started/common-errors.rst:32
 msgid ""
@@ -391,17 +382,17 @@ msgstr ""
 msgid ""
 "Some strange issues can be resolved by simply running npm cache clean and"
 " trying again."
-msgstr ""
+msgstr "只需运行npm cache clean并再次尝试即可解决一些奇怪的问题。"
 
 #: ../../source/getting-started/common-errors.rst:38
 msgid ""
 "If you are having trouble with npm install, use the -verbose option to "
 "see more details."
-msgstr ""
+msgstr "如果您在使用npm install时遇到问题，请使用-verbose选项查看更多详细信息。"
 
 #: ../../source/getting-started/common-errors.rst:43
 msgid "You have an outdated npm. Please update to the latest stable npm."
-msgstr ""
+msgstr "你有一个过时的npm。请更新到最新稳定的npm。"
 
 #: ../../source/getting-started/common-errors.rst:48
 msgid ""
@@ -420,27 +411,24 @@ msgid ""
 msgstr ""
 
 #: ../../source/getting-started/common-errors.rst:62
-#, fuzzy
 msgid ""
 "You are trying to install on a drive that either has no space, or has no "
 "permission to write."
-msgstr ""
-"No space§ npm ERR! Error: ENOSPC, write You are trying to install on a "
-"drive that either has no space, or has no permission to write."
+msgstr "您正在尝试在没有空间或没有写入权限的驱动器上安装。"
 
 #: ../../source/getting-started/common-errors.rst:64
 msgid "Free some disk space or"
-msgstr ""
+msgstr "释放一些磁盘空间或"
 
 #: ../../source/getting-started/common-errors.rst:65
 msgid ""
 "Set the tmp folder somewhere with more space: npm config set tmp "
 "/path/to/big/drive/tmp or"
-msgstr ""
+msgstr "在tmp文件夹中设置更多空间:npm config set tmp / path / to / big / drive / tmp or"
 
 #: ../../source/getting-started/common-errors.rst:66
 msgid "Build Node yourself and install it somewhere writable with lots of space."
-msgstr ""
+msgstr "自己构建节点并将其安装在可写空间很大的地方。"
 
 #: ../../source/getting-started/common-errors.rst:76
 msgid ""
@@ -458,7 +446,7 @@ msgstr ""
 
 #: ../../source/getting-started/common-errors.rst:97
 msgid "@LaurentGoderre fixed this with some Git trickery:"
-msgstr ""
+msgstr "@LaurentGoderre 用一些Git技巧修复了这个问题:"
 
 #: ../../source/getting-started/common-errors.rst:99
 #, fuzzy
@@ -472,6 +460,8 @@ msgid ""
 "git config --global url.\"https://github.com/\".insteadOf git@github.com:"
 " git config --global url.\"https://\".insteadOf git://"
 msgstr ""
+"git config --global url.\"https://github.com/\".insteadOf git@github.com:"
+" git config --global url.\"https://\".insteadOf git://"
 
 #: ../../source/getting-started/common-errors.rst:106
 msgid ""
@@ -483,7 +473,7 @@ msgstr ""
 
 #: ../../source/getting-started/common-errors.rst:109
 msgid "SSL Error"
-msgstr ""
+msgstr "SSL错误"
 
 #: ../../source/getting-started/common-errors.rst:111
 msgid ""
@@ -501,17 +491,17 @@ msgstr ""
 msgid ""
 "This problem will happen if you’re running Node 0.6. Please upgrade to "
 "node 0.8 or above. See this post for details."
-msgstr ""
+msgstr "如果您正在运行Node 0.6，则会发生此问题。请升级到0.8或以上的节点。有关详细信息，请参阅此帖"
 
 #: ../../source/getting-started/common-errors.rst:121
 msgid ""
 "You could also try these workarounds: npm config set ca \"\" or npm "
 "config set strict-ssl false"
-msgstr "您还可以尝试以下解决方法：npm config set ca \\“\\”或npm config set strict-ssl false"
+msgstr "您还可以尝试以下解决方法:npm config set ca \\“\\”或npm config set strict-ssl false"
 
 #: ../../source/getting-started/common-errors.rst:128
 msgid "Either:"
-msgstr "Either:"
+msgstr "或:"
 
 #: ../../source/getting-started/common-errors.rst:130
 msgid ""
@@ -577,63 +567,53 @@ msgstr ""
 msgid ""
 "If that’s not the problem, or if you are seeing the message \"may not mix"
 " password_sha and pbkdf2\", then"
-msgstr ""
-"If that’s not the problem, or if you are seeing the message \"may not mix"
-" password_sha and pbkdf2\", then"
+msgstr "如果那不是问题，或者如果您看到消息“可能不会混合password_sha和pbkdf2 \\”，那么"
 
 #: ../../source/getting-started/common-errors.rst:182
 msgid "Log in at https://npmjs.com/"
-msgstr ""
+msgstr "Log in at https://npmjs.com/"
 
 #: ../../source/getting-started/common-errors.rst:183
 msgid ""
 "Change password at https://npmjs.com/password – you can even “change” it "
 "to the same password"
-msgstr ""
+msgstr "通过https://npmjs.com/password更改密码 - 您甚至可以将其“更改”为相同的密码"
 
 #: ../../source/getting-started/common-errors.rst:184
 msgid ""
 "Clear login-related fields from ~/.npmrc – e.g., by running sed -ie "
 "'/registry.npmjs.org/d' ~/.npmrc"
-msgstr ""
+msgstr "清除〜/ .npmrc中与登录相关的字段 - 例如，通过运行sed -ie'/ registry.npmjs.org/d'〜/ .npmrc"
 
 #: ../../source/getting-started/common-errors.rst:187
 msgid "and it generally seems to work."
-msgstr ""
+msgstr "它通常似乎工作。"
 
 #: ../../source/getting-started/common-errors.rst:189
 msgid ""
 "See https://github.com/npm/npm/issues/6641#issuecomment-72984009 for the "
 "history of this issue."
-msgstr ""
-"See https://github.com/npm/npm/issues/6641#issuecomment-72984009 for the "
-"history of this issue."
+msgstr "有关此问题的历史记录，请参阅https://github.com/npm/npm/issues/6641#issuecomment-72984009。"
 
 #: ../../source/getting-started/common-errors.rst:194
-#, fuzzy
 msgid "Check if you have two temp directories set in your .npmrc:"
-msgstr ""
-"npm hangs on Windows at addRemoteTarball§ Check if you have two temp "
-"directories set in your .npmrc:"
+msgstr "检查.npmrc中是否设置了两个临时目录:"
 
 #: ../../source/getting-started/common-errors.rst:201
-#, fuzzy
 msgid ""
 "Look for lines defining the tmp config variable. If you find more than "
 "one, remove all but one of them."
-msgstr "> npm config ls -l查找定义tmp配置变量的行。如果您找到多个，请删除其中一个。"
+msgstr "查找定义tmp配置变量的行。如果您找到多个，请删除其中一个。"
 
 #: ../../source/getting-started/common-errors.rst:203
 msgid ""
 "See https://github.com/npm/npm/issues/7590 for more about this unusual "
 "problem."
-msgstr ""
-"See https://github.com/npm/npm/issues/7590 for more about this unusual "
-"problem."
+msgstr "有关此异常问题的更多信息，请参阅https://github.com/npm/npm/issues/7590。"
 
 #: ../../source/getting-started/common-errors.rst:208
 msgid "See the section about Windows here."
-msgstr ""
+msgstr "请在此处查看有关Windows的部分。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:2
 msgid "Configuring two-factor authentication"
@@ -643,20 +623,19 @@ msgstr "配置双因素身份验证"
 msgid ""
 "You can enable two-factor authentication (2FA) on your npm user account "
 "to protect against unauthorized access to your account and packages."
-msgstr "您可以在npm用户帐户上启用双因素身份验证（2FA），以防止对您的帐户和软件包进行未经授权的访问。"
+msgstr "您可以在npm用户帐户上启用双因素身份验证(2FA)，以防止对您的帐户和软件包进行未经授权的访问。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:7
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:9
-#, fuzzy
 msgid "Before you enable 2FA on your npm user account, you must:"
-msgstr "先决条件§必须先在npm用户帐户上启用2FA之前:"
+msgstr "在您的npm用户帐户上启用2FA之前，您必须:"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:11
 msgid "Update your npm client to version 5.5.1 or higher."
-msgstr ""
+msgstr "将您的npm客户端更新到5.5.1或更高版本。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:12
 msgid ""
@@ -667,16 +646,15 @@ msgstr ""
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:14
 msgid "npm does not accept SMS (text-to-phone) as a 2FA method."
-msgstr ""
+msgstr "npm不接受SMS(文本到电话)作为2FA方法。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:17
 msgid "Configuring 2FA on the web"
-msgstr ""
+msgstr "在Web上配置2FA"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:20
-#, fuzzy
 msgid "Enabling 2FA on the web"
-msgstr "在网站上创建一个帐户"
+msgstr "在网络上启用2FA"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:22
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:37
@@ -691,7 +669,7 @@ msgstr "在网站上创建一个帐户"
 msgid ""
 "Log in to npm with your user account. npm login dialog with username and "
 "password fields left blank"
-msgstr ""
+msgstr "使用您的用户帐户登录npm。 npm登录对话框，用户名和密码字段留空"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:23
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:38
@@ -707,6 +685,8 @@ msgid ""
 "On the profile settings page, under “Two Factor Authentication”, click "
 "Enable 2FA. enable 2FA button"
 msgstr ""
+"On the profile settings page, under “Two Factor Authentication”, click "
+"Enable 2FA. enable 2FA button"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:25
 msgid ""
@@ -718,19 +698,19 @@ msgstr ""
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:26
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:41
 msgid "Click Submit. submit button"
-msgstr ""
+msgstr "单击“提交”提交按钮"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:27
 msgid ""
 "Open your authenticator application on your phone, and, on the two-step "
 "verification page, scan the QR code with your phone."
-msgstr ""
+msgstr "在手机上打开身份验证器应用程序，然后在两步验证页面上，使用手机扫描QR码。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:28
 msgid ""
 "Enter the code generated by the app, then click Verify. verify button for"
 " 2fa authentication code form"
-msgstr ""
+msgstr "输入应用程序生成的代码，然后单击“验证”。验证2fa身份验证代码表单的按钮"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:29
 msgid ""
@@ -743,83 +723,81 @@ msgstr ""
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:30
 msgid "Click Go back to settings. go back to settings button"
-msgstr ""
+msgstr "单击“返回设置”。返回设置按钮"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:33
-#, fuzzy
 msgid "Removing 2FA on the web"
-msgstr "在网站上创建一个帐户"
+msgstr "在网络上删除2FA"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:35
 msgid ""
 "If you have 2FA enabled, you can remove it from your profile settings "
 "page."
-msgstr ""
+msgstr "如果您启用了2FA，则可以从配置文件设置页面中将其删除。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:39
 msgid ""
 "On the profile settings page, under “Two Factor Authentication”, click "
 "Modify 2FA. modify 2fa button"
-msgstr ""
+msgstr "在配置文件设置页面的“双因素身份验证”下，单击“修改2FA”。修改2fa按钮"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:40
 msgid ""
 "On the 2FA settings page, under “What should we protect?”, select "
 "“Disable”. disable radio button selected"
-msgstr ""
+msgstr "在2FA设置页面的“我们应该保护什么？”下，选择“禁用”。禁用选中的单选按钮"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:44
 msgid "Configuring 2FA from the command line"
-msgstr ""
+msgstr "从命令行配置2FA"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:47
 msgid "Enabling 2FA from the command line"
-msgstr ""
+msgstr "从命令行启用2FA"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:49
 msgid ""
 "Settings you configure on the command line will also apply to your "
 "profile settings on the npm website."
-msgstr ""
+msgstr "您在命令行上配置的设置也将应用于npm网站上的配置文件设置。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:51
 msgid ""
 "On the command line, type the npm profile command along with the option "
 "for the 2FA mode you want to enable:"
-msgstr ""
+msgstr "在命令行上，键入npm profile命令以及要启用的2FA模式的选项:"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:53
 msgid "To enable 2FA for authorization and writes, type:"
-msgstr ""
+msgstr "要启用2FA进行授权和写入，请键入:"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:59
 msgid "To enable 2FA for authorization only, type:"
-msgstr ""
+msgstr "要仅启用2FA授权，请键入:"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:65
 msgid ""
 "To add npm to your authenticator application, using the device with the "
 "app, you can either:"
-msgstr ""
+msgstr "要将npm添加到验证器应用程序，使用带有应用程序的设备，您可以:"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:67
 msgid "scan the QR code displayed on the command line."
-msgstr ""
+msgstr "扫描命令行上显示的QR码。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:68
 msgid "type the number displayed below the QR code."
-msgstr ""
+msgstr "输入QR码下方显示的数字。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:70
 msgid ""
 "When prompted to add an OTP code from your authenticator, on the command "
 "line, enter a one-time password generated by your authenticator app."
-msgstr ""
+msgstr "当系统提示您从身份验证器添加OTP代码时，请在命令行中输入身份验证器应用程序生成的一次性密码。"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:73
-#, fuzzy
 msgid "Sending a one-time password from the command line"
-msgstr ">从验证者输入一次性密码:"
+msgstr "从命令行发送一次性密码"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:75
 msgid ""
@@ -828,33 +806,33 @@ msgid ""
 "--otp=123456 (where 123456 is the code generated by your authenticator) "
 "at the end of the command. Here are a few examples:"
 msgstr ""
+"如果已启用2FA auth-and-writes，则需要从命令行发送OTP以使某些命令起作用。为此，请在命令末尾附加--otp = "
+"123456(其中123456是您的身份验证器生成的代码)。这里有一些例子:"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:87
 msgid "Removing 2FA from the command line"
-msgstr ""
+msgstr "从命令行中删除2FA"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:89
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:13
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:41
 #: ../../source/getting-started/managing-your-profile-settings.rst:66
-#, fuzzy
 msgid "On the command line, type the following command:"
-msgstr "在命令行上，键入以下命令，替换"
+msgstr "在命令行上，键入以下命令:"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:95
 msgid "When prompted, enter your npm password::"
-msgstr ""
+msgstr "出现提示时，输入您的npm密码::"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:101
-#, fuzzy
 msgid ""
 "When prompted for a one-time password, enter a password from your "
 "authenticator app::"
-msgstr ">从验证者输入一次性密码:"
+msgstr "提示输入一次性密码时，请从身份验证器应用程序输入密码::"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:108
 msgid "Resolving OTP errors"
-msgstr ""
+msgstr "解决OTP错误"
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:110
 msgid ""
@@ -870,7 +848,8 @@ msgid ""
 "the correct authenticator account."
 msgstr ""
 "If you see an error when you enter a valid OTP, check that you are using "
-"the correct authenticator account."
+"the correct authenticator account.If you see an error when you enter a "
+"valid OTP, check that you are using the correct authenticator account."
 
 #: ../../source/getting-started/configuring-two-factor-authentication.rst:114
 msgid ""
@@ -884,53 +863,50 @@ msgid "Configuring your registry settings as an npm Enterprise user"
 msgstr "将注册表设置配置为npm Enterprise用户"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:4
-#, fuzzy
 msgid ""
 "npm Enterprise requires npm 4.4.x or greater. To download the latest "
 "version of npm, on the command line, run [sudo] npm install npm -g"
 msgstr ""
-"Note: npm Enterprise requires npm 4.4.x or greater. To download the "
-"latest version of npm, on the command line, run the following command:"
+"npm Enterprise需要npm 4.4.x或更高版本。要在命令行下载最新版本的npm，请运行[sudo] npm install npm "
+"-g"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:6
 msgid ""
 "You can configure your npm client to publish to and install from your "
 "private npm Enterprise registry by:"
-msgstr ""
+msgstr "您可以将npm客户端配置为通过以下方式发布到私有npm Enterprise注册表并从中进行安装:"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:8
 msgid ""
 "Setting your company’s npm Enterprise registry as your default registry "
 "(recommended)"
-msgstr ""
+msgstr "将您公司的npm Enterprise注册表设置为默认注册表(推荐)"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:9
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:24
 msgid "Using npmrc to managing multiple profiles for different registries"
-msgstr ""
+msgstr "使用npmrc管理不同注册表的多个配置文件"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:10
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:84
 msgid "Configuring scopes to point to different registries"
-msgstr ""
+msgstr "配置范围以指向不同的注册表"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:13
-#, fuzzy
 msgid "Setting your company’s npm Enterprise registry as your default registry"
-msgstr "登录公司的npm Enterprise注册表的步骤取决于您配置npm注册表设置的方式。"
+msgstr "将您公司的npm Enterprise注册表设置为默认注册表"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:15
-#, fuzzy
 msgid ""
 "The easiest way to publish to and install from your company’s npm "
 "Enterprise registry is to set it as your default registry."
-msgstr "登录公司的npm Enterprise注册表的步骤取决于您配置npm注册表设置的方式。"
+msgstr "从公司的npm Enterprise注册表发布和安装的最简单方法是将其设置为默认注册表。"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:17
 msgid ""
 "On the command line, run the following command, replacing “your-registry”"
 " with the name of your company’s npm Enterprise registry:"
-msgstr "在命令行上，运行以下命令，将“your-registry”替换为公司的npm Enterprise注册表的名称："
+msgstr "在命令行上，运行以下命令，将“your-registry”替换为公司的npm Enterprise注册表的名称:"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:26
 msgid ""
@@ -944,42 +920,37 @@ msgstr ""
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:29
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:13
 msgid "Overview"
-msgstr ""
+msgstr "概观"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:31
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:37
 msgid "Install npmrc"
-msgstr ""
+msgstr "安装npmrc"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:32
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:46
 msgid "Create an npm Enterprise profile"
-msgstr ""
+msgstr "创建npm企业配置文件"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:33
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:63
-#, fuzzy
 msgid "Create a profile for the public npm registry"
-msgstr "在公共注册表上创建新用户帐户"
+msgstr "为公共npm注册表创建配置文件"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:34
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:75
 msgid "Switch profiles with npmrc"
-msgstr ""
+msgstr "使用npmrc切换配置文件"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:39
-#, fuzzy
 msgid "To install npmrc, on the command line, run"
-msgstr "要更新到npm的下一个版本，请在命令行上运行:"
+msgstr "要在命令行上安装npmrc，请运行"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:48
-#, fuzzy
 msgid ""
 "After installing npmrc, you can create a profile to access your company’s"
 " Enterprise registry."
-msgstr ""
-"npm i npmrc -g Create an npm Enterprise profile§ After installing npmrc, "
-"you can create a profile to access your company’s Enterprise registry."
+msgstr "安装npmrc后，您可以创建一个配置文件来访问公司的Enterprise注册表。"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:50
 msgid ""
@@ -988,7 +959,7 @@ msgid ""
 "following command:"
 msgstr ""
 "要创建npm Enterprise配置文件，请在命令行上运行npmrc -c name-of-"
-"profile。例如，要创建名为“work”的概要文件，请运行以下命令："
+"profile。例如，要创建名为“work”的概要文件，请运行以下命令:"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:56
 msgid ""
@@ -997,7 +968,7 @@ msgid ""
 "npm Enterprise registry:"
 msgstr ""
 "要为配置文件设置npm Enterprise注册表，请运行以下命令，将your-company-registry替换为公司的npm "
-"Enterprise注册表的名称："
+"Enterprise注册表的名称:"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:65
 #, fuzzy
@@ -1005,8 +976,10 @@ msgid ""
 "After you have created your npm Enterprise profile, you can create a "
 "second profile for a different registry, such as the public npm registry."
 msgstr ""
-"为公共npm注册表创建配置文件§创建npm Enterprise配置文件后，可以为其他注册表创建第二个配置文件，例如public npm "
-"registry。"
+"After you have created your npm Enterprise profile, you can create a "
+"second profile for a different registry, such as the public npm "
+"registry.为公共npm注册表创建配置文件§创建npm Enterprise配置文件后，可以为其他注册表创建第二个配置文件，例如public"
+" npm registry。"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:67
 #, fuzzy
@@ -1016,13 +989,15 @@ msgid ""
 "source”, run npmrc -c open-source."
 msgstr ""
 "要创建npm Enterprise配置文件，请在命令行上运行npmrc -c name-of-"
-"profile。例如，要创建名为“work”的概要文件，请运行以下命令："
+"profile。例如，要创建名为“work”的概要文件，请运行以下命令:"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:68
 msgid ""
 "To set the public registry for your open source profile, run the "
 "following command:"
 msgstr ""
+"To set the public registry for your open source profile, run the "
+"following command:"
 
 #: ../../source/getting-started/configuring-your-registry-settings-as-an-npm-enterprise-user.rst:77
 #, fuzzy
@@ -1069,7 +1044,7 @@ msgstr "转到npm注册页面。"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:12
 msgid "In the user signup form, type in the fields:"
-msgstr "在用户注册表单中，键入以下字段："
+msgstr "在用户注册表单中，键入以下字段:"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:14
 #: ../../source/getting-started/managing-your-profile-settings.rst:13
@@ -1082,26 +1057,28 @@ msgid ""
 "your packages and will be visible to anyone who downloads your packages. "
 "We will also send email to this account when you update packages, as well"
 " as occasional product updates and information."
-msgstr "公共电子邮件：您的公共电子邮件地址将添加到您的软件包的元数据中，并且任何下载软件包的人都可以看到。我们还会在您更新软件包时向此帐户发送电子邮件，以及不定期的产品更新和信息。"
+msgstr "公共电子邮件:您的公共电子邮件地址将添加到您的软件包的元数据中，并且任何下载软件包的人都可以看到。我们还会在您更新软件包时向此帐户发送电子邮件，以及不定期的产品更新和信息。"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:16
 msgid ""
 "Username: The username that will be displayed when you publish packages "
 "or interact with other npm users on npmjs.com. Your username must be "
 "lower case, and can contain hyphens and numerals."
-msgstr "用户名：在npmjs.com上发布包或与其他npm用户交互时将显示的用户名。您的用户名必须是小写，并且可以包含连字符和数字。"
+msgstr "用户名:在npmjs.com上发布包或与其他npm用户交互时将显示的用户名。您的用户名必须是小写，并且可以包含连字符和数字。"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:17
 msgid ""
 "Password: Your password must meet our password guidelines. new account "
 "signup form"
-msgstr "密码：您的密码必须符合我们的密码指南。新帐户注册表单"
+msgstr "密码:您的密码必须符合我们的密码指南。新帐户注册表单"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:19
 msgid ""
 "To sign up for our email newsletter, select “Sign up for the npm Weekly”."
 " sign up for the npm weekly checkbox selected"
 msgstr ""
+"To sign up for our email newsletter, select “Sign up for the npm Weekly”."
+" sign up for the npm weekly checkbox selected"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:20
 msgid ""
@@ -1112,7 +1089,7 @@ msgstr ""
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:21
 msgid "Click Create An Account. create an account button"
-msgstr ""
+msgstr "Click Create An Account. create an account button"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:23
 msgid ""
@@ -1143,21 +1120,23 @@ msgstr "在命令行上，键入以下命令，替换"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:37
 msgid "When prompted, enter your username, password, and email address."
-msgstr ""
+msgstr "When prompted, enter your username, password, and email address."
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:38
 msgid ""
 "If you have two-factor authentication enabled, when prompted, enter a "
 "one-time password."
 msgstr ""
+"If you have two-factor authentication enabled, when prompted, enter a "
+"one-time password."
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:39
 msgid "To test that you have successfully logged in, type:"
-msgstr ""
+msgstr "To test that you have successfully logged in, type:"
 
 #: ../../source/getting-started/creating-a-new-npm-user-account.rst:45
 msgid "Your npm username should be displayed."
-msgstr ""
+msgstr "Your npm username should be displayed."
 
 #: ../../source/getting-started/deleting-your-npm-user-account.rst:2
 msgid "Deleting your npm user account"
@@ -1204,13 +1183,15 @@ msgstr ""
 
 #: ../../source/getting-started/downgrading-to-a-free-user-account-plan.rst:10
 msgid "Under “change plan”, click Downgrade Plan. downgrade plan button"
-msgstr ""
+msgstr "Under “change plan”, click Downgrade Plan. downgrade plan button"
 
 #: ../../source/getting-started/downgrading-to-a-free-user-account-plan.rst:11
 msgid ""
 "Under “Are you sure?”, click Downgrade to a free account. downgrade to a "
 "free account confirmation button"
 msgstr ""
+"Under “Are you sure?”, click Downgrade to a free account. downgrade to a "
+"free account confirmation button"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:2
 msgid "Downloading and installing Node.js and npm"
@@ -1234,35 +1215,37 @@ msgid ""
 "npm Enterprise requires npm 4.4.x or greater. To download the latest "
 "version of npm, on the command line, run the following command:"
 msgstr ""
-"Note: npm Enterprise requires npm 4.4.x or greater. To download the "
-"latest version of npm, on the command line, run the following command:"
+"npm Enterprise requires npm 4.4.x or greater. To download the latest "
+"version of npm, on the command line, run the following command:.. note:: npm "
+"Enterprise requires npm 4.4.x or greater. To download the latest version "
+"of npm, on the command line, run the following command:"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:10
 msgid "[sudo] npm install npm -g"
-msgstr ""
+msgstr "[sudo] npm install npm -g"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:15
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:20
 msgid "Checking your version of npm and Node.js"
-msgstr ""
+msgstr "检查你的npm和Node.js的版本"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:16
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:30
-#, fuzzy
 msgid "Using a Node version manager to install Node.js and npm"
-msgstr "下载并安装Node.js和npm"
+msgstr "使用Node版本管理器安装Node.js和npm"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:17
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:47
-#, fuzzy
 msgid "Using a Node installer to install Node.js and npm"
-msgstr "下载并安装Node.js和npm"
+msgstr "使用Node安装程序安装Node.js和npm"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:22
 msgid ""
 "To see if you already have Node.js and npm installed and check the "
 "installed version, run the following commands:"
 msgstr ""
+"To see if you already have Node.js and npm installed and check the "
+"installed version, run the following commands:"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:32
 msgid ""
@@ -1274,49 +1257,53 @@ msgstr ""
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:35
 msgid "OSX or Linux Node version managers"
-msgstr ""
+msgstr "OSX或Linux节点版本管理器"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:37
 msgid "nvm"
-msgstr ""
+msgstr "nvm"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:38
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:40
 msgid "n"
-msgstr ""
+msgstr "n"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:41
 msgid "Windows Node version managers"
-msgstr ""
+msgstr "Windows节点版本管理器"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:43
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:39
 msgid "nodist"
-msgstr ""
+msgstr "nodist"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:44
 msgid "nvm-windows"
-msgstr ""
+msgstr "nvm-windows"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:49
 msgid ""
 "If you are unable to use a Node version manager, you can use a Node "
 "installer to install both Node.js and npm on your system."
 msgstr ""
+"If you are unable to use a Node version manager, you can use a Node "
+"installer to install both Node.js and npm on your system."
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:51
 msgid "Node.js installer"
-msgstr ""
+msgstr "Node.js安装程序"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:52
 msgid ""
 "NodeSource installer. If you use Linux, we recommend that you use a "
 "NodeSource installer."
 msgstr ""
+"NodeSource installer. If you use Linux, we recommend that you use a "
+"NodeSource installer."
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:55
 msgid "OS X or Windows Node installers"
-msgstr ""
+msgstr "OS X或Windows节点安装程序"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:57
 msgid ""
@@ -1327,7 +1314,7 @@ msgstr ""
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:60
 msgid "Linux or other operating systems Node installers"
-msgstr ""
+msgstr "Linux或其他操作系统节点安装程序"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:62
 #, fuzzy
@@ -1335,8 +1322,10 @@ msgid ""
 "If you’re using Linux or another operating system, use one of the "
 "following installers:"
 msgstr ""
-"Linux or other operating systems Node installers§ If you’re using Linux "
-"or another operating system, use one of the following installers:"
+"If you’re using Linux or another operating system, use one of the "
+"following installers:Linux or other operating systems Node installers§ If"
+" you’re using Linux or another operating system, use one of the following"
+" installers:"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:64
 msgid ""
@@ -1350,7 +1339,7 @@ msgstr ""
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:69
 msgid "Less-common operating systems"
-msgstr ""
+msgstr "不太常见的操作系统"
 
 #: ../../source/getting-started/downloading-and-installing-node-js-and-npm.rst:71
 #, fuzzy
@@ -1358,11 +1347,14 @@ msgid ""
 "For more information on installing Node.js on a variety of operating "
 "systems, see this page."
 msgstr ""
-"Less-common operating systems§ For more information on installing Node.js"
-" on a variety of operating systems, see this page."
+"For more information on installing Node.js on a variety of operating "
+"systems, see this page.Less-common operating systems§ For more "
+"information on installing Node.js on a variety of operating systems, see "
+"this page."
 
 #: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:2
-msgid "Generating and locating npm-debug.log files"
+#, fuzzy
+msgid "Generating and locating npm debug.log files"
 msgstr "生成和定位npm-debug.log文件"
 
 #: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:4
@@ -1370,36 +1362,27 @@ msgid ""
 "When a package fails to install or publish, the npm CLI will generate an "
 "npm-debug.log file. This log file can help you (and npm Support) figure "
 "out what went wrong."
-msgstr ""
-"When a package fails to install or publish, the npm CLI will generate an "
-"npm-debug.log file. This log file can help you (and npm Support) figure "
-"out what went wrong."
+msgstr "当程序包无法安装或发布时，npm CLI将生成npm-debug.log文件。这个日志文件可以帮助你(和npm支持)弄清楚出了什么问题。"
 
 #: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:6
 msgid ""
 "If you need to generate a npm-debug.log file, you can run one of these "
 "commands."
-msgstr ""
-"If you need to generate a npm-debug.log file, you can run one of these "
-"commands."
+msgstr "如果需要生成npm-debug.log文件，则可以运行其中一个命令。如果需要生成npm-debug.log文件，则可以运行其中一个命令。"
 
 #: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:8
 msgid "For installing packages:"
-msgstr "For installing packages:"
+msgstr "用于安装包:"
 
 #: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:14
-#, fuzzy
 msgid "For publishing packages:"
-msgstr "For installing packages:"
+msgstr "对于发布包:"
 
 #: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:20
-#, fuzzy
 msgid ""
 "You can find the npm-debug.log file in your .npm directory. To find your "
 ".npm directory, use npm config get cache."
-msgstr ""
-"npm publish --timing您可以在.npm目录中找到npm-debug.log文件。要查找.npm目录，请使用npm config "
-"get cache。"
+msgstr "您可以在.npm目录中找到npm-debug.log文件。要查找.npm目录，请使用npm config get cache。"
 
 #: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:22
 msgid ""
@@ -1407,9 +1390,8 @@ msgid ""
 "example, in Travis CI, you can find them in the /home/travis/build "
 "directory."
 msgstr ""
-"If you use a CI environment, your logs are likely located elsewhere. For "
-"example, in Travis CI, you can find them in the /home/travis/build "
-"directory."
+"如果您使用 CI 环境，则您的日志可能位于其他位置。例如，在 Travis CI 中，您可以在 /home/travis/build "
+"目录中找到它们。"
 
 #: ../../source/getting-started/generating-and-locating-npm-debug-log-files.rst:24
 msgid ""
@@ -1418,6 +1400,8 @@ msgid ""
 "npm-debug.log file or copying the contents into the body of the message, "
 "so that we can more easily diagnose the problem."
 msgstr ""
+"npm企业用户:如果您需要通过 enterprise@npmjs.com 联系npm企业支持，我们建议您附上 npm-debug.log "
+"文件的全部内容或将内容复制到邮件正文中，以便我们更轻松诊断问题。"
 
 #: ../../source/getting-started/index.rst:2
 msgid "Getting started"
@@ -1455,22 +1439,20 @@ msgstr "登录公司的npm Enterprise注册表的步骤取决于您配置npm注�
 
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:6
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:11
-#, fuzzy
 msgid ""
 "Logging in with your default registry set to your company’s npm "
 "Enterprise registry"
-msgstr "将注册表设置配置为npm Enterprise用户"
+msgstr "使用您的默认注册表集登录到公司的npm Enterprise注册表"
 
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:7
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:22
 msgid "Logging in with npmrc"
-msgstr ""
+msgstr "使用npmrc登录"
 
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:8
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:39
-#, fuzzy
 msgid "Logging in with a scope configured to point to an npm Enterprise registry"
-msgstr "出现提示时，提供您的SSO凭据。使用配置为指向npm Enterprise注册表的作用域登录§在命令行上，键入以下命令："
+msgstr "使用配置为指向npm Enterprise注册表的作用域登录"
 
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:19
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:36
@@ -1479,11 +1461,8 @@ msgid "When prompted, provide your SSO credentials."
 msgstr "出现提示时，提供您的SSO凭据。"
 
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:24
-#, fuzzy
 msgid "On the command line, switch to your npm Enterprise profile:"
-msgstr ""
-"When prompted, provide your SSO credentials. Logging in with npmrc§ On "
-"the command line, switch to your npm Enterprise profile:"
+msgstr "在命令行上，切换到您的npm企业配置文件:"
 
 #: ../../source/getting-started/logging-in-to-an-npm-enterprise-registry-from-the-command-line.rst:30
 msgid "Run the following command:"
@@ -1500,47 +1479,40 @@ msgid ""
 msgstr "您可以从Web或命令行管理用户帐户配置文件的设置。"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:7
-#, fuzzy
 msgid "Managing user account profile settings from the web"
 msgstr "管理您的个人资料设置"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:9
-#, fuzzy
 msgid "From the web, you can change the following user profile settings:"
-msgstr ""
-"Managing user account profile settings from the web§ From the web, you "
-"can change the following user profile settings:"
+msgstr "在Web上，您可以更改以下用户配置文件设置:"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:11
 msgid "Avatar"
-msgstr ""
+msgstr "阿凡达"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:12
-#, fuzzy
 msgid "Password"
-msgstr "> npm password:"
+msgstr "密码"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:14
 msgid "GitHub user name"
-msgstr ""
+msgstr "GitHub用户名"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:15
 msgid "Twitter user name"
-msgstr ""
+msgstr "Twitter用户名"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:16
 msgid "Email address added to package metadata"
-msgstr ""
+msgstr "添加到包元数据的电子邮件地址"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:17
-#, fuzzy
 msgid "Two-factor authentication status"
-msgstr "关于双因素身份验证"
+msgstr "双因素身份验证状态"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:23
-#, fuzzy
 msgid "Managing user account profile settings from the command line"
-msgstr "您可以从Web或命令行管理用户帐户配置文件的设置。"
+msgstr "从命令行管理用户帐户配置文件设置"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:25
 msgid ""
@@ -1548,6 +1520,8 @@ msgid ""
 "settings from the CLI. To update to the latest version of npm, on the "
 "command line, run npm install npm@latest -g"
 msgstr ""
+"您的npm客户端必须是5.5.1或更高版本才能从CLI更改您的帐户设置。要在命令行上更新到最新版本的npm，请运行npm install "
+"npm@latest -g"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:28
 #, fuzzy
@@ -1560,8 +1534,9 @@ msgid ""
 "To view your user profile settings from the CLI, on the command line, run"
 " the following command:"
 msgstr ""
-"Setting a password from the command line§ On the command line, type the "
-"following command:"
+"To view your user profile settings from the CLI, on the command line, run"
+" the following command:Setting a password from the command line§ On the "
+"command line, type the following command:"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:36
 #, fuzzy
@@ -1579,12 +1554,14 @@ msgid ""
 "From the CLI, you can change the following properties for your user "
 "account:"
 msgstr ""
-"Updating user account profile settings from the command line§ From the "
-"CLI, you can change the following properties for your user account:"
+"From the CLI, you can change the following properties for your user "
+"account:Updating user account profile settings from the command line§ "
+"From the CLI, you can change the following properties for your user "
+"account:"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:43
 msgid "email"
-msgstr ""
+msgstr "email"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:44
 #, fuzzy
@@ -1598,19 +1575,19 @@ msgstr "全名"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:46
 msgid "homepage"
-msgstr ""
+msgstr "homepage"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:47
 msgid "freenode"
-msgstr ""
+msgstr "freenode"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:48
 msgid "twitter"
-msgstr ""
+msgstr "twitter"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:49
 msgid "github"
-msgstr ""
+msgstr "github"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:50
 #, fuzzy
@@ -1623,9 +1600,11 @@ msgid ""
 "On the command line, type the following command, replacing property with "
 "the name of the property, and value with the new value:"
 msgstr ""
-"email two-factor auth fullname homepage freenode twitter github password "
 "On the command line, type the following command, replacing property with "
-"the name of the property, and value with the new value:"
+"the name of the property, and value with the new value:email two-factor "
+"auth fullname homepage freenode twitter github password On the command "
+"line, type the following command, replacing property with the name of the"
+" property, and value with the new value:"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:58
 #: ../../source/getting-started/managing-your-profile-settings.rst:72
@@ -1639,46 +1618,50 @@ msgid ""
 "If you have enabled two-factor authentication on your account, when "
 "prompted, enter a one-time password."
 msgstr ""
-"When prompted, provide your current password. If you have enabled two-"
-"factor authentication on your account, when prompted, enter a one-time "
-"password. For more details, see the profile command line documentation."
+"If you have enabled two-factor authentication on your account, when "
+"prompted, enter a one-time password.When prompted, provide your current "
+"password. If you have enabled two-factor authentication on your account, "
+"when prompted, enter a one-time password. For more details, see the "
+"profile command line documentation."
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:61
 msgid "For more details, see the profile `command line documentation`_."
-msgstr ""
+msgstr "For more details, see the profile `command line documentation`_."
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:64
 #, fuzzy
 msgid "Setting a password from the command line"
 msgstr ""
-"Setting a password from the command line§ On the command line, type the "
-"following command:"
+"Setting a password from the command lineSetting a password from the "
+"command line§ On the command line, type the following command:"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:73
 msgid "When prompted, type a new password."
-msgstr ""
+msgstr "When prompted, type a new password."
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:77
 msgid ""
 "To protect your account, when you reset your password from the command "
 "line, it must:"
 msgstr ""
+"To protect your account, when you reset your password from the command "
+"line, it must:"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:79
 msgid "be longer than 7 characters"
-msgstr ""
+msgstr "be longer than 7 characters"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:80
 msgid "not contain part of your username"
-msgstr ""
+msgstr "not contain part of your username"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:81
 msgid "not be on this list of common passwords"
-msgstr ""
+msgstr "not be on this list of common passwords"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:82
 msgid "not be in the \"Have I Been Pwned\" breach database"
-msgstr ""
+msgstr "not be in the \"Have I Been Pwned\" breach database"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:85
 #, fuzzy
@@ -1690,7 +1673,7 @@ msgstr "配置双因素身份验证"
 msgid ""
 "Enabling two-factor authentication on your account helps protect against "
 "unauthorized access to your account and packages."
-msgstr "您可以在npm用户帐户上启用双因素身份验证（2FA），以防止对您的帐户和软件包进行未经授权的访问。"
+msgstr "您可以在npm用户帐户上启用双因素身份验证(2FA)，以防止对您的帐户和软件包进行未经授权的访问。"
 
 #: ../../source/getting-started/managing-your-profile-settings.rst:89
 #, fuzzy
@@ -1699,7 +1682,9 @@ msgid ""
 "command line, see “`Configuring two-factor authentication`_”."
 msgstr ""
 "To enable, configure, and disable two-factor authentication from the "
-"command line, see “Configuring two-factor authentication”."
+"command line, see “`Configuring two-factor authentication`_”.To enable, "
+"configure, and disable two-factor authentication from the command line, "
+"see “Configuring two-factor authentication”."
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:2
 msgid "Recovering your 2FA-enabled account"
@@ -1713,7 +1698,7 @@ msgstr "根据具体情况，您可以恢复对启用了2FA的帐户的访问权
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:7
 msgid "Misplaced second factor device"
-msgstr ""
+msgstr "错位的第二因素设备"
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:9
 #, fuzzy
@@ -1725,7 +1710,7 @@ msgstr "错位的第二因素设备§如果您错放了提供第二因素身份�
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:11
 msgid "Locate the recovery codes generated when you enabled 2FA on your account."
-msgstr ""
+msgstr "Locate the recovery codes generated when you enabled 2FA on your account."
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:12
 #, fuzzy
@@ -1736,31 +1721,29 @@ msgstr "找到您在帐户中启用2FA时生成的恢复代码。如果您已注
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:18
 msgid "When prompted for an OTP, enter a recovery code."
-msgstr ""
+msgstr "提示输入OTP时，请输入恢复代码。"
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:19
-#, fuzzy
 msgid ""
 "Once you are logged in, type npm profile disable-2fa and enter your npm "
 "password if prompted."
-msgstr ""
-"提示输入OTP时，请输入恢复代码。登录后，键入npm profile disable-"
-"2fa并在出现提示时输入您的npm密码。看到此提示时输入未使用的恢复代码："
+msgstr "登录后，键入npm profile disable-2fa并在出现提示时输入您的npm密码。"
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:20
 msgid "Enter an unused recovery code when you see this prompt:"
-msgstr ""
+msgstr "看到此提示时，请输入未使用的恢复代码:"
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:26
-#, fuzzy
 msgid "npm will confirm that two-factor authentication has been disabled."
-msgstr "配置双因素身份验证"
+msgstr "npm将确认已禁用双因素身份验证。"
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:27
 msgid ""
 "type npm profile enable-2fa to re-enable 2FA, assign a different device "
 "to your account, and generate new recovery codes."
 msgstr ""
+"type npm profile enable-2fa to re-enable 2FA, assign a different device "
+"to your account, and generate new recovery codes."
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:29
 msgid ""
@@ -1771,7 +1754,7 @@ msgstr ""
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:32
 msgid "Misplaced recovery codes"
-msgstr ""
+msgstr "错误的恢复代码"
 
 #: ../../source/getting-started/recovering-your-2fa-enabled-account.rst:34
 msgid ""
@@ -1795,11 +1778,11 @@ msgstr ""
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:6
 msgid "See what version of node you’re running:"
-msgstr ""
+msgstr "查看您正在运行的节点版本:"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:13
 msgid "Updating node on Linux"
-msgstr ""
+msgstr "在Linux上更新节点"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:15
 msgid ""
@@ -1811,33 +1794,27 @@ msgstr ""
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:18
 msgid "Updating node on Windows"
-msgstr ""
+msgstr "在Windows上更新节点"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:20
-#, fuzzy
 msgid "Install the latest msi from https://nodejs.org/en/download"
-msgstr ""
-"Updating node on Windows§ Install the latest msi from "
-"https://nodejs.org/en/download"
+msgstr "从 https://nodejs.org/en/download 安装最新的msi"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:23
 msgid "Updating node on OSX"
-msgstr ""
+msgstr "在OSX上更新节点"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:25
-#, fuzzy
 msgid "Install the latest package from https://nodejs.org/en/download"
-msgstr ""
-"Updating node on OSX§ Install the latest package from "
-"https://nodejs.org/en/download"
+msgstr "从 https://nodejs.org/en/download 安装最新的软件包"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:27
 msgid "or if you are using homebrew"
-msgstr "or if you are using homebrew"
+msgstr "或者如果你使用自制软件"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:34
 msgid "An easy way to stay up-to-date"
-msgstr ""
+msgstr "一种简单的方法来保持最新"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:36
 msgid ""
@@ -1849,15 +1826,15 @@ msgstr ""
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:38
 msgid "NVM"
-msgstr ""
+msgstr "NVM"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:41
 msgid "nave"
-msgstr ""
+msgstr "nave"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-node.rst:42
 msgid "nodebrew"
-msgstr ""
+msgstr "nodebrew"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:2
 msgid "Try the latest stable version of npm"
@@ -1865,40 +1842,36 @@ msgstr "试试最新稳定版的npm"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:5
 msgid "See what version of npm you’re running"
-msgstr ""
+msgstr "查看您正在运行的npm版本"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:12
 msgid "Upgrading on *nix (OSX, Linux, etc.)"
-msgstr ""
+msgstr "在* nix上升级（OSX，Linux等）"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:14
 msgid ""
 "(You may need to prefix these commands with sudo, especially on Linux, or"
 " OS X if you installed Node using its default installer.)"
-msgstr ""
+msgstr "（您可能需要使用sudo为这些命令添加前缀，尤其是在Linux或OS X上，如果您使用其默认安装程序安装了Node。）"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:16
 msgid "You can upgrade to the latest version of npm using:"
 msgstr "您可以使用升级到最新版本的npm:"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:22
-#, fuzzy
 msgid "Or upgrade to the most recent release:"
-msgstr "npm install -g npm @ latest或升级到最新版本:"
+msgstr "或者升级到最新版本："
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:29
 msgid "Upgrading on Windows"
-msgstr ""
+msgstr "在Windows上升级"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:31
-#, fuzzy
 msgid ""
 "Microsoft wrote a small command line tool to automate the steps below. "
 "You can go and download it here - or stick with the manual path outlined "
 "below."
-msgstr ""
-"npm install -g npm @ "
-"next在Windows上升级Microsoft写了一个小命令行工具来自动执行以下步骤。你可以在这里下载它 - 或者坚持使用下面列出的手动路径。"
+msgstr "Microsoft编写了一个小命令行工具来自动执行以下步骤。你可以在这里下载它 - 或者坚持使用下面列出的手动路径。"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:33
 msgid "By default, npm is installed alongside node in"
@@ -1908,7 +1881,7 @@ msgstr "默认情况下，npm与节点一起安装"
 msgid ""
 "npm’s globally installed packages (including, potentially, npm itself) "
 "are stored separately in a user-specific directory (which is currently"
-msgstr "npm的全局安装包（可能包括npm本身）分别存储在用户特定的目录中（目前是"
+msgstr "npm的全局安装包(可能包括npm本身)分别存储在用户特定的目录中(目前是"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:45
 msgid "Because the installer puts"
@@ -1939,12 +1912,11 @@ msgstr ""
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:62
 msgid "Option 2: remove both of"
-msgstr ""
+msgstr "选项2：删除两者"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:64
-#, fuzzy
 msgid "%ProgramFiles%\\nodejs\\npm"
-msgstr "C:\\Program Files (x86)\\nodejs"
+msgstr ""
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:65
 msgid "%ProgramFiles%\\nodejs\\npm.cmd"
@@ -1962,10 +1934,12 @@ msgid ""
 "If you installed npm with the node.js installer, after doing one of the "
 "previous steps, do the following."
 msgstr ""
+"If you installed npm with the node.js installer, after doing one of the "
+"previous steps, do the following."
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:76
 msgid "Option 1 or 2"
-msgstr ""
+msgstr "Option 1 or 2"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:78
 msgid ""
@@ -1977,21 +1951,23 @@ msgstr ""
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:80
 msgid "Option 3"
-msgstr ""
+msgstr "Option 3"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:82
 msgid "Copy the npmrc file back into %ProgramFiles%\\nodejs\\node_modules\\npm"
-msgstr ""
+msgstr "Copy the npmrc file back into %ProgramFiles%\\nodejs\\node_modules\\npm"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:84
 msgid ""
 "(See also the point below if you’re running Windows 7 and don’t have the "
 "directory %appdata%\\npm.)"
 msgstr ""
+"(See also the point below if you’re running Windows 7 and don’t have the "
+"directory %appdata%\\npm.)"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:87
 msgid "A brief note on the built-in Windows configuration"
-msgstr ""
+msgstr "有关内置Windows配置的简要说明"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:89
 msgid ""
@@ -2010,9 +1986,10 @@ msgid ""
 "If it isn’t set to <X>:\\Users\\<user>\\AppData\\Roaming\\npm, you can "
 "run the below command to correct it:"
 msgstr ""
-"npm config get prefix -g If it isn’t set to "
-"<X>:\\Users\\<user>\\AppData\\Roaming\\npm, you can run the below command"
-" to correct it:"
+"If it isn’t set to <X>:\\Users\\<user>\\AppData\\Roaming\\npm, you can "
+"run the below command to correct it:npm config get prefix -g If it isn’t "
+"set to <X>:\\Users\\<user>\\AppData\\Roaming\\npm, you can run the below "
+"command to correct it:"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:101
 msgid ""
@@ -2028,8 +2005,9 @@ msgid ""
 "…as well as copying %APPDATA%\\npm to %LOCALAPPDATA%\\npm (and updating "
 "your %PATH%, of course)."
 msgstr ""
-"npm config set prefix \\“$ {LOCALAPPDATA} / npm \\” -  g "
-"...以及将％APPDATA％\\ npm复制到％LOCALAPPDATA％\\ npm（当然还要更新％PATH％）。"
+"…as well as copying %APPDATA%\\npm to %LOCALAPPDATA%\\npm (and updating "
+"your %PATH%, of course).npm config set prefix \\“$ {LOCALAPPDATA} / npm "
+"\\” -  g ...以及将％APPDATA％\\ npm复制到％LOCALAPPDATA％\\ npm(当然还要更新％PATH％)。"
 
 #: ../../source/getting-started/try-the-latest-stable-version-of-npm.rst:109
 msgid ""
@@ -2055,34 +2033,36 @@ msgid ""
 "or we are otherwise are unable to charge your card, you have a grace "
 "period of nine days to update the card."
 msgstr ""
-"Note: If the credit card used to pay for your paid user account plan "
+".. note:: If the credit card used to pay for your paid user account plan "
 "expires, or we are otherwise are unable to charge your card, you have a "
 "grace period of nine days to update the card."
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:11
 msgid "Updating credit card information"
-msgstr ""
+msgstr "更新信用卡信息"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:15
 msgid ""
 "Under “monthly bill”, click Edit Payment Info. edit payment information "
 "button"
-msgstr ""
+msgstr "在“每月帐单”下，点击修改付款信息。编辑付款信息按钮"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:16
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:14
 msgid "In the billing information dialog box, type billing information:"
-msgstr ""
+msgstr "在“结算信息”对话框中，键入结算信息："
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:18
 msgid "Email: the email address used for the billing contact"
-msgstr ""
+msgstr "电子邮件：用于结算联系人的电子邮件地址"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:19
 msgid ""
 "Name: the name on the credit card used to pay for the paid user account "
 "plan"
 msgstr ""
+"Name: the name on the credit card used to pay for the paid user account "
+"plan"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:20
 msgid ""
@@ -2094,22 +2074,22 @@ msgstr ""
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:22
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:20
 msgid "Click Payment Info. payment information button"
-msgstr ""
+msgstr "Click Payment Info. payment information button"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:23
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:21
 msgid "In the credit card information dialog box, type credit card information:"
-msgstr ""
+msgstr "In the credit card information dialog box, type credit card information:"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:25
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:23
 msgid "Card number"
-msgstr ""
+msgstr "Card number"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:26
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:24
 msgid "MM / YY: the month and year of the card expiration date"
-msgstr ""
+msgstr "MM / YY: the month and year of the card expiration date"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:27
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:25
@@ -2117,6 +2097,8 @@ msgid ""
 "CVC: the three-digit code on the credit card credit card information form"
 " fields"
 msgstr ""
+"CVC: the three-digit code on the credit card credit card information form"
+" fields"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:29
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:27
@@ -2124,14 +2106,16 @@ msgid ""
 "To save your credit card information for other payments on npm, select "
 "“Remember me”. remember me checkbox"
 msgstr ""
+"To save your credit card information for other payments on npm, select "
+"“Remember me”. remember me checkbox"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:30
 msgid "Click Update Card. update credit card button"
-msgstr ""
+msgstr "单击“更新卡”。更新信用卡按钮"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:33
 msgid "Updating billing receipt email and extra receipt information"
-msgstr ""
+msgstr "更新结算收据电子邮件和额外收据信息"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:35
 msgid ""
@@ -2148,7 +2132,7 @@ msgid ""
 "the email address of the person whose card is used to pay for the paid "
 "user account plan."
 msgstr ""
-"Note: The billing email is used for receipts only and is not required to "
+".. note:: The billing email is used for receipts only and is not required to "
 "match the email address of the person whose card is used to pay for the "
 "paid user account plan."
 
@@ -2157,12 +2141,16 @@ msgid ""
 "Under “monthly bill”, click View Billing History. view billing history "
 "button"
 msgstr ""
+"Under “monthly bill”, click View Billing History. view billing history "
+"button"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:42
 msgid ""
 "At the bottom of the Billing History dialog box, click “Receipt "
 "Settings”. receipt settings link"
 msgstr ""
+"At the bottom of the Billing History dialog box, click “Receipt "
+"Settings”. receipt settings link"
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:43
 msgid ""
@@ -2180,7 +2168,7 @@ msgstr ""
 
 #: ../../source/getting-started/updating-user-account-billing-settings.rst:45
 msgid "Click Save. save button on extra receipt information dialog box"
-msgstr ""
+msgstr "Click Save. save button on extra receipt information dialog box"
 
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:2
 msgid "Upgrading to a paid user account plan"
@@ -2200,7 +2188,7 @@ msgid ""
 "card information, and you will be charged for the first month "
 "immediately."
 msgstr ""
-"Note: Your paid plan and billing cycle will start when you submit your "
+".. note:: Your paid plan and billing cycle will start when you submit your "
 "credit card information, and you will be charged for the first month "
 "immediately."
 
@@ -2209,20 +2197,24 @@ msgid ""
 "Under “change plan”, click Upgrade Plan ($7/User). change payment plan "
 "button"
 msgstr ""
+"Under “change plan”, click Upgrade Plan ($7/User). change payment plan "
+"button"
 
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:13
 msgid ""
 "Under “Want to upgrade?”, click Enable Private Publishing for $7/mo. "
 "enable private publishing button"
 msgstr ""
+"Under “Want to upgrade?”, click Enable Private Publishing for $7/mo. "
+"enable private publishing button"
 
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:16
 msgid "Email: the email address associated with your credit card"
-msgstr ""
+msgstr "Email: the email address associated with your credit card"
 
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:17
 msgid "Name: the name on the credit card used to pay for your user account plan"
-msgstr ""
+msgstr "Name: the name on the credit card used to pay for your user account plan"
 
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:18
 msgid ""
@@ -2233,7 +2225,7 @@ msgstr ""
 
 #: ../../source/getting-started/upgrading-to-a-paid-user-account-plan.rst:28
 msgid "Click Pay $7.00. pay seven dollars button"
-msgstr ""
+msgstr "Click Pay $7.00. pay seven dollars button"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:2
 msgid "Viewing, downloading, and emailing receipts for your npm user account"
@@ -2244,11 +2236,11 @@ msgstr "查看，下载和通过电子邮件发送您的npm用户帐户的收据
 msgid ""
 "You can view, download, and email receipts for the complete billing "
 "history of your npm user account."
-msgstr "注意：本文仅适用于公共npm注册表的用户。您可以查看，下载和通过电子邮件收据npm用户帐户的完整帐单历史记录。"
+msgstr "注意:本文仅适用于公共npm注册表的用户。您可以查看，下载和通过电子邮件收据npm用户帐户的完整帐单历史记录。"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:9
 msgid "Viewing receipts"
-msgstr ""
+msgstr "查看收据"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:13
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:21
@@ -2256,6 +2248,8 @@ msgid ""
 "On the Billing Information page, under “monthly bill”, click View Billing"
 " History. view billing history button"
 msgstr ""
+"On the Billing Information page, under “monthly bill”, click View Billing"
+" History. view billing history button"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:14
 msgid ""
@@ -2266,7 +2260,7 @@ msgstr ""
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:17
 msgid "Downloading receipts"
-msgstr ""
+msgstr "下载收据"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:22
 msgid ""
@@ -2280,16 +2274,20 @@ msgid ""
 "To download all receipts, next to “Date”, select the checkbox, then click"
 " Download Checked. download checked receipts link"
 msgstr ""
+"To download all receipts, next to “Date”, select the checkbox, then click"
+" Download Checked. download checked receipts link"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:26
 msgid "Emailing receipts"
-msgstr ""
+msgstr "通过电子邮件发送收据"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:30
 msgid ""
 "On the Billing Information page, under “monthly bill”, click View Billing"
 " History."
 msgstr ""
+"On the Billing Information page, under “monthly bill”, click View Billing"
+" History."
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:31
 msgid ""
@@ -2303,16 +2301,20 @@ msgid ""
 "To email all receipts, next to “Date”, select the checkbox, then click "
 "Email Checked. email checked receipts link"
 msgstr ""
+"To email all receipts, next to “Date”, select the checkbox, then click "
+"Email Checked. email checked receipts link"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:33
 msgid ""
 "In the Email Receipt dialog box, fill in the “From”, “To”, and “Message” "
 "fields. email receipt form with from, to, and message fields"
 msgstr ""
+"In the Email Receipt dialog box, fill in the “From”, “To”, and “Message” "
+"fields. email receipt form with from, to, and message fields"
 
 #: ../../source/getting-started/viewing-downloading-and-emailing-receipts-for-your-user-account.rst:34
 msgid "Click Send."
-msgstr ""
+msgstr "单击发送。"
 
 #~ msgid ""
 #~ "latest release: the most recent stable"
@@ -2332,7 +2334,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "npm install npm@latest -g The next "
-#~ "release of npm§ Note: The next "
+#~ "release of npm§ .. note:: The next "
 #~ "release of npm may contain features "
 #~ "that do not match the features "
 #~ "ultimately released in the latest stable"
@@ -2347,7 +2349,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Note: Two-factor authentication provides "
+#~ ".. note:: Two-factor authentication provides "
 #~ "the best possible security for your "
 #~ "account against attackers. We strongly "
 #~ "recommend enabling 2FA on your account"
@@ -2558,7 +2560,7 @@ msgstr ""
 #~ " or Google Authenticator) on a mobile"
 #~ " device or second computer that will"
 #~ " always be available when you work"
-#~ " in your npm account. Note: npm "
+#~ " in your npm account. .. note:: npm "
 #~ "does not accept SMS (text-to-"
 #~ "phone) as a 2FA method. Configuring "
 #~ "2FA on the web§ Enabling 2FA on"
@@ -2618,7 +2620,7 @@ msgstr ""
 #~ "“Disable”. disable radio button selected "
 #~ "Click Submit. submit button Configuring "
 #~ "2FA from the command line§ Enabling "
-#~ "2FA from the command line§ Note: "
+#~ "2FA from the command line§ .. note:: "
 #~ "Settings you configure on the command"
 #~ " line will also apply to your "
 #~ "profile settings on the npm website. "
@@ -2732,7 +2734,7 @@ msgstr ""
 #~ "npm profile enable-2fa to re-"
 #~ "enable 2FA, assign a different device"
 #~ " to your account, and generate new"
-#~ " recovery codes. Note: Using the "
+#~ " recovery codes. .. note:: Using the "
 #~ "recovery codes to re-enable 2FA "
 #~ "may create a second authenticator "
 #~ "account with the same npm account "
@@ -2822,7 +2824,7 @@ msgstr ""
 #~ " Settings. npm avatar menu with "
 #~ "selector over profile settings list item"
 #~ " Managing user account profile settings "
-#~ "from the command line§ Note: Your "
+#~ "from the command line§ .. note:: Your "
 #~ "npm client must be version 5.5.1 "
 #~ "or higher to change your account "
 #~ "settings from the CLI. To update "
@@ -3027,7 +3029,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "npm install npm@latest -g The next "
-#~ "release of npm Note: The next "
+#~ "release of npm .. note:: The next "
 #~ "release of npm may contain features "
 #~ "that do not match the features "
 #~ "ultimately released in the latest stable"
@@ -3055,7 +3057,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Note: Two-factor authentication provides "
+#~ ".. note:: Two-factor authentication provides "
 #~ "the best possible security for your "
 #~ "account against attackers. We strongly "
 #~ "recommend enabling 2FA on your account"
@@ -3291,7 +3293,7 @@ msgstr ""
 #~ "npm ERR! Error: SSL Error: "
 #~ "SELF_SIGNED_CERT_IN_CHAIN npm no longer "
 #~ "supports its self-signed certificates"
-#~ msgstr "错误的ERR！错误：SSL错误：SELF_SIGNED_CERT_IN_CHAIN npm不再支持其自签名证书"
+#~ msgstr "错误的ERR！错误:SSL错误:SELF_SIGNED_CERT_IN_CHAIN npm不再支持其自签名证书"
 
 #~ msgid ""
 #~ "Not found / Server error npm http"
@@ -3381,7 +3383,7 @@ msgstr ""
 #~ " or Google Authenticator) on a mobile"
 #~ " device or second computer that will"
 #~ " always be available when you work"
-#~ " in your npm account. Note: npm "
+#~ " in your npm account. .. note:: npm "
 #~ "does not accept SMS (text-to-"
 #~ "phone) as a 2FA method. Configuring "
 #~ "2FA on the web Enabling 2FA on "
@@ -3440,7 +3442,7 @@ msgstr ""
 #~ "“Disable”. disable radio button selected "
 #~ "Click Submit. submit button Configuring "
 #~ "2FA from the command line Enabling "
-#~ "2FA from the command line Note: "
+#~ "2FA from the command line .. note:: "
 #~ "Settings you configure on the command"
 #~ " line will also apply to your "
 #~ "profile settings on the npm website. "
@@ -3505,7 +3507,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Note: npm Enterprise requires npm 4.4.x"
+#~ ".. note:: npm Enterprise requires npm 4.4.x"
 #~ " or greater. To download the latest"
 #~ " version of npm, on the command "
 #~ "line, run [sudo] npm install npm "
@@ -3599,7 +3601,7 @@ msgstr ""
 #~ "--registry=https://registry.company-registry.npme.io/"
 
 #~ msgid ""
-#~ "Note: This article only applies to "
+#~ ".. note:: This article only applies to "
 #~ "users of the public npm registry. "
 #~ "If you have a paid user account,"
 #~ " but no longer need private packages,"
@@ -3712,7 +3714,7 @@ msgstr ""
 #~ " Settings. npm avatar menu with "
 #~ "selector over profile settings list item"
 #~ " Managing user account profile settings "
-#~ "from the command line Note: Your "
+#~ "from the command line .. note:: Your "
 #~ "npm client must be version 5.5.1 "
 #~ "or higher to change your account "
 #~ "settings from the CLI. To update "
@@ -3752,7 +3754,7 @@ msgstr ""
 #~ "npm profile enable-2fa to re-"
 #~ "enable 2FA, assign a different device"
 #~ " to your account, and generate new"
-#~ " recovery codes. Note: Using the "
+#~ " recovery codes. .. note:: Using the "
 #~ "recovery codes to re-enable 2FA "
 #~ "may create a second authenticator "
 #~ "account with the same npm account "
@@ -3871,7 +3873,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Note: This article only applies to "
+#~ ".. note:: This article only applies to "
 #~ "users of the public npm registry. "
 #~ "You can update the credit card "
 #~ "used to pay for your paid user "
@@ -3956,7 +3958,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Note: This article only applies to "
+#~ ".. note:: This article only applies to "
 #~ "users of the public npm registry. "
 #~ "If you need to install and publish"
 #~ " private packages, you can upgrade to"

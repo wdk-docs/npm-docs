@@ -11,27 +11,28 @@ Unscoped packages are always public, which means they can be searched for, downl
 npm install <package_name>
 This will create the node_modules directory in your current directory (if one doesn’t exist yet) and will download the package to that directory.
 
-Note: If there is no package.json file in the local directory, the latest version of the package is installed. If there is a package.json file, npm installs the latest version that satisfies the semver rule declared in package.json.
+.. note:: If there is no package.json file in the local directory, the latest version of the package is installed. If there is a package.json file, npm installs the latest version that satisfies the semver rule declared in package.json.
 
 Installed a scoped public package
 -------------------------------------------------------
 
-Scoped public packages can be downloaded and installed by anyone, as long as the scope name is referenced during installation:
+Scoped public packages can be downloaded and installed by anyone, as long as the scope name is referenced during installation::
 
-npm install @scope/package-name
+    npm install @scope/package-name
 
 Installing a private package
 -------------------------------------------------------
 
-Private packages can only be downloaded and installed by those who have been granted read access to the package. Since private packages are always scoped, you must reference the scope name during installation:
+Private packages can only be downloaded and installed by those who have been granted read access to the package. Since private packages are always scoped, you must reference the scope name during installation::
 
-npm install @scope/private-package-name
+    npm install @scope/private-package-name
+
 Testing package installation
 -------------------------------------------------------
 
-To confirm that npm install worked correctly, in your module directory, check that a node_modules directory exists and that it contains a directory for the package(s) you installed:
+To confirm that npm install worked correctly, in your module directory, check that a node_modules directory exists and that it contains a directory for the package(s) you installed::
 
-ls node_modules
+    ls node_modules
 
 Installed package version
 -------------------------------------------------------
@@ -45,9 +46,10 @@ Installing a package with dist-tags
 
 Like npm publish, npm install <package_name> will use the latest tag by default.
 
-To override this behavior, use npm install <package_name>@<tag>. For example, to install the example-package at the version tagged with beta, you would run the following command:
+To override this behavior, use npm install <package_name>@<tag>. For example, to install the example-package at the version tagged with beta, you would run the following command::
 
-npm install example-package@beta
+    npm install example-package@beta
+
 Resources
 -------------------------------------------------------
 

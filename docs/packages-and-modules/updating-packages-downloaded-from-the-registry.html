@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,13 +102,13 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">更新从注册表下载的包</a><ul>
-<li><a class="reference internal" href="#updating-local-packages">Updating local packages</a></li>
-<li><a class="reference internal" href="#updating-globally-installed-packages">Updating globally-installed packages</a></li>
-<li><a class="reference internal" href="#determining-which-global-packages-need-updating">Determining which global packages need updating</a></li>
-<li><a class="reference internal" href="#updating-a-single-global-package">Updating a single global package</a></li>
-<li><a class="reference internal" href="#updating-all-globally-installed-packages">Updating all globally-installed packages</a></li>
-<li><a class="reference internal" href="#resources">Resources</a></li>
-<li><a class="reference internal" href="#cli-commands">CLI commands</a></li>
+<li><a class="reference internal" href="#updating-local-packages">更新本地包</a></li>
+<li><a class="reference internal" href="#updating-globally-installed-packages">更新全局安装的包</a></li>
+<li><a class="reference internal" href="#determining-which-global-packages-need-updating">确定哪些全局包需要更新</a></li>
+<li><a class="reference internal" href="#updating-a-single-global-package">更新单个全局包</a></li>
+<li><a class="reference internal" href="#updating-all-globally-installed-packages">更新所有全局安装的包</a></li>
+<li><a class="reference internal" href="#resources">资源</a></li>
+<li><a class="reference internal" href="#cli-commands">CLI命令</a></li>
 </ul>
 </li>
 </ul>
@@ -147,41 +148,63 @@
 <h1>更新从注册表下载的包<a class="headerlink" href="#updating-packages-downloaded-from-the-registry" title="永久链接至标题">¶</a></h1>
 <p>Updating local and global packages you downloaded from the registry helps keep your code and tools stable, usable, and secure.</p>
 <div class="section" id="updating-local-packages">
-<h2>Updating local packages<a class="headerlink" href="#updating-local-packages" title="永久链接至标题">¶</a></h2>
+<h2>更新本地包<a class="headerlink" href="#updating-local-packages" title="永久链接至标题">¶</a></h2>
 <p>We recommend regularly updating the local packages your project depends on to improve your code as improvements to its dependencies are made.</p>
-<p>Navigate to the root directory of your project and ensure it contains a package.json file:
-cd /path/to/project
-In your project root directory, run the update command:
-npm update
-To test the update, run the outdated command. There should not be any output.
-npm outdated</p>
+<p>Navigate to the root directory of your project and ensure it contains a package.json file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">project</span>
+</pre></div>
+</div>
+<p>In your project root directory, run the update command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">update</span>
+</pre></div>
+</div>
+<p>To test the update, run the outdated command. There should not be any output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">outdated</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="updating-globally-installed-packages">
-<h2>Updating globally-installed packages<a class="headerlink" href="#updating-globally-installed-packages" title="永久链接至标题">¶</a></h2>
-<p>Note: If you are using npm version 2.6.0 or less, run this script to update all outdated global packages. However, please consider upgrading to the latest version of npm: npm install <a class="reference external" href="mailto:npm&#37;&#52;&#48;latest">npm<span>&#64;</span>latest</a> -g</p>
+<h2>更新全局安装的包<a class="headerlink" href="#updating-globally-installed-packages" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>If you are using npm version 2.6.0 or less,
+run this script to update all outdated global packages.
+However, please consider upgrading to the latest version of npm:</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm install npm@latest -g
+</pre></div>
+</div>
 </div>
 <div class="section" id="determining-which-global-packages-need-updating">
-<h2>Determining which global packages need updating<a class="headerlink" href="#determining-which-global-packages-need-updating" title="永久链接至标题">¶</a></h2>
-<p>To see which global packages need to be updated, on the command line, run:</p>
-<p>npm outdated -g –depth=0</p>
+<h2>确定哪些全局包需要更新<a class="headerlink" href="#determining-which-global-packages-need-updating" title="永久链接至标题">¶</a></h2>
+<p>要查看需要更新的全局包，请在命令行上运行:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">outdated</span> <span class="o">-</span><span class="n">g</span> <span class="o">--</span><span class="n">depth</span><span class="o">=</span><span class="mi">0</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="updating-a-single-global-package">
-<h2>Updating a single global package<a class="headerlink" href="#updating-a-single-global-package" title="永久链接至标题">¶</a></h2>
-<p>To update a single global package, on the command line, run:</p>
-<p>npm update -g &lt;package_name&gt;</p>
+<h2>更新单个全局包<a class="headerlink" href="#updating-a-single-global-package" title="永久链接至标题">¶</a></h2>
+<p>要更新单个全局程序包，请在命令行上运行:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">update</span> <span class="o">-</span><span class="n">g</span> <span class="o">&lt;</span><span class="n">package_name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="updating-all-globally-installed-packages">
-<h2>Updating all globally-installed packages<a class="headerlink" href="#updating-all-globally-installed-packages" title="永久链接至标题">¶</a></h2>
-<p>To update all global packages, on the command line, run:</p>
-<p>npm update -g</p>
+<h2>更新所有全局安装的包<a class="headerlink" href="#updating-all-globally-installed-packages" title="永久链接至标题">¶</a></h2>
+<p>要更新所有全局程序包，请在命令行上运行:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">update</span> <span class="o">-</span><span class="n">g</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
+<h2>资源<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="cli-commands">
-<h2>CLI commands<a class="headerlink" href="#cli-commands" title="永久链接至标题">¶</a></h2>
-<p>npm-update
-npm-outdated</p>
+<h2>CLI命令<a class="headerlink" href="#cli-commands" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../cli/update.html#cmdoption-npm-arg-update"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">update</span></code></a></p></li>
+<li><p><a class="reference internal" href="../cli/outdated.html#cmdoption-npm-arg-outdated"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">outdated</span></code></a></p></li>
+</ul>
 </div>
 </div>
 
@@ -211,7 +234,7 @@ npm-outdated</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

@@ -1,7 +1,7 @@
 Viewing, downloading, and emailing receipts for your Org
 =====================================================================================================
 
-Note: This article only applies to users of the public npm registry.
+.. note:: This article only applies to users of the public npm registry.
 As an Org owner, you can view, download, and email receipts for the complete billing history of your Org.
 
 Viewing receipts§

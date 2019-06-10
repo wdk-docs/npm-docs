@@ -1,6 +1,6 @@
 .. _npm-scripts:
 
-npm-scripts
+npm scripts
 ======================
 
 How npm handles the "scripts" field
@@ -26,7 +26,7 @@ postversion: Run AFTER bumping the package version, and AFTER commit.
 pretest, test, posttest: Run by the npm test command.
 prestop, stop, poststop: Run by the npm stop command.
 prestart, start, poststart: Run by the npm start command.
-prerestart, restart, postrestart: Run by the npm restart command. Note: npm restart will run the stop and start scripts if no restart script is provided.
+prerestart, restart, postrestart: Run by the npm restart command. .. note:: npm restart will run the stop and start scripts if no restart script is provided.
 preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
 Additionally, arbitrary scripts can be executed by running npm run-script <stage>. Pre and post commands with matching names will be run for those as well (e.g. premyscript, myscript, postmyscript). Scripts from dependencies can be run with npm explore <pkg> -- npm run <stage>.
 

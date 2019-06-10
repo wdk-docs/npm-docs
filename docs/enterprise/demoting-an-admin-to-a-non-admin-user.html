@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>Demoting an admin to a non-admin user &#8212; npm-docs 6.9.1 文档</title>
+    <title>将管理员降级为非管理员用户 &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Managing user security" href="managing-user-security.html" />
-    <link rel="prev" title="Promoting a non-admin user to admin" href="promoting-a-non-admin-user-to-admin.html" />
+    <link rel="next" title="管理用户安全性" href="managing-user-security.html" />
+    <link rel="prev" title="将非管理员用户提升为管理员" href="promoting-a-non-admin-user-to-admin.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/enterprise/demoting-an-admin-to-a-non-admin-user.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,10 +86,10 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="managing-user-security.html" title="Managing user security"
+          <a href="managing-user-security.html" title="管理用户安全性"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="promoting-a-non-admin-user-to-admin.html" title="Promoting a non-admin user to admin"
+          <a href="promoting-a-non-admin-user-to-admin.html" title="将非管理员用户提升为管理员"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -100,10 +101,10 @@
         <div class="sphinxsidebarwrapper">
   <h4>上一个主题</h4>
   <p class="topless"><a href="promoting-a-non-admin-user-to-admin.html"
-                        title="上一章">Promoting a non-admin user to admin</a></p>
+                        title="上一章">将非管理员用户提升为管理员</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="managing-user-security.html"
-                        title="下一章">Managing user security</a></p>
+                        title="下一章">管理用户安全性</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -130,9 +131,12 @@
           <div class="body" role="main">
             
   <div class="section" id="demoting-an-admin-to-a-non-admin-user">
-<h1>Demoting an admin to a non-admin user<a class="headerlink" href="#demoting-an-admin-to-a-non-admin-user" title="永久链接至标题">¶</a></h1>
-<p>Note: Demoting an admin does not deactivate them. To deactivate a user, follow the steps in “Viewing, deactivating, and reactivating users”.
-If an admin on your npm Enterprise instance no longer needs to take admin actions on the instance (e.g. configuring SSO, activating and deactivating users, or inviting users to the instance), as an Enterprise instance admin, you can demote the admin to a non-admin user.</p>
+<h1>将管理员降级为非管理员用户<a class="headerlink" href="#demoting-an-admin-to-a-non-admin-user" title="永久链接至标题">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Demoting an admin does not deactivate them. To deactivate a user, follow the steps in “Viewing, deactivating, and reactivating users”.</p>
+</div>
+<p>If an admin on your npm Enterprise instance no longer needs to take admin actions on the instance (e.g. configuring SSO, activating and deactivating users, or inviting users to the instance), as an Enterprise instance admin, you can demote the admin to a non-admin user.</p>
 <p>If you haven’t already, add the user to your instance, either by having them sign in with your SSO provider, or by inviting them to create a username and password on the instance.
 Have an Enterprise admin contact npm Enterprise Support at <a class="reference external" href="mailto:enterprise&#37;&#52;&#48;npmjs&#46;com">enterprise<span>&#64;</span>npmjs<span>&#46;</span>com</a> with the name of the admin to be demoted to a non-admin user.</p>
 </div>
@@ -150,10 +154,10 @@ Have an Enterprise admin contact npm Enterprise Support at <a class="reference e
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="managing-user-security.html" title="Managing user security"
+          <a href="managing-user-security.html" title="管理用户安全性"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="promoting-a-non-admin-user-to-admin.html" title="Promoting a non-admin user to admin"
+          <a href="promoting-a-non-admin-user-to-admin.html" title="将非管理员用户提升为管理员"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -163,7 +167,7 @@ Have an Enterprise admin contact npm Enterprise Support at <a class="reference e
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,14 +102,18 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">在项目中使用npm包</a><ul>
-<li><a class="reference internal" href="#using-unscoped-packages-in-your-projects">Using unscoped packages in your projects</a></li>
-<li><a class="reference internal" href="#node-js-module">Node.js module</a></li>
-<li><a class="reference internal" href="#example-using-lodash-in-a-node-js-module">Example: using lodash in a Node.js module</a></li>
-<li><a class="reference internal" href="#package-json-file">package.json file</a></li>
-<li><a class="reference internal" href="#using-scoped-packages-in-your-projects">Using scoped packages in your projects</a></li>
-<li><a class="reference internal" href="#id1">Node.js module</a></li>
-<li><a class="reference internal" href="#id2">package.json file</a></li>
-<li><a class="reference internal" href="#resolving-cannot-find-module-errors">Resolving “Cannot find module” errors</a></li>
+<li><a class="reference internal" href="#using-unscoped-packages-in-your-projects">在项目中使用未范围的包</a><ul>
+<li><a class="reference internal" href="#node-js-module">Node.js 模</a></li>
+<li><a class="reference internal" href="#example-using-lodash-in-a-node-js-module">示例:在Node.js模块中使用lodash</a></li>
+<li><a class="reference internal" href="#package-json-file">package.json 文件:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#using-scoped-packages-in-your-projects">在项目中使用范围包</a><ul>
+<li><a class="reference internal" href="#id1">Node.js 模</a></li>
+<li><a class="reference internal" href="#id2">package.json 文件:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#resolving-cannot-find-module-errors">解决 “Cannot find module” errors</a></li>
 </ul>
 </li>
 </ul>
@@ -146,72 +151,75 @@
             
   <div class="section" id="using-npm-packages-in-your-projects">
 <h1>在项目中使用npm包<a class="headerlink" href="#using-npm-packages-in-your-projects" title="永久链接至标题">¶</a></h1>
-<p>在node_modules中安装软件包后，可以在代码中使用它。</p>
+<p>Once you have <span class="xref std std-doc">downloading-and-installing-packages</span> in node_modules, you can use it in your code.</p>
 <div class="section" id="using-unscoped-packages-in-your-projects">
-<h2>Using unscoped packages in your projects<a class="headerlink" href="#using-unscoped-packages-in-your-projects" title="永久链接至标题">¶</a></h2>
-</div>
+<h2>在项目中使用未范围的包<a class="headerlink" href="#using-unscoped-packages-in-your-projects" title="永久链接至标题">¶</a></h2>
 <div class="section" id="node-js-module">
-<h2>Node.js module<a class="headerlink" href="#node-js-module" title="永久链接至标题">¶</a></h2>
-<p>If you are creating a Node.js module, you can use a package in your module by passing it as an argument to the require function.</p>
+<h3>Node.js 模<a class="headerlink" href="#node-js-module" title="永久链接至标题">¶</a></h3>
+<p>If you are creating a Node.js module, you can use a package in your module by passing it as an argument to the <strong>require</strong> function.</p>
 </div>
 <div class="section" id="example-using-lodash-in-a-node-js-module">
-<h2>Example: using lodash in a Node.js module<a class="headerlink" href="#example-using-lodash-in-a-node-js-module" title="永久链接至标题">¶</a></h2>
-<p>For example, to use the lodash package in a Node.js module, in the root directory of the module, create a file named index.js with the following contents:</p>
-<p>// index.js
-var lodash = require(‘lodash’);</p>
-<p>var output = lodash.without([1, 2, 3], 1);
-console.log(output);
-Run the code using node index.js. It should output [2, 3].</p>
+<h3>示例:在Node.js模块中使用lodash<a class="headerlink" href="#example-using-lodash-in-a-node-js-module" title="永久链接至标题">¶</a></h3>
+<p>For example, to use the lodash package in a Node.js module, in the root directory of the module, create a file named <strong>index.js</strong> with the following contents:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// index.js</span>
+<span class="kd">var</span> <span class="nx">lodash</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;lodash&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">lodash</span><span class="p">.</span><span class="nx">without</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Run the code using <strong>node index.js</strong>. It should output [2, 3].</p>
 </div>
 <div class="section" id="package-json-file">
-<h2>package.json file<a class="headerlink" href="#package-json-file" title="永久链接至标题">¶</a></h2>
-<p>In package.json, list the package under dependencies. You can optionally include a semantic version.</p>
-<dl>
-<dt>{</dt><dd><dl class="simple">
-<dt>“dependencies”: {</dt><dd><p>“&#64;package_name”: “^1.0.0”</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
-<p>}</p>
+<h3>package.json 文件:<a class="headerlink" href="#package-json-file" title="永久链接至标题">¶</a></h3>
+<p>In <strong>package.json</strong>, list the package under dependencies. You can optionally include a semantic version.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;dependencies&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;@package_name&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.0.0&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="using-scoped-packages-in-your-projects">
-<h2>Using scoped packages in your projects<a class="headerlink" href="#using-scoped-packages-in-your-projects" title="永久链接至标题">¶</a></h2>
+<h2>在项目中使用范围包<a class="headerlink" href="#using-scoped-packages-in-your-projects" title="永久链接至标题">¶</a></h2>
 <p>To use a scoped package, simply include the scope wherever you use the package name.</p>
-</div>
 <div class="section" id="id1">
-<h2>Node.js module<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<p>When requiring a scoped package in the index.js file of your Node.js module, you must reference the scope in addition to the package name:</p>
-<p>var projectName = require(“&#64;scope/package-name”)</p>
+<h3>Node.js 模<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>When requiring a scoped package in the index.js file of your Node.js module,
+you must reference the scope in addition to the package name:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">projectName</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;@scope/package-name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="id2">
-<h2>package.json file<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>In package.json:</p>
-<dl>
-<dt>{</dt><dd><dl class="simple">
-<dt>“dependencies”: {</dt><dd><p>“&#64;scope/package_name”: “^1.0.0”</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
-<p>}</p>
+<h3>package.json 文件:<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p>In <strong>package.json</strong>:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;dependencies&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;@scope/package_name&quot;</span><span class="p">:</span> <span class="s2">&quot;^1.0.0&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="resolving-cannot-find-module-errors">
-<h2>Resolving “Cannot find module” errors<a class="headerlink" href="#resolving-cannot-find-module-errors" title="永久链接至标题">¶</a></h2>
-<p>If you have not properly installed a package, you will receive an error when you try to use it in your code. For example, if you reference the lodash package without installing it, you would see the following error:</p>
-<dl class="simple">
-<dt>module.js:340</dt><dd><dl class="simple">
-<dt>throw err;</dt><dd><p>^</p>
-</dd>
-</dl>
-</dd>
-</dl>
-<p>Error: Cannot find module ‘lodash’
-To resolve “cannot find module” errors, run the appropriate install command in the same directory as your project’s index.js file:</p>
-<p>For scoped packages, run npm install &lt;&#64;scope/package_name&gt;
-For unscoped packages, run npm install &lt;package_name&gt;</p>
+<h2>解决 “Cannot find module” errors<a class="headerlink" href="#resolving-cannot-find-module-errors" title="永久链接至标题">¶</a></h2>
+<p>If you have not properly installed a package, you will receive an error when you try to use it in your code. For example, if you reference the <strong>lodash</strong> package without installing it, you would see the following error:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">module</span><span class="o">.</span><span class="n">js</span><span class="p">:</span><span class="mi">340</span>
+    <span class="n">throw</span> <span class="n">err</span><span class="p">;</span>
+          <span class="o">^</span>
+
+<span class="n">Error</span><span class="p">:</span> <span class="n">Cannot</span> <span class="n">find</span> <span class="n">module</span> <span class="s1">&#39;lodash&#39;</span>
+</pre></div>
+</div>
+<p>To resolve “cannot find module” errors, run the appropriate <strong>install</strong> command in the same directory as your project’s <strong>index.js</strong> file:</p>
+<ul class="simple">
+<li><p>For scoped packages, run <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">&lt;&#64;scope/package_name&gt;</span></code></p></li>
+<li><p>For unscoped packages, run <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">&lt;package_name&gt;</span></code></p></li>
+</ul>
 </div>
 </div>
 
@@ -241,7 +249,7 @@ For unscoped packages, run npm install &lt;package_name&gt;</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

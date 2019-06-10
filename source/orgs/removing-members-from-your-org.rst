@@ -11,5 +11,5 @@ In the left sidebar, click the name of your Org. example org selected in organiz
 On the Org settings page, click Members. members tab
 In the list of Org members, find the member you want to remove.
 At the end of the member row, click X. x button
-Note: Members are not notified when you remove them from your Org.
+.. note:: Members are not notified when you remove them from your Org.
 

@@ -1,12 +1,18 @@
 .. _semver:
 
-npm-semver
+semver
 ======================================================
 
 The semantic versioner for npm
+
 Install
+------------------------------------------------------
+
 npm install --save semver
+
 Usage
+------------------------------------------------------
+
 As a node module:
 
 const semver = require('semver')
@@ -200,7 +206,10 @@ major(v): Return the major version number.
 minor(v): Return the minor version number.
 patch(v): Return the patch version number.
 intersects(r1, r2, loose): Return true if the two supplied ranges or comparators intersect.
+
 Comparison
+------------------------------------------------------
+
 gt(v1, v2): v1 > v2
 gte(v1, v2): v1 >= v2
 lt(v1, v2): v1 < v2
@@ -213,7 +222,10 @@ rcompare(v1, v2): The reverse of compare. Sorts an array of versions in descendi
 diff(v1, v2): Returns difference between two versions by the release type (major, premajor, minor, preminor, patch, prepatch, or prerelease), or null if the versions are the same.
 Comparators
 intersects(comparator): Return true if the comparators intersect
+
 Ranges
+------------------------------------------------------
+
 validRange(range): Return the valid range or null if it’s not valid
 satisfies(version, range): Return true if the version satisfies the range.
 maxSatisfying(versions, range): Return the highest version in the list that satisfies the range, or null if none of them do.

@@ -3,7 +3,7 @@ Verifying the PGP signature of a package from the npm public registry
 
 To ensure the integrity of a package version you download from the npm public registry, you can manually verify the PGP signature of the package.
 
-Note: Since fully verifying signatures on Keybase requires rechecking proofs (which requires network activity) and is therefore expensive, we recommend only verifying signatures if it is absolutely necessary -- for example, when verifying a deploy artifact, or when initially storing a package in your cache.
+.. note:: Since fully verifying signatures on Keybase requires rechecking proofs (which requires network activity) and is therefore expensive, we recommend only verifying signatures if it is absolutely necessary -- for example, when verifying a deploy artifact, or when initially storing a package in your cache.
 
 Prerequisites
 -------------------------------------------------------
@@ -16,7 +16,7 @@ Download a local copy of the npm public registry’s public PGP key.
 Verifying npm signatures for the public registry
 -------------------------------------------------------
 
-Note: The following steps use version 1.4.3 of the light-cycle package as an example.
+.. note:: The following steps use version 1.4.3 of the light-cycle package as an example.
 On the command line, fetch the signature for the package version you want and save it in a file:
   $ http GET https://registry.npmjs.org/light-cycle | json "versions['1.4.3'].dist.npm-signature" > sig-to-check
 Get the integrity field for that version (example below includes response):

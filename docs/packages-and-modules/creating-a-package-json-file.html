@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -97,7 +98,7 @@
 <li><a class="reference internal" href="#author-field">Author field</a></li>
 <li><a class="reference internal" href="#running-a-cli-questionnaire">Running a CLI questionnaire</a></li>
 <li><a class="reference internal" href="#creating-a-default-package-json-file">Creating a default package.json file</a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example">例</a></li>
 <li><a class="reference internal" href="#default-values-extracted-from-the-current-directory">Default values extracted from the current directory</a></li>
 </ul>
 </li>
@@ -130,12 +131,12 @@
             
   <div class="section" id="creating-a-package-json-file">
 <h1>创建package.json文件<a class="headerlink" href="#creating-a-package-json-file" title="永久链接至标题">¶</a></h1>
-<p>You can add a package.json file to your package to make it easy for others to manage and install. Packages published to the registry must contain a package.json file.</p>
+<p>您可以将package.json文件添加到包中，以便其他人管理和安装。发布到注册表的包必须包含package.json文件。</p>
 <p>一个package.json文件:</p>
 <p>lists the packages your project depends on
 specifies versions of a package that your project can use using semantic versioning rules
 makes your build reproducible, and therefore easier to share with other developers
-Note: To make your package easier to find on the npm website, we recommend including a custom description in your package.json file.</p>
+.. note:: To make your package easier to find on the npm website, we recommend including a custom description in your package.json file.</p>
 <div class="section" id="package-json-fields">
 <h2>package.json fields<a class="headerlink" href="#package-json-fields" title="永久链接至标题">¶</a></h2>
 </div>
@@ -165,7 +166,7 @@ Creating a new package.json file
 <h2>Running a CLI questionnaire<a class="headerlink" href="#running-a-cli-questionnaire" title="永久链接至标题">¶</a></h2>
 <p>To create a package.json file with values that you supply, use the npm init command.</p>
 <dl class="simple">
-<dt>On the command line, navigate to the root directory of your package.</dt><dd><p>cd /path/to/package</p>
+<dt>在命令行上，导航到程序包的根目录。</dt><dd><p>cd /path/to/package</p>
 </dd>
 <dt>运行以下命令:</dt><dd><p>npm init</p>
 </dd>
@@ -194,16 +195,16 @@ otherCustomField: ‘This example field is really cool’</p>
 </div>
 <div class="section" id="creating-a-default-package-json-file">
 <h2>Creating a default package.json file<a class="headerlink" href="#creating-a-default-package-json-file" title="永久链接至标题">¶</a></h2>
-<p>To create a default package.json using information extracted from the current directory, use the npm init command with the –yes or -y flag. For a list of default values, see “Default values extracted from the current directory”.</p>
+<p>要使用从当前目录中提取的信息创建默认的package.json，请使用带有–yes或-y标志的npm init命令。有关默认值的列表，请参阅“从当前目录中提取的默认值”。</p>
 <dl class="simple">
-<dt>On the command line, navigate to the root directory of your package.</dt><dd><p>cd /path/to/package</p>
+<dt>在命令行上，导航到程序包的根目录。</dt><dd><p>cd /path/to/package</p>
 </dd>
 <dt>运行以下命令:</dt><dd><p>npm init –yes</p>
 </dd>
 </dl>
 </div>
 <div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h2>
+<h2>例<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h2>
 <blockquote>
 <div><p>&gt; npm init –yes
 Wrote to /home/ag_dubs/my_package/package.json:</p>
@@ -277,7 +278,7 @@ Setting config options for the init command
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

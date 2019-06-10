@@ -1,4 +1,4 @@
-npm-owner
+npm owner
 ============================================================================================
 
 
@@ -17,7 +17,9 @@ SYNOPSIS
       npm owner rm <user> [<@scope>/]<pkg>
       npm owner ls [<@scope>/]<pkg>
 
-   aliases: author
+.. option:: author
+
+   owner alias
 
 DESCRIPTION
 -------------------

@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="报告npm包中的漏洞" href="reporting-a-vulnerability-in-an-npm-package.html" />
-    <link rel="prev" title="审核您的持续集成过程。" href="auditing-package-dependencies-for-security-vulnerabilities.html" />
+    <link rel="prev" title="审核安全漏洞的程序包依赖性" href="auditing-package-dependencies-for-security-vulnerabilities.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/packages-and-modules/requiring-2fa-for-package-publishing-and-settings-modification.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -88,7 +89,7 @@
           <a href="reporting-a-vulnerability-in-an-npm-package.html" title="报告npm包中的漏洞"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="auditing-package-dependencies-for-security-vulnerabilities.html" title="审核您的持续集成过程。"
+          <a href="auditing-package-dependencies-for-security-vulnerabilities.html" title="审核安全漏洞的程序包依赖性"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -101,15 +102,15 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">要求2FA进行包发布和设置修改</a><ul>
-<li><a class="reference internal" href="#enabling-two-factor-authentication-for-package-publishing">Enabling two-factor authentication for package publishing</a></li>
-<li><a class="reference internal" href="#disabling-two-factor-authentication-for-package-publishing">Disabling two-factor authentication for package publishing</a></li>
+<li><a class="reference internal" href="#enabling-two-factor-authentication-for-package-publishing">为包发布启用双因素身份验证</a></li>
+<li><a class="reference internal" href="#disabling-two-factor-authentication-for-package-publishing">禁用包发布的双因素身份验证</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="auditing-package-dependencies-for-security-vulnerabilities.html"
-                        title="上一章">审核您的持续集成过程。</a></p>
+                        title="上一章">审核安全漏洞的程序包依赖性</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="reporting-a-vulnerability-in-an-npm-package.html"
                         title="下一章">报告npm包中的漏洞</a></p>
@@ -142,9 +143,12 @@
 <h1>要求2FA进行包发布和设置修改<a class="headerlink" href="#requiring-2fa-for-package-publishing-and-settings-modification" title="永久链接至标题">¶</a></h1>
 <p>To protect your packages, as a package publisher, you can require everyone who has write access to a package to provide a one-time password in addition to their login token when they publish the package to the registry or modify package settings.</p>
 <p>To publish or modify a package with the two factor authentication (2FA) setting enabled, a publisher must have 2FA enabled on their user account with “Authorization and Publishing” selected. For more information, see “Configuring two-factor authentication”.</p>
-<p>Note: Currently, publishing a package with 2FA enabled on CI is not possible. For more secure CI publishing, enable 2FA on the npm account used for CI, and select “Authorization” only, and create a CIDR-restricted token for CI by following the steps in “Creating and viewing authentication tokens”.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Currently, publishing a package with 2FA enabled on CI is not possible. For more secure CI publishing, enable 2FA on the npm account used for CI, and select “Authorization” only, and create a CIDR-restricted token for CI by following the steps in “Creating and viewing authentication tokens”.</p>
+</div>
 <div class="section" id="enabling-two-factor-authentication-for-package-publishing">
-<h2>Enabling two-factor authentication for package publishing<a class="headerlink" href="#enabling-two-factor-authentication-for-package-publishing" title="永久链接至标题">¶</a></h2>
+<h2>为包发布启用双因素身份验证<a class="headerlink" href="#enabling-two-factor-authentication-for-package-publishing" title="永久链接至标题">¶</a></h2>
 <p>Log in to npm with your user account. npm login dialog with username and password fields left blank
 Navigate to the package on which you want to require a second factor to publish or modify settings.
 Click Admin. admin tab on package page
@@ -152,7 +156,7 @@ Under “Package Access”, select “Require Two Factor Authentication to publi
 Click Update Package Settings. update package settings button</p>
 </div>
 <div class="section" id="disabling-two-factor-authentication-for-package-publishing">
-<h2>Disabling two-factor authentication for package publishing<a class="headerlink" href="#disabling-two-factor-authentication-for-package-publishing" title="永久链接至标题">¶</a></h2>
+<h2>禁用包发布的双因素身份验证<a class="headerlink" href="#disabling-two-factor-authentication-for-package-publishing" title="永久链接至标题">¶</a></h2>
 <p>Log in to npm with your user account. npm login dialog with username and password fields left blank
 Navigate to the package on which you want to remove the requirement for a second factor to publish or modify settings.
 Click Admin. admin tab on package page
@@ -177,7 +181,7 @@ Click Update Package Settings. update package settings button</p>
           <a href="reporting-a-vulnerability-in-an-npm-package.html" title="报告npm包中的漏洞"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="auditing-package-dependencies-for-security-vulnerabilities.html" title="审核您的持续集成过程。"
+          <a href="auditing-package-dependencies-for-security-vulnerabilities.html" title="审核安全漏洞的程序包依赖性"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -187,7 +191,7 @@ Click Update Package Settings. update package settings button</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

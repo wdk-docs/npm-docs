@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,9 +102,9 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">将协作者添加到用户帐户拥有的私有包</a><ul>
-<li><a class="reference internal" href="#granting-access-to-a-private-user-package-on-the-web">Granting access to a private user package on the web</a></li>
-<li><a class="reference internal" href="#granting-private-package-access-from-the-command-line-interface">Granting private package access from the command line interface</a></li>
-<li><a class="reference internal" href="#granting-access-to-private-org-packages">Granting access to private Org packages</a></li>
+<li><a class="reference internal" href="#granting-access-to-a-private-user-package-on-the-web">授予对Web上的私有用户包的访问权限</a></li>
+<li><a class="reference internal" href="#granting-private-package-access-from-the-command-line-interface">从命令行界面授予私有包访问权限</a></li>
+<li><a class="reference internal" href="#granting-access-to-private-org-packages">授予对私有组织包的访问权限</a></li>
 </ul>
 </li>
 </ul>
@@ -141,23 +142,34 @@
             
   <div class="section" id="adding-collaborators-to-private-packages-owned-by-a-user-account">
 <h1>将协作者添加到用户帐户拥有的私有包<a class="headerlink" href="#adding-collaborators-to-private-packages-owned-by-a-user-account" title="永久链接至标题">¶</a></h1>
-<p>As an npm user with a paid user account, you can another npm user with a paid account as a collaborator on a private package you own.</p>
-<p>Note: The user you want to add as a collaborator on your private package must have a paid user account. To sign up for a paid account, they can visit <a class="reference external" href="https://https://www.npmjs.com/settings/username/billing">https://https://www.npmjs.com/settings/username/billing</a>, replacing username with their npm username.</p>
+<p>作为具有付费用户帐户的npm用户，您可以使用付费帐户的另一个npm用户作为您拥有的私人包的协作者。</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>The user you want to add as a collaborator on your private package must have a paid user account. To sign up for a paid account, they can visit <a class="reference external" href="https://https://www.npmjs.com/settings/username/billing">https://https://www.npmjs.com/settings/username/billing</a>, replacing username with their npm username.</p>
+</div>
 <div class="section" id="granting-access-to-a-private-user-package-on-the-web">
-<h2>Granting access to a private user package on the web<a class="headerlink" href="#granting-access-to-a-private-user-package-on-the-web" title="永久链接至标题">¶</a></h2>
-<p>On the npm website, go to the package to which you want to add a collaborator: <a class="reference external" href="https://www.npmjs.com/package">https://www.npmjs.com/package</a>/&lt;your-package-name&gt;
-On the package page, under “Collaborators”, click +.
-Enter the npm username of the collaborator.
-Click Submit.</p>
+<h2>授予对Web上的私有用户包的访问权限<a class="headerlink" href="#granting-access-to-a-private-user-package-on-the-web" title="永久链接至标题">¶</a></h2>
+<ol class="arabic">
+<li><p>On the <code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">website</span></code>, go to the package to which you want to add a collaborator:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">npmjs</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">package</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>在程序包页面的“协作者”下，单击“+”。</p></li>
+<li><p>输入协作者的npm用户名。</p></li>
+<li><p>单击“提交”</p></li>
+</ol>
 </div>
 <div class="section" id="granting-private-package-access-from-the-command-line-interface">
-<h2>Granting private package access from the command line interface<a class="headerlink" href="#granting-private-package-access-from-the-command-line-interface" title="永久链接至标题">¶</a></h2>
-<p>To add a collaborator to a package on the command line, run the following command, replacing &lt;user&gt; with the npm username of your collaborator, and &lt;your-package-name&gt; with the name of the private package:</p>
-<p>npm owner add &lt;user&gt; &lt;your-package-name&gt;</p>
+<h2>从命令行界面授予私有包访问权限<a class="headerlink" href="#granting-private-package-access-from-the-command-line-interface" title="永久链接至标题">¶</a></h2>
+<p>To add a collaborator to a package on the command line, run the following command, replacing <strong>&lt;user&gt;</strong> with the npm username of your collaborator, and <strong>&lt;your-package-name&gt;</strong> with the name of the private package:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">owner</span> <span class="n">add</span> <span class="o">&lt;</span><span class="n">user</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="granting-access-to-private-org-packages">
-<h2>Granting access to private Org packages<a class="headerlink" href="#granting-access-to-private-org-packages" title="永久链接至标题">¶</a></h2>
-<p>To grant an npm user access to private Org packages, you must have an Org owner add them to your Org, then add them to a team that has access to the private package. For more information, see “Adding members to your Org”.</p>
+<h2>授予对私有组织包的访问权限<a class="headerlink" href="#granting-access-to-private-org-packages" title="永久链接至标题">¶</a></h2>
+<p>To grant an npm user access to private Org packages, you must have an Org owner add them to your Org, then add them to a team that has access to the private package. For more information, see <a class="reference internal" href="../orgs/adding-members-to-your-org.html"><span class="doc">Adding members to your Org</span></a>.</p>
 </div>
 </div>
 
@@ -187,7 +199,7 @@ Click Submit.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

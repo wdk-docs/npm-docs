@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,11 +102,13 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">在本地下载和安装包</a><ul>
-<li><a class="reference internal" href="#installing-an-unscoped-package">Installing an unscoped package</a></li>
-<li><a class="reference internal" href="#installed-a-scoped-public-package">Installed a scoped public package</a></li>
-<li><a class="reference internal" href="#installing-a-private-package">Installing a private package</a></li>
-<li><a class="reference internal" href="#installed-package-version">Installed package version</a></li>
-<li><a class="reference internal" href="#installing-a-package-with-dist-tags">Installing a package with dist-tags</a></li>
+<li><a class="reference internal" href="#installing-an-unscoped-package">安装未打包的包</a></li>
+<li><a class="reference internal" href="#installed-a-scoped-public-package">安装了一个范围的公共包</a></li>
+<li><a class="reference internal" href="#installing-a-private-package">安装私有包</a></li>
+<li><a class="reference internal" href="#testing-package-installation">测试包安装</a></li>
+<li><a class="reference internal" href="#installed-package-version">已安装的包版本</a></li>
+<li><a class="reference internal" href="#installing-a-package-with-dist-tags">使用dist-tags安装包</a></li>
+<li><a class="reference internal" href="#resources">资源</a></li>
 </ul>
 </li>
 </ul>
@@ -145,38 +148,51 @@
 <h1>在本地下载和安装包<a class="headerlink" href="#downloading-and-installing-packages-locally" title="永久链接至标题">¶</a></h1>
 <p>You can install a package locally if you want to depend on the package from your own module, using something like Node.js require. This is npm install’s default behavior.</p>
 <div class="section" id="installing-an-unscoped-package">
-<h2>Installing an unscoped package<a class="headerlink" href="#installing-an-unscoped-package" title="永久链接至标题">¶</a></h2>
+<h2>安装未打包的包<a class="headerlink" href="#installing-an-unscoped-package" title="永久链接至标题">¶</a></h2>
 <p>Unscoped packages are always public, which means they can be searched for, downloaded, and installed by anyone. To install a public package, on the command line, run</p>
 <p>npm install &lt;package_name&gt;
 This will create the node_modules directory in your current directory (if one doesn’t exist yet) and will download the package to that directory.</p>
-<p>Note: If there is no package.json file in the local directory, the latest version of the package is installed. If there is a package.json file, npm installs the latest version that satisfies the semver rule declared in package.json.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>If there is no package.json file in the local directory, the latest version of the package is installed. If there is a package.json file, npm installs the latest version that satisfies the semver rule declared in package.json.</p>
+</div>
 </div>
 <div class="section" id="installed-a-scoped-public-package">
-<h2>Installed a scoped public package<a class="headerlink" href="#installed-a-scoped-public-package" title="永久链接至标题">¶</a></h2>
+<h2>安装了一个范围的公共包<a class="headerlink" href="#installed-a-scoped-public-package" title="永久链接至标题">¶</a></h2>
 <p>Scoped public packages can be downloaded and installed by anyone, as long as the scope name is referenced during installation:</p>
-<p>npm install &#64;scope/package-name</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="nd">@scope</span><span class="o">/</span><span class="n">package</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="installing-a-private-package">
-<h2>Installing a private package<a class="headerlink" href="#installing-a-private-package" title="永久链接至标题">¶</a></h2>
+<h2>安装私有包<a class="headerlink" href="#installing-a-private-package" title="永久链接至标题">¶</a></h2>
 <p>Private packages can only be downloaded and installed by those who have been granted read access to the package. Since private packages are always scoped, you must reference the scope name during installation:</p>
-<p>npm install &#64;scope/private-package-name
-Testing package installation
-——————————————————-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="nd">@scope</span><span class="o">/</span><span class="n">private</span><span class="o">-</span><span class="n">package</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing-package-installation">
+<h2>测试包安装<a class="headerlink" href="#testing-package-installation" title="永久链接至标题">¶</a></h2>
 <p>To confirm that npm install worked correctly, in your module directory, check that a node_modules directory exists and that it contains a directory for the package(s) you installed:</p>
-<p>ls node_modules</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="n">node_modules</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="installed-package-version">
-<h2>Installed package version<a class="headerlink" href="#installed-package-version" title="永久链接至标题">¶</a></h2>
+<h2>已安装的包版本<a class="headerlink" href="#installed-package-version" title="永久链接至标题">¶</a></h2>
 <p>If there is a package.json file in the directory in which npm install is run, npm instalsx the latest version of the package that satisfies the semantic versioning rule declared in package.json.</p>
 <p>If there is no package.json file, the latest version of the package is installed.</p>
 </div>
 <div class="section" id="installing-a-package-with-dist-tags">
-<h2>Installing a package with dist-tags<a class="headerlink" href="#installing-a-package-with-dist-tags" title="永久链接至标题">¶</a></h2>
+<h2>使用dist-tags安装包<a class="headerlink" href="#installing-a-package-with-dist-tags" title="永久链接至标题">¶</a></h2>
 <p>Like npm publish, npm install &lt;package_name&gt; will use the latest tag by default.</p>
 <p>To override this behavior, use npm install &lt;package_name&gt;&#64;&lt;tag&gt;. For example, to install the example-package at the version tagged with beta, you would run the following command:</p>
-<p>npm install <a class="reference external" href="mailto:example-package&#37;&#52;&#48;beta">example-package<span>&#64;</span>beta</a>
-Resources
-——————————————————-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="n">example</span><span class="o">-</span><span class="n">package</span><span class="nd">@beta</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="resources">
+<h2>资源<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
 </div>
 </div>
 
@@ -206,7 +222,7 @@ Resources
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

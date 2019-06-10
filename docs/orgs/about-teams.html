@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>About teams &#8212; npm-docs 6.9.1 文档</title>
+    <title>关于团队 &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Creating teams" href="creating-teams.html" />
-    <link rel="prev" title="Removing members from your Org" href="removing-members-from-your-org.html" />
+    <link rel="next" title="管理团队" href="creating-teams.html" />
+    <link rel="prev" title="从您的组织中删除成员" href="removing-members-from-your-org.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/orgs/about-teams.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,25 +86,25 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="creating-teams.html" title="Creating teams"
+          <a href="creating-teams.html" title="管理团队"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="removing-members-from-your-org.html" title="Removing members from your Org"
+          <a href="removing-members-from-your-org.html" title="从您的组织中删除成员"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Orgs</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">组织</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>上一个主题</h4>
   <p class="topless"><a href="removing-members-from-your-org.html"
-                        title="上一章">Removing members from your Org</a></p>
+                        title="上一章">从您的组织中删除成员</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="creating-teams.html"
-                        title="下一章">Creating teams</a></p>
+                        title="下一章">管理团队</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -130,7 +131,7 @@
           <div class="body" role="main">
             
   <div class="section" id="about-teams">
-<h1>About teams<a class="headerlink" href="#about-teams" title="永久链接至标题">¶</a></h1>
+<h1>关于团队<a class="headerlink" href="#about-teams" title="永久链接至标题">¶</a></h1>
 <p>Teams are groups of Org members with defined access to a set of packages governed by the Org.</p>
 <p>The Developers team§
 The Developers team is automatically created when you create an Org. By default, the Developers team has read/write access to all new packages created under the Org’s scope.</p>
@@ -139,8 +140,8 @@ The maintainers field in the package.json of any newly created packages under th
 If you create a new package under your Org’s scope and you do not want members of the Developers team to have read/write access to that package, an owner or admin can remove the Developers team’s access to that package. For more informations, see “Managing team access to Org packages”.</p>
 <p>If an owner adds a new member to an Org and does not want that member to be on the Developers team, an owner can remove them.</p>
 <p>Removing the Developers team§
-Note: We strongly recommend not removing the Developers team.</p>
-<p>If an Org owner or admin deletes the Developers team:</p>
+.. note:: We strongly recommend not removing the Developers team.</p>
+<p>如果组织所有者或管理员删除开发人员团队:</p>
 <p>Newly added members of the Org will not be added to any team.
 Package access that current members had because they were a member of the Developers team will be removed.
 npm will attempt to fill the maintainers field in package.json of newly created packages under the Org scope with the members of a team the publishing user belongs to. This behavior is not predictable.
@@ -161,20 +162,20 @@ An Org owner or team admin can recreate the Developers team by creating a new te
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="creating-teams.html" title="Creating teams"
+          <a href="creating-teams.html" title="管理团队"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="removing-members-from-your-org.html" title="Removing members from your Org"
+          <a href="removing-members-from-your-org.html" title="从您的组织中删除成员"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Orgs</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="index.html" >组织</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

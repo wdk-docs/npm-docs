@@ -1,10 +1,10 @@
 Updating Org billing settings
 =====================================================================================================
 
-Note: This article only applies to users of the public npm registry.
+.. note:: This article only applies to users of the public npm registry.
 As an owner of a paid Org, you can update the credit card used to pay for your Org plan. Updating your credit card will not change your billing cycle date, and the new credit card will be charged on the next billing cycle.
 
-Note: If the credit card used to pay for your Org plan expires, or we are otherwise are unable to charge your card, you have a grace period of nine days to update the card.
+.. note:: If the credit card used to pay for your Org plan expires, or we are otherwise are unable to charge your card, you have a grace period of nine days to update the card.
 
 Updating credit card information§
 Log in to npm with your user account. npm login dialog with username and password fields left blank
@@ -26,7 +26,7 @@ Click Update Card. update credit card button
 Updating billing receipt email and extra receipt information§
 As an Org owner, you can update the email address used for receipts, and add extra information to the receipt for your paid Org plan, such as your business name, VAT identification number, or address of record. Updated billing information will appear on all receipts immediately.
 
-Note: The billing email is used for receipts only and is not required to match the email address of the person whose card is used to pay for the Org.
+.. note:: The billing email is used for receipts only and is not required to match the email address of the person whose card is used to pay for the Org.
 
 Log in to npm with your user account. npm login dialog with username and password fields left blank
 In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item

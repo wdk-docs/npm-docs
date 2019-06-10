@@ -33,7 +33,7 @@ npm ERR! CIDR whitelist contains invalid CIDR entry: X.X.X.X./YY,Z.Z.. . .
 Make sure you are using a valid IPv4 range and try creating the token again.
 
 Viewing tokens§
-Note: You can only view a full token immediately after creation.
+.. note:: You can only view a full token immediately after creation.
 Viewing tokens on the website§
 To view all tokens associated with your account, in the upper right corner of the page, click your profile picture, then click Tokens.
 

@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,8 +102,16 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">更改包可见性</a><ul>
-<li><a class="reference internal" href="#website">Website</a></li>
-<li><a class="reference internal" href="#making-a-private-package-public">Making a private package public</a></li>
+<li><a class="reference internal" href="#making-a-public-package-private">使公共包私有化</a><ul>
+<li><a class="reference internal" href="#website">网站</a></li>
+<li><a class="reference internal" href="#command-line">命令行</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#making-a-private-package-public">公开私人套餐</a><ul>
+<li><a class="reference internal" href="#id1">网站</a></li>
+<li><a class="reference internal" href="#id2">命令行</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -140,40 +149,61 @@
             
   <div class="section" id="changing-package-visibility">
 <h1>更改包可见性<a class="headerlink" href="#changing-package-visibility" title="永久链接至标题">¶</a></h1>
-<p>You can change the visibility of a scoped package from the website or command line.</p>
-<p>You must be the owner of the user account or Org that owns the package in order to change package visibility.</p>
-<p>For more information about package visibility, see “Package scope, access level, and visibility”.</p>
-<p>Note: Adding a scope to an unscoped package will not make it private. If you want to make a unscoped package private, contact npm Support.
-Making a public package private
-——————————————————-</p>
-<p>Note: Making a package private requires a paid user account or Org. To sign up for a paid user or Org, go to <a class="reference external" href="https://www.npmjs.com/settings/account-name/billing">https://www.npmjs.com/settings/account-name/billing</a>, replacing account-name with the name of your npm user account or Org.
-If you want to restrict access and visibility for a public package you own, you can make the package private. When you make a package private, it will be removed from the website within a few minutes of the change.</p>
+<p>您可以从网站或命令行更改范围包的可见性。</p>
+<p>您必须是拥有该程序包的用户帐户或组织的所有者才能更改程序包可见性。</p>
+<p>For more information about package visibility, see <a class="reference internal" href="package-scope-access-level-and-visibility.html"><span class="doc">npm包范围，访问级别和可见性</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Adding a scope to an unscoped package will not make it private. If you want to make a unscoped package private, <a class="reference external" href="https://www.npmjs.com/support">contact npm Support</a>.</p>
+</div>
+<div class="section" id="making-a-public-package-private">
+<h2>使公共包私有化<a class="headerlink" href="#making-a-public-package-private" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Making a package private requires a paid user account or Org. To sign up for a paid user or Org, go to <a class="reference external" href="https://www.npmjs.com/settings/account-name/billing">https://www.npmjs.com/settings/account-name/billing</a>, replacing account-name with the name of your npm user account or Org.</p>
+</div>
+<p>If you want to restrict access and visibility for a public package you own, you can make the package private. When you make a package private, it will be removed from the website within a few minutes of the change.</p>
 <div class="section" id="website">
-<h2>Website<a class="headerlink" href="#website" title="永久链接至标题">¶</a></h2>
-<p>On the npm website, go to the package page.
-On the package page, click Admin.
-Under “Package Access”, select “Is Package Private?”
-Click Update package settings.
-Command line
-——————————————————-</p>
-<p>To make a public package private on the command line, run the following command, replacing &lt;package-name&gt; with the name of your package:</p>
-<p>npm access restricted &lt;package-name&gt;
-For more information, see the npm access documentation.</p>
+<h3>网站<a class="headerlink" href="#website" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li><p>在 <a class="reference external" href="https://npmjs.com/">npm website</a> 上，转到包页面。</p></li>
+<li><p>在程序包页面上，单击“管理员”。</p></li>
+<li><p>在“Package Access”下，选择“Package is Private？”</p></li>
+<li><p>单击“更新包设置”。</p></li>
+</ol>
+</div>
+<div class="section" id="command-line">
+<h3>命令行<a class="headerlink" href="#command-line" title="永久链接至标题">¶</a></h3>
+<p>要在命令行上创建公共包私有，请运行以下命令，将&lt;package-name&gt;替换为包的名称:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">access</span> <span class="n">restricted</span> <span class="o">&lt;</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>有关更多信息，请参阅 <a class="reference internal" href="../cli/access.html#cmdoption-npm-arg-access"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">access</span></code></a> 文档。</p>
+</div>
 </div>
 <div class="section" id="making-a-private-package-public">
-<h2>Making a private package public<a class="headerlink" href="#making-a-private-package-public" title="永久链接至标题">¶</a></h2>
-<p>Note: When you make a private package public, the package will be visible to and downloadable by all npm users.
-Website
-——————————————————-</p>
-<p>On the npm website, go to the package page.
-On the package page, click Admin.
-Under “Package Access”, deselect “Is Package Private?”
-Click Update package settings.
-Command line
-——————————————————-</p>
-<p>To make a private package public on the command line, run the following command, replacing &lt;package-name&gt; with the name of your package:</p>
-<p>npm access public &lt;package-name&gt;
-For more information, see the npm access CLI documentation.</p>
+<h2>公开私人套餐<a class="headerlink" href="#making-a-private-package-public" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>当您将私有包公开时，所有npm用户都可以看到该包并可由其下载。</p>
+</div>
+<div class="section" id="id1">
+<h3>网站<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li><p>在 <a class="reference external" href="https://npmjs.com/">npm website</a> 上，转到包页面。</p></li>
+<li><p>在包页面上，单击 <strong>Admin</strong> 。</p></li>
+<li><p>在“Package Access”下，取消选择“Package is Private？”</p></li>
+<li><p>单击 <strong>更新包设置</strong> 。</p></li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>命令行<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p>要在命令行上公开私有包，请运行以下命令，将 <strong>&lt;package-name&gt;</strong> 替换为包的名称:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">access</span> <span class="n">public</span> <span class="o">&lt;</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>有关更多信息，请参阅 <a class="reference internal" href="../cli/access.html#cmdoption-npm-arg-access"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">access</span></code></a> CLI文档。</p>
+</div>
 </div>
 </div>
 
@@ -203,7 +233,7 @@ For more information, see the npm access CLI documentation.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

@@ -1,14 +1,14 @@
 Upgrading to a paid Org plan
 =====================================================================================================
 
-Note: This article only applies to users of the public npm registry.
+.. note:: This article only applies to users of the public npm registry.
 As an Org owner, you can upgrade your free Org plan to a paid plan to give Org members the ability to install and publish private packages. For more information about our Org pricing plans, see the “npm Orgs” section of our pricing page.
 
 If you have an Organization with a private packages plan, your Organization will cost you seven (7) dollars a month per user. The $7 charge is a flat fee for any member of the Organization even if the teams the member belongs do not have access to private packages
 
 Newly added members to an Organization are always billed during the next billing cycle. For more information, see “Adding members to your Org”.
 
-Note: Your paid plan and billing cycle will start when you submit your credit card information, and you will be charged for the first month immediately.
+.. note:: Your paid plan and billing cycle will start when you submit your credit card information, and you will be charged for the first month immediately.
 
 Log in to npm with your user account. npm login dialog with username and password fields left blank
 In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item

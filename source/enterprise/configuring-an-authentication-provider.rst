@@ -1,7 +1,7 @@
 Configuring an authentication provider
 =============================================
 
-Note: To avoid being locked out of your instance, you must connect your npm Enterprise admin account to your SSO account immediately after configuring an authentication provider. If you are locked out of your instance, contact npm Enterprise Support at enterprise@npmjs.com.
+.. note:: To avoid being locked out of your instance, you must connect your npm Enterprise admin account to your SSO account immediately after configuring an authentication provider. If you are locked out of your instance, contact npm Enterprise Support at enterprise@npmjs.com.
 As an Enterprise admin, you can configure your instance to use single sign-on (SSO) authentication through any external authentication provider that implements OpendID Connect Core and OpendID Connect Discovery, such as Auth0, Azure Active Directory, Okta, and Google.
 
 Log in to your Enterprise instance using your temporary username and password.

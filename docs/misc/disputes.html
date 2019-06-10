@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-disputes &#8212; npm-docs 6.9.1 文档</title>
+    <title>disputes &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="npm-index" href="index.html" />
-    <link rel="prev" title="npm-developers" href="developers.html" />
+    <link rel="next" title="index" href="index.html" />
+    <link rel="prev" title="developers" href="developers.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/misc/disputes.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,10 +86,10 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="index.html" title="npm-index"
+          <a href="index.html" title="index"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="developers.html" title="npm-developers"
+          <a href="developers.html" title="developers"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -100,7 +101,12 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-disputes</a><ul>
+<li><a class="reference internal" href="#">disputes</a><ul>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
+<li><a class="reference internal" href="#exceptions">EXCEPTIONS</a></li>
+<li><a class="reference internal" href="#trademarks">TRADEMARKS</a></li>
+<li><a class="reference internal" href="#changes">CHANGES</a></li>
+<li><a class="reference internal" href="#license">LICENSE</a></li>
 <li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
 </ul>
 </li>
@@ -108,10 +114,10 @@
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="developers.html"
-                        title="上一章">npm-developers</a></p>
+                        title="上一章">developers</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="index.html"
-                        title="下一章">npm-index</a></p>
+                        title="下一章">index</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -137,8 +143,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="npm-disputes">
-<span id="disputes"></span><h1>npm-disputes<a class="headerlink" href="#npm-disputes" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="disputes">
+<span id="id1"></span><h1>disputes<a class="headerlink" href="#disputes" title="永久链接至标题">¶</a></h1>
 <p>Handling Module Name Disputes
 This document describes the steps that you should take to resolve module name disputes with other npm publishers. It also describes special steps you should take about names you think infringe your trademarks.</p>
 <p>This document is a clarification of the acceptable behavior outlined in the npm Code of Conduct, and nothing in this document should be interpreted to contradict any aspect of the npm Code of Conduct.</p>
@@ -147,8 +153,9 @@ Get the author email with npm owner ls &lt;pkgname&gt;
 Email the author, CC <a class="reference external" href="mailto:support&#37;&#52;&#48;npmjs&#46;com">support<span>&#64;</span>npmjs<span>&#46;</span>com</a>
 After a few weeks, if there’s no resolution, we’ll sort it out.
 Don’t squat on package names. Publish code or move out of the way.</p>
-<p>DESCRIPTION
-There sometimes arise cases where a user publishes a module, and then later, some other user wants to use that name. Here are some common ways that happens (each of these is based on actual events.)</p>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
+<p>There sometimes arise cases where a user publishes a module, and then later, some other user wants to use that name. Here are some common ways that happens (each of these is based on actual events.)</p>
 <p>Alice writes a JavaScript module foo, which is not node-specific. Alice doesn’t use node at all. Yusuf wants to use foo in node, so he wraps it in an npm module. Some time later, Alice starts using node, and wants to take over management of her program.
 Yusuf writes an npm module foo, and publishes it. Perhaps much later, Alice finds a bug in foo, and fixes it. She sends a pull request to Yusuf, but Yusuf doesn’t have the time to deal with it, because he has a new job and a new baby and is focused on his new Erlang project, and kind of not involved with node any more. Alice would like to publish a new foo, but can’t, because the name is taken.
 Yusuf writes a 10-line flow-control library, and calls it foo, and publishes it to the npm registry. Being a simple little thing, it never really has to be updated. Alice works for Foo Inc, the makers of the critically acclaimed and widely-marketed foo JavaScript toolkit framework. They publish it to npm as foojs, but people are routinely confused when npm install foo is some different thing.
@@ -159,8 +166,10 @@ After a reasonable amount of time, if Yusuf has not responded, or if Yusuf and A
 REASONING
 In almost every case so far, the parties involved have been able to reach an amicable resolution without any major intervention. Most people really do want to be reasonable, and are probably not even aware that they’re in your way.</p>
 <p>Module ecosystems are most vibrant and powerful when they are as self-directed as possible. If an admin one day deletes something you had worked on, then that is going to make most people quite upset, regardless of the justification. When humans solve their problems by talking to other humans with respect, everyone has the chance to end up feeling good about the interaction.</p>
-<p>EXCEPTIONS
-Some things are not allowed, and will be removed without discussion if they are brought to the attention of the npm registry admins, including but not limited to:</p>
+</div>
+<div class="section" id="exceptions">
+<h2>EXCEPTIONS<a class="headerlink" href="#exceptions" title="永久链接至标题">¶</a></h2>
+<p>Some things are not allowed, and will be removed without discussion if they are brought to the attention of the npm registry admins, including but not limited to:</p>
 <p>Malware (that is, a package designed to exploit or harm the machine on which it is installed).
 Violations of copyright or licenses (for example, cloning an MIT-licensed program, and then removing or changing the copyright and license statement).
 Illegal content.
@@ -169,14 +178,21 @@ Putting empty packages in the registry. Packages must have SOME functionality. I
 Doing weird things with the registry, like using it as your own personal application database or otherwise putting non-packagey things into it.
 Other things forbidden by the npm Code of Conduct such as hateful language, pornographic content, or harassment.
 If you see bad behavior like this, please report it to <a class="reference external" href="mailto:abuse&#37;&#52;&#48;npmjs&#46;com">abuse<span>&#64;</span>npmjs<span>&#46;</span>com</a> right away. You are never expected to resolve abusive behavior on your own. We are here to help.</p>
-<p>TRADEMARKS
-If you think another npm publisher is infringing your trademark, such as by using a confusingly similar package name, email <a class="reference external" href="mailto:abuse&#37;&#52;&#48;npmjs&#46;com">abuse<span>&#64;</span>npmjs<span>&#46;</span>com</a> with a link to the package or user account on <a class="reference external" href="https://www.npmjs.com/">https://www.npmjs.com/</a>. Attach a copy of your trademark registration certificate.</p>
+</div>
+<div class="section" id="trademarks">
+<h2>TRADEMARKS<a class="headerlink" href="#trademarks" title="永久链接至标题">¶</a></h2>
+<p>If you think another npm publisher is infringing your trademark, such as by using a confusingly similar package name, email <a class="reference external" href="mailto:abuse&#37;&#52;&#48;npmjs&#46;com">abuse<span>&#64;</span>npmjs<span>&#46;</span>com</a> with a link to the package or user account on <a class="reference external" href="https://www.npmjs.com/">https://www.npmjs.com/</a>. Attach a copy of your trademark registration certificate.</p>
 <p>If we see that the package’s publisher is intentionally misleading others by misusing your registered mark without permission, we will transfer the package name to you. Otherwise, we will contact the package publisher and ask them to clear up any confusion with changes to their package’s README file or metadata.</p>
-<p>CHANGES
-This is a living document and may be updated from time to time. Please refer to the git history for this document to view the changes.</p>
-<p>LICENSE
-Copyright (C) npm, Inc., All rights reserved</p>
+</div>
+<div class="section" id="changes">
+<h2>CHANGES<a class="headerlink" href="#changes" title="永久链接至标题">¶</a></h2>
+<p>This is a living document and may be updated from time to time. Please refer to the git history for this document to view the changes.</p>
+</div>
+<div class="section" id="license">
+<h2>LICENSE<a class="headerlink" href="#license" title="永久链接至标题">¶</a></h2>
+<p>Copyright (C) npm, Inc., All rights reserved</p>
 <p>This document may be reused under a Creative Commons Attribution-ShareAlike License.</p>
+</div>
 <div class="section" id="see-also">
 <h2>SEE ALSO<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
@@ -199,10 +215,10 @@ Copyright (C) npm, Inc., All rights reserved</p>
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="index.html" title="npm-index"
+          <a href="index.html" title="index"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="developers.html" title="npm-developers"
+          <a href="developers.html" title="developers"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -212,7 +228,7 @@ Copyright (C) npm, Inc., All rights reserved</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

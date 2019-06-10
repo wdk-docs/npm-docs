@@ -1,10 +1,13 @@
 .. _removal:
 
-npm-removal
+removal
 ======================================================
 
 Cleaning the Slate
+
 SYNOPSIS
+------------------------------------------------------
+
 So sad to see you go.
 
 sudo npm uninstall npm -g

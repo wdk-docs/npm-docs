@@ -8,7 +8,7 @@ A package.json file:
 lists the packages your project depends on
 specifies versions of a package that your project can use using semantic versioning rules
 makes your build reproducible, and therefore easier to share with other developers
-Note: To make your package easier to find on the npm website, we recommend including a custom description in your package.json file.
+.. note:: To make your package easier to find on the npm website, we recommend including a custom description in your package.json file.
 
 package.json fields
 -------------------------------------------------------

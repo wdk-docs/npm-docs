@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,20 +102,31 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">卸载包和依赖项</a><ul>
-<li><a class="reference internal" href="#uninstalling-local-packages">Uninstalling local packages</a></li>
-<li><a class="reference internal" href="#removing-a-local-package-from-your-node-modules-directory">Removing a local package from your node_modules directory</a></li>
-<li><a class="reference internal" href="#unscoped-package">Unscoped package</a></li>
-<li><a class="reference internal" href="#scoped-package">Scoped package</a></li>
-<li><a class="reference internal" href="#id1">Unscoped package</a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
-<li><a class="reference internal" href="#confirming-local-package-uninstallation">Confirming local package uninstallation</a></li>
-<li><a class="reference internal" href="#uninstalling-global-packages">Uninstalling global packages</a></li>
-<li><a class="reference internal" href="#id2">Unscoped package</a></li>
-<li><a class="reference internal" href="#id3">Scoped package</a></li>
-<li><a class="reference internal" href="#id4">Example</a></li>
-<li><a class="reference internal" href="#resources">Resources</a></li>
-<li><a class="reference internal" href="#id5">Uninstalling local packages</a></li>
-<li><a class="reference internal" href="#id6">Uninstalling global packages</a></li>
+<li><a class="reference internal" href="#uninstalling-local-packages">卸载本地包</a><ul>
+<li><a class="reference internal" href="#removing-a-local-package-from-your-node-modules-directory">从node_modules目录中删除本地程序包</a></li>
+<li><a class="reference internal" href="#unscoped-package">无范围包</a></li>
+<li><a class="reference internal" href="#scoped-package">范围包</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example">例</a></li>
+<li><a class="reference internal" href="#removing-a-local-package-from-the-package-json-dependencies">从package.json依赖项中删除本地包</a><ul>
+<li><a class="reference internal" href="#id1">无范围包</a></li>
+<li><a class="reference internal" href="#id2">范围包</a></li>
+<li><a class="reference internal" href="#id3">例</a></li>
+<li><a class="reference internal" href="#confirming-local-package-uninstallation">确认本地程序包卸载</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#uninstalling-global-packages">卸载全局包</a><ul>
+<li><a class="reference internal" href="#id4">无范围包</a></li>
+<li><a class="reference internal" href="#id5">范围包</a></li>
+<li><a class="reference internal" href="#id6">例</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#resources">资源</a><ul>
+<li><a class="reference internal" href="#id7">卸载本地包</a></li>
+<li><a class="reference internal" href="#id8">卸载全局包</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -152,71 +164,102 @@
             
   <div class="section" id="uninstalling-packages-and-dependencies">
 <h1>卸载包和依赖项<a class="headerlink" href="#uninstalling-packages-and-dependencies" title="永久链接至标题">¶</a></h1>
-<p>If you no longer need to use a package in your code, we recommend uninstalling it and removing it from your project’s dependencies.</p>
+<p>如果您不再需要在代码中使用包，我们建议将其卸载并从项目的依赖项中删除它。</p>
 <div class="section" id="uninstalling-local-packages">
-<h2>Uninstalling local packages<a class="headerlink" href="#uninstalling-local-packages" title="永久链接至标题">¶</a></h2>
-</div>
+<h2>卸载本地包<a class="headerlink" href="#uninstalling-local-packages" title="永久链接至标题">¶</a></h2>
 <div class="section" id="removing-a-local-package-from-your-node-modules-directory">
-<h2>Removing a local package from your node_modules directory<a class="headerlink" href="#removing-a-local-package-from-your-node-modules-directory" title="永久链接至标题">¶</a></h2>
-<p>To remove a package from your node_modules directory, on the command line, use the uninstall command. Include the scope if the package is scoped.</p>
+<h3>从node_modules目录中删除本地程序包<a class="headerlink" href="#removing-a-local-package-from-your-node-modules-directory" title="永久链接至标题">¶</a></h3>
+<p>To remove a package from your <strong>node_modules</strong> directory, on the command line, use the <a class="reference internal" href="../cli/uninstall.html#cmdoption-npm-arg-uninstall"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">uninstall</span></code></a> command.
+Include the scope if the package is scoped.</p>
 </div>
 <div class="section" id="unscoped-package">
-<h2>Unscoped package<a class="headerlink" href="#unscoped-package" title="永久链接至标题">¶</a></h2>
-<p>npm uninstall &lt;package_name&gt;</p>
+<h3>无范围包<a class="headerlink" href="#unscoped-package" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall &lt;package_name&gt;
+</pre></div>
+</div>
 </div>
 <div class="section" id="scoped-package">
-<h2>Scoped package<a class="headerlink" href="#scoped-package" title="永久链接至标题">¶</a></h2>
-<p>npm uninstall &lt;&#64;scope/package_name&gt;
-Example
-——————————————————-</p>
-<p>npm uninstall lodash
-Removing a local package from the package.json dependencies
-——————————————————-</p>
-<p>To remove a package from the dependencies in package.json, use the –save flag. Include the scope if the package is scoped.</p>
+<h3>范围包<a class="headerlink" href="#scoped-package" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall &lt;@scope/package_name&gt;
+</pre></div>
 </div>
-<div class="section" id="id1">
-<h2>Unscoped package<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<p>npm uninstall –save &lt;package_name&gt;
-Scoped package
-——————————————————-</p>
-<p>npm uninstall –save &lt;&#64;scope/package_name&gt;</p>
+</div>
 </div>
 <div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h2>
-<p>npm uninstall –save lodash
-Note: If you installed a package as a “devDependency” (i.e. with –save-dev), use –save-dev to uninstall it: npm uninstall –save-dev package_name</p>
+<h2>例<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall lodash
+</pre></div>
 </div>
-<div class="section" id="confirming-local-package-uninstallation">
-<h2>Confirming local package uninstallation<a class="headerlink" href="#confirming-local-package-uninstallation" title="永久链接至标题">¶</a></h2>
-<p>To confirm that npm uninstall worked correctly, check that the node_modules directory no longer contains a directory for the uninstalled package(s).</p>
-<p>Unix system (such as OSX): ls node_modules
-Windows systems: dir node_modules</p>
 </div>
-<div class="section" id="uninstalling-global-packages">
-<h2>Uninstalling global packages<a class="headerlink" href="#uninstalling-global-packages" title="永久链接至标题">¶</a></h2>
-<p>To uninstall an unscoped global package, on the command line, use the uninstall command with the -g flag. Include the scope if the package is scoped.</p>
+<div class="section" id="removing-a-local-package-from-the-package-json-dependencies">
+<h2>从package.json依赖项中删除本地包<a class="headerlink" href="#removing-a-local-package-from-the-package-json-dependencies" title="永久链接至标题">¶</a></h2>
+<p>To remove a package from the dependencies in <strong>package.json</strong>, use the <strong>–save</strong> flag.
+Include the scope if the package is scoped.</p>
+<div class="section" id="id1">
+<h3>无范围包<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall --save &lt;package_name&gt;
+</pre></div>
+</div>
 </div>
 <div class="section" id="id2">
-<h2>Unscoped package<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>npm uninstall -g &lt;package_name&gt;</p>
+<h3>范围包<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall --save &lt;@scope/package_name&gt;
+</pre></div>
+</div>
 </div>
 <div class="section" id="id3">
-<h2>Scoped package<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
-<p>npm uninstall -g &lt;&#64;scope/package_name&gt;</p>
+<h3>例<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall --save lodash
+</pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>If you installed a package as a “<em>devDependency</em>” (i.e. with <strong>–save-dev</strong>),
+use <strong>–save-dev</strong> to uninstall it: <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">uninstall</span> <span class="pre">--save-dev</span> <span class="pre">package_name</span></code></p>
+</div>
+</div>
+<div class="section" id="confirming-local-package-uninstallation">
+<h3>确认本地程序包卸载<a class="headerlink" href="#confirming-local-package-uninstallation" title="永久链接至标题">¶</a></h3>
+<p>To confirm that <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">uninstall</span></code> worked correctly,
+check that the <strong>node_modules</strong> directory no longer contains a directory for the uninstalled package(s).</p>
+<ul class="simple">
+<li><p>Unix system (such as OSX): <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">node_modules</span></code></p></li>
+<li><p>Windows系统: <code class="docutils literal notranslate"><span class="pre">dir</span> <span class="pre">node_modules</span></code></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="uninstalling-global-packages">
+<h2>卸载全局包<a class="headerlink" href="#uninstalling-global-packages" title="永久链接至标题">¶</a></h2>
+<p>To uninstall an unscoped global package, on the command line,
+use the <strong>uninstall</strong> command with the <strong>-g</strong> flag. Include the scope if the package is scoped.</p>
 <div class="section" id="id4">
-<h2>Example<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
-<p>For example, to uninstall a package called jshint, run:</p>
-<p>npm uninstall -g jshint</p>
+<h3>无范围包<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall -g &lt;package_name&gt;
+</pre></div>
 </div>
-<div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id5">
-<h2>Uninstalling local packages<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<h3>范围包<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall -g &lt;@scope/package_name&gt;
+</pre></div>
+</div>
 </div>
 <div class="section" id="id6">
-<h2>Uninstalling global packages<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<h3>例<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<p>例如，要卸载名为 <strong>jshint</strong> 的包，请运行:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm uninstall -g jshint
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="resources">
+<h2>资源<a class="headerlink" href="#resources" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id7">
+<h3>卸载本地包<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+</div>
+<div class="section" id="id8">
+<h3>卸载全局包<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+</div>
 </div>
 </div>
 
@@ -246,7 +289,7 @@ Windows systems: dir node_modules</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

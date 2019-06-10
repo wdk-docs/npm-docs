@@ -1,4 +1,4 @@
-Generating and locating npm-debug.log files
+Generating and locating npm debug.log files
 ===============================================================================
 
 When a package fails to install or publish, the npm CLI will generate an npm-debug.log file. This log file can help you (and npm Support) figure out what went wrong.

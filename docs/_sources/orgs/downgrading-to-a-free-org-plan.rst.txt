@@ -1,10 +1,10 @@
 Downgrading to a free Org plan
 =====================================================================================================
 
-Note: This article only applies to users of the public npm registry.
+.. note:: This article only applies to users of the public npm registry.
 If you have a paid Org, but no longer need private packages, as an Org owner, you can downgrade your paid Org to a free Org. When you downgrade from a paid to a free Org, you and your Org members will lose the ability to install and publish private packages at the end of your last paid billing cycle. Your private packages will not be made publicly visible when you downgrade to a free plan.
 
-Note: If you would like to pay for fewer seats, you can remove members from your Org by following the steps in “Removing members from your Org”.
+.. note:: If you would like to pay for fewer seats, you can remove members from your Org by following the steps in “Removing members from your Org”.
 
 Log in to npm with your user account. npm login dialog with username and password fields left blank
 In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item

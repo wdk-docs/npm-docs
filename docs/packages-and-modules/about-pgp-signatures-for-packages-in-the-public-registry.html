@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -92,7 +93,7 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">关于包PGP签名</a><ul>
-<li><a class="reference internal" href="#tools-we-use">Tools we use</a></li>
+<li><a class="reference internal" href="#tools-we-use">我们使用的工具</a></li>
 <li><a class="reference internal" href="#openpgpjs">openpgpjs</a></li>
 <li><a class="reference internal" href="#keybase">Keybase</a></li>
 </ul>
@@ -126,23 +127,23 @@
             
   <div class="section" id="about-package-pgp-signatures">
 <h1>关于包PGP签名<a class="headerlink" href="#about-package-pgp-signatures" title="永久链接至标题">¶</a></h1>
-<p>To increase confidence in the npm public registry, we add our PGP signature to package metadata and publicize our public PGP key on Keybase. Our Keybase account is “npmregistry” and our public PGP key can be found at <a class="reference external" href="https://keybase.io/npmregistry/pgp_keys.asc">https://keybase.io/npmregistry/pgp_keys.asc</a></p>
+<p>为了增加对npm公共注册表的信心，我们将PGP签名添加到包元数据并在Keybase上公布我们的公共PGP密钥。我们的Keybase帐户是“npmregistry”，我们的公共PGP密钥可以在https://keybase.io/npmregistry/pgp_keys.asc找到</p>
 <p>You can use the package PGP signature and our public PGP key to verify that the same entity who published the key (npm, Inc.) also signed the package you downloaded from the npm public registry. For more information, see “Verifying the PGP signature of a package from the npm public registry”.</p>
 <div class="section" id="tools-we-use">
-<h2>Tools we use<a class="headerlink" href="#tools-we-use" title="永久链接至标题">¶</a></h2>
+<h2>我们使用的工具<a class="headerlink" href="#tools-we-use" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="openpgpjs">
 <h2>openpgpjs<a class="headerlink" href="#openpgpjs" title="永久链接至标题">¶</a></h2>
-<p>To generate PGP signatures, we use openpgpjs, a pure JavaScript implementation of OpenPGP. To learn more about openpgpjs, see <a class="reference external" href="https://openpgpjs.org/">https://openpgpjs.org/</a>.</p>
+<p>为了生成PGP签名，我们使用openpgpjs，一个OpenPGP的纯JavaScript实现。要了解有关openpgpjs的更多信息，请参阅https://openpgpjs.org/。</p>
 </div>
 <div class="section" id="keybase">
 <h2>Keybase<a class="headerlink" href="#keybase" title="永久链接至标题">¶</a></h2>
-<p>We use Keybase to publicize our PGP key and give you confidence that the npm registry you install from is the same registry that signs packages.</p>
-<p>Keybase offers two advantages over the core OpenPGP experience that move us to recommend it to you:</p>
+<p>我们使用Keybase来宣传我们的PGP密钥，并让您相信您安装的npm注册表与签署包的注册表相同。</p>
+<p>Keybase提供了超越核心OpenPGP体验的两个优势，促使我们向您推荐:</p>
 <p>The Keybase application and CLI provide an excellent user experience for PGP, which can be intimidating for newcomers.
 Keybase manages and displays social proofs that the entity that controls a specific PGP key also controls accounts on social media and other places. These proofs help you determine whether you can trust an account.
 We’ve established proofs on Keybase that we control &#64;npmjs on Twitter, the domain npmjs.com, and the domain npmjs.org. Verifying these proofs won’t tell you who owns those domains, but it does establish that the same entity controls them and the PGP key advertised on Keybase.</p>
-<p>You can also observe that members of npm’s executive and technical teams are among the people who have chosen to follow “npmregistry” on Keybase—for example, CJ Silverio (ceej), Isaac Schlueter (isaacs), Adam Baldwin (adam_baldwin), and Kat Marchán (zkat).</p>
+<p>您还可以观察到，npm执行和技术团队的成员是选择在Keybase上关注“npmregistry”的人之一 - 例如，CJ Silverio(ceej)，Isaac Schlueter(isaacs)，Adam Baldwin(adam_baldwin)和Kat Marchán(zkat)。</p>
 <p>If you install Keybase and create an account, you can follow npmregistry yourself and obtain a local copy of the registry’s public key. For more information, and to verify the PGP signature of a specific package version from the npm public registry, see “Verifying the PGP signature for a package from the npm public registry”.</p>
 </div>
 </div>
@@ -166,7 +167,7 @@ We’ve established proofs on Keybase that we control &#64;npmjs on Twitter, the
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

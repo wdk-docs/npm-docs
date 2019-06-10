@@ -12,7 +12,7 @@ Introduction to packages and modules
    about-scopes
    about-public-packages
    about-private-packages
-   npm-package-scope,-access-level-and-visibility
+   package-scope-access-level-and-visibility
 
 Contributing packages to the registry
 -------------------------------------------------------------------

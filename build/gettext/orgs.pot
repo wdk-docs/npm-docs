@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: npm-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-04 22:31+0800\n"
+"POT-Creation-Date: 2019-06-10 15:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "If an owner adds a new member to an Org and does not want that member to 
 msgstr ""
 
 #: ../../source/orgs/about-teams.rst:15
-msgid "Removing the Developers team§ Note: We strongly recommend not removing the Developers team."
+msgid "Removing the Developers team§ .. note:: We strongly recommend not removing the Developers team."
 msgstr ""
 
 #: ../../source/orgs/about-teams.rst:18
@@ -121,11 +121,11 @@ msgid "As an Org owner or team admin, you can add Org members to teams to give t
 msgstr ""
 
 #: ../../source/orgs/adding-org-members-to-teams.rst:6
-msgid "Note: An npm user must be a member of your Org before you can add them to a team. To add a member to your Org, see “Adding members to your Org”."
+msgid "An npm user must be a member of your Org before you can add them to a team. To add a member to your Org, see “Adding members to your Org”."
 msgstr ""
 
 #: ../../source/orgs/adding-org-members-to-teams.rst:8
-msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab Beside the team you want to add members to, click Members. members button In the “Username” field, type the npm username of the Org member you would like to add to your team. team member in username field dropdown Click + Add User. add user button Note: Org members are not notified when they are added to a team. We recommend telling the Org member you have added them to a team."
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab Beside the team you want to add members to, click Members. members button In the “Username” field, type the npm username of the Org member you would like to add to your team. team member in username field dropdown Click + Add User. add user button .. note:: Org members are not notified when they are added to a team. We recommend telling the Org member you have added them to a team."
 msgstr ""
 
 #: ../../source/orgs/adding-org-members-to-teams.rst:17
@@ -153,7 +153,7 @@ msgid "Configuring your npm client to use your Org’s scope§ If you will be pu
 msgstr ""
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:13
-msgid "Setting your Org scope for all new packages§ Note: Setting the Org scope using the steps below will only set the scope for new packages; for existing packages, you will need to update the name field in package.json."
+msgid "Setting your Org scope for all new packages§ .. note:: Setting the Org scope using the steps below will only set the scope for new packages; for existing packages, you will need to update the name field in package.json."
 msgstr ""
 
 #: ../../source/orgs/configuring-your-npm-client-with-your-org-settings.rst:16
@@ -222,7 +222,7 @@ msgid "If you have an npm user account, you can convert your user account to an 
 msgstr ""
 
 #: ../../source/orgs/converting-your-user-account-to-an-org.rst:6
-msgid "Create a new Org with the name of your user account. Prompt you to create a new npm user account. We recommend choosing a variation of your old user name so collaborators will recognize you. For example, if your old username was “wombat”, your new username might be “wombat-new”. Make your your new npm user account an owner of your new Org. Add your new npm user account to a team called “Developers” in your new Org. Transfer packages owned by your user account to your new Org. Transfer your existing Org and team memberships and contributor access settings to your new user account. Note: Once your old user account has been converted to an Org, you will no longer be able to sign in to npm with your old user account."
+msgid "Create a new Org with the name of your user account. Prompt you to create a new npm user account. We recommend choosing a variation of your old user name so collaborators will recognize you. For example, if your old username was “wombat”, your new username might be “wombat-new”. Make your your new npm user account an owner of your new Org. Add your new npm user account to a team called “Developers” in your new Org. Transfer packages owned by your user account to your new Org. Transfer your existing Org and team memberships and contributor access settings to your new user account. .. note:: Once your old user account has been converted to an Org, you will no longer be able to sign in to npm with your old user account."
 msgstr ""
 
 #: ../../source/orgs/converting-your-user-account-to-an-org.rst:14
@@ -238,7 +238,7 @@ msgid "Any npm user can create an Org to manage contributor access to packages g
 msgstr ""
 
 #: ../../source/orgs/creating-an-org.rst:6
-msgid "Note: You need an npm user account to create an Org. To create a user account, visit the account signup page”."
+msgid "You need an npm user account to create an Org. To create a user account, visit the account signup page”."
 msgstr ""
 
 #: ../../source/orgs/creating-an-org.rst:8
@@ -306,7 +306,11 @@ msgid "As an Org owner or team admin, you can create teams to manage access to s
 msgstr ""
 
 #: ../../source/orgs/creating-teams.rst:6
-msgid "Note: Team names cannot be changed. To \"rename\" a team, you must delete the team and recreate it. Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab In the “Name” and “Description” fields, type a team name and helpful description. Team names must be lower case and cannot contain spaces or punctuation. team name and description fields Click Make it so. make it so button Note: New teams do not have members or package access by default. Once you create a team, add packages and members from the \"Teams\" tab."
+msgid "Team names cannot be changed. To \"rename\" a team, you must delete the team and recreate it."
+msgstr ""
+
+#: ../../source/orgs/creating-teams.rst:7
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab In the “Name” and “Description” fields, type a team name and helpful description. Team names must be lower case and cannot contain spaces or punctuation. team name and description fields Click Make it so. make it so button .. note:: New teams do not have members or package access by default. Once you create a team, add packages and members from the \"Teams\" tab."
 msgstr ""
 
 #: ../../source/orgs/deleting-an-org.rst:2
@@ -330,11 +334,18 @@ msgid "Downgrading to a free Org plan"
 msgstr ""
 
 #: ../../source/orgs/downgrading-to-a-free-org-plan.rst:4
-msgid "Note: This article only applies to users of the public npm registry. If you have a paid Org, but no longer need private packages, as an Org owner, you can downgrade your paid Org to a free Org. When you downgrade from a paid to a free Org, you and your Org members will lose the ability to install and publish private packages at the end of your last paid billing cycle. Your private packages will not be made publicly visible when you downgrade to a free plan."
+#: ../../source/orgs/updating-org-billing-settings.rst:4
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:4
+#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:4
+msgid "This article only applies to users of the public npm registry."
+msgstr ""
+
+#: ../../source/orgs/downgrading-to-a-free-org-plan.rst:5
+msgid "If you have a paid Org, but no longer need private packages, as an Org owner, you can downgrade your paid Org to a free Org. When you downgrade from a paid to a free Org, you and your Org members will lose the ability to install and publish private packages at the end of your last paid billing cycle. Your private packages will not be made publicly visible when you downgrade to a free plan."
 msgstr ""
 
 #: ../../source/orgs/downgrading-to-a-free-org-plan.rst:7
-msgid "Note: If you would like to pay for fewer seats, you can remove members from your Org by following the steps in “Removing members from your Org”."
+msgid "If you would like to pay for fewer seats, you can remove members from your Org by following the steps in “Removing members from your Org”."
 msgstr ""
 
 #: ../../source/orgs/downgrading-to-a-free-org-plan.rst:9
@@ -446,7 +457,7 @@ msgid "If you remove a member from a paid Org, they will lose access to your Org
 msgstr ""
 
 #: ../../source/orgs/removing-members-from-your-org.rst:8
-msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Members. members tab In the list of Org members, find the member you want to remove. At the end of the member row, click X. x button Note: Members are not notified when you remove them from your Org."
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Members. members tab In the list of Org members, find the member you want to remove. At the end of the member row, click X. x button .. note:: Members are not notified when you remove them from your Org."
 msgstr ""
 
 #: ../../source/orgs/removing-org-members-from-teams.rst:2
@@ -458,7 +469,7 @@ msgid "As an Org owner or team admin, you can remove Org members from teams if t
 msgstr ""
 
 #: ../../source/orgs/removing-org-members-from-teams.rst:6
-msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab In the list of team members, find the member you want to remove. In the member row, to remove the member from the team, click X. x button Note: Removing a member from a team, even if it is the only team they are a member of, will not remove them from the Org. To remove a member from the Org, see “Removing members from your Org”."
+msgid "Log in to npm with your user account. npm login dialog with username and password fields left blank In the upper right corner of the page, click your profile picture, then click Profile Settings. npm avatar menu with selector over profile settings list item In the left sidebar, click the name of your Org. example org selected in organizations list On the Org settings page, click Teams. teams tab In the list of team members, find the member you want to remove. In the member row, to remove the member from the team, click X. x button .. note:: Removing a member from a team, even if it is the only team they are a member of, will not remove them from the Org. To remove a member from the Org, see “Removing members from your Org”."
 msgstr ""
 
 #: ../../source/orgs/removing-teams.rst:2
@@ -493,12 +504,12 @@ msgstr ""
 msgid "Updating Org billing settings"
 msgstr ""
 
-#: ../../source/orgs/updating-org-billing-settings.rst:4
-msgid "Note: This article only applies to users of the public npm registry. As an owner of a paid Org, you can update the credit card used to pay for your Org plan. Updating your credit card will not change your billing cycle date, and the new credit card will be charged on the next billing cycle."
+#: ../../source/orgs/updating-org-billing-settings.rst:5
+msgid "As an owner of a paid Org, you can update the credit card used to pay for your Org plan. Updating your credit card will not change your billing cycle date, and the new credit card will be charged on the next billing cycle."
 msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:7
-msgid "Note: If the credit card used to pay for your Org plan expires, or we are otherwise are unable to charge your card, you have a grace period of nine days to update the card."
+msgid "If the credit card used to pay for your Org plan expires, or we are otherwise are unable to charge your card, you have a grace period of nine days to update the card."
 msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:9
@@ -506,7 +517,7 @@ msgid "Updating credit card information§ Log in to npm with your user account. 
 msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:29
-msgid "Note: The billing email is used for receipts only and is not required to match the email address of the person whose card is used to pay for the Org."
+msgid "The billing email is used for receipts only and is not required to match the email address of the person whose card is used to pay for the Org."
 msgstr ""
 
 #: ../../source/orgs/updating-org-billing-settings.rst:31
@@ -517,8 +528,8 @@ msgstr ""
 msgid "Upgrading to a paid Org plan"
 msgstr ""
 
-#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:4
-msgid "Note: This article only applies to users of the public npm registry. As an Org owner, you can upgrade your free Org plan to a paid plan to give Org members the ability to install and publish private packages. For more information about our Org pricing plans, see the “npm Orgs” section of our pricing page."
+#: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:5
+msgid "As an Org owner, you can upgrade your free Org plan to a paid plan to give Org members the ability to install and publish private packages. For more information about our Org pricing plans, see the “npm Orgs” section of our pricing page."
 msgstr ""
 
 #: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:7
@@ -530,7 +541,7 @@ msgid "Newly added members to an Organization are always billed during the next 
 msgstr ""
 
 #: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:11
-msgid "Note: Your paid plan and billing cycle will start when you submit your credit card information, and you will be charged for the first month immediately."
+msgid "Your paid plan and billing cycle will start when you submit your credit card information, and you will be charged for the first month immediately."
 msgstr ""
 
 #: ../../source/orgs/upgrading-to-a-paid-org-plan.rst:13
@@ -541,8 +552,8 @@ msgstr ""
 msgid "Viewing, downloading, and emailing receipts for your Org"
 msgstr ""
 
-#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:4
-msgid "Note: This article only applies to users of the public npm registry. As an Org owner, you can view, download, and email receipts for the complete billing history of your Org."
+#: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:5
+msgid "As an Org owner, you can view, download, and email receipts for the complete billing history of your Org."
 msgstr ""
 
 #: ../../source/orgs/viewing-downloading-and-emailing-receipts-for-your-org.rst:7

@@ -1,10 +1,13 @@
 .. _developers:
 
-npm-developers
+developers
 ======================================================
 
 Developer Guide
+
 DESCRIPTION
+------------------------------------------------------
+
 So, you’ve decided to use npm to develop (and maybe publish/deploy) your project.
 
 Fantastic!

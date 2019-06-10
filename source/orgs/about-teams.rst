@@ -13,7 +13,7 @@ If you create a new package under your Org’s scope and you do not want members
 If an owner adds a new member to an Org and does not want that member to be on the Developers team, an owner can remove them.
 
 Removing the Developers team§
-Note: We strongly recommend not removing the Developers team.
+.. note:: We strongly recommend not removing the Developers team.
 
 If an Org owner or admin deletes the Developers team:
 

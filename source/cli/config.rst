@@ -1,4 +1,4 @@
-npm-config
+npm config
 ============================================================================================
 
 SYNOPSIS
@@ -19,7 +19,9 @@ SYNOPSIS
       npm get <key>
       npm set <key> <value> [-g|--global]
 
-      aliases: c
+.. option:: c
+
+   config alias
 
 DESCRIPTION
 -------------------

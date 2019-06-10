@@ -1,15 +1,18 @@
 .. _coding-style:
 
-npm-coding-style
+coding-style
 ======================================================
 
 npm's "funny" coding style
+
 DESCRIPTION
+------------------------------------------------------
+
 npm’s coding style is a bit unconventional. It is not different for difference’s sake, but rather a carefully crafted style that is designed to reduce visual clutter and make bugs more apparent.
 
 If you want to contribute to npm (which is very encouraged), you should make your code conform to npm’s style.
 
-Note: this concerns npm’s code not the specific packages that you can download from the npm registry.
+.. note:: this concerns npm’s code not the specific packages that you can download from the npm registry.
 
 Line Length
 Keep lines shorter than 80 characters. It’s better for lines to be too short than to be too long. Break up long lists, objects, and other statements onto multiple lines.
@@ -64,6 +67,8 @@ for (var i = 0; i < 10; i ++) {
 Note that starting lines with - and + also should be prefixed with a semicolon, but this is much less common.
 
 Comma First
+------------------------------------------------------
+
 If there is a list of things separated by commas, and it wraps across multiple lines, put the comma at the start of the next line, directly below the token that starts the list. Put the final token in the list on a line by itself. For example:
 
 var magicWords = [ 'abracadabra'

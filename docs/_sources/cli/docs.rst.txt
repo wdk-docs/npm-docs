@@ -1,4 +1,4 @@
-npm-docs
+npm docs
 ============================================================================================
 
 Docs for a package in a web browser maybe

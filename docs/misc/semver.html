@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-semver &#8212; npm-docs 6.9.1 文档</title>
+    <title>semver &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,10 +13,11 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="prev" title="npm-removal" href="removal.html" />
+    <link rel="prev" title="removal" href="removal.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/misc/semver.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -84,7 +85,7 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="removal.html" title="npm-removal"
+          <a href="removal.html" title="removal"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -96,7 +97,11 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-semver</a><ul>
+<li><a class="reference internal" href="#">semver</a><ul>
+<li><a class="reference internal" href="#install">Install</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#comparison">Comparison</a></li>
+<li><a class="reference internal" href="#ranges">Ranges</a></li>
 <li><a class="reference internal" href="#coercion">Coercion</a></li>
 </ul>
 </li>
@@ -104,7 +109,7 @@
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="removal.html"
-                        title="上一章">npm-removal</a></p>
+                        title="上一章">removal</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -130,13 +135,16 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="npm-semver">
-<span id="semver"></span><h1>npm-semver<a class="headerlink" href="#npm-semver" title="永久链接至标题">¶</a></h1>
-<p>The semantic versioner for npm
-Install
-npm install –save semver
-Usage
-As a node module:</p>
+  <div class="section" id="semver">
+<span id="id1"></span><h1>semver<a class="headerlink" href="#semver" title="永久链接至标题">¶</a></h1>
+<p>The semantic versioner for npm</p>
+<div class="section" id="install">
+<h2>Install<a class="headerlink" href="#install" title="永久链接至标题">¶</a></h2>
+<p>npm install –save semver</p>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="永久链接至标题">¶</a></h2>
+<p>As a node module:</p>
 <p>const semver = require(‘semver’)</p>
 <p>semver.valid(‘1.2.3’) // ‘1.2.3’
 semver.valid(‘a.b.c’) // null
@@ -293,9 +301,11 @@ prerelease(v): Returns an array of prerelease components, or null if none exist.
 major(v): Return the major version number.
 minor(v): Return the minor version number.
 patch(v): Return the patch version number.
-intersects(r1, r2, loose): Return true if the two supplied ranges or comparators intersect.
-Comparison
-gt(v1, v2): v1 &gt; v2
+intersects(r1, r2, loose): Return true if the two supplied ranges or comparators intersect.</p>
+</div>
+<div class="section" id="comparison">
+<h2>Comparison<a class="headerlink" href="#comparison" title="永久链接至标题">¶</a></h2>
+<p>gt(v1, v2): v1 &gt; v2
 gte(v1, v2): v1 &gt;= v2
 lt(v1, v2): v1 &lt; v2
 lte(v1, v2): v1 &lt;= v2
@@ -306,9 +316,11 @@ compare(v1, v2): Return 0 if v1 == v2, or 1 if v1 is greater, or -1 if v2 is gre
 rcompare(v1, v2): The reverse of compare. Sorts an array of versions in descending order when passed to Array.sort().
 diff(v1, v2): Returns difference between two versions by the release type (major, premajor, minor, preminor, patch, prepatch, or prerelease), or null if the versions are the same.
 Comparators
-intersects(comparator): Return true if the comparators intersect
-Ranges
-validRange(range): Return the valid range or null if it’s not valid
+intersects(comparator): Return true if the comparators intersect</p>
+</div>
+<div class="section" id="ranges">
+<h2>Ranges<a class="headerlink" href="#ranges" title="永久链接至标题">¶</a></h2>
+<p>validRange(range): Return the valid range or null if it’s not valid
 satisfies(version, range): Return true if the version satisfies the range.
 maxSatisfying(versions, range): Return the highest version in the list that satisfies the range, or null if none of them do.
 minSatisfying(versions, range): Return the lowest version in the list that satisfies the range, or null if none of them do.
@@ -318,6 +330,7 @@ outside(version, range, hilo): Return true if the version is outside the bounds 
 intersects(range): Return true if any of the ranges comparators intersect
 Note that, since ranges may be non-contiguous, a version might not be greater than a range, less than a range, or satisfy a range! For example, the range 1.2 &lt;1.2.9 || &gt;2.0.0 would have a hole from 1.2.9 until 2.0.0, so the version 1.2.10 would not be greater than the range (because 2.0.1 satisfies, which is higher), nor less than the range (since 1.2.8 satisfies, which is lower), and it also does not satisfy the range.</p>
 <p>If you want to know if a version satisfies or does not satisfy a range, use the satisfies(version, range) function.</p>
+</div>
 <div class="section" id="coercion">
 <h2>Coercion<a class="headerlink" href="#coercion" title="永久链接至标题">¶</a></h2>
 <p>coerce(version): Coerces a string to semver if possible
@@ -338,7 +351,7 @@ This aims to provide a very forgiving translation of a non-semver string to semv
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="removal.html" title="npm-removal"
+          <a href="removal.html" title="removal"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -348,7 +361,7 @@ This aims to provide a very forgiving translation of a non-semver string to semv
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

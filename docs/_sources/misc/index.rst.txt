@@ -1,6 +1,6 @@
 .. _index:
 
-npm-index
+index
 ======================================================
 
 Index of all npm documentation
@@ -8,6 +8,8 @@ README(1)
 a JavaScript package manager
 
 Command Line Documentation
+------------------------------------------------------
+
 Using npm on the command line
 
 npm

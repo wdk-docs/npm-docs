@@ -1,7 +1,7 @@
 About authentication tokens
 ==================================================================
 
-Note: You must be using npm version 5.5.1 or greater to use authentication tokens.
+.. note:: You must be using npm version 5.5.1 or greater to use authentication tokens.
 An authentication token is a hexadecimal string that gives you the right to publish and access your modules. Whenever you log in to npm, we generate an authentication token for you.
 
 You can also create an authentication token to give other tools (such as continuous integration testing environments) access to your npm packages. For example, Travis CI provides an environment variable that you can set to an npm token value, which gives Travis CI the ability to run npm as your npm user. When Travis CI runs, it will be able to complete npm tasks as you, including installing private packages you can access.

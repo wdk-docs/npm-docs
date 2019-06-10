@@ -1,10 +1,13 @@
 .. _orgs:
 
-npm-orgs
+orgs
 ======================================================
 
 Working with Teams & Orgs
+
 DESCRIPTION
+------------------------------------------------------
+
 There are three levels of org users:
 
 Super admin, controls billing & adding people to the org.

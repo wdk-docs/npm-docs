@@ -13,10 +13,11 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="审核您的持续集成过程。" href="auditing-package-dependencies-for-security-vulnerabilities.html" />
+    <link rel="next" title="审核安全漏洞的程序包依赖性" href="auditing-package-dependencies-for-security-vulnerabilities.html" />
     <link rel="prev" title="卸载包和依赖项" href="uninstalling-packages-and-dependencies.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/packages-and-modules/about-audit-reports.html" />
 
@@ -85,7 +86,7 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="auditing-package-dependencies-for-security-vulnerabilities.html" title="审核您的持续集成过程。"
+          <a href="auditing-package-dependencies-for-security-vulnerabilities.html" title="审核安全漏洞的程序包依赖性"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
           <a href="uninstalling-packages-and-dependencies.html" title="卸载包和依赖项"
@@ -101,14 +102,16 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">关于审计报告</a><ul>
-<li><a class="reference internal" href="#vulnerability-table-fields">Vulnerability table fields</a></li>
-<li><a class="reference internal" href="#severity">Severity</a></li>
-<li><a class="reference internal" href="#description">Description</a></li>
-<li><a class="reference internal" href="#package">Package</a></li>
-<li><a class="reference internal" href="#patched-in">Patched in</a></li>
-<li><a class="reference internal" href="#dependency-of">Dependency of</a></li>
-<li><a class="reference internal" href="#path">Path</a></li>
-<li><a class="reference internal" href="#more-info">More info</a></li>
+<li><a class="reference internal" href="#vulnerability-table-fields">漏洞表字段</a><ul>
+<li><a class="reference internal" href="#severity">严重</a></li>
+<li><a class="reference internal" href="#description">描述</a></li>
+<li><a class="reference internal" href="#package">包</a></li>
+<li><a class="reference internal" href="#patched-in">补丁</a></li>
+<li><a class="reference internal" href="#dependency-of">依赖性</a></li>
+<li><a class="reference internal" href="#path">路径</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#more-info">更多信息</a></li>
 </ul>
 </li>
 </ul>
@@ -118,7 +121,7 @@
                         title="上一章">卸载包和依赖项</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="auditing-package-dependencies-for-security-vulnerabilities.html"
-                        title="下一章">审核您的持续集成过程。</a></p>
+                        title="下一章">审核安全漏洞的程序包依赖性</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -146,51 +149,74 @@
             
   <div class="section" id="about-audit-reports">
 <h1>关于审计报告<a class="headerlink" href="#about-audit-reports" title="永久链接至标题">¶</a></h1>
-<p>About audit reports
-Audit reports contain tables of information about security vulnerabilities in your project’s dependencies to help you fix the vulnerability or troubleshoot further.</p>
-<p>command line audit report vulnerability table</p>
-<div class="section" id="vulnerability-table-fields">
-<h2>Vulnerability table fields<a class="headerlink" href="#vulnerability-table-fields" title="永久链接至标题">¶</a></h2>
-<p>Severity
-Description
-Package
-Patched in
-Dependency of
-Path
-More info</p>
+<p>关于审计报告审计报告包含有关项目依赖项中的安全漏洞的信息表，以帮助您修复漏洞或进一步排除故障。</p>
+<div class="figure align-default">
+<img alt="command line audit report vulnerability table" src="https://docs.npmjs.com/assets/images/packages-and-modules/audit-report-vuln-table.png" />
 </div>
+<div class="section" id="vulnerability-table-fields">
+<h2>漏洞表字段<a class="headerlink" href="#vulnerability-table-fields" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>严重</p></li>
+<li><p>描述</p></li>
+<li><p>包</p></li>
+<li><p>补丁</p></li>
+<li><p>依赖性</p></li>
+<li><p>路径</p></li>
+<li><p>更多信息</p></li>
+</ul>
 <div class="section" id="severity">
-<h2>Severity<a class="headerlink" href="#severity" title="永久链接至标题">¶</a></h2>
-<p>The severity of the vulnerability, determined by the impact and exploitability of the vulnerability in its most common use case.</p>
-<p>Severity        Recommended action
-Critical        Address immediately
-High    Address as quickly as possible
-Moderate        Address as time allows
-Low     Address at your discretion</p>
+<h3>严重<a class="headerlink" href="#severity" title="永久链接至标题">¶</a></h3>
+<p>漏洞的严重性，由最常见用例中漏洞的影响和可利用性决定。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 76%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>严重</p></th>
+<th class="head"><p>Recommended action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Critical</p></td>
+<td><p>Address immediately</p></td>
+</tr>
+<tr class="row-odd"><td><p>High</p></td>
+<td><p>Address as quickly as possible</p></td>
+</tr>
+<tr class="row-even"><td><p>Moderate</p></td>
+<td><p>Address as time allows</p></td>
+</tr>
+<tr class="row-odd"><td><p>Low</p></td>
+<td><p>Address at your discretion</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="description">
-<h2>Description<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
-<p>The description of the vulnerability. For example, “Denial of service”.</p>
+<h3>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h3>
+<p>漏洞的描述。例如，“拒绝服务”。</p>
 </div>
 <div class="section" id="package">
-<h2>Package<a class="headerlink" href="#package" title="永久链接至标题">¶</a></h2>
-<p>The name of the package that contains the vulnerability.</p>
+<h3>包<a class="headerlink" href="#package" title="永久链接至标题">¶</a></h3>
+<p>包含此漏洞的程序包的名称。</p>
 </div>
 <div class="section" id="patched-in">
-<h2>Patched in<a class="headerlink" href="#patched-in" title="永久链接至标题">¶</a></h2>
-<p>The semantic version range that describes which versions contain a fix for the vulnerability.</p>
+<h3>补丁<a class="headerlink" href="#patched-in" title="永久链接至标题">¶</a></h3>
+<p>语义版本范围，描述哪些版本包含针对漏洞的修复程序。</p>
 </div>
 <div class="section" id="dependency-of">
-<h2>Dependency of<a class="headerlink" href="#dependency-of" title="永久链接至标题">¶</a></h2>
-<p>The module that the package with the vulnerability depends on.</p>
+<h3>依赖性<a class="headerlink" href="#dependency-of" title="永久链接至标题">¶</a></h3>
+<p>具有漏洞的软件包所依赖的模块。</p>
 </div>
 <div class="section" id="path">
-<h2>Path<a class="headerlink" href="#path" title="永久链接至标题">¶</a></h2>
-<p>The path to the code that contains the vulnerability.</p>
+<h3>路径<a class="headerlink" href="#path" title="永久链接至标题">¶</a></h3>
+<p>包含漏洞的代码的路径。</p>
+</div>
 </div>
 <div class="section" id="more-info">
-<h2>More info<a class="headerlink" href="#more-info" title="永久链接至标题">¶</a></h2>
-<p>A link to the security report.</p>
+<h2>更多信息<a class="headerlink" href="#more-info" title="永久链接至标题">¶</a></h2>
+<p>安全报告的链接。</p>
 </div>
 </div>
 
@@ -207,7 +233,7 @@ Low     Address at your discretion</p>
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="auditing-package-dependencies-for-security-vulnerabilities.html" title="审核您的持续集成过程。"
+          <a href="auditing-package-dependencies-for-security-vulnerabilities.html" title="审核安全漏洞的程序包依赖性"
              >下一页</a> |</li>
         <li class="right" >
           <a href="uninstalling-packages-and-dependencies.html" title="卸载包和依赖项"
@@ -220,7 +246,7 @@ Low     Address at your discretion</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

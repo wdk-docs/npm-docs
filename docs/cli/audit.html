@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>npm-audit &#8212; npm-docs 6.9.1 文档</title>
+    <title>npm audit &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="npm-bin" href="bin.html" />
-    <link rel="prev" title="npm-adduser" href="adduser.html" />
+    <link rel="next" title="npm bin" href="bin.html" />
+    <link rel="prev" title="npm adduser" href="adduser.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/cli/audit.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,10 +86,10 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="bin.html" title="npm-bin"
+          <a href="bin.html" title="npm bin"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="adduser.html" title="npm-adduser"
+          <a href="adduser.html" title="npm adduser"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -100,7 +101,7 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">npm-audit</a><ul>
+<li><a class="reference internal" href="#">npm audit</a><ul>
 <li><a class="reference internal" href="#synopsis">概要</a></li>
 <li><a class="reference internal" href="#examples">例子</a></li>
 <li><a class="reference internal" href="#description">描述</a></li>
@@ -114,10 +115,10 @@
 
   <h4>上一个主题</h4>
   <p class="topless"><a href="adduser.html"
-                        title="上一章">npm-adduser</a></p>
+                        title="上一章">npm adduser</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="bin.html"
-                        title="下一章">npm-bin</a></p>
+                        title="下一章">npm bin</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -144,7 +145,7 @@
           <div class="body" role="main">
             
   <div class="section" id="npm-audit">
-<h1>npm-audit<a class="headerlink" href="#npm-audit" title="永久链接至标题">¶</a></h1>
+<h1>npm audit<a class="headerlink" href="#npm-audit" title="永久链接至标题">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>概要<a class="headerlink" href="#synopsis" title="永久链接至标题">¶</a></h2>
 <dl class="option">
@@ -188,11 +189,11 @@ npm audit fix <span class="o">[</span>--force<span class="p">|</span>--package-l
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm audit --json
 </pre></div>
 </div>
-<p>以明文结果获取详细的审计报告，以制表符分隔，以便将来在脚本或命令行后处理中重复使用，例如，选择打印的一些列：</p>
+<p>以明文结果获取详细的审计报告，以制表符分隔，以便将来在脚本或命令行后处理中重复使用，例如，选择打印的一些列:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm audit --parseable
 </pre></div>
 </div>
-<p>要解析列，您可以使用例如awk，并只打印其中一些：</p>
+<p>要解析列，您可以使用例如awk，并只打印其中一些:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm audit --parseable | awk -F $&#39;\t&#39; &#39;{print $1,$4}&#39;
 </pre></div>
 </div>
@@ -200,7 +201,7 @@ npm audit fix <span class="o">[</span>--force<span class="p">|</span>--package-l
 <div class="section" id="description">
 <h2>描述<a class="headerlink" href="#description" title="永久链接至标题">¶</a></h2>
 <p>审计命令将项目中配置的依赖项的描述提交到默认注册表，并要求提供已知漏洞的报告。返回的报告包括有关如何处理此信息的说明。如果未找到漏洞，该命令将以 0 退出代码退出。</p>
-<p>你也可以让npm通过运行 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span> <span class="pre">fix</span></code> 自动修复漏洞。请注意，某些漏洞无法自动修复，需要手动干预或审核。还要注意，因为 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span> <span class="pre">fix</span></code> 运行了一个完整的 <a class="reference internal" href="install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a> ，所有适用于安装程序的配置也适用于 <a class="reference internal" href="install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a>  - 所以像 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span> <span class="pre">fix</span> <span class="pre">--package-lock-only</span></code> 将按预期工作。</p>
+<p>你也可以让npm通过运行 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span> <span class="pre">fix</span></code> 自动修复漏洞。请注意，某些漏洞无法自动修复，需要手动干预或审核。还要注意，因为 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span> <span class="pre">fix</span></code> 运行了一个完整的 <a class="reference internal" href="install.html#id10"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a> ，所有适用于安装程序的配置也适用于 <a class="reference internal" href="install.html#id10"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a>  - 所以像 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">audit</span> <span class="pre">fix</span> <span class="pre">--package-lock-only</span></code> 将按预期工作。</p>
 </div>
 <div class="section" id="content-submitted">
 <h2>提交的内容<a class="headerlink" href="#content-submitted" title="永久链接至标题">¶</a></h2>
@@ -214,9 +215,9 @@ npm audit fix <span class="o">[</span>--force<span class="p">|</span>--package-l
 </div>
 <div class="section" id="scrubbing">
 <h2>擦洗<a class="headerlink" href="#scrubbing" title="永久链接至标题">¶</a></h2>
-<p>为了确保审计数据包中不包含潜在的敏感信息，某些依赖项可能会将其名称（有时是版本）替换为不透明的不可逆标识符。它适用于以下依赖类型：</p>
+<p>为了确保审计数据包中不包含潜在的敏感信息，某些依赖项可能会将其名称(有时是版本)替换为不透明的不可逆标识符。它适用于以下依赖类型:</p>
 <ul class="simple">
-<li><p>引用为非默认注册配置的作用域的任何模块都会清除其名称。 （也就是说，你做了一个范围 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">login</span> <span class="pre">--scope=&#64;ourscope</span></code> 。）</p></li>
+<li><p>引用为非默认注册配置的作用域的任何模块都会清除其名称。 (也就是说，你做了一个范围 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">login</span> <span class="pre">--scope=&#64;ourscope</span></code> 。)</p></li>
 <li><p>所有 git 依赖项都清除了它们的名称和说明符。</p></li>
 <li><p>所有远程 tarball 依赖项都清除了它们的名称和说明符。</p></li>
 <li><p>所有本地目录和tarball依赖项都会清除其名称和说明符。</p></li>
@@ -231,7 +232,7 @@ npm audit fix <span class="o">[</span>--force<span class="p">|</span>--package-l
 <div class="section" id="see-also">
 <h2>参阅<a class="headerlink" href="#see-also" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="install.html#cmdoption-npm-arg-install"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
+<li><p><a class="reference internal" href="install.html#id10"><code class="xref std std-option docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code></a></p></li>
 <li><p><code class="xref std std-option docutils literal notranslate"><span class="pre">package-locks</span></code></p></li>
 <li><p><a class="reference internal" href="config.html#cmdoption-npm-arg-config"><code class="xref std std-option docutils literal notranslate"><span class="pre">config</span></code></a></p></li>
 </ul>
@@ -251,10 +252,10 @@ npm audit fix <span class="o">[</span>--force<span class="p">|</span>--package-l
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="bin.html" title="npm-bin"
+          <a href="bin.html" title="npm bin"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="adduser.html" title="npm-adduser"
+          <a href="adduser.html" title="npm adduser"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -264,7 +265,7 @@ npm audit fix <span class="o">[</span>--force<span class="p">|</span>--package-l
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

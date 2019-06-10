@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>Revoking authentication tokens &#8212; npm-docs 6.9.1 文档</title>
+    <title>撤消身份验证令牌 &#8212; npm-docs 6.9.1 文档</title>
     <link rel="stylesheet" href="../_static/sphinx13.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -13,11 +13,12 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Docker and private modules" href="docker-and-private-modules.html" />
-    <link rel="prev" title="Creating and viewing authentication tokens" href="creating-and-viewing-authentication-tokens.html" />
+    <link rel="next" title="Docker和私有模块" href="docker-and-private-modules.html" />
+    <link rel="prev" title="创建和查看身份验证令牌" href="creating-and-viewing-authentication-tokens.html" />
 <link rel="canonical" href="http://www.sphinx-doc.org/en/master/integrations/revoking-authentication-tokens.html" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -85,10 +86,10 @@
           <a href="../genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="docker-and-private-modules.html" title="Docker and private modules"
+          <a href="docker-and-private-modules.html" title="Docker和私有模块"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="creating-and-viewing-authentication-tokens.html" title="Creating and viewing authentication tokens"
+          <a href="creating-and-viewing-authentication-tokens.html" title="创建和查看身份验证令牌"
              accesskey="P">上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -100,10 +101,10 @@
         <div class="sphinxsidebarwrapper">
   <h4>上一个主题</h4>
   <p class="topless"><a href="creating-and-viewing-authentication-tokens.html"
-                        title="上一章">Creating and viewing authentication tokens</a></p>
+                        title="上一章">创建和查看身份验证令牌</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="docker-and-private-modules.html"
-                        title="下一章">Docker and private modules</a></p>
+                        title="下一章">Docker和私有模块</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
@@ -130,10 +131,13 @@
           <div class="body" role="main">
             
   <div class="section" id="revoking-authentication-tokens">
-<h1>Revoking authentication tokens<a class="headerlink" href="#revoking-authentication-tokens" title="永久链接至标题">¶</a></h1>
+<h1>撤消身份验证令牌<a class="headerlink" href="#revoking-authentication-tokens" title="永久链接至标题">¶</a></h1>
 <p>To keep your account and packages secure, we strongly recommend revoking (deleting) tokens you no longer need or that have been compromised. You can revoke any token you have created.</p>
-<p>Note: While authentication tokens are not derived from your password, changing your password will invalidate all of your tokens. You can also invalidate a single token by logging out on a machine that is logged in with that token. We recommend revoking rather than invalidating tokens.
-To see a list of your tokens, on the command line, run:
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>While authentication tokens are not derived from your password, changing your password will invalidate all of your tokens. You can also invalidate a single token by logging out on a machine that is logged in with that token. We recommend revoking rather than invalidating tokens.</p>
+</div>
+<p>To see a list of your tokens, on the command line, run:
 npm token list
 In the tokens table, find and copy the ID of the token you want to delete.
 On the command line, run the following command, replacing 123456 with the ID of the token you want to delete:
@@ -141,7 +145,7 @@ npm token delete 123456
 npm will report Removed 1 token</p>
 <p>To confirm that the token has been removed, run:
 npm token list
-Note: You must use the token ID to delete a token, not the truncated version of the token. In some cases, there may be a delay of up to an hour before a token is successfully revoked.</p>
+.. note:: You must use the token ID to delete a token, not the truncated version of the token. In some cases, there may be a delay of up to an hour before a token is successfully revoked.</p>
 </div>
 
 
@@ -157,10 +161,10 @@ Note: You must use the token ID to delete a token, not the truncated version of 
           <a href="../genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="docker-and-private-modules.html" title="Docker and private modules"
+          <a href="docker-and-private-modules.html" title="Docker和私有模块"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="creating-and-viewing-authentication-tokens.html" title="Creating and viewing authentication tokens"
+          <a href="creating-and-viewing-authentication-tokens.html" title="创建和查看身份验证令牌"
              >上一页</a> |</li>
 <li><a href="../index.html">主页</a>&#160;|</li>
 <li><a href="../contents.html">文档</a> &#187;</li>
@@ -170,7 +174,7 @@ Note: You must use the token ID to delete a token, not the truncated version of 
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>

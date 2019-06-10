@@ -13,6 +13,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
 
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -101,8 +102,8 @@
   <h3><a href="../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">将包从用户帐户转移到另一个用户帐户</a><ul>
-<li><a class="reference internal" href="#transferring-a-package-from-a-user-account-to-another-user-account-on-the-website">Transferring a package from a user account to another user account on the website</a></li>
-<li><a class="reference internal" href="#transferring-a-package-from-a-user-account-to-another-user-account-on-the-command-line">Transferring a package from a user account to another user account on the command line</a></li>
+<li><a class="reference internal" href="#transferring-a-package-from-a-user-account-to-another-user-account-on-the-website">将包从用户帐户转移到网站上的另一个用户帐户</a></li>
+<li><a class="reference internal" href="#transferring-a-package-from-a-user-account-to-another-user-account-on-the-command-line">在命令行上将程序包从用户帐户转移到另一个用户帐户</a></li>
 </ul>
 </li>
 </ul>
@@ -143,25 +144,40 @@
 <p>As a package owner or maintainer, you can transfer ownership of a package you no longer wish to maintain to another trusted npm user on either the npm website or the command line.</p>
 <p>将包从用户转移到组织或组织转移到用户的工作方式与此过程不同。</p>
 <p>有关npm支持如何处理用户之间的包名争议的更多信息，您可以参考npm的包名争议政策。</p>
-<p>Note: If your package is scoped and private, the new package owner must also have a paid user account. It is possible to transfer ownership of user-scoped packages, however we don’t recommend it because it can create some ownership confusion.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>If your package is scoped and private, the new package owner must also have a paid user account. It is possible to transfer ownership of user-scoped packages, however we don’t recommend it because it can create some ownership confusion.</p>
+</div>
 <div class="section" id="transferring-a-package-from-a-user-account-to-another-user-account-on-the-website">
-<h2>Transferring a package from a user account to another user account on the website<a class="headerlink" href="#transferring-a-package-from-a-user-account-to-another-user-account-on-the-website" title="永久链接至标题">¶</a></h2>
-<p>To transfer a package you own or maintain to another user, follow these steps:</p>
-<p>Navigate to the package page for the package you want to transfer, replacing &lt;your-package-name&gt; with the name of your package: <a class="reference external" href="https://www.npmjs.com/package">https://www.npmjs.com/package</a>/&lt;your-package-name&gt;.
-On the package Admin tab, under “Maintainers”, enter the npm username of the new maintainer.
-package page admin tab showing text field to invite maintainers</p>
-<p>Click “Invite.”
-To remove yourself as a maintainer, under the maintainers list, click the “x” next to your username.
-package page admin tab listing two maintainers</p>
+<h2>将包从用户帐户转移到网站上的另一个用户帐户<a class="headerlink" href="#transferring-a-package-from-a-user-account-to-another-user-account-on-the-website" title="永久链接至标题">¶</a></h2>
+<p>要将您拥有或维护的包转移给其他用户，请按照下列步骤操作:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the package page for the package you want to transfer, replacing &lt;your-package-name&gt; with the name of your package: <a class="reference external" href="https://www.npmjs.com/package">https://www.npmjs.com/package</a>/&lt;your-package-name&gt;.</p></li>
+<li><p>在程序包Admin选项卡的“Maintainers”下，输入新维护者的npm用户名。</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="package page admin tab showing text field to invite maintainers" src="https://docs.npmjs.com/assets/images/packages-and-modules/pkg-page-admin-tab-invite-maintainer.png" />
+</div>
+<ol class="arabic simple">
+<li><p>点击 “Invite.”</p></li>
+<li><p>要删除自己作为维护者，请在维护者列表下单击用户名旁边的“x”。</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="package page admin tab listing two maintainers" src="https://docs.npmjs.com/assets/images/packages-and-modules/pkg-page-admin-tab-maintainers-list.png" />
+</div>
 </div>
 <div class="section" id="transferring-a-package-from-a-user-account-to-another-user-account-on-the-command-line">
-<h2>Transferring a package from a user account to another user account on the command line<a class="headerlink" href="#transferring-a-package-from-a-user-account-to-another-user-account-on-the-command-line" title="永久链接至标题">¶</a></h2>
+<h2>在命令行上将程序包从用户帐户转移到另一个用户帐户<a class="headerlink" href="#transferring-a-package-from-a-user-account-to-another-user-account-on-the-command-line" title="永久链接至标题">¶</a></h2>
 <p>To transfer a package to another npm user using the CLI, run the npm owner add and rm commands in order, replacing &lt;their-username&gt; with the other user’s npm username, &lt;your-username&gt; with your npm username, and &lt;package-name&gt; with the package you want to transfer:</p>
-<p>npm owner add npm &lt;their-username&gt; &lt;package-name&gt;
-npm owner rm &lt;your-username&gt; &lt;package-name&gt;
-If you have two-factor authentication enabled for writes, add a one-time password to the command, –otp=123456 (where 123456 is the code from your authenticator application).</p>
-<p>npm owner add npm &lt;their-username&gt; &lt;package-name&gt; –otp=123456
-npm owner rm &lt;your-username&gt; &lt;package-name&gt; –otp=123456</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">owner</span> <span class="n">add</span> <span class="n">npm</span> <span class="o">&lt;</span><span class="n">their</span><span class="o">-</span><span class="n">username</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+<span class="n">npm</span> <span class="n">owner</span> <span class="n">rm</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">username</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>If you have two-factor authentication enabled for writes, add a one-time password to the command, –otp=123456 (where 123456 is the code from your authenticator application).</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>npm owner add npm &lt;their-username&gt; &lt;package-name&gt; --otp<span class="o">=</span><span class="m">123456</span>
+npm owner rm &lt;your-username&gt; &lt;package-name&gt; --otp<span class="o">=</span><span class="m">123456</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -191,7 +207,7 @@ npm owner rm &lt;your-username&gt; &lt;package-name&gt; –otp=123456</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; 版权所有 2019, BandCap.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/8aaa12d 创建。
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0+/3b2597b 创建。
     </div>
   </body>
 </html>
